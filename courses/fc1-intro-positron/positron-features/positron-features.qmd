@@ -1,0 +1,113 @@
+---
+title: Basic Positron Features 
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit familiarizes you with Positron’s basic layout and features. 
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+* Understand the basic features and layout of Positron. 
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+## Introduction
+
+As it the case for many IDEs, Positron is set up such that you have quick access to different parts of your project. The main window is divided into different areas (known as *panes*), each tailored to a distinct part of a typical project workflow: writing code, running it, visualising output, working with files, debugging, inspecting the environment, etc.
+
+The arrangement of the different windows is very flexible, so you can customize them and move them around. [This article](https://code.visualstudio.com/docs/configure/custom-layout) describes how to do that (remember, Positron is basically a variant of VS Code, so the same concepts apply).
+
+
+## The menu bars
+
+The top menu bar in Positron is similar to most standard programs and likely requires little explanation. Since Positron is full-featured and highly configurable, there is a lot you can do. We might discuss a few of the commands, the rest you will likely discover as you learn more how to use Positron. And it's quite possible that there are some features you will never use.
+
+The menu bar on the left (called _activity bar_) gives you access to different views related to Positron and your editor. You've already encountered the 'Extensions' view.Maybe the most important one is the first one, the file explorer view. You can use it to quickly open files and create new ones. The search is also a handy tool to find things quickly. Several other icons are for specific extensions or functionality related to version control and coding, we'll discuss some of them in the courses that cover those tools.
+
+## The Editor Pane
+
+The biggest window (unless you resize it), is the Editor pane. The Editor is where you edit your documents, such as code, Quarto documents or any other text file. The editor has a lot of nice features, such as snyax highlighting, auto-completion, automatic formatting, etc. Multiple files open in tabs along the top. 
+
+## Console, Terminal and more
+
+Below the Editor is an area that gives you access to various other tools. The `Console` tab shows whatever programming language you are currently running. By default in Positron, that's R. The `Terminal` is basically a Windows/Unix terminal, where you can enter commands. For instance you can use it to run `Quarto` commands. That's also generally where Julia runs. The other tabs are helpful for showing you what happens when you run code. 
+
+## Viewer Pane
+
+The bottom-right aree is usually the Viewer pane. It automatically displays plots created by code, such as R’s *ggplot2*, Python’s *matplotlib*, or Julia’s *Plots* package. HTML widgets, data frames, interactive tables, and other items that can be pre-viewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there. 
+
+
+## Environment and History Pane
+
+The top‑right pane shows your workspace objects/variables. Click any variable to further inspect it. 
+
+## The Command Palette
+
+In the top middle you will find what looks like a search box, but is actually much more. This is where, among other things, you can find the command palette. If you click into the search box, then select "Show and Run Commands", you can quickly execute a lot of commands, without trying to figure out which menu they belong to. For instance, if you start typing "git" you will see a lot of commands related to Git/GitHub functionality. You can also use the search box to, well, search. Once you start using Positron more, you will find that little box very convenient.
+
+
+## More stuff
+
+As you start using Positron, you'll find that sometimes, depending on what you have open or what code you run, more things appear in various panes. A lot will be self-explanatory, but there is also a lot that requires exploring. Again, Positron has a lot of features, over time you'll discover more of them.
+
+
+:::
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+The Positron IDE consists of different panes that give you access to different parts of your project. As you start working with Positron, you'll quickly figure out how to set things up to make them work for you.
+
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+* [Official Positron Layout Documentation](https://positron.posit.co/layout.html) - not very detailed, but gives you an overview of the different panes and their purpose.
+* [Positron Keyboard shortcuts](https://positron.posit.co/keyboard-shortcuts.html) - if you are one of those persons who prefers to use keyboard shortcuts instead of the mouse, check out this handy reference. Note that these are just a few basic ones, almost everyhing can be turned into a keyboard shortcut.
+
+:::
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r positron-extensions-quiz}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+:::
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+
+* Explore a few different layouts. Go to search box in the top middle of Positron, select "Show and Run Commands" and start typing "customize". An entry called "Customize Layouts" should appear. Open it and click around on some of the settings to move different panes around. Configure it in a way that suits you best. You can always change again later.
+
+
+:::
+<!-- end unit-exercise div -->

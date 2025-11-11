@@ -1,0 +1,70 @@
+---
+title: A brief introduction to Quarto 
+subtitle: ""
+---
+
+::: {.course-overview}
+# Course Overview
+
+This short course provides a basic introduction to Quarto.
+
+We are using Quarto throughout QSPL and assume you are familiar with at least its basics. This course will provide you with a basic starting knowledge.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+* Understand what Quarto is.
+* Be able to create basic documents using Quarto. 
+* Be familiar with sources that you can use to learn more.
+
+:::
+
+
+
+<!--
+::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+:::
+-->
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to Positron course](fc3-intro-github.qmd).
+* We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd) and [Brief Introduction to Julia course](fc5-intro-julia.qmd).
+
+:::
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more):
+
+- Introduction
+- Install and Setup
+- Basic Functionality 
+- Using Quarto with Positron
+- Further Resources
+
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+[Click here to start this course.](/courses/fc2-intro-quarto/intro-quarto-overview.qmd)
+
+
+:::

@@ -1,0 +1,49 @@
+---
+title: A brief introduction to Quarto 
+subtitle: ""
+---
+
+::: {.course-overview}
+# Course Overview
+
+This short course provides a basic introduction to Quarto.
+
+We are using Quarto throughout QSPL and assume you are familiar with at least its basics. This course will provide you with a basic starting knowledge.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+* Understand what Quarto is.
+* Be able to create basic documents using Quarto. 
+* Be familiar with sources that you can use to learn more.
+
+:::
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+* We assume you have the Positron IDE installed and are familiar with its basic use at the level covered in our Positron introduction course. 
+
+
+:::
+
+::: {.course-content}
+# Course Content
+
+The course consists of these modules and units.
+
+
+## Module 1
+
+- [Introduction to Quarto](quarto-introduction/quarto-introduction.qmd)
+- [Installation and Setup](quarto-install-setup/quarto-install-setup.qmd)
+- [Quarto and Positron](quarto-positron/quarto-positron.qmd)
+- [Basic Use](quarto-use/quarto-use.qmd)
+- [Further Resources](quarto-resources/quarto-resources.qmd)
+
+
+:::

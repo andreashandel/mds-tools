@@ -1,0 +1,103 @@
+---
+title: Further Positron Resources
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a few more bits of information, and a listing of hopefully useful resources for further learning.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+* Be aware of some additional useful Positron topics.
+* Know where to get help and learn more.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {{.unit-video}}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {{.unit-reading}}
+# Reading
+
+## Introduction
+
+Positron is still fairly new and under active development. As such, the available documentation is still a bit sparse, and things might change.
+Here are a few pointers that hopefully help you as you learn more about Positron.
+
+
+## Positron = VS Code (often)
+
+As mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). 
+That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it's always a good idea to search for help for VS code if you can't find something for Positron, and try if the VS Code solution works. 
+
+
+## Command Palette Tricks
+
+Typing a `>` at the start of the command palette filters for settings. Prefixing with `!` searches extension commands. Most commands show their key binding on the right; pressing that shortcut closes the palette and executes the command simultaneously.
+
+
+
+
+## Continuing Your Learning Journey
+
+The Positron documentation team publishes weekly tips on the blog, and advanced webinars are archived on YouTube. Contributing a pull request to the docs is welcomed and is an excellent way to cement your knowledge.
+
+
+* [Help section on the Positron Website](https://positron.posit.co/troubleshooting.html)
+
+
+
+:::
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+Equipped with shortcuts, best practices, and a community roadmap, you are ready to embark on productive data‑science projects with Positron.
+
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+Well, this whole unit is about further resources, so follow the links mentioned above 😁.
+
+
+:::
+<!-- end unit-resources div -->
+
+::: {{.unit-quiz}}
+# Test yourself
+
+```{{r qsp-quiz}}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+:::
+<!-- end unit-quiz div -->
+
+::: {{.unit-exercise}}
+# Practice
+
+* Challenge yourself to use the keyboard for the next hour without touching the mouse inside Positron.
+* Post one question or tip on the Positron community forum and share the link with your peers.
+
+
+:::
+<!-- end unit-exercise div -->

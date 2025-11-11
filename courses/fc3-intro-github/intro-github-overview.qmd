@@ -1,0 +1,49 @@
+---
+title: A brief introduction to Git and GitHub 
+subtitle: ""
+---
+
+::: {.course-overview}
+# Course Overview
+
+This short course provides a basic introduction to Git and GitHub.
+
+We are using Git/GitHub throughout QSPL and assume you are familiar with at least its basics. This course will provide you with the required knowledge to get started with Git/GitHub.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+* Understand what Git and GitHub are and what they are good for.
+* Be able to perform basic Git/GitHub operations. 
+* Be familiar with sources that you can use to learn more.
+
+:::
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+No specific prior knowledge is required. We assume you have basic computing skills.
+
+:::
+
+
+::: {.course-content}
+# Course Content
+
+The course consists of these modules and units.
+
+
+## Module 1
+
+- [Introduction to Git/GitHub](github-introduction/github-introduction.qmd)
+- [Installation and Setup](github-install-setup/github-install-setup.qmd)
+- [Basic Use](github-use/github-use.qmd)
+- [Git/GitHub and confidentiality](github-confidentiality/github-confidentiality.qmd)
+- [Additional Topics](github-further-topics/github-further-topics.qmd)
+- [Further Resources](github-resources/github-resources.qmd)
+
+
+:::

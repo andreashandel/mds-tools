@@ -1,0 +1,85 @@
+---
+title: Online portfolio introduction
+---
+
+::: {.unit-overview}
+# Overview
+In this unit, we discuss what an online portfolio is, and why having one is a good idea.
+:::
+
+::: {.unit-goals}
+# Goals
+* Know what an online portfolio is.
+* Know why it's good to have an online portfolio.
+:::
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
+-->
+
+
+::: {.unit-reading}
+# Reading
+
+## Introduction
+
+In our context, a portfolio is an organized collection of work that showcases skills and experience. Since the work is generally code, text and other digital content, you can easily place your portfolio online.
+
+
+
+## Why have a portfolio
+
+It is useful to showcase your skills for several reasons.
+
+If you are looking for a new job, the application materials you submit, such as cover letter and CV or resume, generally need to be fairly short. You can mention specific skills in those documents, but you can't really demonstrate them. This makes it difficult.
+
+Even if you are not looking for a new job, having your work and skills out there is a good way of having potential opportunities come your way. Say someone is looking for a speaker/presenter for an event who could talk about a particular topic. They might ask colleagues for recommendations, or search online. If you have work online that shows that you are proficient in that topic, you might be contacted.
+
+A more altruistic reason is that if you have knowledge in a certain area, sharing it publicly can potentially help others learn from you. Just think of the many times you looked for and found some useful information online. You can be the provider of such information too!
+
+
+## How to make a portfolio
+
+An online portfolio is basically a website. This could be a stand-alone page, or it could be part of your general website. Any tool that allows you to make online content and place it on a sever can work. There are many free tools. As we'll discuss shortly, we like using Quarto and Git/Github, but many other options exist. Wordpress is a very common platform.  
+
+::: 
+
+
+::: {.unit-summary}
+# Summary
+In this unit, we covered the basics of a portfolio, what it is and why you should have one.
+::: 
+<!-- This ends the unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+This is a good additional reading: URL
+More text
+:::
+<!-- This ends the unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r qsp-quiz}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+::: 
+
+
+
+::: {.unit-exercise}
+# Practice
+Before creating your own portfolio, it is worth checking out some examples from others. This gives you an idea of ways you can make one and what to showcase. Here are a few nice ones. We picked those that are either topically relevant (data analysis and QSP in pharma) or use the tools we also use (mainly Quarto).
+::: 

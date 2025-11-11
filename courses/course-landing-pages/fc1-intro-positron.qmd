@@ -1,0 +1,69 @@
+---
+title: A brief introduction to Positron 
+subtitle: ""
+---
+
+::: {.course-overview}
+# Course Overview
+
+This course provides a basic introduction to the Positron Editor and IDE.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+* Understand the benefits of using an IDE.
+* Successfully install Positron.
+* Be familiar with the basic features of Positron. 
+* Understand the idea and how to install extensions.
+* Learn about configuration options.
+
+:::
+
+
+
+<!--
+::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+:::
+-->
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+No specific prior knowledge is required. We assume you have basic computing skills.
+
+:::
+
+
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more):
+
+- Introduction
+- Install and Setup
+- Basic Functionality 
+- Using Extensions
+- Configuration 
+- Further Resources
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+[Click here to start this course.](/courses/fc1-intro-positron/intro-positron-overview.qmd)
+
+:::

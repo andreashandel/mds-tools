@@ -1,0 +1,68 @@
+---
+title: Course Title 
+subtitle: "TBD"
+---
+
+::: {.course-overview}
+# Course Overview
+
+This course provides a brief introduction to R.
+
+It covers install, setup and first steps. This is not a course to learn R coding, only to get started so you can use it for other courses as part of your QSPL learnings.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+-   Know what R is.
+-   Install and set up R.
+-   Be familiar with some basic R use.
+-   Understand the ideas of packages and how to manage them.
+
+
+:::
+
+<!--
+::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+:::
+-->
+
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+
+:::
+
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more):
+
+- Introduction
+- Install and Setup
+- Basic Functionality 
+- Installing and using Packages
+- Further Resources
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+[Click here to start this course.](/courses/fc4-intro-r/intro-r-overview.qmd)
+
+:::

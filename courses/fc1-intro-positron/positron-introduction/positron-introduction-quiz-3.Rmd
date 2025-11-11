@@ -1,0 +1,27 @@
+Question
+========
+Positron is built on top of which popular code editor platform?
+
+Answerlist
+----------
+* Eclipse
+* Atom
+* Sublime Text
+* Visual Studio Code
+
+Solution
+========
+Positron takes the open‑source Visual Studio Code core and layers additional data‑science functionality on top.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Positron base
+extype: schoice
+exsolution: 0001

@@ -1,0 +1,32 @@
+---
+title: Courses
+subtitle: ""
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+The main content on this site comes in the form of several small courses. 
+
+These courses are not mean to cover each tool in detail. They only provide the information needed to get started and get you up and runing and at a level that we need for our other courses. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.
+
+
+* [A brief introduction to Positron](/courses/course-landing-pages/fc1-intro-positron.qmd)
+
+* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc3-intro-github.qmd)
+
+* [A brief introduction to R](/courses/course-landing-pages/fc4-intro-r.qmd)
+
+* [A brief introduction to Quarto](/courses/course-landing-pages/fc2-intro-quarto.qmd)
+
+* [Creating an online portfolio](/courses/course-landing-pages/fc6-portfolio-creation.qmd)
+
+
+
+## Course structure
+
+Each course focuses on a specific topic. While some courses assume prior knowledge from other courses, each is designed to be fairly self-contained, so you can focus on the courses most relevant to you.
+
+
+More details on the content for each course can be found in the course-specific overview pages linked above.

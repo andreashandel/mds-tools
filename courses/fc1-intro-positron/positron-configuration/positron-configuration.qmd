@@ -1,0 +1,112 @@
+---
+title: Configuring Positron
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit discusses a few ways you can configure and customize Positron. 
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+* Change themes, fonts, and key bindings to suit your preferences.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+## Introduction
+
+Like VS Code, Positron is highly customizable. This flexibility allows you to tailor the editor to your specific workflow and preferences. There's a lot you can customize, we'll only briefly look at a few main areas here.
+
+
+## Settings 
+
+Under the gear symbol in the lower left corner, you can access all of Positron's settings. These control everything from editor behavior to appearance.
+
+There are way too many settings to cover them all here, but you can search for specific settings using the search bar. Some of the most useful settings include:
+
+* **Editor Font Size**: Adjust the font size for better readability.
+* **Editor Word Wrap**: Enable or disable word wrapping in the editor.
+
+One important fact to keep in mind: You can change settings globally (for all projects) or per project. If you want to change a setting only for the current project, make sure to select the *Workspace* tab at the top of the settings window. If you want to change it globally, select the *User* tab at the top of the settings window.
+
+
+## Themes 
+
+You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further, but for most users, this is probably not worth it.
+
+You can explore themes by clicking on the gear icon in the lower left corner, then selecting *Themes* and *Color Theme*. This opens a list of available themes. Explore them to see what you might like.
+
+
+
+## Key Bindings
+
+Some users prefer different keyboard shortcuts for common commands. Positron allows you to customize these key bindings to match your workflow. 
+
+You can access key bindings by clicking the gear icon in the lower left corner, then selecting *Keyboard Shortcuts*. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them. 
+
+For instance, in Positron, to toggle comments, the default shortcut is `Ctrl/Cmd + /`. This differs from RStudio, where it is `Ctrl/Cmd + Shift + C`. If you prefer the RStudio shortcut, you can change it in Positron. 
+
+
+## More customization
+
+It should be clear from just this brief discussion that Positron is highly customizable. You can change almost anything, from the layout of the editor to how it behaves when you run code. You want to make sure to explore the settings a bit and find what works best for you, but not waste too much time trying out every possible setting. 
+
+In general, if you find yourself thinking "I wish I could change Positron to do/show X", there's probably a way to do so. If it's not built into Positron, you might find the needed functionality in an extension, which is discussed in a separate unit. 
+
+
+:::
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+You can customize Positron to fit your workflow and preferences. You can change almost anything. It is useful to slowly explore the settings and find what works best for you.
+
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+* [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/) - in this blog post, Andrew Heiss discusses some ways he likes to customize Positron.
+
+:::
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{{r qsp-quiz}}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+:::
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+
+* Change the font size to 16px and enable word wrap.
+* Install the *Solarized Dark* theme, set it as default, and sync settings to the cloud.
+
+:::
+<!-- end unit-exercise div -->

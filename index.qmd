@@ -1,0 +1,16 @@
+---
+title: "MDS Tools"
+---
+
+
+# Overview
+
+This website contains several mini-courses that cover tools for modeling and data science. The topics covered is based on the tools we regularly use and teach.
+
+
+* The [**About**](/pages/about.qmd) page give a brief overview of what this site is trying to be all about (and what it doesn't do).
+
+* The main content comes in the form of [courses](/courses/courses.qmd), which are further divided into modules and units. Learn more about this on the [courses](/courses/courses.qmd) site.
+
+
+

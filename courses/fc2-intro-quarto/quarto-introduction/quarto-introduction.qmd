@@ -1,0 +1,109 @@
+---
+title: Overview of Quarto
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a brief overview of Quarto. Quarto is a versatile and powerful open-source publishing system designed to simplify the creation of reproducible documents, presentations, websites, and more. 
+
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+- Understand what Quarto is and why it is useful.
+- Recognize the basic structure of a Quarto document.
+- Be familiar with common use cases of Quarto.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+::: 
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## What is Quarto?
+
+As it's most basic, Quarto is piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Quarto is the successor of the R Markdown framework, which has been widely used for reproducible research and dynamic reporting in the R community. Building upon R Markdown’s strengths, Quarto extends this capability to other languages like Python, Julia, and others. 
+
+
+## Why Quarto?
+
+Traditional methods of authoring scientific and technical documents often involve separate tools for analysis and presentation. For instance, code is written in some language such as R or Julia, then executed. The code produces output such as figures or tables, which might be copied into a Word document, or pasted into a PowerPoint presentation or onto a website. This separation of analysis and presentation is not efficient and creates challenges for reproducibility.
+
+The idea for Quarto is that one can use one unified system that combines input, such as narrative text and executable code, with results such as figures and tables, and easily and automatically generates well-formatted output documents in the form of HTML, PDF, Word, and more. This can lead to a workflow that is much more automated, efficient and reproducible. 
+
+
+## Applications of Quarto
+
+Quarto is widely applicable in various scenarios:
+
+- Academic publishing and reproducible research papers
+- Data analysis reports and interactive dashboards
+- Educational content and tutorials
+- Professional reporting and documentation
+- Websites (such as QSPL)
+
+
+
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+In this introductory unit, you learned:
+
+- The fundamentals of Quarto as a reproducible publishing system.
+- The basic structure of Quarto documents (YAML front matter, Markdown, and code chunks).
+- Common applications and advantages of using Quarto.
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- [Official Quarto Documentation](https://quarto.org/docs/)
+- [Getting Started with Quarto](https://quarto.org/docs/get-started/)
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r qsp-quiz}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+::: 
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Browse through some of the examples in the [Quarto Examples Gallery](https://quarto.org/docs/gallery/) to see the variety of documents you can create.
+
+* If you want to sample even more Quarto content and examples, check out the [awesome Quarto GitHub repository](https://github.com/mcanouil/awesome-quarto) which contains a large collection of links to all sorts of useful Quarto resources.
+
+::: 
+<!-- end unit-exercise div -->

@@ -1,0 +1,27 @@
+Question
+========
+Which of the following best describes an Integrated Development Environment (IDE)?
+
+Answerlist
+----------
+* A simple text editor with no additional tooling
+* A hardware device used for data storage
+* A platform that integrates code editing, execution, debugging and project management in one place
+* A web browser extension for note taking
+
+Solution
+========
+An IDE combines multiple tools—editor, console, debugger, version‑control, etc.—into one cohesive application, streamlining development.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: IDE definition
+extype: schoice
+exsolution: 0010

@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+format: html
+---
+
+# Heading
+
+Some text.
+
+A code chunk
+
+```{r}
+#| echo: true
+#| eval: true
+x = seq(1,100)
+y = x^2
+plot(x,y)
+```
+
+Some more text.
+The end.

@@ -1,0 +1,27 @@
+Question
+========
+Where should you download the Positron installer to ensure you get the correct and most up‑to‑date version?
+
+Answerlist
+----------
+* From Positron’s official website
+* From an arbitrary third‑party download mirror
+* From the CRAN repository used for R packages
+* It is pre‑installed on all modern operating systems
+
+Solution
+========
+Always use the official Positron website to obtain the installer. Third‑party sites may host outdated or modified versions.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-install-source
+extype: schoice
+exsolution: 1000

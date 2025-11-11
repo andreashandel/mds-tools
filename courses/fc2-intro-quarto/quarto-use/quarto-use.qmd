@@ -1,0 +1,193 @@
+
+---
+title: Basic Use
+---
+
+::: {.unit-overview}
+# Overview
+
+In this unit, you will learn the fundamental skills needed to create, edit, and render basic Quarto documents. You will explore the essential structure of a Quarto file and common workflows for generating outputs in different formats.
+:::
+
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+By the end of this unit, you will:
+
+- Understand the basic anatomy of a Quarto document.
+- Create and render documents to multiple output formats.
+- Utilize parameters and caching to improve efficiency and reproducibility.
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+::: 
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+
+## Structure of a Quarto Document
+
+The Quarto software operates on a file called a **Quarto document** (`.qmd`). A standard Quarto file (`.qmd`) is a text document that consists of:
+
+1. **YAML Front Matter**: Metadata and document configuration.
+2. **Markdown Body**: Narrative text written in Markdown.
+3. **Executable Code Chunks**: Embedded code blocks executed during rendering. This is optional, you can have a Quarto document without executable code chunks.
+
+
+### Example of a Minimal Quarto Document
+
+Here is an example of a minimal Quarto document:
+
+````markdown
+---
+title: "Simple Quarto Example"
+format: html
+---
+
+Here is a simple example demonstrating the integration of R code and narrative.
+
+```{r}
+summary(mtcars)
+```
+````
+
+
+
+After rendering (`quarto render simple.qmd`), an HTML file displaying your results will be created.
+
+
+
+## Anatomy of a Quarto Document
+
+A Quarto document typically consists of three main components:
+
+1. **YAML Front Matter:** Metadata and output configurations defined at the beginning of the file.
+2. **Markdown Text:** Narrative content formatted with Markdown syntax.
+3. **Code Chunks:** Blocks of executable code embedded within the narrative.
+
+Example:
+
+````markdown
+---
+title: "Example Quarto Document"
+format: html
+---
+
+This document integrates Markdown text with executable code.
+
+```{r}
+head(iris)
+```
+````
+
+Render this document using: `quarto render example.qmd`
+
+## Rendering Multiple Formats
+
+Quarto allows the generation of multiple output formats from a single source file. You can specify multiple outputs in your YAML front matter:
+
+```yaml
+---
+title: "Multi-format Document"
+format:
+  html: default
+  pdf: default
+---
+```
+
+
+To override and render a specific format:
+
+`
+quarto render multi-format.qmd --to pdf
+`
+
+
+
+## Caching and Freezing
+
+Improve efficiency by caching results of time-consuming computations:
+
+```yaml
+execute:
+  cache: true
+```
+
+Freeze documents to avoid unnecessary re-executions:
+
+
+## Publishing Documents
+
+To quickly publish your Quarto document as a website using GitHub Pages:
+
+
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+In this unit, you learned how to:
+
+- Create a basic Quarto document with YAML front matter, Markdown content, and executable code.
+- Render documents to multiple output formats from a single source file.
+- Use parameters and caching to enhance efficiency and reproducibility.
+- Publish your Quarto documents easily online.
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- [Quarto Guide to Document Basics](https://quarto.org/docs/authoring/)
+- [Parameters and Computations](https://quarto.org/docs/computations/parameters.html)
+- [Caching and Freezing Execution](https://quarto.org/docs/computations/execution-options.html#caching)
+- [Publishing with Quarto](https://quarto.org/docs/publishing/)
+::: 
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r qsp-quiz}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+::: 
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+
+### Practice Exercise
+
+Create and render a Quarto document (`basic_use.qmd`) that outputs both HTML and PDF formats. Confirm both files are generated successfully.
+
+### Substantial Exercise
+
+Write a more complex Quarto document (`parametric_report.qmd`) that includes:
+
+- YAML front matter specifying parameters.
+- Markdown narrative introducing your analysis.
+- Code chunks utilizing parameters to load data, perform analysis, and generate plots.
+- Cached computations to optimize rendering.
+
+Render the document with two different parameter sets and submit both sets of resulting HTML files, along with your source `.qmd` file.
+
+::: 
+<!-- end unit-exercise div -->

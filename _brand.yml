@@ -1,0 +1,23 @@
+# this implements Quarto's new branding setup
+# see here: https://quarto.org/docs/authoring/brand.html
+color:
+  palette:
+    dark-grey: "#222222"
+    blue: "#ddeaf1"
+  background: blue
+  foreground: dark-grey
+  primary: black
+
+# logo: 
+#   small: assets/images/qspl-logo-small.png
+#   medium: assets/images/qspl-logo.png
+
+
+typography:
+  fonts:
+    - family: "Source Sans 3"
+      source: google
+    - family: "Source Serif 4"
+      source: google
+  base: "Source Sans 3"
+  headings: "Source Serif 4"

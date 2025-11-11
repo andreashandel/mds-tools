@@ -1,0 +1,68 @@
+---
+title: Introduction to Git/GitHub  
+subtitle: ""
+---
+
+::: {.course-overview}
+# Course Overview
+
+This course provides a brief introduction to Git and GitHub.
+
+It does not cover the full Git/GitHub workflow, but is enough to get you started and provide you with the necessary knowledge to be able to use Git/GitHub as part of your QSPL learnings - and hopefully beyond.
+
+This course focuses on the _how_ of Git/GitHub, and only briefly talks about the big-picture for _why_ to sue Git/GitHub. The latter is covered - among many other topics - in our [ROADy workflow course](/courses/course-landing-pages/mc3-roady-workflows.qmd).
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+- Know what Git and GitHub are.
+- Create and set up a GitHub account.
+- Set up a Git/GitHub workflow to work on QSPL projects.
+- Be aware of some of the limitations and pitfalls of using Git/GitHub.
+:::
+
+
+
+<!--
+::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+:::
+-->
+
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+
+:::
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more):
+
+- Introduction
+- Install and Setup
+- Basic uses 
+- Further Resources
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+[Click here to start this course.](/courses/fc3-intro-github/intro-github-overview.qmd)
+
+:::

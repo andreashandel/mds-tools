@@ -1,0 +1,27 @@
+Question
+========
+Why was Positron selected as the primary IDE for the QSPL course?
+
+Answerlist
+----------
+* It is the only IDE that exists.
+* It integrates well with tools for modeling and data analysis typical in QSP projects.
+* It requires no installation.
+* It automatically generates complete QSP models without coding.
+
+Solution
+========
+Positron is a strong environment for the multi‑language workflows used in QSP.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Why Positron
+extype: schoice
+exsolution: 0100

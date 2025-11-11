@@ -1,0 +1,141 @@
+---
+title: Quarto and Positron
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit explains how to effectively use Quarto within the Positron IDE. Leveraging your existing knowledge of Positron, you will explore Quarto-specific features, workflows, and debugging practices within the IDE environment.
+:::
+
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+By the end of this unit, you will:
+
+- Efficiently create, edit, and render Quarto documents using Positron.
+- Customize and optimize your Quarto workflow within Positron.
+- Understand and troubleshoot common issues in Positron with Quarto documents.
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+::: 
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+## Positron and Quarto Integration
+
+Positron is an intuitive, cross-platform IDE ideal for data science tasks. Due to your familiarity with Positron, this section will focus specifically on utilizing Positron's built-in features to streamline your Quarto workflow.
+
+## Working with `.qmd` Files in Positron
+
+Opening a `.qmd` file in Positron immediately:
+
+- Activates syntax highlighting for YAML headers, Markdown text, and embedded code chunks (R, Python, Julia, Bash).
+- Opens a live **Preview Pane**, refreshing automatically upon file save.
+- Provides a convenient **Render Button** to execute `quarto render` without leaving the IDE.
+
+## Rendering Documents
+
+Rendering your document is straightforward:
+
+- Click the **Render** button or use the shortcut <kbd>Ctrl + Shift + K</kbd>.
+- Positron executes the rendering command (e.g., `quarto render`) and displays any output messages or warnings in the integrated terminal.
+
+For example:
+
+```bash
+quarto render document.qmd --to html
+```
+
+The rendered document appears directly within Positron, allowing immediate inspection.
+
+## Live Preview for HTML Documents
+
+Positron supports live preview for HTML outputs through a built-in websocket server. This enables instant feedback on your edits without the need for manual rendering, providing a smooth, interactive authoring experience.
+
+## Customizing Quarto Settings in Positron
+
+Access Quarto customization via:
+
+**Settings › Build Tools › Quarto**
+
+Here, you can configure:
+
+- Default output formats (useful when the YAML header doesn't specify `format:` explicitly).
+- "Render on Save" behavior for automatic document updates.
+- Real-time validation settings for specific programming languages.
+
+These configurations are saved per project, facilitating consistency across team environments.
+
+## Debugging and Troubleshooting
+
+If you encounter rendering issues, follow these steps:
+
+1. Check the **Terminal** pane for the exact command executed by Positron.
+2. Manually execute the command in your terminal to identify detailed error messages.
+3. Run `quarto check` to confirm that all necessary dependencies and language engines are correctly installed.
+
+This systematic approach simplifies the troubleshooting process, ensuring minimal disruption to your workflow.
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+In this unit, you learned to:
+
+- Use Positron IDE efficiently to manage Quarto documents.
+- Customize rendering and preview settings specifically for Quarto.
+- Debug common issues encountered when rendering Quarto documents in Positron.
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- [Positron Documentation](https://posit.co/docs/)
+- [Quarto IDE Integration](https://quarto.org/docs/tools/)
+- [Posit Community Discussions](https://community.posit.co/c/quarto/59)
+- [Debugging Quarto in IDEs](https://quarto.org/docs/tools/debugging.html)
+::: 
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r qsp-quiz}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+::: 
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+
+### Practice Exercise
+
+Open an existing `.qmd` file in Positron. Practice rendering it as HTML and explore live-preview features.
+
+### Substantial Exercise
+
+Configure Positron settings to automatically render your Quarto documents on save. Write a brief Quarto report (`positron_demo.qmd`) with a YAML header, an introductory paragraph, and a simple data analysis chunk. Render your report and verify the setup. Submit your source `.qmd` file, rendered HTML, and a brief reflection on your experience.
+
+::: 
+<!-- end unit-exercise div -->

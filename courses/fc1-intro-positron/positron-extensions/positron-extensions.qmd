@@ -1,0 +1,102 @@
+---
+title: Positron Extensions
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit discusses what Positron extensions are, and how to install and use them. 
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+* Be familiar with Positron extensions.
+* Know how to install and use extensions.
+:::
+<!-- end unit-goals div -->
+
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Introduction
+
+In programming languages, a lot of extra functionality comes from packages. In editors like Positron (and VS Code and others), the equivalent of packages are 'extensions' (another term sometimes used is 'plugins'). You can install extensions to get extra functionality. 
+
+
+
+## Getting Extensions 
+
+Getting extensions is easy. Just open the Extensions sidebar, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with one being away from the other 3). You'll then see a list of extensions. 
+
+First you see those that are installed. Positron comes with several pre-installed. If you just installed Positron, some extensions might need updating. Go ahead and update them. Some might need a restart of the extension (occasionally, you might have to fully restart Positron).
+
+Now, let's install an additional extension. First, click on 'Open' -> 'Open File' and open some `CSV` file on your computer. If you don't have one readily available, ask your favorite AI to make you one, e.g. with a promt like "Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file."   
+
+The file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let's say we don't want to have it pre-formmatted by Positron. Click on the 'Open as plain text file' button on the top. This should open the CSV file as simple text, you'll see entries separated by commas. That's ok, but a bit hard to read. So let's improve this with an extension.
+
+Go to the Extensions sidebar and search for 'Rainbow CSV'. Click on the 'Install' button (trust the publisher). Now go back to your open CSV file. You should now see each column in a different color, courtesy of this new extension. This makes CSV files easier to read. 
+
+This was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you definitely want for QSPL, such as Julia and Quarto. We'll discuss those in the courses that cover the respective tools. 
+
+To learn a bit more about Positron extensions, and how they do and don't differ from VS Code extensions, check out the [Positron extensions page](https://positron.posit.co/extensions.html) on the Positron documentation website.
+
+## Managing Extensions
+
+Many extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then click on the gear icon and go to `Settings`. For instance if you do that for the `Quarto` extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance 'Quarto > Render > Preview Type'. It's by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to 'external'. (If you don't know yet what Quarto is and what rendering and preview means, you will once you go through our [brief introduction to Quarto course](/courses/course-landing-pages/fc2-intro-quarto.qmd) 😁.
+
+You can also turn on and off extensions. That can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don't want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on 'Disable' (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don't want AI to operate on. You can turn the AI off for that project/workspace.
+
+Finally, if you decide you don't like an extension at all, just click on it completely uninstall it.
+
+Like packages in R or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+Extensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible.
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+* [Positron extension development guide](https://positron.posit.co/extension-development.html) - this is advanced and it's likely you'll never need or want to develop your own extension, but it's good to know that you could.
+:::
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r positron-extensions-quiz}
+#| echo: false
+#| results: "asis"
+exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+:::
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+* Find another extension you are interested in, either by searching online or inside the extension manager. Install it and try it out. If you don't like it, uninstall it again.
+
+:::
+<!-- end unit-exercise div -->

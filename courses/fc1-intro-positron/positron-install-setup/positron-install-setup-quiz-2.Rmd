@@ -1,0 +1,20 @@
+Question
+========
+During the very first startup, Positron may display several permission or configuration dialogs. What is the recommended action?
+
+Answerlist
+----------
+* Cancel every prompt and close Positron immediately
+* Disable all suggested features to keep the interface minimal
+* Approve the prompts so Positron can fully configure itself
+* Uninstall Positron and reinstall it in “safe mode”
+
+Solution
+========
+Accepting the prompts allows Positron to finish its setup and ensures full functionality.
+
+Meta-information
+================
+exname: positron-first-startup
+extype: schoice
+exsolution: 0010
