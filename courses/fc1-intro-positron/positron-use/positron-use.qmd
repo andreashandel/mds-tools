@@ -63,7 +63,7 @@ Let's say you want to have a line instead of circles for the plot but don't reme
 
 Once you found what you are looking for, change your code so it says `plot(x,y,type='l')` and run again. This time, instead of pressing the 'run' button, try to execute the code one line at a time. You can do that by starting in the first line and pressing `Ctrl/Cmd + Enter`. The first line will be executed, and you can then continue to the next line by pressing `Ctrl/Cmd + Enter` again. You will see the new plot show up. You should also see that the old plot is still there, you can go back to it with the arrows above the plot. The menu above the plot also allows you to save any of them, and do other things. It is generally not advised to do any steps manually, you should instead have code do all of it to ensure reproducibility. But in situations where that is not too important, these little helpers are very useful.
 
-You can of course also do the same for other programming languages. We'll look at an example for Julia in the [Introduction to Julia course](/courses/course-landing-pages/fc5-intro-julia.qmd)
+<!-- You can of course also do the same for other programming languages. We'll look at an example for Julia in the [Introduction to Julia course](/courses/course-landing-pages/fc5-intro-julia.qmd) -->
 
 
 ## Working with Quarto documents

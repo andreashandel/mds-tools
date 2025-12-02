@@ -40,8 +40,9 @@ This short course provides a basic introduction to Quarto.
 # Course Prerequisites
 
 * We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
-* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to Positron course](fc3-intro-github.qmd).
-* We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd).
+* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to GitHub course](fc3-intro-github.qmd).
+* We further assume that you have R installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd).
+<!-- * We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd). -->
 
 :::
 

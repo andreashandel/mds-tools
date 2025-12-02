@@ -4,15 +4,14 @@ title: MDS Tools website information
 
 # Purpose
 
-This website is a small stand-alone site that contains short courses on covering different tools for modeling and data science. The focus is on tools that we use for our teaching and research.
+This website is a small stand-alone site with short courses covering different tools for modeling and data science. The focus is on tools that we use for our teaching and research.
 
 
 
-# Our team
+# Authors
 
-This website is currently a two-person prohect. We are [Andreas](https://www.andreashandel.com/) and [Brian](https://brianmckay.netlify.app). We are two academic scientists, researchers and teachers. 
+This website is currently run by [Andreas](https://www.andreashandel.com/) and [Brian](https://brianmckay.netlify.app). We are two academic scientists, researchers and teachers. 
 
-Our day jobs involve both teaching and modeling and analysis of health data. We also teach courses on data analysis and modeling. 
 
 <!-- We are both fairy opinionated when it comes to the right way of doing analyses. Thus, the advice you'll find on this site represents our views. We believe they are reasonable and we hope what we present is useful to you. -->
 

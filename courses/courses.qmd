@@ -7,9 +7,9 @@ output:
 ---
 
 
-The main content on this site comes in the form of several small courses. 
+This site consists of several small tutorials/courses. 
 
-These courses are not mean to cover each tool in detail. They only provide the information needed to get started and get you up and runing and at a level that we need for our other courses. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.
+These courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.
 
 
 * [A brief introduction to Positron](/courses/course-landing-pages/fc1-intro-positron.qmd)
@@ -29,4 +29,4 @@ These courses are not mean to cover each tool in detail. They only provide the i
 Each course focuses on a specific topic. While some courses assume prior knowledge from other courses, each is designed to be fairly self-contained, so you can focus on the courses most relevant to you.
 
 
-More details on the content for each course can be found in the course-specific overview pages linked above.
+More details on the content for each course can be found in the course-specific overview pages.

@@ -1,5 +1,5 @@
 ---
-title: Introduction to Git/GitHub  
+title: A brief introduction to Git/GitHub  
 subtitle: ""
 ---
 
@@ -8,9 +8,10 @@ subtitle: ""
 
 This course provides a brief introduction to Git and GitHub.
 
-It does not cover the full Git/GitHub workflow, but is enough to get you started and provide you with the necessary knowledge to be able to use Git/GitHub as part of your QSPL learnings - and hopefully beyond.
+It does not cover the full Git/GitHub workflow, but is enough to get you started and provide you with the necessary knowledge to be able to start using Git/GitHub.
 
-This course focuses on the _how_ of Git/GitHub, and only briefly talks about the big-picture for _why_ to sue Git/GitHub. The latter is covered - among many other topics - in our [ROADy workflow course](/courses/course-landing-pages/mc3-roady-workflows.qmd).
+This course focuses on the _how_ of Git/GitHub, and only briefly talks about the big-picture for _why_ to use Git/GitHub. 
+<!-- The latter is covered - among many other topics - in our [ROADy workflow course](/courses/course-landing-pages/mc3-roady-workflows.qmd). -->
 
 :::
 
@@ -20,7 +21,7 @@ This course focuses on the _how_ of Git/GitHub, and only briefly talks about the
 
 - Know what Git and GitHub are.
 - Create and set up a GitHub account.
-- Set up a Git/GitHub workflow to work on QSPL projects.
+- Set up a Git/GitHub workflow to work on projects.
 - Be aware of some of the limitations and pitfalls of using Git/GitHub.
 :::
 

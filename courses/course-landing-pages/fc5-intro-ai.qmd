@@ -1,13 +1,13 @@
 ---
-title: A brief introduction to R 
+title: A brief introduction to AI tools 
 ---
 
 ::: {.course-overview}
 # Course Overview
 
-This course provides a brief introduction to R.
+This course provides a brief introduction to AI tools that work nicely with the other tools in our stack.
 
-It covers install, setup and first steps. This is not a course to learn R coding, only to get started so you can start using it.
+As with the other courses, this is a very brief _getting started_ introduction. It will hopefully be enough to get you set up and running.
 
 :::
 
@@ -15,10 +15,9 @@ It covers install, setup and first steps. This is not a course to learn R coding
 ::: {.course-goals}
 # Course Goals
 
--   Know what R is.
--   Install and set up R.
--   Be familiar with some basic R use.
--   Understand the ideas of packages and how to manage them.
+-   Know what AI tolls are useful for R/Positron/etc.
+-   Install and set up various AI tools.
+-   Be familiar with some basic AI use.
 
 
 :::
