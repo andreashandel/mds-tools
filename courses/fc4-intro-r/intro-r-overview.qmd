@@ -1,12 +1,12 @@
 ---
-title: A brief introduction to Julia 
+title: A brief introduction to R 
 subtitle: ""
 ---
 
 ::: {.course-overview}
 # Course Overview
 
-This course provides a very brief introduction to the Julia programming language. It is not meant to teach Julia coding, only to get you started with using Julia.
+This course provides a very brief introduction to the `R` programming language. It is not meant to teach Julia coding, only to get you started with using Julia.
 
 :::
 

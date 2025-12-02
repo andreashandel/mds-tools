@@ -44,7 +44,9 @@ This course focuses on the _how_ of Git/GitHub, and only briefly talks about the
 ::: {.course-prerequisites}
 # Course Prerequisites
 
-* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+We show how to use Git/GitHub with Positron. For that, you should be familiar with Positron at least at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+
+If you don't want to use Git/GitHub through Positron, you can skip that part of the course and still follow along with the rest.
 
 :::
 
@@ -57,6 +59,7 @@ The course covers these topics (and more):
 - Introduction
 - Install and Setup
 - Basic uses 
+- Important caveats and limitations
 - Further Resources
 :::
 

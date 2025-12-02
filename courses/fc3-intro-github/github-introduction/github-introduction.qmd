@@ -12,41 +12,33 @@ This unit provides a brief general introduction to Git and GitHub.
 
 ::: {.unit-goals}
 # Goals
-* Understand the reasons for using Git Explain the purpose of version control  
-* Describe the difference between Git (tool) and GitHub (service)  
-* Perform a basic Git workflow: add → commit → push → pull  
-* Interpret commit history and resolve simple merge conflicts
+* Explain the purpose of version control  
+* Understand the difference between Git and GitHub   
+* Know why one might want to use them.
+* Create and set up a GitHub account.
+* Perform a basic Git workflow using GitHub Desktop
+* Understand the concept of branches
+* Understand the concept of forks and pull requests
 :::
 
 ::: {.unit-reading}
 # Reading
 
-## What is version control?
 
-A **version‑control system (VCS)** records snapshots of your project
-over time. Rather than duplicating folders like `manuscript_v3_FINAL`,
-Git stores small *deltas* and metadata (author, timestamp, message).
-
-### What is Git
+## What is Git
 
 [**Git**](https://git-scm.com/) is software that implements what is called a *version control system*. The main idea is that as you (and your collaborators) work on a project, the software tracks, and records any changes made by anyone. **Git** tracks every change to your files. It is a piece of software that does all the tracking.
 
 
+## What is GitHub
 
+[**GitHub**](https://github.com/) is distinct from Git. **GitHub** is mainly an online platform that hosts changes you make and track with Git in the cloud. This makes collaboration and sharing easy. GitHub is basically a web platform where you can store your projects in the cloud.  
 
-
-
-
-### What is GitHub?
-
-[**GitHub**](https://github.com/) is distinct from Git. **GitHub** hosts changes you make and track with Git in the cloud. This makes collaboration and sharing easy. GitHub is basically a web platform where you can store your projects in the cloud.  
-
-GitHub is in some sense on online interface/website, and Git the underlying engine (a bit like RStudio and R). 
-
-You can use Git without using GitHub. Other interfaces/platforms for Git exist, e.g., [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/product). But the combination of Git and GitHub is the most common setup, and it is what we will be using for all of QSPL.
+You can use Git without using GitHub. Other interfaces/platforms for Git exist, e.g., [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/product). But the combination of Git and GitHub is the most common setup, and it is what we will be discussing.
 
 In fact, since we will only be using Git through GitHub, we often tend to be sloppy with our language and not distinguish between the two. We might call it Git or GitHub, and possibly mean the other or both. Apologies in advance 😁. Mostly, we will refer to all of it as just GitHub. 
 
+## Why use Git/GitHub
 
 You want to use GitHub to avoid this:
 
@@ -54,11 +46,14 @@ You want to use GitHub to avoid this:
 
 *GitHub* gives you an organized way to track your projects. It is very well suited for collaborative work. Historically, version control was used for software development. It has since become broader and is now used for many types of projects, including data science projects. If you want to learn a bit more about Git/GitHub and why it is a great tool for data analysis, check out this [article by Jenny Bryan](https://peerj.com/preprints/3159/).
 
-# What to (not) use Git/GitHub for
+
+## What to (not) use Git/GitHub for
 
 GitHub is ideal if you have a project with (possibly many) smallish files, and most of those files are text files (such as R code, LaTeX, Quarto/Markdown, etc.) and different people work on different parts of the project.
 
 GitHub is less useful if you have a lot of non-text files (e.g. Word or PowerPoint) and different team members might want to edit the same document at the same time. In that instance, a solution like Google Docs, Word+Dropbox, Word+Onedrive, etc. might be better.
+
+
 
 GitHub also has a problem with large files. Anything above around 100MB can lead to very slow syncing and sometimes outright failure. Unfortunately, once you have a failed attempt to sync a large file, it can be quite tricky to fix the repository to work again. Therefore **keep large (\>100MB) files out of your GitHub repositories.** If you have to work with such files, try to reduce them first before placing into the GitHub repository. Or as alternative, place those files in another sync service (e.g. Dropbox, OneDrive, GoogleDrive) and load them from there.
 

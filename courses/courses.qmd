@@ -20,6 +20,8 @@ These courses are not mean to cover any of the tools in detail. They only provid
 
 * [A brief introduction to Quarto](/courses/course-landing-pages/fc2-intro-quarto.qmd)
 
+* [A brief introduction to AI tools](/courses/course-landing-pages/fc5-intro-ai.qmd)
+
 * [Creating an online portfolio](/courses/course-landing-pages/fc6-portfolio-creation.qmd)
 
 

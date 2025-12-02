@@ -39,7 +39,13 @@ As with the other courses, this is a very brief _getting started_ introduction. 
 ::: {.course-prerequisites}
 # Course Prerequisites
 
-* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+We assume you have the following tools up and running at the level covered in our other brief introduction courses:
+
+* [A brief Introduction to Positron course](fc1-intro-positron.qmd). 
+* [A brief Introduction to Git/GitHub course](fc3-intro-github.qmd).
+* [A brief Introduction to R course](fc4-intro-r.qmd).
+* [A brief Introduction to Quarto course](fc2-intro-quarto.qmd).
+<!-- * We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd) and [Brief Introduction to Julia course](fc5-intro-julia.qmd). -->
 
 :::
 
@@ -51,9 +57,8 @@ As with the other courses, this is a very brief _getting started_ introduction. 
 The course covers these topics (and more):
 
 - Introduction
-- Install and Setup
-- Basic Functionality 
-- Installing and using Packages
+- Setup of AI tools
+- Basic use
 - Further Resources
 :::
 
@@ -61,6 +66,6 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-[Click here to start this course.](/courses/fc4-intro-r/intro-r-overview.qmd)
+[Click here to start this course.](/courses/fc5-intro-ai/intro-ai-overview.qmd)
 
 :::

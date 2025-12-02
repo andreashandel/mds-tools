@@ -1,0 +1,104 @@
+---
+title: Positron Installation and Setup
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit covers the installation and setup of Positron. 
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+* Download and install the appropriate Positron build for your platform.
+* Get Positron running on your machine.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+## Installation
+
+Positron can be freely downloaded from [its website](https://positron.posit.co/download.html). Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).
+
+If you need to do use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.
+
+If you have choices during install for Positron to do certain things (e.g. get an 'Open with Positron' option in Windows Explorer), we recommend you choose to have all of those options enabled. Definitely don't de-select any pre-selected ones, unless you know what you are doing. 
+
+
+## Setup
+
+Once Positron is installed, you can open it. On first startup, Positron sets up several pre-installed extensions (we'll discuss extensions shortly). During that process, you might be asked several questions, such as if you want to allow connections to networks. You should basically approve all of them to ensure Positron will fully work.
+
+You might run again into administrative issues. If you get requests from your computer to log in as admin, do so or have your admin help you through this part as well. Things might still work even without some of these permissions, but it is better to have it fully set up and allow Positron access to everything it needs.
+
+Once all the initial start-up things are done, Positron is ready to go. You should see the main screen with several different areas (called panes or panels), and a menu bar on the top and another one on the left. We'll discuss the different parts of Positron shortly.
+
+You might see one or several red notification dots on some of the icons on the left, asking you to update things or log in. It is generally a good idea to do all that. We'll discuss some of that in a bit more detail in further units.
+
+
+## Updating Positron
+
+Positron should check for updates automatically when you open it. If you don't like automatic updates [you can turn it off](https://positron.posit.co/updating.html). If you want to check for updates manually, click the "Check for Updates" button in the menu bar under `Help`. Since you just installed it, there shouldn't be any updates.
+
+For now, just close Positron, and in the next unit, we'll re-open it and talk about extensions.
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We discussed how to install Positron and how to keep it updated. You should now be ready to use it.
+
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+* [Positron Get Started Guide](https://positron.posit.co/start.html) – official documentation
+
+:::
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r positrion-install-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("positron-install-setup-quiz-1.Rmd", "positron-install-setup-quiz-2.Rmd", "positron-install-setup-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-install-setup-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+* Read through the [getting started](https://positron.posit.co/start.html) section of the Positron website and make sure your computer is ready for the Positron installation.
+* If you want to learn more about Positron in general, watch the (somewhat long) [Introducing Positron video](https://youtu.be/8uRcB34Hhsw?si=qLlwgEJ5BE7OKoPT).  
+
+
+:::
+<!-- end unit-exercise div -->

@@ -6,9 +6,7 @@ subtitle: ""
 ::: {.course-overview}
 # Course Overview
 
-This short course provides a basic introduction to Git and GitHub.
-
-We are using Git/GitHub throughout QSPL and assume you are familiar with at least its basics. This course will provide you with the required knowledge to get started with Git/GitHub.
+This short course provides a basic introduction to Git and GitHub. The focus is on getting you set up so you can start using Git/GitHub. The information we provide is not meant to make you a Git/GitHub expert. You'll be a lot of 'learning as you go' once you start using these tools.
 
 :::
 
@@ -25,7 +23,10 @@ We are using Git/GitHub throughout QSPL and assume you are familiar with at leas
 ::: {.course-prerequisites}
 # Course Prerequisites
 
-No specific prior knowledge is required. We assume you have basic computing skills.
+We show how to use Git/GitHub with Positron. For that, you should be familiar with Positron at least at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+
+If you don't want to use Git/GitHub through Positron, you can skip that part of the course and still follow along with the rest.
+
 
 :::
 
@@ -35,12 +36,19 @@ No specific prior knowledge is required. We assume you have basic computing skil
 
 The course consists of these modules and units.
 
-
-## Module 1
+# Module 1
 
 - [Introduction to Git/GitHub](github-introduction/github-introduction.qmd)
 - [Installation and Setup](github-install-setup/github-install-setup.qmd)
-- [Basic Use](github-use/github-use.qmd)
+- [GitHub Desktop](github-desktop/github-desktop.qmd)
+- [Git/GitHub and Positron](github-positron/github-positron.qmd)
+- [Basic Use](github-positron/github-positron.qmd)
+
+
+# Module 2
+
+- [Commits and Branches](github-branches/github-branches.qmd)
+- [Forks and Pull Requests](github-forks/github-forks.qmd)
 - [Git/GitHub and confidentiality](github-confidentiality/github-confidentiality.qmd)
 - [Additional Topics](github-further-topics/github-further-topics.qmd)
 - [Further Resources](github-resources/github-resources.qmd)
