@@ -1,0 +1,27 @@
+Question
+========
+Which Positron pane is designed to show plots, HTML widgets, and rendered Quarto previews?
+
+Answerlist
+----------
+* The Viewer pane (bottom right)
+* The Activity Bar on the left
+* The Environment pane
+* The Terminal tab
+
+Solution
+========
+The Viewer pane displays visual output such as plots, HTML widgets, and internal Quarto previews.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-viewer-pane
+extype: schoice
+exsolution: 1000

@@ -1,0 +1,27 @@
+Question
+========
+Where do you browse and install Positron extensions?
+
+Answerlist
+----------
+* In the Extensions view from the Activity Bar (four-square icon)
+* From the Terminal by running `install.extensions()`
+* By editing the settings JSON file manually
+* From the Quarto preview pane
+
+Solution
+========
+Open the Extensions sidebar via the four-square icon on the left to browse, install, and update extensions.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-extension-install
+extype: schoice
+exsolution: 1000

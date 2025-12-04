@@ -7,10 +7,13 @@ output:
 ---
 
 
-This site consists of several small tutorials/courses. 
+The short courses/tutorials listed below are currently available.
 
 These courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.
 
+The courses are listed in the order in which the content builds on each other. Some of the later courses assume prior knowledge from earlier courses. However, each course is designed to be fairly self-contained, so if you already are familiar with some of the tools, you can focus on those courses that cover tools that are new to you.
+
+More details about each course can be found in the course-specific overview page.
 
 * [A brief introduction to Positron](/courses/course-landing-pages/fc1-intro-positron.qmd)
 
@@ -23,12 +26,3 @@ These courses are not mean to cover any of the tools in detail. They only provid
 * [A brief introduction to AI tools](/courses/course-landing-pages/fc5-intro-ai.qmd)
 
 * [Creating an online portfolio](/courses/course-landing-pages/fc6-portfolio-creation.qmd)
-
-
-
-## Course structure
-
-Each course focuses on a specific topic. While some courses assume prior knowledge from other courses, each is designed to be fairly self-contained, so you can focus on the courses most relevant to you.
-
-
-More details on the content for each course can be found in the course-specific overview pages.

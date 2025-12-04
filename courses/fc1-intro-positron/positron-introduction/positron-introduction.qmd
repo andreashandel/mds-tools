@@ -93,7 +93,7 @@ This unit explained what an IDE is, briefly introduced Positron and explained wh
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r positron-introduction-quiz}
 #| echo: false
 #| results: "asis"
 quizzes <- list("positron-introduction-quiz-1.Rmd", "positron-introduction-quiz-2.Rmd", "positron-introduction-quiz-3.Rmd")

@@ -88,7 +88,8 @@ Extensions are a way to add extra functionality to Positron. They are easy to in
 ```{r positron-extensions-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("positron-extensions-quiz-1.Rmd", "positron-extensions-quiz-2.Rmd", "positron-extensions-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-extensions-quiz')
 ```
 :::
 <!-- end unit-quiz div -->

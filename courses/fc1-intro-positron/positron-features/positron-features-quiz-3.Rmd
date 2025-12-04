@@ -1,0 +1,27 @@
+Question
+========
+What is the primary purpose of the first icon (file explorer) on the Activity Bar?
+
+Answerlist
+----------
+* Quickly open, create, and navigate project files
+* Display plots and HTML widgets
+* Show workspace variables and history
+* Configure extensions and their settings
+
+Solution
+========
+The file explorer view lets you browse and manage project files from the left Activity Bar.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-activity-bar
+extype: schoice
+exsolution: 1000

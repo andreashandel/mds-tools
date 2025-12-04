@@ -1,0 +1,27 @@
+Question
+========
+What is the typical way to update R, and what might you need to redo afterward?
+
+Answerlist
+----------
+* Install the new R version separately and be prepared to reinstall packages
+* Use an automatic in-app updater built into the R GUI
+* Wait for your operating system to push R updates through its app store
+* Delete the old R folder manually and hope packages stay intact
+
+Solution
+========
+Updating R usually means installing the new version alongside the old one; after upgrading you often need to reinstall packages for the new version.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: r-update-flow
+extype: schoice
+exsolution: 1000

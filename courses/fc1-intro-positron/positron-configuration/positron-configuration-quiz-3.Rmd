@@ -1,0 +1,27 @@
+Question
+========
+If you want the RStudio-style shortcut for toggling comments, how can you change it in Positron?
+
+Answerlist
+----------
+* Open Keyboard Shortcuts from the gear menu and edit the binding for the toggle comment command
+* Change your system keyboard layout
+* Modify the R script manually before running it
+* Install RStudio alongside Positron
+
+Solution
+========
+Use the Keyboard Shortcuts panel (gear icon) to edit the toggle comment shortcut to your preferred keys.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-keybindings
+extype: schoice
+exsolution: 1000

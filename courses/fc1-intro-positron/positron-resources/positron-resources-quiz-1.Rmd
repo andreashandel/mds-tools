@@ -1,0 +1,27 @@
+Question
+========
+If you cannot find Positron-specific guidance, what is a good fallback?
+
+Answerlist
+----------
+* Search for the equivalent VS Code tip and try it in Positron
+* Assume the feature does not exist
+* Reinstall Positron from scratch
+* Avoid using Positron until dedicated docs appear
+
+Solution
+========
+Because Positron is based on VS Code, solutions for VS Code often work and are worth trying.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-vscode-fallback
+extype: schoice
+exsolution: 1000

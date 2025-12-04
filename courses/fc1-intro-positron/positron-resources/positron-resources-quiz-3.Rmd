@@ -1,0 +1,27 @@
+Question
+========
+Given Positron is still evolving, what is one recommended way to keep learning and contribute?
+
+Answerlist
+----------
+* Follow the Positron blog/webinars and consider contributing improvements to the docs
+* Wait for a printed manual before using new features
+* Ignore updates until Positron leaves beta
+* Disable all online resources to avoid changes
+
+Solution
+========
+Staying current with blog tips, webinars, and even contributing documentation helps you learn as Positron evolves.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-keep-learning
+extype: schoice
+exsolution: 1000

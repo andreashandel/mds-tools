@@ -1,3 +1,8 @@
+# ToDo
+
+- Finish Positron course
+
+
 # Notes
 
 - I am not using renv for package management since it's taking too long.

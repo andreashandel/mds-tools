@@ -1,0 +1,27 @@
+Question
+========
+What is the quickest built-in way to browse and switch Positron color themes?
+
+Answerlist
+----------
+* Click the gear icon, then Themes > Color Theme
+* Install a third-party theme manager extension
+* Edit the settings JSON file by hand only
+* Themes cannot be changed in Positron
+
+Solution
+========
+Themes are available directly from the gear menu via Themes > Color Theme.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-themes
+extype: schoice
+exsolution: 1000

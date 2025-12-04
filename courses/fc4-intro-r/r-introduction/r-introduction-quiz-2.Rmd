@@ -1,0 +1,27 @@
+Question
+========
+Which of the following is highlighted as a strength of R?
+
+Answerlist
+----------
+* It is open source, cross-platform, and backed by a rich package ecosystem
+* It is proprietary and limited to one operating system
+* It cannot produce graphics without third-party software
+* It has no community support for data analysis
+
+Solution
+========
+R is free, runs across platforms, and offers many packages and community support, making it strong for data analysis and graphics.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: r-strengths
+extype: schoice
+exsolution: 1000

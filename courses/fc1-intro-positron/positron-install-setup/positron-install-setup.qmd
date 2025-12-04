@@ -83,7 +83,7 @@ We discussed how to install Positron and how to keep it updated. You should now 
 ::: {.unit-quiz}
 # Test yourself
 
-```{r positrion-install-quiz}
+```{r positron-install-quiz}
 #| echo: false
 #| results: "asis"
 quizzes <- list("positron-install-setup-quiz-1.Rmd", "positron-install-setup-quiz-2.Rmd", "positron-install-setup-quiz-3.Rmd")

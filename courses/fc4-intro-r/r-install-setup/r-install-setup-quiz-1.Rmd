@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended source for downloading the R installer to ensure you get the correct version?
+
+Answerlist
+----------
+* The official R Project website (CRAN link)
+* Any random download site that lists R
+* A package manager from another programming language
+* It comes preinstalled so no download is needed
+
+Solution
+========
+Use the official R website (which links to CRAN) to download the installer so you get an up-to-date, unmodified version.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: r-install-source
+extype: schoice
+exsolution: 1000

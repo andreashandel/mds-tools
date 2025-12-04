@@ -30,7 +30,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 -->
 <!-- end unit-video div -->
 
-::: {{.unit-reading}}
+::: {.unit-reading}
 # Reading
 
 ## Introduction
@@ -81,18 +81,19 @@ Well, this whole unit is about further resources, so follow the links mentioned 
 :::
 <!-- end unit-resources div -->
 
-::: {{.unit-quiz}}
+::: {.unit-quiz}
 # Test yourself
 
-```{{r qsp-quiz}}
+```{r positron-resources-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("positron-resources-quiz-1.Rmd", "positron-resources-quiz-2.Rmd", "positron-resources-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-resources-quiz')
 ```
 :::
 <!-- end unit-quiz div -->
 
-::: {{.unit-exercise}}
+::: {.unit-exercise}
 # Practice
 
 * Challenge yourself to use the keyboard for the next hour without touching the mouse inside Positron.

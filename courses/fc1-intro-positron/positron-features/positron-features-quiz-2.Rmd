@@ -1,0 +1,27 @@
+Question
+========
+How do you open the command palette to quickly run commands in Positron?
+
+Answerlist
+----------
+* Click the search box at the top, choose “Show and Run Commands,” and start typing
+* Open the Terminal tab and type `palette`
+* Right-click the Activity Bar and select “Command Mode”
+* The command palette is only available in VS Code, not Positron
+
+Solution
+========
+Use the search box at the top of the window, pick “Show and Run Commands,” and type the command you want.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-command-palette
+extype: schoice
+exsolution: 1000

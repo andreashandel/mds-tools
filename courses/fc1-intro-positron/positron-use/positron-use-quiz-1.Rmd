@@ -1,0 +1,27 @@
+Question
+========
+What happens when you click the Run (triangle) button on an R script in Positron?
+
+Answerlist
+----------
+* The script is sourced in the R console and outputs (like plots) appear in the lower panes
+* The file is opened in an external R GUI instead
+* Only the first line is executed and the rest ignored
+* The script is compiled without running any code
+
+Solution
+========
+Pressing Run sources the script in Positron, showing console output and plots in the integrated panes.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-run-script
+extype: schoice
+exsolution: 1000

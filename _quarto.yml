@@ -65,8 +65,8 @@ website:
     left:
       - text: "Courses"
         file: courses/courses.qmd
-      - text: "About"
-        file: pages/about.qmd
+      # - text: "About"
+      #   file: pages/about.qmd
   sidebar:
     - id: fc1              # sidebar shown on all files it lists
       title: "Introduction to Positron"
@@ -74,7 +74,7 @@ website:
       alignment: left
       collapse-level: 2
       contents: 
-        - courses/fc1-intro-positron/intro-positron-overview.qmd
+        - courses/fc1-intro-positron/intro-positron-toc.qmd
         - courses/fc1-intro-positron/positron-introduction/positron-introduction.qmd
         - courses/fc1-intro-positron/positron-install-setup/positron-install-setup.qmd
         - courses/fc1-intro-positron/positron-extensions/positron-extensions.qmd

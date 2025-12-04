@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended approach to adding extensions to Positron?
+
+Answerlist
+----------
+* Install selectively, favoring well-supported extensions to avoid slowing or breaking Positron
+* Install every available extension to cover all use cases
+* Avoid updates because extensions never need them
+* Disable pre-installed extensions before adding any new ones
+
+Solution
+========
+Add extensions cautiously—start with well-supported ones and avoid unnecessary installs to keep Positron stable and fast.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-extension-strategy
+extype: schoice
+exsolution: 1000

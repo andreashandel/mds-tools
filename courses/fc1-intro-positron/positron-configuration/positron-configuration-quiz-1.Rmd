@@ -1,0 +1,27 @@
+Question
+========
+How do you scope a Positron setting so it applies only to the current project instead of globally?
+
+Answerlist
+----------
+* Open Settings and use the Workspace tab before changing the option
+* Edit the setting only after restarting Positron
+* Install an extension to override global defaults
+* Use the User tab to make it project specific
+
+Solution
+========
+Select the Workspace tab at the top of the Settings panel; changes there apply only to the current project.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-config-scope
+extype: schoice
+exsolution: 1000

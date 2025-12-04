@@ -95,10 +95,11 @@ The Positron IDE consists of different panes that give you access to different p
 ::: {.unit-quiz}
 # Test yourself
 
-```{r positron-extensions-quiz}
+```{r positron-features-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("positron-features-quiz-1.Rmd", "positron-features-quiz-2.Rmd", "positron-features-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-features-quiz')
 ```
 :::
 <!-- end unit-quiz div -->

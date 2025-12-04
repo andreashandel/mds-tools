@@ -94,10 +94,11 @@ You can customize Positron to fit your workflow and preferences. You can change 
 ::: {.unit-quiz}
 # Test yourself
 
-```{{r qsp-quiz}}
+```{r positron-configuration-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("positron-configuration-quiz-1.Rmd", "positron-configuration-quiz-2.Rmd", "positron-configuration-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-configuration-quiz')
 ```
 :::
 <!-- end unit-quiz div -->

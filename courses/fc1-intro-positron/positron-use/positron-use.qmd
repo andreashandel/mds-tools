@@ -29,7 +29,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 -->
 <!-- end unit-video div -->
 
-::: {{.unit-reading}}
+::: {.unit-reading}
 # Reading
 
 ## Introduction
@@ -109,18 +109,19 @@ You saw two examples illustrating the basics of working with Positron. There is 
 :::
 <!-- end unit-resources div -->
 
-::: {{.unit-quiz}}
+::: {.unit-quiz}
 # Test yourself
 
-```{{r qsp-quiz}}
+```{r positron-use-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("positron-use-quiz-1.Rmd", "positron-use-quiz-2.Rmd", "positron-use-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-use-quiz')
 ```
 :::
 <!-- end unit-quiz div -->
 
-::: {{.unit-exercise}}
+::: {.unit-exercise}
 # Practice
 
 * 

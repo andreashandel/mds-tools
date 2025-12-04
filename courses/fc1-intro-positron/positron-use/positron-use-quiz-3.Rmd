@@ -1,0 +1,27 @@
+Question
+========
+After editing a Quarto `.qmd` file in Positron, how do you view the rendered document?
+
+Answerlist
+----------
+* Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings
+* Restart Positron so Quarto auto-renders on launch
+* Save the file and open it manually in a separate word processor
+* Quarto documents cannot be previewed from within Positron
+
+Solution
+========
+Use the Preview button to render; the output appears in the integrated viewer or an external browser based on the Quarto extension setting.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-quarto-preview
+extype: schoice
+exsolution: 1000

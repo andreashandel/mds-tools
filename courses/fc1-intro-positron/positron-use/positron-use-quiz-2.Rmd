@@ -1,0 +1,27 @@
+Question
+========
+How can you run code line by line from the editor in Positron?
+
+Answerlist
+----------
+* Place the cursor on a line and press Ctrl/Cmd + Enter to execute it
+* Only the Run button can execute code
+* You must copy code into the Terminal manually
+* Line-by-line execution is not supported
+
+Solution
+========
+Use Ctrl/Cmd + Enter to execute the current line (and step through subsequent lines) directly from the editor.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-line-run
+extype: schoice
+exsolution: 1000

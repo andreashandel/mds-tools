@@ -1,0 +1,27 @@
+Question
+========
+What do the `>` and `!` prefixes do when typing in the Positron command palette?
+
+Answerlist
+----------
+* `>` filters settings; `!` searches extension commands
+* `>` opens the Terminal; `!` restarts Positron
+* `>` installs extensions; `!` uninstalls them
+* `>` shows files; `!` shows plots
+
+Solution
+========
+Typing `>` limits results to settings, while `!` searches extension commands in the palette.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-command-prefixes
+extype: schoice
+exsolution: 1000

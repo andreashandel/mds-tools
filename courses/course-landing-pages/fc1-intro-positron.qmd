@@ -6,7 +6,7 @@ subtitle: ""
 ::: {.course-overview}
 # Course Overview
 
-This course provides a basic introduction to the Positron Editor and IDE.
+This course provides an introduction to the Positron editor and Integrated Development Environment (IDE).
 
 :::
 
@@ -64,6 +64,6 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-[Click here to start this course.](/courses/fc1-intro-positron/intro-positron-overview.qmd)
+[Click here to start this course.](/courses/fc1-intro-positron/intro-positron-toc.qmd)
 
 :::

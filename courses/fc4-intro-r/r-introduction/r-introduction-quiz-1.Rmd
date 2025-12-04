@@ -1,0 +1,27 @@
+Question
+========
+What is R primarily designed for?
+
+Answerlist
+----------
+* Statistical computing and graphics
+* Real-time 3D game development
+* Low-level hardware driver programming
+* Mobile app development only
+
+Solution
+========
+R was built for statistical computing and graphics, which is why it is widely used for data analysis and visualization.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: r-purpose
+extype: schoice
+exsolution: 1000
