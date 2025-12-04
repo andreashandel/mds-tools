@@ -137,10 +137,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../pages/about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -170,8 +166,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/intro-positron-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Overview: A brief introduction to Positron</span></a>
+  <a href="../../../courses/fc1-intro-positron/intro-positron-toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOC: A brief introduction to Positron</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -287,7 +283,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 :::
 -->
 <!-- end unit-video div -->
-<section id="reading" class="level1 {{.unit-reading}}">
+<section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
@@ -337,16 +333,62 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Further Resources</h1>
 </section>
 <!-- end unit-resources div -->
-<section id="test-yourself" class="level1 {{.unit-quiz}}">
+<section id="test-yourself" class="level1 unit-quiz">
 <h1>Test yourself</h1>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r qsp-quiz}</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>exams2forms<span class="sc">::</span><span class="fu">exams2forms</span>(<span class="at">file =</span> <span class="st">"../../../assets/quizzes/dummy-quiz.Rmd"</span>, <span class="at">title =</span> <span class="st">'quiz-title'</span>, <span class="at">browse =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What happens when you click the Run (triangle) button on an R script in Positron?</p>
+<div id="webex-2603340b2db4bca42b92d503bfab41fd" class="webex-radiogroup" data-answer="aQccAx8EHFJv">
+<label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>The script is compiled without running any code</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Pressing Run sources the script in Positron, showing console output and plots in the integrated panes.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>How can you run code line by line from the editor in Positron?</p>
+<div id="webex-0f37dafe00d682caecd454adccd34607" class="webex-radiogroup" data-answer="a1cfB0hRSlVt">
+<label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>Line-by-line execution is not supported</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Use Ctrl/Cmd + Enter to execute the current line (and step through subsequent lines) directly from the editor.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>After editing a Quarto <code>.qmd</code> file in Positron, how do you view the rendered document?</p>
+<div id="webex-5e729de2eb2adfd07734b6bcc0966d4b" class="webex-radiogroup" data-answer="blQbAhVUSQI4">
+<label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label><label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Quarto documents cannot be previewed from within Positron</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Use the Preview button to render; the output appears in the integrated viewer or an external browser based on the Quarto extension setting.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
 </section>
 <!-- end unit-quiz div -->
-<section id="practice" class="level1 {{.unit-exercise}}">
+<section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
 <li></li>

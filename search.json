@@ -539,25 +539,14 @@
     "text": "Summary\nExtensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible."
   },
   {
-    "objectID": "courses/fc1-intro-positron/intro-positron-overview.html",
-    "href": "courses/fc1-intro-positron/intro-positron-overview.html",
-    "title": "Course Overview: A brief introduction to Positron",
+    "objectID": "courses/fc1-intro-positron/intro-positron-toc.html",
+    "href": "courses/fc1-intro-positron/intro-positron-toc.html",
+    "title": "TOC: A brief introduction to Positron",
     "section": "",
-    "text": "This short course provides a basic introduction to the Positron editor and Integrated Development Environment (IDE).\nWe are using Positron throughout QSPL. This short course provides you with the basics to be able to go through our main courses.\nIf you want to use an alternative editor (e.g., RStudio, VS Code, Cursor), you can certainly do so. You will just have to be able to implement our instructions in the editor of your choice.",
+    "text": "Course Content\nThe course consists of these units.\n\nIntroduction to IDEs and Positron\nPositron Installation and Setup\nPositron Extensions\nBasic Positron Features\nConfiguring Positron\nBasic Positron Use\nFurther Positron Resources",
     "crumbs": [
       "Courses",
-      "Course Overview: A brief introduction to Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/intro-positron-overview.html#module-1",
-    "href": "courses/fc1-intro-positron/intro-positron-overview.html#module-1",
-    "title": "Course Overview: A brief introduction to Positron",
-    "section": "Module 1",
-    "text": "Module 1\n\nIntroduction to IDEs and Positron\nPositron Installation and Setup\nPositron Extensions\nBasic Positron Features\nConfiguring Positron\nBasic Positron Use\nFurther Positron Resources",
-    "crumbs": [
-      "Courses",
-      "Course Overview: A brief introduction to Positron"
+      "TOC: A brief introduction to Positron"
     ]
   },
   {
@@ -586,7 +575,7 @@
     "href": "courses/course-landing-pages/fc1-intro-positron.html",
     "title": "A brief introduction to Positron",
     "section": "",
-    "text": "Course Overview\nThis course provides a basic introduction to the Positron Editor and IDE.\n\n\nCourse Goals\n\nUnderstand the benefits of using an IDE.\nSuccessfully install Positron.\nBe familiar with the basic features of Positron.\nUnderstand the idea and how to install extensions.\nLearn about configuration options.\n\n\n\n\nCourse Prerequisites\nNo specific prior knowledge is required. We assume you have basic computing skills.\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nUsing Extensions\nConfiguration\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
+    "text": "Course Overview\nThis course provides an introduction to the Positron editor and Integrated Development Environment (IDE).\n\n\nCourse Goals\n\nUnderstand the benefits of using an IDE.\nSuccessfully install Positron.\nBe familiar with the basic features of Positron.\nUnderstand the idea and how to install extensions.\nLearn about configuration options.\n\n\n\n\nCourse Prerequisites\nNo specific prior knowledge is required. We assume you have basic computing skills.\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nUsing Extensions\nConfiguration\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
   },
   {
     "objectID": "courses/course-landing-pages/fc3-intro-github.html",
@@ -607,14 +596,7 @@
     "href": "courses/courses.html",
     "title": "Courses",
     "section": "",
-    "text": "This site consists of several small tutorials/courses.\nThese courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course."
-  },
-  {
-    "objectID": "courses/courses.html#course-structure",
-    "href": "courses/courses.html#course-structure",
-    "title": "Courses",
-    "section": "Course structure",
-    "text": "Course structure\nEach course focuses on a specific topic. While some courses assume prior knowledge from other courses, each is designed to be fairly self-contained, so you can focus on the courses most relevant to you.\nMore details on the content for each course can be found in the course-specific overview pages."
+    "text": "The short courses/tutorials listed below are currently available.\nThese courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.\nThe courses are listed in the order in which the content builds on each other. Some of the later courses assume prior knowledge from earlier courses. However, each course is designed to be fairly self-contained, so if you already are familiar with some of the tools, you can focus on those courses that cover tools that are new to you.\nMore details about each course can be found in the course-specific overview page.\n\nA brief introduction to Positron\nA brief introduction to Git/GitHub\nA brief introduction to R\nA brief introduction to Quarto\nA brief introduction to AI tools\nCreating an online portfolio"
   },
   {
     "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html",
@@ -1171,21 +1153,7 @@
     "href": "courses/fc4-intro-r/intro-r-overview.html",
     "title": "A brief introduction to R",
     "section": "",
-    "text": "This course provides a very brief introduction to the R programming language. It is not meant to teach Julia coding, only to get you started with using Julia."
-  },
-  {
-    "objectID": "courses/fc4-intro-r/intro-r-overview.html#module-1-basics",
-    "href": "courses/fc4-intro-r/intro-r-overview.html#module-1-basics",
-    "title": "A brief introduction to R",
-    "section": "Module 1: Basics",
-    "text": "Module 1: Basics"
-  },
-  {
-    "objectID": "courses/fc4-intro-r/intro-r-overview.html#module-2",
-    "href": "courses/fc4-intro-r/intro-r-overview.html#module-2",
-    "title": "A brief introduction to R",
-    "section": "Module 2:",
-    "text": "Module 2:\n- Julia Capstone project"
+    "text": "Course Overview\nThis course provides a very brief introduction to the R programming language. It is not meant to teach R coding, only to get you started with using R.\n\n\nCourse Goals\n\nKnow what R is.\nHave R successfully installed and set up.\nBe able to run R code.\n\n\n\nCourse Content\nThe course consists of these modules and units.\n\nOverview of R\nR Install and Setup\nUsing R through Positron\nBasics of Coding in R\nFurther Resources"
   },
   {
     "objectID": "courses/fc4-intro-r/r-introduction/r-introduction.html",
@@ -1227,6 +1195,6 @@
     "href": "index.html",
     "title": "MDS Tools",
     "section": "",
-    "text": "Overview\nThis website contains several mini-courses/tutorial which cover tools for modeling and data science. The topics we cover are based on the tools we regularly use and teach.\n\nThe About page give a brief overview of what this site is trying to be all about (and what it doesn’t do).\nThe main content comes in the form of courses, which are further divided into modules and units. Learn more about this on the courses site."
+    "text": "Overview\nThis website contains several mini-courses/tutorials which cover tools for modeling and data science. The topics we cover are based on the tools we regularly use and teach.\nYou can find all available courses on the courses page.\n\n\nAuthors\nThis website is currently run by Andreas and Brian. We are two academic scientists, researchers and teachers."
   }
 ]

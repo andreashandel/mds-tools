@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -137,10 +102,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../pages/about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -170,8 +131,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/intro-positron-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Overview: A brief introduction to Positron</span></a>
+  <a href="../../../courses/fc1-intro-positron/intro-positron-toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOC: A brief introduction to Positron</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -336,11 +297,57 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
 <h1>Test yourself</h1>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r qsp-quiz}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>exams2forms<span class="sc">::</span><span class="fu">exams2forms</span>(<span class="at">file =</span> <span class="st">"../../../assets/quizzes/dummy-quiz.Rmd"</span>, <span class="at">title =</span> <span class="st">'quiz-title'</span>, <span class="at">browse =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>How do you scope a Positron setting so it applies only to the current project instead of globally?</p>
+<div id="webex-9eb184472238087c545c0ff3f91a3b47" class="webex-radiogroup" data-answer="YlROARQEGAdv">
+<label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Open Settings and use the Workspace tab before changing the option</span></label><label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Edit the setting only after restarting Positron</span></label><label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Install an extension to override global defaults</span></label><label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Use the User tab to make it project specific</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Select the Workspace tab at the top of the Settings panel; changes there apply only to the current project.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the quickest built-in way to browse and switch Positron color themes?</p>
+<div id="webex-2236a42c797c28505e0981e84dccf083" class="webex-radiogroup" data-answer="aQMfBk0EHlNq">
+<label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Click the gear icon, then Themes &gt; Color Theme</span></label><label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Install a third-party theme manager extension</span></label><label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Edit the settings JSON file by hand only</span></label><label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Themes cannot be changed in Positron</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Themes are available directly from the gear menu via Themes &gt; Color Theme.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>If you want the RStudio-style shortcut for toggling comments, how can you change it in Positron?</p>
+<div id="webex-2de279f0975b60996cab15ccecc22caf" class="webex-radiogroup" data-answer="aVVJAhsJSgBk">
+<label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Open Keyboard Shortcuts from the gear menu and edit the binding for the toggle comment command</span></label><label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Change your system keyboard layout</span></label><label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Modify the R script manually before running it</span></label><label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Install RStudio alongside Positron</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Use the Keyboard Shortcuts panel (gear icon) to edit the toggle comment shortcut to your preferred keys.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
 </section>
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">

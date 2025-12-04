@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -136,10 +101,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../pages/about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -169,8 +130,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/intro-positron-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Overview: A brief introduction to Positron</span></a>
+  <a href="../../../courses/fc1-intro-positron/intro-positron-toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOC: A brief introduction to Positron</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -287,7 +248,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 :::
 -->
 <!-- end unit-video div -->
-<section id="reading" class="level1 {{.unit-reading}}">
+<section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
@@ -320,16 +281,62 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <p>Well, this whole unit is about further resources, so follow the links mentioned above 😁.</p>
 </section>
 <!-- end unit-resources div -->
-<section id="test-yourself" class="level1 {{.unit-quiz}}">
+<section id="test-yourself" class="level1 unit-quiz">
 <h1>Test yourself</h1>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r qsp-quiz}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>exams2forms<span class="sc">::</span><span class="fu">exams2forms</span>(<span class="at">file =</span> <span class="st">"../../../assets/quizzes/dummy-quiz.Rmd"</span>, <span class="at">title =</span> <span class="st">'quiz-title'</span>, <span class="at">browse =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>If you cannot find Positron-specific guidance, what is a good fallback?</p>
+<div id="webex-bc2d5122fc66b56b044e217c1acf289d" class="webex-radiogroup" data-answer="OVIeVBkBHgI7">
+<label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Search for the equivalent VS Code tip and try it in Positron</span></label><label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Assume the feature does not exist</span></label><label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Reinstall Positron from scratch</span></label><label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Avoid using Positron until dedicated docs appear</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Because Positron is based on VS Code, solutions for VS Code often work and are worth trying.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What do the <code>&gt;</code> and <code>!</code> prefixes do when typing in the Positron command palette?</p>
+<div id="webex-cb15651f93beff4651a469f951a3f296" class="webex-radiogroup" data-answer="OFMdBRoFHVZk">
+<label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> filters settings; <code>!</code> searches extension commands</span></label><label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> opens the Terminal; <code>!</code> restarts Positron</span></label><label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> installs extensions; <code>!</code> uninstalls them</span></label><label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> shows files; <code>!</code> shows plots</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Typing <code>&gt;</code> limits results to settings, while <code>!</code> searches extension commands in the palette.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Given Positron is still evolving, what is one recommended way to keep learning and contribute?</p>
+<div id="webex-1329dde485c13f28c82a0ebeec93604d" class="webex-radiogroup" data-answer="agIeCUhUSQRl">
+<label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Follow the Positron blog/webinars and consider contributing improvements to the docs</span></label><label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Wait for a printed manual before using new features</span></label><label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Ignore updates until Positron leaves beta</span></label><label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Disable all online resources to avoid changes</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Staying current with blog tips, webinars, and even contributing documentation helps you learn as Positron evolves.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
 </section>
 <!-- end unit-quiz div -->
-<section id="practice" class="level1 {{.unit-exercise}}">
+<section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
 <li>Challenge yourself to use the keyboard for the next hour without touching the mouse inside Positron.</li>
