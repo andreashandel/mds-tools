@@ -8,7 +8,7 @@
 
 <meta name="description" content="Short introductory courses that cover some modeling and data science tools.">
 
-<title>Positron Extensions – Modeling and Data Science Tools</title>
+<title>Quarto and Positron – Modeling and Data Science Tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc1-intro-positron/positron-features/positron-features.html" rel="next">
-<link href="../../../courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -79,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../assets/exams2forms-webex.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -108,79 +141,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc1-intro-positron/positron-extensions/positron-extensions.html">Positron Extensions</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/intro-positron-toc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TOC: A brief introduction to Positron</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-introduction/positron-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to IDEs and Positron</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Positron Installation and Setup</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-extensions/positron-extensions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Positron Extensions</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-features/positron-features.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Basic Positron Features</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-configuration/positron-configuration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Configuring Positron</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-use/positron-use.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Basic Positron Use</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc1-intro-positron/positron-resources/positron-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Further Positron Resources</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -191,16 +155,21 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#managing-extensions" id="toc-managing-extensions" class="nav-link" data-scroll-target="#managing-extensions">Managing Extensions</a></li>
-  <li><a href="#getting-extensions" id="toc-getting-extensions" class="nav-link" data-scroll-target="#getting-extensions">Getting Extensions</a></li>
-  <li><a href="#configuring-extensions" id="toc-configuring-extensions" class="nav-link" data-scroll-target="#configuring-extensions">Configuring Extensions</a></li>
-  <li><a href="#using-extensions" id="toc-using-extensions" class="nav-link" data-scroll-target="#using-extensions">Using Extensions</a></li>
+  <li><a href="#positron-and-quarto-integration" id="toc-positron-and-quarto-integration" class="nav-link" data-scroll-target="#positron-and-quarto-integration">Positron and Quarto Integration</a></li>
+  <li><a href="#working-with-.qmd-files-in-positron" id="toc-working-with-.qmd-files-in-positron" class="nav-link" data-scroll-target="#working-with-.qmd-files-in-positron">Working with <code>.qmd</code> Files in Positron</a></li>
+  <li><a href="#rendering-documents" id="toc-rendering-documents" class="nav-link" data-scroll-target="#rendering-documents">Rendering Documents</a></li>
+  <li><a href="#live-preview-for-html-documents" id="toc-live-preview-for-html-documents" class="nav-link" data-scroll-target="#live-preview-for-html-documents">Live Preview for HTML Documents</a></li>
+  <li><a href="#customizing-quarto-settings-in-positron" id="toc-customizing-quarto-settings-in-positron" class="nav-link" data-scroll-target="#customizing-quarto-settings-in-positron">Customizing Quarto Settings in Positron</a></li>
+  <li><a href="#debugging-and-troubleshooting" id="toc-debugging-and-troubleshooting" class="nav-link" data-scroll-target="#debugging-and-troubleshooting">Debugging and Troubleshooting</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a>
+  <ul class="collapse">
+  <li><a href="#practice-exercise" id="toc-practice-exercise" class="nav-link" data-scroll-target="#practice-exercise">Practice Exercise</a></li>
+  <li><a href="#substantial-exercise" id="toc-substantial-exercise" class="nav-link" data-scroll-target="#substantial-exercise">Substantial Exercise</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -209,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Positron Extensions</h1>
+<h1 class="title">Quarto and Positron</h1>
 </div>
 
 
@@ -228,14 +197,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>This unit discusses what Positron extensions are, and how to install and use them.</p>
+<p>This unit explains how to effectively use Quarto within the Positron IDE. Leveraging your existing knowledge of Positron, you will explore Quarto-specific features, workflows, and debugging practices within the IDE environment.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
+<p>By the end of this unit, you will:</p>
 <ul>
-<li>Be familiar with Positron extensions.</li>
-<li>Know how to install and use extensions.</li>
+<li>Efficiently create, edit, and render Quarto documents using Positron.</li>
+<li>Customize and optimize your Quarto workflow within Positron.</li>
+<li>Understand and troubleshoot common issues in Positron with Quarto documents.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -243,54 +214,84 @@ ul.task-list li input[type="checkbox"] {
 ::: {.unit-video}
 # Video, slides and audio transcript
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-:::
+::: 
 -->
 <!-- end unit-video div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In many programming languages, a lot of extra functionality comes from libraries or packages. In editors like Positron (and VS Code and others), the equivalent of packages are <em>extensions</em> (another term sometimes used is <em>plugins</em>).</p>
+<section id="positron-and-quarto-integration" class="level2">
+<h2 class="anchored" data-anchor-id="positron-and-quarto-integration">Positron and Quarto Integration</h2>
+<p>Positron is an intuitive, cross-platform IDE ideal for data science tasks. Due to your familiarity with Positron, this section will focus specifically on utilizing Positron’s built-in features to streamline your Quarto workflow.</p>
 </section>
-<section id="managing-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="managing-extensions">Managing Extensions</h2>
-<p>Positron comes with a number of extensions already installed. To see and manage them, open the Extensions view, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with the top right being tilted). You’ll then see a list of extensions.</p>
-<p>By default, you see a list of installed extensions. If you just installed Positron, some extensions might need updating. Go ahead and update them. Some might need a restart of the extension (occasionally, you might have to fully restart Positron).</p>
-<p>Extensions can be turned on and off. Enabled extensions are shown normally. Those that are installed but disabled are grayed out. It’s generally safe to disable extensions you don’t need. Just click on the gear icon next to the extension name, then click on ‘Disable’. You can always re-enable it later.</p>
-<p>Enabling or disabling extensions can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don’t want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on ‘Disable’ (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don’t want AI to operate on. You can turn the AI off for that project/workspace.</p>
-<p>Finally, if you decide you don’t like an extension at all, just click on it completely uninstall it.</p>
+<section id="working-with-.qmd-files-in-positron" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-.qmd-files-in-positron">Working with <code>.qmd</code> Files in Positron</h2>
+<p>Opening a <code>.qmd</code> file in Positron immediately:</p>
+<ul>
+<li>Activates syntax highlighting for YAML headers, Markdown text, and embedded code chunks (R, Python, Julia, Bash).</li>
+<li>Opens a live <strong>Preview Pane</strong>, refreshing automatically upon file save.</li>
+<li>Provides a convenient <strong>Render Button</strong> to execute <code>quarto render</code> without leaving the IDE.</li>
+</ul>
 </section>
-<section id="getting-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="getting-extensions">Getting Extensions</h2>
-<p>You can install more extensions to get extra functionality. Getting extensions is easy. Let’s practice and install an additional extension. First, click on ‘File’ -&gt; ‘Open File’ and open some <code>CSV</code> file on your computer. If you don’t have one readily available, ask your favorite AI to make you one, e.g.&nbsp;with a promt like <em>“Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file.”</em></p>
-<p>The file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let’s say we don’t want to have it pre-formmatted by Positron. Click on the ‘Open as plain text file’ button on the top. This should open the CSV file as simple text, you’ll see entries separated by commas. That’s ok, but a bit hard to read. So let’s improve this with an extension.</p>
-<p>Go to the Extensions sidebar and search for ‘Rainbow CSV’. Click on the ‘Install’ button (trust the publisher). Now go back to your open CSV file. You should now see each column in a different color, courtesy of this new extension. This makes CSV files easier to read.</p>
-<p>This was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you might want in the future, based on your specific needs.</p>
-<p>Recall that Positron is based on VS Code. To learn a bit more about Positron extensions, and how they do and don’t differ from VS Code extensions, check out the <a href="https://positron.posit.co/extensions.html">Positron extensions page</a> on the Positron documentation website.</p>
+<section id="rendering-documents" class="level2">
+<h2 class="anchored" data-anchor-id="rendering-documents">Rendering Documents</h2>
+<p>Rendering your document is straightforward:</p>
+<ul>
+<li>Click the <strong>Render</strong> button or use the shortcut <kbd>Ctrl + Shift + K</kbd>.</li>
+<li>Positron executes the rendering command (e.g., <code>quarto render</code>) and displays any output messages or warnings in the integrated terminal.</li>
+</ul>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> html</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The rendered document appears directly within Positron, allowing immediate inspection.</p>
 </section>
-<section id="configuring-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="configuring-extensions">Configuring Extensions</h2>
-<p>Many extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then in the title area of the extension, next to <code>Auto Update</code>, click on the gear icon and go to <code>Settings</code>. For instance if you do that for the <code>Quarto</code> extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance ‘Quarto &gt; Render &gt; Preview Type’. It’s by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to ‘external’. If you don’t know yet what Quarto is and what rendering and preview means, you will soon once you go through our <em>Brief Introduction to Quarto</em> course 😁.</p>
+<section id="live-preview-for-html-documents" class="level2">
+<h2 class="anchored" data-anchor-id="live-preview-for-html-documents">Live Preview for HTML Documents</h2>
+<p>Positron supports live preview for HTML outputs through a built-in websocket server. This enables instant feedback on your edits without the need for manual rendering, providing a smooth, interactive authoring experience.</p>
 </section>
-<section id="using-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="using-extensions">Using Extensions</h2>
-<p>Like packages/libraries in R or Python or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.</p>
+<section id="customizing-quarto-settings-in-positron" class="level2">
+<h2 class="anchored" data-anchor-id="customizing-quarto-settings-in-positron">Customizing Quarto Settings in Positron</h2>
+<p>Access Quarto customization via:</p>
+<p><strong>Settings › Build Tools › Quarto</strong></p>
+<p>Here, you can configure:</p>
+<ul>
+<li>Default output formats (useful when the YAML header doesn’t specify <code>format:</code> explicitly).</li>
+<li>“Render on Save” behavior for automatic document updates.</li>
+<li>Real-time validation settings for specific programming languages.</li>
+</ul>
+<p>These configurations are saved per project, facilitating consistency across team environments.</p>
+</section>
+<section id="debugging-and-troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="debugging-and-troubleshooting">Debugging and Troubleshooting</h2>
+<p>If you encounter rendering issues, follow these steps:</p>
+<ol type="1">
+<li>Check the <strong>Terminal</strong> pane for the exact command executed by Positron.</li>
+<li>Manually execute the command in your terminal to identify detailed error messages.</li>
+<li>Run <code>quarto check</code> to confirm that all necessary dependencies and language engines are correctly installed.</li>
+</ol>
+<p>This systematic approach simplifies the troubleshooting process, ensuring minimal disruption to your workflow.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>Extensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible.</p>
+<p>In this unit, you learned to:</p>
+<ul>
+<li>Use Positron IDE efficiently to manage Quarto documents.</li>
+<li>Customize rendering and preview settings specifically for Quarto.</li>
+<li>Debug common issues encountered when rendering Quarto documents in Positron.</li>
+</ul>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li><a href="https://positron.posit.co/extension-development.html">Positron extension development guide</a> - this is advanced and it’s likely you’ll never need or want to develop your own extension, but it’s good to know that you could.</li>
+<li><a href="https://posit.co/docs/">Positron Documentation</a></li>
+<li><a href="https://quarto.org/docs/tools/">Quarto IDE Integration</a></li>
+<li><a href="https://community.posit.co/c/quarto/59">Posit Community Discussions</a></li>
+<li><a href="https://quarto.org/docs/tools/debugging.html">Debugging Quarto in IDEs</a></li>
 </ul>
 </section>
 <!-- end unit-resources div -->
@@ -298,51 +299,17 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Test yourself</h1>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>Where do you browse and install Positron extensions?</p>
-<div id="webex-0697c165bdae5cc15ce9a08679f5612c" class="webex-radiogroup" data-answer="awcVB08BGgU/">
-<label><input type="radio" autocomplete="off" name="0697c165bdae5cc15ce9a08679f5612c"><span>In the Extensions view from the Activity Bar (four-square icon)</span></label><label><input type="radio" autocomplete="off" name="0697c165bdae5cc15ce9a08679f5612c"><span>From the Terminal by running <code>install.extensions()</code></span></label><label><input type="radio" autocomplete="off" name="0697c165bdae5cc15ce9a08679f5612c"><span>By editing the settings JSON file manually</span></label><label><input type="radio" autocomplete="off" name="0697c165bdae5cc15ce9a08679f5612c"><span>From the Quarto preview pane</span></label>
+<p>What does QSP stand for?</p>
+<div id="webex-3181ab37cd3cf2f8e09561c49d165e44" class="webex-radiogroup" data-answer="aAEUAU1THwc+">
+<label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Quark Sugar Pie</span></label><label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Qualitative Standard Procedure</span></label><label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Quantitative Systems Pharmacology</span></label><label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Quick Service Provider</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Open the Extensions sidebar via the four-square icon on the left to browse, install, and update extensions.</p>
-<ul>
-<li>True</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
-</ul>
-</div>
-</div>
-<div class="webex-question">
-<div class="webex-check webex-box">
-<p>How can you adjust settings for a specific extension, such as changing Quarto’s preview type?</p>
-<div id="webex-4b977100abc456f62dfbe757d0d33e16" class="webex-radiogroup" data-answer="b1IVBxsBHAE8">
-<label><input type="radio" autocomplete="off" name="4b977100abc456f62dfbe757d0d33e16"><span>Reinstall Positron with different defaults</span></label><label><input type="radio" autocomplete="off" name="4b977100abc456f62dfbe757d0d33e16"><span>Modify the extension’s source code manually</span></label><label><input type="radio" autocomplete="off" name="4b977100abc456f62dfbe757d0d33e16"><span>Extension settings cannot be changed once installed</span></label><label><input type="radio" autocomplete="off" name="4b977100abc456f62dfbe757d0d33e16"><span>Open the extension, click the gear icon, and choose Settings</span></label>
-</div>
-</div>
-<div class="webex-solution">
-<p>Select the extension, use the gear menu, and open Settings to configure its options (e.g., Quarto preview type).</p>
+<p>QSP stands for Quantitative Systems Pharmacology.</p>
 <ul>
 <li>False</li>
 <li>False</li>
-<li>False</li>
 <li>True</li>
-</ul>
-</div>
-</div>
-<div class="webex-question">
-<div class="webex-check webex-box">
-<p>What is the recommended approach to adding extensions to Positron?</p>
-<div id="webex-2fa20dbc2027b70c99562f7695bd4393" class="webex-radiogroup" data-answer="aVdNAhxUTlNv">
-<label><input type="radio" autocomplete="off" name="2fa20dbc2027b70c99562f7695bd4393"><span>Install selectively, favoring well-supported extensions to avoid slowing or breaking Positron</span></label><label><input type="radio" autocomplete="off" name="2fa20dbc2027b70c99562f7695bd4393"><span>Install every available extension to cover all use cases</span></label><label><input type="radio" autocomplete="off" name="2fa20dbc2027b70c99562f7695bd4393"><span>Avoid updates because extensions never need them</span></label><label><input type="radio" autocomplete="off" name="2fa20dbc2027b70c99562f7695bd4393"><span>Disable pre-installed extensions before adding any new ones</span></label>
-</div>
-</div>
-<div class="webex-solution">
-<p>Add extensions cautiously—start with well-supported ones and avoid unnecessary installs to keep Positron stable and fast.</p>
-<ul>
-<li>True</li>
-<li>False</li>
-<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -351,9 +318,14 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<ul>
-<li>Find another extension you are interested in, either by searching online or inside the extension manager. Install it and try it out. If you don’t like it, uninstall it again.</li>
-</ul>
+<section id="practice-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="practice-exercise">Practice Exercise</h3>
+<p>Open an existing <code>.qmd</code> file in Positron. Practice rendering it as HTML and explore live-preview features.</p>
+</section>
+<section id="substantial-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="substantial-exercise">Substantial Exercise</h3>
+<p>Configure Positron settings to automatically render your Quarto documents on save. Write a brief Quarto report (<code>positron_demo.qmd</code>) with a YAML header, an introductory paragraph, and a simple data analysis chunk. Render your report and verify the setup. Submit your source <code>.qmd</code> file, rendered HTML, and a brief reflection on your experience.</p>
+</section>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1935,18 +1907,6 @@ window.onload = function() {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../../courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html" class="pagination-link" aria-label="Positron Installation and Setup">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Positron Installation and Setup</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc1-intro-positron/positron-features/positron-features.html" class="pagination-link" aria-label="Basic Positron Features">
-        <span class="nav-page-text">Basic Positron Features</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

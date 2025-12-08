@@ -267,19 +267,20 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </section>
 <section id="themes" class="level2">
 <h2 class="anchored" data-anchor-id="themes">Themes</h2>
-<p>You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further, but for most users, this is probably not worth it.</p>
+<p>You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.</p>
 <p>You can explore themes by clicking on the gear icon in the lower left corner, then selecting <em>Themes</em> and <em>Color Theme</em>. This opens a list of available themes. Explore them to see what you might like.</p>
 </section>
 <section id="key-bindings" class="level2">
 <h2 class="anchored" data-anchor-id="key-bindings">Key Bindings</h2>
 <p>Some users prefer different keyboard shortcuts for common commands. Positron allows you to customize these key bindings to match your workflow.</p>
 <p>You can access key bindings by clicking the gear icon in the lower left corner, then selecting <em>Keyboard Shortcuts</em>. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them.</p>
-<p>For instance, in Positron, to toggle comments, the default shortcut is <code>Ctrl/Cmd + /</code>. This differs from RStudio, where it is <code>Ctrl/Cmd + Shift + C</code>. If you prefer the RStudio shortcut, you can change it in Positron.</p>
+<p>For instance, in Positron, to quickly turn code into comments (by adding a <code>#</code> in front of it for R cde), the default is to select the code chunk you want to comment out and then press the <code>Ctrl/Cmd + /</code> keyboard shortcut. This differs from RStudio, where it is the <code>Ctrl/Cmd + Shift + C</code> shortcut. If you prefer the RStudio shortcut, you can change it in Positron.</p>
 </section>
 <section id="more-customization" class="level2">
 <h2 class="anchored" data-anchor-id="more-customization">More customization</h2>
 <p>It should be clear from just this brief discussion that Positron is highly customizable. You can change almost anything, from the layout of the editor to how it behaves when you run code. You want to make sure to explore the settings a bit and find what works best for you, but not waste too much time trying out every possible setting.</p>
 <p>In general, if you find yourself thinking “I wish I could change Positron to do/show X”, there’s probably a way to do so. If it’s not built into Positron, you might find the needed functionality in an extension, which is discussed in a separate unit.</p>
+<p>And again remember, while Positron is fairly new, it’s based on VS Code which has been around for a while and is widely used. So if you are trying to figure out to customize something, it’s probably better to search for “How do I do X in VS Code” instead of “How do I do X in Positron”. Many of the same principles and settings apply.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
@@ -299,17 +300,17 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Test yourself</h1>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>How do you scope a Positron setting so it applies only to the current project instead of globally?</p>
-<div id="webex-9eb184472238087c545c0ff3f91a3b47" class="webex-radiogroup" data-answer="YlROARQEGAdv">
-<label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Open Settings and use the Workspace tab before changing the option</span></label><label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Edit the setting only after restarting Positron</span></label><label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Install an extension to override global defaults</span></label><label><input type="radio" autocomplete="off" name="9eb184472238087c545c0ff3f91a3b47"><span>Use the User tab to make it project specific</span></label>
+<p>How do you set a Positron setting so it applies only to the current project instead of globally?</p>
+<div id="webex-03a1f6bf11b35f7236415cf0860e8024" class="webex-radiogroup" data-answer="awNNAUoHTlZs">
+<label><input type="radio" autocomplete="off" name="03a1f6bf11b35f7236415cf0860e8024"><span>Edit the setting only after restarting Positron</span></label><label><input type="radio" autocomplete="off" name="03a1f6bf11b35f7236415cf0860e8024"><span>Install an extension to override global defaults</span></label><label><input type="radio" autocomplete="off" name="03a1f6bf11b35f7236415cf0860e8024"><span>Open Settings and use the Workspace tab before changing the option</span></label><label><input type="radio" autocomplete="off" name="03a1f6bf11b35f7236415cf0860e8024"><span>Use the User tab to make it project specific</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Select the Workspace tab at the top of the Settings panel; changes there apply only to the current project.</p>
 <ul>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -317,8 +318,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the quickest built-in way to browse and switch Positron color themes?</p>
-<div id="webex-2236a42c797c28505e0981e84dccf083" class="webex-radiogroup" data-answer="aQMfBk0EHlNq">
-<label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Click the gear icon, then Themes &gt; Color Theme</span></label><label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Install a third-party theme manager extension</span></label><label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Edit the settings JSON file by hand only</span></label><label><input type="radio" autocomplete="off" name="2236a42c797c28505e0981e84dccf083"><span>Themes cannot be changed in Positron</span></label>
+<div id="webex-85bce55ce01738fa428cc4e30533cbf9" class="webex-radiogroup" data-answer="YwROU0kFGVM4">
+<label><input type="radio" autocomplete="off" name="85bce55ce01738fa428cc4e30533cbf9"><span>Click the gear icon, then Themes &gt; Color Theme</span></label><label><input type="radio" autocomplete="off" name="85bce55ce01738fa428cc4e30533cbf9"><span>Install a third-party theme manager extension</span></label><label><input type="radio" autocomplete="off" name="85bce55ce01738fa428cc4e30533cbf9"><span>Edit the settings JSON file by hand only</span></label><label><input type="radio" autocomplete="off" name="85bce55ce01738fa428cc4e30533cbf9"><span>Themes cannot be changed in Positron</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -334,8 +335,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>If you want the RStudio-style shortcut for toggling comments, how can you change it in Positron?</p>
-<div id="webex-2de279f0975b60996cab15ccecc22caf" class="webex-radiogroup" data-answer="aVVJAhsJSgBk">
-<label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Open Keyboard Shortcuts from the gear menu and edit the binding for the toggle comment command</span></label><label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Change your system keyboard layout</span></label><label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Modify the R script manually before running it</span></label><label><input type="radio" autocomplete="off" name="2de279f0975b60996cab15ccecc22caf"><span>Install RStudio alongside Positron</span></label>
+<div id="webex-66fce6caaf700621fe702ac33f8ea519" class="webex-radiogroup" data-answer="bQdKU0kGT1E8">
+<label><input type="radio" autocomplete="off" name="66fce6caaf700621fe702ac33f8ea519"><span>Open Keyboard Shortcuts from the gear menu and edit the binding for the toggle comment command</span></label><label><input type="radio" autocomplete="off" name="66fce6caaf700621fe702ac33f8ea519"><span>Change your system keyboard layout</span></label><label><input type="radio" autocomplete="off" name="66fce6caaf700621fe702ac33f8ea519"><span>Modify the R script manually before running it</span></label><label><input type="radio" autocomplete="off" name="66fce6caaf700621fe702ac33f8ea519"><span>Install RStudio alongside Positron</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -354,7 +355,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Practice</h1>
 <ul>
 <li>Change the font size to 16px and enable word wrap.</li>
-<li>Install the <em>Solarized Dark</em> theme, set it as default, and sync settings to the cloud.</li>
+<li>Install a new color theme (for instance one of the many <em>Solarized</em> themes) and give it a try.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->

@@ -192,8 +192,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#positron-vs-code-often" id="toc-positron-vs-code-often" class="nav-link" data-scroll-target="#positron-vs-code-often">Positron = VS Code (often)</a></li>
-  <li><a href="#command-palette-tricks" id="toc-command-palette-tricks" class="nav-link" data-scroll-target="#command-palette-tricks">Command Palette Tricks</a></li>
-  <li><a href="#continuing-your-learning-journey" id="toc-continuing-your-learning-journey" class="nav-link" data-scroll-target="#continuing-your-learning-journey">Continuing Your Learning Journey</a></li>
+  <li><a href="#trust-issues" id="toc-trust-issues" class="nav-link" data-scroll-target="#trust-issues">Trust Issues</a></li>
+  <li><a href="#tutorials-and-other-resources" id="toc-tutorials-and-other-resources" class="nav-link" data-scroll-target="#tutorials-and-other-resources">Tutorials and other Resources</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -257,23 +257,27 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="positron-vs-code-often" class="level2">
 <h2 class="anchored" data-anchor-id="positron-vs-code-often">Positron = VS Code (often)</h2>
 <p>As mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it’s always a good idea to search for help for VS code if you can’t find something for Positron, and try if the VS Code solution works.</p>
+<p>It also means that most - <a href="https://positron.posit.co/extensions.html">though not all</a> - extensions that work in VS Code will also work in Positron. So if you find a useful extension for VS Code, you can likely install it in Positron as well.</p>
 </section>
-<section id="command-palette-tricks" class="level2">
-<h2 class="anchored" data-anchor-id="command-palette-tricks">Command Palette Tricks</h2>
-<p>Typing a <code>&gt;</code> at the start of the command palette filters for settings. Prefixing with <code>!</code> searches extension commands. Most commands show their key binding on the right; pressing that shortcut closes the palette and executes the command simultaneously.</p>
+<section id="trust-issues" class="level2">
+<h2 class="anchored" data-anchor-id="trust-issues">Trust Issues</h2>
+<p>When you open a folder or workspace in Positron for the first time, you might be asked if you trust the authors of the files in that folder/workspace. This is a security feature to prevent malicious code from running on your computer without your knowledge. If you are working on your own projects, you can generally safely trust the folder. If you are working on projects from others, make sure you know and trust the source before trusting the folder.</p>
+<p>If you want to change the overall trust settings, you can go to ‘Settings’, then search for ‘trust’. You can adjust various settings related to trust. For instance if you don’t want to get these notifications, you can set <code>Trust: Startup Prompt</code> to <em>never</em>.</p>
 </section>
-<section id="continuing-your-learning-journey" class="level2">
-<h2 class="anchored" data-anchor-id="continuing-your-learning-journey">Continuing Your Learning Journey</h2>
-<p>The Positron documentation team publishes weekly tips on the blog, and advanced webinars are archived on YouTube. Contributing a pull request to the docs is welcomed and is an excellent way to cement your knowledge.</p>
+<section id="tutorials-and-other-resources" class="level2">
+<h2 class="anchored" data-anchor-id="tutorials-and-other-resources">Tutorials and other Resources</h2>
 <ul>
-<li><a href="https://positron.posit.co/troubleshooting.html">Help section on the Positron Website</a></li>
+<li>The Positron website has a number of <a href="https://positron.posit.co/welcome.html">Guides</a> that cover various topics. They are a good starting point to learn more about specific topics. These are still fairly new and expected to grow over time.</li>
+<li>The VS Code website has a large number of <a href="https://code.visualstudio.com/docs/getstarted/getting-started">Getting Started Tutorials</a> that are also applicable to Positron.</li>
+<li>Beyond the getting started section, the <a href="https://code.visualstudio.com/docs">VS Code Documentation</a> is very comprehensive.</li>
+<li>For prior RStudio users, there is a specific <a href="https://positron.posit.co/migrate-rstudio.html">Migration Guide</a> available at the Positron website.</li>
 </ul>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>Equipped with shortcuts, best practices, and a community roadmap, you are ready to embark on productive data‑science projects with Positron.</p>
+<p>You reached the end of the brief Introduction to Positron Course. This should get you enough information to get started, but there is a lot to learn. Fortunately, online resources are fairly complete. Just remember that Positron specific resources are still new, but VS Code information is plentiful.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
@@ -285,13 +289,30 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Test yourself</h1>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>If you cannot find Positron-specific guidance, what is a good fallback?</p>
-<div id="webex-bc2d5122fc66b56b044e217c1acf289d" class="webex-radiogroup" data-answer="OVIeVBkBHgI7">
-<label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Search for the equivalent VS Code tip and try it in Positron</span></label><label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Assume the feature does not exist</span></label><label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Reinstall Positron from scratch</span></label><label><input type="radio" autocomplete="off" name="bc2d5122fc66b56b044e217c1acf289d"><span>Avoid using Positron until dedicated docs appear</span></label>
+<p>What is the best way to think about VS Code extensions when using Positron?</p>
+<div id="webex-329abb71cbd264239f1eba511acdd4cb" class="webex-radiogroup" data-answer="aAIVUU5TGwE+">
+<label><input type="radio" autocomplete="off" name="329abb71cbd264239f1eba511acdd4cb"><span>Every VS Code extension works unchanged in Positron</span></label><label><input type="radio" autocomplete="off" name="329abb71cbd264239f1eba511acdd4cb"><span>No VS Code extensions work in Positron</span></label><label><input type="radio" autocomplete="off" name="329abb71cbd264239f1eba511acdd4cb"><span>Many VS Code extensions work, but some do not—check the Positron list if unsure</span></label><label><input type="radio" autocomplete="off" name="329abb71cbd264239f1eba511acdd4cb"><span>Only Positron-branded extensions will load</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Because Positron is based on VS Code, solutions for VS Code often work and are worth trying.</p>
+<p>Positron is built on the VS Code codebase, so many extensions work, but not all; consult the Positron extension list if you’re unsure.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>If you can’t find Positron-specific instructions for something, what is the recommended next step?</p>
+<div id="webex-3b66939e048bc23705433756529598b2" class="webex-radiogroup" data-answer="aFMaBhUDFVVt">
+<label><input type="radio" autocomplete="off" name="3b66939e048bc23705433756529598b2"><span>Try the same solution you’d use in VS Code, since most tips work in Positron too</span></label><label><input type="radio" autocomplete="off" name="3b66939e048bc23705433756529598b2"><span>Assume the feature isn’t possible in Positron yet</span></label><label><input type="radio" autocomplete="off" name="3b66939e048bc23705433756529598b2"><span>Reinstall Positron before trying anything else</span></label><label><input type="radio" autocomplete="off" name="3b66939e048bc23705433756529598b2"><span>Avoid searching for VS Code guidance because it won’t apply</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Positron is built on the VS Code codebase, so many VS Code tips and solutions work in Positron and are worth trying first.</p>
 <ul>
 <li>True</li>
 <li>False</li>
@@ -302,30 +323,13 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>What do the <code>&gt;</code> and <code>!</code> prefixes do when typing in the Positron command palette?</p>
-<div id="webex-cb15651f93beff4651a469f951a3f296" class="webex-radiogroup" data-answer="OFMdBRoFHVZk">
-<label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> filters settings; <code>!</code> searches extension commands</span></label><label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> opens the Terminal; <code>!</code> restarts Positron</span></label><label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> installs extensions; <code>!</code> uninstalls them</span></label><label><input type="radio" autocomplete="off" name="cb15651f93beff4651a469f951a3f296"><span><code>&gt;</code> shows files; <code>!</code> shows plots</span></label>
+<p>When Positron asks whether you trust the authors of a newly opened folder, what should you generally do?</p>
+<div id="webex-8aaf96326238ea19c9b2adfff250295a" class="webex-radiogroup" data-answer="Y1BNVhUGHwJr">
+<label><input type="radio" autocomplete="off" name="8aaf96326238ea19c9b2adfff250295a"><span>Only trust the folder if you know and trust the source; otherwise review before allowing</span></label><label><input type="radio" autocomplete="off" name="8aaf96326238ea19c9b2adfff250295a"><span>Always trust every folder to avoid prompts</span></label><label><input type="radio" autocomplete="off" name="8aaf96326238ea19c9b2adfff250295a"><span>Never trust any folder, even your own projects</span></label><label><input type="radio" autocomplete="off" name="8aaf96326238ea19c9b2adfff250295a"><span>Delete the folder to avoid the decision</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Typing <code>&gt;</code> limits results to settings, while <code>!</code> searches extension commands in the palette.</p>
-<ul>
-<li>True</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
-</ul>
-</div>
-</div>
-<div class="webex-question">
-<div class="webex-check webex-box">
-<p>Given Positron is still evolving, what is one recommended way to keep learning and contribute?</p>
-<div id="webex-1329dde485c13f28c82a0ebeec93604d" class="webex-radiogroup" data-answer="agIeCUhUSQRl">
-<label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Follow the Positron blog/webinars and consider contributing improvements to the docs</span></label><label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Wait for a printed manual before using new features</span></label><label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Ignore updates until Positron leaves beta</span></label><label><input type="radio" autocomplete="off" name="1329dde485c13f28c82a0ebeec93604d"><span>Disable all online resources to avoid changes</span></label>
-</div>
-</div>
-<div class="webex-solution">
-<p>Staying current with blog tips, webinars, and even contributing documentation helps you learn as Positron evolves.</p>
+<p>Trust prompts help prevent malicious code from running; you should only trust folders from sources you know and review unfamiliar ones before allowing.</p>
 <ul>
 <li>True</li>
 <li>False</li>
@@ -339,8 +343,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Challenge yourself to use the keyboard for the next hour without touching the mouse inside Positron.</li>
-<li>Post one question or tip on the Positron community forum and share the link with your peers.</li>
+<li>Read one of the <a href="https://positron.posit.co/welcome.html">Guides</a> on the Positron website that interest you.</li>
+<li>Test Google or your favorite AI by asking about a topic related to Positron you are interested in.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->

@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#viewer-pane" id="toc-viewer-pane" class="nav-link" data-scroll-target="#viewer-pane">Viewer Pane</a></li>
   <li><a href="#environment-and-history-pane" id="toc-environment-and-history-pane" class="nav-link" data-scroll-target="#environment-and-history-pane">Environment and History Pane</a></li>
   <li><a href="#the-command-palette" id="toc-the-command-palette" class="nav-link" data-scroll-target="#the-command-palette">The Command Palette</a></li>
-  <li><a href="#more-stuff" id="toc-more-stuff" class="nav-link" data-scroll-target="#more-stuff">More stuff</a></li>
+  <li><a href="#many-more-features" id="toc-many-more-features" class="nav-link" data-scroll-target="#many-more-features">Many more features</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -257,23 +257,24 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>As it the case for many IDEs, Positron is set up such that you have quick access to different parts of your project. The main window is divided into different areas (known as <em>panes</em>), each tailored to a distinct part of a typical project workflow: writing code, running it, visualising output, working with files, debugging, inspecting the environment, etc.</p>
-<p>The arrangement of the different windows is very flexible, so you can customize them and move them around. <a href="https://code.visualstudio.com/docs/configure/custom-layout">This article</a> describes how to do that (remember, Positron is basically a variant of VS Code, so the same concepts apply).</p>
 </section>
 <section id="the-menu-bars" class="level2">
 <h2 class="anchored" data-anchor-id="the-menu-bars">The menu bars</h2>
-<p>The top menu bar in Positron is similar to most standard programs and likely requires little explanation. Since Positron is full-featured and highly configurable, there is a lot you can do. We might discuss a few of the commands, the rest you will likely discover as you learn more how to use Positron. And it’s quite possible that there are some features you will never use.</p>
-<p>The menu bar on the left (called <em>activity bar</em>) gives you access to different views related to Positron and your editor. You’ve already encountered the ‘Extensions’ view.Maybe the most important one is the first one, the file explorer view. You can use it to quickly open files and create new ones. The search is also a handy tool to find things quickly. Several other icons are for specific extensions or functionality related to version control and coding, we’ll discuss some of them in the courses that cover those tools.</p>
+<p>The top menu bar in Positron is similar to most standard programs and likely requires little explanation. Since Positron is full-featured and highly configurable, there is a lot you can do. We discuss a few of the commands, the rest you will likely discover as you learn more how to use Positron. And it’s quite possible that there are some features you will never use.</p>
+<p>The menu bar filled with icons that is typically found along the left is called <em>Activity Bar</em>. It gives you access to different views related to Positron and your editor. Whatever you click on will open to the right of the Activity Bar in an area called <em>Primary Side Bar</em>. You’ve already encountered the <em>Extensions</em> view.</p>
+<p>The first icon on the activitiy bar, which looks like several sheets of paper, opens a view you likely use a lot, namely the file explorer view. You can use it to quickly open files and create new ones. The search view is also a handy tool to find things quickly and do search and replace operations. Several other icons are for specific extensions or functionality related to version control and coding, we’ll discuss some of them elsewhere.</p>
 </section>
 <section id="the-editor-pane" class="level2">
 <h2 class="anchored" data-anchor-id="the-editor-pane">The Editor Pane</h2>
-<p>The biggest window (unless you resize it), is the Editor pane. The Editor is where you edit your documents, such as code, Quarto documents or any other text file. The editor has a lot of nice features, such as snyax highlighting, auto-completion, automatic formatting, etc. Multiple files open in tabs along the top.</p>
+<p>The biggest window, located in the top middle of the IDE (unless you resize or move it), is the <em>Editor</em> pane/panel. The Editor is where you edit your documents, such as code, Quarto documents or any other text-based files. The editor has a lot of nice features, such as snyax highlighting, auto-completion, automatic formatting, etc. Multiple files open in tabs along the top.</p>
 </section>
 <section id="console-terminal-and-more" class="level2">
 <h2 class="anchored" data-anchor-id="console-terminal-and-more">Console, Terminal and more</h2>
-<p>Below the Editor is an area that gives you access to various other tools. The <code>Console</code> tab shows whatever programming language you are currently running. By default in Positron, that’s R. The <code>Terminal</code> is basically a Windows/Unix terminal, where you can enter commands. For instance you can use it to run <code>Quarto</code> commands. That’s also generally where Julia runs. The other tabs are helpful for showing you what happens when you run code.</p>
+<p>Below the Editor is an area that gives you access to various other tools. The <code>Console</code> tab shows whatever programming language you are currently running. By default in Positron, that’s R. The <code>Terminal</code> is basically a Windows/Unix terminal, where you can enter commands. For instance you can use it to run <code>Quarto</code> commands. That’s also generally where other programming languages, e.g.&nbsp;Julia, run. The other tabs are helpful for showing you what happens when you run code.</p>
 </section>
 <section id="viewer-pane" class="level2">
 <h2 class="anchored" data-anchor-id="viewer-pane">Viewer Pane</h2>
+<p>The right side of the IDE has a second sidebar, which is by default split into two.</p>
 <p>The bottom-right aree is usually the Viewer pane. It automatically displays plots created by code, such as R’s <em>ggplot2</em>, Python’s <em>matplotlib</em>, or Julia’s <em>Plots</em> package. HTML widgets, data frames, interactive tables, and other items that can be pre-viewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there.</p>
 </section>
 <section id="environment-and-history-pane" class="level2">
@@ -282,24 +283,24 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </section>
 <section id="the-command-palette" class="level2">
 <h2 class="anchored" data-anchor-id="the-command-palette">The Command Palette</h2>
-<p>In the top middle you will find what looks like a search box, but is actually much more. This is where, among other things, you can find the command palette. If you click into the search box, then select “Show and Run Commands”, you can quickly execute a lot of commands, without trying to figure out which menu they belong to. For instance, if you start typing “git” you will see a lot of commands related to Git/GitHub functionality. You can also use the search box to, well, search. Once you start using Positron more, you will find that little box very convenient.</p>
+<p>In the top middle you will find what looks like a search box, but is actually much more. This is where, among other things, you can find the command palette. If you click into the search box, then select “Show and Run Commands”, you can quickly execute a lot of commands, without trying to figure out which menu they belong to. For instance, if you start typing <em>Quarto</em> you will see a lot of commands related to Quarto functionality. You can also use the search box to, well, search. Once you start using Positron more, you will find that little box very convenient.</p>
 </section>
-<section id="more-stuff" class="level2">
-<h2 class="anchored" data-anchor-id="more-stuff">More stuff</h2>
-<p>As you start using Positron, you’ll find that sometimes, depending on what you have open or what code you run, more things appear in various panes. A lot will be self-explanatory, but there is also a lot that requires exploring. Again, Positron has a lot of features, over time you’ll discover more of them.</p>
+<section id="many-more-features" class="level2">
+<h2 class="anchored" data-anchor-id="many-more-features">Many more features</h2>
+<p>This was a very brief overview of Positron’s main layout and features. As you start using Positron, you’ll find that sometimes, depending on what you have open or what code you run, more things appear in various panes. A lot will be self-explanatory, but there is also a lot that requires exploring. Like other complex pieces of software (e.g.&nbsp;MS Word or Excel), Positron has a lot of features. Over time you’ll discover more of them.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>The Positron IDE consists of different panes that give you access to different parts of your project. As you start working with Positron, you’ll quickly figure out how to set things up to make them work for you.</p>
+<p>The Positron IDE consists of different areas/panes that give you access to different parts of your project. As you start working with Positron, you’ll quickly figure out how to set things up to make them work for you.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
 <li><a href="https://positron.posit.co/layout.html">Official Positron Layout Documentation</a> - not very detailed, but gives you an overview of the different panes and their purpose.</li>
-<li><a href="https://positron.posit.co/keyboard-shortcuts.html">Positron Keyboard shortcuts</a> - if you are one of those persons who prefers to use keyboard shortcuts instead of the mouse, check out this handy reference. Note that these are just a few basic ones, almost everyhing can be turned into a keyboard shortcut.</li>
+<li>The arrangement of the different windows is very flexible, so you can customize them and move them around. <a href="https://code.visualstudio.com/docs/configure/custom-layout">This article</a> describes how to do that. Remember, Positron is basically a variant of VS Code, so the same concepts apply.</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
@@ -308,8 +309,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which Positron pane is designed to show plots, HTML widgets, and rendered Quarto previews?</p>
-<div id="webex-7184728f8bc36a2439c5809685e6557f" class="webex-radiogroup" data-answer="bAAUBBsCFFZl">
-<label><input type="radio" autocomplete="off" name="7184728f8bc36a2439c5809685e6557f"><span>The Viewer pane (bottom right)</span></label><label><input type="radio" autocomplete="off" name="7184728f8bc36a2439c5809685e6557f"><span>The Activity Bar on the left</span></label><label><input type="radio" autocomplete="off" name="7184728f8bc36a2439c5809685e6557f"><span>The Environment pane</span></label><label><input type="radio" autocomplete="off" name="7184728f8bc36a2439c5809685e6557f"><span>The Terminal tab</span></label>
+<div id="webex-d9ce33b616e6fed63fb40b4c41c7cb84" class="webex-radiogroup" data-answer="PwhPVR8DTgZs">
+<label><input type="radio" autocomplete="off" name="d9ce33b616e6fed63fb40b4c41c7cb84"><span>The Viewer pane (bottom right)</span></label><label><input type="radio" autocomplete="off" name="d9ce33b616e6fed63fb40b4c41c7cb84"><span>The Activity Bar on the left</span></label><label><input type="radio" autocomplete="off" name="d9ce33b616e6fed63fb40b4c41c7cb84"><span>The Environment pane</span></label><label><input type="radio" autocomplete="off" name="d9ce33b616e6fed63fb40b4c41c7cb84"><span>The Terminal tab</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -325,25 +326,25 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How do you open the command palette to quickly run commands in Positron?</p>
-<div id="webex-6319e81416da0643da56a8207ffc0624" class="webex-radiogroup" data-answer="bQIdCUkIHQRs">
-<label><input type="radio" autocomplete="off" name="6319e81416da0643da56a8207ffc0624"><span>Click the search box at the top, choose “Show and Run Commands,” and start typing</span></label><label><input type="radio" autocomplete="off" name="6319e81416da0643da56a8207ffc0624"><span>Open the Terminal tab and type <code>palette</code></span></label><label><input type="radio" autocomplete="off" name="6319e81416da0643da56a8207ffc0624"><span>Right-click the Activity Bar and select “Command Mode”</span></label><label><input type="radio" autocomplete="off" name="6319e81416da0643da56a8207ffc0624"><span>The command palette is only available in VS Code, not Positron</span></label>
+<div id="webex-fce1a363654f34fa79d4adde9187eec8" class="webex-radiogroup" data-answer="PVNJAU0DGgJr">
+<label><input type="radio" autocomplete="off" name="fce1a363654f34fa79d4adde9187eec8"><span>Open the Terminal tab and type <code>palette</code></span></label><label><input type="radio" autocomplete="off" name="fce1a363654f34fa79d4adde9187eec8"><span>Right-click the Activity Bar and select “Command Mode”</span></label><label><input type="radio" autocomplete="off" name="fce1a363654f34fa79d4adde9187eec8"><span>The command palette is only available in VS Code, not Positron</span></label><label><input type="radio" autocomplete="off" name="fce1a363654f34fa79d4adde9187eec8"><span>Click the search box at the top, choose “Show and Run Commands,” and start typing</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Use the search box at the top of the window, pick “Show and Run Commands,” and type the command you want.</p>
 <ul>
+<li>False</li>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the primary purpose of the first icon (file explorer) on the Activity Bar?</p>
-<div id="webex-63331423784c71821ccc0fb0b659300f" class="webex-radiogroup" data-answer="bQIfAx0EHgNq">
-<label><input type="radio" autocomplete="off" name="63331423784c71821ccc0fb0b659300f"><span>Quickly open, create, and navigate project files</span></label><label><input type="radio" autocomplete="off" name="63331423784c71821ccc0fb0b659300f"><span>Display plots and HTML widgets</span></label><label><input type="radio" autocomplete="off" name="63331423784c71821ccc0fb0b659300f"><span>Show workspace variables and history</span></label><label><input type="radio" autocomplete="off" name="63331423784c71821ccc0fb0b659300f"><span>Configure extensions and their settings</span></label>
+<div id="webex-fc04c473d07bafe0b04fc33b644b3a77" class="webex-radiogroup" data-answer="PVIcBE8EGwM5">
+<label><input type="radio" autocomplete="off" name="fc04c473d07bafe0b04fc33b644b3a77"><span>Quickly open, create, and navigate project files</span></label><label><input type="radio" autocomplete="off" name="fc04c473d07bafe0b04fc33b644b3a77"><span>Display plots and HTML widgets</span></label><label><input type="radio" autocomplete="off" name="fc04c473d07bafe0b04fc33b644b3a77"><span>Show workspace variables and history</span></label><label><input type="radio" autocomplete="off" name="fc04c473d07bafe0b04fc33b644b3a77"><span>Configure extensions and their settings</span></label>
 </div>
 </div>
 <div class="webex-solution">

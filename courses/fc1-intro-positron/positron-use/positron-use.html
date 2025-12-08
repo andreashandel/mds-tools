@@ -291,25 +291,26 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </section>
 <section id="editing-a-text-file" class="level2">
 <h2 class="anchored" data-anchor-id="editing-a-text-file">Editing a text file</h2>
-<p>This is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn’t necessarily need to be plain text. You can for instance open and edit a CSV file as well.</p>
+<p>This is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn’t necessarily need to be plain text. You can for instance open and edit a CSV file as well. We already tried that earlier when we discussed extensions. Feel free to revisit this by re-opening the prior CSV file and changing some of its contents. The save it under a new name.</p>
 <p>Depending on the type of file you are editing, Positron will try to provide some features that make it easier to work with it. For instance, if you open an R script, it will highlight the syntax and provide some code completion features. Syntax highlighting exists for many languages, not just R. As you work with the editor and learn more features, you will continue to find features that make your workflow easier and more efficient.</p>
 </section>
 <section id="editing-and-running-code" class="level2">
 <h2 class="anchored" data-anchor-id="editing-and-running-code">Editing and running code</h2>
-<p>Positron is meant for working with code. It is especically designed to work well with R and Python, but other languages are also supported, many through extensions. Let’s explore a small example with R. Go to “New” -&gt; “New File” and pick “R Script”. An empty file will open in the editor. Write a few lines of R code, for instance the following</p>
+<p>Positron is meant for working with code. It is especically designed to work well with R and Python, but other languages are also supported, many through extensions. Let’s explore a small example with R. Go to “File” -&gt; “New File” and pick “R File”. An empty file will open in the editor. Write a few lines of R code, for instance the following</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">100</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Next, save the file somewhere. If Positron was ‘just an editor’, we would now have to switch over to R and run the code there. But with an IDE, we can do it all in one place. You should see a small triangle symbol in the top right corner of the editor. Press it to run the code. This will open the R console in the bottom window, execute the ‘source’ command to run the code, and show the resulting plot in the bottom window. In the top right window, you can also see the variables that were generated.</p>
+<p>Next, save the file somewhere. If Positron was ‘just an editor’, we would now have to switch over to R and run the code there. But with an IDE, we can do it all in one place. You should see a small triangle symbol in the top right corner of the editor. Press it to run the code. This will open the R console in the bottom window, execute the ‘source’ command to run the code, and show the resulting plot in the bottom right window. In the top right window, you can also see the variables that were generated.</p>
 <p>Let’s say you want to have a line instead of circles for the plot but don’t remember the command. In the R console, you can type <code>?plot</code> to call the help file for the <code>plot</code> function, which will show in a separate pane.</p>
-<p>Once you found what you are looking for, change your code so it says <code>plot(x,y,type='l')</code> and run again. This time, instead of pressing the ‘run’ button, try to execute the code one line at a time. You can do that by starting in the first line and pressing <code>Ctrl/Cmd + Enter</code>. The first line will be executed, and you can then continue to the next line by pressing <code>Ctrl/Cmd + Enter</code> again. You will see the new plot show up. You should also see that the old plot is still there, you can go back to it with the arrows above the plot. The menu above the plot also allows you to save any of them, and do other things. It is generally not advised to do any steps manually, you should instead have code do all of it to ensure reproducibility. But in situations where that is not too important, these little helpers are very useful.</p>
+<p>Once you found what you are looking for, change your code so it says <code>plot(x,y,type='l')</code> and run again. This time, instead of pressing the ‘run’ button, try to execute the code one line at a time. You can do that by starting in the first line and pressing <code>Ctrl/Cmd + Enter</code>. The first line will be executed, and you can then continue to the next line by pressing <code>Ctrl/Cmd + Enter</code> again. You will see the new plot show up. You should also see that the old plot is still there, you can go back to it with the arrows above the plot. The menu above the plot also allows you to save any of them, and do other things.</p>
+<p>It is generally not advised to do any steps like writing code or saving plots manually, you should instead have fully automated code do all of it to ensure reproducibility. But for exploring and testing, these iterative and manual steps are often needed and having all these features in one location makes some of these coding, modeling and data science talks much more efficient.</p>
 <!-- You can of course also do the same for other programming languages. We'll look at an example for Julia in the [Introduction to Julia course](/courses/course-landing-pages/fc5-intro-julia.qmd) -->
 </section>
 <section id="working-with-quarto-documents" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-quarto-documents">Working with Quarto documents</h2>
-<p>Let’s try a brief quarto document. Quarto itself is discussed in our <a href="../../../courses/course-landing-pages/fc2-intro-quarto.html">Introduction to Quarto course</a>, so we won’t talk about it much here, just showcase how to work with it in Positron.</p>
+<p>Let’s try a brief quarto document. Quarto itself is discussed in our <em>Brief Introduction to Quarto</em> course, so we won’t talk about it much here, just showcase how to work with it in Positron.</p>
 <p>Start another new file, and this time from the menu, pick <code>Quarto Document</code> towards the bottom. Another editor window should open with an almost empty area. There will be a few lines at the top indicating a Quarto document.</p>
 <p>Give it a title, write a heading with <code># Heading</code>, then add some text. Next take the code from the previous example and insert it into the Quarto file as code chunk, like this</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>```{r}</span>
@@ -331,6 +332,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
+<ul>
+<li><a href="https://positron.posit.co/keyboard-shortcuts.html">Positron Keyboard shortcuts</a> - if you are one of those persons who prefers to use keyboard shortcuts instead of the mouse, check out this handy reference. Note that these are just a few basic ones, almost everyhing can be turned into a keyboard shortcut.</li>
+</ul>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
@@ -338,8 +342,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What happens when you click the Run (triangle) button on an R script in Positron?</p>
-<div id="webex-2603340b2db4bca42b92d503bfab41fd" class="webex-radiogroup" data-answer="aQccAx8EHFJv">
-<label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="2603340b2db4bca42b92d503bfab41fd"><span>The script is compiled without running any code</span></label>
+<div id="webex-6dbe72acc01fa2ae4dad0a5650f43ebc" class="webex-radiogroup" data-answer="bVVOVRsCTVM+">
+<label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>The script is compiled without running any code</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -355,16 +359,16 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you run code line by line from the editor in Positron?</p>
-<div id="webex-0f37dafe00d682caecd454adccd34607" class="webex-radiogroup" data-answer="a1cfB0hRSlVt">
-<label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="0f37dafe00d682caecd454adccd34607"><span>Line-by-line execution is not supported</span></label>
+<div id="webex-e82c234d15d44c72af48689bf79c9eee" class="webex-radiogroup" data-answer="PggeUx4CGFRs">
+<label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>Line-by-line execution is not supported</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Use Ctrl/Cmd + Enter to execute the current line (and step through subsequent lines) directly from the editor.</p>
 <ul>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -372,17 +376,17 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After editing a Quarto <code>.qmd</code> file in Positron, how do you view the rendered document?</p>
-<div id="webex-5e729de2eb2adfd07734b6bcc0966d4b" class="webex-radiogroup" data-answer="blQbAhVUSQI4">
-<label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label><label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="5e729de2eb2adfd07734b6bcc0966d4b"><span>Quarto documents cannot be previewed from within Positron</span></label>
+<div id="webex-91bf31b222ba208e7d6f7784b2407122" class="webex-radiogroup" data-answer="YgFOVh8BTgNv">
+<label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Quarto documents cannot be previewed from within Positron</span></label><label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Use the Preview button to render; the output appears in the integrated viewer or an external browser based on the Quarto extension setting.</p>
 <ul>
+<li>False</li>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
 </ul>
 </div>
 </div>
@@ -391,7 +395,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li></li>
+<li>Revisit the R script you created earlier. Extend it such that the code saves the figure to a file. Run the modified code. If you are new to R, look online to find out how to do this. Then also inspect the variables you created.</li>
+<li>Re-open your Quarto document. Replace the code chunk with code that uses the <code>ggplot2</code> package to create the same plot. If you are completely new to R and don’t know what packages R yet, you can skip this - or just look online or ask your AI and implement it, even if you don’t fully understand yet what’s going on 😁.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->
