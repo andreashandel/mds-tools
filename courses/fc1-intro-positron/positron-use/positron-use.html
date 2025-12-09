@@ -137,6 +137,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../courses/fc2a-intro-r/intro-r-toc.html"> 
+<span class="menu-text">Intro to R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../courses/fc3-intro-quarto/intro-quarto-toc.html"> 
+<span class="menu-text">Intro to Quarto</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -296,6 +304,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </section>
 <section id="editing-and-running-code" class="level2">
 <h2 class="anchored" data-anchor-id="editing-and-running-code">Editing and running code</h2>
+<div class="note">
+<p>The following only works if you already have R installed. If you don’t have it on your computer, you should still read this section, you just can’t run it for now.</p>
+</div>
 <p>Positron is meant for working with code. It is especically designed to work well with R and Python, but other languages are also supported, many through extensions. Let’s explore a small example with R. Go to “File” -&gt; “New File” and pick “R File”. An empty file will open in the editor. Write a few lines of R code, for instance the following</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">100</span>)</span>
@@ -310,6 +321,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </section>
 <section id="working-with-quarto-documents" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-quarto-documents">Working with Quarto documents</h2>
+<div class="note">
+<p>The following only works if you already have both R and Quarto installed. If you don’t have both on your computer yet, syou should still read this section, you just can’t run it for now.</p>
+</div>
 <p>Let’s try a brief quarto document. Quarto itself is discussed in our <em>Brief Introduction to Quarto</em> course, so we won’t talk about it much here, just showcase how to work with it in Positron.</p>
 <p>Start another new file, and this time from the menu, pick <code>Quarto Document</code> towards the bottom. Another editor window should open with an almost empty area. There will be a few lines at the top indicating a Quarto document.</p>
 <p>Give it a title, write a heading with <code># Heading</code>, then add some text. Next take the code from the previous example and insert it into the Quarto file as code chunk, like this</p>
@@ -342,8 +356,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What happens when you click the Run (triangle) button on an R script in Positron?</p>
-<div id="webex-6dbe72acc01fa2ae4dad0a5650f43ebc" class="webex-radiogroup" data-answer="bVVOVRsCTVM+">
-<label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="6dbe72acc01fa2ae4dad0a5650f43ebc"><span>The script is compiled without running any code</span></label>
+<div id="webex-467926b5a8d601eafa7a7f9ea1b9dcd8" class="webex-radiogroup" data-answer="bwcbCR4GTgU8">
+<label><input type="radio" autocomplete="off" name="467926b5a8d601eafa7a7f9ea1b9dcd8"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="467926b5a8d601eafa7a7f9ea1b9dcd8"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="467926b5a8d601eafa7a7f9ea1b9dcd8"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="467926b5a8d601eafa7a7f9ea1b9dcd8"><span>The script is compiled without running any code</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -359,8 +373,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you run code line by line from the editor in Positron?</p>
-<div id="webex-e82c234d15d44c72af48689bf79c9eee" class="webex-radiogroup" data-answer="PggeUx4CGFRs">
-<label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="e82c234d15d44c72af48689bf79c9eee"><span>Line-by-line execution is not supported</span></label>
+<div id="webex-259cd08cf884ed98acfc4fa52bea74d6" class="webex-radiogroup" data-answer="aQUVU0gBFFM7">
+<label><input type="radio" autocomplete="off" name="259cd08cf884ed98acfc4fa52bea74d6"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="259cd08cf884ed98acfc4fa52bea74d6"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="259cd08cf884ed98acfc4fa52bea74d6"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="259cd08cf884ed98acfc4fa52bea74d6"><span>Line-by-line execution is not supported</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -376,8 +390,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After editing a Quarto <code>.qmd</code> file in Positron, how do you view the rendered document?</p>
-<div id="webex-91bf31b222ba208e7d6f7784b2407122" class="webex-radiogroup" data-answer="YgFOVh8BTgNv">
-<label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Quarto documents cannot be previewed from within Positron</span></label><label><input type="radio" autocomplete="off" name="91bf31b222ba208e7d6f7784b2407122"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label>
+<div id="webex-00c37eca156acd5ee4e283b7d4faf297" class="webex-radiogroup" data-answer="awBPAxtVT1Bs">
+<label><input type="radio" autocomplete="off" name="00c37eca156acd5ee4e283b7d4faf297"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="00c37eca156acd5ee4e283b7d4faf297"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="00c37eca156acd5ee4e283b7d4faf297"><span>Quarto documents cannot be previewed from within Positron</span></label><label><input type="radio" autocomplete="off" name="00c37eca156acd5ee4e283b7d4faf297"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -395,8 +409,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Revisit the R script you created earlier. Extend it such that the code saves the figure to a file. Run the modified code. If you are new to R, look online to find out how to do this. Then also inspect the variables you created.</li>
-<li>Re-open your Quarto document. Replace the code chunk with code that uses the <code>ggplot2</code> package to create the same plot. If you are completely new to R and don’t know what packages R yet, you can skip this - or just look online or ask your AI and implement it, even if you don’t fully understand yet what’s going on 😁.</li>
+<li>Start a new text file. Use <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown Synatx</a> to write a bit of text. You should see Positron do syntax highlighting for Markdown. Save the file as <code>myfirstfile.md</code>. For now, you can’t preview it unless you have Quarto (or some other extension) installed. You can try that later once you have Quarto up and running.</li>
+<li>If you have R installed: Revisit the R script you created earlier. Extend it such that the code saves the figure to a file. Run the modified code. If you are new to R, look online to find out how to do this. Then also inspect the variables you created.</li>
+<li>If you have R and Quarto installed: Re-open your Quarto document. Replace the code chunk with code that uses the <code>ggplot2</code> package to create the same plot. If you are completely new to R and don’t know what packages R yet, you can skip this - or just look online or ask your AI and implement it, even if you don’t fully understand yet what’s going on 😁.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->

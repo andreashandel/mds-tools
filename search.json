@@ -158,591 +158,337 @@
     "href": "courses/fc3-intro-quarto/quarto-use/quarto-use.html",
     "title": "Basic Use",
     "section": "",
-    "text": "In this unit, you will learn the fundamental skills needed to create, edit, and render basic Quarto documents. You will explore the essential structure of a Quarto file and common workflows for generating outputs in different formats."
+    "text": "In this unit, you will learn the fundamental skills needed to create, edit, and render basic Quarto documents. You will explore the essential structure of a Quarto file and common workflows for generating outputs in different formats.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Basic Use"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#structure-of-a-quarto-document",
     "href": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#structure-of-a-quarto-document",
     "title": "Basic Use",
     "section": "Structure of a Quarto Document",
-    "text": "Structure of a Quarto Document\nThe Quarto software operates on a file called a Quarto document (.qmd). A standard Quarto file (.qmd) is a text document that consists of:\n\nYAML Front Matter: Metadata and document configuration.\nMarkdown Body: Narrative text written in Markdown.\nExecutable Code Chunks: Embedded code blocks executed during rendering. This is optional, you can have a Quarto document without executable code chunks.\n\n\nExample of a Minimal Quarto Document\nHere is an example of a minimal Quarto document:\n---\ntitle: \"Simple Quarto Example\"\nformat: html\n---\n\nHere is a simple example demonstrating the integration of R code and narrative.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary(mtcars)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n      mpg             cyl             disp             hp       \n Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0  \n 1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5  \n Median :19.20   Median :6.000   Median :196.3   Median :123.0  \n Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7  \n 3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0  \n Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0  \n      drat             wt             qsec             vs        \n Min.   :2.760   Min.   :1.513   Min.   :14.50   Min.   :0.0000  \n 1st Qu.:3.080   1st Qu.:2.581   1st Qu.:16.89   1st Qu.:0.0000  \n Median :3.695   Median :3.325   Median :17.71   Median :0.0000  \n Mean   :3.597   Mean   :3.217   Mean   :17.85   Mean   :0.4375  \n 3rd Qu.:3.920   3rd Qu.:3.610   3rd Qu.:18.90   3rd Qu.:1.0000  \n Max.   :4.930   Max.   :5.424   Max.   :22.90   Max.   :1.0000  \n       am              gear            carb      \n Min.   :0.0000   Min.   :3.000   Min.   :1.000  \n 1st Qu.:0.0000   1st Qu.:3.000   1st Qu.:2.000  \n Median :0.0000   Median :4.000   Median :2.000  \n Mean   :0.4062   Mean   :3.688   Mean   :2.812  \n 3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  \n Max.   :1.0000   Max.   :5.000   Max.   :8.000  \n```\n\n\n:::\n:::\nAfter rendering (quarto render simple.qmd), an HTML file displaying your results will be created."
+    "text": "Structure of a Quarto Document\nThe Quarto software operates on a file called a Quarto document (.qmd). A standard Quarto file (.qmd) is a text document that consists of:\n\nYAML Front Matter: Metadata and document configuration.\nMarkdown Body: Narrative text written in Markdown.\nExecutable Code Chunks: Embedded code blocks executed during rendering. This is optional, you can have a Quarto document without executable code chunks.\n\n\nExample of a Minimal Quarto Document\nHere is an example of a minimal Quarto document:\n---\ntitle: \"Simple Quarto Example\"\nformat: html\n---\n\nHere is a simple example demonstrating the integration of R code and narrative.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary(mtcars)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n      mpg             cyl             disp             hp       \n Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0  \n 1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5  \n Median :19.20   Median :6.000   Median :196.3   Median :123.0  \n Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7  \n 3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0  \n Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0  \n      drat             wt             qsec             vs        \n Min.   :2.760   Min.   :1.513   Min.   :14.50   Min.   :0.0000  \n 1st Qu.:3.080   1st Qu.:2.581   1st Qu.:16.89   1st Qu.:0.0000  \n Median :3.695   Median :3.325   Median :17.71   Median :0.0000  \n Mean   :3.597   Mean   :3.217   Mean   :17.85   Mean   :0.4375  \n 3rd Qu.:3.920   3rd Qu.:3.610   3rd Qu.:18.90   3rd Qu.:1.0000  \n Max.   :4.930   Max.   :5.424   Max.   :22.90   Max.   :1.0000  \n       am              gear            carb      \n Min.   :0.0000   Min.   :3.000   Min.   :1.000  \n 1st Qu.:0.0000   1st Qu.:3.000   1st Qu.:2.000  \n Median :0.0000   Median :4.000   Median :2.000  \n Mean   :0.4062   Mean   :3.688   Mean   :2.812  \n 3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  \n Max.   :1.0000   Max.   :5.000   Max.   :8.000  \n```\n\n\n:::\n:::\nAfter rendering (quarto render simple.qmd), an HTML file displaying your results will be created.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Basic Use"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#anatomy-of-a-quarto-document",
     "href": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#anatomy-of-a-quarto-document",
     "title": "Basic Use",
     "section": "Anatomy of a Quarto Document",
-    "text": "Anatomy of a Quarto Document\nA Quarto document typically consists of three main components:\n\nYAML Front Matter: Metadata and output configurations defined at the beginning of the file.\nMarkdown Text: Narrative content formatted with Markdown syntax.\nCode Chunks: Blocks of executable code embedded within the narrative.\n\nExample:\n---\ntitle: \"Example Quarto Document\"\nformat: html\n---\n\nThis document integrates Markdown text with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nhead(iris)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n```\n\n\n:::\n:::\nRender this document using: quarto render example.qmd"
+    "text": "Anatomy of a Quarto Document\nA Quarto document typically consists of three main components:\n\nYAML Front Matter: Metadata and output configurations defined at the beginning of the file.\nMarkdown Text: Narrative content formatted with Markdown syntax.\nCode Chunks: Blocks of executable code embedded within the narrative.\n\nExample:\n---\ntitle: \"Example Quarto Document\"\nformat: html\n---\n\nThis document integrates Markdown text with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nhead(iris)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n```\n\n\n:::\n:::\nRender this document using: quarto render example.qmd",
+    "crumbs": [
+      "Intro to Quarto",
+      "Basic Use"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#rendering-multiple-formats",
     "href": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#rendering-multiple-formats",
     "title": "Basic Use",
     "section": "Rendering Multiple Formats",
-    "text": "Rendering Multiple Formats\nQuarto allows the generation of multiple output formats from a single source file. You can specify multiple outputs in your YAML front matter:\n---\ntitle: \"Multi-format Document\"\nformat:\n  html: default\n  pdf: default\n---\nTo override and render a specific format:\nquarto render multi-format.qmd --to pdf"
+    "text": "Rendering Multiple Formats\nQuarto allows the generation of multiple output formats from a single source file. You can specify multiple outputs in your YAML front matter:\n---\ntitle: \"Multi-format Document\"\nformat:\n  html: default\n  pdf: default\n---\nTo override and render a specific format:\nquarto render multi-format.qmd --to pdf",
+    "crumbs": [
+      "Intro to Quarto",
+      "Basic Use"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#caching-and-freezing",
     "href": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#caching-and-freezing",
     "title": "Basic Use",
     "section": "Caching and Freezing",
-    "text": "Caching and Freezing\nImprove efficiency by caching results of time-consuming computations:\nexecute:\n  cache: true\nFreeze documents to avoid unnecessary re-executions:"
+    "text": "Caching and Freezing\nImprove efficiency by caching results of time-consuming computations:\nexecute:\n  cache: true\nFreeze documents to avoid unnecessary re-executions:",
+    "crumbs": [
+      "Intro to Quarto",
+      "Basic Use"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#publishing-documents",
     "href": "courses/fc3-intro-quarto/quarto-use/quarto-use.html#publishing-documents",
     "title": "Basic Use",
     "section": "Publishing Documents",
-    "text": "Publishing Documents\nTo quickly publish your Quarto document as a website using GitHub Pages:"
+    "text": "Publishing Documents\nTo quickly publish your Quarto document as a website using GitHub Pages:",
+    "crumbs": [
+      "Intro to Quarto",
+      "Basic Use"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html",
     "title": "Quarto and Positron",
     "section": "",
-    "text": "This unit explains how to effectively use Quarto within the Positron IDE. Leveraging your existing knowledge of Positron, you will explore Quarto-specific features, workflows, and debugging practices within the IDE environment."
+    "text": "This unit explains how to effectively use Quarto within the Positron IDE. Leveraging your existing knowledge of Positron, you will explore Quarto-specific features, workflows, and debugging practices within the IDE environment.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#positron-and-quarto-integration",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#positron-and-quarto-integration",
     "title": "Quarto and Positron",
     "section": "Positron and Quarto Integration",
-    "text": "Positron and Quarto Integration\nPositron is an intuitive, cross-platform IDE ideal for data science tasks. Due to your familiarity with Positron, this section will focus specifically on utilizing Positron’s built-in features to streamline your Quarto workflow."
+    "text": "Positron and Quarto Integration\nPositron is an intuitive, cross-platform IDE ideal for data science tasks. Due to your familiarity with Positron, this section will focus specifically on utilizing Positron’s built-in features to streamline your Quarto workflow.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#working-with-.qmd-files-in-positron",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#working-with-.qmd-files-in-positron",
     "title": "Quarto and Positron",
     "section": "Working with .qmd Files in Positron",
-    "text": "Working with .qmd Files in Positron\nOpening a .qmd file in Positron immediately:\n\nActivates syntax highlighting for YAML headers, Markdown text, and embedded code chunks (R, Python, Julia, Bash).\nOpens a live Preview Pane, refreshing automatically upon file save.\nProvides a convenient Render Button to execute quarto render without leaving the IDE."
+    "text": "Working with .qmd Files in Positron\nOpening a .qmd file in Positron immediately:\n\nActivates syntax highlighting for YAML headers, Markdown text, and embedded code chunks (R, Python, Julia, Bash).\nOpens a live Preview Pane, refreshing automatically upon file save.\nProvides a convenient Render Button to execute quarto render without leaving the IDE.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#rendering-documents",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#rendering-documents",
     "title": "Quarto and Positron",
     "section": "Rendering Documents",
-    "text": "Rendering Documents\nRendering your document is straightforward:\n\nClick the Render button or use the shortcut Ctrl + Shift + K.\nPositron executes the rendering command (e.g., quarto render) and displays any output messages or warnings in the integrated terminal.\n\nFor example:\nquarto render document.qmd --to html\nThe rendered document appears directly within Positron, allowing immediate inspection."
+    "text": "Rendering Documents\nRendering your document is straightforward:\n\nClick the Render button or use the shortcut Ctrl + Shift + K.\nPositron executes the rendering command (e.g., quarto render) and displays any output messages or warnings in the integrated terminal.\n\nFor example:\nquarto render document.qmd --to html\nThe rendered document appears directly within Positron, allowing immediate inspection.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#live-preview-for-html-documents",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#live-preview-for-html-documents",
     "title": "Quarto and Positron",
     "section": "Live Preview for HTML Documents",
-    "text": "Live Preview for HTML Documents\nPositron supports live preview for HTML outputs through a built-in websocket server. This enables instant feedback on your edits without the need for manual rendering, providing a smooth, interactive authoring experience."
+    "text": "Live Preview for HTML Documents\nPositron supports live preview for HTML outputs through a built-in websocket server. This enables instant feedback on your edits without the need for manual rendering, providing a smooth, interactive authoring experience.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#customizing-quarto-settings-in-positron",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#customizing-quarto-settings-in-positron",
     "title": "Quarto and Positron",
     "section": "Customizing Quarto Settings in Positron",
-    "text": "Customizing Quarto Settings in Positron\nAccess Quarto customization via:\nSettings › Build Tools › Quarto\nHere, you can configure:\n\nDefault output formats (useful when the YAML header doesn’t specify format: explicitly).\n“Render on Save” behavior for automatic document updates.\nReal-time validation settings for specific programming languages.\n\nThese configurations are saved per project, facilitating consistency across team environments."
+    "text": "Customizing Quarto Settings in Positron\nAccess Quarto customization via:\nSettings › Build Tools › Quarto\nHere, you can configure:\n\nDefault output formats (useful when the YAML header doesn’t specify format: explicitly).\n“Render on Save” behavior for automatic document updates.\nReal-time validation settings for specific programming languages.\n\nThese configurations are saved per project, facilitating consistency across team environments.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#debugging-and-troubleshooting",
     "href": "courses/fc3-intro-quarto/quarto-positron/quarto-positron.html#debugging-and-troubleshooting",
     "title": "Quarto and Positron",
     "section": "Debugging and Troubleshooting",
-    "text": "Debugging and Troubleshooting\nIf you encounter rendering issues, follow these steps:\n\nCheck the Terminal pane for the exact command executed by Positron.\nManually execute the command in your terminal to identify detailed error messages.\nRun quarto check to confirm that all necessary dependencies and language engines are correctly installed.\n\nThis systematic approach simplifies the troubleshooting process, ensuring minimal disruption to your workflow."
+    "text": "Debugging and Troubleshooting\nIf you encounter rendering issues, follow these steps:\n\nCheck the Terminal pane for the exact command executed by Positron.\nManually execute the command in your terminal to identify detailed error messages.\nRun quarto check to confirm that all necessary dependencies and language engines are correctly installed.\n\nThis systematic approach simplifies the troubleshooting process, ensuring minimal disruption to your workflow.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto and Positron"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html",
     "href": "courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html",
     "title": "Quarto Installation and Setup",
     "section": "",
-    "text": "This unit guides you through the installation and initial setup of Quarto. You will learn how to install Quarto, verify your setup, and perform your first document render."
+    "text": "This unit guides you through the installation and initial setup of Quarto. You will learn how to install Quarto, verify your setup, and perform your first document render.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto Installation and Setup"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html#installing-quarto",
     "href": "courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html#installing-quarto",
     "title": "Quarto Installation and Setup",
     "section": "Installing Quarto",
-    "text": "Installing Quarto\nVisit the Quarto download page and select the installer for your operating system.\nAfter installation, confirm it by running:\nquarto --version"
+    "text": "Installing Quarto\nVisit the Quarto download page and select the installer for your operating system.\nAfter installation, confirm it by running:\nquarto --version",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto Installation and Setup"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html#verifying-your-setup",
     "href": "courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html#verifying-your-setup",
     "title": "Quarto Installation and Setup",
     "section": "Verifying Your Setup",
-    "text": "Verifying Your Setup\nUse the following command to check if your setup is correctly configured:\nquarto check\nEnsure dependencies like Pandoc, LaTeX (if generating PDFs), and language-specific engines (R, Python, Julia) are detected."
+    "text": "Verifying Your Setup\nUse the following command to check if your setup is correctly configured:\nquarto check\nEnsure dependencies like Pandoc, LaTeX (if generating PDFs), and language-specific engines (R, Python, Julia) are detected.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Quarto Installation and Setup"
+    ]
   },
   {
     "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html",
     "href": "courses/fc2a-intro-r/r-positron/r-positron.html",
-    "title": "R Installation and Setup",
+    "title": "Using R through Positron",
     "section": "",
-    "text": "This unit covers the installation and setup of R."
+    "text": "This unit covers the use of R inside of Positron.",
+    "crumbs": [
+      "Intro to R",
+      "Using R through Positron"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#installation",
-    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#installation",
-    "title": "R Installation and Setup",
-    "section": "Installation",
-    "text": "Installation\nPositron can be freely downloaded from its website. Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).\nYou might be asked some questions during the install process. It is safe to always go with the defaults, unless you know you need something different."
+    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#writing-r-code-in-positron",
+    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#writing-r-code-in-positron",
+    "title": "Using R through Positron",
+    "section": "Writing R Code in Positron",
+    "text": "Writing R Code in Positron",
+    "crumbs": [
+      "Intro to R",
+      "Using R through Positron"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#setup",
-    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#setup",
-    "title": "R Installation and Setup",
-    "section": "Setup",
-    "text": "Setup\nOnce R is installed, you can open it. The graphical interace you see will look pretty outdated. That’s ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron."
+    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#running-r-code-in-positron",
+    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#running-r-code-in-positron",
+    "title": "Using R through Positron",
+    "section": "Running R Code in Positron",
+    "text": "Running R Code in Positron",
+    "crumbs": [
+      "Intro to R",
+      "Using R through Positron"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#quick-spin",
-    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#quick-spin",
-    "title": "R Installation and Setup",
-    "section": "Quick spin",
-    "text": "Quick spin\nJust to make sure R is running, you can type some math into the console at the &gt; sign. E.g. if you type 2+2, you should get 4 as a result.\nMost of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type install.packages('dplyr') into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the dplyr package, which is a very useful package for data manipulation. To check if it worked, type library(dplyr). You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s all ok for now. R should be working now and you can close it."
+    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#debugging-r-code-in-positron",
+    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#debugging-r-code-in-positron",
+    "title": "Using R through Positron",
+    "section": "Debugging R Code in Positron",
+    "text": "Debugging R Code in Positron",
+    "crumbs": [
+      "Intro to R",
+      "Using R through Positron"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-positron/r-positron.html#updating-r",
-    "href": "courses/fc2a-intro-r/r-positron/r-positron.html#updating-r",
-    "title": "R Installation and Setup",
-    "section": "Updating R",
-    "text": "Updating R\nR is pretty stable and not much changes between versions. As long as you have one of the more recent versions installed, you should be good. If you want to upgrade, just install the new version. It will not override the old one, so if you want to get rid of that one, you need to uninstall it yourself.\nNote that when you update to a new version of R, you might also need to re-install R packages (discussed shortly.)"
-  },
-  {
-    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html",
-    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html",
-    "title": "R Installation and Setup",
+    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html",
+    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html",
+    "title": "Introduction to R",
     "section": "",
-    "text": "This unit covers the installation and setup of R."
+    "text": "This unit provides a high‑level introduction to R.",
+    "crumbs": [
+      "Intro to R",
+      "Introduction to R"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#installation",
-    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#installation",
-    "title": "R Installation and Setup",
-    "section": "Installation",
-    "text": "Installation\nPositron can be freely downloaded from its website. Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).\nYou might be asked some questions during the install process. It is safe to always go with the defaults, unless you know you need something different."
+    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html#programming-languages",
+    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html#programming-languages",
+    "title": "Introduction to R",
+    "section": "Programming Languages",
+    "text": "Programming Languages\nIn brief, programming languages are ways to get a computer to do things. There are many different programming languages, each with its own syntax (rules for how to write code), strengths and weaknesses, and areas of application. Some programming languages are general-purpose, meaning they can be used for a wide range of tasks (e.g., Python, Java, C++). Others are more specialized, designed for specific tasks or domains (e.g., R for statistics, SQL for database queries).\nFor data science type work, there are several popular programming languages, including R, Python, Julia, and MATLAB. Each of these languages has its own strengths and weaknesses, and the choice of which one to use often depends on the specific needs of the project, the preferences of the team, and the existing ecosystem of tools and libraries.",
+    "crumbs": [
+      "Intro to R",
+      "Introduction to R"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#setup",
-    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#setup",
-    "title": "R Installation and Setup",
-    "section": "Setup",
-    "text": "Setup\nOnce R is installed, you can open it. The graphical interace you see will look pretty outdated. That’s ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron."
+    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html#the-r-language",
+    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html#the-r-language",
+    "title": "Introduction to R",
+    "section": "The R language",
+    "text": "The R language\nR is a programming language and software environment specifically designed for statistical computing and graphics. It was created in the early 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland in New Zealand. R has since become one of the most widely used languages for data analysis, statistical modeling, and data visualization.",
+    "crumbs": [
+      "Intro to R",
+      "Introduction to R"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#quick-spin",
-    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#quick-spin",
-    "title": "R Installation and Setup",
-    "section": "Quick spin",
-    "text": "Quick spin\nJust to make sure R is running, you can type some math into the console at the &gt; sign. E.g. if you type 2+2, you should get 4 as a result.\nMost of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type install.packages('dplyr') into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the dplyr package, which is a very useful package for data manipulation. To check if it worked, type library(dplyr). You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s all ok for now. R should be working now and you can close it."
+    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html#r-strengths-and-weaknesses",
+    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html#r-strengths-and-weaknesses",
+    "title": "Introduction to R",
+    "section": "R strengths and weaknesses",
+    "text": "R strengths and weaknesses\nLike every programming language, R has its advantages and disadvantages. Feel free to do a web search on that topic, and you will encounter tons of people with tons of opinions. Some of the features that are useful to us are:\n\nR is Open Source, FREE, and cross-platform.\nR is a “high-level” programming language, relatively easy to learn (compared to Fortran, C, etc.).\nR comes with many integrated functions.\nR is great for statistics, data analysis, and graphics.\nThe R Community is very dynamic, helpful and welcoming.\nThrough R packages, it is easy to get lots of state-of-the-art algorithms.\nDocumentation and help files for R are generally good.\n\nWhile we use R in this course, it is not the only option for modeling and data analysis. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used to analyze data (e.g., Matlab, Mathematica, Tableau, SAS, SPSS). Other more general programming languages can at times be suitable as well (e.g., C, Fortran, Perl, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those additional languages. The good news is that even though those languages are all different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. And R is a good one to get started with.",
+    "crumbs": [
+      "Intro to R",
+      "Introduction to R"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#updating-r",
-    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#updating-r",
-    "title": "R Installation and Setup",
-    "section": "Updating R",
-    "text": "Updating R\nR is pretty stable and not much changes between versions. As long as you have one of the more recent versions installed, you should be good. If you want to upgrade, just install the new version. It will not override the old one, so if you want to get rid of that one, you need to uninstall it yourself.\nNote that when you update to a new version of R, you might also need to re-install R packages (discussed shortly.)"
-  },
-  {
-    "objectID": "courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html",
-    "href": "courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html",
+    "objectID": "courses/fc2a-intro-r/r-further-resources/r-further-resources.html",
+    "href": "courses/fc2a-intro-r/r-further-resources/r-further-resources.html",
     "title": "Git and GitHub Installation & Setup",
     "section": "",
-    "text": "Overview\nBefore you can track changes you need Git on your computer and a few global settings that stamp each commit with your identity.\n\n\nGoals\n\nInstall the latest stable Git on Windows, macOS, or Linux\n\nConfigure your username, email, and default branch name\n\nGenerate an SSH key and add it to GitHub\n\nVerify connectivity with git ls-remote\n\n\n\nFurther resources\n\nGit Downloads – https://git-scm.com/downloads\n\nGenerating SSH Keys – https://docs.github.com/authentication/connecting-to-github-with-ssh\n\nGit Credential Storage – https://git-scm.com/docs/gitcredentials\n\n\n\nPractice\n\nInstall Git and confirm git --version ≥ 2.40.\n\nSet your global username and email.\n\nGenerate an SSH key and add it to your GitHub account.\n\nClone git@github.com:octocat/Hello-World.git to verify SSH access.\n\nChange the default editor (git config --global core.editor \"nano\" or similar)."
+    "text": "Overview\nBefore you can track changes you need Git on your computer and a few global settings that stamp each commit with your identity.\n\n\nGoals\n\nInstall the latest stable Git on Windows, macOS, or Linux\n\nConfigure your username, email, and default branch name\n\nGenerate an SSH key and add it to GitHub\n\nVerify connectivity with git ls-remote\n\n\n\nFurther resources\n\nGit Downloads – https://git-scm.com/downloads\n\nGenerating SSH Keys – https://docs.github.com/authentication/connecting-to-github-with-ssh\n\nGit Credential Storage – https://git-scm.com/docs/gitcredentials\n\n\n\nPractice\n\nInstall Git and confirm git --version ≥ 2.40.\n\nSet your global username and email.\n\nGenerate an SSH key and add it to your GitHub account.\n\nClone git@github.com:octocat/Hello-World.git to verify SSH access.\n\nChange the default editor (git config --global core.editor \"nano\" or similar).",
+    "crumbs": [
+      "Intro to R",
+      "Git and GitHub Installation & Setup"
+    ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html",
-    "href": "courses/fc1-intro-positron/positron-use/positron-use.html",
-    "title": "Basic Positron Use",
+    "objectID": "courses/fc2a-intro-r/intro-r-toc.html",
+    "href": "courses/fc2a-intro-r/intro-r-toc.html",
+    "title": "TOC: A brief introduction to R",
     "section": "",
-    "text": "In this unit, we’ll cover some of the basics of using Positron.",
+    "text": "Course Content\n\nItrnoduction to R\nR Installation and Setup\nUsing R through Positron\nBasics of Coding in R\nR Packages\nFurther Resources",
     "crumbs": [
-      "Courses",
-      "Basic Positron Use"
+      "Intro to R",
+      "TOC: A brief introduction to R"
     ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#introduction",
-    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#introduction",
-    "title": "Basic Positron Use",
-    "section": "Introduction",
-    "text": "Introduction\nAt the heart of every IDE, such as Positron, is the editor. Positron allows you to edit files efficiently, and if it is code, you can also run it. We’ll explore some basic examples in this short unit.",
-    "crumbs": [
-      "Courses",
-      "Basic Positron Use"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-a-text-file",
-    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-a-text-file",
-    "title": "Basic Positron Use",
-    "section": "Editing a text file",
-    "text": "Editing a text file\nThis is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn’t necessarily need to be plain text. You can for instance open and edit a CSV file as well. We already tried that earlier when we discussed extensions. Feel free to revisit this by re-opening the prior CSV file and changing some of its contents. The save it under a new name.\nDepending on the type of file you are editing, Positron will try to provide some features that make it easier to work with it. For instance, if you open an R script, it will highlight the syntax and provide some code completion features. Syntax highlighting exists for many languages, not just R. As you work with the editor and learn more features, you will continue to find features that make your workflow easier and more efficient.",
-    "crumbs": [
-      "Courses",
-      "Basic Positron Use"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-and-running-code",
-    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-and-running-code",
-    "title": "Basic Positron Use",
-    "section": "Editing and running code",
-    "text": "Editing and running code\nPositron is meant for working with code. It is especically designed to work well with R and Python, but other languages are also supported, many through extensions. Let’s explore a small example with R. Go to “File” -&gt; “New File” and pick “R File”. An empty file will open in the editor. Write a few lines of R code, for instance the following\n\nx = seq(1,100)\ny = x^2\nplot(x,y)\n\nNext, save the file somewhere. If Positron was ‘just an editor’, we would now have to switch over to R and run the code there. But with an IDE, we can do it all in one place. You should see a small triangle symbol in the top right corner of the editor. Press it to run the code. This will open the R console in the bottom window, execute the ‘source’ command to run the code, and show the resulting plot in the bottom right window. In the top right window, you can also see the variables that were generated.\nLet’s say you want to have a line instead of circles for the plot but don’t remember the command. In the R console, you can type ?plot to call the help file for the plot function, which will show in a separate pane.\nOnce you found what you are looking for, change your code so it says plot(x,y,type='l') and run again. This time, instead of pressing the ‘run’ button, try to execute the code one line at a time. You can do that by starting in the first line and pressing Ctrl/Cmd + Enter. The first line will be executed, and you can then continue to the next line by pressing Ctrl/Cmd + Enter again. You will see the new plot show up. You should also see that the old plot is still there, you can go back to it with the arrows above the plot. The menu above the plot also allows you to save any of them, and do other things.\nIt is generally not advised to do any steps like writing code or saving plots manually, you should instead have fully automated code do all of it to ensure reproducibility. But for exploring and testing, these iterative and manual steps are often needed and having all these features in one location makes some of these coding, modeling and data science talks much more efficient.",
-    "crumbs": [
-      "Courses",
-      "Basic Positron Use"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#working-with-quarto-documents",
-    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#working-with-quarto-documents",
-    "title": "Basic Positron Use",
-    "section": "Working with Quarto documents",
-    "text": "Working with Quarto documents\nLet’s try a brief quarto document. Quarto itself is discussed in our Brief Introduction to Quarto course, so we won’t talk about it much here, just showcase how to work with it in Positron.\nStart another new file, and this time from the menu, pick Quarto Document towards the bottom. Another editor window should open with an almost empty area. There will be a few lines at the top indicating a Quarto document.\nGive it a title, write a heading with # Heading, then add some text. Next take the code from the previous example and insert it into the Quarto file as code chunk, like this\n```{r}\n#| echo: true\n#| eval: true\nx = seq(1,100)\ny = x^2\nplot(x,y)\n```\nThen add a bit more text after this code chunk. Finally, safe the file as .qmd file.\nThen press the ‘preview’ button above the editor window. Quarto should run and compile/render the document. If things work right, you should see a preview of your Quarto document show up in the viewer pane or open in an external browser, depending on your settings for the Quarto extension.",
-    "crumbs": [
-      "Courses",
-      "Basic Positron Use"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html",
-    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html",
-    "title": "Further Positron Resources",
+    "objectID": "courses/fc1-intro-positron/positron-use/example.html",
+    "href": "courses/fc1-intro-positron/positron-use/example.html",
+    "title": "Untitled",
     "section": "",
-    "text": "This unit provides a few more bits of information, and a listing of hopefully useful resources for further learning.",
-    "crumbs": [
-      "Courses",
-      "Further Positron Resources"
-    ]
+    "text": "Heading\nSome text.\nA code chunk\n\nx = seq(1,100)\ny = x^2\nplot(x,y)\n\n\n\n\n\n\n\n\nSome more text. The end."
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#introduction",
-    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#introduction",
-    "title": "Further Positron Resources",
-    "section": "Introduction",
-    "text": "Introduction\nPositron is still fairly new and under active development. As such, the available documentation is still a bit sparse, and things might change. Here are a few pointers that hopefully help you as you learn more about Positron.",
-    "crumbs": [
-      "Courses",
-      "Further Positron Resources"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#positron-vs-code-often",
-    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#positron-vs-code-often",
-    "title": "Further Positron Resources",
-    "section": "Positron = VS Code (often)",
-    "text": "Positron = VS Code (often)\nAs mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it’s always a good idea to search for help for VS code if you can’t find something for Positron, and try if the VS Code solution works.\nIt also means that most - though not all - extensions that work in VS Code will also work in Positron. So if you find a useful extension for VS Code, you can likely install it in Positron as well.",
-    "crumbs": [
-      "Courses",
-      "Further Positron Resources"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#trust-issues",
-    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#trust-issues",
-    "title": "Further Positron Resources",
-    "section": "Trust Issues",
-    "text": "Trust Issues\nWhen you open a folder or workspace in Positron for the first time, you might be asked if you trust the authors of the files in that folder/workspace. This is a security feature to prevent malicious code from running on your computer without your knowledge. If you are working on your own projects, you can generally safely trust the folder. If you are working on projects from others, make sure you know and trust the source before trusting the folder.\nIf you want to change the overall trust settings, you can go to ‘Settings’, then search for ‘trust’. You can adjust various settings related to trust. For instance if you don’t want to get these notifications, you can set Trust: Startup Prompt to never.",
-    "crumbs": [
-      "Courses",
-      "Further Positron Resources"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#tutorials-and-other-resources",
-    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#tutorials-and-other-resources",
-    "title": "Further Positron Resources",
-    "section": "Tutorials and other Resources",
-    "text": "Tutorials and other Resources\n\nThe Positron website has a number of Guides that cover various topics. They are a good starting point to learn more about specific topics. These are still fairly new and expected to grow over time.\nThe VS Code website has a large number of Getting Started Tutorials that are also applicable to Positron.\nBeyond the getting started section, the VS Code Documentation is very comprehensive.\nFor prior RStudio users, there is a specific Migration Guide available at the Positron website.",
-    "crumbs": [
-      "Courses",
-      "Further Positron Resources"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html",
-    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html",
-    "title": "Positron Installation and Setup",
+    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html",
+    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html",
+    "title": "Introduction to IDEs and Positron",
     "section": "",
-    "text": "This unit covers the installation and setup of Positron.",
+    "text": "This unit provides a high‑level introduction to integrated development environments (IDEs) in general and Positron in particular.",
     "crumbs": [
       "Courses",
-      "Positron Installation and Setup"
+      "Introduction to IDEs and Positron"
     ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#installation",
-    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#installation",
-    "title": "Positron Installation and Setup",
-    "section": "Installation",
-    "text": "Installation\nMake sure you reviewed the information on the Positron install page to ensure your computer is ready for the install.\nPositron can be freely downloaded from its website. Pick the version that matches your operating system and architecture.\n\nAs of December 2025, there is not yet a Windows ARM build of Positron available. If you have a Windows ARM machine, the Windows x64 version won’t work. But you can get a pre-release version (which worked for us).\n\nIt should be possible for you to install Positron without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows). If you need to do use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.\nIf you have choices during install for Positron to do certain things (e.g. get an ‘Open with Positron’ option in Windows Explorer), we recommend you choose to have all of those options enabled. Definitely don’t de-select any pre-selected ones, unless you know what you are doing.",
+    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#integrated-development-environments-ides",
+    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#integrated-development-environments-ides",
+    "title": "Introduction to IDEs and Positron",
+    "section": "Integrated Development Environments (IDEs)",
+    "text": "Integrated Development Environments (IDEs)\nAny kind of data analysis and modeling project generally requires interacting with data, writing and debugging code, managing files, producing figures and tables, generating manuscripts or reports, and more. It is convenient to do all this through a single interface, at least as much as possible. This is where the concept of an Integrated Development Environment (IDE) comes in. It is a piece of software that not only lets you write code, but also allows you to do many other project functions through a single interface.\nAnother way to think of IDEs is that they are code editors with a lot of additional bells and whistles. The idea is that one has all the functionality one needs to not just write code, but also to run it and debug it, to look at results, to manage files, etc. in a single place. That’s what an IDE tries to do.\nMost IDEs share certain features:\n\nThe editor is where you write your code. It usually offers syntax highlighting, intelligent completion, and many other features that make coding life easier.\nThe console/terminal area (called panel in Positron) is where you can interact with other pieces of software, such as programming languages (e.g. R, Python, Julia), where you see error messages, and where you can debug.\nAn area (it is the left side bar for Positron) where you can interact with files, perform version control with GitHub, manage extensions, and other operations.\nAnother area (usually the right side bar in Positron) that shows outputs such as figures, allows you to interactively explore data and objects generated by your code, and provides further functionality.\n\nHaving all these features inside one platform makes modern IDEs rather powerful. The flip-side is that it takes time getting used to all the functionality. But it’s generally worth the effort since IDEs make coding and related project work much more efficient. Most IDEs are highly configurable, so you can arrange the items you want to see and where to see them. We’ll discuss that a bit more shortly.",
     "crumbs": [
       "Courses",
-      "Positron Installation and Setup"
+      "Introduction to IDEs and Positron"
     ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#setup",
-    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#setup",
-    "title": "Positron Installation and Setup",
-    "section": "Setup",
-    "text": "Setup\nOnce Positron is installed, you can open it. On first startup, Positron sets up several pre-installed extensions (we’ll discuss extensions shortly). During that process, you might be asked several questions, such as if you want to allow connections to networks. You should basically approve all of them to ensure Positron will fully work.\nYou might run again into administrative issues. If you get requests from your computer to log in as admin, do so or have your admin help you through this part as well. Things might still work even without some of these permissions, but it is better to have it fully set up and allow Positron access to everything it needs.\nOnce all the initial start-up things are done, Positron is ready to go. You should see the main screen with several different areas (called panes or panels), and a menu bar on the top and another one on the left. We’ll discuss the different parts of Positron shortly.\nYou might see one or several red notification dots on some of the icons on the left, asking you to update things or log in. It is generally a good idea to do all that. We’ll discuss some of that in a bit more detail in further units.",
+    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#the-positron-ide",
+    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#the-positron-ide",
+    "title": "Introduction to IDEs and Positron",
+    "section": "The Positron IDE",
+    "text": "The Positron IDE\nSome IDEs focus on a specific programming language (e.g., RStudio), others are very language-agnostic (e.g., VS Code). Positron is a bit in the middle. It’s a fairly new IDE developed by the folks from Posit, who previously developed RStudio. The idea is that it’s an IDE that has strong integration for certain programming languages – currently the main focus is on R and Phython – while also allowing you to work with other languages, such as Julia.\nPositron is cross-platform and free. Because it’s from the same folks that created Quarto, it plays nicely with it. It has many of the nice, user-friendy features of RStudio, but has been designed to be more flexible, extensible and supporting more languages compared to RStudio.\nPositron is a spin-off of VS Code, which is a very popular IDE developed by Microsoft. Positron builds on top of VS Code and adds a lot of functionality that is specifically useful for data analysis and modeling projects. Because of this, Positron also supports a wide range of extensions (add-ons) that can further enhance its functionality. We’ll discuss extensions in more detail in a later unit.",
     "crumbs": [
       "Courses",
-      "Positron Installation and Setup"
+      "Introduction to IDEs and Positron"
     ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#updating-positron",
-    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#updating-positron",
-    "title": "Positron Installation and Setup",
-    "section": "Updating Positron",
-    "text": "Updating Positron\nPositron should check for updates automatically when you open it. If you don’t like automatic updates you can turn it off. If you want to check for updates manually, click the “Check for Updates” button in the menu bar under Help. Since you just installed it, there shouldn’t be any updates.\nFor now, just close Positron, and in the next unit, we’ll re-open it and talk about extensions.",
+    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#positron-versus-other-ides",
+    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#positron-versus-other-ides",
+    "title": "Introduction to IDEs and Positron",
+    "section": "Positron versus other IDEs",
+    "text": "Positron versus other IDEs\nWe think that currently, Positron is a great choice because it plays nicely with Quarto and R, supports Phthon, Julia and Git/GitHub, and is likely to become an increasingly popular and powerful editor for projects related to modeling and data analysis.\nThat said, almost everything we discuss and teach could also be done in a different IDE, such as VS Code or RStudio. While the instructions we provide are often Positron specific, you should be able to get everything working in pretty much any IDE.",
     "crumbs": [
       "Courses",
-      "Positron Installation and Setup"
+      "Introduction to IDEs and Positron"
     ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html",
-    "title": "Positron Extensions",
-    "section": "",
-    "text": "This unit discusses what Positron extensions are, and how to install and use them.",
-    "crumbs": [
-      "Courses",
-      "Positron Extensions"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#introduction",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#introduction",
-    "title": "Positron Extensions",
-    "section": "Introduction",
-    "text": "Introduction\nIn many programming languages, a lot of extra functionality comes from libraries or packages. In editors like Positron (and VS Code and others), the equivalent of packages are extensions (another term sometimes used is plugins).",
-    "crumbs": [
-      "Courses",
-      "Positron Extensions"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#managing-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#managing-extensions",
-    "title": "Positron Extensions",
-    "section": "Managing Extensions",
-    "text": "Managing Extensions\nPositron comes with a number of extensions already installed. To see and manage them, open the Extensions view, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with the top right being tilted). You’ll then see a list of extensions.\nBy default, you see a list of installed extensions. If you just installed Positron, some extensions might need updating. Go ahead and update them. Some might need a restart of the extension (occasionally, you might have to fully restart Positron).\nExtensions can be turned on and off. Enabled extensions are shown normally. Those that are installed but disabled are grayed out. It’s generally safe to disable extensions you don’t need. Just click on the gear icon next to the extension name, then click on ‘Disable’. You can always re-enable it later.\nEnabling or disabling extensions can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don’t want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on ‘Disable’ (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don’t want AI to operate on. You can turn the AI off for that project/workspace.\nFinally, if you decide you don’t like an extension at all, just click on it completely uninstall it.",
-    "crumbs": [
-      "Courses",
-      "Positron Extensions"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#getting-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#getting-extensions",
-    "title": "Positron Extensions",
-    "section": "Getting Extensions",
-    "text": "Getting Extensions\nYou can install more extensions to get extra functionality. Getting extensions is easy. Let’s practice and install an additional extension. First, click on ‘File’ -&gt; ‘Open File’ and open some CSV file on your computer. If you don’t have one readily available, ask your favorite AI to make you one, e.g. with a promt like “Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file.”\nThe file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let’s say we don’t want to have it pre-formmatted by Positron. Click on the ‘Open as plain text file’ button on the top. This should open the CSV file as simple text, you’ll see entries separated by commas. That’s ok, but a bit hard to read. So let’s improve this with an extension.\nGo to the Extensions sidebar and search for ‘Rainbow CSV’. Click on the ‘Install’ button (trust the publisher). Now go back to your open CSV file. You should now see each column in a different color, courtesy of this new extension. This makes CSV files easier to read.\nThis was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you might want in the future, based on your specific needs.\nRecall that Positron is based on VS Code. To learn a bit more about Positron extensions, and how they do and don’t differ from VS Code extensions, check out the Positron extensions page on the Positron documentation website.",
-    "crumbs": [
-      "Courses",
-      "Positron Extensions"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#configuring-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#configuring-extensions",
-    "title": "Positron Extensions",
-    "section": "Configuring Extensions",
-    "text": "Configuring Extensions\nMany extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then in the title area of the extension, next to Auto Update, click on the gear icon and go to Settings. For instance if you do that for the Quarto extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance ‘Quarto &gt; Render &gt; Preview Type’. It’s by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to ‘external’. If you don’t know yet what Quarto is and what rendering and preview means, you will soon once you go through our Brief Introduction to Quarto course 😁.",
-    "crumbs": [
-      "Courses",
-      "Positron Extensions"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#using-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#using-extensions",
-    "title": "Positron Extensions",
-    "section": "Using Extensions",
-    "text": "Using Extensions\nLike packages/libraries in R or Python or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.",
-    "crumbs": [
-      "Courses",
-      "Positron Extensions"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html",
-    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html",
-    "title": "Configuring Positron",
-    "section": "",
-    "text": "This unit discusses a few ways you can configure and customize Positron.",
-    "crumbs": [
-      "Courses",
-      "Configuring Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#introduction",
-    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#introduction",
-    "title": "Configuring Positron",
-    "section": "Introduction",
-    "text": "Introduction\nLike VS Code, Positron is highly customizable. This flexibility allows you to tailor the editor to your specific workflow and preferences. There’s a lot you can customize, we’ll only briefly look at a few main areas here.",
-    "crumbs": [
-      "Courses",
-      "Configuring Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#settings",
-    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#settings",
-    "title": "Configuring Positron",
-    "section": "Settings",
-    "text": "Settings\nUnder the gear symbol in the lower left corner, you can access all of Positron’s settings. These control everything from editor behavior to appearance.\nThere are way too many settings to cover them all here, but you can search for specific settings using the search bar. Some of the most useful settings include:\n\nEditor Font Size: Adjust the font size for better readability.\nEditor Word Wrap: Enable or disable word wrapping in the editor.\n\nOne important fact to keep in mind: You can change settings globally (for all projects) or per project. If you want to change a setting only for the current project, make sure to select the Workspace tab at the top of the settings window. If you want to change it globally, select the User tab at the top of the settings window.",
-    "crumbs": [
-      "Courses",
-      "Configuring Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#themes",
-    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#themes",
-    "title": "Configuring Positron",
-    "section": "Themes",
-    "text": "Themes\nYou can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.\nYou can explore themes by clicking on the gear icon in the lower left corner, then selecting Themes and Color Theme. This opens a list of available themes. Explore them to see what you might like.",
-    "crumbs": [
-      "Courses",
-      "Configuring Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#key-bindings",
-    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#key-bindings",
-    "title": "Configuring Positron",
-    "section": "Key Bindings",
-    "text": "Key Bindings\nSome users prefer different keyboard shortcuts for common commands. Positron allows you to customize these key bindings to match your workflow.\nYou can access key bindings by clicking the gear icon in the lower left corner, then selecting Keyboard Shortcuts. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them.\nFor instance, in Positron, to quickly turn code into comments (by adding a # in front of it for R cde), the default is to select the code chunk you want to comment out and then press the Ctrl/Cmd + / keyboard shortcut. This differs from RStudio, where it is the Ctrl/Cmd + Shift + C shortcut. If you prefer the RStudio shortcut, you can change it in Positron.",
-    "crumbs": [
-      "Courses",
-      "Configuring Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#more-customization",
-    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#more-customization",
-    "title": "Configuring Positron",
-    "section": "More customization",
-    "text": "More customization\nIt should be clear from just this brief discussion that Positron is highly customizable. You can change almost anything, from the layout of the editor to how it behaves when you run code. You want to make sure to explore the settings a bit and find what works best for you, but not waste too much time trying out every possible setting.\nIn general, if you find yourself thinking “I wish I could change Positron to do/show X”, there’s probably a way to do so. If it’s not built into Positron, you might find the needed functionality in an extension, which is discussed in a separate unit.\nAnd again remember, while Positron is fairly new, it’s based on VS Code which has been around for a while and is widely used. So if you are trying to figure out to customize something, it’s probably better to search for “How do I do X in VS Code” instead of “How do I do X in Positron”. Many of the same principles and settings apply.",
-    "crumbs": [
-      "Courses",
-      "Configuring Positron"
-    ]
-  },
-  {
-    "objectID": "courses/courses.html",
-    "href": "courses/courses.html",
-    "title": "Courses",
-    "section": "",
-    "text": "The short courses/tutorials listed below are currently available.\nThese courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.\nThe courses are listed in the order in which the content loosely builds on each other. Some of the later courses assume prior knowledge from earlier courses. However, each course is designed to be fairly self-contained, so if you already are familiar with some of the tools, you can focus on those courses that cover tools that are new to you.\nMore details about each course can be found in the course-specific overview page.\n\nCore Tools\n\nA brief introduction to Positron\nA brief introduction to R\n\n\n\n\nA brief introduction to Quarto\n\n\n\nMore Tools\n\nA brief introduction to AI tools\nA brief introduction to Git/GitHub\n\n\n\nUsing the Tools\n\nCreating an online portfolio"
-  },
-  {
-    "objectID": "courses/course-landing-pages/fc5-intro-github.html",
-    "href": "courses/course-landing-pages/fc5-intro-github.html",
-    "title": "A brief introduction to Git/GitHub",
-    "section": "",
-    "text": "Course Overview\nThis course provides a brief introduction to Git and GitHub.\nThe focus is on getting you set up so you can start using Git/GitHub. The information we provide is not a thorough course on Git/GitHub. You’ll be a lot of ‘learning as you go’ once you start using these tools.\nThis course focuses on the how of Git/GitHub, and only briefly talks about the big-picture for why to use Git/GitHub. \n\n\nCourse Goals\n\nUnderstand what Git and GitHub are and what they are good for.\nInstall Git and create and set up a GitHub account.\nBe able to perform basic Git/GitHub operations.\nSet up a Git/GitHub workflow to work on projects.\nBe aware of some of the limitations and pitfalls of using Git/GitHub.\nBe familiar with resources that you can use to learn more.\n\n\n\n\nCourse Prerequisites\nWe show how to use Git/GitHub with Positron. For that, you should be familiar with Positron at least at the level covered in our Brief Introduction to Positron course.\nIf you don’t want to use Git/GitHub through Positron, you can skip that part of the course and still follow along with the rest.\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic uses\nImportant caveats and limitations\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
-  },
-  {
-    "objectID": "courses/course-landing-pages/fc3-intro-quarto.html",
-    "href": "courses/course-landing-pages/fc3-intro-quarto.html",
-    "title": "A brief introduction to Quarto",
-    "section": "",
-    "text": "Course Overview\nThis short course provides a basic introduction to Quarto. The goal is to get up and running, so that you can create simple Quarto documents. More on-the-fly learning will be needed as you start using Quarto more intensively.\n\n\nCourse Goals\n\nUnderstand what Quarto is.\nBe able to create basic documents using Quarto.\nBe familiar with sources that you can use to learn more.\n\n\n\n\nCourse Prerequisites\n\nWe assume you have Positron up and running and can use it at the level covered in our Brief Introduction to Positron course.\nWe further assume that you have R installed and can use it at the level covered in our Brief Introduction to R course. \n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nUsing Quarto with Positron\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
-  },
-  {
-    "objectID": "courses/course-landing-pages/fc1-intro-positron.html",
-    "href": "courses/course-landing-pages/fc1-intro-positron.html",
-    "title": "A brief introduction to Positron",
-    "section": "",
-    "text": "Course Overview\nThis course provides an introduction to the Positron editor and Integrated Development Environment (IDE).\n\n\nCourse Goals\n\nUnderstand the benefits of using an IDE.\nSuccessfully install Positron.\nBe familiar with the basic features of Positron.\nUnderstand the idea and how to install extensions.\nLearn about configuration options.\n\n\n\n\nCourse Prerequisites\nNo specific prior knowledge is required. We assume you have basic computing skills.\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nUsing Extensions\nConfiguration\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
-  },
-  {
-    "objectID": "courses/course-landing-pages/fc2a-intro-r.html",
-    "href": "courses/course-landing-pages/fc2a-intro-r.html",
-    "title": "A brief introduction to R",
-    "section": "",
-    "text": "Course Overview\nThis course provides a very brief introduction to the R programming language. We cover install, setup and first steps. This course is not meant to teach you how to code in R, only to get you started with using it.\n\n\nCourse Goals\n\nKnow what R is.\nHave R successfully installed and set up.\nBe familiar with some basic R use.\nBe able to run R code.\nUnderstand the ideas of packages and how to manage them.\n\n\n\n\nCourse Prerequisites\n\nWe assume you have Positron up and running and can use it at the level covered in our Brief Introduction to Positron course.\n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nInstalling and using Packages\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
-  },
-  {
-    "objectID": "courses/course-landing-pages/fc4-intro-ai.html",
-    "href": "courses/course-landing-pages/fc4-intro-ai.html",
-    "title": "A brief introduction to AI tools",
-    "section": "",
-    "text": "Course Overview\nThis course provides a brief introduction to AI tools that work nicely with the other tools in our stack.\nAs with the other courses, this is a very brief getting started introduction. It will hopefully be enough to get you set up and running.\n\n\nCourse Goals\n\nKnow what AI tolls are useful for R/Positron/etc.\nInstall and set up various AI tools.\nBe familiar with some basic AI use.\n\n\n\n\nCourse Prerequisites\nWe assume you have the following tools up and running at the level covered in our other brief introduction courses:\n\nA brief Introduction to Positron course.\nA brief Introduction to R course.\nA brief Introduction to Quarto course.\n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nSetup of AI tools\nBasic use\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
-  },
-  {
-    "objectID": "courses/course-landing-pages/fc6-portfolio-creation.html",
-    "href": "courses/course-landing-pages/fc6-portfolio-creation.html",
-    "title": "Creating an online portfolio",
-    "section": "",
-    "text": "Course Overview\nThis course gets you started at using Positron, Git/GitHub and Quarto to set up a website that will be your portfolio for exercises and projects.\n\n\nCourse Goals\n\nKnow why having a public portfolio is a good idea.\nBe able to create a portfolio website using Positron, Git/GitHub and Quarto.\nBe ready to use your portfolio for future exercises and projects.\n\n\n\n\nCourse Prerequisites\n\nWe assume you have Positron up and running and can use it at the level covered in our Brief Introduction to Positron course.\nWe further assume that you have R installed and can use it at the level covered in our Brief Introduction to R course.\nWe also assume you have a basic knowledge of Quarto and can use it at the level covered in our Brief Introduction to Quarto course.\nWe also assume you have Git/GitHub set up and can use it at the level covered in our Brief Introduction to Git/GitHub course. \n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nMotivation\nSetup\nFirst content creation\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/intro-positron-toc.html",
-    "href": "courses/fc1-intro-positron/intro-positron-toc.html",
-    "title": "TOC: A brief introduction to Positron",
-    "section": "",
-    "text": "Course Content\n\nIntroduction to IDEs and Positron\nPositron Installation and Setup\nPositron Extensions\nBasic Positron Features\nConfiguring Positron\nBasic Positron Use\nFurther Positron Resources",
-    "crumbs": [
-      "Courses",
-      "TOC: A brief introduction to Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#overview",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#overview",
-    "title": "Positron Extensions",
-    "section": "Overview",
-    "text": "Overview\nThis unit discusses what Positron extensions are, and how to install and use them."
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#goals",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#goals",
-    "title": "Positron Extensions",
-    "section": "Goals",
-    "text": "Goals\n\nBe familiar with Positron extensions.\nKnow how to install and use extensions."
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#introduction",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#introduction",
-    "title": "Positron Extensions",
-    "section": "Introduction",
-    "text": "Introduction\nIn programming languages, a lot of extra functionality comes from packages. In editors like Positron (and VS Code and others), the equivalent of packages are ‘extensions’ (another term sometimes used is ‘plugins’). You can install extensions to get extra functionality."
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#what-are-positron-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#what-are-positron-extensions",
-    "title": "Positron Extensions",
-    "section": "What are Positron Extensions?",
-    "text": "What are Positron Extensions?\nPositron extensions enhance your IDE experience by adding functionality such as code snippets, language support, themes, and integrations."
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#installing-an-extension",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#installing-an-extension",
-    "title": "Positron Extensions",
-    "section": "Installing an Extension",
-    "text": "Installing an Extension\nOpen the Extension Manager panel, search for an extension by name, and click Install."
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#getting-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#getting-extensions",
-    "title": "Positron Extensions",
-    "section": "Getting Extensions",
-    "text": "Getting Extensions"
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#managing-extensions",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#managing-extensions",
-    "title": "Positron Extensions",
-    "section": "Managing Extensions",
-    "text": "Managing Extensions"
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#summary",
-    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#summary",
-    "title": "Positron Extensions",
-    "section": "Summary",
-    "text": "Summary\nExtensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible."
   },
   {
     "objectID": "courses/fc1-intro-positron/positron-features/positron-features.html",
@@ -844,181 +590,670 @@
     ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html",
-    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html",
-    "title": "Introduction to IDEs and Positron",
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#overview",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#overview",
+    "title": "Positron Extensions",
+    "section": "Overview",
+    "text": "Overview\nThis unit discusses what Positron extensions are, and how to install and use them."
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#goals",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#goals",
+    "title": "Positron Extensions",
+    "section": "Goals",
+    "text": "Goals\n\nBe familiar with Positron extensions.\nKnow how to install and use extensions."
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#introduction",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#introduction",
+    "title": "Positron Extensions",
+    "section": "Introduction",
+    "text": "Introduction\nIn programming languages, a lot of extra functionality comes from packages. In editors like Positron (and VS Code and others), the equivalent of packages are ‘extensions’ (another term sometimes used is ‘plugins’). You can install extensions to get extra functionality."
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#what-are-positron-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#what-are-positron-extensions",
+    "title": "Positron Extensions",
+    "section": "What are Positron Extensions?",
+    "text": "What are Positron Extensions?\nPositron extensions enhance your IDE experience by adding functionality such as code snippets, language support, themes, and integrations."
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#installing-an-extension",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#installing-an-extension",
+    "title": "Positron Extensions",
+    "section": "Installing an Extension",
+    "text": "Installing an Extension\nOpen the Extension Manager panel, search for an extension by name, and click Install."
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#getting-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#getting-extensions",
+    "title": "Positron Extensions",
+    "section": "Getting Extensions",
+    "text": "Getting Extensions"
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#managing-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#managing-extensions",
+    "title": "Positron Extensions",
+    "section": "Managing Extensions",
+    "text": "Managing Extensions"
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#summary",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html#summary",
+    "title": "Positron Extensions",
+    "section": "Summary",
+    "text": "Summary\nExtensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible."
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/intro-positron-toc.html",
+    "href": "courses/fc1-intro-positron/intro-positron-toc.html",
+    "title": "TOC: A brief introduction to Positron",
     "section": "",
-    "text": "This unit provides a high‑level introduction to integrated development environments (IDEs) in general and Positron in particular.",
+    "text": "Course Content\n\nIntroduction to IDEs and Positron\nPositron Installation and Setup\nPositron Extensions\nBasic Positron Features\nConfiguring Positron\nBasic Positron Use\nFurther Positron Resources",
     "crumbs": [
       "Courses",
-      "Introduction to IDEs and Positron"
+      "TOC: A brief introduction to Positron"
     ]
   },
   {
-    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#integrated-development-environments-ides",
-    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#integrated-development-environments-ides",
-    "title": "Introduction to IDEs and Positron",
-    "section": "Integrated Development Environments (IDEs)",
-    "text": "Integrated Development Environments (IDEs)\nAny kind of data analysis and modeling project generally requires interacting with data, writing and debugging code, managing files, producing figures and tables, generating manuscripts or reports, and more. It is convenient to do all this through a single interface, at least as much as possible. This is where the concept of an Integrated Development Environment (IDE) comes in. It is a piece of software that not only lets you write code, but also allows you to do many other project functions through a single interface.\nAnother way to think of IDEs is that they are code editors with a lot of additional bells and whistles. The idea is that one has all the functionality one needs to not just write code, but also to run it and debug it, to look at results, to manage files, etc. in a single place. That’s what an IDE tries to do.\nMost IDEs share certain features:\n\nThe editor is where you write your code. It usually offers syntax highlighting, intelligent completion, and many other features that make coding life easier.\nThe console/terminal area (called panel in Positron) is where you can interact with other pieces of software, such as programming languages (e.g. R, Python, Julia), where you see error messages, and where you can debug.\nAn area (it is the left side bar for Positron) where you can interact with files, perform version control with GitHub, manage extensions, and other operations.\nAnother area (usually the right side bar in Positron) that shows outputs such as figures, allows you to interactively explore data and objects generated by your code, and provides further functionality.\n\nHaving all these features inside one platform makes modern IDEs rather powerful. The flip-side is that it takes time getting used to all the functionality. But it’s generally worth the effort since IDEs make coding and related project work much more efficient. Most IDEs are highly configurable, so you can arrange the items you want to see and where to see them. We’ll discuss that a bit more shortly.",
-    "crumbs": [
-      "Courses",
-      "Introduction to IDEs and Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#the-positron-ide",
-    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#the-positron-ide",
-    "title": "Introduction to IDEs and Positron",
-    "section": "The Positron IDE",
-    "text": "The Positron IDE\nSome IDEs focus on a specific programming language (e.g., RStudio), others are very language-agnostic (e.g., VS Code). Positron is a bit in the middle. It’s a fairly new IDE developed by the folks from Posit, who previously developed RStudio. The idea is that it’s an IDE that has strong integration for certain programming languages – currently the main focus is on R and Phython – while also allowing you to work with other languages, such as Julia.\nPositron is cross-platform and free. Because it’s from the same folks that created Quarto, it plays nicely with it. It has many of the nice, user-friendy features of RStudio, but has been designed to be more flexible, extensible and supporting more languages compared to RStudio.\nPositron is a spin-off of VS Code, which is a very popular IDE developed by Microsoft. Positron builds on top of VS Code and adds a lot of functionality that is specifically useful for data analysis and modeling projects. Because of this, Positron also supports a wide range of extensions (add-ons) that can further enhance its functionality. We’ll discuss extensions in more detail in a later unit.",
-    "crumbs": [
-      "Courses",
-      "Introduction to IDEs and Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#positron-versus-other-ides",
-    "href": "courses/fc1-intro-positron/positron-introduction/positron-introduction.html#positron-versus-other-ides",
-    "title": "Introduction to IDEs and Positron",
-    "section": "Positron versus other IDEs",
-    "text": "Positron versus other IDEs\nWe think that currently, Positron is a great choice because it plays nicely with Quarto and R, supports Phthon, Julia and Git/GitHub, and is likely to become an increasingly popular and powerful editor for projects related to modeling and data analysis.\nThat said, almost everything we discuss and teach could also be done in a different IDE, such as VS Code or RStudio. While the instructions we provide are often Positron specific, you should be able to get everything working in pretty much any IDE.",
-    "crumbs": [
-      "Courses",
-      "Introduction to IDEs and Positron"
-    ]
-  },
-  {
-    "objectID": "courses/fc1-intro-positron/positron-use/example.html",
-    "href": "courses/fc1-intro-positron/positron-use/example.html",
-    "title": "Untitled",
+    "objectID": "courses/course-landing-pages/fc6-portfolio-creation.html",
+    "href": "courses/course-landing-pages/fc6-portfolio-creation.html",
+    "title": "Creating an online portfolio",
     "section": "",
-    "text": "Heading\nSome text.\nA code chunk\n\nx = seq(1,100)\ny = x^2\nplot(x,y)\n\n\n\n\n\n\n\n\nSome more text. The end."
+    "text": "Course Overview\nThis course gets you started at using Positron, Git/GitHub and Quarto to set up a website that will be your portfolio for exercises and projects.\n\n\nCourse Goals\n\nKnow why having a public portfolio is a good idea.\nBe able to create a portfolio website using Positron, Git/GitHub and Quarto.\nBe ready to use your portfolio for future exercises and projects.\n\n\n\n\nCourse Prerequisites\n\nWe assume you have Positron up and running and can use it at the level covered in our Brief Introduction to Positron course.\nWe further assume that you have R installed and can use it at the level covered in our Brief Introduction to R course.\nWe also assume you have a basic knowledge of Quarto and can use it at the level covered in our Brief Introduction to Quarto course.\nWe also assume you have Git/GitHub set up and can use it at the level covered in our Brief Introduction to Git/GitHub course. \n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nMotivation\nSetup\nFirst content creation\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
   },
   {
-    "objectID": "courses/fc2a-intro-r/intro-r-toc.html",
-    "href": "courses/fc2a-intro-r/intro-r-toc.html",
-    "title": "TOC: A brief introduction to R",
+    "objectID": "courses/course-landing-pages/fc4-intro-ai.html",
+    "href": "courses/course-landing-pages/fc4-intro-ai.html",
+    "title": "A brief introduction to AI tools",
     "section": "",
-    "text": "Course Content\n\nOverview of R\nR Install and Setup\nUsing R through Positron\nBasics of Coding in R\nFurther Resources"
+    "text": "Course Overview\nThis course provides a brief introduction to AI tools that work nicely with the other tools in our stack.\nAs with the other courses, this is a very brief getting started introduction. It will hopefully be enough to get you set up and running.\n\n\nCourse Goals\n\nKnow what AI tolls are useful for R/Positron/etc.\nInstall and set up various AI tools.\nBe familiar with some basic AI use.\n\n\n\n\nCourse Prerequisites\nWe assume you have the following tools up and running at the level covered in our other brief introduction courses:\n\nA brief Introduction to Positron course.\nA brief Introduction to R course.\nA brief Introduction to Quarto course.\n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nSetup of AI tools\nBasic use\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-further-resources/r-further-resources.html",
-    "href": "courses/fc2a-intro-r/r-further-resources/r-further-resources.html",
+    "objectID": "courses/course-landing-pages/fc2a-intro-r.html",
+    "href": "courses/course-landing-pages/fc2a-intro-r.html",
+    "title": "A brief introduction to R",
+    "section": "",
+    "text": "Course Overview\nThis course provides a very brief introduction to the R programming language. We cover install, setup and first steps. This course is not meant to teach you how to code in R, only to get you started with using it.\n\n\nCourse Goals\n\nKnow what R is.\nHave R successfully installed and set up.\nBe familiar with some basic R use.\nBe able to run R code.\nUnderstand the ideas of packages and how to manage them.\n\n\n\n\nCourse Prerequisites\n\nWe assume you have Positron up and running and can use it at the level covered in our Brief Introduction to Positron course.\n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nInstalling and using Packages\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
+  },
+  {
+    "objectID": "courses/course-landing-pages/fc1-intro-positron.html",
+    "href": "courses/course-landing-pages/fc1-intro-positron.html",
+    "title": "A brief introduction to Positron",
+    "section": "",
+    "text": "Course Overview\nThis course provides an introduction to the Positron editor and Integrated Development Environment (IDE).\n\n\nCourse Goals\n\nUnderstand the benefits of using an IDE.\nSuccessfully install Positron.\nBe familiar with the basic features of Positron.\nUnderstand the idea and how to install extensions.\nLearn about configuration options.\n\n\n\n\nCourse Prerequisites\nNo specific prior knowledge is required. We assume you have basic computing skills.\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nUsing Extensions\nConfiguration\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
+  },
+  {
+    "objectID": "courses/course-landing-pages/fc3-intro-quarto.html",
+    "href": "courses/course-landing-pages/fc3-intro-quarto.html",
+    "title": "A brief introduction to Quarto",
+    "section": "",
+    "text": "Course Overview\nThis short course provides a basic introduction to Quarto. The goal is to get up and running, so that you can create simple Quarto documents. More on-the-fly learning will be needed as you start using Quarto more intensively.\n\n\nCourse Goals\n\nUnderstand what Quarto is.\nBe able to create basic documents using Quarto.\nBe familiar with sources that you can use to learn more.\n\n\n\n\nCourse Prerequisites\n\nWe assume you have Positron up and running and can use it at the level covered in our Brief Introduction to Positron course.\nWe further assume that you have R installed and can use it at the level covered in our Brief Introduction to R course. \n\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic Functionality\nUsing Quarto with Positron\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
+  },
+  {
+    "objectID": "courses/course-landing-pages/fc5-intro-github.html",
+    "href": "courses/course-landing-pages/fc5-intro-github.html",
+    "title": "A brief introduction to Git/GitHub",
+    "section": "",
+    "text": "Course Overview\nThis course provides a brief introduction to Git and GitHub.\nThe focus is on getting you set up so you can start using Git/GitHub. The information we provide is not a thorough course on Git/GitHub. You’ll be a lot of ‘learning as you go’ once you start using these tools.\nThis course focuses on the how of Git/GitHub, and only briefly talks about the big-picture for why to use Git/GitHub. \n\n\nCourse Goals\n\nUnderstand what Git and GitHub are and what they are good for.\nInstall Git and create and set up a GitHub account.\nBe able to perform basic Git/GitHub operations.\nSet up a Git/GitHub workflow to work on projects.\nBe aware of some of the limitations and pitfalls of using Git/GitHub.\nBe familiar with resources that you can use to learn more.\n\n\n\n\nCourse Prerequisites\nWe show how to use Git/GitHub with Positron. For that, you should be familiar with Positron at least at the level covered in our Brief Introduction to Positron course.\nIf you don’t want to use Git/GitHub through Positron, you can skip that part of the course and still follow along with the rest.\n\n\nCourse Content\nThe course covers these topics (and more):\n\nIntroduction\nInstall and Setup\nBasic uses\nImportant caveats and limitations\nFurther Resources\n\n\n\nGet started\nClick here to start this course."
+  },
+  {
+    "objectID": "courses/courses.html",
+    "href": "courses/courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "The short courses/tutorials listed below are currently available.\nThese courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.\nThe courses are listed in the order in which the content loosely builds on each other. Some of the later courses assume prior knowledge from earlier courses. However, each course is designed to be fairly self-contained, so if you already are familiar with some of the tools, you can focus on those courses that cover tools that are new to you.\nMore details about each course can be found in the course-specific overview page.\n\nCore Tools\n\nA brief introduction to Positron\nA brief introduction to R\n\n\n\n\nA brief introduction to Quarto\n\n\n\nMore Tools\n\nA brief introduction to AI tools\nA brief introduction to Git/GitHub\n\n\n\nUsing the Tools\n\nCreating an online portfolio"
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html",
+    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html",
+    "title": "Configuring Positron",
+    "section": "",
+    "text": "This unit discusses a few ways you can configure and customize Positron.",
+    "crumbs": [
+      "Courses",
+      "Configuring Positron"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#introduction",
+    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#introduction",
+    "title": "Configuring Positron",
+    "section": "Introduction",
+    "text": "Introduction\nLike VS Code, Positron is highly customizable. This flexibility allows you to tailor the editor to your specific workflow and preferences. There’s a lot you can customize, we’ll only briefly look at a few main areas here.",
+    "crumbs": [
+      "Courses",
+      "Configuring Positron"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#settings",
+    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#settings",
+    "title": "Configuring Positron",
+    "section": "Settings",
+    "text": "Settings\nUnder the gear symbol in the lower left corner, you can access all of Positron’s settings. These control everything from editor behavior to appearance.\nThere are way too many settings to cover them all here, but you can search for specific settings using the search bar. Some of the most useful settings include:\n\nEditor Font Size: Adjust the font size for better readability.\nEditor Word Wrap: Enable or disable word wrapping in the editor.\n\nOne important fact to keep in mind: You can change settings globally (for all projects) or per project. If you want to change a setting only for the current project, make sure to select the Workspace tab at the top of the settings window. If you want to change it globally, select the User tab at the top of the settings window.",
+    "crumbs": [
+      "Courses",
+      "Configuring Positron"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#themes",
+    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#themes",
+    "title": "Configuring Positron",
+    "section": "Themes",
+    "text": "Themes\nYou can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.\nYou can explore themes by clicking on the gear icon in the lower left corner, then selecting Themes and Color Theme. This opens a list of available themes. Explore them to see what you might like.",
+    "crumbs": [
+      "Courses",
+      "Configuring Positron"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#key-bindings",
+    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#key-bindings",
+    "title": "Configuring Positron",
+    "section": "Key Bindings",
+    "text": "Key Bindings\nSome users prefer different keyboard shortcuts for common commands. Positron allows you to customize these key bindings to match your workflow.\nYou can access key bindings by clicking the gear icon in the lower left corner, then selecting Keyboard Shortcuts. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them.\nFor instance, in Positron, to quickly turn code into comments (by adding a # in front of it for R cde), the default is to select the code chunk you want to comment out and then press the Ctrl/Cmd + / keyboard shortcut. This differs from RStudio, where it is the Ctrl/Cmd + Shift + C shortcut. If you prefer the RStudio shortcut, you can change it in Positron.",
+    "crumbs": [
+      "Courses",
+      "Configuring Positron"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#more-customization",
+    "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#more-customization",
+    "title": "Configuring Positron",
+    "section": "More customization",
+    "text": "More customization\nIt should be clear from just this brief discussion that Positron is highly customizable. You can change almost anything, from the layout of the editor to how it behaves when you run code. You want to make sure to explore the settings a bit and find what works best for you, but not waste too much time trying out every possible setting.\nIn general, if you find yourself thinking “I wish I could change Positron to do/show X”, there’s probably a way to do so. If it’s not built into Positron, you might find the needed functionality in an extension, which is discussed in a separate unit.\nAnd again remember, while Positron is fairly new, it’s based on VS Code which has been around for a while and is widely used. So if you are trying to figure out to customize something, it’s probably better to search for “How do I do X in VS Code” instead of “How do I do X in Positron”. Many of the same principles and settings apply.",
+    "crumbs": [
+      "Courses",
+      "Configuring Positron"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html",
+    "title": "Positron Extensions",
+    "section": "",
+    "text": "This unit discusses what Positron extensions are, and how to install and use them.",
+    "crumbs": [
+      "Courses",
+      "Positron Extensions"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#introduction",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#introduction",
+    "title": "Positron Extensions",
+    "section": "Introduction",
+    "text": "Introduction\nIn many programming languages, a lot of extra functionality comes from libraries or packages. In editors like Positron (and VS Code and others), the equivalent of packages are extensions (another term sometimes used is plugins).",
+    "crumbs": [
+      "Courses",
+      "Positron Extensions"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#managing-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#managing-extensions",
+    "title": "Positron Extensions",
+    "section": "Managing Extensions",
+    "text": "Managing Extensions\nPositron comes with a number of extensions already installed. To see and manage them, open the Extensions view, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with the top right being tilted). You’ll then see a list of extensions.\nBy default, you see a list of installed extensions. If you just installed Positron, some extensions might need updating. Go ahead and update them. Some might need a restart of the extension (occasionally, you might have to fully restart Positron).\nExtensions can be turned on and off. Enabled extensions are shown normally. Those that are installed but disabled are grayed out. It’s generally safe to disable extensions you don’t need. Just click on the gear icon next to the extension name, then click on ‘Disable’. You can always re-enable it later.\nEnabling or disabling extensions can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don’t want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on ‘Disable’ (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don’t want AI to operate on. You can turn the AI off for that project/workspace.\nFinally, if you decide you don’t like an extension at all, just click on it completely uninstall it.",
+    "crumbs": [
+      "Courses",
+      "Positron Extensions"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#getting-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#getting-extensions",
+    "title": "Positron Extensions",
+    "section": "Getting Extensions",
+    "text": "Getting Extensions\nYou can install more extensions to get extra functionality. Getting extensions is easy. Let’s practice and install an additional extension. First, click on ‘File’ -&gt; ‘Open File’ and open some CSV file on your computer. If you don’t have one readily available, ask your favorite AI to make you one, e.g. with a promt like “Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file.”\nThe file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let’s say we don’t want to have it pre-formmatted by Positron. Click on the ‘Open as plain text file’ button on the top. This should open the CSV file as simple text, you’ll see entries separated by commas. That’s ok, but a bit hard to read. So let’s improve this with an extension.\nGo to the Extensions sidebar and search for ‘Rainbow CSV’. Click on the ‘Install’ button (trust the publisher). Now go back to your open CSV file. You should now see each column in a different color, courtesy of this new extension. This makes CSV files easier to read.\nThis was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you might want in the future, based on your specific needs.\nRecall that Positron is based on VS Code. To learn a bit more about Positron extensions, and how they do and don’t differ from VS Code extensions, check out the Positron extensions page on the Positron documentation website.",
+    "crumbs": [
+      "Courses",
+      "Positron Extensions"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#configuring-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#configuring-extensions",
+    "title": "Positron Extensions",
+    "section": "Configuring Extensions",
+    "text": "Configuring Extensions\nMany extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then in the title area of the extension, next to Auto Update, click on the gear icon and go to Settings. For instance if you do that for the Quarto extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance ‘Quarto &gt; Render &gt; Preview Type’. It’s by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to ‘external’. If you don’t know yet what Quarto is and what rendering and preview means, you will soon once you go through our Brief Introduction to Quarto course 😁.",
+    "crumbs": [
+      "Courses",
+      "Positron Extensions"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#using-extensions",
+    "href": "courses/fc1-intro-positron/positron-extensions/positron-extensions.html#using-extensions",
+    "title": "Positron Extensions",
+    "section": "Using Extensions",
+    "text": "Using Extensions\nLike packages/libraries in R or Python or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.",
+    "crumbs": [
+      "Courses",
+      "Positron Extensions"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html",
+    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html",
+    "title": "Positron Installation and Setup",
+    "section": "",
+    "text": "This unit covers the installation and setup of Positron.",
+    "crumbs": [
+      "Courses",
+      "Positron Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#installation",
+    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#installation",
+    "title": "Positron Installation and Setup",
+    "section": "Installation",
+    "text": "Installation\nMake sure you reviewed the information on the Positron install page to ensure your computer is ready for the install.\nPositron can be freely downloaded from its website. Pick the version that matches your operating system and architecture.\n\nAs of December 2025, there is not yet a Windows ARM build of Positron available. If you have a Windows ARM machine, the Windows x64 version won’t work. But you can get a pre-release version (which worked for us).\n\nIt should be possible for you to install Positron without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows). If you need to do use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.\nIf you have choices during install for Positron to do certain things (e.g. get an ‘Open with Positron’ option in Windows Explorer), we recommend you choose to have all of those options enabled. Definitely don’t de-select any pre-selected ones, unless you know what you are doing.",
+    "crumbs": [
+      "Courses",
+      "Positron Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#setup",
+    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#setup",
+    "title": "Positron Installation and Setup",
+    "section": "Setup",
+    "text": "Setup\nOnce Positron is installed, you can open it. On first startup, Positron sets up several pre-installed extensions (we’ll discuss extensions shortly). During that process, you might be asked several questions, such as if you want to allow connections to networks. You should basically approve all of them to ensure Positron will fully work.\nYou might run again into administrative issues. If you get requests from your computer to log in as admin, do so or have your admin help you through this part as well. Things might still work even without some of these permissions, but it is better to have it fully set up and allow Positron access to everything it needs.\nOnce all the initial start-up things are done, Positron is ready to go. You should see the main screen with several different areas (called panes or panels), and a menu bar on the top and another one on the left. We’ll discuss the different parts of Positron shortly.\nYou might see one or several red notification dots on some of the icons on the left, asking you to update things or log in. It is generally a good idea to do all that. We’ll discuss some of that in a bit more detail in further units.",
+    "crumbs": [
+      "Courses",
+      "Positron Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#updating-positron",
+    "href": "courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html#updating-positron",
+    "title": "Positron Installation and Setup",
+    "section": "Updating Positron",
+    "text": "Updating Positron\nPositron should check for updates automatically when you open it. If you don’t like automatic updates you can turn it off. If you want to check for updates manually, click the “Check for Updates” button in the menu bar under Help. Since you just installed it, there shouldn’t be any updates.\nFor now, just close Positron, and in the next unit, we’ll re-open it and talk about extensions.",
+    "crumbs": [
+      "Courses",
+      "Positron Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html",
+    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html",
+    "title": "Further Positron Resources",
+    "section": "",
+    "text": "This unit provides a few more bits of information, and a listing of hopefully useful resources for further learning.",
+    "crumbs": [
+      "Courses",
+      "Further Positron Resources"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#introduction",
+    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#introduction",
+    "title": "Further Positron Resources",
+    "section": "Introduction",
+    "text": "Introduction\nPositron is still fairly new and under active development. As such, the available documentation is still a bit sparse, and things might change. Here are a few pointers that hopefully help you as you learn more about Positron.",
+    "crumbs": [
+      "Courses",
+      "Further Positron Resources"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#positron-vs-code-often",
+    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#positron-vs-code-often",
+    "title": "Further Positron Resources",
+    "section": "Positron = VS Code (often)",
+    "text": "Positron = VS Code (often)\nAs mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it’s always a good idea to search for help for VS code if you can’t find something for Positron, and try if the VS Code solution works.\nIt also means that most - though not all - extensions that work in VS Code will also work in Positron. So if you find a useful extension for VS Code, you can likely install it in Positron as well.",
+    "crumbs": [
+      "Courses",
+      "Further Positron Resources"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#trust-issues",
+    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#trust-issues",
+    "title": "Further Positron Resources",
+    "section": "Trust Issues",
+    "text": "Trust Issues\nWhen you open a folder or workspace in Positron for the first time, you might be asked if you trust the authors of the files in that folder/workspace. This is a security feature to prevent malicious code from running on your computer without your knowledge. If you are working on your own projects, you can generally safely trust the folder. If you are working on projects from others, make sure you know and trust the source before trusting the folder.\nIf you want to change the overall trust settings, you can go to ‘Settings’, then search for ‘trust’. You can adjust various settings related to trust. For instance if you don’t want to get these notifications, you can set Trust: Startup Prompt to never.",
+    "crumbs": [
+      "Courses",
+      "Further Positron Resources"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-resources/positron-resources.html#tutorials-and-other-resources",
+    "href": "courses/fc1-intro-positron/positron-resources/positron-resources.html#tutorials-and-other-resources",
+    "title": "Further Positron Resources",
+    "section": "Tutorials and other Resources",
+    "text": "Tutorials and other Resources\n\nThe Positron website has a number of Guides that cover various topics. They are a good starting point to learn more about specific topics. These are still fairly new and expected to grow over time.\nThe VS Code website has a large number of Getting Started Tutorials that are also applicable to Positron.\nBeyond the getting started section, the VS Code Documentation is very comprehensive.\nFor prior RStudio users, there is a specific Migration Guide available at the Positron website.",
+    "crumbs": [
+      "Courses",
+      "Further Positron Resources"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html",
+    "href": "courses/fc1-intro-positron/positron-use/positron-use.html",
+    "title": "Basic Positron Use",
+    "section": "",
+    "text": "In this unit, we’ll cover some of the basics of using Positron.",
+    "crumbs": [
+      "Courses",
+      "Basic Positron Use"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#introduction",
+    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#introduction",
+    "title": "Basic Positron Use",
+    "section": "Introduction",
+    "text": "Introduction\nAt the heart of every IDE, such as Positron, is the editor. Positron allows you to edit files efficiently, and if it is code, you can also run it. We’ll explore some basic examples in this short unit.",
+    "crumbs": [
+      "Courses",
+      "Basic Positron Use"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-a-text-file",
+    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-a-text-file",
+    "title": "Basic Positron Use",
+    "section": "Editing a text file",
+    "text": "Editing a text file\nThis is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn’t necessarily need to be plain text. You can for instance open and edit a CSV file as well. We already tried that earlier when we discussed extensions. Feel free to revisit this by re-opening the prior CSV file and changing some of its contents. The save it under a new name.\nDepending on the type of file you are editing, Positron will try to provide some features that make it easier to work with it. For instance, if you open an R script, it will highlight the syntax and provide some code completion features. Syntax highlighting exists for many languages, not just R. As you work with the editor and learn more features, you will continue to find features that make your workflow easier and more efficient.",
+    "crumbs": [
+      "Courses",
+      "Basic Positron Use"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-and-running-code",
+    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#editing-and-running-code",
+    "title": "Basic Positron Use",
+    "section": "Editing and running code",
+    "text": "Editing and running code\n\nThe following only works if you already have R installed. If you don’t have it on your computer, you should still read this section, you just can’t run it for now.\n\nPositron is meant for working with code. It is especically designed to work well with R and Python, but other languages are also supported, many through extensions. Let’s explore a small example with R. Go to “File” -&gt; “New File” and pick “R File”. An empty file will open in the editor. Write a few lines of R code, for instance the following\n\nx = seq(1,100)\ny = x^2\nplot(x,y)\n\nNext, save the file somewhere. If Positron was ‘just an editor’, we would now have to switch over to R and run the code there. But with an IDE, we can do it all in one place. You should see a small triangle symbol in the top right corner of the editor. Press it to run the code. This will open the R console in the bottom window, execute the ‘source’ command to run the code, and show the resulting plot in the bottom right window. In the top right window, you can also see the variables that were generated.\nLet’s say you want to have a line instead of circles for the plot but don’t remember the command. In the R console, you can type ?plot to call the help file for the plot function, which will show in a separate pane.\nOnce you found what you are looking for, change your code so it says plot(x,y,type='l') and run again. This time, instead of pressing the ‘run’ button, try to execute the code one line at a time. You can do that by starting in the first line and pressing Ctrl/Cmd + Enter. The first line will be executed, and you can then continue to the next line by pressing Ctrl/Cmd + Enter again. You will see the new plot show up. You should also see that the old plot is still there, you can go back to it with the arrows above the plot. The menu above the plot also allows you to save any of them, and do other things.\nIt is generally not advised to do any steps like writing code or saving plots manually, you should instead have fully automated code do all of it to ensure reproducibility. But for exploring and testing, these iterative and manual steps are often needed and having all these features in one location makes some of these coding, modeling and data science talks much more efficient.",
+    "crumbs": [
+      "Courses",
+      "Basic Positron Use"
+    ]
+  },
+  {
+    "objectID": "courses/fc1-intro-positron/positron-use/positron-use.html#working-with-quarto-documents",
+    "href": "courses/fc1-intro-positron/positron-use/positron-use.html#working-with-quarto-documents",
+    "title": "Basic Positron Use",
+    "section": "Working with Quarto documents",
+    "text": "Working with Quarto documents\n\nThe following only works if you already have both R and Quarto installed. If you don’t have both on your computer yet, syou should still read this section, you just can’t run it for now.\n\nLet’s try a brief quarto document. Quarto itself is discussed in our Brief Introduction to Quarto course, so we won’t talk about it much here, just showcase how to work with it in Positron.\nStart another new file, and this time from the menu, pick Quarto Document towards the bottom. Another editor window should open with an almost empty area. There will be a few lines at the top indicating a Quarto document.\nGive it a title, write a heading with # Heading, then add some text. Next take the code from the previous example and insert it into the Quarto file as code chunk, like this\n```{r}\n#| echo: true\n#| eval: true\nx = seq(1,100)\ny = x^2\nplot(x,y)\n```\nThen add a bit more text after this code chunk. Finally, safe the file as .qmd file.\nThen press the ‘preview’ button above the editor window. Quarto should run and compile/render the document. If things work right, you should see a preview of your Quarto document show up in the viewer pane or open in an external browser, depending on your settings for the Quarto extension.",
+    "crumbs": [
+      "Courses",
+      "Basic Positron Use"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html",
+    "href": "courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html",
     "title": "Git and GitHub Installation & Setup",
     "section": "",
-    "text": "Overview\nBefore you can track changes you need Git on your computer and a few global settings that stamp each commit with your identity.\n\n\nGoals\n\nInstall the latest stable Git on Windows, macOS, or Linux\n\nConfigure your username, email, and default branch name\n\nGenerate an SSH key and add it to GitHub\n\nVerify connectivity with git ls-remote\n\n\n\nFurther resources\n\nGit Downloads – https://git-scm.com/downloads\n\nGenerating SSH Keys – https://docs.github.com/authentication/connecting-to-github-with-ssh\n\nGit Credential Storage – https://git-scm.com/docs/gitcredentials\n\n\n\nPractice\n\nInstall Git and confirm git --version ≥ 2.40.\n\nSet your global username and email.\n\nGenerate an SSH key and add it to your GitHub account.\n\nClone git@github.com:octocat/Hello-World.git to verify SSH access.\n\nChange the default editor (git config --global core.editor \"nano\" or similar)."
+    "text": "Overview\nBefore you can track changes you need Git on your computer and a few global settings that stamp each commit with your identity.\n\n\nGoals\n\nInstall the latest stable Git on Windows, macOS, or Linux\n\nConfigure your username, email, and default branch name\n\nGenerate an SSH key and add it to GitHub\n\nVerify connectivity with git ls-remote\n\n\n\nFurther resources\n\nGit Downloads – https://git-scm.com/downloads\n\nGenerating SSH Keys – https://docs.github.com/authentication/connecting-to-github-with-ssh\n\nGit Credential Storage – https://git-scm.com/docs/gitcredentials\n\n\n\nPractice\n\nInstall Git and confirm git --version ≥ 2.40.\n\nSet your global username and email.\n\nGenerate an SSH key and add it to your GitHub account.\n\nClone git@github.com:octocat/Hello-World.git to verify SSH access.\n\nChange the default editor (git config --global core.editor \"nano\" or similar).",
+    "crumbs": [
+      "Intro to R",
+      "Git and GitHub Installation & Setup"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html",
-    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html",
-    "title": "Introduction to R",
+    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html",
+    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html",
+    "title": "R Installation and Setup",
     "section": "",
-    "text": "This unit provides a high‑level introduction to R."
+    "text": "This unit covers the installation and setup of R.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html#programming-languages",
-    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html#programming-languages",
-    "title": "Introduction to R",
-    "section": "Programming Languages",
-    "text": "Programming Languages\nIn brief, programming languages are ways to get a computer to do things. There are many different programming languages, each with its own syntax (rules for how to write code), strengths and weaknesses, and areas of application. Some programming languages are general-purpose, meaning they can be used for a wide range of tasks (e.g., Python, Java, C++). Others are more specialized, designed for specific tasks or domains (e.g., R for statistics, SQL for database queries).\nFor data science type work, there are several popular programming languages, including R, Python, Julia, and MATLAB. Each of these languages has its own strengths and weaknesses, and the choice of which one to use often depends on the specific needs of the project, the preferences of the team, and the existing ecosystem of tools and libraries."
+    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#installation",
+    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#installation",
+    "title": "R Installation and Setup",
+    "section": "Installation",
+    "text": "Installation\nR can be freely downloaded from its website. Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it.\nYou might be asked some questions during the install process. It is safe to always go with the defaults, unless you know you need something different.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html#the-r-language",
-    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html#the-r-language",
-    "title": "Introduction to R",
-    "section": "The R language",
-    "text": "The R language\nR is a programming language and software environment specifically designed for statistical computing and graphics. It was created in the early 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland in New Zealand. R has since become one of the most widely used languages for data analysis, statistical modeling, and data visualization."
+    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#setup",
+    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#setup",
+    "title": "R Installation and Setup",
+    "section": "Setup",
+    "text": "Setup\nOnce R is installed, you can open it. The graphical interface you see will look pretty outdated. That’s ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
   },
   {
-    "objectID": "courses/fc2a-intro-r/r-introduction/r-introduction.html#r-strengths-and-weaknesses",
-    "href": "courses/fc2a-intro-r/r-introduction/r-introduction.html#r-strengths-and-weaknesses",
-    "title": "Introduction to R",
-    "section": "R strengths and weaknesses",
-    "text": "R strengths and weaknesses\nLike every programming language, R has its advantages and disadvantages. Feel free to do a web search on that topic, and you will encounter tons of people with tons of opinions. Some of the features that are useful to us are:\n\nR is Open Source, FREE, and cross-platform.\nR is a “high-level” programming language, relatively easy to learn (compared to Fortran, C, etc.).\nR comes with many integrated functions.\nR is great for statistics, data analysis, and graphics.\nThe R Community is very dynamic, helpful and welcoming.\nThrough R packages, it is easy to get lots of state-of-the-art algorithms.\nDocumentation and help files for R are generally good.\n\nWhile we use R in this course, it is not the only option to analyze data. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used to analyze data (e.g., Matlab, Mathematica, Tableau, SAS, SPSS). Other more general programming languages are suitable for certain types of analyses as well (e.g., C, Fortran, Perl, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those additional languages. The good news is that even though those languages are all different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. And R is a good one to get started with."
+    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#quick-spin",
+    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#quick-spin",
+    "title": "R Installation and Setup",
+    "section": "Quick spin",
+    "text": "Quick spin\nJust to make sure R is running, you can type some math into the console at the &gt; sign. E.g. if you type 2+2, you should get 4 as a result.\nMost of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type install.packages('dplyr') into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the dplyr package, which is a very useful package for data manipulation. To check if it worked, type library(dplyr). You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s ok for now, as long as you don’t get any error messages.\nR should be working and ready to use. You can close it.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#updating-r",
+    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#updating-r",
+    "title": "R Installation and Setup",
+    "section": "Updating R",
+    "text": "Updating R\nR is pretty stable and not much changes between versions. As long as you have one of the more recent versions installed, you should be good. If you want to upgrade, just install the new version. It will not override the old one, so if you want to get rid of that one, you need to uninstall it yourself.\nNote that when you update to a new version of R, you might also need to re-install R packages (discussed shortly.)",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#rtools-install",
+    "href": "courses/fc2a-intro-r/r-install-setup/r-install-setup.html#rtools-install",
+    "title": "R Installation and Setup",
+    "section": "Rtools Install",
+    "text": "Rtools Install\nIf you just plan to use R and R packages as they are, you are all set and don’t need Rtools. However, if you plan on compiling packages from source on Windows, you will need to install Rtools.. Make sure to download the version that matches your R version. Follow the installation instructions on that page.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-packages/r-packages.html",
+    "href": "courses/fc2a-intro-r/r-packages/r-packages.html",
+    "title": "R Installation and Setup",
+    "section": "",
+    "text": "This unit covers the installation and setup of R.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-packages/r-packages.html#installation",
+    "href": "courses/fc2a-intro-r/r-packages/r-packages.html#installation",
+    "title": "R Installation and Setup",
+    "section": "Installation",
+    "text": "Installation\nPositron can be freely downloaded from its website. Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).\nYou might be asked some questions during the install process. It is safe to always go with the defaults, unless you know you need something different.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-packages/r-packages.html#setup",
+    "href": "courses/fc2a-intro-r/r-packages/r-packages.html#setup",
+    "title": "R Installation and Setup",
+    "section": "Setup",
+    "text": "Setup\nOnce R is installed, you can open it. The graphical interace you see will look pretty outdated. That’s ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-packages/r-packages.html#quick-spin",
+    "href": "courses/fc2a-intro-r/r-packages/r-packages.html#quick-spin",
+    "title": "R Installation and Setup",
+    "section": "Quick spin",
+    "text": "Quick spin\nJust to make sure R is running, you can type some math into the console at the &gt; sign. E.g. if you type 2+2, you should get 4 as a result.\nMost of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type install.packages('dplyr') into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the dplyr package, which is a very useful package for data manipulation. To check if it worked, type library(dplyr). You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s all ok for now. R should be working now and you can close it.",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "courses/fc2a-intro-r/r-packages/r-packages.html#updating-r",
+    "href": "courses/fc2a-intro-r/r-packages/r-packages.html#updating-r",
+    "title": "R Installation and Setup",
+    "section": "Updating R",
+    "text": "Updating R\nR is pretty stable and not much changes between versions. As long as you have one of the more recent versions installed, you should be good. If you want to upgrade, just install the new version. It will not override the old one, so if you want to get rid of that one, you need to uninstall it yourself.\nNote that when you update to a new version of R, you might also need to re-install R packages (discussed shortly.)",
+    "crumbs": [
+      "Intro to R",
+      "R Installation and Setup"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/intro-quarto-toc.html",
     "href": "courses/fc3-intro-quarto/intro-quarto-toc.html",
     "title": "TOC: A brief introduction to Quarto",
     "section": "",
-    "text": "Course Content\n\nIntroduction to Quarto\nInstallation and Setup\nQuarto and Positron\nBasic Use\nFurther Resources"
+    "text": "Course Content\n\nIntroduction to Quarto\nInstallation and Setup\nQuarto and Positron\nBasic Use\nFurther Resources",
+    "crumbs": [
+      "Intro to Quarto",
+      "TOC: A brief introduction to Quarto"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html",
     "href": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html",
     "title": "Overview of Quarto",
     "section": "",
-    "text": "This unit provides a brief overview of Quarto. Quarto is a versatile and powerful open-source publishing system designed to simplify the creation of reproducible documents, presentations, websites, and more."
+    "text": "This unit provides a brief overview of Quarto. Quarto is a versatile and powerful open-source publishing system designed to simplify the creation of reproducible documents, presentations, websites, and more.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Overview of Quarto"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html#what-is-quarto",
     "href": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html#what-is-quarto",
     "title": "Overview of Quarto",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\nAs it’s most basic, Quarto is piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Quarto is the successor of the R Markdown framework, which has been widely used for reproducible research and dynamic reporting in the R community. Building upon R Markdown’s strengths, Quarto extends this capability to other languages like Python, Julia, and others."
+    "text": "What is Quarto?\nAs it’s most basic, Quarto is piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Quarto is the successor of the R Markdown framework, which has been widely used for reproducible research and dynamic reporting in the R community. Building upon R Markdown’s strengths, Quarto extends this capability to other languages like Python, Julia, and others.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Overview of Quarto"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html#why-quarto",
     "href": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html#why-quarto",
     "title": "Overview of Quarto",
     "section": "Why Quarto?",
-    "text": "Why Quarto?\nTraditional methods of authoring scientific and technical documents often involve separate tools for analysis and presentation. For instance, code is written in some language such as R or Julia, then executed. The code produces output such as figures or tables, which might be copied into a Word document, or pasted into a PowerPoint presentation or onto a website. This separation of analysis and presentation is not efficient and creates challenges for reproducibility.\nThe idea for Quarto is that one can use one unified system that combines input, such as narrative text and executable code, with results such as figures and tables, and easily and automatically generates well-formatted output documents in the form of HTML, PDF, Word, and more. This can lead to a workflow that is much more automated, efficient and reproducible."
+    "text": "Why Quarto?\nTraditional methods of authoring scientific and technical documents often involve separate tools for analysis and presentation. For instance, code is written in some language such as R or Julia, then executed. The code produces output such as figures or tables, which might be copied into a Word document, or pasted into a PowerPoint presentation or onto a website. This separation of analysis and presentation is not efficient and creates challenges for reproducibility.\nThe idea for Quarto is that one can use one unified system that combines input, such as narrative text and executable code, with results such as figures and tables, and easily and automatically generates well-formatted output documents in the form of HTML, PDF, Word, and more. This can lead to a workflow that is much more automated, efficient and reproducible.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Overview of Quarto"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html#applications-of-quarto",
     "href": "courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html#applications-of-quarto",
     "title": "Overview of Quarto",
     "section": "Applications of Quarto",
-    "text": "Applications of Quarto\nQuarto is widely applicable in various scenarios:\n\nAcademic publishing and reproducible research papers\nData analysis reports and interactive dashboards\nEducational content and tutorials\nProfessional reporting and documentation\nWebsites (such as QSPL)"
+    "text": "Applications of Quarto\nQuarto is widely applicable in various scenarios:\n\nAcademic publishing and reproducible research papers\nData analysis reports and interactive dashboards\nEducational content and tutorials\nProfessional reporting and documentation\nWebsites (such as QSPL)",
+    "crumbs": [
+      "Intro to Quarto",
+      "Overview of Quarto"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html",
     "title": "Further Resources",
     "section": "",
-    "text": "This unit provides comprehensive resources for further exploring and mastering Quarto. It includes official documentation, community support, useful cheat sheets, examples, and additional learning materials."
+    "text": "This unit provides comprehensive resources for further exploring and mastering Quarto. It includes official documentation, community support, useful cheat sheets, examples, and additional learning materials.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#official-documentation",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#official-documentation",
     "title": "Further Resources",
     "section": "Official Documentation",
-    "text": "Official Documentation\nThe definitive resource for Quarto is the official documentation, updated regularly with tutorials, examples, and an extensive feature reference. It is the go-to resource for comprehensive details about using Quarto effectively."
+    "text": "Official Documentation\nThe definitive resource for Quarto is the official documentation, updated regularly with tutorials, examples, and an extensive feature reference. It is the go-to resource for comprehensive details about using Quarto effectively.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#cheat-sheets",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#cheat-sheets",
     "title": "Further Resources",
     "section": "Cheat Sheets",
-    "text": "Cheat Sheets\nQuick-reference cheat sheets for Quarto can be found within the Positron IDE under Help › Cheatsheets, or downloaded from the Quarto Cheat Sheet page. These sheets summarize essential commands, syntax, and best practices."
+    "text": "Cheat Sheets\nQuick-reference cheat sheets for Quarto can be found within the Positron IDE under Help › Cheatsheets, or downloaded from the Quarto Cheat Sheet page. These sheets summarize essential commands, syntax, and best practices.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#books-and-articles",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#books-and-articles",
     "title": "Further Resources",
     "section": "Books and Articles",
-    "text": "Books and Articles\nThe following resources provide deeper insights into Quarto:\n\nAuthoring Books with Quarto: A detailed online guide for creating interactive and cross-referenced books using Quarto.\nReproducible Data Science with Quarto: An article showcasing how Quarto supports reproducible research workflows."
+    "text": "Books and Articles\nThe following resources provide deeper insights into Quarto:\n\nAuthoring Books with Quarto: A detailed online guide for creating interactive and cross-referenced books using Quarto.\nReproducible Data Science with Quarto: An article showcasing how Quarto supports reproducible research workflows.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#community-support",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#community-support",
     "title": "Further Resources",
     "section": "Community Support",
-    "text": "Community Support\nGet rapid help and interact with the Quarto community via:\n\nThe quarto tag on Stack Overflow\nPosit Community Quarto forum\nThe #quarto channel on Posit Discord\n\nThese platforms offer immediate help from community experts and developers."
+    "text": "Community Support\nGet rapid help and interact with the Quarto community via:\n\nThe quarto tag on Stack Overflow\nPosit Community Quarto forum\nThe #quarto channel on Posit Discord\n\nThese platforms offer immediate help from community experts and developers.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#example-galleries",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#example-galleries",
     "title": "Further Resources",
     "section": "Example Galleries",
-    "text": "Example Galleries\nExplore the Quarto Examples Gallery for inspiration. Each example includes the source code, helping you learn practical usage and best practices by examining real-world applications of Quarto."
+    "text": "Example Galleries\nExplore the Quarto Examples Gallery for inspiration. Each example includes the source code, helping you learn practical usage and best practices by examining real-world applications of Quarto.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#staying-up-to-date",
     "href": "courses/fc3-intro-quarto/quarto-resources/quarto-resources.html#staying-up-to-date",
     "title": "Further Resources",
     "section": "Staying Up to Date",
-    "text": "Staying Up to Date\nStay informed about Quarto’s updates, features, and improvements by regularly checking the Release Notes or subscribing to the RSS feed."
+    "text": "Staying Up to Date\nStay informed about Quarto’s updates, features, and improvements by regularly checking the Release Notes or subscribing to the RSS feed.",
+    "crumbs": [
+      "Intro to Quarto",
+      "Further Resources"
+    ]
   },
   {
     "objectID": "courses/fc4-intro-ai/intro-ai-toc.html",

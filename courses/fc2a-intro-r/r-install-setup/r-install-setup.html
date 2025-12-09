@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../courses/fc2a-intro-r/r-positron/r-positron.html" rel="next">
+<link href="../../../courses/fc2a-intro-r/r-introduction/r-introduction.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -77,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../assets/exams2forms-webex.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -100,16 +102,87 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../courses/fc2a-intro-r/intro-r-toc.html" aria-current="page"> 
+<span class="menu-text">Intro to R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../courses/fc3-intro-quarto/intro-quarto-toc.html"> 
+<span class="menu-text">Intro to Quarto</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc2a-intro-r/r-install-setup/r-install-setup.html">R Installation and Setup</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/intro-r-toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOC: A brief introduction to R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-introduction/r-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-install-setup/r-install-setup.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">R Installation and Setup</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-positron/r-positron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using R through Positron</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub Installation &amp; Setup</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-packages/r-packages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Installation and Setup</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-further-resources/r-further-resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub Installation &amp; Setup</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -124,6 +197,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
   <li><a href="#quick-spin" id="toc-quick-spin" class="nav-link" data-scroll-target="#quick-spin">Quick spin</a></li>
   <li><a href="#updating-r" id="toc-updating-r" class="nav-link" data-scroll-target="#updating-r">Updating R</a></li>
+  <li><a href="#rtools-install" id="toc-rtools-install" class="nav-link" data-scroll-target="#rtools-install">Rtools Install</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -182,22 +256,27 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Reading</h1>
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<p>Positron can be freely downloaded from <a href="https://www.r-project.org/">its website</a>. Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).</p>
+<p>R can be freely downloaded from <a href="https://www.r-project.org/">its website</a>. Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it.</p>
 <p>You might be asked some questions during the install process. It is safe to always go with the defaults, unless you know you need something different.</p>
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<p>Once R is installed, you can open it. The graphical interace you see will look pretty outdated. That’s ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron.</p>
+<p>Once R is installed, you can open it. The graphical interface you see will look pretty outdated. That’s ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron.</p>
 </section>
 <section id="quick-spin" class="level2">
 <h2 class="anchored" data-anchor-id="quick-spin">Quick spin</h2>
 <p>Just to make sure <code>R</code> is running, you can type some math into the console at the <code>&gt;</code> sign. E.g. if you type <code>2+2</code>, you should get <code>4</code> as a result.</p>
-<p>Most of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type <code>install.packages('dplyr')</code> into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the <code>dplyr</code> package, which is a very useful package for data manipulation. To check if it worked, type <code>library(dplyr)</code>. You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s all ok for now. R should be working now and you can close it.</p>
+<p>Most of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type <code>install.packages('dplyr')</code> into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the <code>dplyr</code> package, which is a very useful package for data manipulation. To check if it worked, type <code>library(dplyr)</code>. You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s ok for now, as long as you don’t get any error messages.</p>
+<p>R should be working and ready to use. You can close it.</p>
 </section>
 <section id="updating-r" class="level2">
 <h2 class="anchored" data-anchor-id="updating-r">Updating R</h2>
 <p>R is pretty stable and not much changes between versions. As long as you have one of the more recent versions installed, you should be good. If you want to upgrade, just install the new version. It will not override the old one, so if you want to get rid of that one, you need to uninstall it yourself.</p>
 <p>Note that when you update to a new version of R, you might also need to re-install R packages (discussed shortly.)</p>
+</section>
+<section id="rtools-install" class="level2">
+<h2 class="anchored" data-anchor-id="rtools-install">Rtools Install</h2>
+<p>If you just plan to use R and R packages as they are, you are all set and don’t need Rtools. However, if you plan on compiling packages from source on Windows, you will <a href="https://cran.r-project.org/bin/windows/Rtools/">need to install Rtools.</a>. Make sure to download the version that matches your R version. Follow the installation instructions on that page.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
@@ -208,7 +287,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<p>See the note in the further resources section of the introductory unit. There is lots of information available online, including install/setup If you have any issues, just ask Google or your favorite AI for help.</p>
+<p>See the note in the further resources section of the introductory unit. There is lots of information available online, including install/setup. If you have any issues, just ask Google or your favorite AI for help.</p>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
@@ -216,8 +295,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended source for downloading the R installer to ensure you get the correct version?</p>
-<div id="webex-075bbe7f624451d121589aeb8c8eea97" class="webex-radiogroup" data-answer="awYZUk5VG1Zr">
-<label><input type="radio" autocomplete="off" name="075bbe7f624451d121589aeb8c8eea97"><span>The official R Project website (CRAN link)</span></label><label><input type="radio" autocomplete="off" name="075bbe7f624451d121589aeb8c8eea97"><span>Any random download site that lists R</span></label><label><input type="radio" autocomplete="off" name="075bbe7f624451d121589aeb8c8eea97"><span>A package manager from another programming language</span></label><label><input type="radio" autocomplete="off" name="075bbe7f624451d121589aeb8c8eea97"><span>It comes preinstalled so no download is needed</span></label>
+<div id="webex-bee888724e3ab5c97baf7e400f757f0c" class="webex-radiogroup" data-answer="OVRJCBQIGwJp">
+<label><input type="radio" autocomplete="off" name="bee888724e3ab5c97baf7e400f757f0c"><span>The official R Project website (CRAN link)</span></label><label><input type="radio" autocomplete="off" name="bee888724e3ab5c97baf7e400f757f0c"><span>Any random download site that lists R</span></label><label><input type="radio" autocomplete="off" name="bee888724e3ab5c97baf7e400f757f0c"><span>A package manager from another programming language</span></label><label><input type="radio" autocomplete="off" name="bee888724e3ab5c97baf7e400f757f0c"><span>It comes preinstalled so no download is needed</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -233,19 +312,25 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you quickly confirm that R is running after installation?</p>
-<div id="webex-c9b446e580ed3df099c56d614eff6a97" class="webex-radiogroup" data-answer="OAhOBBgGSQVl">
-<label><input type="radio" autocomplete="off" name="c9b446e580ed3df099c56d614eff6a97"><span>Type <code>2+2</code> at the <code>&gt;</code> prompt and check that it returns <code>4</code></span></label><label><input type="radio" autocomplete="off" name="c9b446e580ed3df099c56d614eff6a97"><span>Immediately install RStudio before opening R</span></label><label><input type="radio" autocomplete="off" name="c9b446e580ed3df099c56d614eff6a97"><span>Edit the R installation directory by hand</span></label><label><input type="radio" autocomplete="off" name="c9b446e580ed3df099c56d614eff6a97"><span>Disable all default settings during installation</span></label>
+<div id="webex-ae71929114d2d38f9fd3c9c5ee8e82d1" class="webex-radiogroup" data-answer="OlUbARUDFQFs">
+<label><input type="radio" autocomplete="off" name="ae71929114d2d38f9fd3c9c5ee8e82d1"><span>Immediately install RStudio before opening R</span></label><label><input type="radio" autocomplete="off" name="ae71929114d2d38f9fd3c9c5ee8e82d1"><span>Edit the R installation directory by hand</span></label><label><input type="radio" autocomplete="off" name="ae71929114d2d38f9fd3c9c5ee8e82d1"><span>Type <code>2+2</code> at the <code>&gt;</code> prompt and check that it returns <code>4</code></span></label><label><input type="radio" autocomplete="off" name="ae71929114d2d38f9fd3c9c5ee8e82d1"><span>Disable all default settings during installation</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Running a simple calculation like <code>2+2</code> at the R console prompt should return <code>4</code>, confirming R is working.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+</ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the typical way to update R, and what might you need to redo afterward?</p>
-<div id="webex-89ec6b34cfb32ab722f3e302e74cc249" class="webex-radiogroup" data-answer="YwhJUxpSHwQ+">
-<label><input type="radio" autocomplete="off" name="89ec6b34cfb32ab722f3e302e74cc249"><span>Install the new R version separately and be prepared to reinstall packages</span></label><label><input type="radio" autocomplete="off" name="89ec6b34cfb32ab722f3e302e74cc249"><span>Use an automatic in-app updater built into the R GUI</span></label><label><input type="radio" autocomplete="off" name="89ec6b34cfb32ab722f3e302e74cc249"><span>Wait for your operating system to push R updates through its app store</span></label><label><input type="radio" autocomplete="off" name="89ec6b34cfb32ab722f3e302e74cc249"><span>Delete the old R folder manually and hope packages stay intact</span></label>
+<div id="webex-5b2066aee858b8b713fad835d35ee6b9" class="webex-radiogroup" data-answer="blMeABoGTVU4">
+<label><input type="radio" autocomplete="off" name="5b2066aee858b8b713fad835d35ee6b9"><span>Install the new R version separately and be prepared to reinstall packages</span></label><label><input type="radio" autocomplete="off" name="5b2066aee858b8b713fad835d35ee6b9"><span>Use an automatic in-app updater built into the R GUI</span></label><label><input type="radio" autocomplete="off" name="5b2066aee858b8b713fad835d35ee6b9"><span>Wait for your operating system to push R updates through its app store</span></label><label><input type="radio" autocomplete="off" name="5b2066aee858b8b713fad835d35ee6b9"><span>Delete the old R folder manually and hope packages stay intact</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -262,10 +347,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<ul>
-<li>Read through the <a href="https://positron.posit.co/start.html">getting started</a> section of the Positron website and make sure your computer is ready for the Positron installation.</li>
-<li>If you want to learn more about Positron in general, watch the (somewhat long) <a href="https://youtu.be/8uRcB34Hhsw?si=qLlwgEJ5BE7OKoPT">Introducing Positron video</a>.</li>
-</ul>
+<p>If the install worked, you are all set and there’s nothing to practice here.</p>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1847,6 +1929,18 @@ window.onload = function() {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../courses/fc2a-intro-r/r-introduction/r-introduction.html" class="pagination-link" aria-label="Introduction to R">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction to R</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../courses/fc2a-intro-r/r-positron/r-positron.html" class="pagination-link" aria-label="Using R through Positron">
+        <span class="nav-page-text">Using R through Positron</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
