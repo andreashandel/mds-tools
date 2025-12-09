@@ -1,27 +1,27 @@
 Question
 ========
-If you cannot find Positron-specific guidance, what is a good fallback?
+What is the best way to think about VS Code extensions when using Positron?
 
 Answerlist
 ----------
-* Search for the equivalent VS Code tip and try it in Positron
-* Assume the feature does not exist
-* Reinstall Positron from scratch
-* Avoid using Positron until dedicated docs appear
+* Every VS Code extension works unchanged in Positron
+* No VS Code extensions work in Positron
+* Many VS Code extensions work, but some do not—check the Positron list if unsure
+* Only Positron-branded extensions will load
 
 Solution
 ========
-Because Positron is based on VS Code, solutions for VS Code often work and are worth trying.
+Positron is built on the VS Code codebase, so many extensions work, but not all; consult the Positron extension list if you’re unsure.
 
 Answerlist
 ----------
+* False
+* False
 * True
-* False
-* False
 * False
 
 Meta-information
 ================
-exname: positron-vscode-fallback
+exname: positron-extensions-compat
 extype: schoice
-exsolution: 1000
+exsolution: 0010

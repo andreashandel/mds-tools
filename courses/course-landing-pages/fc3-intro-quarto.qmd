@@ -6,7 +6,7 @@ subtitle: ""
 ::: {.course-overview}
 # Course Overview
 
-This short course provides a basic introduction to Quarto.
+This short course provides a basic introduction to Quarto. The goal is to get up and running, so that you can create simple Quarto documents. More on-the-fly learning will be needed as you start using Quarto more intensively.
 
 
 :::
@@ -18,6 +18,8 @@ This short course provides a basic introduction to Quarto.
 * Understand what Quarto is.
 * Be able to create basic documents using Quarto. 
 * Be familiar with sources that you can use to learn more.
+
+
 
 :::
 
@@ -40,8 +42,7 @@ This short course provides a basic introduction to Quarto.
 # Course Prerequisites
 
 * We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
-* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to GitHub course](fc3-intro-github.qmd).
-* We further assume that you have R installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd).
+* We further assume that you have R installed and can use it at the level covered in our [Brief Introduction to R course](fc2a-intro-r.qmd).
 <!-- * We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd). -->
 
 :::
@@ -64,7 +65,7 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-[Click here to start this course.](/courses/fc2-intro-quarto/intro-quarto-overview.qmd)
+[Click here to start this course.](/courses/fc3-intro-quarto/intro-quarto-toc.qmd)
 
 
 :::

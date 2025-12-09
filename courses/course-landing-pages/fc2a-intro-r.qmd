@@ -5,9 +5,9 @@ title: A brief introduction to R
 ::: {.course-overview}
 # Course Overview
 
-This course provides a brief introduction to R.
+This course provides a very brief introduction to the `R` programming language. We cover install, setup and first steps. This course is not meant to teach you how to code in `R`, only to get you started with using it.
 
-It covers install, setup and first steps. This is not a course to learn R coding, only to get started so you can start using it.
+
 
 :::
 
@@ -16,9 +16,11 @@ It covers install, setup and first steps. This is not a course to learn R coding
 # Course Goals
 
 -   Know what R is.
--   Install and set up R.
+* Have R successfully installed and set up.
 -   Be familiar with some basic R use.
+* Be able to run R code.
 -   Understand the ideas of packages and how to manage them.
+
 
 
 :::
@@ -62,6 +64,6 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-[Click here to start this course.](/courses/fc4-intro-r/intro-r-overview.qmd)
+[Click here to start this course.](/courses/fc2a-intro-r/intro-r-toc.qmd)
 
 :::

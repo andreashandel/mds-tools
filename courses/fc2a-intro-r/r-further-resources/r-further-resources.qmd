@@ -1,0 +1,71 @@
+---
+title: Further R Resources
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit gives a few quick pointers to resources that can help you learn R further.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+
+:::
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r r-install-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("r-install-setup-quiz-1.Rmd", "r-install-setup-quiz-2.Rmd", "r-install-setup-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'r-install-setup-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+:::
+<!-- end unit-exercise div -->

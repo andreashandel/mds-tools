@@ -4,9 +4,9 @@ How can you run code line by line from the editor in Positron?
 
 Answerlist
 ----------
-* Place the cursor on a line and press Ctrl/Cmd + Enter to execute it
 * Only the Run button can execute code
 * You must copy code into the Terminal manually
+* Place the cursor on a line and press Ctrl/Cmd + Enter to execute it
 * Line-by-line execution is not supported
 
 Solution
@@ -15,13 +15,13 @@ Use Ctrl/Cmd + Enter to execute the current line (and step through subsequent li
 
 Answerlist
 ----------
+* False
+* False
 * True
-* False
-* False
 * False
 
 Meta-information
 ================
 exname: positron-line-run
 extype: schoice
-exsolution: 1000
+exsolution: 0010

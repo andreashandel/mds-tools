@@ -1,0 +1,27 @@
+---
+title: "TOC: A brief introduction to Git and GitHub" 
+subtitle: ""
+---
+
+
+::: {.course-content}
+# Course Content
+
+# Module 1
+
+- [Introduction to Git/GitHub](github-introduction/github-introduction.qmd)
+- [Installation and Setup](github-install-setup/github-install-setup.qmd)
+- [GitHub Desktop](github-desktop/github-desktop.qmd)
+- [Git/GitHub and Positron](github-positron/github-positron.qmd)
+- [Basic Use](github-positron/github-positron.qmd)
+
+
+# Module 2
+
+- [Commits and Branches](github-commits-branches/github-commits-branches.qmd)
+- [Forks and Pull Requests](github-forks-prs/github-forks-prs.qmd)
+- [Git/GitHub and confidentiality](github-confidentiality/github-confidentiality.qmd)
+- [Additional Topics](github-further-topics/github-further-topics.qmd)
+- [Further Resources](github-resources/github-resources.qmd)
+
+:::

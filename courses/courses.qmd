@@ -11,18 +11,31 @@ The short courses/tutorials listed below are currently available.
 
 These courses are not mean to cover any of the tools in detail. They only provide the information needed to get started and get you up and runing. For each of these tools, you will have to keep learning as you go along, either on your own or by using other resources. We provide pointers to further resources in each course.
 
-The courses are listed in the order in which the content builds on each other. Some of the later courses assume prior knowledge from earlier courses. However, each course is designed to be fairly self-contained, so if you already are familiar with some of the tools, you can focus on those courses that cover tools that are new to you.
+The courses are listed in the order in which the content loosely builds on each other. Some of the later courses assume prior knowledge from earlier courses. However, each course is designed to be fairly self-contained, so if you already are familiar with some of the tools, you can focus on those courses that cover tools that are new to you.
 
 More details about each course can be found in the course-specific overview page.
 
+
+# Core Tools
+
 * [A brief introduction to Positron](/courses/course-landing-pages/fc1-intro-positron.qmd)
 
-* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc3-intro-github.qmd)
+* [A brief introduction to R](/courses/course-landing-pages/fc2a-intro-r.qmd)
 
-* [A brief introduction to R](/courses/course-landing-pages/fc4-intro-r.qmd)
+<!-- * [A brief introduction to Julia](/courses/course-landing-pages/fc2b-intro-julia.qmd) -->
 
-* [A brief introduction to Quarto](/courses/course-landing-pages/fc2-intro-quarto.qmd)
+<!-- * [A brief introduction to Python](/courses/course-landing-pages/fc2c-intro-python.qmd) -->
 
-* [A brief introduction to AI tools](/courses/course-landing-pages/fc5-intro-ai.qmd)
+* [A brief introduction to Quarto](/courses/course-landing-pages/fc3-intro-quarto.qmd)
+
+
+# More Tools
+
+* [A brief introduction to AI tools](/courses/course-landing-pages/fc4-intro-ai.qmd)
+
+* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc5-intro-github.qmd)
+
+
+# Using the Tools
 
 * [Creating an online portfolio](/courses/course-landing-pages/fc6-portfolio-creation.qmd)

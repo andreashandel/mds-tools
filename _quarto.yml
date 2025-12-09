@@ -82,18 +82,31 @@ website:
         - courses/fc1-intro-positron/positron-configuration/positron-configuration.qmd
         - courses/fc1-intro-positron/positron-use/positron-use.qmd
         - courses/fc1-intro-positron/positron-resources/positron-resources.qmd
-    - id: fc2              # sidebar shown on all files it lists
+    - id: fc2a             # sidebar shown on all files it lists
+      title: "Introduction to R"
+      style: docked
+      alignment: left
+      collapse-level: 2
+      contents: 
+        - courses/fc2a-intro-r/intro-r-toc.qmd
+        - courses/fc2a-intro-r/r-introduction/r-introduction.qmd
+        - courses/fc2a-intro-r/r-install-setup/r-install-setup.qmd
+        - courses/fc2a-intro-r/r-positron/r-positron.qmd
+        - courses/fc2a-intro-r/r-coding-basics/r-coding-basics.qmd
+        - courses/fc2a-intro-r/r-packages/r-packages.qmd
+        - courses/fc2a-intro-r/r-further-resources/r-further-resources.qmd
+    - id: fc3              # sidebar shown on all files it lists
       title: "Introduction to Quarto"
       style: docked
       alignment: left
       collapse-level: 2
       contents: 
-        - courses/fc2-intro-quarto/intro-quarto-overview.qmd
-        - courses/fc2-intro-quarto/quarto-introduction/quarto-introduction.qmd
-        - courses/fc2-intro-quarto/quarto-install-setup/quarto-install-setup.qmd
-        - courses/fc2-intro-quarto/quarto-positron/quarto-positron.qmd
-        - courses/fc2-intro-quarto/quarto-use/quarto-use.qmd
-        - courses/fc2-intro-quarto/quarto-resources/quarto-resources.qmd
+        - courses/fc3-intro-quarto/intro-quarto-toc.qmd
+        - courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.qmd
+        - courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.qmd
+        - courses/fc3-intro-quarto/quarto-positron/quarto-positron.qmd
+        - courses/fc3-intro-quarto/quarto-use/quarto-use.qmd
+        - courses/fc3-intro-quarto/quarto-resources/quarto-resources.qmd
   # page-footer:
     # left: |
     #   {{< fa regular copyright >}} QSP Library, 2025

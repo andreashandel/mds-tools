@@ -1,0 +1,17 @@
+---
+title: "TOC: A brief introduction to R" 
+subtitle: ""
+---
+
+
+::: {.course-content}
+# Course Content
+
+- [Introduction to R](r-introduction/r-introduction.qmd)
+- [R Installation and Setup](r-install-setup/r-install-setup.qmd)
+- [Using R through Positron](r-positron/r-positron.qmd)
+- [Basics of Coding in R](r-coding-basics/r-coding-basics.qmd)
+- [R Packages](r-packages/r-packages.qmd)
+- [Further R Resources](r-further-resources/r-further-resources.qmd) 
+
+:::

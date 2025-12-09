@@ -1,27 +1,27 @@
 Question
 ========
-Which of the following best describes an Integrated Development Environment (IDE)?
+Why do we currently recommend Positron as IDE?
 
 Answerlist
 ----------
-* A simple text editor with no additional tooling
-* A hardware device used for data storage
-* A platform that integrates code editing, execution, debugging and project management in one place
-* A web browser extension for note taking
+* It integrates well with tools such as R, Quarto and Git/GitHub.
+* It is the only IDE that exists.
+* It requires no installation.
+* It doesn't require you to write R code.
 
 Solution
 ========
-An IDE combines multiple tools—editor, console, debugger, version‑control, etc.—into one cohesive application, streamlining development.
+Positron provides strong support for other useful tools.
 
 Answerlist
 ----------
-* False
-* False
 * True
+* False
+* False
 * False
 
 Meta-information
 ================
-exname: IDE definition
+exname: Why Positron
 extype: schoice
-exsolution: 0010
+exsolution: 1000

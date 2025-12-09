@@ -35,20 +35,22 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Installation
 
-Positron can be freely downloaded from [its website](https://www.r-project.org/). Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).
+R can be freely downloaded from [its website](https://www.r-project.org/). Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it.
 
 You might be asked some questions during the install process. It is safe to always go with the defaults, unless you know you need something different. 
 
 
 ## Setup
 
-Once R is installed, you can open it. The graphical interace you see will look pretty outdated. That's ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron.
+Once R is installed, you can open it. The graphical interface you see will look pretty outdated. That's ok, we basically never use R through its own interface, instead we are going to only use it through an IDE like Positron.
 
 ## Quick spin
 
 Just to make sure `R` is running, you can type some math into the console at the `>` sign. E.g. if you type `2+2`, you should get `4` as a result.
 
-Most of the power of R comes from add-ons called packages, which we'll cover shortly. For now, you can try to install one. Type `install.packages('dplyr')` into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the `dplyr` package, which is a very useful package for data manipulation. To check if it worked, type `library(dplyr)`. You'll see some messages, maybe even a warning message about the package having been built under a different version of R. That's all ok for now. R should be working now and you can close it.
+Most of the power of R comes from add-ons called packages, which we'll cover shortly. For now, you can try to install one. Type `install.packages('dplyr')` into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the `dplyr` package, which is a very useful package for data manipulation. To check if it worked, type `library(dplyr)`. You'll see some messages, maybe even a warning message about the package having been built under a different version of R. That's ok for now, as long as you don't get any error messages. 
+
+R should be working and ready to use. You can close it.
 
 
 ## Updating R
@@ -57,6 +59,11 @@ R is pretty stable and not much changes between versions. As long as you have on
 
 Note that when you update to a new version of R, you might also need to re-install R packages (discussed shortly.)
 
+
+## Rtools Install
+
+If you just plan to use R and R packages as they are, you are all set and don't need Rtools. However, if you
+plan on compiling packages from source on Windows, you will [need to install Rtools.](https://cran.r-project.org/bin/windows/Rtools/). Make sure to download the version that matches your R version. Follow the installation instructions on that page.
 
 :::
 <!-- end unit-reading div -->
@@ -74,7 +81,7 @@ We discussed how to install R and how to keep it updated. You should now be read
 # Further Resources
 
 See the note in the further resources section of the introductory unit.
-There is lots of information available online, including install/setup If you have any issues, just ask Google or your favorite AI for help.
+There is lots of information available online, including install/setup. If you have any issues, just ask Google or your favorite AI for help.
 
 
 :::
@@ -96,9 +103,7 @@ exams2forms::exams2forms(file = quizzes, title = 'r-install-setup-quiz')
 ::: {.unit-exercise}
 # Practice
 
-* Read through the [getting started](https://positron.posit.co/start.html) section of the Positron website and make sure your computer is ready for the Positron installation.
-* If you want to learn more about Positron in general, watch the (somewhat long) [Introducing Positron video](https://youtu.be/8uRcB34Hhsw?si=qLlwgEJ5BE7OKoPT).  
-
+If the install worked, you are all set and there's nothing to practice here. 
 
 :::
 <!-- end unit-exercise div -->

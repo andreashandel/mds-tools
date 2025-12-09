@@ -44,20 +44,23 @@ Here are a few pointers that hopefully help you as you learn more about Positron
 As mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). 
 That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it's always a good idea to search for help for VS code if you can't find something for Positron, and try if the VS Code solution works. 
 
-
-## Command Palette Tricks
-
-Typing a `>` at the start of the command palette filters for settings. Prefixing with `!` searches extension commands. Most commands show their key binding on the right; pressing that shortcut closes the palette and executes the command simultaneously.
+It also means that most - [though not all](https://positron.posit.co/extensions.html) - extensions that work in VS Code will also work in Positron. So if you find a useful extension for VS Code, you can likely install it in Positron as well.
 
 
+## Trust Issues
+
+When you open a folder or workspace in Positron for the first time, you might be asked if you trust the authors of the files in that folder/workspace. This is a security feature to prevent malicious code from running on your computer without your knowledge. If you are working on your own projects, you can generally safely trust the folder. If you are working on projects from others, make sure you know and trust the source before trusting the folder.
+
+If you want to change the overall trust settings, you can go to 'Settings', then search for 'trust'. You can adjust various settings related to trust. For instance if you don't want to get these notifications, you can set `Trust: Startup Prompt` to _never_.
 
 
-## Continuing Your Learning Journey
 
-The Positron documentation team publishes weekly tips on the blog, and advanced webinars are archived on YouTube. Contributing a pull request to the docs is welcomed and is an excellent way to cement your knowledge.
+## Tutorials and other Resources
 
-
-* [Help section on the Positron Website](https://positron.posit.co/troubleshooting.html)
+* The Positron website has a number of [Guides](https://positron.posit.co/welcome.html) that cover various topics. They are a good starting point to learn more about specific topics. These are still fairly new and expected to grow over time.
+* The VS Code website has a large number of [Getting Started Tutorials](https://code.visualstudio.com/docs/getstarted/getting-started) that are also applicable to Positron.
+* Beyond the getting started section, the [VS Code Documentation](https://code.visualstudio.com/docs) is very comprehensive.
+* For prior RStudio users, there is a specific [Migration Guide](https://positron.posit.co/migrate-rstudio.html) available at the Positron website. 
 
 
 
@@ -67,7 +70,7 @@ The Positron documentation team publishes weekly tips on the blog, and advanced 
 ::: {.unit-summary}
 # Summary
 
-Equipped with shortcuts, best practices, and a community roadmap, you are ready to embark on productive data‑science projects with Positron.
+You reached the end of the brief Introduction to Positron Course. This should get you enough information to get started, but there is a lot to learn. Fortunately, online resources are fairly complete. Just remember that Positron specific resources are still new, but VS Code information is plentiful.
 
 :::
 <!-- end unit-summary div -->
@@ -96,9 +99,8 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-resources-quiz')
 ::: {.unit-exercise}
 # Practice
 
-* Challenge yourself to use the keyboard for the next hour without touching the mouse inside Positron.
-* Post one question or tip on the Positron community forum and share the link with your peers.
-
+* Read one of the [Guides](https://positron.posit.co/welcome.html) on the Positron website that interest you.
+* Test Google or your favorite AI by asking about a topic related to Positron you are interested in.
 
 :::
 <!-- end unit-exercise div -->

@@ -5,9 +5,9 @@ How does Positron typically handle updates after it has been installed?
 Answerlist
 ----------
 * You must manually download and reinstall Positron for every update
+* It automatically checks for updates on startup and offers to install them
 * Updates can only be installed through your operating system’s app store
 * Positron cannot be updated; you must wait for the next major release
-* It automatically checks for updates on startup and offers to install them
 
 Solution
 ========
@@ -16,12 +16,12 @@ Positron checks for updates each time it starts and prompts you to update if a n
 Answerlist
 ----------
 * False
-* False
-* False
 * True
+* False
+* False
 
 Meta-information
 ================
 exname: positron-updates
 extype: schoice
-exsolution: 0001
+exsolution: 0100

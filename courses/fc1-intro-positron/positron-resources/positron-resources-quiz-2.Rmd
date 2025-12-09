@@ -1,17 +1,17 @@
 Question
 ========
-What do the `>` and `!` prefixes do when typing in the Positron command palette?
+If you can’t find Positron-specific instructions for something, what is the recommended next step?
 
 Answerlist
 ----------
-* `>` filters settings; `!` searches extension commands
-* `>` opens the Terminal; `!` restarts Positron
-* `>` installs extensions; `!` uninstalls them
-* `>` shows files; `!` shows plots
+* Try the same solution you’d use in VS Code, since most tips work in Positron too
+* Assume the feature isn’t possible in Positron yet
+* Reinstall Positron before trying anything else
+* Avoid searching for VS Code guidance because it won’t apply
 
 Solution
 ========
-Typing `>` limits results to settings, while `!` searches extension commands in the palette.
+Positron is built on the VS Code codebase, so many VS Code tips and solutions work in Positron and are worth trying first.
 
 Answerlist
 ----------
@@ -22,6 +22,6 @@ Answerlist
 
 Meta-information
 ================
-exname: positron-command-prefixes
+exname: positron-vscode-help
 extype: schoice
 exsolution: 1000

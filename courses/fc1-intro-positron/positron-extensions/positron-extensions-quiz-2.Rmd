@@ -4,10 +4,10 @@ How can you adjust settings for a specific extension, such as changing Quarto’
 
 Answerlist
 ----------
-* Open the extension, click the gear icon, and choose Settings
 * Reinstall Positron with different defaults
 * Modify the extension’s source code manually
 * Extension settings cannot be changed once installed
+* Open the extension, click the gear icon, and choose Settings
 
 Solution
 ========
@@ -15,13 +15,13 @@ Select the extension, use the gear menu, and open Settings to configure its opti
 
 Answerlist
 ----------
+* False
+* False
+* False
 * True
-* False
-* False
-* False
 
 Meta-information
 ================
 exname: positron-extension-settings
 extype: schoice
-exsolution: 1000
+exsolution: 0001

@@ -50,7 +50,7 @@ One important fact to keep in mind: You can change settings globally (for all pr
 
 ## Themes 
 
-You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further, but for most users, this is probably not worth it.
+You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.
 
 You can explore themes by clicking on the gear icon in the lower left corner, then selecting *Themes* and *Color Theme*. This opens a list of available themes. Explore them to see what you might like.
 
@@ -62,7 +62,7 @@ Some users prefer different keyboard shortcuts for common commands. Positron all
 
 You can access key bindings by clicking the gear icon in the lower left corner, then selecting *Keyboard Shortcuts*. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them. 
 
-For instance, in Positron, to toggle comments, the default shortcut is `Ctrl/Cmd + /`. This differs from RStudio, where it is `Ctrl/Cmd + Shift + C`. If you prefer the RStudio shortcut, you can change it in Positron. 
+For instance, in Positron, to quickly turn code into comments (by adding a `#` in front of it for R cde), the default is to select the code chunk you want to comment out and then press the `Ctrl/Cmd + /` keyboard shortcut. This differs from RStudio, where it is the `Ctrl/Cmd + Shift + C` shortcut. If you prefer the RStudio shortcut, you can change it in Positron. 
 
 
 ## More customization
@@ -71,6 +71,7 @@ It should be clear from just this brief discussion that Positron is highly custo
 
 In general, if you find yourself thinking "I wish I could change Positron to do/show X", there's probably a way to do so. If it's not built into Positron, you might find the needed functionality in an extension, which is discussed in a separate unit. 
 
+And again remember, while Positron is fairly new, it's based on VS Code which has been around for a while and is widely used. So if you are trying to figure out to customize something, it's probably better to search for "How do I do X in VS Code" instead of "How do I do X in Positron". Many of the same principles and settings apply.
 
 :::
 <!-- end unit-reading div -->
@@ -87,6 +88,8 @@ You can customize Positron to fit your workflow and preferences. You can change 
 # Further Resources
 
 * [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/) - in this blog post, Andrew Heiss discusses some ways he likes to customize Positron.
+
+
 
 :::
 <!-- end unit-resources div -->
@@ -107,7 +110,7 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-configuration-quiz')
 # Practice
 
 * Change the font size to 16px and enable word wrap.
-* Install the *Solarized Dark* theme, set it as default, and sync settings to the cloud.
+* Install a new color theme (for instance one of the many *Solarized* themes) and give it a try.
 
 :::
 <!-- end unit-exercise div -->

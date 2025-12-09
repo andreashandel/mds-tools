@@ -35,9 +35,16 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Installation
 
-Positron can be freely downloaded from [its website](https://positron.posit.co/download.html). Pick the version that matches your operating system and architecture. It should be possible for you to install it without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows).
+Make sure you reviewed the information on the [Positron install page](https://positron.posit.co/install.html) to ensure your computer is ready for the install.
 
-If you need to do use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.
+
+Positron can be freely downloaded from [its website](https://positron.posit.co/download.html). Pick the version that matches your operating system and architecture. 
+
+::: {.note}
+As of December 2025, there is not yet a Windows ARM build of Positron available. If you have a Windows ARM machine, the Windows x64 version won't work. But you can [get a pre-release version (which worked for us).](https://github.com/posit-dev/positron/issues/5254#issuecomment-3544527102)
+:::
+
+It should be possible for you to install Positron without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows). If you need to do use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.
 
 If you have choices during install for Positron to do certain things (e.g. get an 'Open with Positron' option in Windows Explorer), we recommend you choose to have all of those options enabled. Definitely don't de-select any pre-selected ones, unless you know what you are doing. 
 
@@ -96,8 +103,8 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-install-setup-quiz')
 ::: {.unit-exercise}
 # Practice
 
-* Read through the [getting started](https://positron.posit.co/start.html) section of the Positron website and make sure your computer is ready for the Positron installation.
-* If you want to learn more about Positron in general, watch the (somewhat long) [Introducing Positron video](https://youtu.be/8uRcB34Hhsw?si=qLlwgEJ5BE7OKoPT).  
+There's nothing to practice here. We hope the install worked. You can open and close Positron a few times, just to make sure it all works well 😁.
+
 
 
 :::

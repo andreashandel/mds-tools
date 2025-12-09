@@ -4,17 +4,25 @@ How can you quickly confirm that R is running after installation?
 
 Answerlist
 ----------
-* Type `2+2` at the `>` prompt and check that it returns `4`
 * Immediately install RStudio before opening R
 * Edit the R installation directory by hand
+* Type `2+2` at the `>` prompt and check that it returns `4`
 * Disable all default settings during installation
 
 Solution
 ========
 Running a simple calculation like `2+2` at the R console prompt should return `4`, confirming R is working.
 
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
 Meta-information
 ================
 exname: r-quick-check
 extype: schoice
-exsolution: 1000
+exsolution: 0010

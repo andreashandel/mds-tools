@@ -1,0 +1,87 @@
+---
+title: Using R through Positron
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit covers the use of R inside of Positron.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+* Know how to run R code from within Positron.
+* Be familiar with Positron features that help with R coding.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+## Writing R Code in Positron
+
+
+
+## Running R Code in Positron
+
+
+## Debugging R Code in Positron
+
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We discussed how to use R from within Positron. We will pretty much always use R that way.
+
+:::
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+* The Positron website has a brief [R in Positron Tutorial](https://positron.posit.co/guide-r.html).
+
+
+:::
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r r-install-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("r-install-setup-quiz-1.Rmd", "r-install-setup-quiz-2.Rmd", "r-install-setup-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'r-install-setup-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+
+
+:::
+<!-- end unit-exercise div -->

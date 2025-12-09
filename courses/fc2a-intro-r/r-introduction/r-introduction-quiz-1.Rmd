@@ -4,9 +4,9 @@ What is R primarily designed for?
 
 Answerlist
 ----------
-* Statistical computing and graphics
 * Real-time 3D game development
 * Low-level hardware driver programming
+* Statistical computing and graphics
 * Mobile app development only
 
 Solution
@@ -15,13 +15,13 @@ R was built for statistical computing and graphics, which is why it is widely us
 
 Answerlist
 ----------
+* False
+* False
 * True
-* False
-* False
 * False
 
 Meta-information
 ================
 exname: r-purpose
 extype: schoice
-exsolution: 1000
+exsolution: 0010

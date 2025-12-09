@@ -1,17 +1,17 @@
 Question
 ========
-Given Positron is still evolving, what is one recommended way to keep learning and contribute?
+When Positron asks whether you trust the authors of a newly opened folder, what should you generally do?
 
 Answerlist
 ----------
-* Follow the Positron blog/webinars and consider contributing improvements to the docs
-* Wait for a printed manual before using new features
-* Ignore updates until Positron leaves beta
-* Disable all online resources to avoid changes
+* Only trust the folder if you know and trust the source; otherwise review before allowing
+* Always trust every folder to avoid prompts
+* Never trust any folder, even your own projects
+* Delete the folder to avoid the decision
 
 Solution
 ========
-Staying current with blog tips, webinars, and even contributing documentation helps you learn as Positron evolves.
+Trust prompts help prevent malicious code from running; you should only trust folders from sources you know and review unfamiliar ones before allowing.
 
 Answerlist
 ----------
@@ -22,6 +22,6 @@ Answerlist
 
 Meta-information
 ================
-exname: positron-keep-learning
+exname: positron-trust-prompt
 extype: schoice
 exsolution: 1000

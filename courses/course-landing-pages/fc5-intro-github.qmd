@@ -8,7 +8,7 @@ subtitle: ""
 
 This course provides a brief introduction to Git and GitHub.
 
-It does not cover the full Git/GitHub workflow, but is enough to get you started and provide you with the necessary knowledge to be able to start using Git/GitHub.
+The focus is on getting you set up so you can start using Git/GitHub. The information we provide is not a thorough course on Git/GitHub. You'll be a lot of 'learning as you go' once you start using these tools.
 
 This course focuses on the _how_ of Git/GitHub, and only briefly talks about the big-picture for _why_ to use Git/GitHub. 
 <!-- The latter is covered - among many other topics - in our [ROADy workflow course](/courses/course-landing-pages/mc3-roady-workflows.qmd). -->
@@ -18,11 +18,12 @@ This course focuses on the _how_ of Git/GitHub, and only briefly talks about the
 
 ::: {.course-goals}
 # Course Goals
-
-- Know what Git and GitHub are.
-- Create and set up a GitHub account.
-- Set up a Git/GitHub workflow to work on projects.
-- Be aware of some of the limitations and pitfalls of using Git/GitHub.
+* Understand what Git and GitHub are and what they are good for.
+* Install Git and create and set up a GitHub account.
+* Be able to perform basic Git/GitHub operations. 
+* Set up a Git/GitHub workflow to work on projects.
+* Be aware of some of the limitations and pitfalls of using Git/GitHub.
+* Be familiar with resources that you can use to learn more.
 :::
 
 
@@ -48,6 +49,8 @@ We show how to use Git/GitHub with Positron. For that, you should be familiar wi
 
 If you don't want to use Git/GitHub through Positron, you can skip that part of the course and still follow along with the rest.
 
+
+
 :::
 
 
@@ -67,6 +70,6 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-[Click here to start this course.](/courses/fc3-intro-github/intro-github-overview.qmd)
+[Click here to start this course.](/courses/fc5-intro-github/intro-github-toc.qmd)
 
 :::

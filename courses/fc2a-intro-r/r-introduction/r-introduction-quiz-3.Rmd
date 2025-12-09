@@ -4,10 +4,10 @@ What general takeaway about learning programming languages is emphasized?
 
 Answerlist
 ----------
-* Core concepts like variables, loops, and functions transfer across languages
 * Every programming language requires completely different thinking
 * Only R uses concepts like loops and functions
 * Learning a second language is harder after you know one
+* Core concepts like variables, loops, and functions transfer across languages
 
 Solution
 ========
@@ -15,13 +15,13 @@ Once you learn foundational concepts (e.g., variables, loops, functions) they ap
 
 Answerlist
 ----------
+* False
+* False
+* False
 * True
-* False
-* False
-* False
 
 Meta-information
 ================
 exname: r-transferable-skills
 extype: schoice
-exsolution: 1000
+exsolution: 0001

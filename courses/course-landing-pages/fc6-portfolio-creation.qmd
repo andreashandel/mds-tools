@@ -1,5 +1,5 @@
 ---
-title: Creating an online portfolio 
+title: "Creating an online portfolio" 
 subtitle: ""
 ---
 
@@ -7,7 +7,6 @@ subtitle: ""
 # Course Overview
 
 This course gets you started at using Positron, Git/GitHub and Quarto to set up a website that will be your portfolio for exercises and projects.
-
 :::
 
 
@@ -16,7 +15,7 @@ This course gets you started at using Positron, Git/GitHub and Quarto to set up 
 
 * Know why having a public portfolio is a good idea.
 * Be able to create a portfolio website using Positron, Git/GitHub and Quarto.
-* Be ready to use your portfolio for exercises and projects inside the main QSPL courses.
+* Be ready to use your portfolio for future exercises and projects.
 
 :::
 
@@ -38,10 +37,10 @@ This course gets you started at using Positron, Git/GitHub and Quarto to set up 
 # Course Prerequisites
 
 * We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
-* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to Git/GitHub course](fc3-intro-github.qmd).
-* We further assume that you have R installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd).
+* We further assume that you have R installed and can use it at the level covered in our [Brief Introduction to R course](fc2a-intro-r.qmd).
+* We also assume you have a basic knowledge of Quarto and can use it at the level covered in our [Brief Introduction to Quarto course](fc3-intro-quarto.qmd).
+* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to Git/GitHub course](fc5-intro-github.qmd).
 <!-- * We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd) and [Brief Introduction to Julia course](fc5-intro-julia.qmd). -->
-* We also assume you have a basic knowledge of Quarto and can use it at the level covered in our [Brief Introduction to Quarto course](fc2-intro-quarto.qmd).
 
 :::
 
@@ -62,7 +61,7 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-[Click here to start this course.](/courses/fc6-portfolio-creation/portfolio-creation-overview.qmd)
+[Click here to start this course.](/courses/fc6-portfolio-creation/portfolio-creation-toc.qmd)
 
 
 :::

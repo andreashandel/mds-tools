@@ -36,35 +36,44 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Introduction
 
-In programming languages, a lot of extra functionality comes from packages. In editors like Positron (and VS Code and others), the equivalent of packages are 'extensions' (another term sometimes used is 'plugins'). You can install extensions to get extra functionality. 
+In many programming languages, a lot of extra functionality comes from libraries or packages. In editors like Positron (and VS Code and others), the equivalent of packages are _extensions_ (another term sometimes used is _plugins_). 
 
+
+## Managing Extensions
+
+Positron comes with a number of extensions already installed. To see and manage them, open the Extensions view, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with the top right being tilted). You'll then see a list of extensions. 
+
+By default, you see a list of installed extensions. If you just installed Positron, some extensions might need updating. Go ahead and update them. Some might need a restart of the extension (occasionally, you might have to fully restart Positron).
+
+Extensions can be turned on and off. Enabled extensions are shown normally. Those that are installed but disabled are grayed out. It's generally safe to disable extensions you don't need. Just click on the gear icon next to the extension name, then click on 'Disable'. You can always re-enable it later.
+
+Enabling or disabling extensions can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don't want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on 'Disable' (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don't want AI to operate on. You can turn the AI off for that project/workspace.
+
+Finally, if you decide you don't like an extension at all, just click on it completely uninstall it.
 
 
 ## Getting Extensions 
 
-Getting extensions is easy. Just open the Extensions sidebar, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with one being away from the other 3). You'll then see a list of extensions. 
-
-First you see those that are installed. Positron comes with several pre-installed. If you just installed Positron, some extensions might need updating. Go ahead and update them. Some might need a restart of the extension (occasionally, you might have to fully restart Positron).
-
-Now, let's install an additional extension. First, click on 'Open' -> 'Open File' and open some `CSV` file on your computer. If you don't have one readily available, ask your favorite AI to make you one, e.g. with a promt like "Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file."   
+You can install more extensions to get extra functionality. Getting extensions is easy. Let's practice and install an additional extension. First, click on 'File' -> 'Open File' and open some `CSV` file on your computer. If you don't have one readily available, ask your favorite AI to make you one, e.g. with a promt like _"Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file."_   
 
 The file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let's say we don't want to have it pre-formmatted by Positron. Click on the 'Open as plain text file' button on the top. This should open the CSV file as simple text, you'll see entries separated by commas. That's ok, but a bit hard to read. So let's improve this with an extension.
 
 Go to the Extensions sidebar and search for 'Rainbow CSV'. Click on the 'Install' button (trust the publisher). Now go back to your open CSV file. You should now see each column in a different color, courtesy of this new extension. This makes CSV files easier to read. 
 
-This was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you definitely want for QSPL, such as Julia and Quarto. We'll discuss those in the courses that cover the respective tools. 
+This was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you might want in the future, based on your specific needs. 
 
-To learn a bit more about Positron extensions, and how they do and don't differ from VS Code extensions, check out the [Positron extensions page](https://positron.posit.co/extensions.html) on the Positron documentation website.
+Recall that Positron is based on VS Code. To learn a bit more about Positron extensions, and how they do and don't differ from VS Code extensions, check out the [Positron extensions page](https://positron.posit.co/extensions.html) on the Positron documentation website.
 
-## Managing Extensions
 
-Many extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then click on the gear icon and go to `Settings`. For instance if you do that for the `Quarto` extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance 'Quarto > Render > Preview Type'. It's by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to 'external'. (If you don't know yet what Quarto is and what rendering and preview means, you will once you go through our [brief introduction to Quarto course](/courses/course-landing-pages/fc2-intro-quarto.qmd) 😁.
+## Configuring Extensions
 
-You can also turn on and off extensions. That can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don't want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on 'Disable' (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don't want AI to operate on. You can turn the AI off for that project/workspace.
+Many extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then in the title area of the extension, next to `Auto Update`, click on the gear icon and go to `Settings`. For instance if you do that for the `Quarto` extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance 'Quarto > Render > Preview Type'. It's by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to 'external'. If you don't know yet what Quarto is and what rendering and preview means, you will soon once you go through our _Brief Introduction to Quarto_ course 😁.
 
-Finally, if you decide you don't like an extension at all, just click on it completely uninstall it.
 
-Like packages in R or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.
+
+## Using Extensions 
+
+Like packages/libraries in R or Python or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.
 
 :::
 <!-- end unit-reading div -->
