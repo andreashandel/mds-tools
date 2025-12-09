@@ -35,6 +35,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Writing R Code in Positron
 
+The editor in Positron (or another IDE if you use a different one) is the main area for you to write your code. 
+
 
 
 ## Running R Code in Positron
@@ -80,7 +82,7 @@ We discussed how to use R from within Positron. We will pretty much always use R
 
 ::: {.unit-exercise}
 # Practice
-
+* If you previously went through the _Brief Introduction to Positron_ course before you had R installed, revisit it and complete the exercises there that involved R code.
 
 
 :::

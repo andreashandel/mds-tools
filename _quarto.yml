@@ -70,8 +70,8 @@ website:
   sidebar:
     - id: fc1              # sidebar shown on all files it lists
       title: "Introduction to Positron"
-      style: docked
-      alignment: left
+      style: floating 
+      alignment: center
       collapse-level: 2
       contents: 
         - courses/fc1-intro-positron/intro-positron-toc.qmd
@@ -84,8 +84,8 @@ website:
         - courses/fc1-intro-positron/positron-resources/positron-resources.qmd
     - id: fc2a             # sidebar shown on all files it lists
       title: "Introduction to R"
-      style: docked
-      alignment: left
+      style: floating 
+      alignment: center
       collapse-level: 2
       contents: 
         - courses/fc2a-intro-r/intro-r-toc.qmd
@@ -97,8 +97,8 @@ website:
         - courses/fc2a-intro-r/r-further-resources/r-further-resources.qmd
     - id: fc3              # sidebar shown on all files it lists
       title: "Introduction to Quarto"
-      style: docked
-      alignment: left
+      style: floating
+      alignment: center
       collapse-level: 2
       contents: 
         - courses/fc3-intro-quarto/intro-quarto-toc.qmd

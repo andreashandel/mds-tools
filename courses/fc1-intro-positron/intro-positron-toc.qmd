@@ -12,5 +12,6 @@ title: "TOC: A brief introduction to Positron"
 - [Basic Positron Features](positron-features/positron-features.qmd)
 - [Configuring Positron](positron-configuration/positron-configuration.qmd)
 - [Basic Positron Use](positron-use/positron-use.qmd)
+- [Positron Projects](positron-projects/positron-projects.qmd)
 - [Further Positron Resources](positron-resources/positron-resources.qmd)
 :::

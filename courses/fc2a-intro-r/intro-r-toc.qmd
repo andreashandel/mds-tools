@@ -1,6 +1,5 @@
 ---
 title: "TOC: A brief introduction to R" 
-subtitle: ""
 ---
 
 

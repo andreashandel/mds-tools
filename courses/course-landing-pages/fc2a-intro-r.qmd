@@ -20,9 +20,6 @@ This course provides a very brief introduction to the `R` programming language. 
 -   Be familiar with some basic R use.
 * Be able to run R code.
 -   Understand the ideas of packages and how to manage them.
-
-
-
 :::
 
 <!--
