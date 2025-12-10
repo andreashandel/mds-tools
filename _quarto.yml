@@ -28,12 +28,12 @@ format:
     theme: 
       - materia  # bootstrap theme
       - brand    # specifications in brand.yml
-      - assets/qspl-general.scss #more specifications in scss file
-      - assets/qspl-slides.scss #formatting for slides
-      - assets/qspl-unit-pages.scss #formatting for teaching units
-      - assets/qspl-landing-pages.scss #formatting for landing pages
+      - assets/general.scss #more specifications in scss file
+      - assets/slides.scss #formatting for slides
+      - assets/unit-pages.scss #formatting for teaching units
+      - assets/landing-pages.scss #formatting for landing pages
     css: assets/exams2forms-webex.css #this comes from the exam2forms package
-    include-after-body: assets/exams2forms-webex.js # this comes from the exam2forms R package for quizzes    
+    include-after-body: assets/exams2forms-webex.js # from the exam2forms R package for quizzes    
     anchor-sections: true
     toc: true
     toc_depth: 4
@@ -107,7 +107,7 @@ website:
         - courses/fc3-intro-quarto/quarto-positron/quarto-positron.qmd
         - courses/fc3-intro-quarto/quarto-use/quarto-use.qmd
         - courses/fc3-intro-quarto/quarto-resources/quarto-resources.qmd
-  # page-footer:
-    # left: |
-    #   {{< fa regular copyright >}} QSP Library, 2025
+  page-footer:
+    left: |
+      {{< fa regular copyright >}} The Authors, 2025
    

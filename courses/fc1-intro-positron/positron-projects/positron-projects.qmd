@@ -1,11 +1,11 @@
 ---
-title: Title of unit
+title: Positron projects
 ---
 
 ::: {.unit-overview}
 # Overview
 
-This unit provides a brief..
+This unit discusses the concepts of projects and how they are implemented in Positron.
 
 :::
 <!-- end unit-overview div -->
@@ -13,20 +13,20 @@ This unit provides a brief..
 ::: {.unit-goals}
 # Goals
 
-* Know how to do X.
-* Be able to mess with Y.
+* Know what the idea behind a project is.
+* Understand how Positron implements projects.
+* Be able to set up and manage projects in Positron.
 
 ::: 
 <!-- end unit-goals div -->
 
-::: {.unit-video}
+<!-- ::: {.unit-video}
 # Video, slides and audio transcript
 
 Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
 
 <iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-::: 
+:::  -->
 <!-- end unit-video div -->
 
 
@@ -35,9 +35,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Introduction
 
-This unit is about XYZ
+The concepts of projects is very useful for modeling and data analysis work. In Positron, projects are implemented in several flexible ways.
 
-## Main section 1
+
+## 
 
 Main and sub sections as needed.
 Use level 2 headings and below. Level 1 are reserved for the main section headers.
@@ -75,10 +76,11 @@ This is a good additional reading: URL
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
-#| echo: false
-#| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```{r topic-title-of-quiz}
+| echo: false
+| results: "asis"
+# quizzes <- list("topic-title-quiz-1.Rmd", "topic-title-quiz-2.Rmd", "topic-title-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'topic-title-of-quiz')
 ```
 ::: 
 <!-- end unit-quiz div -->
