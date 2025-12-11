@@ -38,18 +38,20 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 The concepts of projects is very useful for modeling and data analysis work. In Positron, projects are implemented in several flexible ways.
 
 
-## 
+## Projects
 
-Main and sub sections as needed.
-Use level 2 headings and below. Level 1 are reserved for the main section headers.
+The general idea of a project is a collection of files and settings that are used together to accomplish a specific task, such as a modeling and data analysis project. Everything related to that task is stored in one place, namely a folder (with subfolders) on your computer (and probably also in the cloud) making it easier to manage and organize your work. 
 
-### Subsection 1
 
-### Subsection 2
+## Projects in Positron
 
-## Main section 2
+If you are familiar with R and RStudio, you know it has the concept of a project through an `.Rproj` file which is stored in some folder. The folder with this file indicates the top level project folder, and everything inside this folder - including sub-folders - is part of the project. 
 
-### Subsection 1
+Positron does support `.Rproj` files. However, since Positron is designed to work with multiple programming languages, it also allows for other types of files to indicate the project folder. A very common setup is where a project corresponds to a Git/GitHub repository (Git/GitHub are explained in our _Brief Introduction to Git/GitHub_ course). In this case, the project folder is the folder that contains the `.git` folder (which is hidden by default). Everything inside this folder - including sub-folders - is part of the project.
+
+
+## Project workflow in Positron
+
 
 ::: 
 <!-- end unit-reading div -->
@@ -58,7 +60,7 @@ Use level 2 headings and below. Level 1 are reserved for the main section header
 ::: {.unit-summary}
 # Summary
 
-In this unit, we covered XYZ.
+In this unit, we covered the concepts of projects, and how you can use them with Positron.
 
 ::: 
 <!-- end unit-summary div -->
@@ -77,8 +79,8 @@ This is a good additional reading: URL
 # Test yourself
 
 ```{r topic-title-of-quiz}
-| echo: false
-| results: "asis"
+#| echo: false
+#| results: "asis"
 # quizzes <- list("topic-title-quiz-1.Rmd", "topic-title-quiz-2.Rmd", "topic-title-quiz-3.Rmd")
 # exams2forms::exams2forms(file = quizzes, title = 'topic-title-of-quiz')
 ```

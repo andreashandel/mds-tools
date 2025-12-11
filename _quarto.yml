@@ -81,6 +81,7 @@ website:
         - courses/fc1-intro-positron/positron-features/positron-features.qmd
         - courses/fc1-intro-positron/positron-configuration/positron-configuration.qmd
         - courses/fc1-intro-positron/positron-use/positron-use.qmd
+        - courses/fc1-intro-positron/positron-projects/positron-projects.qmd
         - courses/fc1-intro-positron/positron-resources/positron-resources.qmd
     - id: fc2a             # sidebar shown on all files it lists
       title: "Introduction to R"
