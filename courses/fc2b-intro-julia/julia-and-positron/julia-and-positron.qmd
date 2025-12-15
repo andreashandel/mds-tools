@@ -27,7 +27,7 @@ Positron is a next‑generation data‑science IDE from Posit. While its initial
 
 Positron is a fairly new editor built by the folks from Posit (who are also behind RStudio). It is a spin-off of Visual Studio Code, and is available for free on Windows, macOS, and Linux. It supports Python, R, Julia (and more).
 
-We assume that you are have basic familiarity with Positron, either by having gone through our [short Positron course](../../fc1-intro-positron/intro-positron-overview.qmd) or from other sources. If not, go through our [brief Positron course](../../fc1-intro-positron/intro-positron-overview.qmd), then come back to this unit 😁.
+We assume that you are have basic familiarity with Positron, either by having gone through our _Brief Intro to Positron_ course or from other sources. 
 
 
 ## Positron and Julia

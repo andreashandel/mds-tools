@@ -1,0 +1,27 @@
+Question
+========
+What is the main advantage of putting your code in a saved `.R` script instead of only using the console?
+
+Answerlist
+----------
+* It makes R run faster automatically
+* It gives you a reproducible record you can rerun as a whole
+* It disables syntax highlighting, so errors are easier to find
+* It prevents you from using packages
+
+Solution
+========
+Saving code in a script provides a reproducible record you can rerun (e.g., with `source()`), instead of relying on ad-hoc console history.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rcoding-scripts
+extype: schoice
+exsolution: 0100

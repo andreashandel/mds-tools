@@ -1,0 +1,27 @@
+Question
+========
+After restarting R, you run `y <- x^2` before defining `x` and get an error. What does this tell you about running code?
+
+Answerlist
+----------
+* It will still work because R fills in missing objects automatically
+* It only fails when you use `Source R File` instead of the console
+* It means the workspace keeps old objects even after a restart
+* You need to run code in order; define `x` before using it in `y <- x^2`
+
+Solution
+========
+Objects have to exist before you use them. After a restart you must recreate `x` (or run the script from the top) before executing `y <- x^2`.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: positron-run-order
+extype: schoice
+exsolution: 0001

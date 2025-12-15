@@ -1,0 +1,27 @@
+Question
+========
+Why is R's vectorization useful when doing basic calculations?
+
+Answerlist
+----------
+* It only works for text data, not numbers
+* It lets you apply operations to entire vectors without writing loops
+* It prevents you from using built-in functions like `mean()`
+* It forces you to preallocate every object manually
+
+Solution
+========
+Vectorization allows operations to be applied to full vectors at once (e.g., `scores * 2`), so you avoid writing explicit loops for basic calculations.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rcoding-vectorization
+extype: schoice
+exsolution: 0100

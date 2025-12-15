@@ -103,7 +103,10 @@ exams2forms::exams2forms(file = quizzes, title = 'r-install-setup-quiz')
 ::: {.unit-exercise}
 # Practice
 
-If the install worked, you are all set and there's nothing to practice here. 
+* Open R, run `2+2`, and confirm you see `4` in the console.
+* Run `sessionInfo()` or `version` in R to double-check your installation details.
+* Install a small package (e.g., `install.packages("palmerpenguins")`), load it with `library()`, and run one example from its help file.
+* Restart R and run a saved script via `source("path/to/script.R")` to ensure your setup works across sessions.
 
 :::
 <!-- end unit-exercise div -->

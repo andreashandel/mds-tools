@@ -1,0 +1,27 @@
+Question
+========
+Which statement about using packages is correct?
+
+Answerlist
+----------
+* After installing a package, you must still call `library(packageName)` to use it in a session
+* Running `library(packageName)` will automatically install missing packages
+* Packages from GitHub are always higher quality than those on CRAN
+* You should always install every dependency manually, even if R offers to handle them
+
+Solution
+========
+Installing and loading are separate steps; you install once, then load with `library()` in each session where you need the package.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: rpackages-library
+extype: schoice
+exsolution: 1000

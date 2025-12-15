@@ -11,6 +11,29 @@ title: "TOC: A brief introduction to R"
 - [Using R through Positron](r-positron/r-positron.qmd)
 - [Basics of Coding in R](r-coding-basics/r-coding-basics.qmd)
 - [R Packages](r-packages/r-packages.qmd)
+- [R tidyverse, tidymodels and more](r-tidyverse/r-tidyverse.qmd)
 - [Further R Resources](r-further-resources/r-further-resources.qmd) 
 
 :::
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r intro-r-toc-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("intro-r-toc-quiz-1.Rmd", "intro-r-toc-quiz-2.Rmd", "intro-r-toc-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'intro-r-toc-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+* Skim each unit in this course and note one question you want answered while reading.
+* Identify which unit you will complete first and add it to your calendar.
+* Visit one linked resource (e.g., R for Data Science or tidyverse docs) and bookmark it.
+* Set up a folder for your course scripts so you can save practice code from each unit.
+
+:::
+<!-- end unit-exercise div -->

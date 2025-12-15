@@ -1,0 +1,27 @@
+Question
+========
+Which unit should you consult to learn about installing R?
+
+Answerlist
+----------
+* R tidyverse, tidymodels and more
+* R Installation and Setup
+* Using R through Positron
+* Further R Resources
+
+Solution
+========
+The “R Installation and Setup” unit covers how to install and configure R.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: intro-toc-install
+extype: schoice
+exsolution: 0100

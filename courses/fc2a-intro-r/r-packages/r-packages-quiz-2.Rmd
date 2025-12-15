@@ -1,0 +1,27 @@
+Question
+========
+How should you think about package quality on CRAN or Bioconductor?
+
+Answerlist
+----------
+* They are guaranteed bug-free because they passed checks
+* They have passed basic checks, but you still need to judge fit and reliability
+* They are always less stable than GitHub-only packages
+* They cannot be used for data analysis
+
+Solution
+========
+CRAN/Bioconductor packages have passed some automated checks, but you still need to assess whether they meet your needs and behave reliably.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rpackages-quality
+extype: schoice
+exsolution: 0100

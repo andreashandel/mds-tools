@@ -92,8 +92,8 @@ In this unit, we covered the concepts of projects, and how you can use them with
 ::: {.unit-resources}
 # Further Resources
 
-[Official Positron documentation on projects](https://positron.posit.co/rstudio-rproj-file.html) - the focus is on those who are used to the `.Rproj` setup, but it also provides good general information.
-[VS Code workspace documentation](https://code.visualstudio.com/docs/editing/workspaces/workspaces) - more information on how VS Code (and thus Positron) handles workspaces. Some of this is advanced, e.g. multi-root workspaces, which we generally don't recommend.
+* [Official Positron documentation on projects](https://positron.posit.co/rstudio-rproj-file.html) - the focus is on those who are used to the `.Rproj` setup, but it also provides good general information.
+* [VS Code workspace documentation](https://code.visualstudio.com/docs/editing/workspaces/workspaces) - more information on how VS Code (and thus Positron) handles workspaces. Some of this is advanced, e.g. multi-root workspaces, which we generally don't recommend.
 
 ::: 
 <!-- end unit-resources div -->
@@ -116,8 +116,8 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-projects-quiz')
 ::: {.unit-exercise}
 # Practice
 
-* Do task X.
-* Do task Y.
+* Try to create a new project/workspace using one of the approaches described above. 
+* Open an existing project/workspace, either the one you just created or something you already have. Navigate the folder structure to see what files are included in the project.
 
 ::: 
 <!-- end unit-exercise div -->

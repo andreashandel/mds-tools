@@ -1,0 +1,27 @@
+Question
+========
+How can AI tools be most helpful when you are learning R?
+
+Answerlist
+----------
+* By writing full analyses for you so you never read the code
+* By explaining snippets you don't understand and suggesting next steps
+* By replacing the need to read any documentation
+* By blocking you from running code until you pay
+
+Solution
+========
+AI is most useful as an explainer and assistant: ask it to clarify code, propose approaches, and then verify the suggestions yourself.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rresources-ai-help
+extype: schoice
+exsolution: 0100

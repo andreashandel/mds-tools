@@ -193,6 +193,18 @@ div.output
 
 }
 
+
+/* Inline code only (not fenced/code blocks) */
+code:not(.sourceCode) {
+  background: #ffe9c7;
+  color: #8a3a00;
+  padding: 0.1em 0.35em;
+  border-radius: 0.35em;
+  box-shadow: 0 0 0 1px #f3b36c inset;
+  font-weight: 600;
+}
+
+
 /* --------------------------------------*/
 /* End formatting for certain types of content components  ------*/
 /* --------------------------------------*/

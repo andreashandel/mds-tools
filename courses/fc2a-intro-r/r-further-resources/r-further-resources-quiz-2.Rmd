@@ -1,0 +1,27 @@
+Question
+========
+What kind of resource are the “R Primers” mentioned in this unit?
+
+Answerlist
+----------
+* A mailing list for R job postings
+* A set of interactive tutorials covering basic R concepts
+* An R package for plotting
+* A conference about R hardware
+
+Solution
+========
+The R Primers are interactive tutorials that walk through foundational R coding topics.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rresources-primers
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+What is the focus of the tidymodels collection?
+
+Answerlist
+----------
+* Building interactive web apps
+* Writing low-level C extensions
+* Modeling and machine learning workflows that fit well with tidyverse style
+* Replacing base R plotting functions
+
+Solution
+========
+Tidymodels is a set of packages for modeling and machine learning, designed to work with tidyverse-friendly syntax and conventions.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: rtidyverse-tidymodels
+extype: schoice
+exsolution: 0010
