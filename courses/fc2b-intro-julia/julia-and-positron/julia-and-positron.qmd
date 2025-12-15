@@ -1,0 +1,103 @@
+---
+title: Using Julia through Positron
+---
+
+::: {.unit-overview}
+# Overview
+
+Positron is a next‑generation data‑science IDE from Posit. While its initial focus is R and Python, you can still write and run Julia code inside it with a few extra steps. This unit shows you how.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Install Positron and enable Julia syntax highlighting.
+* Configure a Julia REPL within Positron.
+* Write code and run a Julia script in Positron.
+
+::: 
+<!-- end unit-goals div -->
+
+::: {.unit-reading}
+# Reading
+
+## The Positron editor
+
+Positron is a fairly new editor built by the folks from Posit (who are also behind RStudio). It is a spin-off of Visual Studio Code, and is available for free on Windows, macOS, and Linux. It supports Python, R, Julia (and more).
+
+We assume that you are have basic familiarity with Positron, either by having gone through our [short Positron course](../../fc1-intro-positron/intro-positron-overview.qmd) or from other sources. If not, go through our [brief Positron course](../../fc1-intro-positron/intro-positron-overview.qmd), then come back to this unit 😁.
+
+
+## Positron and Julia
+
+Positron is based on Visual Studio (VS) Code, which means extensions designed for VS Code typically work in Positron. To enable Julia, open the Extensions panel, search for “Julia” by the Julia Language team, and install it. The extension will ensure that you can write Julia code and run it inside Positron. 
+
+
+## Running Julia code in Positron
+
+Once you installed the Extension (and you might need to restart Positron), start a new Julia file by going to `New` -> `New File` -> `Julia File`. 
+
+An empty file should open. Write a few lines of code, for instance:
+
+`
+x = 2+2
+print(x^2)
+`
+
+Then go to the first line of code and press `Ctrl/Cmd + Enter` to run it. This should open the Julia REPL in the bottom window, and print the result of the code. Run the second line of code with the same command.
+
+You can also save the file into a `.jl` file. 
+
+In the top right corner of the editor, there should be a small sideways triangle symbol. You can press it to run the whole Julia script.
+
+These are your basic ways of writing and executing Julia code with Positron. You write code into a file, then either execute it one line at a time (good for testing and debuggin) or run the whole script (good for production runs). 
+
+There are also ways to combine code and text by placing  `{julia}` code chunks inside Quarto documents. We won't cover that in this introductory course, but if you are are interested in that topic and related topics, our (premium) [Reproducible, organized, automated, and documented (ROADy) workflows](../../course-landing-pages/mc3-roady-workflows.qmd) might be worth checking out.
+
+
+## Further information
+
+Positron is still fairly new, therefore its documentation is not that extensive yet. However, since it is based on VS Code, a lot of things that work in VS Code also work in Positron. So if you struggle with any part of getting Julia to work in Positron, search for a solution for VS Code, it will likely also work for Positron.
+
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+We covered how to use Julia inside Positron to write and run code. 
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- [Julia extension for VS Code/Positron](<https://www.julia-vscode.org/)
+
+::: 
+<!-- end unit-resources div -->
+
+
+<!-- ::: {.unit-quiz} -->
+<!-- # Test yourself -->
+
+<!-- ```{r qsp-quiz} -->
+<!-- #| echo: false -->
+<!-- #| results: "asis" -->
+<!-- ``` -->
+<!-- :::  -->
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Install Positron and the Julia extension, then open a new `.jl` file and run `println(π)`.
+
+::: 
+<!-- end unit-exercise div -->

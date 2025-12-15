@@ -1,0 +1,27 @@
+Question
+========
+Which of the following automatically marks a folder as the root of a Positron project/workspace?
+
+Answerlist
+----------
+* A `.git` directory inside the folder
+* A screenshot saved in the folder
+* Any file named `notes.txt`
+* A `.csv` data file
+
+Solution
+========
+Positron treats common project markers like a `.git` directory as a signal that the folder is a workspace root.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-project-marker
+extype: schoice
+exsolution: 1000
