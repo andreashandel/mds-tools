@@ -1,0 +1,132 @@
+
+---
+title: Quarto Basics
+---
+
+::: {.unit-overview}
+# Overview
+
+In this unit, you will learn the fundamental skills needed to create, edit, and render basic Quarto documents. You will explore the essential structure of a Quarto file and common workflows for generating outputs in different formats.
+:::
+
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+- Understand the basic anatomy of a Quarto document.
+- Create and render documents to multiple output formats.
+
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+::: 
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+
+## Structure of a Quarto Document
+
+The Quarto software operates on a file called a **Quarto document** (`.qmd`). A standard Quarto file (`.qmd`) is a text document that consists of:
+
+1. **YAML Front Matter**: Metadata and document configuration.
+2. **Markdown Body**: Narrative text written in Markdown.
+3. **Executable Code Chunks**: Embedded code blocks executed during rendering. This is optional, you can have a Quarto document without executable code chunks.
+
+
+### Example of a Minimal Quarto Document
+
+Here is an example of a minimal Quarto document:
+
+````markdown
+---
+title: "Simple Quarto Example"
+format: html
+---
+
+Here is a simple example demonstrating the integration of R code and narrative.
+
+This R code chunk generates a summary of the built-in `mtcars` dataset:
+
+```{r}
+summary(mtcars)
+```
+````
+
+After entering this code into the editor and saving it as `simple.qmd`, you can render it using the command `quarto render simple.qmd` (or use the `Preview` button. An HTML file displaying your results will be created.
+
+
+## Markdown Syntax
+
+Quarto uses Markdown for formatting text. Markdown is what is called a markup language that allows you to format text using simple symbols. For example: 
+- `#` for headings
+- `**bold text**` for bold text
+- `*italic text*` for italic text
+- Lists using `-` or `*` for unordered lists and numbers for ordered lists
+
+
+## Code Chunks
+
+You can create Quarto documents that do not contain any code. However, a nice feature of Quarto is that it allows the combination of text and code, with code being executed during rendering and results being inserted into the final document. Code chunks are defined using triple backticks followed by the language identifier (e.g., `{r}` for R code): 
+```{r}
+# This is an R code chunk
+x <- seq(1, 10)
+y <- x^2
+plot(x, y, type = "b", main = "Plot of y = x^2", xlab = "x", ylab = "y")
+```
+
+
+
+## Output Formats
+
+The starting point or input for Quarto is always one or multiple Quarto documents (`.qmd` files). From these source files, Quarto can generate output in various formats, including HTML, PDF, Word, and more.
+
+The type of output is specified in what is called the YAML front matter:
+
+
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+::: 
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r qsp-quiz}
+#| echo: false
+#| results: "asis"
+#exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+```
+::: 
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+
+
+::: 
+<!-- end unit-exercise div -->

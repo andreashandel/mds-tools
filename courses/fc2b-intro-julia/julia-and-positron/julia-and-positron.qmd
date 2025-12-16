@@ -54,7 +54,7 @@ In the top right corner of the editor, there should be a small sideways triangle
 
 These are your basic ways of writing and executing Julia code with Positron. You write code into a file, then either execute it one line at a time (good for testing and debuggin) or run the whole script (good for production runs). 
 
-There are also ways to combine code and text by placing  `{julia}` code chunks inside Quarto documents. We won't cover that in this introductory course, but if you are are interested in that topic and related topics, our (premium) [Reproducible, organized, automated, and documented (ROADy) workflows](../../course-landing-pages/mc3-roady-workflows.qmd) might be worth checking out.
+<!-- There are also ways to combine code and text by placing  `{julia}` code chunks inside Quarto documents. We won't cover that in this introductory course, but if you are are interested in that topic and related topics, our (premium) [Reproducible, organized, automated, and documented (ROADy) workflows](../../course-landing-pages/mc3-roady-workflows.qmd) might be worth checking out. -->
 
 
 ## Further information

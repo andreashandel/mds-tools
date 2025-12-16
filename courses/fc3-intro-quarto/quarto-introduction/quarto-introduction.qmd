@@ -1,5 +1,5 @@
 ---
-title: Overview of Quarto
+title: Quarto Overview
 ---
 
 ::: {.unit-overview}
@@ -39,7 +39,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## What is Quarto?
 
-As it's most basic, Quarto is piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Quarto is the successor of the R Markdown framework, which has been widely used for reproducible research and dynamic reporting in the R community. Building upon R Markdown’s strengths, Quarto extends this capability to other languages like Python, Julia, and others. 
+Quarto is defined as "an open-source scientific and technical publishing system". In simple terms, Quarto is piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Various output formats are available, including HTML, PDF, Word documents, presentations, and websites.
+
+Quarto is the successor of the R Markdown framework, which has been widely used for reproducible research and dynamic reporting in the R community. Building upon R Markdown’s strengths, Quarto extends this capability to other languages like Python, Julia, and others. 
 
 
 ## Why Quarto?
@@ -57,9 +59,57 @@ Quarto is widely applicable in various scenarios:
 - Data analysis reports and interactive dashboards
 - Educational content and tutorials
 - Professional reporting and documentation
-- Websites (such as QSPL)
+- Websites (such as this one)
+- and more
 
 
+## Quarto vs R Markdown
+
+Quarto is the more powerful successor of R Markdown. R Markdown is still around and functional. However, most effort is going into implementing new features for Quarto, and it has many more features compared to R Markdown.
+
+Occasionally, you might still need to use R Markdown, and you will find a lot of online information for R Markdown. Since Quarto is an evolution of R Markdown and shares many similiarities, often what works in R Markdown will also work in Quarto.
+
+
+## Basics of Quarto
+
+The Quarto software uses as input Quarto documents/files. These are text files with the file extension `.qmd`. A Quarto document typically consists of three main components: 
+
+1. **YAML Front Matter:** Metadata and output configurations defined at the beginning of the file.
+2. **Markdown Text:** Narrative content formatted with Markdown syntax.
+3. **Executable Code Chunks:** Embedded code blocks (R or another language) executed during rendering.
+
+Here is an example of a minimal Quarto document:
+
+```{markdown}
+
+---
+title: "Simple Quarto Example"
+format: html
+---
+
+# This is a heading 
+
+## This is a subheading
+
+Here is text. **This is bold text.** 
+Formatting follows the Markdown syntax.
+
+## A code example
+
+Here is a simple example demonstrating the integration of R code within the document.
+
+<!-- ```{r}
+x <- seq(1, 10)
+y <- x^2
+plot(x,y)
+``` -->
+
+The code is executed when the Quarto document is processed (rendered), and the resulting figure is automatically included in the output document.
+```
+
+We'll re-create the document shown above shortly.
+
+Note that what you are seeing is actually nested Quarto documents. This whole website including this page are written in Quarto, and inside that Quarto file we wrote the above Quarto document to illustrate how to write Quarto documents 😁.
 
 
 ::: 
@@ -68,11 +118,8 @@ Quarto is widely applicable in various scenarios:
 ::: {.unit-summary}
 # Summary
 
-In this introductory unit, you learned:
+Quarto is a powerful, flexible framework that allows you to perform modeling and data science projects, any many more activities in a very automated, reproducible setup.
 
-- The fundamentals of Quarto as a reproducible publishing system.
-- The basic structure of Quarto documents (YAML front matter, Markdown, and code chunks).
-- Common applications and advantages of using Quarto.
 ::: 
 <!-- end unit-summary div -->
 
@@ -91,7 +138,7 @@ In this introductory unit, you learned:
 ```{r qsp-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+#exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
 ```
 ::: 
 <!-- end unit-quiz div -->
