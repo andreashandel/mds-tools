@@ -1,0 +1,27 @@
+Question
+========
+Why would you install TinyTeX when using Quarto?
+
+Answerlist
+----------
+* To enable PDF output rendering
+* To speed up HTML rendering
+* To install R packages
+* To edit YAML metadata
+
+Solution
+========
+Quarto needs a TeX distribution for PDF output, and TinyTeX is a recommended option.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: TinyTeX purpose
+extype: schoice
+exsolution: 1000

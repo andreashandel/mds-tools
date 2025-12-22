@@ -1,0 +1,27 @@
+Question
+========
+How does Quarto relate to R Markdown?
+
+Answerlist
+----------
+* Quarto replaces R and does not support R Markdown documents
+* Quarto is older and has fewer features than R Markdown
+* Quarto is the successor to R Markdown and adds more features and languages
+* Quarto is only for Python and cannot work with R
+
+Solution
+========
+Quarto builds on the ideas of R Markdown and extends them across languages and features.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Quarto vs R Markdown
+extype: schoice
+exsolution: 0010

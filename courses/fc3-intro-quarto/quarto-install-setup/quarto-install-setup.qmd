@@ -101,10 +101,11 @@ In this unit, you learned how to install Quarto and perform initial setup tasks.
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r quarto-install-setup-quiz}
 #| echo: false
 #| results: "asis"
-#exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("quarto-install-setup-quiz-1.Rmd", "quarto-install-setup-quiz-2.Rmd", "quarto-install-setup-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'quarto-install-setup-quiz')
 ```
 ::: 
 <!-- end unit-quiz div -->

@@ -1,0 +1,27 @@
+Question
+========
+Which command checks the installed Quarto version?
+
+Answerlist
+----------
+* quarto check
+* quarto --help
+* quarto render
+* quarto --version
+
+Solution
+========
+`quarto --version` prints the installed Quarto version if the tool is available.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Quarto version
+extype: schoice
+exsolution: 0001

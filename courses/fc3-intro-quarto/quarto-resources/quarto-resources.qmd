@@ -6,7 +6,7 @@ title: Further Resources
 ::: {.unit-overview}
 # Overview
 
-This unit provides comprehensive resources for further exploring and mastering Quarto. It includes official documentation, community support, useful cheat sheets, examples, and additional learning materials.
+This unit provides pointers to further resources for learning and mastering Quarto. 
 :::
 
 <!-- end unit-overview div -->
@@ -14,11 +14,9 @@ This unit provides comprehensive resources for further exploring and mastering Q
 ::: {.unit-goals}
 # Goals
 
-By the end of this unit, you will:
-
 - Know where to find detailed Quarto documentation.
 - Access community support and resources for ongoing learning.
-- Identify additional learning materials and examples to enhance your Quarto projects.
+
 ::: 
 <!-- end unit-goals div -->
 
@@ -39,36 +37,17 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Official Documentation
 
-The definitive resource for Quarto is the [official documentation](https://quarto.org/docs), updated regularly with tutorials, examples, and an extensive feature reference. It is the go-to resource for comprehensive details about using Quarto effectively.
+The definitive resource for Quarto is the [Quarto website](https://quarto.org), which is an ever-increasing, well-maintained place to find tutorials, examples, and an extensive feature reference. It is the go-to resource for comprehensive details about using Quarto effectively.
 
-## Cheat Sheets
 
-Quick-reference cheat sheets for Quarto can be found within the Positron IDE under *Help › Cheatsheets*, or downloaded from the [Quarto Cheat Sheet page](https://quarto.org/docs/quarto-cheatsheet.pdf). These sheets summarize essential commands, syntax, and best practices.
+## Quarto Gallery
 
-## Books and Articles
+For inspiration, or if you know what you want but don't know the technical term, the [Quarto Gallery](https://quarto.org/gallery/) showcases a variety of documents, presentations, websites, and books created with Quarto. Each example includes source files to help you learn by example.
 
-The following resources provide deeper insights into Quarto:
-
-- [*Authoring Books with Quarto*](https://quarto.org/docs/books/): A detailed online guide for creating interactive and cross-referenced books using Quarto.
-- [*Reproducible Data Science with Quarto*](https://quarto.org/docs/articles/reproducible-science.html): An article showcasing how Quarto supports reproducible research workflows.
 
 ## Community Support
 
-Get rapid help and interact with the Quarto community via:
-
-- The [`quarto` tag on Stack Overflow](https://stackoverflow.com/questions/tagged/quarto)
-- [Posit Community Quarto forum](https://community.rstudio.com/c/quarto/59)
-- The `#quarto` channel on [Posit Discord](https://discord.gg/posit)
-
-These platforms offer immediate help from community experts and developers.
-
-## Example Galleries
-
-Explore the [Quarto Examples Gallery](https://quarto.org/examples) for inspiration. Each example includes the source code, helping you learn practical usage and best practices by examining real-world applications of Quarto.
-
-## Staying Up to Date
-
-Stay informed about Quarto's updates, features, and improvements by regularly checking the [Release Notes](https://quarto.org/docs/releases/) or subscribing to the [RSS feed](https://quarto.org/docs/releases.xml).
+Since Quarto is widely used, there is a lot of information available from the community. The [Quarto discussion section on Github](https://github.com/orgs/quarto-dev/discussions) is useful for all kinds of qeustions, including more advanced techincal ones. The Quarto developers are active there.
 
 ::: 
 <!-- end unit-reading div -->
@@ -76,34 +55,27 @@ Stay informed about Quarto's updates, features, and improvements by regularly ch
 ::: {.unit-summary}
 # Summary
 
-In this unit, you learned about various resources that help you:
+This unit provided some additional pointers towards resources that will be helpful for further learning Quarto. 
 
-- Deepen your knowledge through official Quarto documentation.
-- Quickly reference common commands with cheat sheets.
-- Engage with the Quarto user community for support.
-- Discover practical applications via examples and galleries.
-- Stay informed on updates and new features in Quarto.
 ::: 
 <!-- end unit-summary div -->
 
 ::: {.unit-resources}
 # Further Resources
 
-- [Official Quarto Documentation](https://quarto.org/docs)
-- [Quarto Cheat Sheet](https://quarto.org/docs/quarto-cheatsheet.pdf)
-- [Stack Overflow Quarto Questions](https://stackoverflow.com/questions/tagged/quarto)
-- [Quarto Community Forum](https://community.rstudio.com/c/quarto/59)
-- [Quarto Discord Community](https://discord.gg/posit)
+All relevant resources are listed above.
+
 ::: 
 <!-- end unit-resources div -->
 
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r quarto-resources-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("quarto-resources-quiz-1.Rmd", "quarto-resources-quiz-2.Rmd", "quarto-resources-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'quarto-resources-quiz')
 ```
 ::: 
 <!-- end unit-quiz div -->

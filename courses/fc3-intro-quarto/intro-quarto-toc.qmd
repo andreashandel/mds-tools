@@ -9,7 +9,6 @@ subtitle: ""
 
 - [Quarto Overview](quarto-introduction/quarto-introduction.qmd)
 - [Installation and Setup](quarto-install-setup/quarto-install-setup.qmd)
-- [Quarto Basics](quarto-basics/quarto-basics.qmd)
 - [Quarto and Positron](quarto-positron/quarto-positron.qmd)
 - [Quarto Basics](quarto-basics/quarto-basics.qmd)
 - [More Quarto](quarto-beyond-basics/quarto-beyond-basics.qmd)

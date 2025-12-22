@@ -1,0 +1,27 @@
+Question
+========
+What does the command `quarto check` do?
+
+Answerlist
+----------
+* Renders the current document to HTML
+* Lists system tools Quarto can use and whether they are available
+* Creates a new Quarto project
+* Opens the Quarto website in a browser
+
+Solution
+========
+`quarto check` reports on external tools Quarto can integrate with on your system.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Quarto check
+extype: schoice
+exsolution: 0100

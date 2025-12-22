@@ -1,0 +1,27 @@
+Question
+========
+Which option lists other Quarto products mentioned in the unit?
+
+Answerlist
+----------
+* Spreadsheets and databases
+* Mobile apps and games
+* Audio editors and image filters
+* Dashboards, books, and manuscripts
+
+Solution
+========
+Quarto supports additional products such as dashboards, books, and manuscripts.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Other Quarto products
+extype: schoice
+exsolution: 0001

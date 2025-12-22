@@ -135,10 +135,11 @@ Quarto is a powerful, flexible framework that allows you to perform modeling and
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r quarto-introduction-quiz}
 #| echo: false
 #| results: "asis"
-#exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("quarto-introduction-quiz-1.Rmd", "quarto-introduction-quiz-2.Rmd", "quarto-introduction-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'quarto-introduction-quiz')
 ```
 ::: 
 <!-- end unit-quiz div -->

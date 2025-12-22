@@ -107,7 +107,8 @@ website:
         - courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.qmd
         - courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.qmd
         - courses/fc3-intro-quarto/quarto-positron/quarto-positron.qmd
-        - courses/fc3-intro-quarto/quarto-use/quarto-use.qmd
+        - courses/fc3-intro-quarto/quarto-basics/quarto-basics.qmd
+        - courses/fc3-intro-quarto/quarto-beyond-basics/quarto-beyond-basics.qmd
         - courses/fc3-intro-quarto/quarto-resources/quarto-resources.qmd
   page-footer:
     left: |

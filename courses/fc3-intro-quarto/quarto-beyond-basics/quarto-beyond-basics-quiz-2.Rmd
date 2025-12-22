@@ -1,0 +1,27 @@
+Question
+========
+Which file is used to configure a Quarto website project?
+
+Answerlist
+----------
+* index.qmd
+* quarto.yml
+* _quarto.yml
+* site.json
+
+Solution
+========
+Quarto websites are configured in the `_quarto.yml` file.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Website config
+extype: schoice
+exsolution: 0010

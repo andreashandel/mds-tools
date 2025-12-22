@@ -1,0 +1,27 @@
+Question
+========
+Which command renders a Quarto document without opening a preview?
+
+Answerlist
+----------
+* quarto render name-of-file.qmd
+* quarto preview name-of-file.qmd
+* quarto check
+* quarto --version
+
+Solution
+========
+`quarto render` produces the output file without running the live preview.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Quarto render command
+extype: schoice
+exsolution: 1000
