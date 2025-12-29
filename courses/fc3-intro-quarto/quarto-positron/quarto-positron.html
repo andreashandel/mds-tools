@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc3-intro-quarto/quarto-use/quarto-use.html" rel="next">
+<link href="../../../courses/fc3-intro-quarto/quarto-basics/quarto-basics.html" rel="next">
 <link href="../../../courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,14 +74,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-54c8f25464f32f8783bd446cee98020d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-46bfa3cd2fb9cb94ac475764646bb106.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-fc75584778e8bc11e5105e1b3cffe99d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-46bfa3cd2fb9cb94ac475764646bb106.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,15 +116,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../../assets/exams2forms-webex.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -136,14 +136,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../courses/fc2a-intro-r/intro-r-toc.html"> 
-<span class="menu-text">Intro to R</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../../courses/fc3-intro-quarto/intro-quarto-toc.html" aria-current="page"> 
-<span class="menu-text">Intro to Quarto</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -165,11 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -181,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview of Quarto</span></a>
+ <span class="menu-text">Quarto Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -198,8 +186,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc3-intro-quarto/quarto-use/quarto-use.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Basic Use</span></a>
+  <a href="../../../courses/fc3-intro-quarto/quarto-basics/quarto-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Basics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc3-intro-quarto/quarto-beyond-basics/quarto-beyond-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More Quarto</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -222,21 +216,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
-  <li><a href="#positron-and-quarto-integration" id="toc-positron-and-quarto-integration" class="nav-link" data-scroll-target="#positron-and-quarto-integration">Positron and Quarto Integration</a></li>
-  <li><a href="#working-with-.qmd-files-in-positron" id="toc-working-with-.qmd-files-in-positron" class="nav-link" data-scroll-target="#working-with-.qmd-files-in-positron">Working with <code>.qmd</code> Files in Positron</a></li>
-  <li><a href="#rendering-documents" id="toc-rendering-documents" class="nav-link" data-scroll-target="#rendering-documents">Rendering Documents</a></li>
-  <li><a href="#live-preview-for-html-documents" id="toc-live-preview-for-html-documents" class="nav-link" data-scroll-target="#live-preview-for-html-documents">Live Preview for HTML Documents</a></li>
+  <li><a href="#quarto-and-positron" id="toc-quarto-and-positron" class="nav-link" data-scroll-target="#quarto-and-positron">Quarto and Positron</a></li>
+  <li><a href="#creating-quarto-documents-with-positron" id="toc-creating-quarto-documents-with-positron" class="nav-link" data-scroll-target="#creating-quarto-documents-with-positron">Creating Quarto documents with Positron</a></li>
+  <li><a href="#rendering" id="toc-rendering" class="nav-link" data-scroll-target="#rendering">Rendering</a></li>
   <li><a href="#customizing-quarto-settings-in-positron" id="toc-customizing-quarto-settings-in-positron" class="nav-link" data-scroll-target="#customizing-quarto-settings-in-positron">Customizing Quarto Settings in Positron</a></li>
   <li><a href="#debugging-and-troubleshooting" id="toc-debugging-and-troubleshooting" class="nav-link" data-scroll-target="#debugging-and-troubleshooting">Debugging and Troubleshooting</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a>
-  <ul class="collapse">
-  <li><a href="#practice-exercise" id="toc-practice-exercise" class="nav-link" data-scroll-target="#practice-exercise">Practice Exercise</a></li>
-  <li><a href="#substantial-exercise" id="toc-substantial-exercise" class="nav-link" data-scroll-target="#substantial-exercise">Substantial Exercise</a></li>
-  </ul></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
   </ul>
 </nav>
     </div>
@@ -264,16 +253,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>This unit explains how to effectively use Quarto within the Positron IDE. Leveraging your existing knowledge of Positron, you will explore Quarto-specific features, workflows, and debugging practices within the IDE environment.</p>
+<p>This unit explains how to use Quarto within the Positron IDE.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
-<p>By the end of this unit, you will:</p>
 <ul>
-<li>Efficiently create, edit, and render Quarto documents using Positron.</li>
-<li>Customize and optimize your Quarto workflow within Positron.</li>
-<li>Understand and troubleshoot common issues in Positron with Quarto documents.</li>
+<li>Be able to create and render basic Quarto documents through Positron.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -290,89 +276,98 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-video div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
-<section id="positron-and-quarto-integration" class="level2">
-<h2 class="anchored" data-anchor-id="positron-and-quarto-integration">Positron and Quarto Integration</h2>
-<p>Positron is an intuitive, cross-platform IDE ideal for data science tasks. Due to your familiarity with Positron, this section will focus specifically on utilizing Positron’s built-in features to streamline your Quarto workflow.</p>
+<section id="quarto-and-positron" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-and-positron">Quarto and Positron</h2>
+<p>Quarto documents are basically text documents. They have the file extension <code>.qmd</code> (Quarto Markdown). You can create and edit these files in any text editor, including Positron.</p>
 </section>
-<section id="working-with-.qmd-files-in-positron" class="level2">
-<h2 class="anchored" data-anchor-id="working-with-.qmd-files-in-positron">Working with <code>.qmd</code> Files in Positron</h2>
-<p>Opening a <code>.qmd</code> file in Positron immediately:</p>
-<ul>
-<li>Activates syntax highlighting for YAML headers, Markdown text, and embedded code chunks (R, Python, Julia, Bash).</li>
-<li>Opens a live <strong>Preview Pane</strong>, refreshing automatically upon file save.</li>
-<li>Provides a convenient <strong>Render Button</strong> to execute <code>quarto render</code> without leaving the IDE.</li>
-</ul>
+<section id="creating-quarto-documents-with-positron" class="level2">
+<h2 class="anchored" data-anchor-id="creating-quarto-documents-with-positron">Creating Quarto documents with Positron</h2>
+<p>Start Positron. Then start a project (or open an existing one) as you learned in the <em>Brief Intro to Positron</em> course. Next, create a new file by going to <code>File</code> -&gt; <code>New File</code> -&gt; <code>Quarto Document</code>. A new tab opens with a basic Quarto document template.</p>
+<p>We’ll talk more about what Quarto documents look like in the next unit. For now, let’s just create a simple Quarto document to see how it works in Positron. Delete the bit of text that’s there, and replace it with this text.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>title: "Simple Quarto Example"</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>format: html</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a># This is a heading </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>## This is a subheading</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Here is text. **This is bold text.** </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Formatting follows the Markdown syntax.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>## A code example</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>Here is a simple example demonstrating the integration of R code within the document.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>```{r}</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>x &lt;- seq(1, 10)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>y &lt;- x^2</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>plot(x,y)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>The code is executed when the Quarto document is processed (rendered), and the resulting figure is automatically included in the output document.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Next, save the file in your project folder. You can name it anything, e.g.&nbsp;<code>simple-example.qmd</code>. The important part is to give it the <code>.qmd</code> ending to indicate that it’s a Quarto file.</p>
+<p>Positron supports editing Quarto files in two ways. One is called <code>Source</code>, which is where you see the actual text with Markdown formatting. The other one is called <code>Visual</code>, which gives you a preview of how the document will look when rendered. You can switch between these two modes by clicking the buttons in the top right corner of the editor window. Give it a try.</p>
+<p>If you do switch back and forth, you might notice that sometimes the formatting of the source changes slightly. This should not matter and you should always be able to switch back and forth between source and visual views.</p>
 </section>
-<section id="rendering-documents" class="level2">
-<h2 class="anchored" data-anchor-id="rendering-documents">Rendering Documents</h2>
-<p>Rendering your document is straightforward:</p>
-<ul>
-<li>Click the <strong>Render</strong> button or use the shortcut <kbd>Ctrl + Shift + K</kbd>.</li>
-<li>Positron executes the rendering command (e.g., <code>quarto render</code>) and displays any output messages or warnings in the integrated terminal.</li>
-</ul>
-<p>For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> html</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The rendered document appears directly within Positron, allowing immediate inspection.</p>
-</section>
-<section id="live-preview-for-html-documents" class="level2">
-<h2 class="anchored" data-anchor-id="live-preview-for-html-documents">Live Preview for HTML Documents</h2>
-<p>Positron supports live preview for HTML outputs through a built-in websocket server. This enables instant feedback on your edits without the need for manual rendering, providing a smooth, interactive authoring experience.</p>
+<section id="rendering" class="level2">
+<h2 class="anchored" data-anchor-id="rendering">Rendering</h2>
+<p>Once you have written your document and want to see the result, you can render it. Rendering is the name used by Quarto for turning your source document(s) (your <code>.qmd</code> files) into some other output, such as HTML, PDF or MS Word. The easiest way to do this is to click the <code>Preview</code> button at the top left of the editor window. Positron will execute the <code>quarto preview</code> command in the terminal (go there to see it). This both renders the document and opens the resulting file either inside the viewer in Positron or in your default software (e.g.&nbsp;a web browser for HTML output or MS Word for Word output).</p>
+<p>Try this now. Click the <code>Preview</code> button. You should see the rendered document appear either in the viewer pane or in your web browser.</p>
+<p>While it is convenient to press the <code>Preview</code> button in Positron, it’s good to know and be able to run Quarto directly. Let’s say you don’t want the preview and instead just render the file, i.e.&nbsp;create the output file (here HTML) without opening it.</p>
+<p>You can do this by running Quarto through the terminal. Go to the terminal. It might still be busy from showing the preview. If you see something like “Listening on …” press <code>Ctrl + C</code> to stop it. You should then see the prompt, which ends with the <code>&gt;</code> symbol. Now type the following command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render name-of-file.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>As long as you are in the right folder, the one where you saved the Quarto file to, this will create the output file (here HTML) in the same folder. You should see the file show up in the ‘Explorer’ view in Positron (the top icon on the right sidebar).</p>
 </section>
 <section id="customizing-quarto-settings-in-positron" class="level2">
 <h2 class="anchored" data-anchor-id="customizing-quarto-settings-in-positron">Customizing Quarto Settings in Positron</h2>
-<p>Access Quarto customization via:</p>
-<p><strong>Settings › Build Tools › Quarto</strong></p>
-<p>Here, you can configure:</p>
-<ul>
-<li>Default output formats (useful when the YAML header doesn’t specify <code>format:</code> explicitly).</li>
-<li>“Render on Save” behavior for automatic document updates.</li>
-<li>Real-time validation settings for specific programming languages.</li>
-</ul>
-<p>These configurations are saved per project, facilitating consistency across team environments.</p>
+<p>Positron comes with the Quarto extension pre-installed, providing seamless integration for Quarto document creation and rendering. You can change settings for Quarto as you learned previously in the Positron Extensions unit of the <em>Brief Intro to Positron</em> course.</p>
 </section>
 <section id="debugging-and-troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="debugging-and-troubleshooting">Debugging and Troubleshooting</h2>
-<p>If you encounter rendering issues, follow these steps:</p>
-<ol type="1">
-<li>Check the <strong>Terminal</strong> pane for the exact command executed by Positron.</li>
-<li>Manually execute the command in your terminal to identify detailed error messages.</li>
-<li>Run <code>quarto check</code> to confirm that all necessary dependencies and language engines are correctly installed.</li>
-</ol>
-<p>This systematic approach simplifies the troubleshooting process, ensuring minimal disruption to your workflow.</p>
+<p>If you encounter issues when using Quarto, you will usually see an error message in the <code>Terminal</code> pane that explains what might be going wrong. Quite often, rendering fails if the front-end YAML is not properly formatted.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>In this unit, you learned to:</p>
-<ul>
-<li>Use Positron IDE efficiently to manage Quarto documents.</li>
-<li>Customize rendering and preview settings specifically for Quarto.</li>
-<li>Debug common issues encountered when rendering Quarto documents in Positron.</li>
-</ul>
+<p>Quarto is nicely integrated into Positron, allowing you to create, edit, and render Quarto documents directly within the IDE.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<ul>
-<li><a href="https://posit.co/docs/">Positron Documentation</a></li>
-<li><a href="https://quarto.org/docs/tools/">Quarto IDE Integration</a></li>
-<li><a href="https://community.posit.co/c/quarto/59">Posit Community Discussions</a></li>
-<li><a href="https://quarto.org/docs/tools/debugging.html">Debugging Quarto in IDEs</a></li>
-</ul>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
 <h1>Test yourself</h1>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>What does QSP stand for?</p>
-<div id="webex-3181ab37cd3cf2f8e09561c49d165e44" class="webex-radiogroup" data-answer="aAEUAU1THwc+">
-<label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Quark Sugar Pie</span></label><label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Qualitative Standard Procedure</span></label><label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Quantitative Systems Pharmacology</span></label><label><input type="radio" autocomplete="off" name="3181ab37cd3cf2f8e09561c49d165e44"><span>Quick Service Provider</span></label>
+<p>Which file extension indicates a Quarto document?</p>
+<div id="webex-291a094a187dc632eee30bcff7f8f8f9" class="webex-radiogroup" data-answer="aQkdUBwJGFFs">
+<label><input type="radio" autocomplete="off" name="291a094a187dc632eee30bcff7f8f8f9"><span>.Rmd</span></label><label><input type="radio" autocomplete="off" name="291a094a187dc632eee30bcff7f8f8f9"><span>.qmd</span></label><label><input type="radio" autocomplete="off" name="291a094a187dc632eee30bcff7f8f8f9"><span>.md</span></label><label><input type="radio" autocomplete="off" name="291a094a187dc632eee30bcff7f8f8f9"><span>.docx</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>QSP stands for Quantitative Systems Pharmacology.</p>
+<p>Quarto documents use the <code>.qmd</code> extension.</p>
+<ul>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>In Positron, what happens when you click the Preview button for a Quarto file?</p>
+<div id="webex-a86fdd1c6834469559650e4d418c5a58" class="webex-radiogroup" data-answer="OggaVkhVHVNr">
+<label><input type="radio" autocomplete="off" name="a86fdd1c6834469559650e4d418c5a58"><span>It only checks YAML syntax</span></label><label><input type="radio" autocomplete="off" name="a86fdd1c6834469559650e4d418c5a58"><span>It opens a blank document tab</span></label><label><input type="radio" autocomplete="off" name="a86fdd1c6834469559650e4d418c5a58"><span>It runs <code>quarto preview</code> and shows the rendered output</span></label><label><input type="radio" autocomplete="off" name="a86fdd1c6834469559650e4d418c5a58"><span>It deletes temporary files in the project</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Preview runs Quarto’s preview command and opens the rendered document.</p>
 <ul>
 <li>False</li>
 <li>False</li>
@@ -381,18 +376,31 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </ul>
 </div>
 </div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which command renders a Quarto document without opening a preview?</p>
+<div id="webex-35b9fbbb07fa00baaf279aa3422e22c0" class="webex-radiogroup" data-answer="aAROCUpSTlJt">
+<label><input type="radio" autocomplete="off" name="35b9fbbb07fa00baaf279aa3422e22c0"><span>quarto render name-of-file.qmd</span></label><label><input type="radio" autocomplete="off" name="35b9fbbb07fa00baaf279aa3422e22c0"><span>quarto preview name-of-file.qmd</span></label><label><input type="radio" autocomplete="off" name="35b9fbbb07fa00baaf279aa3422e22c0"><span>quarto check</span></label><label><input type="radio" autocomplete="off" name="35b9fbbb07fa00baaf279aa3422e22c0"><span>quarto –version</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p><code>quarto render</code> produces the output file without running the live preview.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
 </section>
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<section id="practice-exercise" class="level3">
-<h3 class="anchored" data-anchor-id="practice-exercise">Practice Exercise</h3>
-<p>Open an existing <code>.qmd</code> file in Positron. Practice rendering it as HTML and explore live-preview features.</p>
-</section>
-<section id="substantial-exercise" class="level3">
-<h3 class="anchored" data-anchor-id="substantial-exercise">Substantial Exercise</h3>
-<p>Configure Positron settings to automatically render your Quarto documents on save. Write a brief Quarto report (<code>positron_demo.qmd</code>) with a YAML header, an introductory paragraph, and a simple data analysis chunk. Render your report and verify the setup. Submit your source <code>.qmd</code> file, rendered HTML, and a brief reflection on your experience.</p>
-</section>
+<ul>
+<li>Find a Quarto file somewhere online. Copy to your computer, open it in Positron, and render it.</li>
+<li>Open the Quarto settings and change some of the options. Then create and render a new Quarto document and see if or how the changed settings affect the new document.</li>
+</ul>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1981,12 +1989,25 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc3-intro-quarto/quarto-use/quarto-use.html" class="pagination-link" aria-label="Basic Use">
-        <span class="nav-page-text">Basic Use</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc3-intro-quarto/quarto-basics/quarto-basics.html" class="pagination-link" aria-label="Quarto Basics">
+        <span class="nav-page-text">Quarto Basics</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

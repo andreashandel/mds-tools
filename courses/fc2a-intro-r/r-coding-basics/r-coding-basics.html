@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Short introductory courses that cover some modeling and data science tools.">
 
-<title>Git and GitHub Installation &amp; Setup – Modeling and Data Science Tools</title>
+<title>Basics of Coding in R – Modeling and Data Science Tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -39,14 +74,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-54c8f25464f32f8783bd446cee98020d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-46bfa3cd2fb9cb94ac475764646bb106.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-fc75584778e8bc11e5105e1b3cffe99d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-46bfa3cd2fb9cb94ac475764646bb106.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,15 +119,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../assets/exams2forms-webex.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -102,14 +140,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../../courses/courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../../courses/fc2a-intro-r/intro-r-toc.html" aria-current="page"> 
-<span class="menu-text">Intro to R</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../courses/fc3-intro-quarto/intro-quarto-toc.html"> 
-<span class="menu-text">Intro to Quarto</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -121,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html">Git and GitHub Installation &amp; Setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html">Basics of Coding in R</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -130,11 +160,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -164,19 +190,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Git and GitHub Installation &amp; Setup</span></a>
+ <span class="menu-text">Basics of Coding in R</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc2a-intro-r/r-packages/r-packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Installation and Setup</span></a>
+ <span class="menu-text">R Packages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-tidyverse/r-tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R tidyverse, tidymodels and more</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc2a-intro-r/r-further-resources/r-further-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git and GitHub Installation &amp; Setup</span></a>
+ <span class="menu-text">Further R Resources</span></a>
   </div>
 </li>
     </ul>
@@ -191,7 +223,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
+  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#learning-coding" id="toc-learning-coding" class="nav-link" data-scroll-target="#learning-coding">Learning coding</a></li>
+  <li><a href="#learning-the-basics-of-r" id="toc-learning-the-basics-of-r" class="nav-link" data-scroll-target="#learning-the-basics-of-r">Learning the basics of R</a></li>
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting help</a></li>
+  <li><a href="#some-further-comments" id="toc-some-further-comments" class="nav-link" data-scroll-target="#some-further-comments">Some further comments</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
+  <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
   <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
   </ul>
 </nav>
@@ -201,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Git and GitHub Installation &amp; Setup</h1>
+<h1 class="title">Basics of Coding in R</h1>
 </div>
 
 
@@ -220,44 +262,162 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>Before you can track changes you need Git on your computer and a few global settings that stamp each commit with your identity.</p>
+<p>This unit covers some very minimal coding in R.</p>
 </section>
+<!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
-<li>Install the latest stable Git on Windows, macOS, or Linux<br>
-</li>
-<li>Configure your username, email, and default branch name<br>
-</li>
-<li>Generate an SSH key and add it to GitHub<br>
-</li>
-<li>Verify connectivity with <code>git ls-remote</code></li>
+<li>Be familiar with basic R coding concepts.</li>
+<li>Be able to write a few lines of R code and run it.</li>
 </ul>
 </section>
+<!-- end unit-goals div -->
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+<section id="reading" class="level1 unit-reading">
+<h1>Reading</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This whole course, including this unit, are by no means sufficient to teach you R coding. The goal is instead to get you started, and give you a basic idea of how R coding works. To really learn R coding, you need to take a full course on R programming and/or do a lot of “learning as you go”.</p>
+</section>
+<section id="learning-coding" class="level2">
+<h2 class="anchored" data-anchor-id="learning-coding">Learning coding</h2>
+<p>R (or any other programming language) is best learned by “doing it”. You will learn more R as we go along, but the focus of the class is on data analysis, so while I will provide you with resources to figure out the R bits, outside of this module we will not focus on ‘learning R’. You will learn by doing as we go through the course. As with anything, the more you practice, the better you will get. You should approach learning to code with an attitude of <em>fearless curiosity</em>. You will get stuck, you will get frustrated with some weird error message in your code (still happens to me at least once a week), and you will eventually figure it out. Make use of the great resources that are out there.</p>
+<p>This figure illustrates the journey of learning to write code:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="learning-to-code.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The journey of learning to code. Source: https://www.thinkful.com/blog/. Original post is not online anymore."><img src="learning-to-code.jpg" class="img-fluid figure-img" alt="Graph titled Coding Confidence vs Compentence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."></a></p>
+<figcaption>The journey of learning to code. Source: https://www.thinkful.com/blog/. Original post is not online anymore.</figcaption>
+</figure>
+</div>
+<p>My goal is that during this course, you will reach the beginning of the <em>upswing of awesome</em>, at least when it comes to being able to use R to perform data analyses. But to get there, you’ll have to go over the <em>cliff of confusion</em> and through the <em>desert of despair</em>, and I’m confident that you’ll get there and won’t be stuck in the <em>hand-holding honeymoon</em>. In fact, at times I’m providing you less detailed instructions than I could to get you quickly to the stage where you have to figure out bits yourself. I guess one could say that instead of hand-holding, I let you stumble and fall some, and then will help you to get back up 😃. It might feel a bit more frustrating at least initially, but it’s a much better way to learn.</p>
+<p>It goes without saying that learning to code (or learning anything else) is not a linear process. Even after many years of coding and using R, I regularly encounter the <em>cliff of confusion</em> and the <em>desert of despair</em> if I’m trying to do something new that I haven’t done before and invariably get stuck.</p>
+</section>
+<section id="learning-the-basics-of-r" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-basics-of-r">Learning the basics of R</h2>
+<p>Here is a quick crash course on R syntax to get you started.</p>
+<p><em>Everything is an object.</em> You create objects with <code>&lt;-</code> (assignment) and reuse them later.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="co"># assign 5 to object x</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>scores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">72</span>, <span class="dv">88</span>, <span class="dv">91</span>)   <span class="co"># a numeric vector</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><em>R is vectorized.</em> Most operations work on whole vectors, not just single numbers.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scores <span class="sc">*</span> <span class="dv">2</span>         <span class="co"># multiply every element</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(scores)       <span class="co"># built-in functions work on vectors</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><em>Data frames are tables.</em> They hold columns of different types. Use <code>$</code> to access a column.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Ana"</span>, <span class="st">"Bo"</span>, <span class="st">"Cal"</span>), <span class="at">score =</span> scores)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>score <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Functions take inputs (arguments) and return outputs. You can nest them.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(df<span class="sc">$</span>score), <span class="at">digits =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="getting-help" class="level2">
+<h2 class="anchored" data-anchor-id="getting-help">Getting help</h2>
+<p>Maybe the most important skill for learning any programming language is figuring out how to find and get help with any problem.</p>
+<p>In the past, we recommended to start with Google, StackOverflow, and the Internet to find relevant help. At this point, most of the time, you will likely get the best initial help from some AI tool. We recommend to start there, and if that doesn’t solve your problem, then move on to other sources.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="xkcd_wisdom_of_the_ancients.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Fortunately rare for R. Source: xkcd.com."><img src="xkcd_wisdom_of_the_ancients.png" class="img-fluid figure-img" style="width:90.0%" alt="An xkcd comic of a stick figure shaking a computer screen saying 'Who were you, denvercoder9? What did you see?!'. Outside the the box, it says 'Never have I felt so close to another soul. And yet so helplessly alone as when I Google an error and there's one result. A thread by someone with the same problem and no answer last posted in 2003."></a></p>
+<figcaption>Fortunately rare for R. Source: xkcd.com.</figcaption>
+</figure>
+</div>
+<p>In those rare cases when AI doesn’t help and you cannot find the right information online either to solve your coding problem, feel free to ask for help. Sometimes, people complain that replies to questions they ask online are unfriendly or harsh. While this is at times true, consider that all the people providing answers are volunteers. They’re doing it because they want to help others, they don’t get paid for it. It is therefore important that the person asking the question does not waste people’s time by asking poorly formulated questions or questions that have been previously answered. In general, those kinds of questions get rude replies. If you have done your homework (i.e., searched online first to see if the answer is already available) and can precisely formulate the question/problem, ideally with a reproducible example, the chance that you get an unfriendly reply is very low.</p>
+<p>I have found that a good way of posing question is to write something like this: <em>“I need help with SPECIFIC PROBLEM, I have searched around and found LINKS/DESCRIPTION OF SIMILAR ISSUES but that doesn’t quite solve my problem yet.”</em> If you have a coding problem, add <em>“Here is some code illustrating what I want to achieve and where the problem is.”</em> and then add a <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">minimal reproducible example</a>.</p>
+<p>The more you show you’ve done your homework and are truly stuck (instead of just being lazy and wanting others to do the work for you), and the easier you make it for others to understand what your problem is, the more likely you will get good answers.</p>
+</section>
+<section id="some-further-comments" class="level2">
+<h2 class="anchored" data-anchor-id="some-further-comments">Some further comments</h2>
+<p>R has a bunch of quirks. You’ll likely encounter a number of them. Here are a few common ones.</p>
+<p>A common confusion is that there are two ways of assigning something to an object. One can write <code>x &lt;- 2</code> or <code>x = 2</code> and often (but not always) you can use either. People argue about which way to do it. You’ll see both versions used frequently. If you are completely new to programming, we recommend the first version, i.e.&nbsp;<code>x &lt;- 2</code>. The problem is that most other programming languages do it the second way, so if you learned to code in another language first, it is more natural to write <code>x = 2</code>. It is your choice. Just be aware that both notations exist. And to add to the confusion: In R, you can also write this in the opposite direction, i.e.&nbsp;<code>2 -&gt; x</code>. This is unususal coding style and best avoided. Just know that it exists too.</p>
+<p>A more recent confusion - since the concept was introduced to R more recently - is the pipe. You can write <code>x %&gt;% dplyr()</code> or you can write <code>x |&gt; dplyr()</code>. In both versions, the object <code>x</code> is piped into the <code>dplyr</code> function. You see this style of writing a lot in the <code>tidyverse</code> and <code>tidymodels</code> set of packages, which we’ll discuss shortly. Both versions <strong>usually</strong> do the same thing. The first version comes from the <code>magrittr</code> package, which is part of the <code>tidyverse</code>. The second version is part of base R. Fortunately, most of the time it doesn’t matter. However, occasionally one will not work (or produce something unexpected). Just be aware of this and adjust as needed.</p>
+<p>As you continue on your coding journey, keep in mind: The great thing about programming is that you (usually) can’t really “break” things too much. In the worst case you get an error message. So experiment and try out anything you like!</p>
+</section>
+</section>
+<!-- end unit-reading div -->
+<section id="summary" class="level1 unit-summary">
+<h1>Summary</h1>
+<p>We discussed some basics of writing R code. To re-iterate, this course is not a learn-to-code course. For resources that can help you learn R coding, see the <em>Further Resources</em> unit.</p>
+</section>
+<!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
-<h1>Further resources</h1>
+<h1>Further Resources</h1>
 <ul>
-<li><strong>Git Downloads</strong> – <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a><br>
-</li>
-<li><strong>Generating SSH Keys</strong> – <a href="https://docs.github.com/authentication/connecting-to-github-with-ssh" class="uri">https://docs.github.com/authentication/connecting-to-github-with-ssh</a><br>
-</li>
-<li><strong>Git Credential Storage</strong> – <a href="https://git-scm.com/docs/gitcredentials" class="uri">https://git-scm.com/docs/gitcredentials</a></li>
+<li>The <a href="https://forum.posit.co/">Posit (formerly RStudio) Community Forum</a> is also a great place to ask for help.</li>
 </ul>
 </section>
+<!-- end unit-resources div -->
+<section id="test-yourself" class="level1 unit-quiz">
+<h1>Test yourself</h1>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why is R’s vectorization useful when doing basic calculations?</p>
+<div id="webex-dddea0ba1df1b94226441a141cba755d" class="webex-radiogroup" data-answer="P1RIVE0ATlFs">
+<label><input type="radio" autocomplete="off" name="dddea0ba1df1b94226441a141cba755d"><span>It only works for text data, not numbers</span></label><label><input type="radio" autocomplete="off" name="dddea0ba1df1b94226441a141cba755d"><span>It lets you apply operations to entire vectors without writing loops</span></label><label><input type="radio" autocomplete="off" name="dddea0ba1df1b94226441a141cba755d"><span>It prevents you from using built-in functions like <code>mean()</code></span></label><label><input type="radio" autocomplete="off" name="dddea0ba1df1b94226441a141cba755d"><span>It forces you to preallocate every object manually</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Vectorization allows operations to be applied to full vectors at once (e.g., <code>scores * 2</code>), so you avoid writing explicit loops for basic calculations.</p>
+<ul>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the main advantage of putting your code in a saved <code>.R</code> script instead of only using the console?</p>
+<div id="webex-5c679d3f762612d5d7ba628afdc81dcc" class="webex-radiogroup" data-answer="blMaBhVUH1Zq">
+<label><input type="radio" autocomplete="off" name="5c679d3f762612d5d7ba628afdc81dcc"><span>It makes R run faster automatically</span></label><label><input type="radio" autocomplete="off" name="5c679d3f762612d5d7ba628afdc81dcc"><span>It gives you a reproducible record you can rerun as a whole</span></label><label><input type="radio" autocomplete="off" name="5c679d3f762612d5d7ba628afdc81dcc"><span>It disables syntax highlighting, so errors are easier to find</span></label><label><input type="radio" autocomplete="off" name="5c679d3f762612d5d7ba628afdc81dcc"><span>It prevents you from using packages</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Saving code in a script provides a reproducible record you can rerun (e.g., with <code>source()</code>), instead of relying on ad-hoc console history.</p>
+<ul>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does the base pipe <code>|&gt;</code> do in R?</p>
+<div id="webex-b57930bd7c4d01e979c36d5f66c9e64b" class="webex-radiogroup" data-answer="OQUbCR8BTlRq">
+<label><input type="radio" autocomplete="off" name="b57930bd7c4d01e979c36d5f66c9e64b"><span>It comments out code so it won’t run</span></label><label><input type="radio" autocomplete="off" name="b57930bd7c4d01e979c36d5f66c9e64b"><span>It automatically loads all tidyverse packages</span></label><label><input type="radio" autocomplete="off" name="b57930bd7c4d01e979c36d5f66c9e64b"><span>It passes the left-hand result as the first argument to the next function</span></label><label><input type="radio" autocomplete="off" name="b57930bd7c4d01e979c36d5f66c9e64b"><span>It only works inside loops</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>The base pipe <code>|&gt;</code> takes the value on the left and feeds it as the first argument to the function on the right, helping you write readable sequences of steps.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<ol type="1">
-<li>Install Git and confirm <code>git --version</code> ≥ 2.40.<br>
-</li>
-<li>Set your global username and email.<br>
-</li>
-<li>Generate an SSH key and add it to your GitHub account.<br>
-</li>
-<li>Clone <code>git@github.com:octocat/Hello-World.git</code> to verify SSH access.<br>
-</li>
-<li>Change the default editor (<code>git config --global core.editor "nano"</code> or similar).</li>
-</ol>
+<ul>
+<li>Write a short script that creates a vector, computes its mean, and prints the result; save it as <code>.R</code> and run the whole file.</li>
+<li>Add comments (<code>#</code>) to that script explaining what each line does, then rerun to confirm nothing changes.</li>
+<li>Use both <code>scores * 2</code> and <code>mean(scores)</code> on a numeric vector to see vectorization in action; change the values and rerun.</li>
+<li>Rewrite a small operation twice: once without a pipe and once with <code>|&gt;</code>, and compare which you find clearer.</li>
+</ul>
 </section>
+<!-- end unit-exercise div -->
 
 
 
@@ -1844,12 +2004,57 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc2a-intro-r/r-packages/r-packages.html" class="pagination-link" aria-label="R Installation and Setup">
-        <span class="nav-page-text">R Installation and Setup</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc2a-intro-r/r-packages/r-packages.html" class="pagination-link" aria-label="R Packages">
+        <span class="nav-page-text">R Packages</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"right","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
