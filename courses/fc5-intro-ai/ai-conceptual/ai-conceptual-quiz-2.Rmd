@@ -1,0 +1,27 @@
+Question
+========
+How does using AI as a brainstorming partner differ from using it for execution?
+
+Answerlist
+----------
+* Brainstorming typically uses shorter, open-ended prompts
+* Brainstorming requires no prompts
+* Brainstorming avoids any iteration
+* Brainstorming uses only code blocks
+
+Solution
+========
+The unit notes that brainstorming can use shorter, more open-ended prompts.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Brainstorming prompts
+extype: schoice
+exsolution: 1000

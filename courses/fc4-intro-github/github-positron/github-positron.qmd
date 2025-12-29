@@ -1,0 +1,112 @@
+---
+title: Git and GitHub in Positron
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+Positron includes Git tooling so you can commit, pull, and push without leaving the IDE. This unit shows a minimal workflow for using GitHub from Positron.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Enable Git for a project in Positron.
+* Check status and stage changes inside the IDE.
+* Commit and push to GitHub.
+* Resolve simple sync issues (pull before push).
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub in Positron" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Enable Git for a project
+
+If you cloned a repository, Git is already enabled. If you started from a local folder:
+
+1. Open the project in Positron.
+2. Initialize Git for the folder (or use a Git client to do it).
+3. Connect to a remote repository on GitHub.
+
+## Check status and stage files
+
+Use the Git panel to view modified files. Stage files you want to include in the next commit. Staging is a way to choose exactly which changes are committed together.
+
+## Commit changes
+
+Write a short, descriptive commit message. Good commit messages describe *what changed* and *why*.
+
+## Pull, then push
+
+Before pushing, pull to make sure you have the latest changes from GitHub. If there are conflicts, Positron will show you which files need attention.
+
+## When to switch tools
+
+Positron works well for most day-to-day Git tasks. If you need advanced features (complex merges, rebases, or repository cleanup), use a dedicated Git client or the command line.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Positron provides a lightweight Git workflow: check status, stage, commit, pull, and push without leaving the IDE. For complex tasks, switch to a full Git client.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **Positron product page** – <https://posit.co/products/positron/>
+* **GitHub Docs: About Git** – <https://docs.github.com/get-started/using-git/about-git>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-positron-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-positron-quiz-1.Rmd", "github-positron-quiz-2.Rmd", "github-positron-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-positron-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Open a GitHub repository in Positron.
+2. Make a small change to a file and stage it.
+3. Commit with a clear message.
+4. Pull, then push the commit to GitHub.
+
+:::
+<!-- end unit-exercise div -->

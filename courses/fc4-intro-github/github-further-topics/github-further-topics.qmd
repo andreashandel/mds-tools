@@ -1,0 +1,134 @@
+---
+title: Managing Large Files with Git and GitHub
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+Plain Git stores every version of every file. That makes large or binary assets (genomic FASTQs, high-resolution images, video, model weights) explode your repository size and slow down every clone. This unit shows strategies to keep history lean while preserving reproducibility.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand why vanilla Git struggles with large or binary files.
+* Configure and use Git Large File Storage (LFS).
+* Compare LFS with alternative storage approaches.
+* Apply best practices for dataset versioning.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Managing Large Files with Git and GitHub" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Why large files are a problem
+
+* Git stores objects as delta-compressed snapshots. Binary files do not diff well, so every small edit triggers a full-size blob.
+* Repository size affects all contributors: clones, pulls, and CI jobs.
+
+| Size | Impact |
+|------|--------|
+| ≤ 100 MB | OK for GitHub |
+| 100–500 MB | GitHub warns; LFS recommended |
+| > 2 GB per repo / > 100 MB per file | Hard GitHub limit |
+
+## Git LFS essentials
+
+1. **Install**
+   ```bash
+   git lfs install
+   ```
+2. **Track patterns**
+   ```bash
+   git lfs track "*.fastq.gz" "*.png"
+   echo "*.fastq.gz filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
+   ```
+3. **Add and commit** files as usual.
+   Git replaces the content with a small pointer file; binary data uploads to the LFS server.
+
+### Storage and bandwidth quotas
+
+* Free GitHub accounts: 1 GB storage + 1 GB bandwidth/month.
+* Extra packs are available; or self-host an LFS server.
+
+## Alternative solutions
+
+| Tool | Best for | Notes |
+|------|----------|-------|
+| **DVC** | ML datasets and pipelines | Data tracked in remote blob storage (S3, GCS) |
+| **git-annex** | Offline archival | Uses symbolic links; steeper learning curve |
+| **Rclone + checksum manifest** | Occasional big dumps | Simple, not integrated with Git history |
+
+## Tips and pitfalls
+
+* Add `.gitattributes` before the first commit.
+* Keep raw data in external storage and version metadata only.
+* Use `.gitignore` for scratch, cache, outputs; never commit derived artifacts.
+* CI: install `git-lfs` and run `git lfs pull` before build steps.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Git LFS (or similar tools) lets you keep code and data under one logical roof without bloating your repo. Adopt it early and automate retrieval in workflows.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **Git LFS docs** – <https://git-lfs.github.com/>
+* **DVC** – <https://dvc.org/>
+* **GitHub Docs: Working with Large Files** – <https://docs.github.com/github/managing-large-files>
+* **BFG Repo-Cleaner** – <https://rtyley.github.io/bfg-repo-cleaner/>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-further-topics-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-further-topics-quiz-1.Rmd", "github-further-topics-quiz-2.Rmd", "github-further-topics-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-further-topics-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Identify one large file in a project and decide whether it should live in Git.
+2. If it should be tracked, set up Git LFS for its file type.
+3. Commit a small LFS-tracked file and verify it appears as a pointer file in the repo.
+
+:::
+<!-- end unit-exercise div -->

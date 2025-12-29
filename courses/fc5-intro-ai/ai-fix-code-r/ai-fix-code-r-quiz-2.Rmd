@@ -1,0 +1,27 @@
+Question
+========
+If the AI gets stuck fixing code, what is a recommended approach?
+
+Answerlist
+----------
+* Stop and do nothing
+* Make a small manual fix and then ask the AI again
+* Delete the project
+* Ignore the errors
+
+Solution
+========
+Manual adjustments can help the AI move past a stuck point.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Manual intervention
+extype: schoice
+exsolution: 0100

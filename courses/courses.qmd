@@ -31,9 +31,10 @@ More details about each course can be found in the course-specific overview page
 
 # More Tools
 
-* [A brief introduction to AI tools](/courses/course-landing-pages/fc4-intro-ai.qmd)
+* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc4-intro-github.qmd)
 
-* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc5-intro-github.qmd)
+* [A brief introduction to AI tools](/courses/course-landing-pages/fc5-intro-ai.qmd)
+
 
 
 # Using the Tools

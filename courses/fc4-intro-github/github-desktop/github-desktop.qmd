@@ -1,0 +1,109 @@
+---
+title: GitHub Desktop Workflow
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+GitHub Desktop is a free graphical client that makes Git workflows easier without the command line. This unit covers the core workflow: clone, change, commit, pull, and push.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Install GitHub Desktop and sign in.
+* Clone a repository from GitHub.
+* Commit changes with clear messages.
+* Sync changes with pull and push.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="GitHub Desktop Workflow" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Install and sign in
+
+Download GitHub Desktop from <https://desktop.github.com/> and sign in with your GitHub account.
+
+## Clone a repository
+
+Use **File → Clone repository** and select a repo from your GitHub account. Choose a local folder that is not synced by Dropbox or OneDrive.
+
+## Make and commit changes
+
+1. Edit a file in your project.
+2. In GitHub Desktop, review changes in the **Changes** tab.
+3. Write a clear commit message and click **Commit to main** (or the current branch).
+
+## Pull and push
+
+- **Pull** to bring remote changes to your computer before you start work.
+- **Push** to upload your local commits to GitHub.
+
+If GitHub Desktop reports conflicts, open the affected file and resolve the conflicts manually, then commit the resolution.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+GitHub Desktop provides a friendly interface for the core Git workflow: clone, commit, pull, and push. It is a good option if you want to avoid the command line.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **GitHub Desktop download** – <https://desktop.github.com/>
+* **GitHub Desktop docs** – <https://docs.github.com/en/desktop>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-desktop-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-desktop-quiz-1.Rmd", "github-desktop-quiz-2.Rmd", "github-desktop-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-desktop-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Install GitHub Desktop and sign in.
+2. Clone a small repository you own.
+3. Make two different commits and push them to GitHub.
+4. Use the History tab to inspect your commit messages.
+
+:::
+<!-- end unit-exercise div -->

@@ -1,0 +1,138 @@
+---
+title: Git and GitHub Installation and Setup
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+Before you can track changes, you need Git on your computer and a few global settings that stamp each commit with your identity.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Install the latest stable Git on your system.
+* Configure your username, email, and default branch name.
+* Generate an SSH key and add it to GitHub.
+* Verify connectivity to GitHub.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub Installation and Setup" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Install Git
+
+Download Git from <https://git-scm.com/downloads> and install it for your operating system.
+
+- Windows: Use the default installer options unless you know you want a different setup.
+- macOS: You can install via the Git website or with Homebrew (`brew install git`).
+- Linux: Use your package manager (e.g., `sudo apt install git`).
+
+Confirm installation:
+
+```bash
+git --version
+```
+
+## Configure identity and defaults
+
+Set your name and email (this is what appears in commit history):
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+Set the default branch name to `main`:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+## Generate an SSH key and add it to GitHub
+
+SSH keys let you connect to GitHub without re-entering your password.
+
+```bash
+ssh-keygen -t ed25519 -C "you@example.com"
+```
+
+Then add the public key (usually `~/.ssh/id_ed25519.pub`) to GitHub under:
+`Settings → SSH and GPG keys`.
+
+## Test your connection
+
+```bash
+git ls-remote git@github.com:octocat/Hello-World.git
+```
+
+If you see output and no error, your SSH connection is working.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+You installed Git, configured your identity, set a default branch name, and connected to GitHub via SSH. This is the foundation for every Git/GitHub workflow in the course.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **Git Downloads** – <https://git-scm.com/downloads>
+* **Generating SSH Keys** – <https://docs.github.com/authentication/connecting-to-github-with-ssh>
+* **Git Credential Storage** – <https://git-scm.com/docs/gitcredentials>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-install-setup-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-install-setup-quiz-1.Rmd", "github-install-setup-quiz-2.Rmd", "github-install-setup-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-install-setup-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Install Git and confirm `git --version` ≥ 2.40.
+2. Set your global username and email.
+3. Generate an SSH key and add it to your GitHub account.
+4. Clone `git@github.com:octocat/Hello-World.git` to verify SSH access.
+5. Change the default editor (`git config --global core.editor "nano"` or similar).
+
+:::
+<!-- end unit-exercise div -->

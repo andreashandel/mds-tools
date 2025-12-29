@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended response when AI-generated code is not correct?
+
+Answerlist
+----------
+* Stop and never use AI again
+* Iterate by refining the prompt or ask for fixes
+* Assume the code is correct anyway
+* Delete the entire project
+
+Solution
+========
+The unit encourages iterative prompting or manual fixes.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Iterate on code
+extype: schoice
+exsolution: 0100

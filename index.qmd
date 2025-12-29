@@ -5,7 +5,7 @@ title: "Modeling and Data Science (MDS) Tools"
 
 # Overview
 
-This website contains several mini-courses/tutorials which cover tools for modeling and data science. The topics we cover are based on the tools we regularly use and teach.
+This website contains several mini-courses/tutorials which cover tools for modeling and data science. 
 
 You can find all available courses on the [courses](/courses/courses.qmd) page.
 

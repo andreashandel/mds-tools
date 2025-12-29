@@ -1,0 +1,27 @@
+Question
+========
+What is the primary purpose of the AI resources unit?
+
+Answerlist
+----------
+* Provide a full AI textbook
+* Offer curated links for learning more about AI
+* Replace all other course content
+* Teach only GPU programming
+
+Solution
+========
+The unit is a curated list of resources grouped by theme.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: AI resources purpose
+extype: schoice
+exsolution: 0100

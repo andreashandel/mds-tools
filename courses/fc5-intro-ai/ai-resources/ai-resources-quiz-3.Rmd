@@ -1,0 +1,27 @@
+Question
+========
+What should you do if you find a high-quality AI resource not listed?
+
+Answerlist
+----------
+* Ignore it
+* Share it so the list can be updated
+* Delete the existing list
+* Replace the unit with your notes
+
+Solution
+========
+The unit invites readers to share suggestions for new resources.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Suggest resources
+extype: schoice
+exsolution: 0100

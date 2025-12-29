@@ -1,0 +1,106 @@
+---
+title: Further Resources
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides resources for learning more about Git, GitHub, and common workflows. Use it as a reference when you get stuck.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Know where to find official Git and GitHub documentation.
+* Identify beginner-friendly tutorials and cheat sheets.
+* Locate help when you run into issues.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Further Resources" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Official documentation
+
+The best starting points are the official docs:
+
+- [GitHub Docs](https://docs.github.com/)
+- [Pro Git book](https://git-scm.com/book)
+
+## Cheat sheets and quick references
+
+- [GitHub Education Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Atlassian Git tutorials](https://www.atlassian.com/git/tutorials)
+
+## Community help
+
+- [Stack Overflow: git](https://stackoverflow.com/questions/tagged/git)
+- [Stack Overflow: github](https://stackoverflow.com/questions/tagged/github)
+
+## Visual learning
+
+- [GitHub Learning Lab (archived but useful)](https://lab.github.com/)
+- [Oh My Git!](https://ohmygit.org/) for an interactive intro
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Keep these resources handy. When Git/GitHub gets confusing, the official docs and cheat sheets usually provide the fastest answers.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+If you find another resource that is especially clear or helpful, please share it so we can keep this list current.
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-resources-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-resources-quiz-1.Rmd", "github-resources-quiz-2.Rmd", "github-resources-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-resources-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Bookmark at least two Git/GitHub references from this unit.
+2. Skim the Git cheat sheet and note three commands you want to remember.
+
+:::
+<!-- end unit-exercise div -->

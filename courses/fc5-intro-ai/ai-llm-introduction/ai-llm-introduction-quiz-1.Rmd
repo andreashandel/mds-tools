@@ -1,0 +1,27 @@
+Question
+========
+What is the main focus of this unit on LLM AI tools?
+
+Answerlist
+----------
+* Training neural networks from scratch
+* Using AI tools to help with coding and data analysis tasks
+* Building GPUs for AI workloads
+* Designing new AI algorithms
+
+Solution
+========
+The unit focuses on practical use of LLM tools for coding and data analysis.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: LLM unit focus
+extype: schoice
+exsolution: 0100

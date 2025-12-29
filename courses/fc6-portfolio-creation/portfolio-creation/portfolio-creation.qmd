@@ -1,0 +1,188 @@
+---
+title: Portfolio Creation 
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This assessment walks you through creating a portfolio website. You will set up a GitHub repository from a template, customize Quarto files, and publish the site with GitHub Pages.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Set up a portfolio repository.
+* Build and preview a Quarto website locally.
+* Customize site content and configuration.
+* Publish the site with GitHub Pages.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Portfolio Creation Assessment" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+
+This unit will walk you through the creation of a basic website that will serve as your portfolio. 
+
+
+## GitHub repository creation
+
+We will use GitHub to both manage this project and host the website. 
+
+To make things a bit easier and faster, we will use a GitHub repository template that already has the necessary Quarto files and configuration.
+Go to the [Online Portfolio Template](https://github.com/andreashandel/online-portfolio-template). Make sure you are logged into GitHub, then click **Use this template**.
+
+Create a new repository called `yourname-portfolio` (include both first and last name, e.g., `andreashandel-portfolio`). Choose a public repository.
+
+Next, **clone** the repository to your local computer (using e.g. GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. It's generally a bad idea to place repository folders into a local folder that is synced with some other service (e.g., Google Drive/Dropbox/OneDrive.)
+
+
+### Quick local website check
+
+Open the repository as a project. Then open the main `index.qmd` file. You should see the `Preview` button in the upper left corner of the editor. Click it to render **the website**. You should see in the terminal window what Quarto is doing. It is not only rendering the current open `.qmd` file, but instead all files that are part of this project - which is a Quarto website. 
+
+You will likely get an error message during rendering, telling you about missing R packages. Install those packages as needed. Once rendering works without errors and is complete, you should see the website preview in the Viewer pane, or your browser (depending on your settings). If it is in the Viewer pane and you want to see it in your browser, click the **Open in Browser** button (the box with an arrow pointing out of it, in the upper right of the Viewer pane).
+
+If you get missing package errors, install them and try again. A local preview should open in your browser.
+
+
+::: note
+If you cannot see the Build tab, open the Terminal and run `quarto render` to build the site.
+:::
+
+### Quarto content creation
+
+Open `index.qmd` and update the landing page text. This is Markdown, so feel free to experiment with headings, lists, and formatting.
+
+Next, open `aboutme.qmd` and write a personal introduction:
+
+- Describe your background, interests, and experience with data analysis.
+- Include headings and subheadings.
+- Add a picture of yourself (store it in the repository and link it).
+- Add a link to a data-related resource you find interesting, with a short explanation.
+- Optionally add extra content (tables, video, or other elements).
+
+Save and re-render the site to see your changes.
+
+::: note
+This portfolio website and everything you put on it is public. Do not post anything you want to keep private.
+:::
+
+### Website control
+
+Open `_quarto.yml`. This file controls the site title, navigation, and styling.
+
+Make the following changes:
+
+- Update the site title.
+- Replace `URL-TO-THIS-REPOSITORY-HERE` with the GitHub URL of your repository.
+- Try a different `theme` and optionally a different syntax highlight scheme.
+
+::: warning
+YAML is very sensitive to indentation. A small spacing error can break rendering.
+:::
+
+### Sending updates to GitHub
+
+Once you are happy with your updates, commit and push them:
+
+1. Close RStudio/Positron.
+2. Open GitKraken (or your preferred Git client).
+3. Stage changes, write a commit message, and commit.
+4. Push to GitHub.
+
+::: note
+If you ever need to force push, be aware that it overwrites remote history. It is usually better to resolve merge conflicts instead.
+:::
+
+### Making the website public
+
+Enable GitHub Pages for the repository:
+
+1. Go to your repository on github.com.
+2. Open **Settings → Pages**.
+3. Set the branch to `main` and the folder to `/docs`.
+4. Save.
+
+Your site URL will look like `https://username.github.io/yourname-MADA-portfolio/`. It can take a minute for the site to appear.
+
+### Update your repository README
+
+Open `README.md` and add a sentence pointing to your website URL. This is the file people see when they visit your GitHub repository.
+
+### General GitHub workflow
+
+In the future, your workflow should be:
+
+1. Pull latest changes.
+2. Edit and render in RStudio/Positron.
+3. Commit and push with your Git client.
+
+**You will use this workflow repeatedly.**
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+You created a portfolio repository, customized Quarto content, published the site with GitHub Pages, and shared the URL. This workflow mirrors how you will manage course projects throughout the term.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+- [Dissemination using Quarto and GitHub Pages](https://bartlettje.github.io/dissemination_quarto/)
+- [Beginner's guide to building a simple website with Quarto and Netlify](https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/)
+- [Quarto websites documentation](https://quarto.org/docs/websites/)
+- [From Hugo to Quarto blog post](https://www.andreashandel.com/posts/2022-10-01-hugo-to-quarto-migration/)
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r portfolio-creation-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("portfolio-creation-quiz-1.Rmd", "portfolio-creation-quiz-2.Rmd", "portfolio-creation-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'portfolio-creation-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Complete the portfolio setup and publish the site.
+2. Post your website URL to the `introductions` Discord channel.
+3. Reply to at least two classmates with constructive feedback.
+
+:::
+<!-- end unit-exercise div -->

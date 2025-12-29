@@ -1,0 +1,27 @@
+Question
+========
+What does the unit say about the pace of change in AI tools?
+
+Answerlist
+----------
+* The field is stable and unlikely to change.
+* The field is rapidly evolving with frequent new tools.
+* The field is declining and shrinking.
+* The field is only focused on image generation.
+
+Solution
+========
+The unit emphasizes rapid change and frequent new tools.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: AI tools pace
+extype: schoice
+exsolution: 0100

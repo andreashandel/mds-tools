@@ -1,0 +1,27 @@
+Question
+========
+Which tool is described as allowing file uploads in its free version?
+
+Answerlist
+----------
+* ChatGPT 3.5
+* Claude
+* Bing Chat
+* GitHub Copilot
+
+Solution
+========
+Claude is noted for allowing file uploads in the free version.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Claude uploads
+extype: schoice
+exsolution: 0100

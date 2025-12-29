@@ -1,0 +1,191 @@
+---
+title: Git and GitHub Introduction
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a brief introduction to version control, Git, and GitHub, and explains when and why they are useful for data projects.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Explain the purpose of version control.
+* Understand the difference between Git and GitHub.
+* Know when Git/GitHub is a good fit (and when it is not).
+* Create and set up a GitHub account with a professional username.
+* Recognize key Git/GitHub terminology.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub Introduction" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## What is Git
+
+[**Git**](https://git-scm.com/) is software that implements a *version control system*. The main idea is that as you (and your collaborators) work on a project, the software tracks and records any changes made by anyone. **Git** tracks every change to your files.
+
+## What is GitHub
+
+[**GitHub**](https://github.com/) is distinct from Git. **GitHub** is an online platform that hosts changes you make and track with Git in the cloud. This makes collaboration and sharing easy.
+
+You can use Git without using GitHub. Other interfaces/platforms for Git exist, e.g., [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/product). But the combination of Git and GitHub is the most common setup, and it is what we will be discussing.
+
+In fact, since we will only be using Git through GitHub, we often tend to be sloppy with our language and not distinguish between the two. We might call it Git or GitHub, and possibly mean the other or both. Apologies in advance 😁. Mostly, we will refer to all of it as just GitHub.
+
+## Why use Git/GitHub
+
+You want to use GitHub to avoid this:
+
+![Source: [phdcomics.com](https://phdcomics.com/)](../../media/phd_versioncontrol.gif){width="60%"}
+
+*GitHub* gives you an organized way to track your projects. It is well suited for collaborative work. Historically, version control was used for software development. It has since become broader and is now used for many types of projects, including data science projects. If you want to learn a bit more about Git/GitHub and why it is a great tool for data analysis, check out this [article by Jenny Bryan](https://peerj.com/preprints/3159/).
+
+## What to (not) use Git/GitHub for
+
+GitHub is ideal if you have a project with many smallish files, most of which are text files (R code, Quarto/Markdown, LaTeX, etc.) and different people work on different parts of the project.
+
+GitHub is less useful if you have a lot of non-text files (e.g. Word or PowerPoint) and different team members might want to edit the same document at the same time. In that instance, a solution like Google Docs, Word+Dropbox, Word+OneDrive, etc. might be better.
+
+GitHub also has a problem with large files. Anything above around 100MB can lead to very slow syncing and sometimes outright failure. Unfortunately, once you have a failed attempt to sync a large file, it can be quite tricky to fix the repository to work again. Therefore **keep large (>100MB) files out of your GitHub repositories.** If you have to work with such files, try to reduce them first before placing them into the repository. Or place those files in another sync service (e.g. Dropbox, OneDrive, Google Drive) and load them from there.
+
+Finally, if you have data, you need to be careful since by default, GitHub repositories (the GitHub name for your projects) are **public** and everyone can see them. You can set them private, but you need to be careful that you don't accidentally expose confidential data to the public. It is in general not a good idea to have confidential data on GitHub. First anonymize your data enough that it is not at risk of identifiability, then you can place it in a private repository. If you put it public, be **very careful** that you only make things public that are ok to be made public.
+
+## Getting Git/GitHub
+
+Git is software. It can be installed from the [Git website](https://git-scm.com/). If you use GitKraken as described below, you don't need to install Git separately. However, it might still be worth doing so, in case at some point you need to do some Git operation outside of GitKraken (e.g., through Positron or a terminal).
+
+GitHub is an online platform. You don't need to install anything, but if you don't have a GitHub account yet, you need to create one on [GitHub.com](https://github.com/). **Note that GitHub is widely used professionally. You might use it beyond this class and for your future career. You might also want to allow other people to see your GitHub presence. You should therefore use a future-proof, professional sounding user name for your GitHub account.** You can use your UGA or a different email for GitHub. Whichever email you use is where you will receive GitHub activity related notifications (including our GitHub class activities).
+
+## How to use Git/GitHub
+
+The most powerful and flexible way of using Git/GitHub is to open a command-line terminal (e.g., the one that comes with the Git install) and type commands. This is often very confusing and we will not be using this approach.
+
+The approach recommended for this class is to interact with GitHub through a graphical interface. Specifically, for this class I recommend [GitKraken](https://www.gitkraken.com/).
+
+If you are already an experienced GitHub user and have your own preferred setup (e.g. the command line or some other third-party software), you can instead use another graphical client. [GitHub itself](https://desktop.github.com/) provides a graphical interface with basic functionality. Positron also has [Git/GitHub integration](https://posit.co/products/positron/), for R projects. I assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup. While the instructions throughout this course assume you use GitKraken, you can do everything without using it. But then you have to figure out on your own how to do it 😁.
+
+## GitKraken
+
+Download and install [GitKraken](https://www.gitkraken.com/). The free version can do pretty much everything we need. One important limitation is that the free version does not allow you to access private repositories. As a student, you can (and should) upgrade to the Pro version for free, see the **GitHub developer pack** section below on how to do it.
+
+Once you have your GitHub account set up and GitKraken installed, make sure you [connect the two](https://www.gitkraken.com/resources/gitkraken-github-cheat-sheet).
+
+## GitHub developer pack
+
+**Please get the [GitHub student developer pack](https://education.github.com/pack).** This pack gives you a lot of nice free goodies that you might be interested in. For this class, we most want the following:
+
+**GitHub Pro account:** This gives you your own free private repositories.
+
+**GitKraken Pro:** Free GitKraken Pro access. While the free version of GitKraken might work ok for this course, you cannot access private repositories with it.
+
+**[GitHub Copilot](https://github.com/features/copilot):** AI support for writing code.
+
+There are a lot of other goodies that come with the student pack. We will not use them in the course, but some might be of interest to you.
+
+## Git/GitHub terminology
+
+Git/GitHub has a lot of specialized terminology that takes getting used to. The GitHub folks posted a [handy page with short descriptions of important terms](https://docs.github.com/en/github/getting-started-with-github/github-glossary). Some of the terms you will encounter soon are *Repository* (also often called *repo*), *User*, *Organization*, *Branch*, *Fork*, *Push*, *Pull*, *Commit* and *Stage*. *Staging* is the step you need to do after you made changes and before you commit them. You need to know what it means and you need to do/use it as part of the GitHub workflow.
+
+Each repository can have multiple branches (think of it as alternative versions of all files, allowing different people to work on different aspects of a project with minimal interference). In this course, we will mainly just work with a single branch. The name of the main branch can be anything, but these days the default is `main`. Until not too long ago, the main branch was referred to as `master`.
+
+## Git/GitHub and other cloud-based sync options
+
+In some way, you can think of GitHub as a more controlled (and more complex) alternative to systems such as Dropbox, OneDrive, Google Drive, etc. With the GitHub workflow, you can work locally on different machines, and everything is backed up in the cloud (on github.com). The difference to Dropbox & Co is that syncing between your local computer and github.com is not automatic. So do not forget to pull before you start work on a repository and push once you are done.
+
+You can do any setup you want. However, **do not mix and match**. Because GitHub works similar to Dropbox, it is a bad idea to locally store your GitHub repositories in a folder that is synced by Dropbox. If you do, the Dropbox sync process and the GitHub sync process can conflict, potentially leading to syncing mess. **For any GitHub repository, store it locally in a folder that is not synced across your computers by another software (such as Dropbox, OneDrive, Box, etc.)**
+
+Similarly, do not store a GitHub repository inside another repository. While this is technically allowed, it can easily lead to a mess. Each repository should be separate and not connected to any other syncing service.
+
+### Why Git and GitHub?
+
+We use Git/GitHub because it is the most widely used tool for version control and thus a good default choice for coursework and professional collaboration.
+
+### Basic terminology
+
+| Term | Meaning |
+|------|---------|
+| repository | collection of commits + branches |
+| commit | recorded snapshot with message & hash |
+| branch | movable pointer to a commit history |
+| clone | local copy of a remote repository |
+| push / pull | sync local and remote histories |
+
+::: {.warning}
+**Frustration note:** Git/GitHub can be finicky, even for seasoned users. If that happens, do not panic. The internet and Jenny Bryan's book [*happygitwithr*](https://happygitwithr.com/) are great resources. You can also ask on Slack.
+:::
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Git tracks changes locally, GitHub hosts repositories in the cloud. Together they provide a structured way to collaborate, back up projects, and maintain a history of your work. Use GitHub for text-based projects with many changes, and avoid large or confidential files.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+GitHub can be confusing. Start slow. Using a graphical interface makes getting started easier. The [GitHub documentation](https://docs.github.com/en) and [GitKraken support page](https://support.gitkraken.com/) are good resources.
+
+If the quick install instructions above are not detailed enough, follow these in [Jenny's paper](https://peerj.com/preprints/3159/) or her great online book [*happygitwithr*](https://happygitwithr.com/).
+
+Another source worth looking at is this [chapter of *IDS*](https://rafalab.github.io/dsbook/git.html). There is also a lot of good beginner material online.
+
+* **Pro Git** book – <https://git-scm.com/book>
+* **GitHub Docs: Hello World** – <https://docs.github.com/get-started/quickstart>
+* **Atlassian Git Tutorial** – <https://www.atlassian.com/git/tutorials>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-introduction-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-introduction-quiz-1.Rmd", "github-introduction-quiz-2.Rmd", "github-introduction-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-introduction-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Create a new repository on GitHub called `roadymodule-demo`.
+2. Clone it locally and add a simple `README.md`.
+3. Make at least three commits that demonstrate add, modify, and delete operations.
+4. Push the commits and inspect the history on GitHub.
+5. Invite a collaborator to open a pull request that changes your README; merge the PR.
+
+:::
+<!-- end unit-exercise div -->

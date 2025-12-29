@@ -1,0 +1,27 @@
+Question
+========
+Why might you use synthetic data before asking an AI tool for EDA code?
+
+Answerlist
+----------
+* It guarantees higher accuracy.
+* It avoids sharing sensitive data.
+* It removes the need to check results.
+* It always produces better plots.
+
+Solution
+========
+Synthetic data helps protect confidentiality when sharing with AI tools.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Synthetic data privacy
+extype: schoice
+exsolution: 0100

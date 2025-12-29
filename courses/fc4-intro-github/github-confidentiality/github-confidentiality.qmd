@@ -1,0 +1,146 @@
+---
+title: Handling Confidential and Sensitive Data
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+Public Git histories are immutable and globally visible. Accidentally pushing passwords, API keys, patient data, or proprietary code can cause legal and security disasters. This unit covers policies and tooling to keep secrets secret while still leveraging GitHub workflows.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Identify data that must never enter a Git repository.
+* Use `.gitignore` and secret scanning to prevent leaks.
+* Store credentials safely with GitHub Secrets and environment files.
+* Remove sensitive data from history when mistakes happen.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Handling Confidential and Sensitive Data" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Classify your assets
+
+| Data type | Recommended location |
+|-----------|----------------------|
+| API tokens, passwords | Secret manager / CI secrets |
+| PHI/PII (HIPAA, GDPR) | Encrypted external store; never Git |
+| Proprietary binary files | Private object storage or LFS |
+| Configuration templates | Repo (sanitized), plus CI secrets |
+
+## Prevent leaks proactively
+
+### `.gitignore`
+
+Add common patterns:
+
+```
+.Rhistory
+*.pem
+*.key
+.env
+```
+
+### Pre-commit hooks
+
+Tool: **pre-commit + detect-secrets**
+
+```yaml
+repos:
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+```
+
+### GitHub secret scanning
+
+GitHub automatically scans pushes and PRs for many token patterns. Enterprise users can add custom detectors.
+
+## Storing secrets for CI/CD
+
+* **GitHub Actions** – `Settings → Secrets and variables`
+  ```yaml
+  env:
+    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  ```
+* Limit scopes (principle of least privilege).
+* Rotate keys periodically and audit usage.
+
+## Removing leaked secrets
+
+1. **Revoke** the token immediately.
+2. Rewrite history:
+   ```bash
+   bfg --delete-files id_rsa
+   bfg --replace-text passwords.txt
+   git push --force --all
+   ```
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Do not store secrets in Git. Use `.gitignore`, secret scanning, and secure storage for credentials. If something slips in, revoke the secret and rewrite history quickly.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **GitHub Docs: Secret scanning** – <https://docs.github.com/code-security/secret-scanning/about-secret-scanning>
+* **detect-secrets** – <https://github.com/Yelp/detect-secrets>
+* **BFG Repo-Cleaner** – <https://rtyley.github.io/bfg-repo-cleaner/>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-confidentiality-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-confidentiality-quiz-1.Rmd", "github-confidentiality-quiz-2.Rmd", "github-confidentiality-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-confidentiality-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Add a `.gitignore` with common secret patterns.
+2. Set a fake API key as an environment variable and confirm it is not committed.
+3. If you have a test repo, simulate a leak and practice removing it with `git filter-repo` or BFG.
+
+:::
+<!-- end unit-exercise div -->

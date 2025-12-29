@@ -1,0 +1,111 @@
+---
+title: Forks and Pull Requests
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+Forks and pull requests are the standard workflow for contributing to repositories you do not own. This unit explains how to fork, make changes, and open a PR.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand when to use a fork.
+* Create a fork and clone it locally.
+* Keep your fork in sync with the original repository.
+* Open a pull request with a clear description.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Forks and Pull Requests" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## When to fork
+
+Use a fork when you want to contribute to a repository you do not have write access to. Your fork is your own copy under your account.
+
+## Fork and clone
+
+1. Click **Fork** on GitHub.
+2. Clone your fork to your computer.
+3. Create a branch for your changes.
+
+## Keep your fork up to date
+
+Add the original repository as an "upstream" remote so you can pull updates:
+
+```bash
+git remote add upstream https://github.com/ORIGINAL/REPO.git
+git fetch upstream
+git merge upstream/main
+```
+
+## Open a pull request (PR)
+
+Push your branch to your fork, then open a pull request from your branch to the original repository. Provide a clear summary of what changed and why.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Forks let you work independently, and pull requests let you propose changes back to the original project. Keep your fork synced to avoid conflicts.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **GitHub Docs: Fork a repo** – <https://docs.github.com/en/get-started/quickstart/fork-a-repo>
+* **GitHub Docs: About pull requests** – <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-forks-prs-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-forks-prs-quiz-1.Rmd", "github-forks-prs-quiz-2.Rmd", "github-forks-prs-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-forks-prs-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Fork a small public repository.
+2. Create a branch and make a small change.
+3. Open a pull request back to the original repo with a clear description.
+
+:::
+<!-- end unit-exercise div -->

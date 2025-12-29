@@ -1,0 +1,108 @@
+---
+title: Basic GitHub Workflow
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit covers the essential GitHub workflow: clone, edit, stage, commit, pull, and push. It is the minimum you need to collaborate on class projects.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Clone a repository from GitHub.
+* Check status and stage changes.
+* Create clear, small commits.
+* Pull and push without conflicts.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Basic GitHub Workflow" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Clone a repository
+
+Cloning copies a GitHub repository to your computer. After cloning, you work locally and sync changes to GitHub.
+
+## Check status and stage changes
+
+Use your Git client to see which files changed. Stage the changes you want to include in the next commit. This lets you group related edits together.
+
+## Commit with a clear message
+
+Commit messages should be short and specific. A good pattern is: **verb + object** (e.g., "Add data cleaning script").
+
+## Pull before you push
+
+Always pull before you push to reduce conflicts. If changes exist on GitHub, pull first, resolve any conflicts, then push.
+
+## Keep commits small
+
+Small commits make it easier to review and undo changes. If a change is unrelated, make a separate commit.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+The core workflow is: clone, edit, stage, commit, pull, and push. If you follow that order and keep commits small, GitHub becomes predictable and easy to use.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* **GitHub Docs: Hello World** – <https://docs.github.com/get-started/quickstart>
+* **Git Cheat Sheet** – <https://education.github.com/git-cheat-sheet-education.pdf>
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-basic-use-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-basic-use-quiz-1.Rmd", "github-basic-use-quiz-2.Rmd", "github-basic-use-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-basic-use-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Clone a repository to your computer.
+2. Edit two different files and stage the changes.
+3. Create two separate commits with clear messages.
+4. Pull and then push your changes to GitHub.
+
+:::
+<!-- end unit-exercise div -->

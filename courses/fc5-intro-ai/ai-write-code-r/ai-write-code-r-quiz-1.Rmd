@@ -1,0 +1,27 @@
+Question
+========
+What is the key advantage of detailed prompts when asking an AI to write code?
+
+Answerlist
+----------
+* They reduce the need for any iteration
+* They make it more likely the output matches your intent
+* They eliminate the need to run code
+* They prevent the AI from using packages
+
+Solution
+========
+Specific prompts guide the AI toward the desired output.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Detailed prompts
+extype: schoice
+exsolution: 0100

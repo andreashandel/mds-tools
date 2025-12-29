@@ -1,0 +1,27 @@
+Question
+========
+Which statement best describes the relationship between deep learning and AI in this unit?
+
+Answerlist
+----------
+* Deep learning is unrelated to AI.
+* Deep learning is a subset of AI that uses multi-layer neural networks.
+* AI is a subset of deep learning.
+* Deep learning only refers to non-neural network models.
+
+Solution
+========
+Deep learning is described as a subset of AI centered on multi-layer neural networks.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: DL subset of AI
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+What is a first step when asking an AI to fix code?
+
+Answerlist
+----------
+* Provide the error message and the full code context
+* Only say "it is broken"
+* Remove all comments before sharing
+* Avoid sharing any code
+
+Solution
+========
+Providing the full code and exact error helps the AI diagnose the issue.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Provide error context
+extype: schoice
+exsolution: 1000
