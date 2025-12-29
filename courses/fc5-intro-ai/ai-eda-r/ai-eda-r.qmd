@@ -83,7 +83,7 @@ PASTE DATA HERE
 To get a new line in your prompts, use `Shift + Ctrl/Return` (or whatever the equivalent is on a Mac 😁.)
 :::
 
-I received [this code](../../../code/bing-eda-example1.R) from the AI.
+I received [this code](bing-eda-example1.R) from the AI.
 It runs and does a few nice exploratory analyses, such as writing summary tables and making a few plots.
 
 It would of course be better if I provided much more detailed instructions regarding the types of analyses, and possible even the R packages and functions I want to have. But I think you get the idea. If the data is not too big, you can write your prompt, then copy the data underneath and get code that does EDA on the data.
@@ -98,7 +98,7 @@ The free version of ChatGPT or Bing do not allow upload of files. However, [Clau
 Write R code to perform an exploratory data analysis of the attached CSV file.
 :::
 
-I received [this code](/code/claude-eda-example.R) from the AI. It runs and produces some figures. Of course, as you learned previously, it would be better if I provided a much more specific prompt, saying exactly what kind of tables and figures I want to see as output. But you get the idea.
+I received [this code](claude-eda-example.R) from the AI. It runs and produces some figures. Of course, as you learned previously, it would be better if I provided a much more specific prompt, saying exactly what kind of tables and figures I want to see as output. But you get the idea.
 
 Claude allows you (as of this writing) to upload a maximum of 5 files with 10MB each. While that prevents you to perform EDA on very large datasets, it should be enough for many purposes, and is definitely more than the limit for the copy and paste method described above.
 

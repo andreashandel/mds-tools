@@ -53,7 +53,7 @@ Use the tidyverse packages for data manipulation tasks, and the tidymodels frame
 Add thorough documentation to your code so it's clear what each line of code does.
 :::
 
-I got [this code back](/code/claude-analyze-example1.R), which looked pretty good, but didn't run. So I asked the AI to fix the code with this prompt:
+I got [this code back](claude-analyze-example1.R), which looked pretty good, but didn't run. So I asked the AI to fix the code with this prompt:
 
 ::: prompt
 This code does not work. It produces this error:
@@ -65,7 +65,7 @@ argument "new_data" is missing, with no default
 Please fix this and any other errors in the code.
 :::
 
-The updated code [looked like this](/code/claude-analyze-example2.R). It fixed the first problem with `augment()`, but the `resid()` function returns `NULL` and something about the the specification for the logistic model is also not correct. Of course if I really wanted this to work, I'd ask the AI to keep fixing, and/or intervene manually. But for this example I don't care that much if it works fully. The right bits seem to be there.
+The updated code [looked like this](claude-analyze-example2.R). It fixed the first problem with `augment()`, but the `resid()` function returns `NULL` and something about the the specification for the logistic model is also not correct. Of course if I really wanted this to work, I'd ask the AI to keep fixing, and/or intervene manually. But for this example I don't care that much if it works fully. The right bits seem to be there.
 
 Instead, I was curious if I can get it to produce some halfway reasonable code for a more complex model. Since this is longitudinal, time-series data, with multiple measurements per patient, a hierarchical approach would be better. Here is an attempt at having Claude write code for a hierarchical Bayesian model. Note that this model is still not a good one since it doesn't really take into account the longitudinal structure, just the grouping within patients. But let's try, with this prompt:
 
@@ -79,7 +79,7 @@ For each function call, use explicit notation to specify from which R package th
 Add thorough documentation to your code so it's clear what each line of code does.
 :::
 
-[Here is the code I got back](/code/claude-analyze-example3.R). It looks promising, but again doesn't quite work. Of course I could try to have Claude fix it or fix myself. But I don't feel like it right now, I've got some more content to write 😁. Feel free to send me a working version of the code (or any above) if you decide to fix it!
+[Here is the code I got back](claude-analyze-example3.R). It looks promising, but again doesn't quite work. Of course I could try to have Claude fix it or fix myself. But I don't feel like it right now, I've got some more content to write 😁. Feel free to send me a working version of the code (or any above) if you decide to fix it!
 
 ## Generating data and fitting it
 
@@ -94,12 +94,12 @@ Use the tidyverse packages for data manipulation tasks, and the tidymodels frame
 For each function call, use explicit notation to specify from which R package the function comes from.
 Add thorough documentation to your code so it's clear what each line of code does.
 
-COPY AND PASTE [THIS CODE](/code/synthetic-data-new-R-example-2-code.R) HERE
+COPY AND PASTE [THIS CODE](synthetic-data-new-R-example-2-code.R) HERE
 :::
 
 I fed this to Microsoft Copilot in Precise mode. I also omitted the parts of the code after the data frame has been generated.
 
-[This is what I got back](/code/bing-analyze-example1.R). Again looks promising but doesn't work.
+[This is what I got back](bing-analyze-example1.R). Again looks promising but doesn't work.
 I then gave it this prompt:
 
 ::: prompt
@@ -112,7 +112,7 @@ The result was code that used the standard `lm()` and `glm()` functions. While o
 Change the code above such that instead of using the lm() and glm() functions, it uses the tidymodels set of functions
 :::
 
-[I ended up with this](/code/bing-analyze-example2.R). It makes the same mistake as Claude, not properly turning the adverse event variable into a factor before trying to fit a logistic model. Some other bits also didn't fully work, but I didn't feel like fixing further.
+[I ended up with this](bing-analyze-example2.R). It makes the same mistake as Claude, not properly turning the adverse event variable into a factor before trying to fit a logistic model. Some other bits also didn't fully work, but I didn't feel like fixing further.
 
 I think you get the idea. Basically, the AI can produce quite useful bits of code that can speed up things, but it's rarely fully correct and you will always need to check it, and often at the end still manually intervene. I'm sure as time goes by, what you get on the first try will get increasingly better. Still, you need to know what exactly you want and understand if the output makes sense or not.
 

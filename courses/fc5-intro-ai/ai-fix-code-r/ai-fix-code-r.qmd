@@ -50,7 +50,7 @@ To mimic a general setting, with code possibly produced earlier or not by the AI
 ::: prompt
 This code does not work. Please fix it.
   
-PASTE ALL CODE FROM [THIS FILE](/code/bing-iterate-example-update2.R) HERE.
+PASTE ALL CODE FROM [THIS FILE](bing-iterate-example-update2.R) HERE.
 :::
 
 Here is what I got back:
@@ -70,7 +70,7 @@ Error in eval(ei, envir) : object 'sex' not found
 
 Please fix it.
 
-PASTE ALL CODE FROM [THIS FILE](/code/bing-iterate-example-update2.R) HERE.
+PASTE ALL CODE FROM [THIS FILE](bing-iterate-example-update2.R) HERE.
 
 :::
 
@@ -81,7 +81,7 @@ The error message you’re seeing is due to the sex variable not being recognize
 
 You can fix this by first creating the sex variable and then using it in the ifelse function. Here’s the corrected code:
 
-[CODE IS HERE](/code/bing-iterate-example-update3.R)
+[CODE IS HERE](bing-iterate-example-update3.R)
 :::
 
 The end result is still not perfect, the difference in weight by sex is too large and we might want more scatter. But that can easily be fixed with either further iterations of asking the AI to update the code, or manual interventions. Speaking of manual interventions...
