@@ -15,7 +15,7 @@ project:
     - "!auxiliary/**"
     - "!assets/**" # i don't think we need stuff in this folder rendered, but not sure
 execute:
-  freeze: auto # when to re-run code during full project render
+  freeze: false # when to re-run code during full project render
   cache: false
   echo: true
   keep-md: false
