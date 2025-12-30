@@ -33,7 +33,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Introduction
 
-Like VS Code, Positron is highly customizable. This flexibility allows you to tailor the editor to your specific workflow and preferences. There's a lot you can customize, we'll only briefly look at a few main areas here.
+Positron is highly customizable just like VS code the software it is based on. This flexibility allows you to tailor the editor to your specific workflow and preferences. There's a lot you can customize, we'll only briefly look at a few main areas here.
 
 
 ## Settings 
@@ -50,10 +50,13 @@ One important fact to keep in mind: You can change settings globally (for all pr
 
 ## Themes 
 
-You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.
+You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have even more control, you can customize further. For most users, this is probably not worth it.
 
 You can explore themes by clicking on the gear icon in the lower left corner, then selecting *Themes* and *Color Theme*. This opens a list of available themes. Explore them to see what you might like.
 
+Theme selection is important to prevent eye fatigue or if you are color blind. Darker themes are generally better for your eyes during long coding sessions. There are a few themes that are specifically made for the color blind that rely on hue to differentiate code. Soloarized themes are generally the best for those who are colorblind. 
+
+To be clear the themes do not change anything about the code it is for the humans writing/reading the code. They color and style token types (the different functional parts or key words) produced by the language parser (not arbitrary text). 
 
 
 ## Key Bindings
