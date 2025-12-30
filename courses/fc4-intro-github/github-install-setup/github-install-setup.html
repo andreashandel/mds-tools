@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,7 +30,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc4-intro-github/github-positron/github-positron.html" rel="next">
+<link href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" rel="next">
 <link href="../../../courses/fc4-intro-github/github-introduction/github-introduction.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -180,32 +145,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git and GitHub in Positron</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-desktop/github-desktop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Desktop Workflow</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Basic GitHub Workflow</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-commits-branches/github-commits-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Commits and Branches</span></a>
+  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub in Positron</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Forks and Pull Requests</span></a>
+ <span class="menu-text">Branches, Forks and Pull Requests</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -241,9 +194,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
   <li><a href="#install-git" id="toc-install-git" class="nav-link" data-scroll-target="#install-git">Install Git</a></li>
-  <li><a href="#configure-identity-and-defaults" id="toc-configure-identity-and-defaults" class="nav-link" data-scroll-target="#configure-identity-and-defaults">Configure identity and defaults</a></li>
-  <li><a href="#generate-an-ssh-key-and-add-it-to-github" id="toc-generate-an-ssh-key-and-add-it-to-github" class="nav-link" data-scroll-target="#generate-an-ssh-key-and-add-it-to-github">Generate an SSH key and add it to GitHub</a></li>
-  <li><a href="#test-your-connection" id="toc-test-your-connection" class="nav-link" data-scroll-target="#test-your-connection">Test your connection</a></li>
+  <li><a href="#set-up-github" id="toc-set-up-github" class="nav-link" data-scroll-target="#set-up-github">Set up GitHub</a></li>
+  <li><a href="#github-developer-pack" id="toc-github-developer-pack" class="nav-link" data-scroll-target="#github-developer-pack">GitHub developer pack</a></li>
+  <li><a href="#install-github-desktop" id="toc-install-github-desktop" class="nav-link" data-scroll-target="#install-github-desktop">Install GitHub Desktop</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -275,16 +228,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>Before you can track changes, you need Git on your computer and a few global settings that stamp each commit with your identity.</p>
+<p>This unit guides you through installing Git, creating a GitHub account, and installing GitHub Desktop.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
-<li>Install the latest stable Git on your system.</li>
-<li>Configure your username, email, and default branch name.</li>
-<li>Generate an SSH key and add it to GitHub.</li>
-<li>Verify connectivity to GitHub.</li>
+<li>Install Git on your system.</li>
+<li>Set up a GitHub account.</li>
+<li>Install and configure GitHub Desktop.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -303,47 +255,35 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h1>Reading</h1>
 <section id="install-git" class="level2">
 <h2 class="anchored" data-anchor-id="install-git">Install Git</h2>
-<p>Download Git from <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a> and install it for your operating system.</p>
-<ul>
-<li>Windows: Use the default installer options unless you know you want a different setup.</li>
-<li>macOS: You can install via the Git website or with Homebrew (<code>brew install git</code>).</li>
-<li>Linux: Use your package manager (e.g., <code>sudo apt install git</code>).</li>
-</ul>
-<p>Confirm installation:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Install Git on your computer. Go to the <a href="https://git-scm.com/">Git website</a> and follow the isntructions. You can accept the default options during installation. It is likely that you will need administrator rights to be able to install Git.</p>
 </section>
-<section id="configure-identity-and-defaults" class="level2">
-<h2 class="anchored" data-anchor-id="configure-identity-and-defaults">Configure identity and defaults</h2>
-<p>Set your name and email (this is what appears in commit history):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"you@example.com"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Set the default branch name to <code>main</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="set-up-github" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-github">Set up GitHub</h2>
+<p>Go to <a href="https://github.com/">the GitHub website</a> and create an account. The email you use should be one you use regularly, ideally one that you is your permanent email address. This will be the email address to which GitHub sends notifications. Next, choose a user name and pasword to finish setting up your account.</p>
+<div class="warning">
+<p>GitHub is widely used professionally. You might use it for your career and you might want to allow other people to see your GitHub presence. You should therefore use a future-proof, professional user name for your GitHub account. Your name is always a good idea.</p>
+</div>
+<p>Since you are doing a lot of GitHub work out in the open, it is a good idea to associate a professional image with your profile. This also makes it easier for others to recognize that it’s you who when they are for instance trying to invite as a collaborator. You can do so by going to your profile and changing the image. You can also add further information to your profile, such as a short bio, your location, and a link to your website or blog.</p>
 </section>
-<section id="generate-an-ssh-key-and-add-it-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="generate-an-ssh-key-and-add-it-to-github">Generate an SSH key and add it to GitHub</h2>
-<p>SSH keys let you connect to GitHub without re-entering your password.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"you@example.com"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Then add the public key (usually <code>~/.ssh/id_ed25519.pub</code>) to GitHub under: <code>Settings → SSH and GPG keys</code>.</p>
+<section id="github-developer-pack" class="level2">
+<h2 class="anchored" data-anchor-id="github-developer-pack">GitHub developer pack</h2>
+<p>If you are a student, you can get a lot of nice free goodies through the <a href="https://education.github.com/pack">GitHub student developer pack</a>. You will get GitHub Pro for free, which gives you access to the GitHub Copilot AI assistant and private repositories. Many other parks are also included. If you are eligible, I highly recommend signing up for the student developer pack.</p>
 </section>
-<section id="test-your-connection" class="level2">
-<h2 class="anchored" data-anchor-id="test-your-connection">Test your connection</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> ls-remote git@github.com:octocat/Hello-World.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If you see output and no error, your SSH connection is working.</p>
+<section id="install-github-desktop" class="level2">
+<h2 class="anchored" data-anchor-id="install-github-desktop">Install GitHub Desktop</h2>
+<p>GitHub Desktop is a free graphical client made by the GitHub folks that makes it fairly easy to use Git/GitHub without the command line. <a href="https://github.com/apps/desktop">Download GitHub Desktop</a> and install it. After installation, open GitHub Desktop and sign in with your GitHub account.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>You installed Git, configured your identity, set a default branch name, and connected to GitHub via SSH. This is the foundation for every Git/GitHub workflow in the course.</p>
+<p>You installed Git, created a GitHub account and installed and set up GitHub desktop.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li><strong>Git Downloads</strong> – <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></li>
-<li><strong>Generating SSH Keys</strong> – <a href="https://docs.github.com/authentication/connecting-to-github-with-ssh" class="uri">https://docs.github.com/authentication/connecting-to-github-with-ssh</a></li>
-<li><strong>Git Credential Storage</strong> – <a href="https://git-scm.com/docs/gitcredentials" class="uri">https://git-scm.com/docs/gitcredentials</a></li>
+<li>The software carpentry has <a href="https://swcarpentry.github.io/git-novice/#creating-a-github-account">a course on Git/GitHub</a> which among other things provides some more install/setup instructions.</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
@@ -357,13 +297,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<ol type="1">
-<li>Install Git and confirm <code>git --version</code> ≥ 2.40.</li>
-<li>Set your global username and email.</li>
-<li>Generate an SSH key and add it to your GitHub account.</li>
-<li>Clone <code>git@github.com:octocat/Hello-World.git</code> to verify SSH access.</li>
-<li>Change the default editor (<code>git config --global core.editor "nano"</code> or similar).</li>
-</ol>
+<ul>
+<li>Make sure you implemented all the steps described above and have Git, GitHub account, and GitHub Desktop set up and ready to go.</li>
+</ul>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1952,8 +1888,8 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="pagination-link" aria-label="Git and GitHub in Positron">
-        <span class="nav-page-text">Git and GitHub in Positron</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="pagination-link" aria-label="Basic GitHub Workflow">
+        <span class="nav-page-text">Basic GitHub Workflow</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

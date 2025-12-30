@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc4-intro-github/github-commits-branches/github-commits-branches.html" rel="next">
-<link href="../../../courses/fc4-intro-github/github-desktop/github-desktop.html" rel="prev">
+<link href="../../../courses/fc4-intro-github/github-positron/github-positron.html" rel="next">
+<link href="../../../courses/fc4-intro-github/github-install-setup/github-install-setup.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -145,32 +145,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git and GitHub in Positron</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-desktop/github-desktop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Desktop Workflow</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Basic GitHub Workflow</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-commits-branches/github-commits-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Commits and Branches</span></a>
+  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub in Positron</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Forks and Pull Requests</span></a>
+ <span class="menu-text">Branches, Forks and Pull Requests</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -203,14 +191,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
-  <ul class="collapse">
-  <li><a href="#clone-a-repository" id="toc-clone-a-repository" class="nav-link" data-scroll-target="#clone-a-repository">Clone a repository</a></li>
-  <li><a href="#check-status-and-stage-changes" id="toc-check-status-and-stage-changes" class="nav-link" data-scroll-target="#check-status-and-stage-changes">Check status and stage changes</a></li>
-  <li><a href="#commit-with-a-clear-message" id="toc-commit-with-a-clear-message" class="nav-link" data-scroll-target="#commit-with-a-clear-message">Commit with a clear message</a></li>
-  <li><a href="#pull-before-you-push" id="toc-pull-before-you-push" class="nav-link" data-scroll-target="#pull-before-you-push">Pull before you push</a></li>
-  <li><a href="#keep-commits-small" id="toc-keep-commits-small" class="nav-link" data-scroll-target="#keep-commits-small">Keep commits small</a></li>
-  </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
@@ -241,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>This unit covers the essential GitHub workflow: clone, edit, stage, commit, pull, and push. It is the minimum you need to collaborate on class projects.</p>
+<p>This unit covers the essential GitHub workflow: clone, edit, stage, commit, pull, and push.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
@@ -250,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Clone a repository from GitHub.</li>
 <li>Check status and stage changes.</li>
 <li>Create clear, small commits.</li>
-<li>Pull and push without conflicts.</li>
+<li>Sync changes with pull and push.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -265,41 +245,80 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 :::
 -->
 <!-- end unit-video div -->
-<section id="reading" class="level1 unit-reading">
+<div class="unit-reading">
+<section id="reading" class="level1">
 <h1>Reading</h1>
-<section id="clone-a-repository" class="level2">
-<h2 class="anchored" data-anchor-id="clone-a-repository">Clone a repository</h2>
-<p>Cloning copies a GitHub repository to your computer. After cloning, you work locally and sync changes to GitHub.</p>
+<section id="gitgithub-terminology" class="level2">
+<h2 class="anchored" data-anchor-id="gitgithub-terminology">Git/GitHub terminology</h2>
+<p>Git/GitHub has a lot of specialized terminology that takes getting used to. The GitHub folks posted a <a href="https://docs.github.com/en/github/getting-started-with-github/github-glossary">handy page with short descriptions of terms</a> - including many that are not important for us. Some of the terms you will encounter often are <em>Repository</em> (also often called <em>repo</em>), <em>User</em>, <em>Branch</em>, <em>Fork</em>, <em>Push</em>, <em>Pull</em>, <em>Commit</em>, <em>Stage</em> and more. It can be a bit confusing at first, but you’ll get the hang of it quickly.</p>
 </section>
-<section id="check-status-and-stage-changes" class="level2">
-<h2 class="anchored" data-anchor-id="check-status-and-stage-changes">Check status and stage changes</h2>
-<p>Use your Git client to see which files changed. Stage the changes you want to include in the next commit. This lets you group related edits together.</p>
+<section id="github-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="github-repositories">GitHub repositories</h2>
+<p>As mentioned previously, the main unit of organization in GitHub is a <em>repository</em> (or <em>repo</em> for short). A repository is a folder that contains all subfolders and files related to a project, along with the full history of changes made to those files. Each repository is tracked independently, and has its own URL on GitHub, making it easy to share and collaborate on projects.</p>
 </section>
-<section id="commit-with-a-clear-message" class="level2">
-<h2 class="anchored" data-anchor-id="commit-with-a-clear-message">Commit with a clear message</h2>
+<section id="cloning-and-pulling" class="level2">
+<h2 class="anchored" data-anchor-id="cloning-and-pulling">Cloning and pulling</h2>
+<p>When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com.</p>
+<p>If you start a repository on GitHub.com, you can then <em>clone</em> it to your local machine to work on it. The process of <em>cloning</em> creates a local copy of the repository on your computer. You also use that approach if you are collaborating with someone on a repository that they created.</p>
+<p>The important terminology here is that <em>cloning</em> means copying a repository from GitHub.com to your local machine. Once that happens, in the future to get updates from GitHub.com to your local machine, you <em>pull</em> those changes. (Sometimes, you might also see the word <em>fetch</em>, which is similar to <em>pull</em>, but does not automatically merge changes into your local files. For simplicity, we will mainly just use <em>pull</em> here since you usually want to merge anything from the online repository with your local version of that repo.)</p>
+</section>
+</section>
+<section id="commiting-and-pushing" class="level1">
+<h1>Commiting and Pushing</h1>
+<p>The reverse process of getting your local changes up to GitHub.com is called <em>pushing</em>. If you start a repository locally, or any time you make updates on your loccal machine, you can <em>push</em> it to GitHub.com to back it up and share it.</p>
+<p>Before you can push your local updates, you need to <em>commit</em> them. Committing means recording a snapshot of your changes in the local repository. You can make multiple commits locally before pushing them to GitHub.com. Commits are important because they allow you to track the history of changes and revert to previous versions if needed.</p>
+<p>To be precise, before you can commit you need to stage your changes. Staging means selecting which changes you want to include in the next commit. This allows you to group related changes together in a single commit, making it easier to understand the history of your project. For our purposes, doing separate staging and committing is usually not necessary, and we will often just refer to committing, but keep in mind that staging is a step that happens before committing. Most of the time you won’t even realize that the staging happened.</p>
+<div class="warning">
+<p>In contrast to sync services like OneDrive or Google Drive, pushing and pulling to make sure things are in sync between your local machine and the online platform are a manual process and are your responsibility. Make sure to remember to always pull before you start working and push when you are done.</p>
+</div>
+<section id="basic-github-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="basic-github-workflow">Basic GitHub workflow</h2>
+<section id="create-a-repository" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-repository">Create a repository</h3>
+<p>Let’s give this whole workflow a try. We will start by creating a repository online. Go to GitHub.com and create a new repository (click the <strong>+</strong> icon at the top right and select <strong>New repository</strong>). Give it a name, e.g., <code>my-test-repo</code>. Give it a short description, turn on ‘add README’, keep visibility to public, and keep the rest of the settings as they are. Then click <strong>Create repository</strong>.</p>
+<p>This has now created a new public repository on Github.com. At the moment, it is mostly empty apart from the README.md file we told it to create.</p>
+</section>
+<section id="clone-the-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-repository">Clone the repository</h3>
+<p>Now that we have a repository on GitHub.com, we can clone it to our local machine. Open GitHub Desktop. In the menu, click on <strong>File</strong> &gt; <strong>Clone repository…</strong>. In the dialog that opens, select the <code>my-test-repo</code> repository you just created (it should show up under the GitHub.com tab). Select a local path where you want to clone it to, and click <strong>Clone</strong>. _Remember that you don’t want to place the local copy in a location that is synced by other tools such as OneDrive or Google Drive.</p>
+<p>Once you have the repository on your local machine, open the folder in Positron. Since this is a GitHub repository, Positron will recognize it as a project/workspace.</p>
+<p>Open the <code>README.md</code> file in the Positron editor, and change the text, then save it.</p>
+</section>
+<section id="committing-and-pushing-changes" class="level3">
+<h3 class="anchored" data-anchor-id="committing-and-pushing-changes">Committing and pushing changes</h3>
+<p>Now go back to GitHub Desktop. You should see that it detected the change you made to the <code>README.md</code> file. You can now stage and commit that change. In GitHub Desktop, enter a short commit message, e.g., “Update README”, and click <strong>Commit to main</strong>. You can leave the ‘Description’ field empty. Once you committed, you are ready to push your changes to GitHub.com. The online location is referred to as <code>origin</code>. Click the <strong>Push origin</strong> button to push your changes. To verify that the changes are online, go back to GitHub.com and refresh the page for your repository. You should see that the <code>README.md</code> file has been updated and there should be your commit with its title. As you keep working on the project, you can repeat this process of editing files, committing changes, and pushing them to GitHub.com. If others make changes, or you work on multiple computers, you will need to make sure before you start working that you pull any changes from GitHub.com to your local machine.</p>
+<p>These commits that will accumulate as you work on the project will create a history of changes that you can always go back to if needed. So if you did something a few weeks ago, then changed your code and now realized you need the old version back, you can click on that commit in GitHub Desktop and restore the files to that version. You can then pull out the changes you need from that version.</p>
+</section>
+</section>
+<section id="best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices">Best practices</h2>
+<section id="commit-with-a-clear-message" class="level3">
+<h3 class="anchored" data-anchor-id="commit-with-a-clear-message">Commit with a clear message</h3>
 <p>Commit messages should be short and specific. A good pattern is: <strong>verb + object</strong> (e.g., “Add data cleaning script”).</p>
 </section>
-<section id="pull-before-you-push" class="level2">
-<h2 class="anchored" data-anchor-id="pull-before-you-push">Pull before you push</h2>
-<p>Always pull before you push to reduce conflicts. If changes exist on GitHub, pull first, resolve any conflicts, then push.</p>
-</section>
-<section id="keep-commits-small" class="level2">
-<h2 class="anchored" data-anchor-id="keep-commits-small">Keep commits small</h2>
+<section id="keep-commits-small" class="level3">
+<h3 class="anchored" data-anchor-id="keep-commits-small">Keep commits small</h3>
 <p>Small commits make it easier to review and undo changes. If a change is unrelated, make a separate commit.</p>
 </section>
+<section id="pull-before-you-start-working" class="level3">
+<h3 class="anchored" data-anchor-id="pull-before-you-start-working">Pull before you start working</h3>
+<p>Always pull the latest changes from GitHub.com before you start working locally. This helps avoid conflicts.</p>
 </section>
+<section id="coordinate-if-you-collaborate" class="level3">
+<h3 class="anchored" data-anchor-id="coordinate-if-you-collaborate">Coordinate if you collaborate</h3>
+<p>If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can’t, you’ll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be agravating at first, but you’ll soon learn how to deal with them. The best approach is to avoid them as much as possible.</p>
+</section>
+</section>
+</section>
+</div>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>The core workflow is: clone, edit, stage, commit, pull, and push. If you follow that order and keep commits small, GitHub becomes predictable and easy to use.</p>
+<p>The core workflow is: clone (once). Then pull/push. In between, edit. Whenever you made substantial changes or are <em>done for now</em>, stage/commit and push. When you resume working, check that no changes happened to the online repo, and pull if necessary. If you follow that order and keep commits small, GitHub becomes predictable and fairly easy to use.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<ul>
-<li><strong>GitHub Docs: Hello World</strong> – <a href="https://docs.github.com/get-started/quickstart" class="uri">https://docs.github.com/get-started/quickstart</a></li>
-<li><strong>Git Cheat Sheet</strong> – <a href="https://education.github.com/git-cheat-sheet-education.pdf" class="uri">https://education.github.com/git-cheat-sheet-education.pdf</a></li>
-</ul>
 </section>
 <!-- end unit-resources div -->
 <!--
@@ -312,12 +331,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<ol type="1">
-<li>Clone a repository to your computer.</li>
-<li>Edit two different files and stage the changes.</li>
-<li>Create two separate commits with clear messages.</li>
-<li>Pull and then push your changes to GitHub.</li>
-</ol>
+<ul>
+<li>Find some repository online and clone it to your computer. Open it and edit it. Try to push changes back to the original repository. This will fail, since while repositories are publicly viewable and you can clone them, only the owner (or collaborators) can make edits and push changes.<br>
+*. In the repo you created above, add a new file (e.g.&nbsp;a Quarto file or R script). Make sure you change more than one file, then stage/commit and push all those changes..</li>
+</ul>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1901,13 +1918,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../courses/fc4-intro-github/github-desktop/github-desktop.html" class="pagination-link" aria-label="GitHub Desktop Workflow">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GitHub Desktop Workflow</span>
+      <a href="../../../courses/fc4-intro-github/github-install-setup/github-install-setup.html" class="pagination-link" aria-label="Git and GitHub Installation and Setup">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Git and GitHub Installation and Setup</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc4-intro-github/github-commits-branches/github-commits-branches.html" class="pagination-link" aria-label="Commits and Branches">
-        <span class="nav-page-text">Commits and Branches</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="pagination-link" aria-label="Git and GitHub in Positron">
+        <span class="nav-page-text">Git and GitHub in Positron</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

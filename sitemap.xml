@@ -38,19 +38,15 @@
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-introduction/github-introduction.html</loc>
-    <lastmod>2025-12-29T18:55:36.015Z</lastmod>
+    <lastmod>2025-12-30T15:32:46.851Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-further-topics/github-further-topics.html</loc>
     <lastmod>2025-12-29T18:55:36.012Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-desktop/github-desktop.html</loc>
-    <lastmod>2025-12-29T18:55:36.010Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-commits-branches/github-commits-branches.html</loc>
-    <lastmod>2025-12-29T18:55:36.006Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-confidentiality/github-confidentiality.html</loc>
+    <lastmod>2025-12-30T15:31:39.731Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc3-intro-quarto/quarto-resources/quarto-resources.html</loc>
@@ -69,68 +65,52 @@
     <lastmod>2025-12-22T15:09:46.084Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/julia-introduction/julia-introduction.html</loc>
-    <lastmod>2025-12-15T16:46:27.225Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-positron/r-positron.html</loc>
+    <lastmod>2025-12-15T22:39:12.647Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/julia-environments/julia-environments.html</loc>
-    <lastmod>2025-06-30T15:21:22.527Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-introduction/r-introduction.html</loc>
+    <lastmod>2025-12-15T22:21:36.044Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/julia-and-positron/julia-and-positron.html</loc>
-    <lastmod>2025-12-16T14:02:13.881Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-further-resources/r-further-resources.html</loc>
+    <lastmod>2025-12-15T22:21:35.944Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-tidyverse/r-tidyverse.html</loc>
-    <lastmod>2025-12-15T22:21:36.494Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/intro-r-toc.html</loc>
+    <lastmod>2025-12-15T22:36:30.258Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-packages/r-packages.html</loc>
-    <lastmod>2025-12-15T22:56:22.365Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-use/example.html</loc>
+    <lastmod>2025-12-02T19:41:55.827Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-install-setup/r-install-setup.html</loc>
-    <lastmod>2025-12-15T22:21:35.998Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-projects/positron-projects.html</loc>
+    <lastmod>2025-12-15T22:21:35.276Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html</loc>
-    <lastmod>2025-12-15T22:21:35.661Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html</loc>
+    <lastmod>2025-12-08T16:28:00.644Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-use/positron-use.html</loc>
-    <lastmod>2025-12-09T00:25:05.453Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-extensions/positron-extensions.html</loc>
+    <lastmod>2025-12-08T21:20:54.668Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-resources/positron-resources.html</loc>
-    <lastmod>2025-12-08T20:53:50.299Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-configuration/positron-configuration.html</loc>
+    <lastmod>2025-12-08T19:31:41.576Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-introduction/positron-introduction.html</loc>
-    <lastmod>2025-12-08T15:56:37.113Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/courses.html</loc>
+    <lastmod>2025-12-29T18:55:36.003Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-features/positron-features.html</loc>
-    <lastmod>2025-12-08T19:19:19.104Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html</loc>
-    <lastmod>2025-12-02T19:41:55.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/intro-positron-toc.html</loc>
-    <lastmod>2025-12-09T23:43:11.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc6-portfolio-creation.html</loc>
-    <lastmod>2025-12-29T18:55:36.002Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc4-intro-github.html</loc>
+    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc5-intro-ai.html</loc>
     <lastmod>2025-12-29T18:55:35.999Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc2b-intro-julia.html</loc>
-    <lastmod>2025-12-15T16:37:17.072Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc3-intro-quarto.html</loc>
+    <lastmod>2025-12-08T21:12:44.739Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc1-intro-positron.html</loc>
@@ -141,68 +121,52 @@
     <lastmod>2025-12-09T23:43:10.956Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc3-intro-quarto.html</loc>
-    <lastmod>2025-12-08T21:12:44.739Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc5-intro-ai.html</loc>
+    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc4-intro-github.html</loc>
     <lastmod>2025-12-29T18:55:35.999Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/courses.html</loc>
-    <lastmod>2025-12-29T18:55:36.003Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/course-landing-pages/fc6-portfolio-creation.html</loc>
+    <lastmod>2025-12-29T18:55:36.002Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-configuration/positron-configuration.html</loc>
-    <lastmod>2025-12-08T19:31:41.576Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/intro-positron-toc.html</loc>
+    <lastmod>2025-12-09T23:43:11.006Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-extensions/positron-extensions.html</loc>
-    <lastmod>2025-12-08T21:20:54.668Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-extensions/positron-extensions-slides.html</loc>
+    <lastmod>2025-12-02T19:41:55.815Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-install-setup/positron-install-setup.html</loc>
-    <lastmod>2025-12-08T16:28:00.644Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-features/positron-features.html</loc>
+    <lastmod>2025-12-08T19:19:19.104Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-projects/positron-projects.html</loc>
-    <lastmod>2025-12-15T22:21:35.276Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-introduction/positron-introduction.html</loc>
+    <lastmod>2025-12-08T15:56:37.113Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-use/example.html</loc>
-    <lastmod>2025-12-02T19:41:55.827Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-resources/positron-resources.html</loc>
+    <lastmod>2025-12-08T20:53:50.299Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/intro-r-toc.html</loc>
-    <lastmod>2025-12-15T22:36:30.258Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc1-intro-positron/positron-use/positron-use.html</loc>
+    <lastmod>2025-12-09T00:25:05.453Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-further-resources/r-further-resources.html</loc>
-    <lastmod>2025-12-15T22:21:35.944Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html</loc>
+    <lastmod>2025-12-15T22:21:35.661Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-introduction/r-introduction.html</loc>
-    <lastmod>2025-12-15T22:21:36.044Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-install-setup/r-install-setup.html</loc>
+    <lastmod>2025-12-29T20:06:51.090Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-positron/r-positron.html</loc>
-    <lastmod>2025-12-15T22:39:12.647Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-packages/r-packages.html</loc>
+    <lastmod>2025-12-15T22:56:22.365Z</lastmod>
   </url>
   <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/intro-julia-toc.html</loc>
-    <lastmod>2025-12-15T16:36:12.138Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/julia-coding-basics/julia-coding-basics.html</loc>
-    <lastmod>2025-06-30T15:21:13.298Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/julia-install-setup/julia-install-setup.html</loc>
-    <lastmod>2025-12-15T16:46:35.090Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc2b-intro-julia/julia-resources/julia-resources.html</loc>
-    <lastmod>2025-06-30T15:43:39.642Z</lastmod>
+    <loc>https://andreashandel.github.io/mds-tools/courses/fc2a-intro-r/r-tidyverse/r-tidyverse.html</loc>
+    <lastmod>2025-12-15T22:21:36.494Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc3-intro-quarto/quarto-basics/quarto-basics.html</loc>
@@ -218,19 +182,15 @@
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-basic-use/github-basic-use.html</loc>
-    <lastmod>2025-12-29T18:55:36.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-confidentiality/github-confidentiality.html</loc>
-    <lastmod>2025-12-29T18:55:36.010Z</lastmod>
+    <lastmod>2025-12-30T16:17:32.678Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-forks-prs/github-forks-prs.html</loc>
-    <lastmod>2025-12-29T18:55:36.012Z</lastmod>
+    <lastmod>2025-12-30T16:18:38.434Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-install-setup/github-install-setup.html</loc>
-    <lastmod>2025-12-29T18:55:36.012Z</lastmod>
+    <lastmod>2025-12-30T17:06:51.531Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/github-positron/github-positron.html</loc>
@@ -238,7 +198,7 @@
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc4-intro-github/intro-github-toc.html</loc>
-    <lastmod>2025-12-29T18:55:36.018Z</lastmod>
+    <lastmod>2025-12-30T01:24:05.330Z</lastmod>
   </url>
   <url>
     <loc>https://andreashandel.github.io/mds-tools/courses/fc5-intro-ai/ai-conceptual/ai-conceptual.html</loc>

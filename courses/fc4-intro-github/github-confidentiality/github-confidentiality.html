@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -180,32 +145,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git and GitHub in Positron</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-desktop/github-desktop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Desktop Workflow</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Basic GitHub Workflow</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-commits-branches/github-commits-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Commits and Branches</span></a>
+  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub in Positron</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Forks and Pull Requests</span></a>
+ <span class="menu-text">Branches, Forks and Pull Requests</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,15 +193,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
-  <li><a href="#classify-your-assets" id="toc-classify-your-assets" class="nav-link" data-scroll-target="#classify-your-assets">Classify your assets</a></li>
-  <li><a href="#prevent-leaks-proactively" id="toc-prevent-leaks-proactively" class="nav-link" data-scroll-target="#prevent-leaks-proactively">Prevent leaks proactively</a>
-  <ul class="collapse">
-  <li><a href="#gitignore" id="toc-gitignore" class="nav-link" data-scroll-target="#gitignore"><code>.gitignore</code></a></li>
-  <li><a href="#pre-commit-hooks" id="toc-pre-commit-hooks" class="nav-link" data-scroll-target="#pre-commit-hooks">Pre-commit hooks</a></li>
-  <li><a href="#github-secret-scanning" id="toc-github-secret-scanning" class="nav-link" data-scroll-target="#github-secret-scanning">GitHub secret scanning</a></li>
-  </ul></li>
-  <li><a href="#storing-secrets-for-cicd" id="toc-storing-secrets-for-cicd" class="nav-link" data-scroll-target="#storing-secrets-for-cicd">Storing secrets for CI/CD</a></li>
-  <li><a href="#removing-leaked-secrets" id="toc-removing-leaked-secrets" class="nav-link" data-scroll-target="#removing-leaked-secrets">Removing leaked secrets</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#anonymizing-data" id="toc-anonymizing-data" class="nav-link" data-scroll-target="#anonymizing-data">Anonymizing data</a></li>
+  <li><a href="#using-a-private-repo" id="toc-using-a-private-repo" class="nav-link" data-scroll-target="#using-a-private-repo">Using a private repo</a></li>
+  <li><a href="#keeping-files-local" id="toc-keeping-files-local" class="nav-link" data-scroll-target="#keeping-files-local">Keeping files local</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -306,93 +254,39 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-video div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
-<section id="classify-your-assets" class="level2">
-<h2 class="anchored" data-anchor-id="classify-your-assets">Classify your assets</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Data type</th>
-<th>Recommended location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>API tokens, passwords</td>
-<td>Secret manager / CI secrets</td>
-</tr>
-<tr class="even">
-<td>PHI/PII (HIPAA, GDPR)</td>
-<td>Encrypted external store; never Git</td>
-</tr>
-<tr class="odd">
-<td>Proprietary binary files</td>
-<td>Private object storage or LFS</td>
-</tr>
-<tr class="even">
-<td>Configuration templates</td>
-<td>Repo (sanitized), plus CI secrets</td>
-</tr>
-</tbody>
-</table>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The main principle when working with GitHub is that by default <strong>everything you put in a Git repository is public and permanent</strong>. This can cause a problem for confidential or sensitive data. The next sections discuss best practices for dealing with confidential information while using GitHub.</p>
 </section>
-<section id="prevent-leaks-proactively" class="level2">
-<h2 class="anchored" data-anchor-id="prevent-leaks-proactively">Prevent leaks proactively</h2>
-<section id="gitignore" class="level3">
-<h3 class="anchored" data-anchor-id="gitignore"><code>.gitignore</code></h3>
-<p>Add common patterns:</p>
-<pre><code>.Rhistory
-*.pem
-*.key
-.env</code></pre>
+<section id="anonymizing-data" class="level2">
+<h2 class="anchored" data-anchor-id="anonymizing-data">Anonymizing data</h2>
+<p>Often, the parts of the data you need for modeling and analysis don’t need to contain confidential or identifying information, like names or dates of birth. It is often a good idea to process your raw data to remove or anonymize such information before putting it into a Git repository. Once you have done that, you can put the anonymized data into a repository. If you want to be extra safe, you might want to opt for a private repository (see next section). If you put it in a public repository, be <strong>very careful</strong> that you only make things public that are ok to be made public.</p>
 </section>
-<section id="pre-commit-hooks" class="level3">
-<h3 class="anchored" data-anchor-id="pre-commit-hooks">Pre-commit hooks</h3>
-<p>Tool: <strong>pre-commit + detect-secrets</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">repos</span><span class="kw">:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">repo</span><span class="kw">:</span><span class="at"> https://github.com/Yelp/detect-secrets</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rev</span><span class="kw">:</span><span class="at"> v1.4.0</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">hooks</span><span class="kw">:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> detect-secrets</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="using-a-private-repo" class="level2">
+<h2 class="anchored" data-anchor-id="using-a-private-repo">Using a private repo</h2>
+<p>As mentioned, the default for GitHub is to have repositories that are publicly viewable by anyone. However, it is easy to set up a private repository. Private repositories are only viewable by you and people you explicitly give access to. This is a good option if you need to work with sensitive data that cannot be anonymized. Note that private repositories are not free unless you have a GitHub Pro account (which is free for students via the GitHub Student Developer Pack). If you are working in an organization (e.g., your university or company), they might have a GitHub Enterprise account that allows for private repositories.</p>
+<p>You can switch repositories from public to private and vice versa in the repository settings on GitHub. However, be careful when switching from private to public. Make sure that no sensitive data is in the repository before making it public.</p>
 </section>
-<section id="github-secret-scanning" class="level3">
-<h3 class="anchored" data-anchor-id="github-secret-scanning">GitHub secret scanning</h3>
-<p>GitHub automatically scans pushes and PRs for many token patterns. Enterprise users can add custom detectors.</p>
-</section>
-</section>
-<section id="storing-secrets-for-cicd" class="level2">
-<h2 class="anchored" data-anchor-id="storing-secrets-for-cicd">Storing secrets for CI/CD</h2>
-<ul>
-<li><p><strong>GitHub Actions</strong> – <code>Settings → Secrets and variables</code></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">env</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">AWS_ACCESS_KEY_ID</span><span class="kw">:</span><span class="at"> ${{ secrets.AWS_ACCESS_KEY_ID }}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Limit scopes (principle of least privilege).</p></li>
-<li><p>Rotate keys periodically and audit usage.</p></li>
-</ul>
-</section>
-<section id="removing-leaked-secrets" class="level2">
-<h2 class="anchored" data-anchor-id="removing-leaked-secrets">Removing leaked secrets</h2>
-<ol type="1">
-<li><p><strong>Revoke</strong> the token immediately.</p></li>
-<li><p>Rewrite history:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bfg</span> <span class="at">--delete-files</span> id_rsa</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">bfg</span> <span class="at">--replace-text</span> passwords.txt</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--force</span> <span class="at">--all</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-</ol>
+<section id="keeping-files-local" class="level2">
+<h2 class="anchored" data-anchor-id="keeping-files-local">Keeping files local</h2>
+<p>It might be that you do need to work with data that cannot be anonymized and that you cannot or don’t want to put into a private repository. In that case, you should keep such data files outside of your Git repository. You can still use GitHub for your code and non-sensitive files, but keep the sensitive files on your local machine only. You can then load the sensitive data from your local machine when running your code. This way, the sensitive data never enters the Git repository.</p>
+<p>Git allows you to specify certain files and folders that are not being tracked, and thus not being pushed to your repository on GitHub.com. This is done via a special file called <code>.gitignore</code> placed in the root of your repository. You can add patterns to this file to exclude files or directories that contain sensitive information. For instance, if you have a raw data folder that you want to not track with Git/GitHub, you would place this into your <code>.gitignore</code> file:</p>
+<pre><code>data/raw/</code></pre>
+<p>This would exclude the entire <code>raw</code> folder inside the <code>data</code> folder from being tracked by Git. You can add as many patterns as you want to the <code>.gitignore</code> file.</p>
+<p>An important drawback of this approach is that if you work on multiple machines, or work with collaborators, everyone needs to make sure to have the same sensitive files outside of the repository on their local machines. This can be a logistical challenge.</p>
+<p>A possible workaround is to place these files into another Sync service, such as Dropbox, OneDrive, or Google Drive that you consider to be safe. You can then load the files from there when running your code. This way, the sensitive files are not in the Git repository, but you can still share them with collaborators via the Sync service. (This approach also works well for large files that you can’t sync with Git/GitHub.)</p>
+<div class="warning">
+<p>Remember that Git tracks the full project history. So if at any time you added a file with sensitive information, even if you delete it later, it’s still in the history and can be found. If that happens, you basically need to completely delete the GitHub repository (after copying all important files to a safe location) and starting over with a new repository, taking care to keep sensitive files out of this new repor.</p>
+</div>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>Do not store secrets in Git. Use <code>.gitignore</code>, secret scanning, and secure storage for credentials. If something slips in, revoke the secret and rewrite history quickly.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<ul>
-<li><strong>GitHub Docs: Secret scanning</strong> – <a href="https://docs.github.com/code-security/secret-scanning/about-secret-scanning" class="uri">https://docs.github.com/code-security/secret-scanning/about-secret-scanning</a></li>
-<li><strong>detect-secrets</strong> – <a href="https://github.com/Yelp/detect-secrets" class="uri">https://github.com/Yelp/detect-secrets</a></li>
-<li><strong>BFG Repo-Cleaner</strong> – <a href="https://rtyley.github.io/bfg-repo-cleaner/" class="uri">https://rtyley.github.io/bfg-repo-cleaner/</a></li>
-</ul>
 </section>
 <!-- end unit-resources div -->
 <!--
@@ -1993,8 +1887,8 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="pagination-link" aria-label="Forks and Pull Requests">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Forks and Pull Requests</span>
+      <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="pagination-link" aria-label="Branches, Forks and Pull Requests">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Branches, Forks and Pull Requests</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
