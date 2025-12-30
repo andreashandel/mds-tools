@@ -38,7 +38,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## What is Git
 
-[**Git**](https://git-scm.com/) is software that implements a *version control system*. The main idea is that as you (and your collaborators) work on a project, the software tracks and records any changes made by anyone. **Git** tracks every change to your files.
+[**Git**](https://git-scm.com/) is software that implements a *version control system*. The main idea is that as you (and your collaborators) work on a project, the software tracks and records any changes made by anyone. **Git** tracks every change to your files. In Git/GitHub terminology, the project is called a *repository* (or *repo* for short). This consists of a main folder, usually with subfolders, and files. Anything inside this folder/repository is tracked as a project by Git. You can have as many projects/repositories as you want, each is tracked independently.
+
 
 ## What is GitHub
 
@@ -54,36 +55,29 @@ You want to use GitHub to avoid this:
 
 ![Source: [phdcomics.com](https://phdcomics.com/)](phd_versioncontrol.gif){width="60%"}
 
-*GitHub* gives you an organized way to track your projects. It is well suited for collaborative work. Historically, version control was used for software development. It has since become broader and is now used for many types of projects, including data science projects. If you want to learn a bit more about Git/GitHub and why it is a great tool for data analysis, check out this [article by Jenny Bryan](https://peerj.com/preprints/3159/).
+Git/GitHub gives you an organized way to track your projects. It is well suited for collaborative work. Historically, version control was used for software development. It has since become broader and is now used for many types of projects, including data science projects. 
 
-While there are other similar tools that can do the same job as Git/GitHub, 
-
- because it is the most widely used tool for version control and thus a good default choice for coursework and professional collaboration.
+While there are other similar tools that can do the same job as Git/GitHub, we'll focus on those two because they are the most widely used tools for version control and thus a good default choice.
 
 
 ## What to (not) use Git/GitHub for
 
-GitHub is ideal if you have a project with many smallish files, most of which are text files (R code, Quarto/Markdown, LaTeX, etc.) and different people work on different parts of the project.
+GitHub is ideal if you have a project with many smallish files, most of which are text files (code, Quarto/Markdown files, LaTeX, etc.) and different people work on different parts of the project.
 
 GitHub is less useful if you have a lot of non-text files (e.g. Word or PowerPoint) and different team members might want to edit the same document at the same time. In that instance, a solution like Google Docs, Word+Dropbox, Word+OneDrive, etc. might be better.
 
 GitHub also has a problem with large files. Anything larger than around 20MB will slow down things, and files above 100MB usually lead to outright failure. Unfortunately, once you have a failed attempt to sync a large file, it can be quite tricky to fix the repository to work again. Therefore **keep large (>50MB) files out of your GitHub repositories.** If you have to work with such files, try to reduce them first before placing them into the repository. Or place those files in another sync service (e.g. Dropbox, OneDrive, Google Drive) and load them from there. You can also try Git Large File Storage (LFS), but that is more advanced and we will not cover it in this course.
 
-Finally, if you have data, you need to be careful since by default, GitHub repositories (the GitHub name for your projects) are **public** and everyone can see them. You can set them private, but you need to be careful that you don't accidentally expose confidential data to the public. It is in general not a good idea to have confidential data on GitHub. First anonymize your data enough that it is not at risk of identifiability, then you can place it in a private repository. If you put it public, be **very careful** that you only make things public that are ok to be made public.
+Finally, if you have data, you need to be careful since by default, GitHub repositories (the GitHub name for your projects) are **public** and everyone can see them. You can set them private, but you need to be careful that you don't accidentally expose confidential data to the public. We'll discuss this a bit more in a future unit. 
 
 
 ## How to use Git/GitHub
 
-The most powerful and flexible way of using Git/GitHub is to open a command-line terminal and type commands. Since this can be at time intimidating, we will discuss a more user-friendly approach using the GitHub Desktop graphical interface.
+The most powerful and flexible way of using Git/GitHub is to open a command-line terminal and type commands. Since this can be intimidating, we will discuss a more user-friendly approach using the GitHub Desktop graphical interface.
 
-If you are already an experienced GitHub user and have your own preferred setup (e.g. the command line or some other third-party software), you can instead use another graphical client. We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup. 
-
-
+If you are already an experienced GitHub user and have your own preferred setup (e.g. the command line or some other third-party software), you can keep using your preferred approach We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup. 
 
 
-## GitHub developer pack
-
-If you are a student, you can get a lot of nice free goodies through the [GitHub student developer pack](https://education.github.com/pack). You will get GitHub Pro for free, which gives you access to the GitHub Copilot AI assistant and private repositories. Many other parks are also included. If you are eligible, I highly recommend signing up for the student developer pack.
 
 
 ## Git/GitHub and other cloud-based sync options
@@ -118,8 +112,10 @@ Git/GitHub are a software and service that allows you to keep track of your chan
 # Further Resources
 
 * The [GitHub documentation](https://docs.github.com/en) contains a lot of good resources and tutorials. 
+* If you want to learn a bit more about Git/GitHub and why it is a great tool for data analysis, check out this [article by Jenny Bryan](https://peerj.com/preprints/3159/).
+* The online book [*happygitwithr*](https://happygitwithr.com/), also by Jenny Bryan, contains a lot of useful information specifically for R users.
 
-* The online book [*happygitwithr*](https://happygitwithr.com/) contains a lot of useful information specifically for R users.
+
 :::
 <!-- end unit-resources div -->
 
@@ -142,8 +138,7 @@ Git/GitHub are a software and service that allows you to keep track of your chan
 ::: {.unit-exercise}
 # Practice
 
-* If you haven't done so, create a GitHub user account.
-* If eligible, apply for the GitHub student developer pack.
+* Nothing to practice for now.
 
 :::
 <!-- end unit-exercise div -->
