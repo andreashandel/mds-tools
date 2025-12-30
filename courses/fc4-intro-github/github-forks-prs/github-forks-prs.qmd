@@ -56,12 +56,12 @@ Often, using just a single branch is all you need. The name of the main branch c
 
 As you work on your repository, make commits and push/pull, you are creating a line along the `main` branch. You can create additional branches to isolate your work. For instance if you want to try out a new feature, you can create a new branch for that feature. This way, your work on the new feature does not affect the `main` branch until you are sure your new feature works. At this point, you can merge your branch back into the `main` one. 
 
-Branches are useful for projects with multiple collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch.
+Branches are useful for projects with collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch. 
 
 
 ## Forks
 
-A fork is a personal copy of someone else's repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.
+To be able to use branches, you need to be an owner or member of a repository. In contrast, you can fork any public repository. A fork is a personal copy of someone else's repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.
 
 
 ## Making a fork 
@@ -74,7 +74,11 @@ If you plan on working on the fork and later contributing to the original reposi
 
 ## Open a pull request (PR)
 
-Push your branch to your fork, then open a pull request from your branch to the original repository. Provide a clear summary of what changed and why.
+Assume that you forked a repository because you wanted to contribute some improvements. You cloned your fork to your computer, made some changes, committed them, and pushed the branch to your fork on GitHub.
+
+Next, you ask the owner of the original repository to incorporate the updates you made in the fork into their main repository. This last part is called issuing a **pull request**. You are requesting that the other person *pull* your changes into their repository, hence the at times confusing (at least for us) terminology. Maybe thinking of it as *merge* requests or *sync* requests is better, i.e. you are requesting that they merge or sync your changes into their repository. You'll find the terminology *merge request* is used at times. If the person who controls the main repository likes your changes, they will *merge* your fork into the main branch. And just like that, you have contributed to some project becoming better! 
+
+To open a pull request, go to your fork on GitHub. You should see a button that says **Compare & pull request**. Click on it. You will be taken to a page where you can provide a title and description of your changes. Be clear about what you changed and why. Once you are satisfied, click on **Create pull request**. The owner of the original repository should receive a notification that someone created a pull request.
 
 
 
