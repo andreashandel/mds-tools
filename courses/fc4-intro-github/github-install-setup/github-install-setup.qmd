@@ -62,6 +62,8 @@ If you are a student, you can get a lot of nice free goodies through the [GitHub
 
 GitHub Desktop is a free graphical client made by the GitHub folks that makes it fairly easy to use Git/GitHub without the command line. [Download GitHub Desktop](https://github.com/apps/desktop) and install it. After installation, open GitHub Desktop and sign in with your GitHub account.
 
+:::
+<!-- end unit-reading div -->
 
 
 ::: {.unit-summary}
