@@ -6,7 +6,7 @@ subtitle: ""
 ::: {.unit-overview}
 # Overview
 
-Before you can track changes, you need Git on your computer and a few global settings that stamp each commit with your identity.
+This unit guides you through installing Git, creating a GitHub account, and installing GitHub Desktop.
 
 :::
 <!-- end unit-overview div -->
@@ -14,10 +14,9 @@ Before you can track changes, you need Git on your computer and a few global set
 ::: {.unit-goals}
 # Goals
 
-* Install the latest stable Git on your system.
-* Configure your username, email, and default branch name.
-* Generate an SSH key and add it to GitHub.
-* Verify connectivity to GitHub.
+* Install Git on your system.
+* Set up a GitHub account.
+* Install and configure GitHub Desktop.
 
 :::
 <!-- end unit-goals div -->
@@ -40,60 +39,30 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Install Git
 
-Download Git from <https://git-scm.com/downloads> and install it for your operating system.
+Install Git on your computer. Go to the [Git website](https://git-scm.com/) and follow the isntructions. You can accept the default options during installation. It is likely that you will need administrator rights to be able to install Git. 
 
-- Windows: Use the default installer options unless you know you want a different setup.
-- macOS: You can install via the Git website or with Homebrew (`brew install git`).
-- Linux: Use your package manager (e.g., `sudo apt install git`).
 
-Confirm installation:
+## Set up GitHub
 
-```bash
-git --version
-```
+Go to [the GitHub website](https://github.com/) and create an account. The email you use should be one you use regularly, ideally one that you is your permanent email address. This will be the email address to which GitHub sends notifications. Next, choose a user name and pasword to finish setting up your account.
 
-## Configure identity and defaults
+:::{.note}
+GitHub is widely used professionally. You might use it for your career and you might want to allow other people to see your GitHub presence. You should therefore use a future-proof, professional user name for your GitHub account. Your name is always a good idea.
+::: 
 
-Set your name and email (this is what appears in commit history):
+Since you are doing a lot of GitHub work out in the open, it is a good idea to associate a professional image with your profile. This also makes it easier for others to recognize that it's you who when they are for instance trying to invite as a collaborator. You can do so by going to your profile and changing the image. You can also add further information to your profile, such as a short bio, your location, and a link to your website or blog.
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
 
-Set the default branch name to `main`:
+## Install GitHub Desktop
 
-```bash
-git config --global init.defaultBranch main
-```
+GitHub Desktop is a free graphical client made by the GitHub folks that makes it fairly easy to use Git/GitHub without the command line. [Download GitHub Desktop](https://github.com/apps/desktop) and install it. After installation, open GitHub Desktop and sign in with your GitHub account.
 
-## Generate an SSH key and add it to GitHub
-
-SSH keys let you connect to GitHub without re-entering your password.
-
-```bash
-ssh-keygen -t ed25519 -C "you@example.com"
-```
-
-Then add the public key (usually `~/.ssh/id_ed25519.pub`) to GitHub under:
-`Settings → SSH and GPG keys`.
-
-## Test your connection
-
-```bash
-git ls-remote git@github.com:octocat/Hello-World.git
-```
-
-If you see output and no error, your SSH connection is working.
-
-:::
-<!-- end unit-reading div -->
 
 
 ::: {.unit-summary}
 # Summary
 
-You installed Git, configured your identity, set a default branch name, and connected to GitHub via SSH. This is the foundation for every Git/GitHub workflow in the course.
+You installed Git and created a GitHub account. This sets you up for the next step of installing GitHub Desktop.
 
 :::
 <!-- end unit-summary div -->
@@ -102,9 +71,7 @@ You installed Git, configured your identity, set a default branch name, and conn
 ::: {.unit-resources}
 # Further Resources
 
-* **Git Downloads** – <https://git-scm.com/downloads>
-* **Generating SSH Keys** – <https://docs.github.com/authentication/connecting-to-github-with-ssh>
-* **Git Credential Storage** – <https://git-scm.com/docs/gitcredentials>
+* []
 
 :::
 <!-- end unit-resources div -->
@@ -128,11 +95,6 @@ You installed Git, configured your identity, set a default branch name, and conn
 ::: {.unit-exercise}
 # Practice
 
-1. Install Git and confirm `git --version` ≥ 2.40.
-2. Set your global username and email.
-3. Generate an SSH key and add it to your GitHub account.
-4. Clone `git@github.com:octocat/Hello-World.git` to verify SSH access.
-5. Change the default editor (`git config --global core.editor "nano"` or similar).
 
 :::
 <!-- end unit-exercise div -->

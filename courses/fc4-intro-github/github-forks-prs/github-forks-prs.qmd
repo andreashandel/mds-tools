@@ -1,12 +1,13 @@
 ---
-title: Forks and Pull Requests
+title: Branches, Forks and Pull Requests
 subtitle: ""
 ---
 
 ::: {.unit-overview}
 # Overview
 
-Forks and pull requests are the standard workflow for contributing to repositories you do not own. This unit explains how to fork, make changes, and open a PR.
+The basic workflow we covered earlier works well for basic solo work. But if you want to collaborate with others, or want to do more complex projects, GitHub offers additional features. Three important ones are branches, forks, and pull requests.
+
 
 :::
 <!-- end unit-overview div -->
@@ -14,10 +15,10 @@ Forks and pull requests are the standard workflow for contributing to repositori
 ::: {.unit-goals}
 # Goals
 
-* Understand when to use a fork.
-* Create a fork and clone it locally.
-* Keep your fork in sync with the original repository.
-* Open a pull request with a clear description.
+* Know ways to collaborate with others on GitHub.
+* Know what branches are and when to use them.
+* Understand when and how to use a fork.
+* Be able to open and merge a pull request.
 
 :::
 <!-- end unit-goals div -->
@@ -38,29 +39,43 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
-## When to fork
+## Collaborators
 
-Use a fork when you want to contribute to a repository you do not have write access to. Your fork is your own copy under your account.
+GitHub is great for collaboration. There are two main ways to collaborate on GitHub: as *collaborators* on the same repository, or via *forks* and *pull requests*. 
 
-## Fork and clone
+To add collaborators to your repository, go to the repository on GitHub, click on **Settings** > **Manage access** > **Invite collaborators**. You can then search for GitHub user names or email addresses to invite people. Once they accept the invitation, they can push changes directly to your repository. This is the simplest way to collaborate if you trust the people you are working with. 
 
-1. Click **Fork** on GitHub.
-2. Clone your fork to your computer.
-3. Create a branch for your changes.
+A potential problem with this approach is that multiple people might work on the same files at the same time, leading to *merge conflicts* when changes are pushed. To avoid this, collaborators often create separate *branches* for their work.
 
-## Keep your fork up to date
 
-Add the original repository as an "upstream" remote so you can pull updates:
+## Branches
 
-```bash
-git remote add upstream https://github.com/ORIGINAL/REPO.git
-git fetch upstream
-git merge upstream/main
-```
+Branches let you work on different versions of a repository at the same time. The main branch is often called `main`. As you work on your repository, make commits and push/pull, you are creating a line along the `main` branch. You can create additional branches to isolate your work. For instance if you want to try out a new feature, you can create a new branch for that feature. This way, your work on the new feature does not affect the `main` branch until you are sure your new feature works. At this point, you can merge your branch back into the `main` one. 
+
+Branches are very useful for projects with multiple collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch.
+
+
+## Forks
+
+A fork is a personal copy of someone else's repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.
+
+
+## Making a fork 
+
+Go to the GitHub page of the repository you want to fork, and click on the **Fork** button at the top right. This creates a copy of the repository under your GitHub account. This is now your repository _forever_. You can clone it to your computer, make changes, and push them to your fork without affecting the original repository.
+
+If you plan on working on the fork and later contributing to the original repository with a pull request (see below), you want to make sure you occasionally check to make sure your fork is up to date with the original repository. 
+
+
 
 ## Open a pull request (PR)
 
 Push your branch to your fork, then open a pull request from your branch to the original repository. Provide a clear summary of what changed and why.
+
+
+
+## Merge a pull request
+
 
 :::
 <!-- end unit-reading div -->

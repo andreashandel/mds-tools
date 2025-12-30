@@ -15,7 +15,7 @@ project:
     - "!auxiliary/**"
     - "!assets/**" # i don't think we need stuff in this folder rendered, but not sure
 execute:
-  freeze: false # when to re-run code during full project render
+  freeze: auto # when to re-run code during full project render
   cache: false
   echo: true
   keep-md: false
@@ -119,10 +119,8 @@ website:
         - courses/fc4-intro-github/intro-github-toc.qmd
         - courses/fc4-intro-github/github-introduction/github-introduction.qmd
         - courses/fc4-intro-github/github-install-setup/github-install-setup.qmd
-        - courses/fc4-intro-github/github-positron/github-positron.qmd
-        - courses/fc4-intro-github/github-desktop/github-desktop.qmd
         - courses/fc4-intro-github/github-basic-use/github-basic-use.qmd
-        - courses/fc4-intro-github/github-commits-branches/github-commits-branches.qmd
+        - courses/fc4-intro-github/github-positron/github-positron.qmd
         - courses/fc4-intro-github/github-forks-prs/github-forks-prs.qmd
         - courses/fc4-intro-github/github-confidentiality/github-confidentiality.qmd
         - courses/fc4-intro-github/github-further-topics/github-further-topics.qmd

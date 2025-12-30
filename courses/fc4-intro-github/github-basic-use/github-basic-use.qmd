@@ -6,7 +6,7 @@ subtitle: ""
 ::: {.unit-overview}
 # Overview
 
-This unit covers the essential GitHub workflow: clone, edit, stage, commit, pull, and push. It is the minimum you need to collaborate on class projects.
+This unit covers the essential GitHub workflow: clone, edit, stage, commit, pull, and push. 
 
 :::
 <!-- end unit-overview div -->
@@ -17,7 +17,7 @@ This unit covers the essential GitHub workflow: clone, edit, stage, commit, pull
 * Clone a repository from GitHub.
 * Check status and stage changes.
 * Create clear, small commits.
-* Pull and push without conflicts.
+* Sync changes with pull and push.
 
 :::
 <!-- end unit-goals div -->
@@ -38,9 +38,49 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
+## Git/GitHub terminology
+
+Git/GitHub has a lot of specialized terminology that takes getting used to. The GitHub folks posted a [handy page with short descriptions of important terms](https://docs.github.com/en/github/getting-started-with-github/github-glossary). Some of the terms you will encounter soon are *Repository* (also often called *repo*), *User*, *Organization*, *Branch*, *Fork*, *Push*, *Pull*, *Commit* and *Stage*. *Staging* is the step you need to do after you made changes and before you commit them. You need to know what it means and you need to do/use it as part of the GitHub workflow.
+
+Each repository can have multiple branches (think of it as alternative versions of all files, allowing different people to work on different aspects of a project with minimal interference). In this course, we will mainly just work with a single branch. The name of the main branch can be anything, but these days the default is `main`. Until not too long ago, the main branch was referred to as `master`.
+
+### Basic terminology
+
+| Term | Meaning |
+|------|---------|
+| repository | collection of commits + branches |
+| commit | recorded snapshot with message & hash |
+| branch | movable pointer to a commit history |
+| clone | local copy of a remote repository |
+| push / pull | sync local and remote histories |
+
+
+
 ## Clone a repository
 
 Cloning copies a GitHub repository to your computer. After cloning, you work locally and sync changes to GitHub.
+
+## Clone a repository
+
+Use **File → Clone repository** and select a repo from your GitHub account. Choose a local folder that is not synced by Dropbox or OneDrive.
+
+
+
+## Make and commit changes
+
+1. Edit a file in your project.
+2. In GitHub Desktop, review changes in the **Changes** tab.
+3. Write a clear commit message and click **Commit to main** (or the current branch).
+
+
+
+## Pull and push
+
+- **Pull** to bring remote changes to your computer before you start work.
+- **Push** to upload your local commits to GitHub.
+
+If GitHub Desktop reports conflicts, open the affected file and resolve the conflicts manually, then commit the resolution.
+
 
 ## Check status and stage changes
 
