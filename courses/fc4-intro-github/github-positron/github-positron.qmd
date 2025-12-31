@@ -52,6 +52,11 @@ Let's go through a minimal Git workflow in Positron. Open the Github repository 
 
 If you recently did a push/pull with GitHub Desktop, the panel showing changes should be empty. You will also see in the bottom panel that the `main` symbol (your local repo) and the `origin/main` symbol (the remote repo on GitHub) are in sync and on the same line.
 
+Now edit the README file or another file you created in that repository. After saving the file, go back to the Git panel in Positron. You should see the changed file listed in the top panel.
+
+You will also see the `Commit` button. In the box above, write a short, descriptive commit message. Then click the `Commit` button.
+
+
 ## Commit changes
 
 Write a short, descriptive commit message. Good commit messages describe *what changed* and *why*.
