@@ -38,25 +38,22 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
-
 This unit will walk you through the creation of a basic website that will serve as your portfolio. 
-
 
 ## GitHub repository creation
 
 We will use GitHub to both manage this project and host the website. 
 
-To make things a bit easier and faster, we will use a GitHub repository template that already has some of the necessary Quarto files and configuration.
-Go to the [Online Portfolio Template](https://github.com/andreashandel/online-portfolio-template). Make sure you are logged into GitHub, then click **Use this template**.
+To make things a bit easier and faster, we will use a GitHub repository template that already has some of the necessary Quarto files and configuration. Go to this [Online Portfolio Template](https://github.com/andreashandel/online-portfolio-template). Make sure you are logged into GitHub, then click **Use this template**.
 
-Create a new repository called `yourname-portfolio` (include both first and last name, e.g., `andreashandel-portfolio`). Choose a public repository, then create it.
+Using this template, create a new repository called `yourname-portfolio` (include both first and last name, i.e., `FirstnameLastname-portfolio`). Choose a public repository, then create it.
 
-Next, **clone** the repository to your local computer (using e.g. GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. Remember that these GitHub repositories/folders should not be nested inside each other, and should not be synced with some other software (e.g., Dropbox/OneDrive).
+Next, **clone** the repository to your local computer. We recommend organizing your local repository folders in some way that works well for you. Remember that GitHub repositories/folders should not be nested inside each other, and should not be synced with some other software (e.g., Dropbox/OneDrive).
 
 
 ## Quick local website check
 
-Open the repository as a project. Then open the main `index.qmd` file. You should see the `Preview` button in the upper left corner of the editor. Click it to render **the website**. Alternatively, you can type `quarto render` into the terminal.
+Open the repository folder on your computer as a project. Then open the main `index.qmd` file. You should see the `Preview` button in the upper left corner of the editor. Click it to render **the website**. Alternatively, you can type `quarto render` into the terminal.
 
 You should see in the terminal window what Quarto is doing. It is not only rendering the current open `.qmd` file, but instead all files that are part of this project - which is a Quarto website. 
 

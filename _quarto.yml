@@ -150,6 +150,7 @@ website:
         - courses/fc6-portfolio-creation/portfolio-creation-toc.qmd
         - courses/fc6-portfolio-creation/portfolio-introduction/portfolio-introduction.qmd
         - courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.qmd
+        - courses/fc6-portfolio-creation/portfolio-resources/portfolio-resources.qmd
   page-footer:
     left: |
       {{< fa regular copyright >}} The Authors, 2025

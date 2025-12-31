@@ -37,7 +37,7 @@ In our context, a portfolio is an organized collection of work that showcases sk
 
 It is useful to showcase your skills for several reasons.
 
-If you are looking for a new job, the application materials you submit, such as cover letter and CV or resume, generally need to be fairly short. You can mention specific skills in those documents, but you can't really demonstrate them. This makes it difficult.
+If you are looking for a new job, the application materials you submit, such as cover letter and CV or resume, generally need to be fairly short. You can mention specific skills in those documents, but you can't really demonstrate them. But you can add a link to your application materials to point interested readers to a website that showcases your skills in more detail.
 
 Even if you are not looking for a new job, having your work and skills out there is a good way of having potential opportunities come your way. Say someone is looking for a speaker/presenter for an event who could talk about a particular topic. They might ask colleagues for recommendations, or search online. If you have work online that shows that you are proficient in that topic, you might be contacted.
 
@@ -61,6 +61,9 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 ::: {.unit-resources}
 # Further Resources
 
+* [The Tufts University Career Center on Portfolios](https://careers.tufts.edu/resources/what-is-an-online-portfolio/) has a few more thoughts on why having a portfolio is a good idea and some tips to consider.
+
+* [This GitHub repository and presentation](https://github.com/deepshamenghani/Portfolio_with_Quarto_ppt) by Deepsha Menghani provides a nice overview of creating a portfolio with Quarto.
 
 
 :::
