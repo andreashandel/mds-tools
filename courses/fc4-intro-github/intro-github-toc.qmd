@@ -11,7 +11,6 @@ title: "TOC: A brief introduction to Git and GitHub"
 - [Basic Use](github-positron/github-positron.qmd)
 - [Git/GitHub and Positron](github-positron/github-positron.qmd)
 - [Branches, Forks and Pull Requests](github-forks-prs/github-forks-prs.qmd)
-- [Git/GitHub and confidentiality](github-confidentiality/github-confidentiality.qmd)
 - [Additional Topics](github-further-topics/github-further-topics.qmd)
 - [Further Resources](github-resources/github-resources.qmd)
 

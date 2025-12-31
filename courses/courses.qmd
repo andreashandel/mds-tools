@@ -28,13 +28,13 @@ More details about each course can be found in the course-specific overview page
 
 * [A brief introduction to Quarto](/courses/course-landing-pages/fc3-intro-quarto.qmd)
 
+* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc4-intro-github.qmd)
+
 
 # More Tools
 
-* [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc4-intro-github.qmd)
 
 * [A brief introduction to AI tools](/courses/course-landing-pages/fc5-intro-ai.qmd)
-
 
 
 # Using the Tools

@@ -122,7 +122,6 @@ website:
         - courses/fc4-intro-github/github-basic-use/github-basic-use.qmd
         - courses/fc4-intro-github/github-positron/github-positron.qmd
         - courses/fc4-intro-github/github-forks-prs/github-forks-prs.qmd
-        - courses/fc4-intro-github/github-confidentiality/github-confidentiality.qmd
         - courses/fc4-intro-github/github-further-topics/github-further-topics.qmd
         - courses/fc4-intro-github/github-resources/github-resources.qmd
     - id: fc5              # sidebar shown on all files it lists

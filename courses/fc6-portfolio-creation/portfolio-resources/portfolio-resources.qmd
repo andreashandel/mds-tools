@@ -49,7 +49,6 @@ The [official Quarto guide](https://quarto.org/docs/guide/) is a great place to 
 The [Gallery section](https://quarto.org/docs/gallery/) of the Quarto website showcases a variety of examples created by other users. Browsing through these examples can provide inspiration and ideas for your own future products.
 
 
-
 ## Different publishing platforms
 
 Using GitHub Pages is a great option for hosting your portfolio website, but there are other alternatives. A popular one is the Netlifiy web hosting service. Netlify offers a free tier that is quite generous and easy to use. You can connect your GitHub repository to Netlify, and it will automatically build and deploy your site whenever you push changes. Or you can publish to netlify directly with Quarto. 
@@ -58,6 +57,7 @@ For a nice walk-through of using Netlify with Quarto, see [A beginner’s guide 
 
 Another good resource is the [Netlify section of the Quarto documentation website](https://quarto.org/docs/publishing/netlify.html). The official Quarto website also describes [other publishing options](https://quarto.org/docs/publishing/).
 
+[Dissemination using Quarto and Github Pages](https://bartlettje.github.io/dissemination_quarto/) is an online book by James Bartlett which contains a lot of information about using Quarto and Github Pages, not just for websites but also other output formats.
 
 
 ## Other portfolio type products
