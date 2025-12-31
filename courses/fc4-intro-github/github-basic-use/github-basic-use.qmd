@@ -93,6 +93,15 @@ Now go back to GitHub Desktop. You should see that it detected the change you ma
 
 These commits that will accumulate as you work on the project will create a history of changes that you can always go back to if needed. So if you did something a few weeks ago, then changed your code and now realized you need the old version back, you can click on that commit in GitHub Desktop and restore the files to that version. You can then pull out the changes you need from that version.
 
+## General Github workflow
+
+In the future, if you work on repositories like this one (or any others), your workflow should be as follows:
+
+- If needed, create a repository online (or local). 
+- Clone the repository to your local machine with GitHub desktop or any other way (e.g. the terminal). 
+- In the future, any time you start working on that repository, check that it's up to date and as needed, do a **pull**.
+-   Once your local repo is up-to-date, open your project. Make all the edits you like. Make sure to run your code and render your Quarto files. Once you are done with edits, **stage/commit/push** your changes back to the remote server.
+
 
 
 ## Best practices

@@ -38,50 +38,15 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
-## Why large files are a problem
+## Force push
 
-* Git stores objects as delta-compressed snapshots. Binary files do not diff well, so every small edit triggers a full-size blob.
-* Repository size affects all contributors: clones, pulls, and CI jobs.
+::: note
+Sometimes, there might be issues that prevent pushing/pulling, e.g., if someone else changed the same files you did. If you are sure your local version is the correct one, you can perform a **force push**. A force push will overwrite the remote repo with the local repo forcibly. This means that the remote will be updated with any changes that exist on your local computer. If any changes have been made to the code since you began editing (i.e. someone else has made a commit to the repo while you were working on it) they will be **destroyed** by the force push since they are not on your local repo. For this assignment, you are the only person working on your introduction so it is unlikely you will encounter any issues with force push, but it is good to be aware of the function of the action. Use with care. It's generally better to [resolve merge conflicts.](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git)
+:::
 
-| Size | Impact |
-|------|--------|
-| ≤ 100 MB | OK for GitHub |
-| 100–500 MB | GitHub warns; LFS recommended |
-| > 2 GB per repo / > 100 MB per file | Hard GitHub limit |
 
-## Git LFS essentials
+## Large files
 
-1. **Install**
-   ```bash
-   git lfs install
-   ```
-2. **Track patterns**
-   ```bash
-   git lfs track "*.fastq.gz" "*.png"
-   echo "*.fastq.gz filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
-   ```
-3. **Add and commit** files as usual.
-   Git replaces the content with a small pointer file; binary data uploads to the LFS server.
-
-### Storage and bandwidth quotas
-
-* Free GitHub accounts: 1 GB storage + 1 GB bandwidth/month.
-* Extra packs are available; or self-host an LFS server.
-
-## Alternative solutions
-
-| Tool | Best for | Notes |
-|------|----------|-------|
-| **DVC** | ML datasets and pipelines | Data tracked in remote blob storage (S3, GCS) |
-| **git-annex** | Offline archival | Uses symbolic links; steeper learning curve |
-| **Rclone + checksum manifest** | Occasional big dumps | Simple, not integrated with Git history |
-
-## Tips and pitfalls
-
-* Add `.gitattributes` before the first commit.
-* Keep raw data in external storage and version metadata only.
-* Use `.gitignore` for scratch, cache, outputs; never commit derived artifacts.
-* CI: install `git-lfs` and run `git lfs pull` before build steps.
 
 :::
 <!-- end unit-reading div -->

@@ -6,7 +6,7 @@ subtitle: ""
 ::: {.unit-overview}
 # Overview
 
-This assessment walks you through creating a portfolio website. You will set up a GitHub repository from a template, customize Quarto files, and publish the site with GitHub Pages.
+This unit walks you through creating a portfolio website. You will set up a GitHub repository from a template, customize Quarto files, and publish the site with GitHub Pages.
 
 :::
 <!-- end unit-overview div -->
@@ -46,96 +46,83 @@ This unit will walk you through the creation of a basic website that will serve 
 
 We will use GitHub to both manage this project and host the website. 
 
-To make things a bit easier and faster, we will use a GitHub repository template that already has the necessary Quarto files and configuration.
+To make things a bit easier and faster, we will use a GitHub repository template that already has some of the necessary Quarto files and configuration.
 Go to the [Online Portfolio Template](https://github.com/andreashandel/online-portfolio-template). Make sure you are logged into GitHub, then click **Use this template**.
 
-Create a new repository called `yourname-portfolio` (include both first and last name, e.g., `andreashandel-portfolio`). Choose a public repository.
+Create a new repository called `yourname-portfolio` (include both first and last name, e.g., `andreashandel-portfolio`). Choose a public repository, then create it.
 
-Next, **clone** the repository to your local computer (using e.g. GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. It's generally a bad idea to place repository folders into a local folder that is synced with some other service (e.g., Google Drive/Dropbox/OneDrive.)
+Next, **clone** the repository to your local computer (using e.g. GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. Remember that these GitHub repositories/folders should not be nested inside each other, and should not be synced with some other software (e.g., Dropbox/OneDrive).
 
 
-### Quick local website check
+## Quick local website check
 
-Open the repository as a project. Then open the main `index.qmd` file. You should see the `Preview` button in the upper left corner of the editor. Click it to render **the website**. You should see in the terminal window what Quarto is doing. It is not only rendering the current open `.qmd` file, but instead all files that are part of this project - which is a Quarto website. 
+Open the repository as a project. Then open the main `index.qmd` file. You should see the `Preview` button in the upper left corner of the editor. Click it to render **the website**. Alternatively, you can type `quarto render` into the terminal.
+
+You should see in the terminal window what Quarto is doing. It is not only rendering the current open `.qmd` file, but instead all files that are part of this project - which is a Quarto website. 
 
 You will likely get an error message during rendering, telling you about missing R packages. Install those packages as needed. Once rendering works without errors and is complete, you should see the website preview in the Viewer pane, or your browser (depending on your settings). If it is in the Viewer pane and you want to see it in your browser, click the **Open in Browser** button (the box with an arrow pointing out of it, in the upper right of the Viewer pane).
 
-If you get missing package errors, install them and try again. A local preview should open in your browser.
 
+## Quarto content creation
 
-::: note
-If you cannot see the Build tab, open the Terminal and run `quarto render` to build the site.
-:::
+Open `index.qmd` in the editor. This is the main landing page for your website. Change the text however you want to. What you are writing here is Markdown, so now would be a good time to check out some of the Markdown resources and play with them. The [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html) section of the Quarto guide might be helpful - or any of the other many Markdown resources available online.
 
-### Quarto content creation
+Also recall that you can switch between `Source` and `Visual` view in the editor. It’s a good idea to switch back and forth to start to learn how certain graphical elements look like in plain text formatting. You’ll likely be using a mix of visual and source view a lot.
 
-Open `index.qmd` and update the landing page text. This is Markdown, so feel free to experiment with headings, lists, and formatting.
+Next, open `aboutme.qmd` and write some text introducing yourself, as follows:
 
-Next, open `aboutme.qmd` and write a personal introduction:
+* Talk a bit about yourself, your background, training, research interests. Let us know what kind of statistics, programming, data analysis experience you already have. I’d also be curious to know what you most hope to learn in this course. And then tell us some quirky/interesting/curious thing about you.
+* Give your text a nice structure with headings, subheadings, etc.
+* Include a picture of yourself. To do so, place the picture in the repository and link it from the Quarto file.
+*  Include a link to a picture/video/website/etc. The linked material should be somehow related to data analysis. Find something that you think is really cool/interesting/weird/etc. Provide a few explanatory sentences.
+* If you want, feel free to get creative and include other things. You can play with Quarto if you wish to, e.g., you can try to include a table or a video or any other elments you want to explore.
 
-- Describe your background, interests, and experience with data analysis.
-- Include headings and subheadings.
-- Add a picture of yourself (store it in the repository and link it).
-- Add a link to a data-related resource you find interesting, with a short explanation.
-- Optionally add extra content (tables, video, or other elements).
-
-Save and re-render the site to see your changes.
+Once done (or as you go along, if you want to see your udpates), save and re-render the site to see your changes.
 
 ::: note
-This portfolio website and everything you put on it is public. Do not post anything you want to keep private.
+This portfolio website and everything you put on it is public. So don’t put anything on there that you don’t want to be publicly known.
 :::
 
-### Website control
 
-Open `_quarto.yml`. This file controls the site title, navigation, and styling.
+## Website configuration
+
+For Quarto, a lot of the look/feel and structure of a website is controlled in what's called a YAML file (it has the ending `.yml`). The main one is called `_quarto.yml`. Open it. You'll see that it contains a bunch of information about the website, including the title, the menu structure, and some styling information.
 
 Make the following changes:
 
-- Update the site title.
-- Replace `URL-TO-THIS-REPOSITORY-HERE` with the GitHub URL of your repository.
-- Try a different `theme` and optionally a different syntax highlight scheme.
+-   Update the title of your website.
+
+-   **Replace the `URL-TO-THIS-REPOSITORY-HERE` placeholder text with the Github URL of the repository you created (it should be something like `https://github.com/githubusername/yourname-portfolio`).**
+
+-   It is possible to change the look of your website. Full styling requires knowledge of CSS and HTML. We won't get into this. But we'll explore a quick way to change the look. Replace `theme` with a different one. [Many themes are available](https://quarto.org/docs/output-formats/html-themes.html). Try some, see how things change. You can also change the highlight scheme. For further styling, you can put custom CSS code into the `styles.css` file. We won't do this here, but feel free to explore on your own.
 
 ::: warning
-YAML is very sensitive to indentation. A small spacing error can break rendering.
+YAML (which is the format of `_quarto.yml`) is VERY finicky when it comes to formatting. You need to have exactly the right number of empty spaces. If you ever change a YAML file and you get a weird error message when trying to rebuild your website, it's likely because some minor formatting is wrong, e.g. an empty space is missing or too much. Just keep that in mind. Positron usually gives you a warning in the `Problems` tab.
 :::
 
-### Sending updates to GitHub
 
-Once you are happy with your updates, commit and push them:
+## Sending updates to Github
 
-1. Close RStudio/Positron.
-2. Open GitKraken (or your preferred Git client).
-3. Stage changes, write a commit message, and commit.
-4. Push to GitHub.
+Once you are happy with your updates, or if you want to take a break, make sure to commit and push your updates to your remote repository on GitHub.com. 
 
-::: note
-If you ever need to force push, be aware that it overwrites remote history. It is usually better to resolve merge conflicts instead.
-:::
+## Making the website public
 
-### Making the website public
+We want to set things such that your repository can at the same time become a public website. Github allows you to do that with its [*Github Pages*](https://pages.github.com/) feature. To turn on the *Github Pages* feature, go to your repository on github.com . On the top of the website for your repository, you should see a `Settings` button. Click on it and then find the `Pages` section. In the `Branch` section, switch `none` to `main` and folder as `/docs`. Click `Save`.
 
-Enable GitHub Pages for the repository:
+This should now have turned on your website. You might have gotten a notice about the location of your new website. If yes, follow the link. If not, you can get there by going to a URL that has the form `https://username.github.io/yourname-portfolio/`. It might take a several seconds before the page is available, if you get a 'not found' error, wait a bit and try again. If everything works, your website is now public!
 
-1. Go to your repository on github.com.
-2. Open **Settings → Pages**.
-3. Set the branch to `main` and the folder to `/docs`.
-4. Save.
+We used the Github pages feature to create the website. You might have noticed that the files for your new website live on the domain `github.com`, while your nice-looking website lives at the domain `github.io`. This is how Github Pages work. It take files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder ( `/docs` for our setup). Your website URL and your repository URL are distinct. All github actions, like pushing, pulling, cloning, etc. are done with **the repository** on the `github.com` domain. The `github.io` domain is only there to display websites.
 
-Your site URL will look like `https://username.github.io/yourname-MADA-portfolio/`. It can take a minute for the site to appear.
 
-### Update your repository README
+## Update your repository Readme file
 
-Open `README.md` and add a sentence pointing to your website URL. This is the file people see when they visit your GitHub repository.
+To allow quick switching between your repository and the website creeated from that repository, we'll add that information to the repository README file.
+Open the README.md file. This file will not be part of your website, but it is what people see if they land at your github repository. Add text to the README  that points users to the URL for your new website. (You've done the reverse above in your Quarto YAML file, allowing users to quickly go from your website to your Github repository).
 
-### General GitHub workflow
+Make any other edits to the README you like. Once done with edits, remember to commit and push.
 
-In the future, your workflow should be:
 
-1. Pull latest changes.
-2. Edit and render in RStudio/Positron.
-3. Commit and push with your Git client.
 
-**You will use this workflow repeatedly.**
 
 :::
 <!-- end unit-reading div -->
@@ -153,11 +140,8 @@ You created a portfolio repository, customized Quarto content, published the sit
 ::: {.unit-resources}
 # Further Resources
 
-- [Dissemination using Quarto and GitHub Pages](https://bartlettje.github.io/dissemination_quarto/)
-- [Beginner's guide to building a simple website with Quarto and Netlify](https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/)
-- [Quarto websites documentation](https://quarto.org/docs/websites/)
-- [From Hugo to Quarto blog post](https://www.andreashandel.com/posts/2022-10-01-hugo-to-quarto-migration/)
-
+- [Dissemination using Quarto and Github Pages](https://bartlettje.github.io/dissemination_quarto/) is an online book by James Bartlett which contains a lot of information about using Quarto and Github Pages, not just for websites but also other output formats.
+- [A beginner’s guide to building a simple website with Quarto & Netlify](https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/) by Jadey Ryan is another potential good resource. It covers how to create websites with Quarto and Netlify. It doesn't use Git/GitHub, but still has a lot of relevant information for the Quarto portion of the website creation process.
 :::
 <!-- end unit-resources div -->
 
@@ -180,9 +164,7 @@ You created a portfolio repository, customized Quarto content, published the sit
 ::: {.unit-exercise}
 # Practice
 
-1. Complete the portfolio setup and publish the site.
-2. Post your website URL to the `introductions` Discord channel.
-3. Reply to at least two classmates with constructive feedback.
+If you executed all the steps above, you hopefully got a good bit of practice 😄.
 
 :::
 <!-- end unit-exercise div -->
