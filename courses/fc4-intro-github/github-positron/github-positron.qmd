@@ -14,10 +14,7 @@ Positron includes Git tooling so you can commit, pull, and push without leaving 
 ::: {.unit-goals}
 # Goals
 
-* Enable Git for a project in Positron.
-* Check status and stage changes inside the IDE.
-* Commit and push to GitHub.
-* Resolve simple sync issues (pull before push).
+* Know how to use Git/GitHub within Positron.
 
 :::
 <!-- end unit-goals div -->
@@ -38,17 +35,22 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
-## Enable Git for a project
+So far, we used GitHub Desktop to interact with GitHub. An alternative is to use Positron's built-in Git support. This allows you to perform common Git tasks without leaving the IDE. 
 
-If you cloned a repository, Git is already enabled. If you started from a local folder:
+The GitHub Desktop application is generally a bit more user- and beginner-friendly, but Positron's Git integration is convenient for day-to-day use. It is ok to use a mix of both tools as needed.
 
-1. Open the project in Positron.
-2. Initialize Git for the folder (or use a Git client to do it).
-3. Connect to a remote repository on GitHub.
 
-## Check status and stage files
+## Git/GitHub in Positron
 
-Use the Git panel to view modified files. Stage files you want to include in the next commit. Staging is a way to choose exactly which changes are committed together.
+Positron has built-in Git support. You can find it on the left sidebar, it is generally the third icon from the top (the icon looks like a branch with a dot at each end). If you have a project open that is also a GitHub repository, you will see information in the Git panel that shows you what files have changed (top part) and the history of your project (bottom part).
+
+Through this panel, you can do the same push/pull/commit workflow as in GitHub Desktop, but without leaving Positron.
+
+## Positron and Git/GitHub workflow
+
+Let's go through a minimal Git workflow in Positron. Open the Github repository you created earlier. You might even have it already open if you followed along in previous units.
+
+If you recently did a push/pull with GitHub Desktop, the panel showing changes should be empty. You will also see in the bottom panel that the `main` symbol (your local repo) and the `origin/main` symbol (the remote repo on GitHub) are in sync and on the same line.
 
 ## Commit changes
 

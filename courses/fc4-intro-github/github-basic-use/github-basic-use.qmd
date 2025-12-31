@@ -50,7 +50,7 @@ As mentioned previously, the main unit of organization in GitHub is a *repositor
 
 ## Cloning and pulling
 
-When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. 
+When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. Here, we will focus on starting repositories on GitHub.com and won't describe the reverse process, but it it is also possible to start local and then push and thus initialize a new repository online.
 
 If you start a repository on GitHub.com, you can then *clone* it to your local machine to work on it. The process of *cloning* creates a local copy of the repository on your computer. You also use that approach if you are collaborating with someone on a repository that they created. The important part is that *cloning* means copying a repository **that you don't yet have on your local machine** from GitHub.com to your local machine.
 
@@ -97,17 +97,18 @@ Once you are done with your edits, either because you finished a task or because
 
 ### Committing and pushing changes
 
-Now go back to GitHub Desktop. You should see that it detected the change you made to the `README.md` file. You can now **stage and commit** that change. In GitHub Desktop, enter a short commit message, e.g., "Updated README", and click **Commit to main**. You can leave the 'Description' field empty. Once you committed, you are ready to **push** your changes to GitHub.com. The online location is referred to as `origin`. Click the **Push origin** button to push your changes. To verify that the changes are online, go back to GitHub.com and refresh the page for your repository. You should see that the `README.md` file has been updated and there should be your commit with its title. As you keep working on the project, you can repeat this process of editing files, committing changes, and pushing them to GitHub.com. If others make changes, or you work on multiple computers, you will need to make sure before you start working that you pull any changes from GitHub.com to your local machine.
+Now go back to GitHub Desktop. You should see that it detected the change you made to the `README.md` file. You can now **stage and commit** that change. In GitHub Desktop, enter a short commit message, e.g., "Updated README", and click **Commit to main**. You can leave the 'Description' field empty. Once you committed, you are ready to **push** your changes to GitHub.com. The online location is referred to as `origin`. Click the **Push origin** button to push your changes. To verify that the changes are online, go back to GitHub.com and refresh the page for your repository. You should see that the `README.md` file has been updated and there should be your commit with its title. 
+
+As you keep working on the project, you can repeat this process of editing files, committing changes, and pushing them to GitHub.com. If others make changes, or you work on multiple computers, you will need to make sure before you start working that you pull any changes from GitHub.com to your local machine. This is especially important if you work on more than one computer, or if you collaborate with others on the same repository.
 
 These commits that will accumulate as you work on the project will create a history of changes that you can always go back to if needed. So if you did something a few weeks ago, then changed your code and now realized you need the old version back, you can click on that commit in GitHub Desktop and restore the files to that version. You can then pull out the changes you need from that version.
 
-## General Github workflow
+## Recap of Github workflow
 
 In the future, if you work on repositories like this one (or any others), your workflow should be as follows:
 
-- If needed, create a repository online (or local). 
-- Clone the repository to your local machine with GitHub desktop or any other way (e.g. the terminal). 
-- In the future, any time you start working on that repository, check that it's up to date and as needed, do a **pull**.
+- If needed, create a repository online, then clone the repository to your local machine with GitHub desktop or any other way (e.g. the terminal). 
+- Once you have a copy of the repository both on your local machine and github.com, any time you start working on that repository, check that it's up to date and as needed, do a **pull**.
 -   Once your local repo is up-to-date, open your project. Make all the edits you like. Make sure to run your code and render your Quarto files. Once you are done with edits, **stage/commit/push** your changes back to the remote server.
 
 
@@ -118,13 +119,13 @@ In the future, if you work on repositories like this one (or any others), your w
 
 Commit messages should be short and specific. A good pattern is: **verb + object** (e.g., "Add data cleaning script").
 
-### Keep commits small
+### Keep commits reasonably small
 
 Small commits make it easier to review and undo changes. If a change is unrelated, make a separate commit.
 
 ### Pull before you start working
 
-Always pull the latest changes from GitHub.com before you start working locally. This helps avoid conflicts.
+Always check for and as needed, pull the latest changes from GitHub.com before you start working locally. This helps avoid conflicts.
 
 ### Coordinate if you collaborate
 If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can't, you'll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be agravating at first, but you'll soon learn how to deal with them. The best approach is to avoid them as much as possible. 
@@ -136,7 +137,7 @@ If you are working with others, communicate about who is working on what to mini
 ::: {.unit-summary}
 # Summary
 
-The core workflow is: clone (once). Then pull/push. In between, edit. Whenever you made substantial changes or are _done for now_, stage/commit and push. When you resume working, check that no changes happened to the online repo, and pull if necessary. If you follow that order and keep commits small, GitHub becomes predictable and fairly easy to use.
+The core workflow is: clone (once). Then pull/push. In between, edit. Whenever you made substantial changes or are taking a break, stage/commit and push. When you resume working, check that no changes happened to the online repo, and pull if necessary. 
 
 :::
 <!-- end unit-summary div -->
@@ -145,6 +146,7 @@ The core workflow is: clone (once). Then pull/push. In between, edit. Whenever y
 ::: {.unit-resources}
 # Further Resources
 
+The [GitHub Desktop documentation](https://docs.github.com/en/desktop) contains a lot of useful information about using GitHub Desktop. Check there if you run into any issues with the workflow described above.
 
 :::
 <!-- end unit-resources div -->
@@ -169,7 +171,7 @@ The core workflow is: clone (once). Then pull/push. In between, edit. Whenever y
 # Practice
 
 * Find some repository online and clone it to your computer. Open it and edit it. Try to push changes back to the original repository. This will fail, since while repositories are publicly viewable and you can clone them, only the owner (or collaborators) can make edits and push changes.  
-*. In the repo you created above, add a new file (e.g. a Quarto file or R script). Make sure you change more than one file, then stage/commit and push all those changes..
+* In the repo you created above, add a new file (e.g. a Quarto file or R script). Make sure you change more than one file, then stage/commit and push all those changes.
 
 :::
 <!-- end unit-exercise div -->
