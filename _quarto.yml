@@ -122,7 +122,7 @@ website:
         - courses/fc4-intro-github/github-basic-use/github-basic-use.qmd
         - courses/fc4-intro-github/github-positron/github-positron.qmd
         - courses/fc4-intro-github/github-forks-prs/github-forks-prs.qmd
-        - courses/fc4-intro-github/github-further-topics/github-further-topics.qmd
+        - courses/fc4-intro-github/github-additional-topics/github-additinal-topics.qmd
         - courses/fc4-intro-github/github-resources/github-resources.qmd
     - id: fc5              # sidebar shown on all files it lists
       title: "Introduction to AI Tools"
@@ -152,5 +152,5 @@ website:
         - courses/fc6-portfolio-creation/portfolio-resources/portfolio-resources.qmd
   page-footer:
     left: |
-      {{< fa regular copyright >}} The Authors, 2025
+      {{< fa regular copyright >}} The Authors, 2026
    

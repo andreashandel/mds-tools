@@ -1,0 +1,27 @@
+Question
+========
+Which repository template is used to start the portfolio project?
+
+Answerlist
+----------
+* A random empty repository
+* The Quarto source code repository
+* The online-portfolio-template on GitHub
+* A private template created on your local machine
+
+Solution
+========
+The unit uses the online-portfolio-template repository on GitHub.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Portfolio template
+extype: schoice
+exsolution: 0010

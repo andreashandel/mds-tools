@@ -92,11 +92,11 @@ See above.
 ::: {.unit-quiz}
 # Test yourself
 
-```{r github-resources-quiz}
+```{r portfolio-resources-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("github-resources-quiz-1.Rmd", "github-resources-quiz-2.Rmd", "github-resources-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'github-resources-quiz')
+# quizzes <- list("portfolio-resources-quiz-1.Rmd", "portfolio-resources-quiz-2.Rmd", "portfolio-resources-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'portfolio-resources-quiz')
 ```
 :::
 -->

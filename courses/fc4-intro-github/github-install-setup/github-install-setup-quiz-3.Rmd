@@ -1,0 +1,27 @@
+Question
+========
+What is GitHub Desktop used for?
+
+Answerlist
+----------
+* Hosting repositories in the cloud
+* A graphical client to work with Git and GitHub
+* Writing and running R code
+* Automatically syncing files without commits
+
+Solution
+========
+GitHub Desktop is a graphical client that lets you commit, pull, and push without the command line.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: GitHub Desktop
+extype: schoice
+exsolution: 0100

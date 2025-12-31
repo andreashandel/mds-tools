@@ -70,15 +70,18 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 <!-- This ends the unit-resources div -->
 
 
+<!--
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r portfolio-introduction-quiz}
 #| echo: false
 #| results: "asis"
-#exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+# quizzes <- list("portfolio-introduction-quiz-1.Rmd", "portfolio-introduction-quiz-2.Rmd", "portfolio-introduction-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'portfolio-introduction-quiz')
 ```
-::: 
+:::
+-->
 
 
 

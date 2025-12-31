@@ -1,5 +1,5 @@
 ---
-title: Basic Ue
+title: Basic Use
 subtitle: ""
 ---
 
@@ -152,18 +152,18 @@ The [GitHub Desktop documentation](https://docs.github.com/en/desktop) contains 
 <!-- end unit-resources div -->
 
 
-<!--
+
 ::: {.unit-quiz}
 # Test yourself
 
 ```{r github-basic-use-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("github-basic-use-quiz-1.Rmd", "github-basic-use-quiz-2.Rmd", "github-basic-use-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'github-basic-use-quiz')
+quizzes <- list("github-basic-use-quiz-1.Rmd", "github-basic-use-quiz-2.Rmd", "github-basic-use-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-basic-use-quiz')
 ```
 :::
--->
+
 <!-- end unit-quiz div -->
 
 

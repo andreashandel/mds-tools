@@ -6,7 +6,7 @@ subtitle: ""
 ::: {.unit-overview}
 # Overview
 
-This unit provides resources for learning more about Git, GitHub, and common workflows. Use it as a reference when you get stuck.
+This unit provides a few pointers to resources for learning more about Git and GitHub.
 
 :::
 <!-- end unit-overview div -->
@@ -14,9 +14,7 @@ This unit provides resources for learning more about Git, GitHub, and common wor
 ::: {.unit-goals}
 # Goals
 
-* Know where to find official Git and GitHub documentation.
-* Identify beginner-friendly tutorials and cheat sheets.
-* Locate help when you run into issues.
+* Know where to find additional Git and GitHub documentation.
 
 :::
 <!-- end unit-goals div -->
@@ -39,25 +37,17 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Official documentation
 
-The best starting points are the official docs:
+The official documentation for Git and GitHub is extensive and well maintained. 
+You can find the [GitHub Docs](https://docs.github.com/) on the GitHub website and the [Git learn section](https://git-scm.com/learn) on the Git website.
 
-- [GitHub Docs](https://docs.github.com/)
-- [Pro Git book](https://git-scm.com/book)
 
-## Cheat sheets and quick references
 
-- [GitHub Education Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-- [Atlassian Git tutorials](https://www.atlassian.com/git/tutorials)
+## Community Resources
 
-## Community help
+The [GitHub community site](https://github.com/community) is a good place to ask questions and find answers related to GitHub.
 
-- [Stack Overflow: git](https://stackoverflow.com/questions/tagged/git)
-- [Stack Overflow: github](https://stackoverflow.com/questions/tagged/github)
+There is even a game, called [Oh My Git!](https://ohmygit.org/) that is meant to teach you Git while playing. We have not tried it, so we don't know if it's entertaining and/or useful.
 
-## Visual learning
-
-- [GitHub Learning Lab (archived but useful)](https://lab.github.com/)
-- [Oh My Git!](https://ohmygit.org/) for an interactive intro
 
 :::
 <!-- end unit-reading div -->
@@ -66,7 +56,7 @@ The best starting points are the official docs:
 ::: {.unit-summary}
 # Summary
 
-Keep these resources handy. When Git/GitHub gets confusing, the official docs and cheat sheets usually provide the fastest answers.
+This unit listed a few additional resources. These days, AI tools are also often very helpful in answering questions about Git and GitHub. 
 
 :::
 <!-- end unit-summary div -->
@@ -75,7 +65,7 @@ Keep these resources handy. When Git/GitHub gets confusing, the official docs an
 ::: {.unit-resources}
 # Further Resources
 
-If you find another resource that is especially clear or helpful, please share it so we can keep this list current.
+See above.
 
 :::
 <!-- end unit-resources div -->
@@ -99,8 +89,6 @@ If you find another resource that is especially clear or helpful, please share i
 ::: {.unit-exercise}
 # Practice
 
-1. Bookmark at least two Git/GitHub references from this unit.
-2. Skim the Git cheat sheet and note three commands you want to remember.
 
 :::
 <!-- end unit-exercise div -->

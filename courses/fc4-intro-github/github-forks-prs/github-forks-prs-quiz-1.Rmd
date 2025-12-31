@@ -1,0 +1,27 @@
+Question
+========
+Which statement about forks is correct?
+
+Answerlist
+----------
+* A fork deletes the original repository
+* A fork is your personal copy of a public repository
+* A fork can only be created by repository owners
+* A fork prevents you from making any changes
+
+Solution
+========
+Forks let you create your own copy of a public repository and make changes without permission.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Fork definition
+extype: schoice
+exsolution: 0100

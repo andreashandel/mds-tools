@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended step before you start working on a repository locally?
+
+Answerlist
+----------
+* Delete the local repository and re-clone it
+* Push your local changes immediately
+* Create a new branch every time
+* Pull the latest changes from GitHub.com
+
+Solution
+========
+Pulling first ensures your local copy is up to date and avoids conflicts.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Pull before work
+extype: schoice
+exsolution: 0001

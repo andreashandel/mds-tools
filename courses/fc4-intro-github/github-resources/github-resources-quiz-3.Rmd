@@ -1,0 +1,27 @@
+Question
+========
+What is "Oh My Git!"?
+
+Answerlist
+----------
+* A paid GitHub support plan
+* An advanced Git server configuration tool
+* A code editor built by GitHub
+* A game designed to help you learn Git
+
+Solution
+========
+Oh My Git! is a game that teaches Git concepts through gameplay.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Oh My Git
+extype: schoice
+exsolution: 0001

@@ -1,0 +1,27 @@
+Question
+========
+What is a pull request (PR)?
+
+Answerlist
+----------
+* A request to merge your changes into another repository or branch
+* A way to delete a branch remotely
+* A method for downloading a repository without cloning
+* A tool for changing GitHub account settings
+
+Solution
+========
+A pull request asks the repository owner to merge your changes.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Pull request
+extype: schoice
+exsolution: 1000

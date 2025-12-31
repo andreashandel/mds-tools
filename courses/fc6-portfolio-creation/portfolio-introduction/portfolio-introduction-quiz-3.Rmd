@@ -1,0 +1,27 @@
+Question
+========
+How can an online portfolio help even if you are not job hunting?
+
+Answerlist
+----------
+* It automatically files your taxes
+* It prevents all future merge conflicts
+* It gives you free GitHub Pro
+* It makes it easier for others to discover your work and contact you
+
+Solution
+========
+A public portfolio helps others find your work and reach out about opportunities.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Portfolio visibility
+extype: schoice
+exsolution: 0001

@@ -1,5 +1,5 @@
 ---
-title: Further Topics
+title: Additional Topics
 subtitle: ""
 ---
 
@@ -37,40 +37,51 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
+The sections below cover a few additional topics that are relevant when working with Git and GitHub in the context of modeling and data science work.
 
 
 ## Merge conflicts
 
-## Force push
+Sooner or later, as you work with GitHub, you will encounter a dreaded merge conflict. This happens if the same file has been changed by multiple individuals - or yourself on multiple computers if you forgot to properly do your push/pull before and after each work session. A merge conflict happens when Git cannot automatically figure out how to combine the changes made in the different versions of a file. When this happens, Git will mark the file as having a conflict and will not allow you to push your changes until the conflict is resolved.
 
-::: note
-Sometimes, there might be issues that prevent pushing/pulling, e.g., if someone else changed the same files you did. If you are sure your local version is the correct one, you can perform a **force push**. A force push will overwrite the remote repo with the local repo forcibly. This means that the remote will be updated with any changes that exist on your local computer. If any changes have been made to the code since you began editing (i.e. someone else has made a commit to the repo while you were working on it) they will be **destroyed** by the force push since they are not on your local repo. For this assignment, you are the only person working on your introduction so it is unlikely you will encounter any issues with force push, but it is good to be aware of the function of the action. Use with care. It's generally better to [resolve merge conflicts.](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git)
-:::
+There are a few ways of dealing with merge conflicts.
 
 
-## Large files
+### Force push
+
+If you are sure your local version is the correct one, you can perform a **force push**. A force push will overwrite the remote repo with the local repo forcibly. This means that the remote will be updated with any changes that exist on your local computer. If any changes have been made to the code since you began editing (i.e. someone else has made a commit to the repo while you were working on it) they will be **destroyed** by the force push since they are not on your local repo. Use with care. 
+
+
+### Discard changes
+
+If you decide that the remote version is more up-to-date and what you did locally can be discarded, you can simply discard your local changes and pull the remote version again. This will overwrite your local files with the remote version, effectively discarding any local changes you made. 
+
+One option is to copy the parts you changed to a safe location outside the repository, then discard your local changes, pull the remote, and then re-apply your changes manually. This way, you don't lose your work, but you can still get the remote version and resolve the merge conflict without much hassle.
+
+
+### Manually resolving the conflict
+
+To resolve a merge conflict, you need to manually edit the conflicting file(s) to decide which changes to keep. Git will mark the conflicting sections in the file with special markers.
+
 
 
 ## Confidentiality
 
-## Introduction
-
 The main principle when working with GitHub is that by default **everything you put in a Git repository is public and permanent**. This can cause a problem for confidential or sensitive data. The next sections discuss best practices for dealing with confidential information while using GitHub.
 
-
-## Anonymizing data
+### Anonymizing data
 
 Often, the parts of the data you need for modeling and analysis don't need to contain confidential or identifying information, like names or dates of birth. It is often a good idea to process your raw data to remove or anonymize such information before putting it into a Git repository. Once you have done that, you can put the anonymized data into a repository. If you want to be extra safe, you might want to opt for a private repository (see next section). If you put it in a public repository, be **very careful** that you only make things public that are ok to be made public.
 
 
-## Using a private repo
+### Using a private repo
 
 As mentioned, the default for GitHub is to have repositories that are publicly viewable by anyone. However, it is easy to set up a private repository. Private repositories are only viewable by you and people you explicitly give access to. This is a good option if you need to work with sensitive data that cannot be anonymized. Note that private repositories are not free unless you have a GitHub Pro account (which is free for students via the GitHub Student Developer Pack). If you are working in an organization (e.g., your university or company), they might have a GitHub Enterprise account that allows for private repositories.
 
 You can switch repositories from public to private and vice versa in the repository settings on GitHub. However, be careful when switching from private to public. Make sure that no sensitive data is in the repository before making it public.
 
 
-## Keeping files local
+### Keeping files local
 
 It might be that you do need to work with data that cannot be anonymized and that you cannot or don't want to put into a private repository. In that case, you should keep such data files outside of your Git repository. You can still use GitHub for your code and non-sensitive files, but keep the sensitive files on your local machine only. You can then load the sensitive data from your local machine when running your code. This way, the sensitive data never enters the Git repository.
 
@@ -84,13 +95,36 @@ An important drawback of this approach is that if you work on multiple machines,
 
 A possible workaround is to place these files into another Sync service, such as Dropbox, OneDrive, or Google Drive that you consider to be safe. You can then load the files from there when running your code. This way, the sensitive files are not in the Git repository, but you can still share them with collaborators via the Sync service. (This approach also works well for large files that you can't sync with Git/GitHub.)
 
-
-
 :::{.warning}
 Remember that Git tracks the full project history. So if at any time you added a file with sensitive information, even if you delete it later, it's still in the history and can be found. If that happens, you basically need to completely delete the GitHub repository (after copying all important files to a safe location) and starting over with a new repository, taking care to keep sensitive files out of this new repor.
 :::
 
 
+
+## Large files
+
+GitHub is not good at handling large files. If you try to push a file larger than 100 MB, GitHub will reject the push. Even files smaller than that can cause performance issues if they are large (e.g., several tens of MBs). If you need to work with large files, there are a few options. 
+
+### Git LFS
+
+One option is to use **Git LFS (Large File Storage)**. Git LFS is an extension to Git that allows you to track large files without bloating your repository. Instead of storing the actual file in the repository, Git LFS stores a pointer file that references the large file stored elsewhere. When you clone the repository, Git LFS automatically downloads the large files for you.
+
+Git LFS requires some effort at setting it up. It is only worth it if you know you'll be regularly dealing with large files.
+
+
+### Reduce files
+
+If you have large raw data files but won't need all of the content for your project, try to reduce their size before putting them into the GitHub repository. You basically perform some cleaning and processing outside the repo, with the aim of getting the data you need for our project into a smaller size. Then copy that reduced dataset into your repo and use it as a starting point.
+
+
+### Prevent large intermediate files
+
+Some modeling workflows create large intermediate files (e.g., model output files). If these files are not needed for further analysis, make sure to keep them out of the Git repository by adding them to the `.gitignore` file. The only drawback is that if you need these files later, you'll have to re-generate them from scratch, which could involve running the model again. Based on model complexity, this could be time-consuming.
+
+
+### Keeping files local
+
+You can also follow the steps outlined above in the `Confidentiality` section to keep some files out of the GitHub workflow.
 
 
 
@@ -101,7 +135,8 @@ Remember that Git tracks the full project history. So if at any time you added a
 ::: {.unit-summary}
 # Summary
 
-Git LFS (or similar tools) lets you keep code and data under one logical roof without bloating your repo. Adopt it early and automate retrieval in workflows.
+Using GitHub requires paying attention to common pitfalls like merge conflicts and confidentiality issues. As long as you have a plan for those, you can usually work around those issues and still use GitHub for your work.
+
 
 :::
 <!-- end unit-summary div -->
@@ -110,36 +145,31 @@ Git LFS (or similar tools) lets you keep code and data under one logical roof wi
 ::: {.unit-resources}
 # Further Resources
 
-* **Git LFS docs** – <https://git-lfs.github.com/>
-* **DVC** – <https://dvc.org/>
-* **GitHub Docs: Working with Large Files** – <https://docs.github.com/github/managing-large-files>
-* **BFG Repo-Cleaner** – <https://rtyley.github.io/bfg-repo-cleaner/>
+* [Git LFS documentation](https://git-lfs.github.com/) provides more information on setting up and using Git LFS.
 
 :::
 <!-- end unit-resources div -->
 
 
-<!--
+
 ::: {.unit-quiz}
 # Test yourself
 
-```{r github-further-topics-quiz}
+```{r github-additional-topics-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("github-further-topics-quiz-1.Rmd", "github-further-topics-quiz-2.Rmd", "github-further-topics-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'github-further-topics-quiz')
+quizzes <- list("github-additional-topics-quiz-1.Rmd", "github-additional-topics-quiz-2.Rmd", "github-additional-topics-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-additional-topics-quiz')
 ```
 :::
--->
+
 <!-- end unit-quiz div -->
 
 
 ::: {.unit-exercise}
 # Practice
 
-1. Identify one large file in a project and decide whether it should live in Git.
-2. If it should be tracked, set up Git LFS for its file type.
-3. Commit a small LFS-tracked file and verify it appears as a pointer file in the repo.
+
 
 :::
 <!-- end unit-exercise div -->

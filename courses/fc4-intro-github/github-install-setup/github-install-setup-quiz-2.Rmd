@@ -1,0 +1,27 @@
+Question
+========
+Why should you choose a professional, future-proof GitHub username?
+
+Answerlist
+----------
+* GitHub requires it for student accounts only
+* It makes your local Git installation faster
+* It is needed to access private repositories
+* GitHub is used professionally and your profile is publicly visible
+
+Solution
+========
+Your GitHub profile can be part of your professional presence, so choose a solid, public-facing username.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Username choice
+extype: schoice
+exsolution: 0001

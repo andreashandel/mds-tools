@@ -1,0 +1,27 @@
+Question
+========
+What is a key risk if you ever commit sensitive data to a public repository?
+
+Answerlist
+----------
+* Git automatically anonymizes sensitive fields
+* Deleting the file removes it from the full history
+* The file becomes private after 24 hours
+* The data remains in history unless you start over with a new repo
+
+Solution
+========
+Git keeps full history, so sensitive data can persist even if you delete the file later.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Sensitive history risk
+extype: schoice
+exsolution: 0001

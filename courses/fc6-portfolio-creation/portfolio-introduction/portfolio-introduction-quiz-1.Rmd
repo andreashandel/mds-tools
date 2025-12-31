@@ -1,0 +1,27 @@
+Question
+========
+What is an online portfolio in this course?
+
+Answerlist
+----------
+* A private backup of your files stored on a hard drive
+* An organized collection of work that showcases your skills and experience
+* A list of websites you like to read
+* A single resume file uploaded to GitHub
+
+Solution
+========
+A portfolio is a curated collection of work that demonstrates skills and experience.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Portfolio definition
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+Why include a portfolio link in job applications?
+
+Answerlist
+----------
+* It replaces the need for a resume
+* It guarantees a job offer
+* It lets you demonstrate skills beyond short application materials
+* It automatically verifies your credentials
+
+Solution
+========
+A portfolio provides detailed evidence of skills that a short resume cannot show.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Portfolio for jobs
+extype: schoice
+exsolution: 0010

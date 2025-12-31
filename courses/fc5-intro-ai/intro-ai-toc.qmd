@@ -15,7 +15,7 @@ subtitle: ""
 * [Using AI to fix code](./ai-fix-code-r/ai-fix-code-r.qmd)
 * [Using AI to explore data](./ai-eda-r/ai-eda-r.qmd)
 * [Using AI to analyze data](./ai-analysis-r/ai-analysis-r.qmd)
-* [Links to AI resources](./ai-resources/ai-resources.qmd)
+* [Further AI resources](./ai-resources/ai-resources.qmd)
 
 
 :::

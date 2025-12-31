@@ -1,0 +1,27 @@
+Question
+========
+What is one other portfolio-type product you can build with Quarto?
+
+Answerlist
+----------
+* A real-time multiplayer game
+* A desktop operating system
+* A book
+* A hardware device driver
+
+Solution
+========
+Quarto supports books, which can be another way to showcase work.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Quarto books
+extype: schoice
+exsolution: 0010

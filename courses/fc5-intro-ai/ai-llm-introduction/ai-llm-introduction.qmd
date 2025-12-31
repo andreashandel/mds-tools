@@ -1,12 +1,12 @@
 ---
-title: Introduction to current LLM AI tools
+title: Introduction to LLM AI tools
 subtitle: ""
 ---
 
 ::: {.unit-overview}
 # Overview
 
-This unit provides an introduction to the use of Large Language Model (LLM) based Artificial Intelligence (AI) tools (such as ChatGPT) for coding and data analysis.
+This unit provides an introduction to the use of Large Language Model (LLM) based Artificial Intelligence (AI) tools (such as ChatGPT, Claude, Gemini) for coding and data analysis.
 
 :::
 <!-- end unit-overview div -->
@@ -38,29 +38,88 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Introduction
 
-By now, you have certainly heard of ChatGPT and similar AI-based tools. You probably have also tried them out. AI is a broad field, and there are different AI algorithms. You can potentially use some of them to analyze your data. We discussed this in a previous unit. The focus here is on AI tools that can help you in various coding and data analysis tasks.
+AI is a broad field, and there are different AI algorithms. You can potentially use some of them to analyze your data. We discussed this in a previous unit. The focus here is on AI tools that can help you in various coding and data analysis tasks.
 
-Currently, the best tools for that are those based on Large Language Models (LLM). For simplicity, I'm just going to call them AI tools here, but be aware that there are other AI approaches out there.
+Currently, the best tools for that are those based on Large Language Models (LLM). For simplicity, we are going to call them AI tools here, but be aware that there are other AI approaches out there. The focus is on using them to help with modeling and data science projects.
 
-This is a very practical tutorial from a user perspective. I'll only discuss how to use those tools. If you want to learn more about the general workings, ethical issues regarding licensing of training data and biased results, etc., take a look at the AI resources page.
 
-## Available AI tools
 
-The field is changing rapidly. To keep up and have everything in one place [I made a separate unit that discusses different AI tools](../ai-tools/ai-tools.qmd)
+## LLM AI conceptual frameworks
+
+AI, and especially generative AI like LLM are very new tools. Everyone is still trying to figure out how to use them, what they mean for the future, etc. While one can obviously use these tools without much further thought, it can be helpful to think about them in a conceptual way to have a potentially useful framework of interaction. Below are a few conceptual frameworks that I have heard from others or that I've been thinking about.
+
+
+### AI as the intern/1st year graduate
+
+This view comes up repeatedly. The idea is that you should think of LLM AI tools as being good at tasks that an intern, or a new worker could do without too much training. For example, asking an AI LLM tool to solve world hunger is not a good idea. However, asking it to give you a list of countries where malnutrition is the worst and a summary of likely reasons for that, is a task where it will probably produce a result that you can use as starting point for whatever your larger project is.
+
+What that means is that to get the most out of the AI, you should break your tasks into manageable, well-prescribed bits, and ask the AI to tackle each one. The more details and instructions you provide, the more likely you will get something useful.
+
+
+### The composer/conductor and the orchestra
+
+Similar to the intern idea, one can think of the AI as a very versatile tool that can do many things, kinda like an orchestra. As a composer or conductor, you don't need to be able to play each instrument of the orchestra. But you do need to know enough about each instrument to compose meaningful instructions as to what everyone should play, and you should know what to expect, so when you tell the trumpets to play a certain tune, you should be able to assess if what they produce is what you have in mind, and correct as needed. 
+
+I like this analogy because it not only describes the role of the AI, but also the role of the user. To use the AI effectively, you need to know enough about what it can do, and how to instruct it properly, to get useful output. You also need to be able to critically assess what the AI produces, and correct as needed.
+
+Of course, this analogy goes beyond AI tools. We can say the same about other complex tools, for instance the `R` programming language or a car. You don't need to understand all the details of how these complex systems work under the hood (unless you want to become a full-time programmer or car mechanic), but you do need to know enough to give useful instructions, use them effectively, and critically assess what the machine returns and correct as needed.
+
+
+### AI as a brainstorming partner
+
+While AI is very good in doing specific, well-prescribed tasks, it can also be useful as a type of sparring partner or brainstorming device. You can throw ideas at the AI that are more open-ended, and ask it to provide its thoughts. Then you can iterate and that way possibly explore a topic and various options much faster than if you just thought about it yourself. This doesn't always lead to good results, but it's so quick and easy, it's often worth a try. Note that if you use AI in this way, you would interact with it differently compared to the above approach. To get specific work done, e.g. getting the AI to write you a piece of code, you want to be as specific and detailed as possible. You will often provide very long prompts. In contrast, if you use AI as brainstorming partner, you can have shorter, more vague prompts and do more of a back and forth. Just be clear what you are trying to accomplish and adjust your interactions accordingly.
+
+
+### AI as electricity
+
+It seems to me that long-term, AI is going to be a bit like electricity. It's going to be everywhere, it will power a lot of the environment around us, and it will become both more ubiquitous and possibly also more invisible. We use electricity all the time, and we rarely think about it. AI might become that way. We need to be prepared to have it be part of everything in the not-too-distance future.
+
+
+
+## Tips for best practices
+
+Here are some suggestions on how to use the LLM AI tools as efficiently as possible.
+
+- Use them a lot. The more you use them, the better you will get at it, and the more you will understand what they can and cannot do.
+
+- Think carefully about what exactly you want to the AI to accomplish and provide instructions that are as detailed and specific as possible. These days, this is often called **prompt engineering**.
+
+- Iterate. Often the first version you get from the AI will not exactly what you want. You can try to ask the AI to rewrite/change/fix things. Or you can manually edit the code, which you can then use as input to ask the AI to make further changes.
+
+- Try different tools. Performance between tools from competing companies, or even different AI models from the same company, can produce widely varying results. If one tool does not give you a satisfactory answer, try another one. 
+
+- When you use AI to help with coding, ask the AI to add a lot of comments into the code to explain what each line of code does.
+
+- Ask the AI to explain its reasoning, make it provide references, ask it to give specific examples. All of this helps you understand what the AI is doing, and helps you assess if the output makes sense.
+
+- Break down big tasks into smaller tasks. Ask the AI to solve these smaller tasks individually and then pull things together.
+
+- Cite as appropriate. If in doubt, include more information (e.g., prompts).
+
+
+
 
 ## Shortcomings and Dangers of AI Tools
 
-For all its promises, AI is not without its problems. It still has many shortcomings and dangers. Here, I'll discuss some of the most important ones.
+For all its promises, the LLM AI tools continue to have shortcomings and there are dangers. The following topics are most relevant in the context of using AI tools to help with modeling and data science.
 
-I'm focusing here on the issues most relevant for our purposes. Broader, more tricky topics such as biases are real but I think not too relevant for using AI tools to help with data analysis and coding.
 
 ### Privacy/Confidentiality
 
-When you use AI to help with data analysis, you might want to show your data to the AI and ask it to do something with it. The problem is that pretty much all these systems take your data and move it to the servers of whichever company you use for processing. Often, these companies keep your data to help improve their models. If you have data which is sensitive, e.g. human data, or data that you don't want to share, then you need to be careful not to let the AI have access to the data. A good solution is to generate synthetic data that has the structure of your real data but is made up. Then you can ask the AI to process this synthetic data and give you the code it generated. In a later step, you can go "offline" and use the code the AI helped you write on your real data. We'll discuss how to generate synthetic/artificial data shortly.
+When you use AI to help with data analysis, you might want to show your data to the AI and ask it to do something with it. The problem is that this could mean your data finds its way onto the servers of the company who's tool you are using. While many companies might have a version of an AI tool running that is not supposed to leak data, it's basically impossible for a regular end user to verify this. 
 
-Beyond the data, it is important to keep in mind that if you have the AI running (e.g., through the R Studio CoPilot integration), it might access not just your current file but possibly also other sources you link to, e.g. other stuff on your computer. If you have things you don't want the company to "grab" and copy to their servers, then be careful about what you let the AI access.
+That means if you have data which is sensitive, e.g. human data, or data that you don't want to share, then you need to be careful when you decide if and how to let the AI have access to the data. A good solution is to generate synthetic data that has the structure of your real data but is made up. Then you can ask the AI to process this synthetic data and give you the code it generated. In a later step, you can go "offline" and use the code the AI helped you write on your real data. 
+
+Beyond the data, it is important to keep in mind that if you have the AI running, it might access not just your current file but possibly also other sources you link to, e.g. other stuff on your computer. 
 
 **In general, be careful what information you let the AI access and be aware that it might end up on the server of whatever company is running the AI tool.**
+
+
+### Wrong answers
+
+We are all aware of hallucinations, the tendency of AI tools to sometimes make up things and present wrong information in generally very convincing ways. It is always important to check the output you get from an AI tool. This is especially true when you use AI to help with data analysis. If the AI gives you code, make sure to understand what the code does, and check that it does what you want it to do. If the AI gives you text, check that the information is correct. If the AI gives you numbers, check that they make sense.
+
+While non-working code created by an AI tool is annoying, it is easy to recognize. More dangerous is code that sees to work, and looks like it's doing the right thing, but has critical 
 
 ### Non-working code
 
@@ -82,21 +141,13 @@ Similarly, if you copy text from Wikipedia or some other source, you need to cit
 
 I suggest you follow the guideline of "if in doubt, cite/acknowledge". For instance, at the beginning of some code, you can make a statement saying "part of this code was generated by ChatPGT using the following prompt" and then state the prompt you use. Or if you use AI to help you interpret your data, you can state somewhere in your output (e.g., your Quarto document), that you used AI to help generate insights/text/etc. Providing this kind of information prevents you from being accused of "cheating" (if someone thinks using AI is cheating, for this course, you are encouraged to do so), and it also helps somewhat with the reproducibility (see above).
 
-## Tips for best practices
 
-Here are some suggestions on how to use the AI tools as efficiently as possible.
 
-- Think carefully about what exactly you want to the AI to accomplish and provide instructions that are as detailed and specific as possible. These days, this is often called **prompt engineering**.
+## Available AI tools
 
-- Iterate. Often the first version you get from the AI will not exactly what you want. You can try to ask the AI to rewrite/change/fix things. Or you can manually edit the code, which you can then use as input to ask the AI to make further changes.
+The field is changing rapidly. To keep up and have everything in one place [there is a separate unit that discusses different AI tools](../ai-tools/ai-tools.qmd)
 
-- Try different engines. E.g., ChatGPT doesn't give you something useful, try Bing (which is also currently powered by ChatGPT, but gives somewhat different results).
 
-- Ask the AI to add a lot of comments into the code to explain what each line of code does.
-
-- Break down big tasks into smaller tasks. Ask the AI to solve these smaller tasks individually and then pull things together.
-
-- Cite as appropriate. If in doubt, include more information (e.g., prompts).
 
 :::
 <!-- end unit-reading div -->

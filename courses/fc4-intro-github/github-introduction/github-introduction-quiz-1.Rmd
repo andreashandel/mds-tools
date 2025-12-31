@@ -1,0 +1,27 @@
+Question
+========
+What is the difference between Git and GitHub?
+
+Answerlist
+----------
+* Git is an online hosting service, and GitHub is a local version control tool
+* Git is a version control system, and GitHub is an online hosting platform for Git repositories
+* Git is a text editor, and GitHub is a file syncing app
+* Git is for website publishing only, and GitHub is for data storage only
+
+Solution
+========
+Git tracks changes locally, while GitHub hosts repositories online for sharing and collaboration.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Git vs GitHub
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+Where can you browse examples of Quarto websites for inspiration?
+
+Answerlist
+----------
+* The GitHub Marketplace
+* The Quarto Gallery
+* The CRAN Task Views
+* The Git documentation site
+
+Solution
+========
+The Quarto Gallery showcases example sites created with Quarto.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Quarto Gallery
+extype: schoice
+exsolution: 0100

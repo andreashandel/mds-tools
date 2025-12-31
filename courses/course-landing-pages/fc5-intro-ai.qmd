@@ -64,8 +64,8 @@ The course covers these topics (and more):
 ::: {.course-getstarted}
 # Get started
 
-**This course is undergoing updates and will be available shortly.**
+<!-- **This course is undergoing updates and will be available shortly.** -->
 
-<!-- [Click here to start this course.](/courses/fc5-intro-ai/intro-ai-toc.qmd) -->
+[Click here to start this course.](/courses/fc5-intro-ai/intro-ai-toc.qmd)
 
 :::

@@ -1,5 +1,5 @@
 ---
-title: Git and GitHub Installation and Setup
+title: Installation and Setup
 subtitle: ""
 ---
 
@@ -84,18 +84,18 @@ You installed Git, created a GitHub account and installed and set up GitHub desk
 <!-- end unit-resources div -->
 
 
-<!--
+
 ::: {.unit-quiz}
 # Test yourself
 
 ```{r github-install-setup-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("github-install-setup-quiz-1.Rmd", "github-install-setup-quiz-2.Rmd", "github-install-setup-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'github-install-setup-quiz')
+quizzes <- list("github-install-setup-quiz-1.Rmd", "github-install-setup-quiz-2.Rmd", "github-install-setup-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-install-setup-quiz')
 ```
 :::
--->
+
 <!-- end unit-quiz div -->
 
 
