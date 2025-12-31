@@ -41,7 +41,7 @@
     "href": "courses/fc6-portfolio-creation/portfolio-introduction/portfolio-introduction.html#how-to-make-a-portfolio",
     "title": "Online portfolio introduction",
     "section": "How to make a portfolio",
-    "text": "How to make a portfolio\nAn online portfolio is basically a website. This could be a stand-alone page, or it could be part of your general website. Any tool that allows you to make online content and place it on a sever can work. There are many free tools. As we’ll discuss shortly, we like using Quarto and Git/Github, but many other options exist. Wordpress is a very common platform.",
+    "text": "How to make a portfolio\nAn online portfolio is basically a website. This could be a stand-alone page, or it could be part of your main site (if you have a personal website). Any tool that allows you to make online content and place it on a sever can work. There are many free tools. Wordpress is a very common platform. We like using Quarto and Git/Github.",
     "crumbs": [
       "Online portfolio introduction"
     ]
@@ -51,7 +51,7 @@
     "href": "courses/fc6-portfolio-creation/portfolio-creation-toc.html",
     "title": "TOC: Online Portfolio Creation",
     "section": "",
-    "text": "Course Content\n\nIntroduction and Motivation",
+    "text": "Course Content\n\nIntroduction and Motivation\nCreating an Online Portfolio",
     "crumbs": [
       "TOC: Online Portfolio Creation"
     ]
@@ -487,41 +487,21 @@
     ]
   },
   {
-    "objectID": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#why-large-files-are-a-problem",
-    "href": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#why-large-files-are-a-problem",
+    "objectID": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#force-push",
+    "href": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#force-push",
     "title": "Managing Large Files with Git and GitHub",
-    "section": "Why large files are a problem",
-    "text": "Why large files are a problem\n\nGit stores objects as delta-compressed snapshots. Binary files do not diff well, so every small edit triggers a full-size blob.\nRepository size affects all contributors: clones, pulls, and CI jobs.\n\n\n\n\nSize\nImpact\n\n\n\n\n≤ 100 MB\nOK for GitHub\n\n\n100–500 MB\nGitHub warns; LFS recommended\n\n\n&gt; 2 GB per repo / &gt; 100 MB per file\nHard GitHub limit",
+    "section": "Force push",
+    "text": "Force push\n\nSometimes, there might be issues that prevent pushing/pulling, e.g., if someone else changed the same files you did. If you are sure your local version is the correct one, you can perform a force push. A force push will overwrite the remote repo with the local repo forcibly. This means that the remote will be updated with any changes that exist on your local computer. If any changes have been made to the code since you began editing (i.e. someone else has made a commit to the repo while you were working on it) they will be destroyed by the force push since they are not on your local repo. For this assignment, you are the only person working on your introduction so it is unlikely you will encounter any issues with force push, but it is good to be aware of the function of the action. Use with care. It’s generally better to resolve merge conflicts.",
     "crumbs": [
       "Managing Large Files with Git and GitHub"
     ]
   },
   {
-    "objectID": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#git-lfs-essentials",
-    "href": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#git-lfs-essentials",
+    "objectID": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#large-files",
+    "href": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#large-files",
     "title": "Managing Large Files with Git and GitHub",
-    "section": "Git LFS essentials",
-    "text": "Git LFS essentials\n\nInstall\ngit lfs install\nTrack patterns\ngit lfs track \"*.fastq.gz\" \"*.png\"\necho \"*.fastq.gz filter=lfs diff=lfs merge=lfs -text\" &gt;&gt; .gitattributes\nAdd and commit files as usual. Git replaces the content with a small pointer file; binary data uploads to the LFS server.\n\n\nStorage and bandwidth quotas\n\nFree GitHub accounts: 1 GB storage + 1 GB bandwidth/month.\nExtra packs are available; or self-host an LFS server.",
-    "crumbs": [
-      "Managing Large Files with Git and GitHub"
-    ]
-  },
-  {
-    "objectID": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#alternative-solutions",
-    "href": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#alternative-solutions",
-    "title": "Managing Large Files with Git and GitHub",
-    "section": "Alternative solutions",
-    "text": "Alternative solutions\n\n\n\n\n\n\n\n\nTool\nBest for\nNotes\n\n\n\n\nDVC\nML datasets and pipelines\nData tracked in remote blob storage (S3, GCS)\n\n\ngit-annex\nOffline archival\nUses symbolic links; steeper learning curve\n\n\nRclone + checksum manifest\nOccasional big dumps\nSimple, not integrated with Git history",
-    "crumbs": [
-      "Managing Large Files with Git and GitHub"
-    ]
-  },
-  {
-    "objectID": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#tips-and-pitfalls",
-    "href": "courses/fc4-intro-github/github-further-topics/github-further-topics.html#tips-and-pitfalls",
-    "title": "Managing Large Files with Git and GitHub",
-    "section": "Tips and pitfalls",
-    "text": "Tips and pitfalls\n\nAdd .gitattributes before the first commit.\nKeep raw data in external storage and version metadata only.\nUse .gitignore for scratch, cache, outputs; never commit derived artifacts.\nCI: install git-lfs and run git lfs pull before build steps.",
+    "section": "Large files",
+    "text": "Large files",
     "crumbs": [
       "Managing Large Files with Git and GitHub"
     ]
@@ -1058,7 +1038,7 @@
     "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#introduction",
     "title": "Configuring Positron",
     "section": "Introduction",
-    "text": "Introduction\nLike VS Code, Positron is highly customizable. This flexibility allows you to tailor the editor to your specific workflow and preferences. There’s a lot you can customize, we’ll only briefly look at a few main areas here.",
+    "text": "Introduction\nPositron is highly customizable just like VS code the software it is based on. This flexibility allows you to tailor the editor to your specific workflow and preferences. There’s a lot you can customize, we’ll only briefly look at a few main areas here.",
     "crumbs": [
       "Configuring Positron"
     ]
@@ -1078,7 +1058,7 @@
     "href": "courses/fc1-intro-positron/positron-configuration/positron-configuration.html#themes",
     "title": "Configuring Positron",
     "section": "Themes",
-    "text": "Themes\nYou can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.\nYou can explore themes by clicking on the gear icon in the lower left corner, then selecting Themes and Color Theme. This opens a list of available themes. Explore them to see what you might like.",
+    "text": "Themes\nYou can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have even more control, you can customize further. For most users, this is probably not worth it.\nYou can explore themes by clicking on the gear icon in the lower left corner, then selecting Themes and Color Theme. This opens a list of available themes. Explore them to see what you might like.\nTheme selection is important to prevent eye fatigue or if you are color blind. Darker themes are generally better for your eyes during long coding sessions. There are a few themes that are specifically made for the color blind that rely on hue to differentiate code. Soloarized themes are generally the best for those who are colorblind.\nTo be clear the themes do not change anything about the code it is for the humans writing/reading the code. They color and style token types (the different functional parts or key words) produced by the language parser (not arbitrary text).",
     "crumbs": [
       "Configuring Positron"
     ]
@@ -1859,6 +1839,16 @@
     ]
   },
   {
+    "objectID": "courses/fc4-intro-github/github-basic-use/github-basic-use.html#general-github-workflow",
+    "href": "courses/fc4-intro-github/github-basic-use/github-basic-use.html#general-github-workflow",
+    "title": "Basic GitHub Workflow",
+    "section": "General Github workflow",
+    "text": "General Github workflow\nIn the future, if you work on repositories like this one (or any others), your workflow should be as follows:\n\nIf needed, create a repository online (or local).\nClone the repository to your local machine with GitHub desktop or any other way (e.g. the terminal).\nIn the future, any time you start working on that repository, check that it’s up to date and as needed, do a pull.\nOnce your local repo is up-to-date, open your project. Make all the edits you like. Make sure to run your code and render your Quarto files. Once you are done with edits, stage/commit/push your changes back to the remote server.",
+    "crumbs": [
+      "Basic GitHub Workflow"
+    ]
+  },
+  {
     "objectID": "courses/fc4-intro-github/github-basic-use/github-basic-use.html#best-practices",
     "href": "courses/fc4-intro-github/github-basic-use/github-basic-use.html#best-practices",
     "title": "Basic GitHub Workflow",
@@ -1893,7 +1883,7 @@
     "href": "courses/fc4-intro-github/github-forks-prs/github-forks-prs.html#branches",
     "title": "Branches, Forks and Pull Requests",
     "section": "Branches",
-    "text": "Branches\nEach repository can have multiple branches (think of it as alternative versions of all files, allowing different people to work on different aspects of a project with minimal interference).\nOften, using just a single branch is all you need. The name of the main branch can be anything, but these days the default is main. Until not too long ago, the main branch was referred to as master, you might still see that term occasionally.\nAs you work on your repository, make commits and push/pull, you are creating a line along the main branch. You can create additional branches to isolate your work. For instance if you want to try out a new feature, you can create a new branch for that feature. This way, your work on the new feature does not affect the main branch until you are sure your new feature works. At this point, you can merge your branch back into the main one.\nBranches are useful for projects with multiple collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch.",
+    "text": "Branches\nEach repository can have multiple branches (think of it as alternative versions of all files, allowing different people to work on different aspects of a project with minimal interference).\nOften, using just a single branch is all you need. The name of the main branch can be anything, but these days the default is main. Until not too long ago, the main branch was referred to as master, you might still see that term occasionally.\nAs you work on your repository, make commits and push/pull, you are creating a line along the main branch. You can create additional branches to isolate your work. For instance if you want to try out a new feature, you can create a new branch for that feature. This way, your work on the new feature does not affect the main branch until you are sure your new feature works. At this point, you can merge your branch back into the main one.\nBranches are useful for projects with collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch.",
     "crumbs": [
       "Branches, Forks and Pull Requests"
     ]
@@ -1903,7 +1893,7 @@
     "href": "courses/fc4-intro-github/github-forks-prs/github-forks-prs.html#forks",
     "title": "Branches, Forks and Pull Requests",
     "section": "Forks",
-    "text": "Forks\nA fork is a personal copy of someone else’s repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.",
+    "text": "Forks\nTo be able to use branches, you need to be an owner or member of a repository. In contrast, you can fork any public repository. A fork is a personal copy of someone else’s repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.",
     "crumbs": [
       "Branches, Forks and Pull Requests"
     ]
@@ -1923,7 +1913,7 @@
     "href": "courses/fc4-intro-github/github-forks-prs/github-forks-prs.html#open-a-pull-request-pr",
     "title": "Branches, Forks and Pull Requests",
     "section": "Open a pull request (PR)",
-    "text": "Open a pull request (PR)\nPush your branch to your fork, then open a pull request from your branch to the original repository. Provide a clear summary of what changed and why.",
+    "text": "Open a pull request (PR)\nAssume that you forked a repository because you wanted to contribute some improvements. You cloned your fork to your computer, made some changes, committed them, and pushed the branch to your fork on GitHub.\nNext, you ask the owner of the original repository to incorporate the updates you made in the fork into their main repository. This last part is called issuing a pull request. You are requesting that the other person pull your changes into their repository, hence the at times confusing (at least for us) terminology. Maybe thinking of it as merge requests or sync requests is better, i.e. you are requesting that they merge or sync your changes into their repository. You’ll find the terminology merge request is used at times. If the person who controls the main repository likes your changes, they will merge your fork into the main branch. And just like that, you have contributed to some project becoming better!\nTo open a pull request, go to your fork on GitHub. You should see a button that says Compare & pull request. Click on it. You will be taken to a page where you can provide a title and description of your changes. Be clear about what you changed and why. Once you are satisfied, click on Create pull request. The owner of the original repository should receive a notification that someone created a pull request.",
     "crumbs": [
       "Branches, Forks and Pull Requests"
     ]
@@ -2313,7 +2303,7 @@
     "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html",
     "title": "Portfolio Creation",
     "section": "",
-    "text": "This assessment walks you through creating a portfolio website. You will set up a GitHub repository from a template, customize Quarto files, and publish the site with GitHub Pages.",
+    "text": "This unit walks you through creating a portfolio website. You will set up a GitHub repository from a template, customize Quarto files, and publish the site with GitHub Pages.",
     "crumbs": [
       "Portfolio Creation"
     ]
@@ -2323,7 +2313,67 @@
     "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#github-repository-creation",
     "title": "Portfolio Creation",
     "section": "GitHub repository creation",
-    "text": "GitHub repository creation\nWe will use GitHub to both manage this project and host the website.\nTo make things a bit easier and faster, we will use a GitHub repository template that already has the necessary Quarto files and configuration. Go to the Online Portfolio Template. Make sure you are logged into GitHub, then click Use this template.\nCreate a new repository called yourname-portfolio (include both first and last name, e.g., andreashandel-portfolio). Choose a public repository.\nNext, clone the repository to your local computer (using e.g. GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. It’s generally a bad idea to place repository folders into a local folder that is synced with some other service (e.g., Google Drive/Dropbox/OneDrive.)\n\nQuick local website check\nOpen the repository as a project. Then open the main index.qmd file. You should see the Preview button in the upper left corner of the editor. Click it to render the website. You should see in the terminal window what Quarto is doing. It is not only rendering the current open .qmd file, but instead all files that are part of this project - which is a Quarto website.\nYou will likely get an error message during rendering, telling you about missing R packages. Install those packages as needed. Once rendering works without errors and is complete, you should see the website preview in the Viewer pane, or your browser (depending on your settings). If it is in the Viewer pane and you want to see it in your browser, click the Open in Browser button (the box with an arrow pointing out of it, in the upper right of the Viewer pane).\nIf you get missing package errors, install them and try again. A local preview should open in your browser.\n\nIf you cannot see the Build tab, open the Terminal and run quarto render to build the site.\n\n\n\nQuarto content creation\nOpen index.qmd and update the landing page text. This is Markdown, so feel free to experiment with headings, lists, and formatting.\nNext, open aboutme.qmd and write a personal introduction:\n\nDescribe your background, interests, and experience with data analysis.\nInclude headings and subheadings.\nAdd a picture of yourself (store it in the repository and link it).\nAdd a link to a data-related resource you find interesting, with a short explanation.\nOptionally add extra content (tables, video, or other elements).\n\nSave and re-render the site to see your changes.\n\nThis portfolio website and everything you put on it is public. Do not post anything you want to keep private.\n\n\n\nWebsite control\nOpen _quarto.yml. This file controls the site title, navigation, and styling.\nMake the following changes:\n\nUpdate the site title.\nReplace URL-TO-THIS-REPOSITORY-HERE with the GitHub URL of your repository.\nTry a different theme and optionally a different syntax highlight scheme.\n\n\nYAML is very sensitive to indentation. A small spacing error can break rendering.\n\n\n\nSending updates to GitHub\nOnce you are happy with your updates, commit and push them:\n\nClose RStudio/Positron.\nOpen GitKraken (or your preferred Git client).\nStage changes, write a commit message, and commit.\nPush to GitHub.\n\n\nIf you ever need to force push, be aware that it overwrites remote history. It is usually better to resolve merge conflicts instead.\n\n\n\nMaking the website public\nEnable GitHub Pages for the repository:\n\nGo to your repository on github.com.\nOpen Settings → Pages.\nSet the branch to main and the folder to /docs.\nSave.\n\nYour site URL will look like https://username.github.io/yourname-MADA-portfolio/. It can take a minute for the site to appear.\n\n\nUpdate your repository README\nOpen README.md and add a sentence pointing to your website URL. This is the file people see when they visit your GitHub repository.\n\n\nGeneral GitHub workflow\nIn the future, your workflow should be:\n\nPull latest changes.\nEdit and render in RStudio/Positron.\nCommit and push with your Git client.\n\nYou will use this workflow repeatedly.",
+    "text": "GitHub repository creation\nWe will use GitHub to both manage this project and host the website.\nTo make things a bit easier and faster, we will use a GitHub repository template that already has some of the necessary Quarto files and configuration. Go to the Online Portfolio Template. Make sure you are logged into GitHub, then click Use this template.\nCreate a new repository called yourname-portfolio (include both first and last name, e.g., andreashandel-portfolio). Choose a public repository, then create it.\nNext, clone the repository to your local computer (using e.g. GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. Remember that these GitHub repositories/folders should not be nested inside each other, and should not be synced with some other software (e.g., Dropbox/OneDrive).",
+    "crumbs": [
+      "Portfolio Creation"
+    ]
+  },
+  {
+    "objectID": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#quick-local-website-check",
+    "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#quick-local-website-check",
+    "title": "Portfolio Creation",
+    "section": "Quick local website check",
+    "text": "Quick local website check\nOpen the repository as a project. Then open the main index.qmd file. You should see the Preview button in the upper left corner of the editor. Click it to render the website. Alternatively, you can type quarto render into the terminal.\nYou should see in the terminal window what Quarto is doing. It is not only rendering the current open .qmd file, but instead all files that are part of this project - which is a Quarto website.\nYou will likely get an error message during rendering, telling you about missing R packages. Install those packages as needed. Once rendering works without errors and is complete, you should see the website preview in the Viewer pane, or your browser (depending on your settings). If it is in the Viewer pane and you want to see it in your browser, click the Open in Browser button (the box with an arrow pointing out of it, in the upper right of the Viewer pane).",
+    "crumbs": [
+      "Portfolio Creation"
+    ]
+  },
+  {
+    "objectID": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#quarto-content-creation",
+    "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#quarto-content-creation",
+    "title": "Portfolio Creation",
+    "section": "Quarto content creation",
+    "text": "Quarto content creation\nOpen index.qmd in the editor. This is the main landing page for your website. Change the text however you want to. What you are writing here is Markdown, so now would be a good time to check out some of the Markdown resources and play with them. The Markdown basics section of the Quarto guide might be helpful - or any of the other many Markdown resources available online.\nAlso recall that you can switch between Source and Visual view in the editor. It’s a good idea to switch back and forth to start to learn how certain graphical elements look like in plain text formatting. You’ll likely be using a mix of visual and source view a lot.\nNext, open aboutme.qmd and write some text introducing yourself, as follows:\n\nTalk a bit about yourself, your background, training, research interests. Let us know what kind of statistics, programming, data analysis experience you already have. I’d also be curious to know what you most hope to learn in this course. And then tell us some quirky/interesting/curious thing about you.\nGive your text a nice structure with headings, subheadings, etc.\nInclude a picture of yourself. To do so, place the picture in the repository and link it from the Quarto file.\nInclude a link to a picture/video/website/etc. The linked material should be somehow related to data analysis. Find something that you think is really cool/interesting/weird/etc. Provide a few explanatory sentences.\nIf you want, feel free to get creative and include other things. You can play with Quarto if you wish to, e.g., you can try to include a table or a video or any other elments you want to explore.\n\nOnce done (or as you go along, if you want to see your udpates), save and re-render the site to see your changes.\n\nThis portfolio website and everything you put on it is public. So don’t put anything on there that you don’t want to be publicly known.",
+    "crumbs": [
+      "Portfolio Creation"
+    ]
+  },
+  {
+    "objectID": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#website-configuration",
+    "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#website-configuration",
+    "title": "Portfolio Creation",
+    "section": "Website configuration",
+    "text": "Website configuration\nFor Quarto, a lot of the look/feel and structure of a website is controlled in what’s called a YAML file (it has the ending .yml). The main one is called _quarto.yml. Open it. You’ll see that it contains a bunch of information about the website, including the title, the menu structure, and some styling information.\nMake the following changes:\n\nUpdate the title of your website.\nReplace the URL-TO-THIS-REPOSITORY-HERE placeholder text with the Github URL of the repository you created (it should be something like https://github.com/githubusername/yourname-portfolio).\nIt is possible to change the look of your website. Full styling requires knowledge of CSS and HTML. We won’t get into this. But we’ll explore a quick way to change the look. Replace theme with a different one. Many themes are available. Try some, see how things change. You can also change the highlight scheme. For further styling, you can put custom CSS code into the styles.css file. We won’t do this here, but feel free to explore on your own.\n\n\nYAML (which is the format of _quarto.yml) is VERY finicky when it comes to formatting. You need to have exactly the right number of empty spaces. If you ever change a YAML file and you get a weird error message when trying to rebuild your website, it’s likely because some minor formatting is wrong, e.g. an empty space is missing or too much. Just keep that in mind. Positron usually gives you a warning in the Problems tab.",
+    "crumbs": [
+      "Portfolio Creation"
+    ]
+  },
+  {
+    "objectID": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#sending-updates-to-github",
+    "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#sending-updates-to-github",
+    "title": "Portfolio Creation",
+    "section": "Sending updates to Github",
+    "text": "Sending updates to Github\nOnce you are happy with your updates, or if you want to take a break, make sure to commit and push your updates to your remote repository on GitHub.com.",
+    "crumbs": [
+      "Portfolio Creation"
+    ]
+  },
+  {
+    "objectID": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#making-the-website-public",
+    "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#making-the-website-public",
+    "title": "Portfolio Creation",
+    "section": "Making the website public",
+    "text": "Making the website public\nWe want to set things such that your repository can at the same time become a public website. Github allows you to do that with its Github Pages feature. To turn on the Github Pages feature, go to your repository on github.com . On the top of the website for your repository, you should see a Settings button. Click on it and then find the Pages section. In the Branch section, switch none to main and folder as /docs. Click Save.\nThis should now have turned on your website. You might have gotten a notice about the location of your new website. If yes, follow the link. If not, you can get there by going to a URL that has the form https://username.github.io/yourname-portfolio/. It might take a several seconds before the page is available, if you get a ‘not found’ error, wait a bit and try again. If everything works, your website is now public!\nWe used the Github pages feature to create the website. You might have noticed that the files for your new website live on the domain github.com, while your nice-looking website lives at the domain github.io. This is how Github Pages work. It take files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder ( /docs for our setup). Your website URL and your repository URL are distinct. All github actions, like pushing, pulling, cloning, etc. are done with the repository on the github.com domain. The github.io domain is only there to display websites.",
+    "crumbs": [
+      "Portfolio Creation"
+    ]
+  },
+  {
+    "objectID": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#update-your-repository-readme-file",
+    "href": "courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.html#update-your-repository-readme-file",
+    "title": "Portfolio Creation",
+    "section": "Update your repository Readme file",
+    "text": "Update your repository Readme file\nTo allow quick switching between your repository and the website creeated from that repository, we’ll add that information to the repository README file. Open the README.md file. This file will not be part of your website, but it is what people see if they land at your github repository. Add text to the README that points users to the URL for your new website. (You’ve done the reverse above in your Quarto YAML file, allowing users to quickly go from your website to your Github repository).\nMake any other edits to the README you like. Once done with edits, remember to commit and push.",
     "crumbs": [
       "Portfolio Creation"
     ]

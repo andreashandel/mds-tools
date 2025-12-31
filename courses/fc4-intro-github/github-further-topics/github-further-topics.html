@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -228,13 +193,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
-  <li><a href="#why-large-files-are-a-problem" id="toc-why-large-files-are-a-problem" class="nav-link" data-scroll-target="#why-large-files-are-a-problem">Why large files are a problem</a></li>
-  <li><a href="#git-lfs-essentials" id="toc-git-lfs-essentials" class="nav-link" data-scroll-target="#git-lfs-essentials">Git LFS essentials</a>
-  <ul class="collapse">
-  <li><a href="#storage-and-bandwidth-quotas" id="toc-storage-and-bandwidth-quotas" class="nav-link" data-scroll-target="#storage-and-bandwidth-quotas">Storage and bandwidth quotas</a></li>
-  </ul></li>
-  <li><a href="#alternative-solutions" id="toc-alternative-solutions" class="nav-link" data-scroll-target="#alternative-solutions">Alternative solutions</a></li>
-  <li><a href="#tips-and-pitfalls" id="toc-tips-and-pitfalls" class="nav-link" data-scroll-target="#tips-and-pitfalls">Tips and pitfalls</a></li>
+  <li><a href="#force-push" id="toc-force-push" class="nav-link" data-scroll-target="#force-push">Force push</a></li>
+  <li><a href="#large-files" id="toc-large-files" class="nav-link" data-scroll-target="#large-files">Large files</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -292,95 +252,14 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-video div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
-<section id="why-large-files-are-a-problem" class="level2">
-<h2 class="anchored" data-anchor-id="why-large-files-are-a-problem">Why large files are a problem</h2>
-<ul>
-<li>Git stores objects as delta-compressed snapshots. Binary files do not diff well, so every small edit triggers a full-size blob.</li>
-<li>Repository size affects all contributors: clones, pulls, and CI jobs.</li>
-</ul>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Size</th>
-<th>Impact</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>≤ 100 MB</td>
-<td>OK for GitHub</td>
-</tr>
-<tr class="even">
-<td>100–500 MB</td>
-<td>GitHub warns; LFS recommended</td>
-</tr>
-<tr class="odd">
-<td>&gt; 2 GB per repo / &gt; 100 MB per file</td>
-<td>Hard GitHub limit</td>
-</tr>
-</tbody>
-</table>
+<section id="force-push" class="level2">
+<h2 class="anchored" data-anchor-id="force-push">Force push</h2>
+<div class="note">
+<p>Sometimes, there might be issues that prevent pushing/pulling, e.g., if someone else changed the same files you did. If you are sure your local version is the correct one, you can perform a <strong>force push</strong>. A force push will overwrite the remote repo with the local repo forcibly. This means that the remote will be updated with any changes that exist on your local computer. If any changes have been made to the code since you began editing (i.e.&nbsp;someone else has made a commit to the repo while you were working on it) they will be <strong>destroyed</strong> by the force push since they are not on your local repo. For this assignment, you are the only person working on your introduction so it is unlikely you will encounter any issues with force push, but it is good to be aware of the function of the action. Use with care. It’s generally better to <a href="https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git">resolve merge conflicts.</a></p>
+</div>
 </section>
-<section id="git-lfs-essentials" class="level2">
-<h2 class="anchored" data-anchor-id="git-lfs-essentials">Git LFS essentials</h2>
-<ol type="1">
-<li><p><strong>Install</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> lfs install</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Track patterns</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> lfs track <span class="st">"*.fastq.gz"</span> <span class="st">"*.png"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"*.fastq.gz filter=lfs diff=lfs merge=lfs -text"</span> <span class="op">&gt;&gt;</span> .gitattributes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Add and commit</strong> files as usual. Git replaces the content with a small pointer file; binary data uploads to the LFS server.</p></li>
-</ol>
-<section id="storage-and-bandwidth-quotas" class="level3">
-<h3 class="anchored" data-anchor-id="storage-and-bandwidth-quotas">Storage and bandwidth quotas</h3>
-<ul>
-<li>Free GitHub accounts: 1 GB storage + 1 GB bandwidth/month.</li>
-<li>Extra packs are available; or self-host an LFS server.</li>
-</ul>
-</section>
-</section>
-<section id="alternative-solutions" class="level2">
-<h2 class="anchored" data-anchor-id="alternative-solutions">Alternative solutions</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 43%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tool</th>
-<th>Best for</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>DVC</strong></td>
-<td>ML datasets and pipelines</td>
-<td>Data tracked in remote blob storage (S3, GCS)</td>
-</tr>
-<tr class="even">
-<td><strong>git-annex</strong></td>
-<td>Offline archival</td>
-<td>Uses symbolic links; steeper learning curve</td>
-</tr>
-<tr class="odd">
-<td><strong>Rclone + checksum manifest</strong></td>
-<td>Occasional big dumps</td>
-<td>Simple, not integrated with Git history</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="tips-and-pitfalls" class="level2">
-<h2 class="anchored" data-anchor-id="tips-and-pitfalls">Tips and pitfalls</h2>
-<ul>
-<li>Add <code>.gitattributes</code> before the first commit.</li>
-<li>Keep raw data in external storage and version metadata only.</li>
-<li>Use <code>.gitignore</code> for scratch, cache, outputs; never commit derived artifacts.</li>
-<li>CI: install <code>git-lfs</code> and run <code>git lfs pull</code> before build steps.</li>
-</ul>
+<section id="large-files" class="level2">
+<h2 class="anchored" data-anchor-id="large-files">Large files</h2>
 </section>
 </section>
 <!-- end unit-reading div -->

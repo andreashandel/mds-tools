@@ -255,7 +255,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Like VS Code, Positron is highly customizable. This flexibility allows you to tailor the editor to your specific workflow and preferences. There’s a lot you can customize, we’ll only briefly look at a few main areas here.</p>
+<p>Positron is highly customizable just like VS code the software it is based on. This flexibility allows you to tailor the editor to your specific workflow and preferences. There’s a lot you can customize, we’ll only briefly look at a few main areas here.</p>
 </section>
 <section id="settings" class="level2">
 <h2 class="anchored" data-anchor-id="settings">Settings</h2>
@@ -269,8 +269,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 </section>
 <section id="themes" class="level2">
 <h2 class="anchored" data-anchor-id="themes">Themes</h2>
-<p>You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have eeven more control, you can customize further. For most users, this is probably not worth it.</p>
+<p>You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have even more control, you can customize further. For most users, this is probably not worth it.</p>
 <p>You can explore themes by clicking on the gear icon in the lower left corner, then selecting <em>Themes</em> and <em>Color Theme</em>. This opens a list of available themes. Explore them to see what you might like.</p>
+<p>Theme selection is important to prevent eye fatigue or if you are color blind. Darker themes are generally better for your eyes during long coding sessions. There are a few themes that are specifically made for the color blind that rely on hue to differentiate code. Soloarized themes are generally the best for those who are colorblind.</p>
+<p>To be clear the themes do not change anything about the code it is for the humans writing/reading the code. They color and style token types (the different functional parts or key words) produced by the language parser (not arbitrary text).</p>
 </section>
 <section id="key-bindings" class="level2">
 <h2 class="anchored" data-anchor-id="key-bindings">Key Bindings</h2>
@@ -303,8 +305,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How do you set a Positron setting so it applies only to the current project instead of globally?</p>
-<div id="webex-7fe89b5318c2e50141e77598881185db" class="webex-radiogroup" data-answer="bFZJCBVTGQNs">
-<label><input type="radio" autocomplete="off" name="7fe89b5318c2e50141e77598881185db"><span>Edit the setting only after restarting Positron</span></label><label><input type="radio" autocomplete="off" name="7fe89b5318c2e50141e77598881185db"><span>Install an extension to override global defaults</span></label><label><input type="radio" autocomplete="off" name="7fe89b5318c2e50141e77598881185db"><span>Open Settings and use the Workspace tab before changing the option</span></label><label><input type="radio" autocomplete="off" name="7fe89b5318c2e50141e77598881185db"><span>Use the User tab to make it project specific</span></label>
+<div id="webex-1894f329cb78579f7372166b7c93db69" class="webex-radiogroup" data-answer="aggVBEoCHgk+">
+<label><input type="radio" autocomplete="off" name="1894f329cb78579f7372166b7c93db69"><span>Edit the setting only after restarting Positron</span></label><label><input type="radio" autocomplete="off" name="1894f329cb78579f7372166b7c93db69"><span>Install an extension to override global defaults</span></label><label><input type="radio" autocomplete="off" name="1894f329cb78579f7372166b7c93db69"><span>Open Settings and use the Workspace tab before changing the option</span></label><label><input type="radio" autocomplete="off" name="1894f329cb78579f7372166b7c93db69"><span>Use the User tab to make it project specific</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -320,8 +322,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the quickest built-in way to browse and switch Positron color themes?</p>
-<div id="webex-07d3477cff7c373aad58147a9d9dad69" class="webex-radiogroup" data-answer="awZIAxgHG1M7">
-<label><input type="radio" autocomplete="off" name="07d3477cff7c373aad58147a9d9dad69"><span>Click the gear icon, then Themes &gt; Color Theme</span></label><label><input type="radio" autocomplete="off" name="07d3477cff7c373aad58147a9d9dad69"><span>Install a third-party theme manager extension</span></label><label><input type="radio" autocomplete="off" name="07d3477cff7c373aad58147a9d9dad69"><span>Edit the settings JSON file by hand only</span></label><label><input type="radio" autocomplete="off" name="07d3477cff7c373aad58147a9d9dad69"><span>Themes cannot be changed in Positron</span></label>
+<div id="webex-b5a06297d37e738a7bc819b3229c7309" class="webex-radiogroup" data-answer="OQRNABoCFQc5">
+<label><input type="radio" autocomplete="off" name="b5a06297d37e738a7bc819b3229c7309"><span>Click the gear icon, then Themes &gt; Color Theme</span></label><label><input type="radio" autocomplete="off" name="b5a06297d37e738a7bc819b3229c7309"><span>Install a third-party theme manager extension</span></label><label><input type="radio" autocomplete="off" name="b5a06297d37e738a7bc819b3229c7309"><span>Edit the settings JSON file by hand only</span></label><label><input type="radio" autocomplete="off" name="b5a06297d37e738a7bc819b3229c7309"><span>Themes cannot be changed in Positron</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -337,8 +339,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>If you want the RStudio-style shortcut for toggling comments, how can you change it in Positron?</p>
-<div id="webex-fc464b40fbac24c2b6aa51524b3a6731" class="webex-radiogroup" data-answer="PVIYBhhSGAA7">
-<label><input type="radio" autocomplete="off" name="fc464b40fbac24c2b6aa51524b3a6731"><span>Open Keyboard Shortcuts from the gear menu and edit the binding for the toggle comment command</span></label><label><input type="radio" autocomplete="off" name="fc464b40fbac24c2b6aa51524b3a6731"><span>Change your system keyboard layout</span></label><label><input type="radio" autocomplete="off" name="fc464b40fbac24c2b6aa51524b3a6731"><span>Modify the R script manually before running it</span></label><label><input type="radio" autocomplete="off" name="fc464b40fbac24c2b6aa51524b3a6731"><span>Install RStudio alongside Positron</span></label>
+<div id="webex-c1e3673882c834543f23e0cfbb3e57fc" class="webex-radiogroup" data-answer="OABJAxoHHwhl">
+<label><input type="radio" autocomplete="off" name="c1e3673882c834543f23e0cfbb3e57fc"><span>Open Keyboard Shortcuts from the gear menu and edit the binding for the toggle comment command</span></label><label><input type="radio" autocomplete="off" name="c1e3673882c834543f23e0cfbb3e57fc"><span>Change your system keyboard layout</span></label><label><input type="radio" autocomplete="off" name="c1e3673882c834543f23e0cfbb3e57fc"><span>Modify the R script manually before running it</span></label><label><input type="radio" autocomplete="off" name="c1e3673882c834543f23e0cfbb3e57fc"><span>Install RStudio alongside Positron</span></label>
 </div>
 </div>
 <div class="webex-solution">

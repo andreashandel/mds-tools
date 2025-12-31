@@ -267,11 +267,11 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <p>Each repository can have multiple branches (think of it as alternative versions of all files, allowing different people to work on different aspects of a project with minimal interference).</p>
 <p>Often, using just a single branch is all you need. The name of the main branch can be anything, but these days the default is <code>main</code>. Until not too long ago, the main branch was referred to as <code>master</code>, you might still see that term occasionally.</p>
 <p>As you work on your repository, make commits and push/pull, you are creating a line along the <code>main</code> branch. You can create additional branches to isolate your work. For instance if you want to try out a new feature, you can create a new branch for that feature. This way, your work on the new feature does not affect the <code>main</code> branch until you are sure your new feature works. At this point, you can merge your branch back into the <code>main</code> one.</p>
-<p>Branches are useful for projects with multiple collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch.</p>
+<p>Branches are useful for projects with collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch.</p>
 </section>
 <section id="forks" class="level2">
 <h2 class="anchored" data-anchor-id="forks">Forks</h2>
-<p>A fork is a personal copy of someone else’s repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.</p>
+<p>To be able to use branches, you need to be an owner or member of a repository. In contrast, you can fork any public repository. A fork is a personal copy of someone else’s repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.</p>
 </section>
 <section id="making-a-fork" class="level2">
 <h2 class="anchored" data-anchor-id="making-a-fork">Making a fork</h2>
@@ -280,7 +280,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="open-a-pull-request-pr" class="level2">
 <h2 class="anchored" data-anchor-id="open-a-pull-request-pr">Open a pull request (PR)</h2>
-<p>Push your branch to your fork, then open a pull request from your branch to the original repository. Provide a clear summary of what changed and why.</p>
+<p>Assume that you forked a repository because you wanted to contribute some improvements. You cloned your fork to your computer, made some changes, committed them, and pushed the branch to your fork on GitHub.</p>
+<p>Next, you ask the owner of the original repository to incorporate the updates you made in the fork into their main repository. This last part is called issuing a <strong>pull request</strong>. You are requesting that the other person <em>pull</em> your changes into their repository, hence the at times confusing (at least for us) terminology. Maybe thinking of it as <em>merge</em> requests or <em>sync</em> requests is better, i.e.&nbsp;you are requesting that they merge or sync your changes into their repository. You’ll find the terminology <em>merge request</em> is used at times. If the person who controls the main repository likes your changes, they will <em>merge</em> your fork into the main branch. And just like that, you have contributed to some project becoming better!</p>
+<p>To open a pull request, go to your fork on GitHub. You should see a button that says <strong>Compare &amp; pull request</strong>. Click on it. You will be taken to a page where you can provide a title and description of your changes. Be clear about what you changed and why. Once you are satisfied, click on <strong>Create pull request</strong>. The owner of the original repository should receive a notification that someone created a pull request.</p>
 </section>
 <section id="merge-a-pull-request" class="level2">
 <h2 class="anchored" data-anchor-id="merge-a-pull-request">Merge a pull request</h2>
