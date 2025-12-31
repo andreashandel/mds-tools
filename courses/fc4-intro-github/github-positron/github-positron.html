@@ -134,19 +134,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-introduction/github-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git and GitHub Introduction</span></a>
+ <span class="menu-text">Introduction to Git/GitHub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-install-setup/github-install-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git and GitHub Installation and Setup</span></a>
+ <span class="menu-text">Installation and Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Basic GitHub Workflow</span></a>
+ <span class="menu-text">Basic Use</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -162,17 +162,8 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-confidentiality/github-confidentiality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Handling Confidential and Sensitive Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc4-intro-github/github-further-topics/github-further-topics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Managing Large Files with Git and GitHub</span></a>
-  </div>
-</li>
+ <span class="menu-text">courses/fc4-intro-github/github-additional-topics/github-additinal-topics.qmd</span>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="sidebar-item-text sidebar-link">
@@ -193,14 +184,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
-  <li><a href="#enable-git-for-a-project" id="toc-enable-git-for-a-project" class="nav-link" data-scroll-target="#enable-git-for-a-project">Enable Git for a project</a></li>
-  <li><a href="#check-status-and-stage-files" id="toc-check-status-and-stage-files" class="nav-link" data-scroll-target="#check-status-and-stage-files">Check status and stage files</a></li>
-  <li><a href="#commit-changes" id="toc-commit-changes" class="nav-link" data-scroll-target="#commit-changes">Commit changes</a></li>
-  <li><a href="#pull-then-push" id="toc-pull-then-push" class="nav-link" data-scroll-target="#pull-then-push">Pull, then push</a></li>
-  <li><a href="#when-to-switch-tools" id="toc-when-to-switch-tools" class="nav-link" data-scroll-target="#when-to-switch-tools">When to switch tools</a></li>
+  <li><a href="#gitgithub-in-positron" id="toc-gitgithub-in-positron" class="nav-link" data-scroll-target="#gitgithub-in-positron">Git/GitHub in Positron</a></li>
+  <li><a href="#setting-up-git-in-positron" id="toc-setting-up-git-in-positron" class="nav-link" data-scroll-target="#setting-up-git-in-positron">Setting up Git in Positron</a></li>
+  <li><a href="#positron-and-gitgithub-workflow" id="toc-positron-and-gitgithub-workflow" class="nav-link" data-scroll-target="#positron-and-gitgithub-workflow">Positron and Git/GitHub workflow</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
+  <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
   <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
   </ul>
 </nav>
@@ -235,10 +225,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
-<li>Enable Git for a project in Positron.</li>
-<li>Check status and stage changes inside the IDE.</li>
-<li>Commit and push to GitHub.</li>
-<li>Resolve simple sync issues (pull before push).</li>
+<li>Know how to use Git/GitHub within Positron.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -255,62 +242,98 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-video div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
-<section id="enable-git-for-a-project" class="level2">
-<h2 class="anchored" data-anchor-id="enable-git-for-a-project">Enable Git for a project</h2>
-<p>If you cloned a repository, Git is already enabled. If you started from a local folder:</p>
-<ol type="1">
-<li>Open the project in Positron.</li>
-<li>Initialize Git for the folder (or use a Git client to do it).</li>
-<li>Connect to a remote repository on GitHub.</li>
-</ol>
+<p>So far, we used GitHub Desktop to interact with GitHub. An alternative is to use Positron’s built-in Git support. This allows you to perform common Git tasks without leaving the IDE.</p>
+<p>The GitHub Desktop application is generally a bit more user- and beginner-friendly, but Positron’s Git integration is convenient for day-to-day use. It is ok to use a mix of both tools as needed.</p>
+<section id="gitgithub-in-positron" class="level2">
+<h2 class="anchored" data-anchor-id="gitgithub-in-positron">Git/GitHub in Positron</h2>
+<p>Positron has built-in Git support. You can find it on the left sidebar, it is generally the third icon from the top (the icon looks like a branch with a dot at each end). If you have a project open that is also a GitHub repository, you will see information in the Git panel that shows you what files have changed (top part) and the history of your project (bottom part).</p>
+<p>Through this panel, you can do the same push/pull/commit workflow as in GitHub Desktop, but without leaving Positron.</p>
 </section>
-<section id="check-status-and-stage-files" class="level2">
-<h2 class="anchored" data-anchor-id="check-status-and-stage-files">Check status and stage files</h2>
-<p>Use the Git panel to view modified files. Stage files you want to include in the next commit. Staging is a way to choose exactly which changes are committed together.</p>
+<section id="setting-up-git-in-positron" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-git-in-positron">Setting up Git in Positron</h2>
+<p>I DONT REMEMBER HOW TO DO THAT, NEED TO REPRODUCE</p>
 </section>
-<section id="commit-changes" class="level2">
-<h2 class="anchored" data-anchor-id="commit-changes">Commit changes</h2>
-<p>Write a short, descriptive commit message. Good commit messages describe <em>what changed</em> and <em>why</em>.</p>
-</section>
-<section id="pull-then-push" class="level2">
-<h2 class="anchored" data-anchor-id="pull-then-push">Pull, then push</h2>
-<p>Before pushing, pull to make sure you have the latest changes from GitHub. If there are conflicts, Positron will show you which files need attention.</p>
-</section>
-<section id="when-to-switch-tools" class="level2">
-<h2 class="anchored" data-anchor-id="when-to-switch-tools">When to switch tools</h2>
-<p>Positron works well for most day-to-day Git tasks. If you need advanced features (complex merges, rebases, or repository cleanup), use a dedicated Git client or the command line.</p>
+<section id="positron-and-gitgithub-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="positron-and-gitgithub-workflow">Positron and Git/GitHub workflow</h2>
+<p>Let’s go through a minimal Git workflow in Positron. Open the Github repository you created earlier. You might even have it already open if you followed along in previous units.</p>
+<p>If you recently did a push/pull with GitHub Desktop, the panel showing changes should be empty. You will also see in the bottom panel that the <code>main</code> symbol (your local repo) and the <code>origin/main</code> symbol (the remote repo on GitHub) are in sync and on the same line.</p>
+<p>Now edit the README file or another file you created in that repository. After saving the file, go back to the Git panel in Positron. You should see the changed file listed in the top panel.</p>
+<p>You will also see the <code>Commit</code> button. In the box above, write a short, descriptive commit message. Then click the <code>Commit</code> button.</p>
+<p>You will see in the bottom panel that your local <code>main</code> branch is now ahead of the <code>origin/main</code> branch by one commit. This means you have changes locally that are not yet on GitHub.</p>
+<p>Now click the <code>Push</code> button on top of the lower panel (the outgoing arrow symbol) to send your local commit to GitHub.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>Positron provides a lightweight Git workflow: check status, stage, commit, pull, and push without leaving the IDE. For complex tasks, switch to a full Git client.</p>
+<p>Positron provides an alternative to GitHub Desktop for performing Git/GitHub tasks. You can use it together with GitHub Desktop.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li><strong>Positron product page</strong> – <a href="https://posit.co/products/positron/" class="uri">https://posit.co/products/positron/</a></li>
-<li><strong>GitHub Docs: About Git</strong> – <a href="https://docs.github.com/get-started/using-git/about-git" class="uri">https://docs.github.com/get-started/using-git/about-git</a></li>
+<li><a href="https://positron.posit.co/git.html">The Positron documentation</a> provides a few more details for using Git in Positron.</li>
+<li><a href="https://code.visualstudio.com/docs/sourcecontrol/overview">The VS Code documentation</a> has very detailed instructions and explanations of Git functionality in VS Code (reminder: Positron is basically VS Code).</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
-<!--
-::: {.unit-quiz}
-# Test yourself
-
-
-:::
--->
+<section id="test-yourself" class="level1 unit-quiz">
+<h1>Test yourself</h1>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Where can you find Git controls in Positron?</p>
+<div id="webex-6427302040c232a1202a3bd07b95cea9" class="webex-radiogroup" data-answer="bQQeBh8AHgBp">
+<label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The terminal output panel</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Positron has a Git panel in the left sidebar, shown with a branch-style icon.</p>
+<ul>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>After committing in Positron, what indicates your local branch is ahead of the remote?</p>
+<div id="webex-94813315bd78fcc2ab17de9dc7a53d93" class="webex-radiogroup" data-answer="YgQUAR8CHQU/">
+<label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The README file is locked for editing</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>A local commit puts your local main branch ahead of origin/main until you push.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Can you use both GitHub Desktop and Positron for Git tasks?</p>
+<div id="webex-29334cf063547e4e4ad7a894c4fe64ae" class="webex-radiogroup" data-answer="aQkfAxhTSgFr">
+<label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>Yes, you can mix both tools as needed</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>It is fine to use a mix of GitHub Desktop and Positron for the same repository.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+</ul>
+</div>
+</div>
+</section>
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<ol type="1">
-<li>Open a GitHub repository in Positron.</li>
-<li>Make a small change to a file and stage it.</li>
-<li>Commit with a clear message.</li>
-<li>Pull, then push the commit to GitHub.</li>
-</ol>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1894,8 +1917,8 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="pagination-link" aria-label="Basic GitHub Workflow">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Basic GitHub Workflow</span>
+      <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="pagination-link" aria-label="Basic Use">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Basic Use</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -1908,7 +1931,7 @@ window.onload = function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2025</p>
+<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2026</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

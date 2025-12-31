@@ -8,7 +8,7 @@
 
 <meta name="description" content="Short introductory courses that cover some modeling and data science tools.">
 
-<title>Introduction to Artificial Intelligence – Modeling and Data Science Tools</title>
+<title>Introduction to AI – Modeling and Data Science Tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-introduction/ai-introduction.html">Introduction to Artificial Intelligence</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-introduction/ai-introduction.html">Introduction to AI</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -134,13 +134,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-introduction/ai-introduction.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Introduction to Artificial Intelligence</span></a>
+ <span class="menu-text">Introduction to AI</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-llm-introduction/ai-llm-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to current LLM AI tools</span></a>
+ <span class="menu-text">Introduction to LLM AI tools</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction to Artificial Intelligence</h1>
+<h1 class="title">Introduction to AI</h1>
 </div>
 
 
@@ -263,7 +263,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Artificial intelligence (AI) is everywhere these days. AI approaches have led to some impressive recent technological advances, such as self-driving cars, very good language translation, biometrics and image recognition, and computers that beat humans at games like Chess/Go/Poker, etc. Most recently, we have seen LLM AI tools (which we’ll discuss separately) that can be very useful for doing data analysis and coding tasks.</p>
-<p>I have no doubt that progress in AI will continue to be rapid and lead to many important advances. With everything “new and shiny” there comes a good bit of hype. The goal for this short unit is to give you a very brief introduction to what you should think of when you hear AI, how AI is related to data analysis/machine learning, and how you could – if you wanted – do AI yourself (using R).</p>
+<p>Progress in AI will continue to be rapid and lead to many important advances. With everything “new and shiny” there comes a good bit of hype. The goal for this short unit is to give you a very brief introduction to what you should think of when you hear AI, how AI is related to data analysis/machine learning, and how you could – if you wanted – do AI yourself.</p>
 </section>
 <section id="neural-networks-nn" class="level2">
 <h2 class="anchored" data-anchor-id="neural-networks-nn">Neural networks (NN)</h2>
@@ -273,7 +273,6 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <p>While the analogy to a biological brain is apt, this comparison does sometimes make NN sound more complicated and fancy than they are. To demystify NN somewhat, you can switch out the comparison to a biological brain, and instead think of them as a coupled set of logistic regressions. Each neuron is more or less described by some type of logistic regression function. It gets some input from multiple variables (either the original input, or a previous layer of neurons), and then based on that input and its parameter setting returns either 0/No or Yes/1. The output is then fed to the next layer of networks. The NN is thus a combination of individual logistic regression models, coupled together in some way.</p>
 <p>This idea of connecting individual models to make a bigger, better model should be familiar by now. You saw it when we discussed making models like random forests that combine individual trees, and it was also mentioned as a general idea of <strong>ensemble models.</strong> You can think of NN as an ensemble of simpler, logistic-type models.</p>
 <p>Of course, neural networks are complicated. At this point, there are many different versions of NN in use, and understanding them in detail is time-consuming. However, as general user, you don’t need to understand all the details. Instead, like for other complex ML models, as long as you know how to use them and evaluate what they return, it is ok to not fully understand their inner workings. Properly training/fitting NN can be tricky, because they generally have many different parameters that need tuning to achieve good performance. Thus, a lot of development has gone into methods that allow for efficient tuning/fitting. Fortunately for us as users, these methods have become fairly good such that it is possible to use NN algorithms built by others and generally trust they work well – similar to us using other models (GLM, trees, SVM, etc.) – without having to worry about all the details.</p>
-<p>If you want to learn more about neural nets, the <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Wikipedia entry</a> is a good place to start. Also check the <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html">AI Resources page</a>.</p>
 </section>
 <section id="deep-learning-dl" class="level2">
 <h2 class="anchored" data-anchor-id="deep-learning-dl">Deep Learning (DL)</h2>
@@ -281,10 +280,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="artificial-intelligence-ai" class="level2">
 <h2 class="anchored" data-anchor-id="artificial-intelligence-ai">Artificial Intelligence (AI)</h2>
-<p>Artificial Intelligence (AI) is definitely a trendy topic these days. It is widely used and also widely mis-used in many contexts these days. Roughly speaking, AI is the use of complex models, usually NN, to solve difficult problems. If one wanted to differentiate DL and AI, one might say that AI is the use of DL approaches applied to “complex” problems. However, it seems these days that DL and AI are terms that are used largely interchangeably. Overall, if you hear AI or DL, you can think of it roughly as <em>fitting a neural net model to data.</em> Unfortunately, since DL and AI have become such <em>hot</em> topics, terms are often misused these days, especially outside academia.</p>
-<p>If you want to learn a bit more on the distinction between DL and AI (and just in general), the <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">AI</a> and <a href="https://en.wikipedia.org/wiki/Deep_learning">DL</a> sections of Wikipedia are good starting points.</p>
+<p>Artificial Intelligence (AI) is definitely a trendy topic these days. It is widely used and also widely mis-used in many contexts these days. Roughly speaking, AI is the use of complex models, usually NN. If one wanted to differentiate DL and AI, one might say that AI is the use of DL approaches applied to problems. However, it seems these days that DL and AI are terms that are used largely interchangeably. Overall, if you hear AI or DL, you can think of it roughly as <em>fitting a complex (usually neural net) model to data.</em> Unfortunately, since DL and AI have become such <em>hot</em> topics, terms are often applied to a lot of different instances. And the use of LLM AI tools to help with various tasks further muddles what AI actually is.</p>
 <p>As with all “new and shiny” things, there seems to be a bit of a current trend to use DL/AI approaches even when not needed. As an example, <a href="https://www.nature.com/articles/s41586-018-0438-y">DeVries et al.&nbsp;2018</a> used deep learning to analyze data; this follow-up correspondence article from <a href="https://www.nature.com/articles/s41586-019-1582-8">Mignan and Broccardo 2019</a> showed that a single logistic regression produced more or less the same results. The reply by one of the original authors, <a href="https://www.nature.com/articles/s41586-019-1583-7">Meade 2019</a>, is also worth reading.</p>
-<p>Overall, DL and AI are certainly very promising approaches and will undoubtedly lead to significant improvements in our ability to harness data. As with most technologies going through a “bubble” there is currently work that is both substantial and important, and work that is fluffy and full of hype.</p>
+<p>Overall, DL and AI are certainly very promising approaches and will undoubtedly lead to significant improvements – or at least changes – in many areas of our lives.</p>
 </section>
 <section id="dl-and-ai-in-r" class="level2">
 <h2 class="anchored" data-anchor-id="dl-and-ai-in-r">DL and AI in R</h2>
@@ -293,10 +291,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </div>
 <p>While R is a great tool for data analysis, it’s currently probably not the best choice for doing AI/fitting NN models. If you really want to go deep into AI work, using something like Python, Julia, or some more specialized programming language is likely better.</p>
 <p>That said, there are some ways to use R to fit some NN models. The best and easiest way is likely to use R packages that allow you to interact with powerful tools such as <a href="https://www.tensorflow.org/">TensorFlow</a> and <a href="https://keras.io/">Keras</a> through R.</p>
-<p>The <a href="https://tensorflow.rstudio.com/">RStudio TensorFlow website</a> has a lot of good information and documentation on how to use Keras through R to do DL/AI. Starting there with the <em>Tutorials</em> section is probably the best way to get going. After that you can branch out to some of the other resources. While I’m sure a DL/AI expert uses more than just Keras/Tensorflow as tools, you can get very far with those. And for playing around with DL/AI, Keras through R is a great place to start. See the exercise for suggested starting points.</p>
-<div class="note">
-<p>Since DL/AI usually involves fitting large amounts of data to complex models, time constraints are often crucial and, at times, powerful computers are needed. An important development is the use of <strong>GPU (graphical processing unit) computing</strong>. While modern computers usually have more than 1 CPU, they are still generally limited to a small number. Even a very powerful single desktop generally will have less than 100 CPUs. In contrast, modern graphics cards often have &gt;1000 GPUs that can all be used in parallel to perform model fitting. Products such as Tensorflow allow one to use (mainly NVIDIA) GPUs to fit complex models to a lot of data in an often reasonable amount of time without requiring a supercomputer cluster. Unfortunately, last time I tried, R still didn’t have great GPU support. I have not recently tried to use Keras with GPUs through R.</p>
-</div>
+<p>The <a href="https://tensorflow.rstudio.com/">RStudio/Posit TensorFlow website</a> has a lot of good information and documentation on how to use Keras through R to do DL/AI. Starting there with the <em>Tutorials</em> section is probably the best way to get going. After that you can branch out to some of the other resources. While I’m sure a DL/AI expert uses more than just Keras/Tensorflow as tools, you can get very far with those. And for playing around with DL/AI, Keras through R is a great place to start.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
@@ -307,7 +302,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<p>See the <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html">AI Resources page</a> for some additional information on various AI topics.</p>
+<p>If you want to learn more about neural nets, the <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Wikipedia entry</a> is a good place to start.</p>
+<p>If you want to learn a bit more on the distinction between DL and AI (and just in general), the <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">AI</a> and <a href="https://en.wikipedia.org/wiki/Deep_learning">DL</a> sections of Wikipedia are good starting points.</p>
+<p>The <a href="https://www.youtube.com/@statquest">StatQuest Youtube Channel</a> has some great videos explaining neural networks and deep learning in an easy-to-understand way.</p>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
@@ -315,8 +312,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is described as the main workhorse of current AI in this unit?</p>
-<div id="webex-ecfd0071e79cab5f1a93a8b2aa93c76d" class="webex-radiogroup" data-answer="PlJKVBwAGwE4">
-<label><input type="radio" autocomplete="off" name="ecfd0071e79cab5f1a93a8b2aa93c76d"><span>Neural networks</span></label><label><input type="radio" autocomplete="off" name="ecfd0071e79cab5f1a93a8b2aa93c76d"><span>Decision trees</span></label><label><input type="radio" autocomplete="off" name="ecfd0071e79cab5f1a93a8b2aa93c76d"><span>Linear regression</span></label><label><input type="radio" autocomplete="off" name="ecfd0071e79cab5f1a93a8b2aa93c76d"><span>Spreadsheets</span></label>
+<div id="webex-a7a8d1e12d58b82d066649d438619d8c" class="webex-radiogroup" data-answer="OgZNCEgBSQFv">
+<label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Neural networks</span></label><label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Decision trees</span></label><label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Linear regression</span></label><label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Spreadsheets</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -332,8 +329,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which statement best describes the relationship between deep learning and AI in this unit?</p>
-<div id="webex-35d4fefcf974c5ac7dc57077135f14d9" class="webex-radiogroup" data-answer="aAVIBUpVSlM7">
-<label><input type="radio" autocomplete="off" name="35d4fefcf974c5ac7dc57077135f14d9"><span>Deep learning is unrelated to AI.</span></label><label><input type="radio" autocomplete="off" name="35d4fefcf974c5ac7dc57077135f14d9"><span>Deep learning is a subset of AI that uses multi-layer neural networks.</span></label><label><input type="radio" autocomplete="off" name="35d4fefcf974c5ac7dc57077135f14d9"><span>AI is a subset of deep learning.</span></label><label><input type="radio" autocomplete="off" name="35d4fefcf974c5ac7dc57077135f14d9"><span>Deep learning only refers to non-neural network models.</span></label>
+<div id="webex-fa8b49b07c7eb86b2a93ece2135909af" class="webex-radiogroup" data-answer="PVEUUxgJTgBq">
+<label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>Deep learning is unrelated to AI.</span></label><label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>Deep learning is a subset of AI that uses multi-layer neural networks.</span></label><label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>AI is a subset of deep learning.</span></label><label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>Deep learning only refers to non-neural network models.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -349,8 +346,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why might R be less ideal for heavy AI workloads?</p>
-<div id="webex-bd5cb22efb482ffb8f87b713a53c5011" class="webex-radiogroup" data-answer="OVQZU04DHlU7">
-<label><input type="radio" autocomplete="off" name="bd5cb22efb482ffb8f87b713a53c5011"><span>R cannot read data files.</span></label><label><input type="radio" autocomplete="off" name="bd5cb22efb482ffb8f87b713a53c5011"><span>R lacks any packages for neural networks.</span></label><label><input type="radio" autocomplete="off" name="bd5cb22efb482ffb8f87b713a53c5011"><span>Other languages often provide stronger AI tooling and GPU support.</span></label><label><input type="radio" autocomplete="off" name="bd5cb22efb482ffb8f87b713a53c5011"><span>R does not support data visualization.</span></label>
+<div id="webex-01b955de7ccb0e245c0a6c381323c390" class="webex-radiogroup" data-answer="awFOCRkESFVq">
+<label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>R cannot read data files.</span></label><label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>R lacks any packages for neural networks.</span></label><label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>Other languages often provide stronger AI tooling and GPU support.</span></label><label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>R does not support data visualization.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -368,9 +365,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Skim the Wikipedia pages on neural networks and deep learning and note one key difference.</li>
-<li>Browse the TensorFlow or Keras R tutorials and identify a starter example you could run later.</li>
-<li>Reflect on one problem where a simple model might beat an overly complex AI approach.</li>
+<li>Watch at least one StatQuest video on an AI topic of interest.</li>
+<li>Look at the examples on the RStudio/Posit TensorFlow website and try to reproduce one of them.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->
@@ -1960,8 +1956,8 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc5-intro-ai/ai-llm-introduction/ai-llm-introduction.html" class="pagination-link" aria-label="Introduction to current LLM AI tools">
-        <span class="nav-page-text">Introduction to current LLM AI tools</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc5-intro-ai/ai-llm-introduction/ai-llm-introduction.html" class="pagination-link" aria-label="Introduction to LLM AI tools">
+        <span class="nav-page-text">Introduction to LLM AI tools</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1969,7 +1965,7 @@ window.onload = function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2025</p>
+<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2026</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

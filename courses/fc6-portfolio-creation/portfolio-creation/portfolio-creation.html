@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
   <li><a href="#github-repository-creation" id="toc-github-repository-creation" class="nav-link" data-scroll-target="#github-repository-creation">GitHub repository creation</a></li>
-  <li><a href="#quick-local-website-check" id="toc-quick-local-website-check" class="nav-link" data-scroll-target="#quick-local-website-check">Quick local website check</a></li>
+  <li><a href="#quick-initial-check" id="toc-quick-initial-check" class="nav-link" data-scroll-target="#quick-initial-check">Quick initial check</a></li>
   <li><a href="#quarto-content-creation" id="toc-quarto-content-creation" class="nav-link" data-scroll-target="#quarto-content-creation">Quarto content creation</a></li>
   <li><a href="#website-configuration" id="toc-website-configuration" class="nav-link" data-scroll-target="#website-configuration">Website configuration</a></li>
   <li><a href="#sending-updates-to-github" id="toc-sending-updates-to-github" class="nav-link" data-scroll-target="#sending-updates-to-github">Sending updates to Github</a></li>
@@ -232,43 +232,44 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h2 class="anchored" data-anchor-id="github-repository-creation">GitHub repository creation</h2>
 <p>We will use GitHub to both manage this project and host the website.</p>
 <p>To make things a bit easier and faster, we will use a GitHub repository template that already has some of the necessary Quarto files and configuration. Go to this <a href="https://github.com/andreashandel/online-portfolio-template">Online Portfolio Template</a>. Make sure you are logged into GitHub, then click <strong>Use this template</strong>.</p>
-<p>Create a new repository called <code>yourname-portfolio</code> (include both first and last name, e.g., <code>andreashandel-portfolio</code>). Choose a public repository, then create it.</p>
-<p>Next, <strong>clone</strong> the repository to your local computer (using e.g.&nbsp;GitHub Desktop). We recommend organizing your local repository folders in some way that works well for you. Remember that these GitHub repositories/folders should not be nested inside each other, and should not be synced with some other software (e.g., Dropbox/OneDrive).</p>
+<p>Using this template, create a new repository, name it <code>FirstnameLastname-portfolio</code>. Choose a public repository, then create it.</p>
+<p>Next, use GitHub Desktop or any other tool you prefer and <strong>clone</strong> the repository to your local computer. We recommend organizing your local repository folders in some way that works well for you. Remember that GitHub repositories/folders should not be nested inside each other, and should not be synced with some other software (e.g., Dropbox/OneDrive).</p>
 </section>
-<section id="quick-local-website-check" class="level2">
-<h2 class="anchored" data-anchor-id="quick-local-website-check">Quick local website check</h2>
-<p>Open the repository as a project. Then open the main <code>index.qmd</code> file. You should see the <code>Preview</code> button in the upper left corner of the editor. Click it to render <strong>the website</strong>. Alternatively, you can type <code>quarto render</code> into the terminal.</p>
+<section id="quick-initial-check" class="level2">
+<h2 class="anchored" data-anchor-id="quick-initial-check">Quick initial check</h2>
+<p>Open the repository folder on your computer as a project/workspace in Positron. Then open the main <code>index.qmd</code> file in the editor. You should see the <code>Preview</code> button in the upper left corner of the editor. Click it to render <strong>the website</strong>. Alternatively, you can type <code>quarto render</code> into the terminal.</p>
 <p>You should see in the terminal window what Quarto is doing. It is not only rendering the current open <code>.qmd</code> file, but instead all files that are part of this project - which is a Quarto website.</p>
 <p>You will likely get an error message during rendering, telling you about missing R packages. Install those packages as needed. Once rendering works without errors and is complete, you should see the website preview in the Viewer pane, or your browser (depending on your settings). If it is in the Viewer pane and you want to see it in your browser, click the <strong>Open in Browser</strong> button (the box with an arrow pointing out of it, in the upper right of the Viewer pane).</p>
 </section>
 <section id="quarto-content-creation" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-content-creation">Quarto content creation</h2>
-<p>Open <code>index.qmd</code> in the editor. This is the main landing page for your website. Change the text however you want to. What you are writing here is Markdown, so now would be a good time to check out some of the Markdown resources and play with them. The <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown basics</a> section of the Quarto guide might be helpful - or any of the other many Markdown resources available online.</p>
-<p>Also recall that you can switch between <code>Source</code> and <code>Visual</code> view in the editor. It’s a good idea to switch back and forth to start to learn how certain graphical elements look like in plain text formatting. You’ll likely be using a mix of visual and source view a lot.</p>
+<p>The <code>index.qmd</code> file is the main landing page for your website. Change the text however you want to. What you are writing here is Markdown, so now would be a good time to check out some of the Markdown resources and play with them. The <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown basics</a> section of the Quarto guide might be helpful - or any of the other many Markdown resources available online.</p>
+<p>Also recall that you can switch between <code>Source</code> and <code>Visual</code> view in the editor by clicking on those buttons at the top of the editor window. It’s a good idea to switch back and forth to learn how certain graphical elements look like in plain text formatting. You’ll likely be using a mix of visual and source view a lot.</p>
 <p>Next, open <code>aboutme.qmd</code> and write some text introducing yourself, as follows:</p>
 <ul>
-<li>Talk a bit about yourself, your background, training, research interests. Let us know what kind of statistics, programming, data analysis experience you already have. I’d also be curious to know what you most hope to learn in this course. And then tell us some quirky/interesting/curious thing about you.</li>
-<li>Give your text a nice structure with headings, subheadings, etc.</li>
+<li>Talk a bit about yourself, your background, training, research interests. Let us know what kind of statistics, modeling, programming, data analysis experience you already have. I’d also be curious to know what you most hope to learn in this course. And then tell us some quirky/interesting/curious thing about you.</li>
 <li>Include a picture of yourself. To do so, place the picture in the repository and link it from the Quarto file.</li>
 <li>Include a link to a picture/video/website/etc. The linked material should be somehow related to data analysis. Find something that you think is really cool/interesting/weird/etc. Provide a few explanatory sentences.</li>
-<li>If you want, feel free to get creative and include other things. You can play with Quarto if you wish to, e.g., you can try to include a table or a video or any other elments you want to explore.</li>
+<li>If you want, feel free to get creative and include other things, e.g., you can try to include a table or a video or any other elments you want to explore.</li>
 </ul>
+<p>Give your text a nice structure with headings, subheadings, etc. Use any other graphical elements (e.g.&nbsp;bold or intalics or color or…) that you like to make the page look nice.</p>
 <p>Once done (or as you go along, if you want to see your udpates), save and re-render the site to see your changes.</p>
-<div class="note">
+<div class="warning">
 <p>This portfolio website and everything you put on it is public. So don’t put anything on there that you don’t want to be publicly known.</p>
 </div>
 </section>
 <section id="website-configuration" class="level2">
 <h2 class="anchored" data-anchor-id="website-configuration">Website configuration</h2>
-<p>For Quarto, a lot of the look/feel and structure of a website is controlled in what’s called a YAML file (it has the ending <code>.yml</code>). The main one is called <code>_quarto.yml</code>. Open it. You’ll see that it contains a bunch of information about the website, including the title, the menu structure, and some styling information.</p>
+<p>For Quarto, a lot of the look/feel and structure of a website is controlled in what’s called a YAML file (it has the ending <code>.yml</code>). YAML stands for “YAML Ain’t Markup Language”. Now that you learned this, you can immediately forget it again since it’s not important 😁.</p>
+<p>YAML is a text-based format that is used to store configuration information. The main one for a Quarto project like a website is called <code>_quarto.yml</code>. It’s just a text file that is formatted in a specific way. Open it. You’ll see that it contains a bunch of information about the website, including the title, the menu structure, and some styling information.</p>
 <p>Make the following changes:</p>
 <ul>
 <li><p>Update the title of your website.</p></li>
-<li><p><strong>Replace the <code>URL-TO-THIS-REPOSITORY-HERE</code> placeholder text with the Github URL of the repository you created (it should be something like <code>https://github.com/githubusername/yourname-portfolio</code>).</strong></p></li>
-<li><p>It is possible to change the look of your website. Full styling requires knowledge of CSS and HTML. We won’t get into this. But we’ll explore a quick way to change the look. Replace <code>theme</code> with a different one. <a href="https://quarto.org/docs/output-formats/html-themes.html">Many themes are available</a>. Try some, see how things change. You can also change the highlight scheme. For further styling, you can put custom CSS code into the <code>styles.css</code> file. We won’t do this here, but feel free to explore on your own.</p></li>
+<li><p>Replace the <code>URL-TO-THIS-REPOSITORY-HERE</code> placeholder text with the Github URL of the repository you created (it should be something like <code>https://github.com/githubusername/FirstnameLastname-portfolio</code>).</p></li>
+<li><p>It is possible to change the look of your website. Full styling requires some knowledge of CSS/HTML. We won’t get into this. But we’ll explore a quick way to change the look. Replace <code>theme</code> with a different one. <a href="https://quarto.org/docs/output-formats/html-themes.html">Many themes are available</a>. Try some, see how things change. You can also change the highlight scheme. For further styling, you can put custom CSS code into the <code>styles.css</code> file. We won’t do this here, but feel free to explore on your own. There are lots of examples available online that you can use as a starting point.</p></li>
 </ul>
 <div class="warning">
-<p>YAML (which is the format of <code>_quarto.yml</code>) is VERY finicky when it comes to formatting. You need to have exactly the right number of empty spaces. If you ever change a YAML file and you get a weird error message when trying to rebuild your website, it’s likely because some minor formatting is wrong, e.g.&nbsp;an empty space is missing or too much. Just keep that in mind. Positron usually gives you a warning in the <code>Problems</code> tab.</p>
+<p>YAML (which is the format of <code>_quarto.yml</code>) is VERY finicky when it comes to formatting. You need to have exactly the right number of empty spaces. If you ever change a YAML file and you get a weird error message when trying to rebuild your website, it’s likely because some minor formatting is wrong, e.g.&nbsp;an empty space is missing or there is one too many of them. Just keep that in mind. Positron usually gives you a warning in the <code>Problems</code> tab.</p>
 </div>
 </section>
 <section id="sending-updates-to-github" class="level2">
@@ -277,27 +278,32 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="making-the-website-public" class="level2">
 <h2 class="anchored" data-anchor-id="making-the-website-public">Making the website public</h2>
-<p>We want to set things such that your repository can at the same time become a public website. Github allows you to do that with its <a href="https://pages.github.com/"><em>Github Pages</em></a> feature. To turn on the <em>Github Pages</em> feature, go to your repository on github.com . On the top of the website for your repository, you should see a <code>Settings</code> button. Click on it and then find the <code>Pages</code> section. In the <code>Branch</code> section, switch <code>none</code> to <code>main</code> and folder as <code>/docs</code>. Click <code>Save</code>.</p>
-<p>This should now have turned on your website. You might have gotten a notice about the location of your new website. If yes, follow the link. If not, you can get there by going to a URL that has the form <code>https://username.github.io/yourname-portfolio/</code>. It might take a several seconds before the page is available, if you get a ‘not found’ error, wait a bit and try again. If everything works, your website is now public!</p>
-<p>We used the Github pages feature to create the website. You might have noticed that the files for your new website live on the domain <code>github.com</code>, while your nice-looking website lives at the domain <code>github.io</code>. This is how Github Pages work. It take files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder ( <code>/docs</code> for our setup). Your website URL and your repository URL are distinct. All github actions, like pushing, pulling, cloning, etc. are done with <strong>the repository</strong> on the <code>github.com</code> domain. The <code>github.io</code> domain is only there to display websites.</p>
+<p>So far, we just have a GitHub repository on your computer and on GitHub.com that contains the files for your website. When you render the website locally, it is created by Quarto and placed into the <code>docs</code> folder. This is what you see when you do the preview in the Viewer window or the browser.</p>
+<p>But the website itself is not yet publicly hosted. This is where GitHub has a very convenient feature that makes this very easy. It allows you to turn your repository into a public website with its <strong>Github Pages</strong> feature. To turn on the Github Pages, go to your repository on github.com. On the top of the website for your repository, you should see a <code>Settings</code> button. Click on it and then on the left menu, find the <code>Pages</code> section. In the <code>Branch</code> section, switch <code>none</code> to <code>main</code> and folder as <code>/docs</code>. Click <code>Save</code>.</p>
+<p>This should now have turned on your website. GitHub is now taking everything inside the <code>docs</code> folder, which was created by Quarto when you rendered the website, and is now hosting it as a public website.</p>
+<p>To see your public website, go to its URL, which has the form <code>https://username.github.io/FirstnameLastname-portfolio/</code>. It might take a several seconds before the page is available, if you get a ‘not found’ error, wait a bit and try again. If everything works, your website is now public!</p>
+<p>You might have noticed that all the files that contain the content of your new website live on the domain <code>github.com</code>, while your shiny new website lives at the domain <code>github.io</code>. This is how Github Pages work. It take files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder ( <code>/docs</code> for our setup). Your website URL and your repository URL are distinct. All github actions, like pushing, pulling, cloning, etc. are done with <strong>the repository</strong> on the <code>github.com</code> domain. The <code>github.io</code> domain is only there to display websites.</p>
 </section>
 <section id="update-your-repository-readme-file" class="level2">
 <h2 class="anchored" data-anchor-id="update-your-repository-readme-file">Update your repository Readme file</h2>
-<p>To allow quick switching between your repository and the website creeated from that repository, we’ll add that information to the repository README file. Open the README.md file. This file will not be part of your website, but it is what people see if they land at your github repository. Add text to the README that points users to the URL for your new website. (You’ve done the reverse above in your Quarto YAML file, allowing users to quickly go from your website to your Github repository).</p>
+<p>To allow quick switching between your repository and the website created from that repository, we’ll add that information to the repository README file. Open the README.md file. This file does not show on your website, but it is what people see if they land at your github repository (i.e.&nbsp;if they visit <code>https://github.com/githubusername/FirstnameLastname-portfolio</code>). Add text and a link to the README that points users to the URL for your new website. Something like this:</p>
+<pre class="verbatim"><code>[Here is the link to the website for this repository](https://username.github.io/FirstnameLastname-portfolio/)</code></pre>
+<p>You’ve done the reverse above in your Quarto YAML file. This now allows users to quickly go from your Github repository to your website and the reverse.</p>
 <p>Make any other edits to the README you like. Once done with edits, remember to commit and push.</p>
+<p>Visit your GitHub repository page to see your updated README file and test that the link works. Also check that the link in the top right corner of your webiste (the GitHub icon) takes you back to your repository.</p>
+<p>If you find anything not yet working, make edits, re-render the website with Quarto, then commit and push everything.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>You created a portfolio repository, customized Quarto content, published the site with GitHub Pages, and shared the URL. This workflow mirrors how you will manage course projects throughout the term.</p>
+<p>You created a portfolio repository, customized Quarto content, and published the site with GitHub Pages.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li><a href="https://bartlettje.github.io/dissemination_quarto/">Dissemination using Quarto and Github Pages</a> is an online book by James Bartlett which contains a lot of information about using Quarto and Github Pages, not just for websites but also other output formats.</li>
-<li><a href="https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/">A beginner’s guide to building a simple website with Quarto &amp; Netlify</a> by Jadey Ryan is another potential good resource. It covers how to create websites with Quarto and Netlify. It doesn’t use Git/GitHub, but still has a lot of relevant information for the Quarto portion of the website creation process.</li>
+<li><a href="https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/">A beginner’s guide to building a simple website with Quarto &amp; Netlify</a> by Jadey Ryan is potential good resource. Her instructions are very detailed. She uses RStudio instead of Positron, and doesn’t use GitHub but instead uses Netlify for hosting. Still, a lot of the information is relevant and possibly useful.</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
@@ -1909,7 +1915,7 @@ window.onload = function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2025</p>
+<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> The Authors, 2026</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
