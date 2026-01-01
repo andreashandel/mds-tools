@@ -120,18 +120,18 @@ Git/GitHub are a software and service that allows you to keep track of your chan
 <!-- end unit-resources div -->
 
 
-<!--
+
 ::: {.unit-quiz}
 # Test yourself
 
 ```{r github-introduction-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("github-introduction-quiz-1.Rmd", "github-introduction-quiz-2.Rmd", "github-introduction-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'github-introduction-quiz')
+quizzes <- list("github-introduction-quiz-1.Rmd", "github-introduction-quiz-2.Rmd", "github-introduction-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-introduction-quiz')
 ```
 :::
--->
+
 <!-- end unit-quiz div -->
 
 
