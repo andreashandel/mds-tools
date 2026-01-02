@@ -6,7 +6,7 @@ Answerlist
 ----------
 * Click the gear icon, then Themes > Color Theme
 * Install a third-party theme manager extension
-* Edit the settings JSON file by hand only
+* Edit the settings JSON file by hand 
 * Themes cannot be changed in Positron
 
 Solution
