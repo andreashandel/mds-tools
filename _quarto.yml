@@ -96,6 +96,7 @@ website:
         - courses/fc2a-intro-r/r-coding-basics/r-coding-basics.qmd
         - courses/fc2a-intro-r/r-packages/r-packages.qmd
         - courses/fc2a-intro-r/r-tidyverse/r-tidyverse.qmd
+        - courses/fc2a-intro-r/r-coding-tips/r-coding-tips.qmd
         - courses/fc2a-intro-r/r-further-resources/r-further-resources.qmd
     - id: fc3              # sidebar shown on all files it lists
       title: "Introduction to Quarto"
