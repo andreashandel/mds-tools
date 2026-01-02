@@ -1,24 +1,28 @@
 ---
 title: Basics of Coding in R
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-::: {.unit-overview}
+::: unit-overview
 # Overview
 
 This unit covers some very minimal coding in R.
-
 :::
+
 <!-- end unit-overview div -->
 
-::: {.unit-goals}
+::: unit-goals
 # Goals
-* Be familiar with basic R coding concepts.
-* Be able to write a few lines of R code and run it.
 
-
+-   Be familiar with basic R coding concepts.
+-   Be able to write a few lines of R code and run it.
 :::
+
 <!-- end unit-goals div -->
 
+```{=html}
 <!--
 ::: {.unit-video}
 # Video, slides and audio transcript
@@ -29,18 +33,22 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 :::
 -->
+```
+
 <!-- end unit-video div -->
 
-::: {.unit-reading}
+::: unit-reading
 # Reading
 
 ## Introduction
 
-This whole course, including this unit, are by no means sufficient to teach you R coding. The goal is instead to get you started, and give you a basic idea of how R coding works. To really learn R coding, you need to take a full course on R programming and/or do a lot of "learning as you go". 
-
+This whole course, including this unit, are by no means sufficient to
+teach you R coding. The goal is instead to get you started, and give you
+a basic idea of how R coding works. To really learn R coding, you need
+to take a full course on R programming and/or do a lot of "learning as
+you go".
 
 ## Learning coding
-
 
 R (or any other programming language) is best learned by "doing it". You
 will learn more R as we go along, but the focus of the class is on data
@@ -51,12 +59,13 @@ you practice, the better you will get. You should approach learning to
 code with an attitude of *fearless curiosity*. You will get stuck, you
 will get frustrated with some weird error message in your code (still
 happens to me at least once a week), and you will eventually figure it
-out. Make use of the great resources that are out there. 
-
+out. Make use of the great resources that are out there.
 
 This figure illustrates the journey of learning to write code:
 
-![The journey of learning to code. Source: https://www.thinkful.com/blog/. Original post is not online anymore.](learning-to-code.jpg){fig-alt="Graph titled Coding Confidence vs Compentence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."}
+![The journey of learning to code. Source:
+https://www.thinkful.com/blog/. Original post is not online
+anymore.](learning-to-code.jpg){fig-alt="Graph titled Coding Confidence vs Compentence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."}
 
 My goal is that during this course, you will reach the beginning of the
 *upswing of awesome*, at least when it comes to being able to use R to
@@ -76,65 +85,68 @@ regularly encounter the *cliff of confusion* and the *desert of despair*
 if I'm trying to do something new that I haven't done before and
 invariably get stuck.
 
-
 ## Learning the basics of R
 
 Here is a quick crash course on R syntax to get you started.
 
-*Everything is an object.* You create objects with `<-` (assignment) and reuse them later.
+*Everything is an object.* You create objects with `<-` (assignment) and
+reuse them later.
 
-```r
+``` r
 x <- 5 # assign 5 to object x
 scores <- c(72, 88, 91)   # a numeric vector
 ```
 
-*R is vectorized.* Most operations work on whole vectors, not just single numbers.
+*R is vectorized.* Most operations work on whole vectors, not just
+single numbers.
 
-```r
+``` r
 scores * 2         # multiply every element
 mean(scores)       # built-in functions work on vectors
 ```
 
-*Data frames are tables.* They hold columns of different types. Use `$` to access a column.
+*Data frames are tables.* They hold columns of different types. Use `$`
+to access a column.
 
-```r
+``` r
 df <- data.frame(name = c("Ana", "Bo", "Cal"), score = scores)
 df$score + 10
 ```
 
 Functions take inputs (arguments) and return outputs. You can nest them.
 
-```r
+``` r
 round(mean(df$score), digits = 1)
 ```
 
-
-
-
-
 ## Getting help
 
-Maybe the most important skill for learning any programming language is figuring out how to find and get help with any problem. 
+Maybe the most important skill for learning any programming language is
+figuring out how to find and get help with any problem.
 
-In the past, we recommended to start with Google, StackOverflow, and the Internet to find relevant help. At this point, most of the time, you will likely get the best initial help from some AI tool. We recommend to start there, and if that doesn't solve your problem, then move on to other sources.
+In the past, we recommended to start with Google, StackOverflow, and the
+Internet to find relevant help. At this point, most of the time, you
+will likely get the best initial help from some AI tool. We recommend to
+start there, and if that doesn't solve your problem, then move on to
+other sources.
 
 ![Fortunately rare for R. Source:
 xkcd.com.](xkcd_wisdom_of_the_ancients.png){width="90%"
 fig-alt="An xkcd comic of a stick figure shaking a computer screen saying 'Who were you, denvercoder9? What did you see?!'. Outside the the box, it says 'Never have I felt so close to another soul. And yet so helplessly alone as when I Google an error and there's one result. A thread by someone with the same problem and no answer last posted in 2003."}
 
-
-In those rare cases when AI doesn't help and you cannot find the right information online either to solve your coding problem, feel free to ask for help. Sometimes, people
-complain that replies to questions they ask online are unfriendly or
-harsh. While this is at times true, consider that all the people
-providing answers are volunteers. They're doing it because they want to
-help others, they don't get paid for it. It is therefore important that
-the person asking the question does not waste people's time by asking
-poorly formulated questions or questions that have been previously
-answered. In general, those kinds of questions get rude replies. If you
-have done your homework (i.e., searched online first to see if the
-answer is already available) and can precisely formulate the
-question/problem, ideally with a reproducible example, the chance that
-you get an unfriendly reply is very low.
+In those rare cases when AI doesn't help and you cannot find the right
+information online either to solve your coding problem, feel free to ask
+for help. Sometimes, people complain that replies to questions they ask
+online are unfriendly or harsh. While this is at times true, consider
+that all the people providing answers are volunteers. They're doing it
+because they want to help others, they don't get paid for it. It is
+therefore important that the person asking the question does not waste
+people's time by asking poorly formulated questions or questions that
+have been previously answered. In general, those kinds of questions get
+rude replies. If you have done your homework (i.e., searched online
+first to see if the answer is already available) and can precisely
+formulate the question/problem, ideally with a reproducible example, the
+chance that you get an unfriendly reply is very low.
 
 I have found that a good way of posing question is to write something
 like this: *"I need help with SPECIFIC PROBLEM, I have searched around
@@ -149,47 +161,86 @@ of just being lazy and wanting others to do the work for you), and the
 easier you make it for others to understand what your problem is, the
 more likely you will get good answers.
 
+With any coding problem you encounter there are three things you can do
+to make it easier to solve.
 
+1.  Make the error smaller. Break it down by steps and work through them
+    one at a time. Commenting out code lines sequentially can be very
+    helpful to identify where the error or issue is coming from. Reduce
+    to a minimal example (i.e., instead of working with a large data set
+    and thousands of lines use a small data subset and just the code you
+    need so you can more easily see what's happening or not).
 
+2.  Ask AI. This has the caveat that if you don't write a good prompt it
+    can lead you astray and make things worse especially if you don't
+    have a good understanding of what you are trying to do.
+
+3.  Someone has had the same problem before and written about it on the
+    internet so search for the solution there. These searches are most
+    fruitful when you use specific search terms with accepted jargon.
+    Search like you’d write a function call, not a sentence and should
+    generally follow this pattern function name + argument names + error
+    keyword. (i.e., “R reshape data error” is a bad search while “R
+    tidyr pivot_longer names_to values_to error duplicate names” is a
+    good search)
 
 ## Some further comments
 
+R has a bunch of quirks. You'll likely encounter a number of them. Here
+are a few common ones.
 
-R has a bunch of quirks. You'll likely encounter a number of them. Here are a few common ones.
+A common confusion is that there are two ways of assigning something to
+an object. One can write `x <- 2` or `x = 2` and often (but not always)
+you can use either. People argue about which way to do it. You'll see
+both versions used frequently. If you are completely new to programming,
+we recommend the first version, i.e. `x <- 2`. The problem is that most
+other programming languages do it the second way, so if you learned to
+code in another language first, it is more natural to write `x = 2`. It
+is your choice. Just be aware that both notations exist. And to add to
+the confusion: In R, you can also write this in the opposite direction,
+i.e. `2 -> x`. This is unususal coding style and best avoided. Just know
+that it exists too.
 
-A common confusion is that there are two ways of assigning something to an object. One can write `x <- 2` or `x = 2` and often (but not always) you can use either. People argue about which way to do it. You'll see both versions used frequently. If you are completely new to programming, we recommend the first version, i.e. `x <- 2`. The problem is that most other programming languages do it the second way, so if you learned to code in another language first, it is more natural to write `x = 2`. It is your choice. Just be aware that both notations exist. 
-And to add to the confusion: In R, you can also write this in the opposite direction, i.e. `2 -> x`. This is unususal coding style and best avoided. Just know that it exists too.
+A more recent confusion - since the concept was introduced to R more
+recently - is the pipe. You can write `x %>% dplyr()` or you can write
+`x |> dplyr()`. In both versions, the object `x` is piped into the
+`dplyr` function. You see this style of writing a lot in the `tidyverse`
+and `tidymodels` set of packages, which we'll discuss shortly. Both
+versions **usually** do the same thing. The first version comes from the
+`magrittr` package, which is part of the `tidyverse`. The second version
+is part of base R. Fortunately, most of the time it doesn't matter.
+However, occasionally one will not work (or produce something
+unexpected). Just be aware of this and adjust as needed.
 
-A more recent confusion - since the concept was introduced to R more recently - is the pipe. You can write `x %>% dplyr()` or you can write `x |> dplyr()`. In both versions, the object `x` is piped into the `dplyr` function. You see this style of writing a lot in the `tidyverse` and `tidymodels` set of packages, which we'll discuss shortly. Both versions **usually** do the same thing. The first version comes from the `magrittr` package, which is part of the `tidyverse`. The second version is part of base R. Fortunately, most of the time it doesn't matter. However, occasionally one will not work (or produce something unexpected). Just be aware of this and adjust as needed.
-
-As you continue on your coding journey, keep in mind: The great thing about programming is that you (usually) can't really "break" things too much. In
-the worst case you get an error message. So experiment and try out anything you like!
-
-
-
+As you continue on your coding journey, keep in mind: The great thing
+about programming is that you (usually) can't really "break" things too
+much. In the worst case you get an error message. So experiment and try
+out anything you like!
 :::
+
 <!-- end unit-reading div -->
 
-
-::: {.unit-summary}
+::: unit-summary
 # Summary
 
-We discussed some basics of writing R code. To re-iterate, this course is not a learn-to-code course. For resources that can help you learn R coding, see the _Further Resources_ unit.
-
-
+We discussed some basics of writing R code. To re-iterate, this course
+is not a learn-to-code course. For resources that can help you learn R
+coding, see the *Further Resources* unit.
 :::
+
 <!-- end unit-summary div -->
 
-::: {.unit-resources}
+::: unit-resources
 # Further Resources
 
-* The [Posit (formerly RStudio) Community Forum](https://forum.posit.co/) is also a great place to ask for help.
-
-
+-   The [Posit (formerly RStudio) Community
+    Forum](https://forum.posit.co/) is also a great place to ask for
+    help.
 :::
+
 <!-- end unit-resources div -->
 
-::: {.unit-quiz}
+::: unit-quiz
 # Test yourself
 
 ```{r r-coding-basics-quiz}
@@ -199,15 +250,20 @@ quizzes <- list("r-coding-basics-quiz-1.Rmd", "r-coding-basics-quiz-2.Rmd", "r-c
 exams2forms::exams2forms(file = quizzes, title = 'r-coding-basics-quiz')
 ```
 :::
+
 <!-- end unit-quiz div -->
 
-
-::: {.unit-exercise}
+::: unit-exercise
 # Practice
-* Write a short script that creates a vector, computes its mean, and prints the result; save it as `.R` and run the whole file.
-* Add comments (`#`) to that script explaining what each line does, then rerun to confirm nothing changes.
-* Use both `scores * 2` and `mean(scores)` on a numeric vector to see vectorization in action; change the values and rerun.
-* Rewrite a small operation twice: once without a pipe and once with `|>`, and compare which you find clearer.
 
+-   Write a short script that creates a vector, computes its mean, and
+    prints the result; save it as `.R` and run the whole file.
+-   Add comments (`#`) to that script explaining what each line does,
+    then rerun to confirm nothing changes.
+-   Use both `scores * 2` and `mean(scores)` on a numeric vector to see
+    vectorization in action; change the values and rerun.
+-   Rewrite a small operation twice: once without a pipe and once with
+    `|>`, and compare which you find clearer.
 :::
+
 <!-- end unit-exercise div -->
