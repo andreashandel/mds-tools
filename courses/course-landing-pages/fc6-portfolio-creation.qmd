@@ -36,11 +36,10 @@ This course gets you started at using Positron, Git/GitHub and Quarto to set up 
 ::: {.course-prerequisites}
 # Course Prerequisites
 
-* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+* We assume you have Positron up and running and can use it at the level covered in our [Brief Introduction to Positron course](fc1-intro-positron.qmd). 
 * We further assume that you have R installed and can use it at the level covered in our [Brief Introduction to R course](fc2a-intro-r.qmd).
 * We also assume you have a basic knowledge of Quarto and can use it at the level covered in our [Brief Introduction to Quarto course](fc3-intro-quarto.qmd).
-* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to Git/GitHub course](fc5-intro-github.qmd).
-<!-- * We further assume that you have R and/or Julia installed and can use it at the level covered in our [Brief Introduction to R course](fc4-intro-r.qmd) and [Brief Introduction to Julia course](fc5-intro-julia.qmd). -->
+* We also assume you have Git/GitHub set up and can use it at the level covered in our [Brief Introduction to Git/GitHub course](fc4-intro-github.qmd).
 
 :::
 

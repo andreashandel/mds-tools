@@ -1,0 +1,27 @@
+Question
+========
+What is the purpose of the Quarto Gallery?
+
+Answerlist
+----------
+* It hosts Quarto installer downloads
+* It showcases example documents and their source files
+* It lists system requirements for Quarto
+* It is a paid support portal
+
+Solution
+========
+The Gallery provides examples and source files to learn from.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Quarto Gallery
+extype: schoice
+exsolution: 0100

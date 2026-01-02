@@ -1,0 +1,27 @@
+Question
+========
+Which file extension indicates a Quarto document?
+
+Answerlist
+----------
+* .Rmd
+* .qmd
+* .md
+* .docx
+
+Solution
+========
+Quarto documents use the `.qmd` extension.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Quarto file extension
+extype: schoice
+exsolution: 0100

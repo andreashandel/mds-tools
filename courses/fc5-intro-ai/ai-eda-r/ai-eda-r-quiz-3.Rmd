@@ -1,0 +1,27 @@
+Question
+========
+What is one advantage of Claude for EDA tasks?
+
+Answerlist
+----------
+* It does not require any prompts.
+* It allows file uploads for data.
+* It only works with Python.
+* It never requires any edits to code.
+
+Solution
+========
+Claude supports file uploads, which can simplify EDA workflows.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Claude EDA advantage
+extype: schoice
+exsolution: 0100

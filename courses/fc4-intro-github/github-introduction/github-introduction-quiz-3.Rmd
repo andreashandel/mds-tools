@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended approach for large files in GitHub repositories?
+
+Answerlist
+----------
+* Keep all large files in the repository so the full history is preserved
+* Zip large files and commit them regularly
+* Push files larger than 100 MB and let GitHub handle them
+* Keep large files out of the repository and store them elsewhere
+
+Solution
+========
+Large files slow down or break GitHub workflows, so keep them out of the repository and use other storage.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Large files
+extype: schoice
+exsolution: 0001

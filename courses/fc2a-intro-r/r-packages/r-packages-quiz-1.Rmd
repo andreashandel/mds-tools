@@ -1,0 +1,27 @@
+Question
+========
+What does `install.packages("dplyr")` do?
+
+Answerlist
+----------
+* Loads `dplyr` into your current R session
+* Downloads and installs `dplyr` so it can be used later
+* Updates R itself to the latest version
+* Removes all other packages from your library
+
+Solution
+========
+`install.packages()` fetches and installs the package; you still need `library(dplyr)` to use it in a session.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rpackages-install
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+Why can results from AI tools be hard to reproduce?
+
+Answerlist
+----------
+* AI tools never change.
+* AI tools can be updated and have randomness in outputs.
+* AI tools only run on local machines.
+* AI tools always use fixed seeds.
+
+Solution
+========
+Updates and randomness can lead to different outputs for the same prompt.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: AI reproducibility
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+Which list matches the three main components of a Quarto document?
+
+Answerlist
+----------
+* Markdown text, CSS styling, and images
+* YAML front matter, Markdown text, and executable code chunks
+* CSV data, HTML templates, and JSON metadata
+* Title page, bibliography, and appendix
+
+Solution
+========
+A Quarto document is made of YAML front matter, Markdown text, and optional executable code chunks.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Quarto components
+extype: schoice
+exsolution: 0100

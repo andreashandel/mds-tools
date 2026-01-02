@@ -1,0 +1,113 @@
+
+---
+title: More Quarto
+---
+
+::: {.unit-overview}
+# Overview
+
+In this unit, you will learn a few additional features and use cases of Quarto. 
+:::
+
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+- Be familiar with Quarto use for presentations.
+- Be aware that one can create websites with Quarto.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+::: 
+-->
+<!-- end unit-video div -->
+
+::: {.unit-reading}
+# Reading
+
+
+## Quarto for presentations
+
+Quarto can also be used to create presentations. Quarto supports multiple presentation formats, including HTML-based presentations using frameworks like Reveal.js, PowerPoint output, and Beamer for PDF presentations. In general, unless you need a specific format, we recommend using `revealjs`.
+
+To create a presentation, you start with a Quarto document (`.qmd`) and specify the presentation format in the YAML front matter. For example, to create a Reveal.js presentation, you would use:
+
+```{verbatim}
+---
+title: "My Presentation"
+author: "Your Name"
+format: revealjs
+---
+```
+
+
+You can then add content to the slides in basically the same way as you do for other Quarto documents. This allows you to easily reuse materials.
+
+
+
+
+## Quarto for websites
+
+Quarto can also be used to create entire websites (such as the one you are currently on). A Quarto website is a collection of Quarto documents organized into a coherent structure, with navigation and theming options.
+
+To create a Quarto website, you typically start by creating a new Quarto project and specifying the website format in the project configuration file (`_quarto.yml`). You can then add individual Quarto documents for each page of your website.
+
+
+## Other Quarto products
+
+In addition to documents, presentations, and websites, Quarto also supports other products such as dashboards, books and manuscripts. These products are built on the same principles as documents and websites but come with additional features tailored to their specific use cases.
+
+
+
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+In this unit, you learned about some additional features and use cases of Quarto, including creating presentations and websites. Quarto's versatility makes it a powerful tool for various types of scientific and technical communication.
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+* The `Presentations` section of the [Quarto Guide](https://quarto.org/docs/guide/) contains a lot of useful information for creating presentations.
+* The `Websites` section of the [Quarto Guide](https://quarto.org/docs/guide/) is a rather comprehensive explanation of how to create Quarto based websites.
+* You guessed it - for information on some of the other products you can create with Quarto, check out the appropriate section of the [Quarto Guide](https://quarto.org/docs/guide/).
+
+
+
+::: 
+<!-- end unit-resources div -->
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r quarto-beyond-basics-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("quarto-beyond-basics-quiz-1.Rmd", "quarto-beyond-basics-quiz-2.Rmd", "quarto-beyond-basics-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'quarto-beyond-basics-quiz')
+```
+::: 
+<!-- end unit-quiz div -->
+
+::: {.unit-exercise}
+# Practice
+
+
+
+::: 
+<!-- end unit-exercise div -->

@@ -5,15 +5,15 @@ title: "Modeling and Data Science (MDS) Tools"
 
 # Overview
 
-This website contains several mini-courses/tutorials which cover tools for modeling and data science. The topics we cover are based on the tools we regularly use and teach.
+This website contains several mini-courses/tutorials which cover tools for modeling and data science. 
 
 You can find all available courses on the [courses](/courses/courses.qmd) page.
 
 
 
-# Authors
+<!-- # Authors
 
 This website is currently run by [Andreas](https://www.andreashandel.com/) and [Brian](https://brianmckay.netlify.app). We are two academic scientists, researchers and teachers. 
-
+ -->
 
 

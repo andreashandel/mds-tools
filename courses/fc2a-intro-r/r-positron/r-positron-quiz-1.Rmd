@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended way to execute R code for a real project in Positron?
+
+Answerlist
+----------
+* Run individual lines in random order from the console
+* Keep code in the console history without saving it
+* Save the script and run the whole file via `Source R File` (or `source()`)
+* Only rerun the few lines you most recently edited
+
+Solution
+========
+For reproducible work you should save your script and execute the entire file with `Source R File` (or `source("path/to/script.R")`), not just scattered lines.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: positron-run-scripts
+extype: schoice
+exsolution: 0010

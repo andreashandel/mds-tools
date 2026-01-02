@@ -1,0 +1,66 @@
+---
+title: A brief introduction to Julia 
+subtitle: ""
+---
+
+::: {.course-overview}
+# Course Overview
+
+This course provides a very brief introduction to the Julia programming language. It is not meant to teach Julia coding, only to get you started with using Julia.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+* Know what Julia is.
+* Be able to run Julia.
+* Have basic understanding of how to run code in Julia.
+
+:::
+
+
+
+<!-- ::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+::: -->
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+* We assume you have Positron up and running and can use it at the level covered in our _Brief Introduction to Positron_ course. 
+
+:::
+
+
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more).
+
+- Overview of Julia
+- Install and setup of Julia
+- Basics of Coding in Julia
+- Using Julia environments
+- Using Julia through Positron
+- Further Resources
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+[Click here to start this course.](/courses/fc2b-intro-julia/intro-julia-toc.qmd)
+
+
+:::

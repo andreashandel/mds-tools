@@ -12,6 +12,7 @@ This unit gives a few quick pointers to resources that can help you learn R furt
 
 ::: {.unit-goals}
 # Goals
+* Be aware of resources that can help learn R further.
 
 :::
 <!-- end unit-goals div -->
@@ -32,6 +33,27 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 # Reading
 
 
+## AI help
+
+One of the tasks at which AI has become very good is writing code. While this can be a danger if you allow it to write code for you that you don't understand, it can also be a great tool to learn coding. For instance you can ask AI tools to help you write code snippets for specific tasks, and request that they thoroughly document and explain the code they write. You can also give it code that doesn't work or that you don't understand and ask it to explain it to you. 
+
+The most challenging part about using AI tools for coding is learning how to ask the right question, and being able to assess what the AI returns. To be able to do those tasks well, you still need to understand certain coding concepts and be able to read and evaluate code, even if you are likely going to use AI to help you with a lot of the coding tasks.
+
+
+## Interactive tutorials
+
+The [R Primers](https://r-primers.andrewheiss.com/) collection of tutorials provide a very basic, and well-done introduction to some R coding concepts.
+
+
+
+
+# More resources
+
+The [Posit Recipes](https://posit.cloud/learn/recipes) collection of tutorials cover many coding topics that are relevant for modeling and data science tasks.
+
+
+
+
 
 :::
 <!-- end unit-reading div -->
@@ -40,6 +62,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 ::: {.unit-summary}
 # Summary
 
+This unit provided a few pointers to resources that can help you learn R further.
 
 :::
 <!-- end unit-summary div -->
@@ -47,6 +70,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 ::: {.unit-resources}
 # Further Resources
 
+All resources are in the main text.
 
 :::
 <!-- end unit-resources div -->
@@ -54,11 +78,11 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 ::: {.unit-quiz}
 # Test yourself
 
-```{r r-install-quiz}
+```{r r-further-resources-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("r-install-setup-quiz-1.Rmd", "r-install-setup-quiz-2.Rmd", "r-install-setup-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'r-install-setup-quiz')
+quizzes <- list("r-further-resources-quiz-1.Rmd", "r-further-resources-quiz-2.Rmd", "r-further-resources-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'r-further-resources-quiz')
 ```
 :::
 <!-- end unit-quiz div -->
@@ -66,6 +90,11 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ::: {.unit-exercise}
 # Practice
+* Spend at least 30 minutes exploring some of the resources mentioned in this unit.
+* Go online and find another R resource that looks interesting to you, then explore it.
+* Ask an AI tool to explain a short piece of R code you do not fully understand; compare the explanation to the help files.
+* Pick one tutorial (e.g., R Primers or Posit Recipes) and complete at least one hands-on exercise from it.
+
 
 :::
 <!-- end unit-exercise div -->

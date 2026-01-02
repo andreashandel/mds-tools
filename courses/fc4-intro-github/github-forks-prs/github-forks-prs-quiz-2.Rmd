@@ -1,0 +1,27 @@
+Question
+========
+Why are branches useful?
+
+Answerlist
+----------
+* They permanently delete old commits
+* They make repositories private
+* They force everyone to work on the same files
+* They let you isolate work before merging into main
+
+Solution
+========
+Branches allow separate work without affecting the main branch until you merge.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Branch purpose
+extype: schoice
+exsolution: 0001

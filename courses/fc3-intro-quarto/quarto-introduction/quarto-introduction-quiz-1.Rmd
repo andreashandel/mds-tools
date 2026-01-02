@@ -1,0 +1,27 @@
+Question
+========
+Which statement best describes Quarto?
+
+Answerlist
+----------
+* An open-source publishing system that combines text and code to create formatted output
+* A web browser extension for viewing PDFs
+* A spreadsheet program for data entry
+* A CSS framework for web styling
+
+Solution
+========
+Quarto is a publishing system that integrates narrative text and executable code to produce output documents.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Quarto definition
+extype: schoice
+exsolution: 1000

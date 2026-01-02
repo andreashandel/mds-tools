@@ -7,10 +7,11 @@ subtitle: ""
 ::: {.course-content}
 # Course Content
 
-- [Introduction to Quarto](quarto-introduction/quarto-introduction.qmd)
+- [Quarto Overview](quarto-introduction/quarto-introduction.qmd)
 - [Installation and Setup](quarto-install-setup/quarto-install-setup.qmd)
 - [Quarto and Positron](quarto-positron/quarto-positron.qmd)
-- [Basic Use](quarto-use/quarto-use.qmd)
+- [Quarto Basics](quarto-basics/quarto-basics.qmd)
+- [More Quarto](quarto-beyond-basics/quarto-beyond-basics.qmd)
 - [Further Resources](quarto-resources/quarto-resources.qmd)
 
 :::

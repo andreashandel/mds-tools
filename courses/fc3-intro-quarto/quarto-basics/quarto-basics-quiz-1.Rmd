@@ -1,0 +1,27 @@
+Question
+========
+Where is the YAML front matter located in a Quarto document?
+
+Answerlist
+----------
+* At the end of the document inside a code chunk
+* At the very top, enclosed by `---` lines
+* In a separate `.yml` file only
+* In the middle of the Markdown body
+
+Solution
+========
+YAML front matter appears at the top of the file between `---` lines.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: YAML location
+extype: schoice
+exsolution: 0100

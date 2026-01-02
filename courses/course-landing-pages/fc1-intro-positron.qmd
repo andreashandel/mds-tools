@@ -17,7 +17,7 @@ This course provides an introduction to the Positron editor and Integrated Devel
 * Understand the benefits of using an IDE.
 * Successfully install Positron.
 * Be familiar with the basic features of Positron. 
-* Understand the idea and how to install extensions.
+* Know what extensions are and how to install them.
 * Learn about configuration options.
 
 :::

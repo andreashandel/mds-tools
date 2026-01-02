@@ -1,0 +1,27 @@
+Question
+========
+Which type of resource is included on the AI resources page?
+
+Answerlist
+----------
+* A podcast
+* A list of hardware drivers
+* A database of patient records
+* A proprietary dataset
+
+Solution
+========
+The resources list includes a podcast among other sources.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Resource types
+extype: schoice
+exsolution: 1000

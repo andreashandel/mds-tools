@@ -1,0 +1,27 @@
+Question
+========
+How do you set a Quarto document to render as a Word file?
+
+Answerlist
+----------
+* Add `output: word` to the Markdown body
+* Add `format: word` inside a code chunk
+* Add `format: pdf` in the YAML front matter
+* Add `format: docx` in the YAML front matter
+
+Solution
+========
+Setting `format: docx` in the YAML front matter renders a Word document.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Word output
+extype: schoice
+exsolution: 0001

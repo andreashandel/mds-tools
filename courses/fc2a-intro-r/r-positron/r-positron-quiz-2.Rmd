@@ -1,0 +1,27 @@
+Question
+========
+When a mismatched bracket triggers a message in the `Problems` tab and changes the syntax highlighting, what should you do?
+
+Answerlist
+----------
+* Ignore the warning and continue running the script
+* Check the highlighted location and fix the syntax before re-running
+* Reinstall R because the editor is corrupted
+* Close Positron and hope the message disappears on restart
+
+Solution
+========
+Use the feedback from the `Problems` tab and the highlighting to find the mismatch, correct the syntax, and then re-run the script.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: positron-problems-tab
+extype: schoice
+exsolution: 0100

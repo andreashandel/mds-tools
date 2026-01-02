@@ -11,6 +11,8 @@ title: "TOC: A brief introduction to R"
 - [Using R through Positron](r-positron/r-positron.qmd)
 - [Basics of Coding in R](r-coding-basics/r-coding-basics.qmd)
 - [R Packages](r-packages/r-packages.qmd)
+- [R tidyverse, tidymodels and more](r-tidyverse/r-tidyverse.qmd)
 - [Further R Resources](r-further-resources/r-further-resources.qmd) 
 
 :::
+

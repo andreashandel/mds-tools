@@ -1,0 +1,27 @@
+Question
+========
+Why is it important to keep all files for a project inside the project/workspace folder?
+
+Answerlist
+----------
+* It keeps paths consistent and makes the work reproducible for others
+* It stops Positron from running code
+* It prevents Git from tracking changes
+* It makes it impossible to share the project
+
+Solution
+========
+Keeping everything inside the project folder means paths stay relative and the whole setup can be shared or reproduced easily.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-project-organization
+extype: schoice
+exsolution: 1000

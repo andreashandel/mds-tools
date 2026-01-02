@@ -1,0 +1,27 @@
+Question
+========
+What is described as the main workhorse of current AI in this unit?
+
+Answerlist
+----------
+* Neural networks
+* Decision trees
+* Linear regression
+* Spreadsheets
+
+Solution
+========
+The unit highlights neural networks as the primary algorithmic approach behind modern AI.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: AI workhorse
+extype: schoice
+exsolution: 1000

@@ -1,0 +1,145 @@
+---
+title: Branches, Forks and Pull Requests
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+The workflow we covered so far generally suffices for basic solo work. But if you want to collaborate with others, or want to do more complex projects, GitHub offers additional features. Three important ones are branches, forks, and pull requests.
+
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Know ways to collaborate with others on GitHub.
+* Know what branches are and when to use them.
+* Understand when and how to use a fork.
+* Be able to open and merge a pull request.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Forks and Pull Requests" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Collaborators
+
+GitHub is great for collaboration. There are two main ways to collaborate on GitHub: as *collaborators* on the same repository, or via *forks* and *pull requests*. 
+
+To add collaborators to your repository, go to the repository on GitHub, click on **Settings** > **Manage access** > **Invite collaborators**. You can then search for GitHub user names or email addresses to invite people. Once they accept the invitation, they can push changes directly to your repository. This is the simplest way to collaborate if you trust the people you are working with. 
+
+A potential problem with this approach is that multiple people might work on the same files at the same time, leading to *merge conflicts* when changes are pushed. To avoid this, collaborators often create separate *branches* for their work.
+
+
+## Branches
+
+Each repository can have multiple branches (think of it as alternative versions of all files, allowing different people to work on different aspects of a project with minimal interference). 
+
+Often, using just a single branch is all you need. The name of the main branch can be anything, but these days the default is `main`. Until not too long ago, the main branch was referred to as `master`, you might still see that term occasionally.
+
+As you work on your repository, make commits and push/pull, you are creating a line along the `main` branch. You can create additional branches to isolate your work. For instance if you want to try out a new feature, you can create a new branch for that feature. This way, your work on the new feature does not affect the `main` branch until you are sure your new feature works. At this point, you can merge your branch back into the `main` one. 
+
+Branches are useful for projects with collaborators. Different individuals can work on different parts, and once things work, they can contribute their changes back to the main branch. 
+
+
+## Forks
+
+To be able to use branches, you need to be an owner or member of a repository. In contrast, you can fork any public repository. A fork is a personal copy of someone else's repository. While you can only contribute directly to a repository to which you have been added as collaborator, you can fork any public repository and make changes to your copy of the repository (your fork) without needing permission from the original owner and without affecting the original repository. Forks are commonly used when you want to contribute to a project that you do not have write access to.
+
+
+## Making a fork 
+
+Go to the GitHub page of the repository you want to fork, and click on the **Fork** button at the top right. This creates a copy of the repository under your GitHub account. This is now your repository _forever_. You can clone it to your computer, make changes, and push them to your fork without affecting the original repository.
+
+If you plan on working on the fork and later contributing to the original repository with a pull request (see below), you want to make sure you occasionally check to make sure your fork is up to date with the original repository. 
+
+
+
+## Open a pull request (PR)
+
+Assume that you forked a repository because you wanted to contribute some improvements. You cloned your fork to your computer, made some changes, committed them, and pushed to your fork on GitHub.
+
+Next, you ask the owner of the original repository to incorporate the updates you made in the fork into their main repository. This last part is called issuing a **pull request**. You are requesting that the other person *pull* your changes into their repository, hence the at times confusing (at least for us) terminology. Maybe thinking of it as *merge* requests or *sync* requests is better, i.e. you are requesting that they merge or sync your changes into their repository. You'll find the terminology *merge request* is used at times. If the person who controls the main repository likes your changes, they will *merge* your fork into the main branch. And just like that, you have contributed to some project becoming better! 
+
+To open a pull request, go to your fork of the repo on GitHub. At the top, you should see something like `This branch is N commits ahead of NNN:main.` and next to it a `Contribute` button. Click on that buttion and choose **Open pull request**.
+
+You will be taken to a page where you can provide a title and description of your changes. Be clear about what you changed and why. 
+
+Hopefully, you'll see a green check-mark that says *able to merge*. If the owner of the original repository made changes to the same files you did, it could have created a merge conflict. Hopefully, this won't be the case. If it is, you might want to put the file that has been edited by both into a safe location outside of your repository, then pull the latest version of the original repository into your local copy, re-apply your changes, commit and push again.
+
+In either case (merge conflict or not), you can click the green button and *Create a pull request*. This should send a notification to the owner of the repository that a pull request was created. 
+
+
+## Merge a pull request
+
+Once you receive the pull request notification, go to the GitHub site for your repository. Click on *Pull requests*, then click on the request. Take a look. On the first page, it shows you their message and if there are conflicts with your version of the repository. Hopefully, you didn't change things around while they did, so there shouldn't be any conflicts. Click on the *Files changed* button, which will show you an overview of the code they changed. Removals are red, and additions are green.
+
+On the main pull request site, you can do various things. If you don't like the suggested edits, you can write a comment and close the pull request without merging their changes into your repository. If you like most of what they did, but there is something they need to adjust, write a comment and let them know. Close the pull request and ask them to send a new one. If you are ok with their changes (hopefully, this is the case here), you can merge the pull request and close it. Their updates are now part of your repository.
+
+Once you finished the merging of their updates into your repository online, make sure to pull the latest version to your local computer. Make sure everything looks fine and everything runs. 
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We discussed branches, forks, and pull requests. As you continue your GitHub journey, you will likely start using alll of them occasionally.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* [The Repositories section of the GitHub Docs](https://docs.github.com/en/repositories) provides more information on branches.
+* [The Pull Request section of the GitHub Docs](https://docs.github.com/en/pull-requests) provides more information on forks and pull requests.
+
+
+:::
+<!-- end unit-resources div -->
+
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-forks-prs-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("github-forks-prs-quiz-1.Rmd", "github-forks-prs-quiz-2.Rmd", "github-forks-prs-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-forks-prs-quiz')
+```
+:::
+
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+* Fork the [repository of the website you are currently on](https://github.com/andreashandel/mds-tools). Clone it and make a change, for instance fix a typo or make any other improvement you can think of. Push the change and initiate a pull request. 
+
+
+:::
+<!-- end unit-exercise div -->

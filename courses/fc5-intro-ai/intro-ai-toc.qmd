@@ -1,0 +1,19 @@
+---
+title: "TOC: A brief introduction to AI" 
+subtitle: ""
+---
+
+
+::: {.course-content}
+# Course Content
+
+* [Introduction to AI](./ai-introduction/ai-introduction.qmd)
+* [Introduction to LLM AI tools](./ai-llm-introduction/ai-llm-introduction.qmd)
+* [Useful AI tools](./ai-tools/ai-tools.qmd)
+* [Using AI to for coding](./ai-coding/ai-coding.qmd)
+* [Using AI to explore data](./ai-eda-r/ai-eda-r.qmd)
+* [Using AI to analyze data](./ai-analysis-r/ai-analysis-r.qmd)
+* [Further AI resources](./ai-resources/ai-resources.qmd)
+
+
+:::

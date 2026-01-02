@@ -1,0 +1,27 @@
+Question
+========
+When asking for coding help online, what improves your chances of a useful response?
+
+Answerlist
+----------
+* Posting a vague complaint without showing code
+* Demanding free consulting for a full project
+* Including a clear, minimal reproducible example of the problem
+* Ignoring previous answers because they're “old”
+
+Solution
+========
+A concise, reproducible example plus a clear question shows you've done your homework and makes it easy for others to help.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: rresources-asking-help
+extype: schoice
+exsolution: 0010

@@ -1,0 +1,27 @@
+Question
+========
+What is one reason to turn off Copilot indexing in RStudio?
+
+Answerlist
+----------
+* It blocks access to all packages.
+* It can expose project files to the AI service.
+* It prevents code completion.
+* It disables Quarto rendering.
+
+Solution
+========
+Indexing can share project files with the AI service, which raises privacy concerns.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Copilot indexing
+extype: schoice
+exsolution: 0100

@@ -1,0 +1,27 @@
+Question
+========
+Where is the official GitHub documentation hosted?
+
+Answerlist
+----------
+* docs.gitlab.com
+* docs.github.com
+* github.io/docs
+* git-scm.com/docs
+
+Solution
+========
+The official GitHub Docs live at docs.github.com.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: GitHub Docs
+extype: schoice
+exsolution: 0100

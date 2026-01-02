@@ -32,6 +32,67 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 # Reading
 
 
+## Overview
+
+One of the strengths of R (and also a source of confusion) is that it is
+very flexible and almost always lets you do things in more than one way.
+R itself comes with some functionality. This is often referred to as
+**base R**. Even with just this basic functionality, there are often many
+ways to accomplish a task. But the real power of R comes from its many
+packages. Packages (also called libraries in some other programming
+languages) contain additional functionality that often lets you do things that would require a ton of coding effort fairly easily.
+Someone basically wrote the functionality for you, and you can use it.
+
+You will always use packages when you do modeling and data science work in R, therefore it is important to understand how to install and use packages.
+
+
+
+## Installing and loading R packages
+
+There are tens of thousands of packages available, some big, some small, some well documented, some not. We'll be using many different packages in this course. Of course, you are free to install and use any package you come across for any of the assignments.
+
+The "official" place for packages is the [CRAN website](https://cran.r-project.org/web/packages/available_packages_by_name.html). To install a package from CRAN, go to the R console prompt (the `>` symbol) inside the R session console and type `install.packages("PACKAGENAME")`. Often, a package needs other packages to work (called dependencies), and they are installed automatically. It usually doesn't matter if you use a single or double quotation mark around the name of the package. Note that R cares about capitalization, so you need to get the upper and lower case exactly right. Otherwise, it won't work.
+
+
+Try installing a package yourself. Open a workspace/project in Positron. Then go to the R prompt (the `>` symbol) and type
+
+```{r packageinstall, eval = FALSE}
+install.packages('DSAIRM')
+```
+
+This installs a package that gives you access to various infectious disease within-host simulation/QSP models. We won't do anything with that package, we just installed it for practice. If you want to learn more, take a look at the [package website](https://ahgroup.github.io/DSAIRM/).
+
+If this is the first time you are installing packages, you'll see that a lot of other packages are installed, too. You might get a message about *Installing from source packages that need compilation*. You should generally say **No** to this. If you are on a Windows computer, compilation requires you to have [Rtools installed](https://cran.r-project.org/bin/windows/Rtools/). It's not a bad idea to install Rtools (if you do, make sure you pick the version that matches your `R` version.) But even then, or if you use a Mac or Linux (which have the equivalent of Rtools already pre-installed) sometimes the compilation doesn't work. So if you have a choice, say **No**. (On some Mac/Linux setups, things happen automatically, then just let it run.)
+
+To see which packages are needed by a specific package, e.g. `DSAIRM`, and thus are being installed if not present, type `tools::package_dependencies("DSAIRM")` into the R console. Of course it can be that those packages depend on other packages, so you end up installing even more. At some point, you'll have the most common packages all installed and installing new packages will lead to less overall installing. The package install process generally works well.
+
+It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it's good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the `remotes` package and then use the `install_github` function. You don't need to do that now, but will be asked to do it in the exercise.
+
+You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the `library()` command (an alternative is `require()` but `library()` is  recommend ). For instance to load the package you just installed, type
+
+```{r, eval=FALSE}
+library('DSAIRM')
+```
+
+You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you how to start it. Try it briefly, by typing the code below into the R console
+
+```{r, eval=FALSE}
+dsairmmenu()
+```
+
+Hopefully, a menu should open either inside Positron or an external browser. If the former happens, you can open it in your browser by clicking the pop-out symbol in the upper right corner that says "Open the current URL in the default browser". You can use this R package to explore different infectious disease models/apps. Explore for as long or as short as you like, then exit the app. You will have to go back to the R console to see a goodbye message from the package.
+
+
+And this concludes our very quick introduction to R packages. You'll use a lot of them, so you'll get used to them rather quickly.
+
+
+# Note about R packages
+
+The quality of R packages varies. In general, if they are on `CRAN` or `bioconductor`, they passed some quality checks. That does however not mean that the functions do the right thing, just that they run. Other packages might be more experimental, and while they might work well, there might also be bugs. In general, packages that are used by many people, packages that involve people who work at R-centric companies (e.g., Posit), and packages that have many developers/contributors and are actively maintained are good signs that it's a stable and reliable package. That said, there are many packages that are developed by a single person and are only available from GitHub, and they are still very good packages. Ideally, for a new package, test it and see if it does things stably and correctly. If yes, you can start using it. Just always carefully inspect the results you get to make sure things are reliable. 
+
+Depending on your work setting, it is also quite possible that your organization has rules about R packages. You need to of course follow those. In general, to enhance long-term reproducibility, using fewer packages and focusing on those that are well-developed, well-maintained, mature and broadly used is a good strategy.
+
+
 
 :::
 <!-- end unit-reading div -->
@@ -40,13 +101,14 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 ::: {.unit-summary}
 # Summary
 
+This unit covered R packages, what they are, how to install them, and how to load them for use.
 
 :::
 <!-- end unit-summary div -->
 
 ::: {.unit-resources}
 # Further Resources
-
+* If you are interested in packages on a specific topic, the [CRAN task views](http://cran.r-project.org/web/views/) provide curated descriptions of packages sorted by topic.
 
 :::
 <!-- end unit-resources div -->
@@ -54,11 +116,11 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 ::: {.unit-quiz}
 # Test yourself
 
-```{r r-install-quiz}
+```{r r-packages-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("r-install-setup-quiz-1.Rmd", "r-install-setup-quiz-2.Rmd", "r-install-setup-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'r-install-setup-quiz')
+quizzes <- list("r-packages-quiz-1.Rmd", "r-packages-quiz-2.Rmd", "r-packages-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'r-packages-quiz')
 ```
 :::
 <!-- end unit-quiz div -->
@@ -66,6 +128,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ::: {.unit-exercise}
 # Practice
+* Install a small package from CRAN (e.g., `glue`) with `install.packages()` and load it using `library(glue)`.
+* Read the help page for one function in that package and run its simplest example.
+* Uninstall a package you no longer need with `remove.packages()` to see the full install/remove cycle.
+* Find a package on GitHub, read its README to assess quality/maintenance, and decide whether you would trust it for a project.
 
 :::
 <!-- end unit-exercise div -->

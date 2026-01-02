@@ -1,0 +1,71 @@
+---
+title: A brief introduction to AI tools 
+---
+
+::: {.course-overview}
+# Course Overview
+
+This course provides a brief introduction to AI tools that work nicely with the other tools in our stack.
+
+As with the other courses, this is a very brief _getting started_ introduction. It will hopefully be enough to get you set up and running.
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+* Know why to use AI tools.
+* Be familiar with ways to use AI for data analysis tasks.
+* Understand risks and limitations of AI tools.
+* Install and set up AI tools within Positron.
+
+:::
+
+<!--
+::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+:::
+-->
+
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+We assume you have the following tools up and running at the level covered in our other brief introduction courses:
+
+* [A brief Introduction to Positron course](fc1-intro-positron.qmd). 
+* [A brief Introduction to R course](fc2a-intro-r.qmd).
+* [A brief Introduction to Quarto course](fc3-intro-quarto.qmd).
+
+:::
+
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more):
+
+- Introduction
+- Setup of AI tools
+- Basic use
+- Further Resources
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+<!-- **This course is undergoing updates and will be available shortly.** -->
+
+[Click here to start this course.](/courses/fc5-intro-ai/intro-ai-toc.qmd)
+
+:::

@@ -1,0 +1,27 @@
+Question
+========
+How can you keep sensitive files out of a GitHub repository?
+
+Answerlist
+----------
+* Store them in the docs folder
+* Rename the files to start with a dot
+* Keep them outside the repo and add patterns to .gitignore
+* Push them once, then delete them
+
+Solution
+========
+Sensitive files should stay outside the repo, and .gitignore prevents tracking.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Keep sensitive files out
+extype: schoice
+exsolution: 0010

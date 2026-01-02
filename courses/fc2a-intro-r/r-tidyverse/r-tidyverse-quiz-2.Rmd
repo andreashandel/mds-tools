@@ -1,0 +1,27 @@
+Question
+========
+How does the base pipe `|>` relate to the magrittr pipe `%>%`?
+
+Answerlist
+----------
+* They are unrelated and can’t be used for the same tasks
+* `%>%` works only in Python, while `|>` is for R
+* Both pipes pass the left-hand value forward; `|>` is built into base R
+* `|>` automatically loads all tidyverse packages
+
+Solution
+========
+Both pipes forward the left-hand result into the next function; `%>%` comes from magrittr, while `|>` is now available in base R.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: rtidyverse-pipes
+extype: schoice
+exsolution: 0010

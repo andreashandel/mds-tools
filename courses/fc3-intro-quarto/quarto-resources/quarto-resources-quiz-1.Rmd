@@ -1,0 +1,27 @@
+Question
+========
+What is the definitive resource for Quarto documentation?
+
+Answerlist
+----------
+* The official Quarto website
+* A printed reference manual shipped with Quarto
+* A private Slack workspace
+* A quarterly newsletter
+
+Solution
+========
+The Quarto website is the official and most complete documentation source.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Quarto docs
+extype: schoice
+exsolution: 1000

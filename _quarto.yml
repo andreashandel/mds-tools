@@ -95,6 +95,7 @@ website:
         - courses/fc2a-intro-r/r-positron/r-positron.qmd
         - courses/fc2a-intro-r/r-coding-basics/r-coding-basics.qmd
         - courses/fc2a-intro-r/r-packages/r-packages.qmd
+        - courses/fc2a-intro-r/r-tidyverse/r-tidyverse.qmd
         - courses/fc2a-intro-r/r-further-resources/r-further-resources.qmd
     - id: fc3              # sidebar shown on all files it lists
       title: "Introduction to Quarto"
@@ -106,9 +107,49 @@ website:
         - courses/fc3-intro-quarto/quarto-introduction/quarto-introduction.qmd
         - courses/fc3-intro-quarto/quarto-install-setup/quarto-install-setup.qmd
         - courses/fc3-intro-quarto/quarto-positron/quarto-positron.qmd
-        - courses/fc3-intro-quarto/quarto-use/quarto-use.qmd
+        - courses/fc3-intro-quarto/quarto-basics/quarto-basics.qmd
+        - courses/fc3-intro-quarto/quarto-beyond-basics/quarto-beyond-basics.qmd
         - courses/fc3-intro-quarto/quarto-resources/quarto-resources.qmd
+    - id: fc4              # sidebar shown on all files it lists
+      title: "Introduction to Git/GitHub"
+      style: floating
+      alignment: center
+      collapse-level: 2
+      contents: 
+        - courses/fc4-intro-github/intro-github-toc.qmd
+        - courses/fc4-intro-github/github-introduction/github-introduction.qmd
+        - courses/fc4-intro-github/github-install-setup/github-install-setup.qmd
+        - courses/fc4-intro-github/github-basic-use/github-basic-use.qmd
+        - courses/fc4-intro-github/github-positron/github-positron.qmd
+        - courses/fc4-intro-github/github-forks-prs/github-forks-prs.qmd
+        - courses/fc4-intro-github/github-additional-topics/github-additional-topics.qmd
+        - courses/fc4-intro-github/github-resources/github-resources.qmd
+    - id: fc5              # sidebar shown on all files it lists
+      title: "Introduction to AI Tools"
+      style: floating
+      alignment: center
+      collapse-level: 2
+      contents: 
+        - courses/fc5-intro-ai/intro-ai-toc.qmd
+        - courses/fc5-intro-ai/ai-introduction/ai-introduction.qmd
+        - courses/fc5-intro-ai/ai-llm-introduction/ai-llm-introduction.qmd
+        - courses/fc5-intro-ai/ai-tools/ai-tools.qmd
+        - courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.qmd
+        - courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.qmd
+        - courses/fc5-intro-ai/ai-eda-r/ai-eda-r.qmd
+        - courses/fc5-intro-ai/ai-analysis-r/ai-analysis-r.qmd
+        - courses/fc5-intro-ai/ai-resources/ai-resources.qmd
+    - id: fc6              # sidebar shown on all files it lists
+      title: "Portfolio Creation"
+      style: floating
+      alignment: center
+      collapse-level: 2
+      contents: 
+        - courses/fc6-portfolio-creation/portfolio-creation-toc.qmd
+        - courses/fc6-portfolio-creation/portfolio-introduction/portfolio-introduction.qmd
+        - courses/fc6-portfolio-creation/portfolio-creation/portfolio-creation.qmd
+        - courses/fc6-portfolio-creation/portfolio-resources/portfolio-resources.qmd
   page-footer:
     left: |
-      {{< fa regular copyright >}} The Authors, 2025
+      {{< fa regular copyright >}} The Authors, 2026
    

@@ -5,7 +5,8 @@ title: Quarto Installation and Setup
 ::: {.unit-overview}
 # Overview
 
-This unit guides you through the installation and initial setup of Quarto. You will learn how to install Quarto, verify your setup, and perform your first document render.
+This unit guides you through the installation and initial setup of Quarto. You will learn how to install Quarto and make sure it's up and running.
+
 :::
 
 <!-- end unit-overview div -->
@@ -14,8 +15,6 @@ This unit guides you through the installation and initial setup of Quarto. You w
 # Goals
 
 - Successfully install Quarto on your system.
-- Use Quarto with Positron.
-- Render your first Quarto document.
 ::: 
 <!-- end unit-goals div -->
 
@@ -37,26 +36,46 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Installing Quarto 
 
-Visit the [Quarto download page](https://quarto.org/download/) and select the installer for your operating system.
+Visit the [Get started page](https://quarto.org/docs/get-started/) on the Quarto website to download and install Quarto. 
+
+Install it like you would any other software. If you don't have administrator rights to your computer, choose the user installation, which hopefully will work without admin rights. If not, you might need to have your admin install Quarto for you.
 
 
+## Testing/using Quarto
 
-After installation, confirm it by running:
+Quarto is a command-line tool. That means you run it from a terminal (Mac/Linux) or command prompt (Windows). We will essentially always call it from within Positron. 
+
+But to test it, open a terminal/command prompt. If you are on Windows, look for the "Command Prompt" or "Terminal" application and open it. If you are on a Mac, open the "Terminal" application. At the `>` symbol, type the following:
 
 ```bash
 quarto --version
 ```
 
+If the install worked, you should see it show the version of the software you just downloaded and installed.
 
-## Verifying Your Setup
+If you ever need to see what commands you can use with Quarto, type:
+```bash
+quarto --help
+```
 
-Use the following command to check if your setup is correctly configured:
+Though to be honest, what you get is not that informative. It's just a quick way to look up syntax if you forgot it. To learn in detail what each of these commands do, refer to the Quarto website and its documentation.
+
+
+## Quarto configuration
+
+Quarto interacts with a lot of other tools. Not all are needed, depending on what you want to do. To see this list of tools and if they are available on your system, type this into the console/terminal:
 
 ```bash
 quarto check
 ```
 
-Ensure dependencies like Pandoc, LaTeX (if generating PDFs), and language-specific engines (R, Python, Julia) are detected.
+If you want to create PDF documents -- which is often very useful -- you will need to install a TeX distribution. Quarto recommends `TinyTeX` for this. You can install it by typing the following command into the console:
+
+```bash
+quarto install tinytex
+```
+
+If you are already familiar with TeX distributions and have a preferred one, you can also use that one. See the [Quarto documentation on PDF output](https://quarto.org/docs/output-formats/pdf-basics.html) for more details.
 
 
 
@@ -66,26 +85,27 @@ Ensure dependencies like Pandoc, LaTeX (if generating PDFs), and language-specif
 ::: {.unit-summary}
 # Summary
 
-In this unit, you learned how to install Quarto and perform initial setup tasks.
+In this unit, you learned how to install Quarto and perform initial setup tasks. You also installed TinyTeX to enable PDF output generation.
+
 ::: 
 <!-- end unit-summary div -->
 
 ::: {.unit-resources}
 # Further Resources
 
-- [Official Quarto Installation Guide](https://quarto.org/docs/get-started/)
-- [Quarto IDE Integration Details](https://quarto.org/docs/tools/)
-- [Quarto Community Forum](https://community.rstudio.com/c/quarto/59)
+- The [Official Quarto website](https://quarto.org) has extensive documentation and tutorials.
+
 ::: 
 <!-- end unit-resources div -->
 
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r quarto-install-setup-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+quizzes <- list("quarto-install-setup-quiz-1.Rmd", "quarto-install-setup-quiz-2.Rmd", "quarto-install-setup-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'quarto-install-setup-quiz')
 ```
 ::: 
 <!-- end unit-quiz div -->
@@ -93,13 +113,6 @@ exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title 
 ::: {.unit-exercise}
 # Practice
 
-### Practice Exercise
-
-Follow the steps to install Quarto on your machine. Run `quarto check` to confirm the installation was successful.
-
-### Substantial Exercise
-
-Set up your IDE (Positron, VS Code, or Vim/Neovim) to work with Quarto. Create a simple Quarto document named `setup_test.qmd`, render it to HTML, and ensure it works correctly. Submit a brief summary of your installation experience, your `.qmd` file, and the rendered HTML.
 
 ::: 
 <!-- end unit-exercise div -->

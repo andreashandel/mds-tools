@@ -40,18 +40,41 @@ The concepts of projects is very useful for modeling and data analysis work. In 
 
 ## Projects
 
-The general idea of a project is a collection of files and settings that are used together to accomplish a specific task, such as a modeling and data analysis project. Everything related to that task is stored in one place, namely a folder (with subfolders) on your computer (and probably also in the cloud) making it easier to manage and organize your work. 
+The general idea of a project is a collection of files and settings that are used together to accomplish a specific task, such as a modeling and data analysis project. Everything related to that project, such as data files, code files, documents, images, and settings are stored in one place, namely a folder (with subfolders) on your computer (and probably also in the cloud). 
+
+This way, you can easily find and access all the resources you need for that particular project. You will also be specifying locations for saving and loading files that are relative to your main project folder, thus allowing someone else to reproduce your work, even if they have a copy of your project folder and subfolders in a different location on their computer.
+
+Organizing work into projects is very important for reproducibility, efficiency, automation and collaboration. 
 
 
 ## Projects in Positron
 
 If you are familiar with R and RStudio, you know it has the concept of a project through an `.Rproj` file which is stored in some folder. The folder with this file indicates the top level project folder, and everything inside this folder - including sub-folders - is part of the project. 
 
-Positron does support `.Rproj` files. However, since Positron is designed to work with multiple programming languages, it also allows for other types of files to indicate the project folder. A very common setup is where a project corresponds to a Git/GitHub repository (Git/GitHub are explained in our _Brief Introduction to Git/GitHub_ course). In this case, the project folder is the folder that contains the `.git` folder (which is hidden by default). Everything inside this folder - including sub-folders - is part of the project.
+Positron does support `.Rproj` files. However, since Positron is designed to work with multiple programming languages, it also allows for other types of files to indicate the project folder. The naming convention in Positron-world is to call a project a _workspace_. 
+
+A very common setup is where a project/workspace corresponds to a Git/GitHub repository (Git/GitHub are explained in our _Brief Introduction to Git/GitHub_ course). In this case, the project folder is the folder that contains the `.git` folder (which is hidden by default). Everything inside this folder - including sub-folders - is part of the project.
+
+Similarly, for a Quarto project, e.g. a Quarto-based website, if Positron finds a `_quarto.yml` file in a folder, it considers it the main folder of a project/workspace.
+
+Sometimes, Positron adds a file into the workspace at `.vscode/settings.json`, but only if the user sets custom settings. The existence of such a file also indicates the top folder of a project/workspace.
+
+If at least one of these files/folders are present, Positron recognizes it as a top folder of a project/workspace.  
 
 
-## Project workflow in Positron
 
+## Project creation in Positron
+
+If you want to start a new project, there are multiple ways you can do so with Positron. One option is to go under `File` and select `New Folder From Template`. Then pick one of the available templates and follow the instructions. If usunre, you can always start with an empty project. If you know that you will be using Git/GitHub for the project (in general highly recommended), you can initialize it. Then open the new folder in Positron, and start working. Everything in that folder and subfolders is now considered part of your project.
+
+Another approach is to first create a new GitHub repository (see our _Brief Intro to Git/GitHub_ course) online, and then use `New Folder from Git` to clone it to your local machine and start using it as a new project/workspace within positron.
+
+
+## Project use in Positron
+
+If you already have a folder that corresponds to a project (with or without Git/GitHub tracking), you can simply open that folder in Positron using `File` -> `Open Folder`. Positron will then recognize it as a project/workspace, and everything inside that folder and subfolders will be part of the project.
+
+There are more ways to open a project, for instance in Windows one can add `Open with Positron` in the context menu of folders, allowing you to right-click on a folder and open it directly in Positron. As you start working with projects and Positron, you'll quickly figure out the most efficient ways for your personal style and setup. The further resources section below has some links with more information.
 
 ::: 
 <!-- end unit-reading div -->
@@ -69,7 +92,8 @@ In this unit, we covered the concepts of projects, and how you can use them with
 ::: {.unit-resources}
 # Further Resources
 
-This is a good additional reading: URL
+* [Official Positron documentation on projects](https://positron.posit.co/rstudio-rproj-file.html) - the focus is on those who are used to the `.Rproj` setup, but it also provides good general information.
+* [VS Code workspace documentation](https://code.visualstudio.com/docs/editing/workspaces/workspaces) - more information on how VS Code (and thus Positron) handles workspaces. Some of this is advanced, e.g. multi-root workspaces, which we generally don't recommend.
 
 ::: 
 <!-- end unit-resources div -->
@@ -78,11 +102,11 @@ This is a good additional reading: URL
 ::: {.unit-quiz}
 # Test yourself
 
-```{r topic-title-of-quiz}
+```{r positron-projects-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("topic-title-quiz-1.Rmd", "topic-title-quiz-2.Rmd", "topic-title-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'topic-title-of-quiz')
+quizzes <- list("positron-projects-quiz-1.Rmd", "positron-projects-quiz-2.Rmd", "positron-projects-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'positron-projects-quiz')
 ```
 ::: 
 <!-- end unit-quiz div -->
@@ -92,8 +116,8 @@ This is a good additional reading: URL
 ::: {.unit-exercise}
 # Practice
 
-* Do task X.
-* Do task Y.
+* Try to create a new project/workspace using one of the approaches described above. 
+* Open an existing project/workspace, either the one you just created or something you already have. Navigate the folder structure to see what files are included in the project.
 
 ::: 
 <!-- end unit-exercise div -->

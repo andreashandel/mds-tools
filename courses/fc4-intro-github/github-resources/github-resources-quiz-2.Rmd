@@ -1,0 +1,27 @@
+Question
+========
+Where can you find the Git learn section mentioned in the unit?
+
+Answerlist
+----------
+* docs.github.com/learn
+* learn.git.com
+* git-scm.com/learn
+* github.com/learn
+
+Solution
+========
+The Git learn section is on the Git website at git-scm.com/learn.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Git learn
+extype: schoice
+exsolution: 0010

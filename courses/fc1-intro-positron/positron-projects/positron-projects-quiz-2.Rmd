@@ -1,0 +1,27 @@
+Question
+========
+What is a recommended way to start a new Positron project that will use Git/GitHub?
+
+Answerlist
+----------
+* Create the repo on GitHub, then use `New Folder from Git` in Positron to clone it
+* Write code directly in the Downloads folder with no version control
+* Only use the Julia REPL without saving any files
+* Copy random files into a temporary folder every time you work
+
+Solution
+========
+Cloning a freshly created GitHub repo into Positron sets up a clean project folder that is ready for version control.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: positron-project-start
+extype: schoice
+exsolution: 1000

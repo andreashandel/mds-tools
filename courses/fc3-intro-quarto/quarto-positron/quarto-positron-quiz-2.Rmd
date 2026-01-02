@@ -1,0 +1,27 @@
+Question
+========
+In Positron, what happens when you click the Preview button for a Quarto file?
+
+Answerlist
+----------
+* It only checks YAML syntax
+* It opens a blank document tab
+* It runs `quarto preview` and shows the rendered output
+* It deletes temporary files in the project
+
+Solution
+========
+Preview runs Quarto's preview command and opens the rendered document.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Positron preview
+extype: schoice
+exsolution: 0010

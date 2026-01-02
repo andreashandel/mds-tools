@@ -1,0 +1,115 @@
+---
+title: Further Resources
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit lists a few resources to help you build and improve your portfolio website or similar future products.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand what kind of (portfolio) websites you can build.
+* Know about other options to host your porfolio website.
+* Be familiar with other porfolio type products.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Further Resources" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+Quarto allows you to create many different types of websites, including portfolios, blogs, documentation sites, and more. Here are some resources to help you explore further.
+
+
+## Portfolio website features and examples
+
+The basic setup is a static website that contains text and images. But with Quarto, you can go beyond that. You can include interactive visualizations, code snippets, and even embed data analysis results directly into your portfolio. 
+
+The [official Quarto guide](https://quarto.org/docs/guide/) is a great place to start exploring the various features and capabilities of Quarto. It covers everything from basic setup to advanced customization options. 
+
+The [Gallery section](https://quarto.org/docs/gallery/) of the Quarto website showcases a variety of examples created by other users. Browsing through these examples can provide inspiration and ideas for your own future products.
+
+
+## Different publishing platforms
+
+Using GitHub Pages is a great option for hosting your portfolio website, but there are other alternatives. A popular one is the Netlifiy web hosting service. Netlify offers a free tier that is quite generous and easy to use. You can connect your GitHub repository to Netlify, and it will automatically build and deploy your site whenever you push changes. Or you can publish to netlify directly with Quarto. 
+
+For a nice walk-through of using Netlify with Quarto, see [A beginner’s guide to building a simple website with Quarto & Netlify](https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/) by Jadey Ryan.
+
+Another good resource is the [Netlify section of the Quarto documentation website](https://quarto.org/docs/publishing/netlify.html). The official Quarto website also describes [other publishing options](https://quarto.org/docs/publishing/).
+
+[Dissemination using Quarto and Github Pages](https://bartlettje.github.io/dissemination_quarto/) is an online book by James Bartlett which contains a lot of information about using Quarto and Github Pages, not just for websites but also other output formats.
+
+
+## Other portfolio type products
+
+In addition to a website that showcases some of your work, you can create other products that demonstrate your skills. For instance you could write a book with Quarto, which is very nicely supported. See the [Quarto book documentation](https://quarto.org/docs/books/) for more information. As an example [The R for Data Science book](https://r4ds.had.co.nz/) by Hadley Wickham and Garrett Grolemund is written with Quarto/bookdown.
+
+It is often also useful to combine different products. For instance, you could have a portfolio website that links to one of your GitHub repositories which contain data, code and everything else for a project you want to showcase. The portfolio website might feature a single page showing the main results, and then you link to the GitHub repository to allow interested readers to explore everything you did. 
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We briefly discussed resources and examples to further help you extend your online portfolio and more generally your online presence to showcase your skills to others.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+See above.
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r portfolio-resources-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("portfolio-resources-quiz-1.Rmd", "portfolio-resources-quiz-2.Rmd", "portfolio-resources-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'portfolio-resources-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+* Check out at least 3 of the examples in the [Quarto Gallery](https://quarto.org/docs/gallery/) and note down what you like about each of them. If available, go to the GitHub repository for each example and see how they were built.
+
+* Visit [Andrew Heiss website](https://www.andrewheiss.com/) and explore how he has organized his online presence. Make sure to visit at least one of his teaching/course pages -- which are stand-alone pages, but everything is build with Quarto. Also go to his GitHub profile to look 'behind the scenes' and see the code and content underlying his website(s).
+
+
+:::
+<!-- end unit-exercise div -->

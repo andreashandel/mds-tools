@@ -1,0 +1,27 @@
+Question
+========
+Where can you find Git controls in Positron?
+
+Answerlist
+----------
+* The bottom status bar only
+* The left sidebar with the branch icon
+* The top menu under Help
+* The terminal output panel
+
+Solution
+========
+Positron has a Git panel in the left sidebar, shown with a branch-style icon.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Positron Git panel
+extype: schoice
+exsolution: 0100

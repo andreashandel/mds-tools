@@ -1,0 +1,27 @@
+Question
+========
+What does it mean to clone a repository?
+
+Answerlist
+----------
+* Delete a repository and start over
+* Copy a repository from GitHub.com to your local machine for the first time
+* Upload local changes to GitHub.com
+* Rename a repository on GitHub.com
+
+Solution
+========
+Cloning creates a local copy of a repository you do not yet have on your computer.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Clone meaning
+extype: schoice
+exsolution: 0100

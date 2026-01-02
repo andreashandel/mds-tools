@@ -1,0 +1,27 @@
+Question
+========
+Why might R be less ideal for heavy AI workloads?
+
+Answerlist
+----------
+* R cannot read data files.
+* R lacks any packages for neural networks.
+* Other languages often provide stronger AI tooling and GPU support.
+* R does not support data visualization.
+
+Solution
+========
+The unit notes that other languages and GPU tooling are often better suited for heavy AI work.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: R for AI workloads
+extype: schoice
+exsolution: 0010

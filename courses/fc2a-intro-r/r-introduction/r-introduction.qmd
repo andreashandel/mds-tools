@@ -101,9 +101,8 @@ exams2forms::exams2forms(file = quizzes, title = 'r-introduction-quiz')
 ::: {.unit-exercise}
 # Practice
 
-* Read through the [getting started](https://positron.posit.co/start.html) section of the Positron website and make sure your computer is ready for the Positron installation.
-* If you want to learn more about Positron in general, watch the (somewhat long) [Introducing Positron video](https://youtu.be/8uRcB34Hhsw?si=qLlwgEJ5BE7OKoPT).  
-
+* Look through the official [R website](https://www.r-project.org/) to learn about the language. Read anything that sounds interesting to you.
+* Ask your favorite AI to give you a quick overview of R, compare it to some other language you already know (if applicable), and provide you with any other R related information you are curious about.
 
 :::
 <!-- end unit-exercise div -->

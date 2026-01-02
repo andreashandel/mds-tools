@@ -1,0 +1,27 @@
+Question
+========
+Which project is the best fit for using GitHub?
+
+Answerlist
+----------
+* A single large video file edited by one person
+* A shared Word document edited at the same time by many people
+* A project with many small text files where collaborators work on different parts
+* A folder of scanned PDFs that need to be edited in place
+
+Solution
+========
+GitHub works best for many small text files and collaboration across different parts of a project.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Good GitHub fit
+extype: schoice
+exsolution: 0010

@@ -1,0 +1,177 @@
+---
+title: Basic Use
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit covers the essential steps to using GitHub, and how to implement a simple GitHub based workflow. We'll cover topics such as clone, edit, stage, commit, pull, and push. 
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Clone a repository from GitHub.
+* Check status and stage changes.
+* Create clear, small commits.
+* Sync changes with pull and push.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Basic GitHub Workflow" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Git/GitHub terminology
+
+Git/GitHub has a lot of specialized terminology that takes getting used to. The GitHub folks posted a [handy page with short descriptions of terms](https://docs.github.com/en/github/getting-started-with-github/github-glossary) - including many that are not important for us. Some of the terms you will encounter often are *Repository* (also often called *repo*), *User*, *Branch*, *Fork*, *Push*, *Pull*, *Commit*, *Stage* and more. It can be a bit confusing at first, but you'll get the hang of it quickly.
+
+
+## GitHub repositories
+
+As mentioned previously, the main unit of organization in GitHub is a *repository* (or *repo* for short). A repository is a folder that contains all subfolders and files related to a project, along with the full history of changes made to those files. Each repository is tracked independently, and has its own URL on GitHub, making it easy to share and collaborate on projects.
+
+
+## Cloning and pulling
+
+When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. Here, we will focus on starting repositories on GitHub.com and won't describe the reverse process, but it it is also possible to start local and then push and thus initialize a new repository online.
+
+If you start a repository on GitHub.com, you can then *clone* it to your local machine to work on it. The process of *cloning* creates a local copy of the repository on your computer. You also use that approach if you are collaborating with someone on a repository that they created. The important part is that *cloning* means copying a repository **that you don't yet have on your local machine** from GitHub.com to your local machine.
+
+Once you have a local copy of a repository, you can get future updates from GitHub.com to your local machine by *pulling* remote updates to your local computer. (Sometimes, you might also see the word *fetch*, which is similar to *pull*, but does not automatically merge changes into your local files. For simplicity, we will mainly just use *pull* here since you usually want to merge anything from the online repository with your local version of that repo.)
+
+# Commiting and Pushing
+
+The reverse process of getting your local changes up to GitHub.com is called *pushing*.
+If you start a repository locally, or any time you make updates on your loccal machine, you can *push* it to GitHub.com to back it up and share it.
+
+Before you can push your local updates, you need to *commit* them. Committing means recording a snapshot of your changes in the local repository. You can make multiple commits locally before pushing them to GitHub.com. Commits are important because they allow you to track the history of changes and revert to previous versions if needed. 
+
+To be precise, before you can commit you need to stage your changes. Staging means selecting which changes you want to include in the next commit. This allows you to group related changes together in a single commit, making it easier to understand the history of your project. For our purposes, doing separate staging and committing is usually not necessary, and we will often just refer to committing, but keep in mind that staging is a step that happens before committing. Most of the time you won't even realize that the staging happened.
+
+
+:::{.warning}
+In contrast to sync services like OneDrive or Google Drive, pushing and pulling to make sure things are in sync between your local machine and the online platform are a manual process and are your responsibility. Make sure to always pull before you start working on a repository on your local machine, and commit/push to github.com when you are done.
+:::
+
+## Basic GitHub workflow
+
+### Create a repository
+
+Let's give this whole workflow a try.  We will start by creating a repository online. Go to GitHub.com, make sure you are logged into your account and on your main screen. The URL you should be one looks something like `https://github.com/githubusername`. Click on the `Repositories` tab. Then create a new repository by clicking on the `New` button. Give the new repo, e.g., `my-test-repo`. Give it a short description, turn on 'add README', keep visibility to public, and keep the rest of the settings as they are. Then click **Create repository**. 
+
+This has now created a new public repository on Github.com. At the moment, it is mostly empty apart from the README.md file we told it to create. 
+
+### Clone the repository
+
+Now that we have a repository on GitHub.com, we can clone it to our local machine. Open GitHub Desktop. In the menu, click on **File** > **Clone repository...**. In the dialog that opens, select the `my-test-repo` repository you just created (it should show up under the GitHub.com tab - make sure you are logged into your GitHub account inside GitHub Desktop). Select a local path where you want to clone it to, and click **Clone**. _Remember that you don't want to place the local copy in a location that is synced by other tools such as OneDrive or Google Drive._
+
+
+### Work on your project
+
+Once you have the repository on your local machine, open the folder in Positron. Since this is a GitHub repository, Positron will recognize it as a project/workspace.
+
+Open the `README.md` file in the Positron editor, change the text, then save it.
+
+In a usual workflow, you would do whatever you need to do for your project here - edit code files, run analyses, create visualizations, etc. For this example, we just changed the README file.
+
+Once you are done with your edits, either because you finished a task or because you need to stop working on it for now, make sure everything is saved. As needed run your code and render any Quarto files.
+
+
+
+### Committing and pushing changes
+
+Now go back to GitHub Desktop. You should see that it detected the change you made to the `README.md` file. You can now **stage and commit** that change. In GitHub Desktop, enter a short commit message, e.g., "Updated README", and click **Commit to main**. You can leave the 'Description' field empty. Once you committed, you are ready to **push** your changes to GitHub.com. The online location is referred to as `origin`. Click the **Push origin** button to push your changes. To verify that the changes are online, go back to GitHub.com and refresh the page for your repository. You should see that the `README.md` file has been updated and there should be your commit with its title. 
+
+As you keep working on the project, you can repeat this process of editing files, committing changes, and pushing them to GitHub.com. If others make changes, or you work on multiple computers, you will need to make sure before you start working that you pull any changes from GitHub.com to your local machine. This is especially important if you work on more than one computer, or if you collaborate with others on the same repository.
+
+These commits that will accumulate as you work on the project will create a history of changes that you can always go back to if needed. So if you did something a few weeks ago, then changed your code and now realized you need the old version back, you can click on that commit in GitHub Desktop and restore the files to that version. You can then pull out the changes you need from that version.
+
+## Recap of Github workflow
+
+In the future, if you work on repositories like this one (or any others), your workflow should be as follows:
+
+- If needed, create a repository online, then clone the repository to your local machine with GitHub desktop or any other way (e.g. the terminal). 
+- Once you have a copy of the repository both on your local machine and github.com, any time you start working on that repository, check that it's up to date and as needed, do a **pull**.
+-   Once your local repo is up-to-date, open your project. Make all the edits you like. Make sure to run your code and render your Quarto files. Once you are done with edits, **stage/commit/push** your changes back to the remote server.
+
+
+
+## Best practices
+
+### Commit with a clear message
+
+Commit messages should be short and specific. A good pattern is: **verb + object** (e.g., "Add data cleaning script").
+
+### Keep commits reasonably small
+
+Small commits make it easier to review and undo changes. If a change is unrelated, make a separate commit.
+
+### Pull before you start working
+
+Always check for and as needed, pull the latest changes from GitHub.com before you start working locally. This helps avoid conflicts.
+
+### Coordinate if you collaborate
+If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can't, you'll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be agravating at first, but you'll soon learn how to deal with them. The best approach is to avoid them as much as possible. 
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+The core workflow is: clone (once). Then pull/push. In between, edit. Whenever you made substantial changes or are taking a break, stage/commit and push. When you resume working, check that no changes happened to the online repo, and pull if necessary. 
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+The [GitHub Desktop documentation](https://docs.github.com/en/desktop) contains a lot of useful information about using GitHub Desktop. Check there if you run into any issues with the workflow described above.
+
+:::
+<!-- end unit-resources div -->
+
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-basic-use-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("github-basic-use-quiz-1.Rmd", "github-basic-use-quiz-2.Rmd", "github-basic-use-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-basic-use-quiz')
+```
+:::
+
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+* Find some repository online and clone it to your computer. Open it and edit it. Try to push changes back to the original repository. This will fail, since while repositories are publicly viewable and you can clone them, only the owner (or collaborators) can make edits and push changes.  
+* In the repo you created above, add a new file (e.g. a Quarto file or R script). Make sure you change more than one file, then stage/commit and push all those changes.
+
+:::
+<!-- end unit-exercise div -->

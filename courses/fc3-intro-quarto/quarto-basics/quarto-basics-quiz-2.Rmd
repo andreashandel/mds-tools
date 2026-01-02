@@ -1,0 +1,27 @@
+Question
+========
+How do you define an executable code chunk in a Quarto document?
+
+Answerlist
+----------
+* Use triple backticks followed by a language identifier like `{r}`
+* Use a single backtick and a colon
+* Wrap the code in HTML `<code>` tags
+* Put the code only in YAML front matter
+
+Solution
+========
+Code chunks start with triple backticks and a language identifier, such as `{r}`.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Code chunk syntax
+extype: schoice
+exsolution: 1000

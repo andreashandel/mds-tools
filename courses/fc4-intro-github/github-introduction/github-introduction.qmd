@@ -1,0 +1,144 @@
+---
+title: Introduction to Git/GitHub
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a brief introduction to version control, Git, and GitHub, and explains when and why they are useful for data projects.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand the difference between Git and GitHub.
+* Know when Git/GitHub is a good fit (and when it is not).
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub Introduction" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## What is Git
+
+[**Git**](https://git-scm.com/) is software that implements a *version control system*. The main idea is that as you (and your collaborators) work on a project, the software tracks and records any changes made by anyone. **Git** tracks every change to your files. In Git/GitHub terminology, the project is called a *repository* (or *repo* for short). This consists of a main folder, usually with subfolders, and files. Anything inside this folder/repository is tracked as a project by Git. You can have as many projects/repositories as you want, each is tracked independently.
+
+
+## What is GitHub
+
+[**GitHub**](https://github.com/) is distinct from Git. **GitHub** is an online platform that hosts changes you make and track with Git in the cloud. This makes collaboration and sharing easy.
+
+You can use Git without using GitHub. Other interfaces/platforms for Git exist, e.g., [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/product). But the combination of Git and GitHub is the most common setup, and it is what we will be discussing.
+
+In fact, since we will only be using Git with GitHub, we often tend to be sloppy with our language and not distinguish between the two. We might call it Git or GitHub, and possibly mean the other or both. Apologies in advance 😁. Mostly, we will refer to all of it as just GitHub.
+
+## Why use Git/GitHub
+
+You want to use GitHub to avoid this:
+
+![Source: [phdcomics.com](https://phdcomics.com/)](phd_versioncontrol.gif){width="60%"}
+
+Git/GitHub gives you an organized way to track your projects. It is well suited for collaborative work. Historically, version control was used for software development. It has since become broader and is now used for many types of projects, including data science projects. 
+
+While there are other similar tools that can do the same job as Git/GitHub, we'll focus on those two because they are the most widely used tools for version control and thus a good default choice.
+
+
+## What to (not) use Git/GitHub for
+
+GitHub is ideal if you have a project with many smallish files, most of which are text files (code, Quarto/Markdown files, LaTeX, etc.) and different people work on different parts of the project.
+
+GitHub is less useful if you have a lot of non-text files (e.g. Word or PowerPoint) and different team members might want to edit the same document at the same time. In that instance, a solution like Google Docs, Word+Dropbox, Word+OneDrive, etc. might be better.
+
+GitHub also has a problem with large files. Anything larger than around 20MB will slow down things, and files above 100MB usually lead to outright failure. Unfortunately, once you have a failed attempt to sync a large file, it can be quite tricky to fix the repository to work again. Therefore **keep large (>50MB) files out of your GitHub repositories.** If you have to work with such files, try to reduce them first before placing them into the repository. Or place those files in another sync service (e.g. Dropbox, OneDrive, Google Drive) and load them from there. You can also try Git Large File Storage (LFS), but that is more advanced and we will not cover it in this course.
+
+Finally, if you have data, you need to be careful since by default, GitHub repositories (the GitHub name for your projects) are **public** and everyone can see them. You can set them private, but you need to be careful that you don't accidentally expose confidential data to the public. We'll discuss this a bit more in a future unit. 
+
+
+## How to use Git/GitHub
+
+The most powerful and flexible way of using Git/GitHub is to open a command-line terminal and type commands. Since this can be intimidating, we will discuss a more user-friendly approach using the GitHub Desktop graphical interface.
+
+If you are already an experienced GitHub user and have your own preferred setup (e.g. the command line or some other third-party software), you can keep using your preferred approach We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup. 
+
+
+
+
+## Git/GitHub and other cloud-based sync options
+
+In some way, you can think of GitHub as a more controlled (and more complex) alternative to systems such as Dropbox, OneDrive, Google Drive, etc. With the GitHub workflow, you can work locally on different machines, and everything is backed up in the cloud (on github.com). The difference to Dropbox & Co is that syncing between your local computer and github.com is not automatic. So do not forget to pull before you start work on a repository and push once you are done. (We'll cover GitHub terminology and the meaning of `push` and `pull` shortly.)
+
+Because GitHub works similar to other sync services, it is generally a bad idea to locally store your GitHub repositories in a folder that is synced by another service. If you do, sync processes mighg conflict, potentially leading to a syncing mess. **For any GitHub repository, store it locally in a folder that is not synced across your computers by another software (such as Dropbox, OneDrive, Box, etc.)**
+
+Similarly, do not store a GitHub repository inside another repository. While this is technically allowed, it can easily lead to a mess. Each repository should be separate and not connected to any other syncing service.
+
+
+
+
+::: {.warning}
+**Frustration note:** Git/GitHub can be finicky, even for seasoned users. If that happens, do not panic. There's pretty much always a way to fix things, even if worst case it means 'starting over' with a clean repository. 
+:::
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Git/GitHub are a software and service that allows you to keep track of your changes and sync them to the cloud. Together they provide a structured way to collaborate, back up projects, and maintain a history of your work. 
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* The [GitHub documentation](https://docs.github.com/en) contains a lot of good resources and tutorials. 
+* If you want to learn a bit more about Git/GitHub and why it is a great tool for data analysis, check out this [article by Jenny Bryan](https://peerj.com/preprints/3159/).
+* The online book [*happygitwithr*](https://happygitwithr.com/), also by Jenny Bryan, contains a lot of useful information specifically for R users.
+
+
+:::
+<!-- end unit-resources div -->
+
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-introduction-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("github-introduction-quiz-1.Rmd", "github-introduction-quiz-2.Rmd", "github-introduction-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-introduction-quiz')
+```
+:::
+
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+* Nothing to practice for now.
+
+:::
+<!-- end unit-exercise div -->

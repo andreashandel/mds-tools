@@ -1,13 +1,14 @@
 # ToDo
 
-- Finish Positron course
+- Review Positron and R Course
+- Finish Quarto, AI, Git/Github and Portfolio courses
 
 
 # Notes
 
 - I am not using renv for package management since it's taking too long.
-- These packages are currently needed: 
-    - `webexercises`
+- These packages are currently needed (this list might not be complete): 
+    - `exams2forms`
     - `quarto`
     - `knitr`
     - `rmarkdown`
@@ -17,15 +18,23 @@
 
 
 - I'm currently using gh-pages branch for publishing. Local website content in _site is not synced with github. 
+- Run local 'quarto render' to re-create site and open it locally in browser by opening index.html inside _side folder.
 - Run "quarto publish gh-pages" to update the site on the server.
 - See Quarto documentation for details: https://quarto.org/docs/publishing/github-pages.html
 - I'm using the exams2forms R package to embed quizzes. 
+- There is currently a Julia course WIP in the repo, but it's not published on the website.
+
+
+# Style guide
+- Any files associated with a unit go into that folder. There is always a main .qmd file, there are usually quiz files, and if applicable, image files, code, presentation, etc. videos will have to be hosted somewhere else.
+- Every unit should look and feel similar. Similar structure with headings, callouts, images, etc. Always have 3 quizzes if possible. Always have 3 exercises/practices.
+- Use callout blocks (divs) for important information, tips, notes, warnings, prompts, etc. inside the main divs.
+- Links to other resources should be used sparingly inside the main text, if feasible they should go into 'other resources' section at the end. Sometimes links are needed, e.g. to a website for downloading a software. But anyhing like [see here for more info](...) should go into 'other resources'.
 
 
 
 
-
-# Old Todo, some addressed
+# Notes from Quarto conversion by Jadey
 
 -   Is there an easier way to do internal referencing to files?
     Having to remember the local structure is unwieldy and fragile.
@@ -36,15 +45,6 @@
 
     -   I found this [Quarto specific solution](https://github.com/quarto-dev/quarto-cli/discussions/6334#discussioncomment-6541441). Using the folder/file syntax like `/code/bing-iterate-example-update1.R` will ensure the path is always resolved with respect to the website root.
 
--   Can we change color scheme to something less stark/dark?
-    And could we have a light and dark scheme?
-
-    -   Hopefully this is better. As for the light and dark scheme, it is possible. But the dark mode will [flash white when changing pages](https://github.com/quarto-dev/quarto-cli/discussions/2588#discussioncomment-6092667) which is annoying for most people and especially problematic for folks with photosensitive epilepsy.
-
--   Make the callout block divs nicer.
-
--   Can one make the images larger, they are at times hard to see/read.
-    And could one do that in a way that they can be 'centrally controlled', like the CSS code fo the video sizing?
 
     -   I added the [lightbox extension](https://github.com/quarto-ext/lightbox) which is a javascript library that allows the user to click on an image to open it full screen.
         See lines 41-49 in `_quarto.yml` for options.
@@ -76,7 +76,6 @@ file.rename(files, tolower(files))
 -   Write table unit
 
 
-# Notes from Quarto conversion by Jadey
 
 ## Checking links for 404 or other errors
 

@@ -1,0 +1,108 @@
+---
+title: Installation and Setup
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit guides you through installing Git, creating a GitHub account, and installing GitHub Desktop.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Install Git on your system.
+* Set up a GitHub account.
+* Install and configure GitHub Desktop.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub Installation and Setup" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Install Git
+
+Install Git on your computer. Go to the [Git website](https://git-scm.com/) and follow the isntructions. You can accept the default options during installation. It is likely that you will need administrator rights to be able to install Git. 
+
+
+## Set up GitHub
+
+Go to [the GitHub website](https://github.com/) and create an account. The email you use should be one you use regularly, ideally one that you is your permanent email address. This will be the email address to which GitHub sends notifications. Next, choose a user name and pasword to finish setting up your account.
+
+:::{.warning}
+GitHub is widely used professionally. You might use it for your career and you might want to allow other people to see your GitHub presence. You should therefore use a future-proof, professional user name for your GitHub account. Your name is always a good idea.
+::: 
+
+Since you are doing a lot of GitHub work out in the open, it is a good idea to associate a professional image with your profile. This also makes it easier for others to recognize that it's you who when they are for instance trying to invite as a collaborator. You can do so by going to your profile and changing the image. You can also add further information to your profile, such as a short bio, your location, and a link to your website or blog.
+
+## GitHub developer pack
+
+If you are a student, you can get a lot of nice free goodies through the [GitHub student developer pack](https://education.github.com/pack). You will get GitHub Pro for free, which gives you access to the GitHub Copilot AI assistant and private repositories. Many other parks are also included. If you are eligible, I highly recommend signing up for the student developer pack.
+
+
+
+## Install GitHub Desktop
+
+GitHub Desktop is a free graphical client made by the GitHub folks that makes it fairly easy to use Git/GitHub without the command line. [Download GitHub Desktop](https://github.com/apps/desktop) and install it. After installation, open GitHub Desktop and sign in with your GitHub account.
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+You installed Git, created a GitHub account and installed and set up GitHub desktop. 
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* The software carpentry has [a course on Git/GitHub](https://swcarpentry.github.io/git-novice/#creating-a-github-account) which among other things provides some more install/setup instructions.
+
+:::
+<!-- end unit-resources div -->
+
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-install-setup-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("github-install-setup-quiz-1.Rmd", "github-install-setup-quiz-2.Rmd", "github-install-setup-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-install-setup-quiz')
+```
+:::
+
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+* Make sure you implemented all the steps described above and have Git, GitHub account, and GitHub Desktop set up and ready to go.
+
+:::
+<!-- end unit-exercise div -->

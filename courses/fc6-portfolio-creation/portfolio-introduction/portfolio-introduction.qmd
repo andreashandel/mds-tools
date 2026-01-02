@@ -37,7 +37,7 @@ In our context, a portfolio is an organized collection of work that showcases sk
 
 It is useful to showcase your skills for several reasons.
 
-If you are looking for a new job, the application materials you submit, such as cover letter and CV or resume, generally need to be fairly short. You can mention specific skills in those documents, but you can't really demonstrate them. This makes it difficult.
+If you are looking for a new job, the application materials you submit, such as cover letter and CV or resume, generally need to be fairly short. You can mention specific skills in those documents, but you can't really demonstrate them. But you can add a link to your application materials to point interested readers to a website that showcases your skills in more detail.
 
 Even if you are not looking for a new job, having your work and skills out there is a good way of having potential opportunities come your way. Say someone is looking for a speaker/presenter for an event who could talk about a particular topic. They might ask colleagues for recommendations, or search online. If you have work online that shows that you are proficient in that topic, you might be contacted.
 
@@ -46,7 +46,7 @@ A more altruistic reason is that if you have knowledge in a certain area, sharin
 
 ## How to make a portfolio
 
-An online portfolio is basically a website. This could be a stand-alone page, or it could be part of your general website. Any tool that allows you to make online content and place it on a sever can work. There are many free tools. As we'll discuss shortly, we like using Quarto and Git/Github, but many other options exist. Wordpress is a very common platform.  
+An online portfolio is basically a website. This could be a stand-alone page, or it could be part of your main site (if you have a personal website). Any tool that allows you to make online content and place it on a sever can work. There are many free tools. Wordpress is a very common platform. We like using Quarto and Git/Github. 
 
 ::: 
 
@@ -61,25 +61,36 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 ::: {.unit-resources}
 # Further Resources
 
-This is a good additional reading: URL
-More text
+* [The Tufts University Career Center on Portfolios](https://careers.tufts.edu/resources/what-is-an-online-portfolio/) has a few more thoughts on why having a portfolio is a good idea and some tips to consider.
+
+* [This GitHub repository and presentation](https://github.com/deepshamenghani/Portfolio_with_Quarto_ppt) by Deepsha Menghani provides a nice overview of creating a portfolio with Quarto.
+
+
 :::
 <!-- This ends the unit-resources div -->
 
 
+<!--
 ::: {.unit-quiz}
 # Test yourself
 
-```{r qsp-quiz}
+```{r portfolio-introduction-quiz}
 #| echo: false
 #| results: "asis"
-exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE)
+# quizzes <- list("portfolio-introduction-quiz-1.Rmd", "portfolio-introduction-quiz-2.Rmd", "portfolio-introduction-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'portfolio-introduction-quiz')
 ```
-::: 
+:::
+-->
 
 
 
 ::: {.unit-exercise}
+
 # Practice
-Before creating your own portfolio, it is worth checking out some examples from others. This gives you an idea of ways you can make one and what to showcase. Here are a few nice ones. We picked those that are either topically relevant (data analysis and QSP in pharma) or use the tools we also use (mainly Quarto).
+* Look around online to find a few personal webpages that showcase products a person created.
+* For a very nice example - just don't get intimidated by it 😁 - check out [Andrew Heiss](https://www.andrewheiss.com/).
+
+
+
 ::: 

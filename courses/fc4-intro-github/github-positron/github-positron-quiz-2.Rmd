@@ -1,0 +1,27 @@
+Question
+========
+After committing in Positron, what indicates your local branch is ahead of the remote?
+
+Answerlist
+----------
+* The repository disappears from the Git panel
+* The main branch is behind origin/main by one commit
+* The main branch is ahead of origin/main by one commit
+* The README file is locked for editing
+
+Solution
+========
+A local commit puts your local main branch ahead of origin/main until you push.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Local ahead
+extype: schoice
+exsolution: 0010

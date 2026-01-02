@@ -1,0 +1,27 @@
+Question
+========
+Which presentation format does the unit recommend as a default choice?
+
+Answerlist
+----------
+* beamer
+* revealjs
+* docx
+* pdf
+
+Solution
+========
+The unit recommends using the `revealjs` format unless you need a specific alternative.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Presentation format
+extype: schoice
+exsolution: 0100

@@ -8,6 +8,8 @@ subtitle: ""
 
 
 * [Introduction and Motivation](./portfolio-introduction/portfolio-introduction.qmd)
+* [Creating an Online Portfolio](./portfolio-creation/portfolio-creation.qmd)
+* [Further Resources](./portfolio-resources/portfolio-resources.qmd)
 
 :::
 

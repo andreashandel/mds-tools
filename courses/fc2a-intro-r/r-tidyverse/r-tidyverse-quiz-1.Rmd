@@ -1,0 +1,27 @@
+Question
+========
+Why might you install only the specific tidyverse packages you need instead of the full bundle?
+
+Answerlist
+----------
+* Installing the full tidyverse prevents you from using base R
+* Smaller installs can be faster and avoid pulling in packages you won’t use
+* The full tidyverse does not work on Windows
+* Installing individual packages disables the pipe
+
+Solution
+========
+Installing just the packages you need keeps installs lighter and avoids extra dependencies while still letting you use tidyverse tools.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: rtidyverse-install
+extype: schoice
+exsolution: 0100

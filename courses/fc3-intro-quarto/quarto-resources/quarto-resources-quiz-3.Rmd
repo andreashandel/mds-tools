@@ -1,0 +1,27 @@
+Question
+========
+Where does the unit suggest going for community support and questions?
+
+Answerlist
+----------
+* The Quarto mailing list hosted on Quarto.org
+* Stack Overflow only
+* The Quarto GitHub discussions page
+* A private Discord server
+
+Solution
+========
+The Quarto developers and community are active in the GitHub discussions area.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Quarto community support
+extype: schoice
+exsolution: 0010

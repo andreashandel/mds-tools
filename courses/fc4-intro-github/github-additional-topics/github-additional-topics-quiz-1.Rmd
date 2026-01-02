@@ -1,0 +1,27 @@
+Question
+========
+What does a force push do?
+
+Answerlist
+----------
+* Adds a new collaborator to the repository
+* Overwrites the remote repository with your local version
+* Creates a new branch for you automatically
+* Fixes merge conflicts without changes
+
+Solution
+========
+Force push replaces the remote state with your local state and can destroy others' changes.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: Force push
+extype: schoice
+exsolution: 0100

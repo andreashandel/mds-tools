@@ -1,0 +1,27 @@
+Question
+========
+What does the base pipe `|>` do in R?
+
+Answerlist
+----------
+* It comments out code so it won’t run
+* It automatically loads all tidyverse packages
+* It passes the left-hand result as the first argument to the next function
+* It only works inside loops
+
+Solution
+========
+The base pipe `|>` takes the value on the left and feeds it as the first argument to the function on the right, helping you write readable sequences of steps.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: rcoding-pipe
+extype: schoice
+exsolution: 0010

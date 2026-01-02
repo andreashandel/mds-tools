@@ -1,0 +1,27 @@
+Question
+========
+How do you publish the Quarto site with GitHub Pages in this setup?
+
+Answerlist
+----------
+* Enable Pages from the gh-pages branch only
+* Set Pages to serve from the main branch and /docs folder
+* Upload the site manually to github.io
+* Add a Netlify config file only
+
+Solution
+========
+The site is published by serving the /docs folder from the main branch in GitHub Pages.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: GitHub Pages setup
+extype: schoice
+exsolution: 0100

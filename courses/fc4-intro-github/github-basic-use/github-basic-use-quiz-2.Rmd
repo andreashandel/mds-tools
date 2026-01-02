@@ -1,0 +1,27 @@
+Question
+========
+What must happen before you can push changes to GitHub.com?
+
+Answerlist
+----------
+* You must open a pull request
+* You must rename the repository
+* You must commit your changes locally
+* You must fork the repository
+
+Solution
+========
+Pushing sends committed changes to GitHub.com, so you need a local commit first.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Commit before push
+extype: schoice
+exsolution: 0010

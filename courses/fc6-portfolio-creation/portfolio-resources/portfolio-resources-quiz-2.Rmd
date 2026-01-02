@@ -1,0 +1,27 @@
+Question
+========
+Which hosting alternative to GitHub Pages is mentioned?
+
+Answerlist
+----------
+* Netlify
+* Heroku
+* AWS Elastic Beanstalk
+* Azure App Service
+
+Solution
+========
+Netlify is mentioned as an alternative hosting option.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Netlify hosting
+extype: schoice
+exsolution: 1000

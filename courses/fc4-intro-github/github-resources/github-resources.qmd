@@ -1,0 +1,94 @@
+---
+title: Further Resources
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a few pointers to resources for learning more about Git and GitHub.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Know where to find additional Git and GitHub documentation.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Further Resources" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Official documentation
+
+The official documentation for Git and GitHub is extensive and well maintained. 
+You can find the [GitHub Docs](https://docs.github.com/) on the GitHub website and the [Git learn section](https://git-scm.com/learn) on the Git website.
+
+
+
+## Community Resources
+
+The [GitHub community site](https://github.com/community) is a good place to ask questions and find answers related to GitHub.
+
+There is even a game, called [Oh My Git!](https://ohmygit.org/) that is meant to teach you Git while playing. We have not tried it, so we don't know if it's entertaining and/or useful.
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+This unit listed a few additional resources. These days, AI tools are also often very helpful in answering questions about Git and GitHub. 
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+See above.
+
+:::
+<!-- end unit-resources div -->
+
+
+<!--
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-resources-quiz}
+#| echo: false
+#| results: "asis"
+# quizzes <- list("github-resources-quiz-1.Rmd", "github-resources-quiz-2.Rmd", "github-resources-quiz-3.Rmd")
+# exams2forms::exams2forms(file = quizzes, title = 'github-resources-quiz')
+```
+:::
+-->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+
+:::
+<!-- end unit-exercise div -->

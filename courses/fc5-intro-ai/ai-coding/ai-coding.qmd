@@ -1,0 +1,277 @@
+---
+title: AI tools for code writing
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+In this unit, we discuss using LLM AI tools to help write code.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Know how and why to use current LLM AI tools to help with coding.
+* Be familiar with several approaches of LLM AI assisted coding.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="AI tools for code writing" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Introduction
+
+If you write code, there are (at least) two major parts to the effort. First, you have to figure out what exactly you want to accomplish with your code. Second, you need to write a bunch of commands in the programming language of your choice to get what you are hoping to accomplish.
+The first part is generally the intellectually more challenging one, and a step which AI (currently) are not very good at. The second part is generally less hard, but it can be very tedious, especially if you are new to coding or if you need to write a lot of code. AI are getting pretty good at helping with writing code.
+
+I expect that soon, instead of people writing code, most code will be written by AI under the guidance and direction of people. This should eventually lead to much more efficient, and potentially also better code. We aren't quite there yet, but the current AI tools are already quite useful for helping with code tasks, so you should use them.
+
+## Good prompting
+
+To get good results from the AI, it is important that you be as specific as you can with your prompt.
+
+Try this prompt with one of the LLM AI:
+
+::: prompt
+Write R code that generates a scatterplot and a violin plot.
+:::
+
+Your result might or might not be close to what you had in mind. If you are not providing a lot of details, the AI can decide what to do and sometimes it is close to what you had in mind, but often it is not.
+
+
+Now try this prompt:
+
+::: prompt
+Write R code that generates a dataset of 100 individuals with ages from 18 to 49, BMI values from 15 to 40 and smoking status as yes or no. Assume that age and BMI are uncorrelated. Assume that smokers have a somewhat lower BMI. Then use the patchwork R package to generate a panel of ggplot2 plots. The first panel should show a violin plot with BMI on the y-axis and smoking status on the x-axis. The second panel should show a scatterplot with age on the y-axis and BMI on the x-axis. Add thorough documentation to your code.
+:::
+
+When I gave the second prompt to ChatGPT 3.5, it gave me this [fully working code](chatgpt-example.R). It is possible that when you try this, the code will look slightly different. Remember, these AI tools are not fully deterministic and can produce different results each time. Hopefully, what you get will run. If not, you might need to either fix the code or ask the AI to fix it (we'll look at that in another unit).
+
+
+As you can see, good prompts are often quite long. It makes sense to write those down outside the AI first. That also helps somewhat with reproducibility. I generally try to stick AI prompts at the top of my R/Quarto files, or into a separate file.
+
+You also notice that for the second prompt, I had to know more about the programming language, for instance I had to know that there is a package called `ggplot2` and one called `patchwork`.
+
+You will find that the more you know in general about a topic, the more useful those AI tools become. This means that you still have to learn some coding (or whatever the topic is) and understand it enough on a big picture level to be able to be useful. But you don't necessarily need to be an expert.
+
+An analogy I like is that of a composer. A composer needs to know enough about the various instruments of an orchestra to be able to write music for each instrument. But they don't need to be able to play each instrument. Similarly, you need to know enough about coding or whatever the topic is you are working on to _compose_ prompts for the AI and evaluate what it produces, but you don't necessarily need to be an expert coder.
+
+## Iterating
+
+It's rare that you get exactly what you want from the AI with your first prompt. Quite likely, you realize that you weren't specific enough, or that you really wanted something slightly different but didn't properly specify it in the prompt. Often, the code might also not quite work. The AI might have just made up a package or function that doesn't exist, or otherwise introduced mistakes.
+
+While it would be nice to get a great product on the first try, the process is so fast that it doesn't matter much. Just try again. You can either update your prompt and feed it to the AI again. Or you can tell it what changes you want to make. Try this as a starting prompt:
+
+::: prompt
+Write R code that generates a dataset of 100 individuals, half of them female, with ages from 18 to 49, weight from 100 to 500 pounds and BMI from 15 to 35. Make a figure that shows weight on the x-axis, BMI on the y-axis, and stratification by sex. Add thorough documentation to the code.
+:::
+
+
+When I fed that to Bing in "precise" mode it produced [this code](bing-iterate-example.R). Note that it didn't really give me an R script, I copied what it produced into an R file.
+
+The code runs and produces a figure, but there are problems. Right now, the data is generated assuming each variable is independent of the other. We know that weight is strongly correlated with BMI, since it's part of the equation defining BMI. We also know that males are generally heavier. We can easily fix this. One approach is to update your prompt and make it more explicit, such as:
+
+::: prompt
+Write R code that generates a dataset of 100 individuals, half of them female, with ages from 18 to 49, weight from 100 to 500 pounds and BMI from 15 to 35. Assume that males are generally somewhat heavier than females. Also assume that BMI and weight are positively correlated, based on the definition of BMI. Make a figure that shows weight on the x-axis, BMI on the y-axis, and stratification by sex. Add thorough documentation to the code.
+:::
+
+With this updated prompt, I got [this code](bing-iterate-example-update1.R), here are the relevant bits:
+
+::: output
+```
+# Generate a dataset of 100 individuals
+data <- data.frame(
+  # Generate sex variable with half of them female
+  sex = rep(c("male", "female"), each = 50),
+  
+  # Generate ages from 18 to 49
+  age = sample(18:49, 100, replace = TRUE),
+  
+  # Generate weight values from 100 to 500 pounds
+  # Assume that males are generally somewhat heavier than females
+  weight = c(runif(50, min = 100, max = 400), runif(50, min = 200, max = 500)),
+  
+  # Generate BMI values from 15 to 35
+  # Assume that BMI and weight are positively correlated
+  bmi = c(runif(50, min = 15, max = 25), runif(50, min = 25, max = 35))
+)
+```
+:::
+
+There are several issues. It labeled the first 50 individuals as males, but assigned them the lighter instead of heavier weight. It also didn't properly create BMI values as function of weight.
+
+We could of course modify the prompt above further, trying again. Or we can directly iterate at the prompt and ask the AI to update the code. Here is an example:
+
+::: prompt
+Update the code such that males and females are randomly distributed, make sure that males are on average heavier than females, and compute values for BMI as a function of weight with some random variation added.
+:::
+
+With this prompt, I got [this further updated code](bing-iterate-example-update2.R), here are again the relevant bits:
+
+::: output
+```
+# Generate a dataset of 100 individuals
+data <- data.frame(
+  # Generate sex variable with males and females randomly distributed
+  sex = sample(rep(c("male", "female"), each = 50)),
+  
+  # Generate ages from 18 to 49
+  age = sample(18:49, 100, replace = TRUE),
+  
+  # Generate weight values from 100 to 500 pounds
+  # Make sure that males are on average heavier than females
+  weight = ifelse(sex == "male", runif(50, min = 300, max = 500), runif(50, min = 100, max = 300))
+)
+
+# Compute values for BMI as a function of weight with some random variation added
+# Assume a height of 1.75 meters for simplicity
+# BMI = weight(kg) / height(m)^2
+# Convert weight from pounds to kg (1 pound = 0.453592 kg)
+data$bmi <- (data$weight * 0.453592) / (1.75^2) + rnorm(100)
+```
+:::
+
+That looks better. However, when you try to run it, you'll find that it doesn't work. The problem is that it tries to use the variable `sex` before that data frame is defined. So we need to fix that code. We could of course do it by hand, but we can also see if we can get the AI to fix its own code. Which brings us to the next section on using AI to fix code.
+
+
+## Introduction
+
+This topic is very similar to the approach for writing code. In that unit, we already discussed how to iteratively update and improve the code. Fixing non-working code is really just another version of asking the AI iteratively to improve things. However, it seemed distinct enough to me that I thought it's worth placing it into a separate unit.
+
+The assumption is that you have some code (likely AI generated, but could also be code you wrote) and need to fix some typos. If the code was generated in the current session, you can just refer to it in your prompt. If the code was generated previously, you will supply the code as part of the prompt. The latter approach is more general, so I'm focusing on that one.
+
+## Fixing through iteration
+
+The most basic approach is to just feed the AI non-working code and tell it to fix it.
+
+To mimic a general setting, with code possibly produced earlier or not by the AI, I started a new session with the Bing AI in 'precise' mode and gave it this prompt.
+
+::: prompt
+This code does not work. Please fix it.
+  
+PASTE ALL CODE FROM [THIS FILE](bing-iterate-example-update2.R) HERE.
+:::
+
+Here is what I got back:
+
+::: output
+I see that you’re trying to generate a scatter plot of BMI against weight, stratified by sex. The code you’ve provided seems to be correct. However, the issue might be due to the specific versions of the ggplot2 and dplyr libraries you’re using, or it could be a problem with your R environment.
+
+If you’re getting a specific error message, could you please provide it? That would help me understand the issue better and provide a more accurate solution. If you’re not seeing an error message, could you please describe what’s happening when you say the code doesn’t work? For example, is the plot not displaying as expected, or are the calculations not producing the right results? This additional information will help me assist you more effectively.
+:::
+
+So this didn't work. What's next? One option is to see if another LLM AI can do it. For instance I could try and switch to another mode in Bing (creative or balanced) or try another LLM. I'm not doing this for now, but it might at times be worth giving it a try. What I'll do here is to help the AI (as it suggested) by being more specific about the problem. Here is my updated prompt:
+
+::: prompt
+The code below produces this error message:
+
+Error in eval(ei, envir) : object 'sex' not found
+
+Please fix it.
+
+PASTE ALL CODE FROM [THIS FILE](bing-iterate-example-update2.R) HERE.
+
+:::
+
+With this prompt, I got it to work. The AI gave me this helpful explanation and fully working code
+
+::: output
+The error message you’re seeing is due to the sex variable not being recognized within the ifelse function in your data.frame creation. This is because the sex variable is not yet defined at the time ifelse is called.
+
+You can fix this by first creating the sex variable and then using it in the ifelse function. Here’s the corrected code:
+
+[CODE IS HERE](bing-iterate-example-update3.R)
+:::
+
+The end result is still not perfect, the difference in weight by sex is too large and we might want more scatter. But that can easily be fixed with either further iterations of asking the AI to update the code, or manual interventions. Speaking of manual interventions...
+
+## Manual intervention
+
+The overall goal is to get working code as quickly as possible, not to have things completely AI generated. Therefore, if you reach a stage where you realize it's faster if you just fix the code yourself, go ahead and do so.
+
+This occurs at two stages. The most obvious one is close to the end. If the AI has given you code that is very close to what you want, but has a few issues (either conceptual or coding errors) that you immediately know how to correct, then just go ahead and finish things off manually. At this point, you should be able to “turn off” the AI and have working code that you can apply to your project.
+
+Another situation you might want to intervene manually is if the AI gets stuck. For instance, if you have to keep asking the AI to fix/update some code and it still doesn't produce what you want, you could go ahead and make some manual adjustments to the code that you know should happen, and then feed the code, which still may not be fully working, back to the AI and ask it to update further.
+
+The nature of the AI algorithms is that they can "get stuck" and if you give them a slight change of scenery, they might be able to get unstuck and get you closer to your goal.
+
+
+
+
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+LLM AI are very helpful at assisting with writing code. The more you know what you want, and the more specific you can be (which requires some level of subject matter expertise) the better your results. Rarely do you get exactly what you want on the first try, but iterating is easy and fast.
+
+The list of tips provided in an earlier unit for general LLM AI use also applies for using it as a coding helper. Here is a version of that list again:
+
+* Be as detailed and specific as possible.
+
+* Iterate. Either only AI based iterations or a mix of manual and AI iterations.
+
+* Try different AI engines or settings or prompt phrasings.
+
+* Ask the AI to add a lot of comments into the code to explain what each line of code does.
+
+* Break down big tasks into smaller tasks, ask the AI to solve the smaller tasks, then put it together.
+
+* Write down your prompts so you and others can go back to them later and see what you did.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+
+:::
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r ai-write-code-r-quiz}
+#| echo: false
+#| results: "asis"
+#quizzes <- list("ai-write-code-r-quiz-1.Rmd", "ai-write-code-r-quiz-2.Rmd", "ai-write-code-r-quiz-3.Rmd")
+#exams2forms::exams2forms(file = quizzes, title = 'ai-write-code-r-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Write a detailed prompt for a small analysis task and compare it with a vague version.
+* Ask the AI to add comments to the code it generates and check whether they are accurate.
+* Iterate on a prompt at least once and record both prompts for reproducibility.
+
+:::
+<!-- end unit-exercise div -->

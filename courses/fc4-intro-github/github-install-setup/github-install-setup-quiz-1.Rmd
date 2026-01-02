@@ -1,0 +1,27 @@
+Question
+========
+Where should you install Git from?
+
+Answerlist
+----------
+* The GitHub Desktop app
+* The GitHub Docs website
+* The official Git website at git-scm.com
+* The R package repository on CRAN
+
+Solution
+========
+Git is installed from the official Git website at git-scm.com.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: Install Git source
+extype: schoice
+exsolution: 0010

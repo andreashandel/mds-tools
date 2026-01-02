@@ -1,0 +1,27 @@
+Question
+========
+Where do you update the website title and repository URL for a Quarto site?
+
+Answerlist
+----------
+* In the README.md file only
+* In a file named aboutme.qmd
+* In styles.css
+* In the _quarto.yml configuration file
+
+Solution
+========
+The site title and repository URL are configured in _quarto.yml.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Quarto config file
+extype: schoice
+exsolution: 0001

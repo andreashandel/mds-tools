@@ -1,0 +1,27 @@
+Question
+========
+Can you use both GitHub Desktop and Positron for Git tasks?
+
+Answerlist
+----------
+* Only if you never push changes
+* No, you must pick exactly one tool forever
+* Only if the repository is private
+* Yes, you can mix both tools as needed
+
+Solution
+========
+It is fine to use a mix of GitHub Desktop and Positron for the same repository.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: Mix tools
+extype: schoice
+exsolution: 0001

@@ -1,0 +1,27 @@
+Question
+========
+Which risk is highlighted when sharing data with AI tools?
+
+Answerlist
+----------
+* Data is always deleted immediately.
+* Data may be stored on company servers and used for training.
+* Data becomes public automatically.
+* Data cannot be processed by AI tools.
+
+Solution
+========
+The unit warns that data can be retained by providers for model improvement.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: AI data privacy
+extype: schoice
+exsolution: 0100

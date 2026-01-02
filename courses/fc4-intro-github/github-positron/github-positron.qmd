@@ -1,0 +1,115 @@
+---
+title: Git and GitHub in Positron
+subtitle: ""
+---
+
+::: {.unit-overview}
+# Overview
+
+Positron includes Git tooling so you can commit, pull, and push without leaving the IDE. This unit shows a minimal workflow for using GitHub from Positron.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Know how to use Git/GitHub within Positron.
+
+:::
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video, slides and audio transcript
+
+Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub in Positron" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+
+::: {.unit-reading}
+# Reading
+
+So far, we used GitHub Desktop to interact with GitHub. An alternative is to use Positron's built-in Git support. This allows you to perform common Git tasks without leaving the IDE. 
+
+The GitHub Desktop application is generally a bit more user- and beginner-friendly, but Positron's Git integration is convenient for day-to-day use. It is ok to use a mix of both tools as needed.
+
+
+## Git/GitHub in Positron
+
+Positron has built-in Git support. You can find it on the left sidebar, it is generally the third icon from the top (the icon looks like a branch with a dot at each end). If you have a project open that is also a GitHub repository, you will see information in the Git panel that shows you what files have changed (top part) and the history of your project (bottom part).
+
+Through this panel, you can do the same push/pull/commit workflow as in GitHub Desktop, but without leaving Positron.
+
+
+## Setting up Git in Positron
+
+I DONT REMEMBER HOW TO DO THAT, NEED TO REPRODUCE
+
+
+
+## Positron and Git/GitHub workflow
+
+Let's go through a minimal Git workflow in Positron. Open the Github repository you created earlier. You might even have it already open if you followed along in previous units.
+
+If you recently did a push/pull with GitHub Desktop, the panel showing changes should be empty. You will also see in the bottom panel that the `main` symbol (your local repo) and the `origin/main` symbol (the remote repo on GitHub) are in sync and on the same line.
+
+Now edit the README file or another file you created in that repository. After saving the file, go back to the Git panel in Positron. You should see the changed file listed in the top panel.
+
+You will also see the `Commit` button. In the box above, write a short, descriptive commit message. Then click the `Commit` button.
+
+You will see in the bottom panel that your local `main` branch is now ahead of the `origin/main` branch by one commit. This means you have changes locally that are not yet on GitHub.
+
+Now click the `Push` button on top of the lower panel (the outgoing arrow symbol) to send your local commit to GitHub.
+
+
+:::
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+Positron provides an alternative to GitHub Desktop for performing Git/GitHub tasks. You can use it together with GitHub Desktop.
+
+:::
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* [The Positron documentation](https://positron.posit.co/git.html) provides a few more details for using Git in Positron.
+* [The VS Code documentation](https://code.visualstudio.com/docs/sourcecontrol/overview) has very detailed instructions and explanations of Git functionality in VS Code (reminder: Positron is basically VS Code).
+
+:::
+<!-- end unit-resources div -->
+
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r github-positron-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list("github-positron-quiz-1.Rmd", "github-positron-quiz-2.Rmd", "github-positron-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-positron-quiz')
+```
+:::
+
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+
+
+:::
+<!-- end unit-exercise div -->
