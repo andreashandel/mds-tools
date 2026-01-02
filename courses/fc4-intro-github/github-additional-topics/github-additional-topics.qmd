@@ -42,9 +42,14 @@ The sections below cover a few additional topics that are relevant when working 
 
 ## Merge conflicts
 
-Sooner or later, as you work with GitHub, you will encounter a dreaded merge conflict. This happens if the same file has been changed by multiple individuals - or yourself on multiple computers if you forgot to properly do your push/pull before and after each work session. A merge conflict happens when Git cannot automatically figure out how to combine the changes made in the different versions of a file. When this happens, Git will mark the file as having a conflict and will not allow you to push your changes until the conflict is resolved.
+Sooner or later, as you work with GitHub, you will encounter a dreaded merge conflict. This happens if the same file has been changed by multiple individuals - or yourself on multiple computers if you forgot to properly do your push/pull before and after each work session. A merge conflict happens when Git cannot automatically figure out how to combine the changes made in the different versions of a file. When this happens, Git will mark the file as having a conflict and will not allow you to push/pull/merge your changes until the conflict is resolved.
 
-There are a few ways of dealing with merge conflicts.
+In general, to minimize conflicts, it is good to regularly create issues and push/pull. You should definitely do that any time you stop working on a project. But sometimes doing updates in-between is also good. It is better to change a few files and work on just one topic, then commit and push. After that, start the next topic.
+
+This is also true if you work with someone else and send them your updates as pull requests. By breaking them up into smaller units, it is more likely that conflicts are avoided or localized.
+
+If you do end up with merge conflicts -- we have all been there -- here are a few ways of dealing with them.
+
 
 
 ### Force push
@@ -61,7 +66,9 @@ One option is to copy the parts you changed to a safe location outside the repos
 
 ### Manually resolving the conflict
 
-To resolve a merge conflict, you need to manually edit the conflicting file(s) to decide which changes to keep. Git will mark the conflicting sections in the file with special markers.
+If you want to keep updates from both your local and the remote repository, you have to resolve the merge conflict. 
+
+GitHub Desktop and Positron provide tools to help you resolve conflicts, they basically show you the two versions of the document an you can decided which parts you want. This works well for text files (code, Rmd, md, etc.). However, it doesn't work well for other files (Word, Excel, images, `Rds` files, etc.). 
 
 
 
@@ -103,7 +110,9 @@ Remember that Git tracks the full project history. So if at any time you added a
 
 ## Large files
 
-GitHub is not good at handling large files. If you try to push a file larger than 100 MB, GitHub will reject the push. Even files smaller than that can cause performance issues if they are large (e.g., several tens of MBs). If you need to work with large files, there are a few options. 
+GitHub is not suited for tracking large files. If you try to push/pull files larger than say 20MB, things might not work right, and will definitely fail at 100MB. Therefore, **don't try to track large files with GitHub!** Large files are a major reason newbies have problems with their GitHub repository!
+
+If you need to work with large files, there are a few options. 
 
 ### Git LFS
 
@@ -114,7 +123,7 @@ Git LFS requires some effort at setting it up. It is only worth it if you know y
 
 ### Reduce files
 
-If you have large raw data files but won't need all of the content for your project, try to reduce their size before putting them into the GitHub repository. You basically perform some cleaning and processing outside the repo, with the aim of getting the data you need for our project into a smaller size. Then copy that reduced dataset into your repo and use it as a starting point.
+If you have large raw data files but won't need all of the content for your project, try to reduce their size before putting them into the GitHub repository. You basically perform some cleaning and processing outside the repo, with the aim of getting the data you need for our project into a smaller size. Then copy that reduced dataset into your repo and use it as a starting point. You might also want to change the format of the data to something that is compressed/optimized. For instance if you have raw data in `CSV` format, you can remove parts you don't need for your project and save the rest as an `Rds` or other compressed format. That file might be small enough to be tracked by GitHub.
 
 
 ### Prevent large intermediate files
@@ -125,6 +134,25 @@ Some modeling workflows create large intermediate files (e.g., model output file
 ### Keeping files local
 
 You can also follow the steps outlined above in the `Confidentiality` section to keep some files out of the GitHub workflow.
+
+For instance, you can place large files into a special folder in your GitHub repository (e.g. one called `largefiles`) and then add an entry to the `.gitignore` file to tell GitHub to ignore this folder. The problem is of course the same as mentioned above: if someone else wants to work on your project, they won't automatically have those large files. If the files are generated by your code (e.g., they are the result of running a simulation), they can just re-run your code and get themselves a local copy of these files. If that's not possible, either because the files are input (such as data) or it takes too long to re-run the code, you will have to manually share these files/folder with them.
+
+
+## Starting over
+
+Sometimes, you might have gotten yourself into a deep GitHub mess. For instance you just can't proberly resolve your merge conflicts. Or you tried to track large files, even though you were told not to do so. Or you accidentally placed a confidential file into a public repo and pushed it online. 
+
+Fear not, there is always an option to start over. Here is how you can do that.
+
+First, move the local main repo folder and its contents to a safe location on your computer, and maybe rename it to be safe, e.g. call it `myrepo-local-old`. Then re-clone the repo from Github.com to your local computer and also move it to a safe location, again maybe renaming it to `myrepo-remote-old`. You now have local copies of all content in a safe location.
+
+Next, delete the entire repository both locally and on GitHub.com. To do that on GitHub.com, go to your repo, then go to `Settings` (the gear icon), scroll all the way down to the bottom, and find the `Delete this repository` button in the `Danger Zone` section. Click on it and follow the instructions.
+
+Now, recreate an empty repository on GitHub.com. You probably want to give it the same name as before, but don't have to. Clone this new empty repository to your local computer. Then copy all the files you want to keep into this new local repository folder. Make sure to **not** copy over any files that caused problems before (e.g., large files, confidential files, etc.). Also make sure you have the right `.gitignore` file. You can also do this in bits and pieces, committing and pushing as you go along, to make sure everything works.
+
+Finally, once everything is in your new repo on your local machine, and everything runs/works/renders, push the new local repository to GitHub.com. 
+
+If everyhing works, you can now delete the old copies you saved on your computer. You might decide to keep them around for a while, since by creating a new repo you lost the history, so you can't go back to prior versions in the new repo.
 
 
 

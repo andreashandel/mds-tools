@@ -12,6 +12,7 @@ title: "TOC: A brief introduction to R"
 - [Basics of Coding in R](r-coding-basics/r-coding-basics.qmd)
 - [R Packages](r-packages/r-packages.qmd)
 - [R tidyverse, tidymodels and more](r-tidyverse/r-tidyverse.qmd)
+- [R Coding Tips](r-coding-tips/r-coding-tips.qmd)
 - [Further R Resources](r-further-resources/r-further-resources.qmd) 
 
 :::
