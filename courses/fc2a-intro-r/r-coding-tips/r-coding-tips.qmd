@@ -55,7 +55,7 @@ Here are a few brief suggestions for good coding practices in R (and any other l
 
 -   Sometimes during install or updating of a package, you might get a **`package is loaded/in use`** message. You are usually offered to restart R. Agree to that. It might fix things, but not always. The best way to install new packages if you run into those problems is to completely shut down RStudio, then restart. Next, immediately go to the console (bottom left) and install the needed packages with `install.packages('PACKAGENAME')` without doing anything else. That should minimize any potential conflicts.
 
--   Sometimes when you try to install a package you get the message **`package ‘PACKAGENAME’ is not available for this version of R.`** This is a bit confusing, it sounds like you need to upgrade your R version. What really happens most of the time is that you mis-typed the package name, and that package just doesn't exist (for no version of R). So first make sure you are spelling the package name correctly, including all capitalization being correct. That fixes things almost always. It is rare that there is a package that you want, but not for your version of R (unless you haven't updated R in years.)
+-   Sometimes when you try to install a package you get the message **`package ‘PACKAGENAME’ is not available for this version of R.`** This is a bit confusing, it sounds like you need to upgrade your R version. What really happens most of the time is that you mis-typed the package name, and that package just doesn't exist (for any version of R). So first make sure you are spelling the package name correctly, including all capitalization being correct. That almost always fixes things. It is rare to find an R package you want that is incompatible with your version of R, unless your R installation is several years out of date.
 
 ## R Coding
 
@@ -92,8 +92,8 @@ In this unit, we briefly discussed a few general tips and guidelines for writing
 ```{r r-tidyverse-quiz}
 #| echo: false
 #| results: "asis"
-#quizzes <- list("r-coding-tips-quiz-1.Rmd", "r-coding-tips-quiz-2.Rmd", "r-coding-tips-quiz-3.Rmd")
-#exams2forms::exams2forms(file = quizzes, title = 'r-coding-tips-quiz')
+quizzes <- list("r-coding-tips-quiz-1.Rmd", "r-coding-tips-quiz-2.Rmd", "r-coding-tips-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'r-coding-tips-quiz')
 ```
 :::
 <!-- end unit-quiz div -->

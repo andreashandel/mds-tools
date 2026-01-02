@@ -1,0 +1,27 @@
+Question
+========
+You see the message "package ‘PACKAGENAME’ is not available for this version of R" when installing a package. What should you check first?
+
+Answerlist
+----------
+* Whether you need to install Rtools
+* Whether your operating system is unsupported
+* Whether you must install from source
+* Whether the package name is spelled correctly
+
+Solution
+========
+Most of the time this message occurs because the package name was misspelled, not because of R version incompatibility.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: r-package-install-error
+extype: schoice
+exsolution: 0001

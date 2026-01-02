@@ -1,0 +1,27 @@
+Question
+========
+Why is vectorized code generally preferred over writing explicit for-loops in R?
+
+Answerlist
+----------
+* It requires less memory in all cases
+* It prevents errors automatically
+* It operates on all elements at once and is often more concise
+* It only works with tidyverse packages
+
+Solution
+========
+Vectorized operations apply functions to entire vectors or data frames at once, making code shorter and often easier to read.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: r-vectorization
+extype: schoice
+exsolution: 0010

@@ -1,0 +1,27 @@
+Question
+========
+Which coding practice best helps reduce repeated code when performing the same operation multiple times in R?
+
+Answerlist
+----------
+* Writing a function
+* Adding more comments
+* Using longer variable names
+* Splitting code into more files
+
+Solution
+========
+Writing a function allows you to reuse the same logic without repeating code, which follows the DRY principle.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: r-dry-functions
+extype: schoice
+exsolution: 1000
