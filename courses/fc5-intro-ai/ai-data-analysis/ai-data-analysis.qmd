@@ -1,12 +1,12 @@
 ---
-title: AI tools for exploratory data analysis
+title: AI tools for data analysis
 subtitle: ""
 ---
 
 ::: {.unit-overview}
 # Overview
 
-In this unit, we discuss using AI tools to help with exploratory data analysis.
+In this unit, we discuss using AI tools to help with data analysis.
 
 :::
 <!-- end unit-overview div -->
@@ -14,7 +14,7 @@ In this unit, we discuss using AI tools to help with exploratory data analysis.
 ::: {.unit-goals}
 # Goals
 
-* Know why and how to use AI to help with exploratory analysis.
+* Know why and how to use AI to help with data analysis.
 * Be aware of possible confidentiality issues.
 
 :::
@@ -51,72 +51,62 @@ Since synthetic (artificial/fake/simulated) data is very useful for many parts o
 
 In the following I'm assuming that you have data that can be shared with the AI.
 
-## Exploratory data analyis (EDA) with no data
+## Data analyis with no data
 
-Ok, this sounds dumb, but it's not that stupid. Instead of trying to feed the AI your data, you can ask it to generate code that does EDA on hypothetical data. For instance, you could provide a prompt like this:
+Ok, this sounds dumb, but it's not that stupid. Instead of trying to feed the AI your data, you can describe your data and ask it to return code that could analyze it. For instance, you could provide a prompt like this:
 
 ::: prompt
 Write R code to perform an exploratory data analysis of a data frame called `dat`. The data frame contains the continuous variables `age` and `BMI`, and the categorical variables `sex` and `favorite color`. Write code that produces a summary table, univariate plots for each variable, and a bivariate plot of `age` versus `BMI`.
 :::
 
-When I typed the above into Bing AI in precise mode, I got [this code](bing-eda-example2.R). It's a good start. You can take this code and modify so it can be applied to your data.
+Of course, you can take this further and ask the AI to first write code that generates hypothetical/synthetic data that has the structure of your real data, and then ask it to write code that analyzes it. 
 
-Of course, you can take this further and ask the AI to both generate the data you have in mind, then write EDA code. 
-<!-- Basically ask it to write code along the lines of the examples from the [synthetic data module](../../module-synthetic-data/synthetic-data-overview.qmd) and EDA code. -->
 
-## Exploratory data analyis (EDA) with copy and paste
 
-Bing and the free ChatGPT version currently do not provide a way to upload data.
+## Data analyis with copy and paste
 
-If you have fairly simple dataset, you can paste it directly into the prompt.
-
-<!-- Here is an example. This dataset comes from the first example in the
-[Generating synthetic data with R](/content/module-synthetic-data/synthetic-data-new-r/synthetic-data-new-r.qmd) unit. I opened the CSV file, and copied the whole thing into the prompt: -->
-
-::: prompt
-Perform an exploratory data analysis using R code of the following data set:
-
-PASTE DATA HERE
-:::
+A common way to interact with AI tools is through the web browser. If you have fairly simple dataset, you can paste it directly into the prompt and ask the AI to perform some action. It's a bit limited, but can work and is quick and easy.
 
 ::: note
 To get a new line in your prompts, use `Shift + Ctrl/Return` (or whatever the equivalent is on a Mac 😁.)
 :::
 
-I received [this code](bing-eda-example1.R) from the AI.
-It runs and does a few nice exploratory analyses, such as writing summary tables and making a few plots.
 
-It would of course be better if I provided much more detailed instructions regarding the types of analyses, and possible even the R packages and functions I want to have. But I think you get the idea. If the data is not too big, you can write your prompt, then copy the data underneath and get code that does EDA on the data.
 
 Note that there are character limits. For Bing, the maximum is 4000 as of this writing. If your data is too big, it gets cut off. In the example above, the last few lines of data got cut. I think this is often not a big problem, since the data you supply isn't the real data anyway. All you want is enough data for the AI to generate EDA code, then you take that code and apply it to your real data later, with AI turned off.
 
-## Exploratory data analyis (EDA) with file upload
 
-The free version of ChatGPT or Bing do not allow upload of files. However, [Claude](https://claude.ai/) does. I repeated the process from above, but instead of pasting the data, I uploaded the CSV file.
+## Data analyis with file upload
 
-::: prompt
-Write R code to perform an exploratory data analysis of the attached CSV file.
-:::
+You can also upload files to some AI tools and ask them to operate on them. Assuming all is good on the confidentiality side of things, you can use this approach to get AI generated insights into your data.
 
-I received [this code](claude-eda-example.R) from the AI. It runs and produces some figures. Of course, as you learned previously, it would be better if I provided a much more specific prompt, saying exactly what kind of tables and figures I want to see as output. But you get the idea.
+You basically upload the files, which can in addition to the data also contain other potentially relevant information. Note that not all data formats are supported by all AI tools. CSV files are generally a safe bet.
 
-Claude allows you (as of this writing) to upload a maximum of 5 files with 10MB each. While that prevents you to perform EDA on very large datasets, it should be enough for many purposes, and is definitely more than the limit for the copy and paste method described above.
+You can then ask the AI to operate on the data. While you can ask it to analyze the data directly, I recommend asking it to write R code that performs the analysis. This way you can take the code, copy it to your computer, and run the code yourself later, and modify it if needed.
 
-## Copilot
 
-I tried using Copilot to help with EDA, but it wasn't very successful. This screenshot shows an example of me trying to get it to produce a scatterplot. It didn't work, Copilot did not return any suggestion. It did suggest the other lines of code. I'm not sure if I'm just not using Copilot correctly, maybe you've got better luck. It doesn't hurt turning it on and trying to see if it can help you. If you find it useful, let me know so I can update this.
 
-![Copilot coding attempt](/media/copilot-screenshot.png){fig-alt="A screenshot of some R code showing an attempt to get Copilot to create a scatterplot, with copilot not returning any suggestion."}
+
 
 ## `chattr` package
 
 Based on the package description, it should be able to write code based on not only the content in the current file, but also by looking into variables in the current environment. So if you have a data frame called `dat` in your environment, you should be able to ask the AI to write code to analyze it. Unfortunately, so far I haven't been able to get `chattr` to talk to OpenAI. I think this is because talking to ChatGPT via the API (which is what `chattr` does) requires a paid account.
 
+
 ## Other options
 
-The subscription-level access to OpenAI's GPT engines gives you access to their Advanced Data Analysis tool. This allows you to upload and explore data more easily. I don't have a subscription so I haven't tried it yet. But if you are a heavy user of AI for data analysis, this might be worth the cost. [This article](https://www.charterworks.com/how-to-use-chatgpts-advanced-data-analysis-tool/) describes the Advanced Data Analysis tool a bit more.
+In general, the paid/premium versions of AI tools will have more features, including file upload and possibly better models. They also provide better integration into existing workflows. For instance There is a Positron/VS Code Plugin that allows you to use ChatGPT Codex from within VS Code. This means you can have the AI operate directly on local files in your project, instead of having to upload information.
 
-I have also found a few other tools that seem to focus on data analysis, for instance [Julius](https://julius.ai/), but that one only works for Python code.
+
+
+## Best practices
+
+As always, being specific in your prompt helps. For instance if you want the AI to perform very specific analyses, or use specific R packages, mention this in your prompt. Alternatively, you could tell it what you want, and ask it to recommend some analysis approaches or R packages to use and give you their advantages and disadvantages. As needed, you can ask for deeper explanations to make sure you fully understand any proposed approaches that might be new to you.
+
+Also, while AI 
+
+It would of course be better if I provided much more detailed instructions regarding the types of analyses, and possible even the R packages and functions I want to have. But I think you get the idea. If the data is not too big, you can write your prompt, then copy the data underneath and get code that does EDA on the data.
+
 
 :::
 <!-- end unit-reading div -->

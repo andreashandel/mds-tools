@@ -37,49 +37,6 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Introduction
 
-This is really not that much different from the EDA approach. Basically, you have your data and tell the AI to fit some models to it and evaluate them. Here are a few simple examples to give you an idea.
-
-## Uploading data to Claude
-
-<!-- I'm using the longitudinal drug concentration dataset we created in the [Generating synthetic data with R](/content/module-synthetic-data/synthetic-data-new-r/synthetic-data-new-r.qmd) unit. I uploaded it to Claude and gave it this prompt: -->
-
-
-::: prompt
-Write R code to analyze the data in the attached CSV file.
-Fit a linear model with drug concentration as predictor and cholesterol level as outcome.
-Also fit a logistic model with drug concentration as predictor and adverse events as outcome.
-For each model, provide model performance diagnostics.
-Use the tidyverse packages for data manipulation tasks, and the tidymodels framework for model fitting.
-Add thorough documentation to your code so it's clear what each line of code does.
-:::
-
-I got [this code back](claude-analyze-example1.R), which looked pretty good, but didn't run. So I asked the AI to fix the code with this prompt:
-
-::: prompt
-This code does not work. It produces this error:
-
-Error in augment.model_fit(lm_model) :
-
-argument "new_data" is missing, with no default
-
-Please fix this and any other errors in the code.
-:::
-
-The updated code [looked like this](claude-analyze-example2.R). It fixed the first problem with `augment()`, but the `resid()` function returns `NULL` and something about the the specification for the logistic model is also not correct. Of course if I really wanted this to work, I'd ask the AI to keep fixing, and/or intervene manually. But for this example I don't care that much if it works fully. The right bits seem to be there.
-
-Instead, I was curious if I can get it to produce some halfway reasonable code for a more complex model. Since this is longitudinal, time-series data, with multiple measurements per patient, a hierarchical approach would be better. Here is an attempt at having Claude write code for a hierarchical Bayesian model. Note that this model is still not a good one since it doesn't really take into account the longitudinal structure, just the grouping within patients. But let's try, with this prompt:
-
-::: prompt
-Write R code to analyze the data in the attached CSV file.
-
-Use the brms package to fit a hierarchical Bayesian linear model with drug concentration as predictor and cholesterol level as outcome, with patient as the grouping.
-
-For each function call, use explicit notation to specify from which R package the function comes from.
-
-Add thorough documentation to your code so it's clear what each line of code does.
-:::
-
-[Here is the code I got back](claude-analyze-example3.R). It looks promising, but again doesn't quite work. Of course I could try to have Claude fix it or fix myself. But I don't feel like it right now, I've got some more content to write 😁. Feel free to send me a working version of the code (or any above) if you decide to fix it!
 
 ## Generating data and fitting it
 
