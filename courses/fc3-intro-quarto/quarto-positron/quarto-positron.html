@@ -319,7 +319,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <p>While it is convenient to press the <code>Preview</code> button in Positron, it’s good to know and be able to run Quarto directly. Let’s say you don’t want the preview and instead just render the file, i.e.&nbsp;create the output file (here HTML) without opening it.</p>
 <p>You can do this by running Quarto through the terminal. Go to the terminal. It might still be busy from showing the preview. If you see something like “Listening on …” press <code>Ctrl + C</code> to stop it. You should then see the prompt, which ends with the <code>&gt;</code> symbol. Now type the following command:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render name-of-file.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>As long as you are in the right folder, the one where you saved the Quarto file to, this will create the output file (here HTML) in the same folder. You should see the file show up in the ‘Explorer’ view in Positron (the top icon on the right sidebar).</p>
+<p>As long as you are in the right folder, the one where you saved the Quarto file to, this will create the output file (here HTML) in the same folder. You should see the file show up in the ‘Explorer’ view in Positron (the top icon on the left sidebar).</p>
 </section>
 <section id="customizing-quarto-settings-in-positron" class="level2">
 <h2 class="anchored" data-anchor-id="customizing-quarto-settings-in-positron">Customizing Quarto Settings in Positron</h2>
@@ -327,7 +327,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="debugging-and-troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="debugging-and-troubleshooting">Debugging and Troubleshooting</h2>
-<p>If you encounter issues when using Quarto, you will usually see an error message in the <code>Terminal</code> pane that explains what might be going wrong. Quite often, rendering fails if the front-end YAML is not properly formatted.</p>
+<p>If you encounter issues when using Quarto, you will usually see an error message in the <code>Terminal</code> pane that explains what might be going wrong. Quite often, rendering fails if links are broken, code doesn’t run properly, or the YAML block is not properly formatted.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
@@ -345,8 +345,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which file extension indicates a Quarto document?</p>
-<div id="webex-617bb3e2c6880e81b3d2732462d8164e" class="webex-radiogroup" data-answer="bQEbU04DSQI+">
-<label><input type="radio" autocomplete="off" name="617bb3e2c6880e81b3d2732462d8164e"><span>.Rmd</span></label><label><input type="radio" autocomplete="off" name="617bb3e2c6880e81b3d2732462d8164e"><span>.qmd</span></label><label><input type="radio" autocomplete="off" name="617bb3e2c6880e81b3d2732462d8164e"><span>.md</span></label><label><input type="radio" autocomplete="off" name="617bb3e2c6880e81b3d2732462d8164e"><span>.docx</span></label>
+<div id="webex-0ec51d5fba7bdad5c671db2aa0f11002" class="webex-radiogroup" data-answer="a1VPBB1UGVY/">
+<label><input type="radio" autocomplete="off" name="0ec51d5fba7bdad5c671db2aa0f11002"><span>.Rmd</span></label><label><input type="radio" autocomplete="off" name="0ec51d5fba7bdad5c671db2aa0f11002"><span>.qmd</span></label><label><input type="radio" autocomplete="off" name="0ec51d5fba7bdad5c671db2aa0f11002"><span>.md</span></label><label><input type="radio" autocomplete="off" name="0ec51d5fba7bdad5c671db2aa0f11002"><span>.docx</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -362,8 +362,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>In Positron, what happens when you click the Preview button for a Quarto file?</p>
-<div id="webex-db9c8cca23bebcd94bfecff399549672" class="webex-radiogroup" data-answer="P1IVUxRST1Fv">
-<label><input type="radio" autocomplete="off" name="db9c8cca23bebcd94bfecff399549672"><span>It only checks YAML syntax</span></label><label><input type="radio" autocomplete="off" name="db9c8cca23bebcd94bfecff399549672"><span>It opens a blank document tab</span></label><label><input type="radio" autocomplete="off" name="db9c8cca23bebcd94bfecff399549672"><span>It runs <code>quarto preview</code> and shows the rendered output</span></label><label><input type="radio" autocomplete="off" name="db9c8cca23bebcd94bfecff399549672"><span>It deletes temporary files in the project</span></label>
+<div id="webex-8a3c3664260351f5900a628e72ecaa86" class="webex-radiogroup" data-answer="Y1EfUx8HGgRv">
+<label><input type="radio" autocomplete="off" name="8a3c3664260351f5900a628e72ecaa86"><span>It only checks YAML syntax</span></label><label><input type="radio" autocomplete="off" name="8a3c3664260351f5900a628e72ecaa86"><span>It opens a blank document tab</span></label><label><input type="radio" autocomplete="off" name="8a3c3664260351f5900a628e72ecaa86"><span>It runs <code>quarto preview</code> and shows the rendered output</span></label><label><input type="radio" autocomplete="off" name="8a3c3664260351f5900a628e72ecaa86"><span>It deletes temporary files in the project</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -379,8 +379,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which command renders a Quarto document without opening a preview?</p>
-<div id="webex-e3e4646d809e42ee6adc23848d731ee8" class="webex-radiogroup" data-answer="PgJJBBoEGlRl">
-<label><input type="radio" autocomplete="off" name="e3e4646d809e42ee6adc23848d731ee8"><span>quarto render name-of-file.qmd</span></label><label><input type="radio" autocomplete="off" name="e3e4646d809e42ee6adc23848d731ee8"><span>quarto preview name-of-file.qmd</span></label><label><input type="radio" autocomplete="off" name="e3e4646d809e42ee6adc23848d731ee8"><span>quarto check</span></label><label><input type="radio" autocomplete="off" name="e3e4646d809e42ee6adc23848d731ee8"><span>quarto –version</span></label>
+<div id="webex-9a13482f96ec9d73ecee4cc2ea1dc18a" class="webex-radiogroup" data-answer="YlAdAxgIHlZk">
+<label><input type="radio" autocomplete="off" name="9a13482f96ec9d73ecee4cc2ea1dc18a"><span>quarto render name-of-file.qmd</span></label><label><input type="radio" autocomplete="off" name="9a13482f96ec9d73ecee4cc2ea1dc18a"><span>quarto preview name-of-file.qmd</span></label><label><input type="radio" autocomplete="off" name="9a13482f96ec9d73ecee4cc2ea1dc18a"><span>quarto check</span></label><label><input type="radio" autocomplete="off" name="9a13482f96ec9d73ecee4cc2ea1dc18a"><span>quarto –version</span></label>
 </div>
 </div>
 <div class="webex-solution">

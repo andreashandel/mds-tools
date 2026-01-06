@@ -207,6 +207,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-coding-tips/r-coding-tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Coding Tips</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../courses/fc2a-intro-r/r-further-resources/r-further-resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Further R Resources</span></a>
   </div>
@@ -288,7 +294,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This whole course, including this unit, are by no means sufficient to teach you R coding. The goal is instead to get you started, and give you a basic idea of how R coding works. To really learn R coding, you need to take a full course on R programming and/or do a lot of “learning as you go”.</p>
+<p>This whole course, including this unit, is by no means sufficient to teach you R coding. The goal is instead to get you started, and give you a basic idea of how R coding works. To really learn R coding, you need to take a full course on R programming and/or do a lot of “learning as you go”.</p>
 </section>
 <section id="learning-coding" class="level2">
 <h2 class="anchored" data-anchor-id="learning-coding">Learning coding</h2>
@@ -296,7 +302,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <p>This figure illustrates the journey of learning to write code:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="learning-to-code.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The journey of learning to code. Source: https://www.thinkful.com/blog/. Original post is not online anymore."><img src="learning-to-code.jpg" class="img-fluid figure-img" alt="Graph titled Coding Confidence vs Compentence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."></a></p>
+<p><a href="learning-to-code.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The journey of learning to code. Source: https://www.thinkful.com/blog/. Original post is not online anymore."><img src="learning-to-code.jpg" class="img-fluid figure-img" alt="Graph titled Coding Confidence vs Competence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."></a></p>
 <figcaption>The journey of learning to code. Source: https://www.thinkful.com/blog/. Original post is not online anymore.</figcaption>
 </figure>
 </div>
@@ -321,21 +327,27 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="getting-help" class="level2">
 <h2 class="anchored" data-anchor-id="getting-help">Getting help</h2>
 <p>Maybe the most important skill for learning any programming language is figuring out how to find and get help with any problem.</p>
-<p>In the past, we recommended to start with Google, StackOverflow, and the Internet to find relevant help. At this point, most of the time, you will likely get the best initial help from some AI tool. We recommend to start there, and if that doesn’t solve your problem, then move on to other sources.</p>
+<p>In the past, we recommended starting with Google, StackOverflow, and the Internet to find relevant help. At this point, most of the time, you will likely get the best initial help from some AI tool. We recommend starting there, and if that doesn’t solve your problem, then move on to other sources.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="xkcd_wisdom_of_the_ancients.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Fortunately rare for R. Source: xkcd.com."><img src="xkcd_wisdom_of_the_ancients.png" class="img-fluid figure-img" style="width:90.0%" alt="An xkcd comic of a stick figure shaking a computer screen saying 'Who were you, denvercoder9? What did you see?!'. Outside the the box, it says 'Never have I felt so close to another soul. And yet so helplessly alone as when I Google an error and there's one result. A thread by someone with the same problem and no answer last posted in 2003."></a></p>
+<p><a href="xkcd_wisdom_of_the_ancients.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Fortunately rare for R. Source: xkcd.com."><img src="xkcd_wisdom_of_the_ancients.png" class="img-fluid figure-img" style="width:90.0%" alt="An xkcd comic of a stick figure shaking a computer screen saying 'Who were you, denvercoder9? What did you see?!'. Outside the box, it says 'Never have I felt so close to another soul. And yet so helplessly alone as when I Google an error and there's one result. A thread by someone with the same problem and no answer last posted in 2003."></a></p>
 <figcaption>Fortunately rare for R. Source: xkcd.com.</figcaption>
 </figure>
 </div>
 <p>In those rare cases when AI doesn’t help and you cannot find the right information online either to solve your coding problem, feel free to ask for help. Sometimes, people complain that replies to questions they ask online are unfriendly or harsh. While this is at times true, consider that all the people providing answers are volunteers. They’re doing it because they want to help others, they don’t get paid for it. It is therefore important that the person asking the question does not waste people’s time by asking poorly formulated questions or questions that have been previously answered. In general, those kinds of questions get rude replies. If you have done your homework (i.e., searched online first to see if the answer is already available) and can precisely formulate the question/problem, ideally with a reproducible example, the chance that you get an unfriendly reply is very low.</p>
-<p>I have found that a good way of posing question is to write something like this: <em>“I need help with SPECIFIC PROBLEM, I have searched around and found LINKS/DESCRIPTION OF SIMILAR ISSUES but that doesn’t quite solve my problem yet.”</em> If you have a coding problem, add <em>“Here is some code illustrating what I want to achieve and where the problem is.”</em> and then add a <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">minimal reproducible example</a>.</p>
+<p>I have found that a good way of posing a question is to write something like this: <em>“I need help with SPECIFIC PROBLEM, I have searched around and found LINKS/DESCRIPTION OF SIMILAR ISSUES but that doesn’t quite solve my problem yet.”</em> If you have a coding problem, add <em>“Here is some code illustrating what I want to achieve and where the problem is.”</em> and then add a <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">minimal reproducible example</a>.</p>
 <p>The more you show you’ve done your homework and are truly stuck (instead of just being lazy and wanting others to do the work for you), and the easier you make it for others to understand what your problem is, the more likely you will get good answers.</p>
+<p>With any coding problem you encounter there are three things you can do to make it easier to solve.</p>
+<ol type="1">
+<li><p>Make the error smaller. Break it down by steps and work through them one at a time. Commenting out code lines sequentially can be very helpful to identify where the error or issue is coming from. Reduce to a minimal example (i.e., instead of working with a large data set and thousands of lines use a small data subset and just the code you need so you can more easily see what’s happening or not).</p></li>
+<li><p>Ask AI. This has the caveat that if you don’t write a good prompt it can lead you astray and make things worse especially if you don’t have a good understanding of what you are trying to do.</p></li>
+<li><p>Someone has had the same problem before and written about it on the internet so search for the solution there. These searches are most fruitful when you use specific search terms with accepted jargon. Search like you’d write a function call, not a sentence, and it should generally follow this pattern function name + argument names + error keyword. (i.e., “R reshape data error” is a bad search while “R tidyr pivot_longer names_to values_to error duplicate names” is a good search)</p></li>
+</ol>
 </section>
 <section id="some-further-comments" class="level2">
 <h2 class="anchored" data-anchor-id="some-further-comments">Some further comments</h2>
 <p>R has a bunch of quirks. You’ll likely encounter a number of them. Here are a few common ones.</p>
-<p>A common confusion is that there are two ways of assigning something to an object. One can write <code>x &lt;- 2</code> or <code>x = 2</code> and often (but not always) you can use either. People argue about which way to do it. You’ll see both versions used frequently. If you are completely new to programming, we recommend the first version, i.e.&nbsp;<code>x &lt;- 2</code>. The problem is that most other programming languages do it the second way, so if you learned to code in another language first, it is more natural to write <code>x = 2</code>. It is your choice. Just be aware that both notations exist. And to add to the confusion: In R, you can also write this in the opposite direction, i.e.&nbsp;<code>2 -&gt; x</code>. This is unususal coding style and best avoided. Just know that it exists too.</p>
+<p>A common confusion is that there are two ways of assigning something to an object. One can write <code>x &lt;- 2</code> or <code>x = 2</code> and often (but not always) you can use either. People argue about which way to do it. You’ll see both versions used frequently. If you are completely new to programming, we recommend the first version, i.e.&nbsp;<code>x &lt;- 2</code>. The problem is that most other programming languages do it the second way, so if you learned to code in another language first, it is more natural to write <code>x = 2</code>. It is your choice. Just be aware that both notations exist. And to add to the confusion: In R, you can also write this in the opposite direction, i.e.&nbsp;<code>2 -&gt; x</code>. This is unusual coding style and best avoided. Just know that it exists too.</p>
 <p>A more recent confusion - since the concept was introduced to R more recently - is the pipe. You can write <code>x %&gt;% dplyr()</code> or you can write <code>x |&gt; dplyr()</code>. In both versions, the object <code>x</code> is piped into the <code>dplyr</code> function. You see this style of writing a lot in the <code>tidyverse</code> and <code>tidymodels</code> set of packages, which we’ll discuss shortly. Both versions <strong>usually</strong> do the same thing. The first version comes from the <code>magrittr</code> package, which is part of the <code>tidyverse</code>. The second version is part of base R. Fortunately, most of the time it doesn’t matter. However, occasionally one will not work (or produce something unexpected). Just be aware of this and adjust as needed.</p>
 <p>As you continue on your coding journey, keep in mind: The great thing about programming is that you (usually) can’t really “break” things too much. In the worst case you get an error message. So experiment and try out anything you like!</p>
 </section>
@@ -343,7 +355,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>We discussed some basics of writing R code. To re-iterate, this course is not a learn-to-code course. For resources that can help you learn R coding, see the <em>Further Resources</em> unit.</p>
+<p>We discussed some basics of writing R code. To reiterate, this course is not a learn-to-code course. For resources that can help you learn R coding, see the <em>Further Resources</em> unit.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
@@ -358,8 +370,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why is R’s vectorization useful when doing basic calculations?</p>
-<div id="webex-a5d4842a038d21bfd69b0c0a07c8fdf0" class="webex-radiogroup" data-answer="OgVIBRQEHlFt">
-<label><input type="radio" autocomplete="off" name="a5d4842a038d21bfd69b0c0a07c8fdf0"><span>It only works for text data, not numbers</span></label><label><input type="radio" autocomplete="off" name="a5d4842a038d21bfd69b0c0a07c8fdf0"><span>It lets you apply operations to entire vectors without writing loops</span></label><label><input type="radio" autocomplete="off" name="a5d4842a038d21bfd69b0c0a07c8fdf0"><span>It prevents you from using built-in functions like <code>mean()</code></span></label><label><input type="radio" autocomplete="off" name="a5d4842a038d21bfd69b0c0a07c8fdf0"><span>It forces you to preallocate every object manually</span></label>
+<div id="webex-548ac8c6120fd0488cbb4438eb3e7f2b" class="webex-radiogroup" data-answer="bgQUUE8ITwZs">
+<label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It only works for text data, not numbers</span></label><label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It lets you apply operations to entire vectors without writing loops</span></label><label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It prevents you from using built-in functions like <code>mean()</code></span></label><label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It forces you to preallocate every object manually</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -375,8 +387,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the main advantage of putting your code in a saved <code>.R</code> script instead of only using the console?</p>
-<div id="webex-648d59d1e81fc43568f9a7bdcb88abf5" class="webex-radiogroup" data-answer="bQQUVRkJSAE4">
-<label><input type="radio" autocomplete="off" name="648d59d1e81fc43568f9a7bdcb88abf5"><span>It makes R run faster automatically</span></label><label><input type="radio" autocomplete="off" name="648d59d1e81fc43568f9a7bdcb88abf5"><span>It gives you a reproducible record you can rerun as a whole</span></label><label><input type="radio" autocomplete="off" name="648d59d1e81fc43568f9a7bdcb88abf5"><span>It disables syntax highlighting, so errors are easier to find</span></label><label><input type="radio" autocomplete="off" name="648d59d1e81fc43568f9a7bdcb88abf5"><span>It prevents you from using packages</span></label>
+<div id="webex-d1e132b6081edc3104625d10fd124788" class="webex-radiogroup" data-answer="PwFJAB8CTgZt">
+<label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It makes R run faster automatically</span></label><label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It gives you a reproducible record you can rerun as a whole</span></label><label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It disables syntax highlighting, so errors are easier to find</span></label><label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It prevents you from using packages</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -392,8 +404,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does the base pipe <code>|&gt;</code> do in R?</p>
-<div id="webex-113f24f605adf0f24d8e8c9799f24624" class="webex-radiogroup" data-answer="agEfVh4FSgZt">
-<label><input type="radio" autocomplete="off" name="113f24f605adf0f24d8e8c9799f24624"><span>It comments out code so it won’t run</span></label><label><input type="radio" autocomplete="off" name="113f24f605adf0f24d8e8c9799f24624"><span>It automatically loads all tidyverse packages</span></label><label><input type="radio" autocomplete="off" name="113f24f605adf0f24d8e8c9799f24624"><span>It passes the left-hand result as the first argument to the next function</span></label><label><input type="radio" autocomplete="off" name="113f24f605adf0f24d8e8c9799f24624"><span>It only works inside loops</span></label>
+<div id="webex-354ade0a5d6324a5cec92093d521d989" class="webex-radiogroup" data-answer="aAUYUUhUHFFo">
+<label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It comments out code so it won’t run</span></label><label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It automatically loads all tidyverse packages</span></label><label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It passes the left-hand result as the first argument to the next function</span></label><label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It only works inside loops</span></label>
 </div>
 </div>
 <div class="webex-solution">

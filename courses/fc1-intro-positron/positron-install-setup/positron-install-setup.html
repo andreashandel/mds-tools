@@ -259,7 +259,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="note">
 <p>As of December 2025, there is not yet a Windows ARM build of Positron available. If you have a Windows ARM machine, the Windows x64 version won’t work. But you can <a href="https://github.com/posit-dev/positron/issues/5254#issuecomment-3544527102">get a pre-release version (which worked for us).</a></p>
 </div>
-<p>It should be possible for you to install Positron without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows). If you need to do use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.</p>
+<p>It should be possible for you to install Positron without having admin rights. However, your mileage might vary and it is possible that you might need administrator rights after all to install it (even for the user install on Windows). If you need to use a computer on which you do not have admin rights, and your admin is not willing to install Positron, remember that you can do everything we discuss and teach using a different editor/IDE. You might not be able to exactly follow the instructions we provide, but you should be able to get everything working in pretty much any IDE.</p>
 <p>If you have choices during install for Positron to do certain things (e.g.&nbsp;get an ‘Open with Positron’ option in Windows Explorer), we recommend you choose to have all of those options enabled. Definitely don’t de-select any pre-selected ones, unless you know what you are doing.</p>
 </section>
 <section id="setup" class="level2">
@@ -293,8 +293,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where should you download the Positron installer to ensure you get the correct and most up‑to‑date version?</p>
-<div id="webex-eac531cfb38e3729c1920f6cf70a60a2" class="webex-radiogroup" data-answer="PlBPBR8BT1Y/">
-<label><input type="radio" autocomplete="off" name="eac531cfb38e3729c1920f6cf70a60a2"><span>From Positron’s official website</span></label><label><input type="radio" autocomplete="off" name="eac531cfb38e3729c1920f6cf70a60a2"><span>From an arbitrary third‑party download mirror</span></label><label><input type="radio" autocomplete="off" name="eac531cfb38e3729c1920f6cf70a60a2"><span>From the CRAN repository used for R packages</span></label><label><input type="radio" autocomplete="off" name="eac531cfb38e3729c1920f6cf70a60a2"><span>It is pre‑installed on all modern operating systems</span></label>
+<div id="webex-f9f4cd70cd86a282ab47dfee5eb120e8" class="webex-radiogroup" data-answer="PQhKBE9UGwA+">
+<label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>From Positron’s official website</span></label><label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>From an arbitrary third‑party download mirror</span></label><label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>From the CRAN repository used for R packages</span></label><label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>It is pre‑installed on all modern operating systems</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -310,19 +310,25 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>During the very first startup, Positron may display several permission or configuration dialogs. What is the recommended action?</p>
-<div id="webex-3fc4c48f7888d2e84a9624ad37e5a799" class="webex-radiogroup" data-answer="aFZPBE8FFFZq">
-<label><input type="radio" autocomplete="off" name="3fc4c48f7888d2e84a9624ad37e5a799"><span>Cancel every prompt and close Positron immediately</span></label><label><input type="radio" autocomplete="off" name="3fc4c48f7888d2e84a9624ad37e5a799"><span>Disable all suggested features to keep the interface minimal</span></label><label><input type="radio" autocomplete="off" name="3fc4c48f7888d2e84a9624ad37e5a799"><span>Approve the prompts so Positron can fully configure itself</span></label><label><input type="radio" autocomplete="off" name="3fc4c48f7888d2e84a9624ad37e5a799"><span>Uninstall Positron and reinstall it in “safe mode”</span></label>
+<div id="webex-258e4fe589a20625c48b3cd157e5a4f8" class="webex-radiogroup" data-answer="aQUUVRhXSQVl">
+<label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Cancel every prompt and close Positron immediately</span></label><label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Disable all suggested features to keep the interface minimal</span></label><label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Approve the prompts so Positron can fully configure itself</span></label><label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Uninstall Positron and reinstall it in “safe mode”</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Accepting the prompts allows Positron to finish its setup and ensures full functionality.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+</ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How does Positron typically handle updates after it has been installed?</p>
-<div id="webex-a0a9e44532a61012d7aa4d29c6788734" class="webex-radiogroup" data-answer="OgBNCEkEGAVu">
-<label><input type="radio" autocomplete="off" name="a0a9e44532a61012d7aa4d29c6788734"><span>You must manually download and reinstall Positron for every update</span></label><label><input type="radio" autocomplete="off" name="a0a9e44532a61012d7aa4d29c6788734"><span>It automatically checks for updates on startup and offers to install them</span></label><label><input type="radio" autocomplete="off" name="a0a9e44532a61012d7aa4d29c6788734"><span>Updates can only be installed through your operating system’s app store</span></label><label><input type="radio" autocomplete="off" name="a0a9e44532a61012d7aa4d29c6788734"><span>Positron cannot be updated; you must wait for the next major release</span></label>
+<div id="webex-2ac055ad934a4aea8610051d696bfd53" class="webex-radiogroup" data-answer="aVFPARkFTVRk">
+<label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>You must manually download and reinstall Positron for every update</span></label><label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>It automatically checks for updates on startup and offers to install them</span></label><label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>Updates can only be installed through your operating system’s app store</span></label><label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>Positron cannot be updated; you must wait for the next major release</span></label>
 </div>
 </div>
 <div class="webex-solution">

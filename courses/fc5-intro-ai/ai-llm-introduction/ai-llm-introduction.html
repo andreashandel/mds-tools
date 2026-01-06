@@ -146,43 +146,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Currently available AI tools</span></a>
+ <span class="menu-text">Useful AI tools</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for code writing</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI for coding</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for fixing code</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for exploratory data analysis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-analysis-r/ai-analysis-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools to analyze data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-conceptual/ai-conceptual.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conceptual ways to think about AI</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI to analyze data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A collection of links to AI resources</span></a>
+ <span class="menu-text">Further AI resources</span></a>
   </div>
 </li>
     </ul>
@@ -212,9 +194,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#privacyconfidentiality" id="toc-privacyconfidentiality" class="nav-link" data-scroll-target="#privacyconfidentiality">Privacy/Confidentiality</a></li>
   <li><a href="#wrong-answers" id="toc-wrong-answers" class="nav-link" data-scroll-target="#wrong-answers">Wrong answers</a></li>
-  <li><a href="#non-working-code" id="toc-non-working-code" class="nav-link" data-scroll-target="#non-working-code">Non-working code</a></li>
   <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
-  <li><a href="#ethics-of-using-ai" id="toc-ethics-of-using-ai" class="nav-link" data-scroll-target="#ethics-of-using-ai">Ethics of using AI</a></li>
+  <li><a href="#ethics-and-etiquette-of-using-ai" id="toc-ethics-and-etiquette-of-using-ai" class="nav-link" data-scroll-target="#ethics-and-etiquette-of-using-ai">Ethics and Etiquette of using AI</a></li>
   </ul></li>
   <li><a href="#available-ai-tools" id="toc-available-ai-tools" class="nav-link" data-scroll-target="#available-ai-tools">Available AI tools</a></li>
   </ul></li>
@@ -255,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
-<li>Be aware of possible ways to use AI to help with data analysis.</li>
+<li>Know of ways to think about LLM AI tools.</li>
 <li>Understand strengths, weaknesses and dangers of using AI.</li>
 </ul>
 </section>
@@ -280,7 +261,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="llm-ai-conceptual-frameworks" class="level2">
 <h2 class="anchored" data-anchor-id="llm-ai-conceptual-frameworks">LLM AI conceptual frameworks</h2>
-<p>AI, and especially generative AI like LLM are very new tools. Everyone is still trying to figure out how to use them, what they mean for the future, etc. While one can obviously use these tools without much further thought, it can be helpful to think about them in a conceptual way to have a potentially useful framework of interaction. Below are a few conceptual frameworks that I have heard from others or that I’ve been thinking about.</p>
+<p>AI, and especially generative AI like LLMs are very new tools. Everyone is still trying to figure out how to use them, what they mean for the future, etc. While one can obviously use these tools without much further thought, it can be helpful to think about them in a conceptual way to have a potentially useful framework of interaction. Below are a few conceptual frameworks that I have heard from others or that I’ve been thinking about.</p>
 <section id="ai-as-the-intern1st-year-graduate" class="level3">
 <h3 class="anchored" data-anchor-id="ai-as-the-intern1st-year-graduate">AI as the intern/1st year graduate</h3>
 <p>This view comes up repeatedly. The idea is that you should think of LLM AI tools as being good at tasks that an intern, or a new worker could do without too much training. For example, asking an AI LLM tool to solve world hunger is not a good idea. However, asking it to give you a list of countries where malnutrition is the worst and a summary of likely reasons for that, is a task where it will probably produce a result that you can use as starting point for whatever your larger project is.</p>
@@ -328,23 +309,18 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="wrong-answers" class="level3">
 <h3 class="anchored" data-anchor-id="wrong-answers">Wrong answers</h3>
 <p>We are all aware of hallucinations, the tendency of AI tools to sometimes make up things and present wrong information in generally very convincing ways. It is always important to check the output you get from an AI tool. This is especially true when you use AI to help with data analysis. If the AI gives you code, make sure to understand what the code does, and check that it does what you want it to do. If the AI gives you text, check that the information is correct. If the AI gives you numbers, check that they make sense.</p>
-<p>While non-working code created by an AI tool is annoying, it is easy to recognize. More dangerous is code that sees to work, and looks like it’s doing the right thing, but has critical</p>
-</section>
-<section id="non-working-code" class="level3">
-<h3 class="anchored" data-anchor-id="non-working-code">Non-working code</h3>
-<p>While most of the AI tools have become pretty good at coding in R and other languages, at times they don’t get it right. You might get code back that doesn’t work. AI are known to <strong>hallucinate</strong>, i.e., make up stuff. For instance it’s not uncommon that the AI invents an R command that does not exist. So when you get your code back, you will often need to do some trouble-shooting. At times, you can tell the AI that the code is not correct and ask it to fix it. If this doesn’t always work, then you can make the fixes by hand or try to reformulate your request.</p>
+<p>While non-working code created by an AI tool is annoying, it is easy to recognize. More dangerous is code that sees to work, and looks like it’s doing the right thing, but has critical flaws that lead to wrong results. If you use AI to write code, make sure you check and understand the code you are given.</p>
 </section>
 <section id="reproducibility" class="level3">
 <h3 class="anchored" data-anchor-id="reproducibility">Reproducibility</h3>
-<p>The companies making AI tools constantly update and improve the algorithms. Further, the underlying methods often have random components. This means that if you give the same instructions to an AI tool on different occasions, the results/code you get might differ. This means things might be non-reproducible.</p>
-<p>While I encourage you to keep track of any input prompts you use to have the AI generate code, note that providing those prompts does not allow someone else (or future you) to exactly reproduce things. Thus, while AI tools can be useful helpers during the data analysis process, they should not be considered part of the final workflow, which instead should contain results/code (possibly generated with AI help) which can run in such a way to allow full reproducibility.</p>
+<p>AI tools receive constant updates. Further, the underlying methods often have random components. This means that if you give the same instructions to an AI tool on different occasions, the results/code you get might differ. This means things might be non-reproducible Thus, while AI tools can be useful helpers during the data analysis process, they should not be considered part of the final workflow, which instead should contain results/code (possibly generated with AI help) which can run in such a way to allow full reproducibility.</p>
 </section>
-<section id="ethics-of-using-ai" class="level3">
-<h3 class="anchored" data-anchor-id="ethics-of-using-ai">Ethics of using AI</h3>
-<p>Here I’m not talking about the fact that most AI tools were trained on data without the permission of the original data generators, or that a lot of AI algorithms produce biased (unethical?) output. Those topics are too complex to tackle here. Instead, I’m talking about the ethics of using AI to help with your data analysis, or more generally your academic/professional work.</p>
-<p>Since these tools are so new, nobody knows yet how to properly acknowledge AI help. I’m not sure either. If I search Google for an example to help with my code, and find something on StackOverflow that I use as basis for my code, should I cite it? I sometimes do add a link to the original post in my code. Partly to give credit, and partly to remind myself where I got it from. But I don’t think there are clear rules on this.</p>
-<p>Similarly, if you copy text from Wikipedia or some other source, you need to cite it. But if you read it, then repeat in your own words, when do you need to cite it? I don’t think it’s clear. This is similar with AI. If you have a full code or large chunk of text generated by AI and you use it “as is”, you probably need to state that. But it’s more likely that the AI will give you some parts of the code or text, and you write the rest. What is the rule for that? I don’t think there are clear rules.</p>
-<p>I suggest you follow the guideline of “if in doubt, cite/acknowledge”. For instance, at the beginning of some code, you can make a statement saying “part of this code was generated by ChatPGT using the following prompt” and then state the prompt you use. Or if you use AI to help you interpret your data, you can state somewhere in your output (e.g., your Quarto document), that you used AI to help generate insights/text/etc. Providing this kind of information prevents you from being accused of “cheating” (if someone thinks using AI is cheating, for this course, you are encouraged to do so), and it also helps somewhat with the reproducibility (see above).</p>
+<section id="ethics-and-etiquette-of-using-ai" class="level3">
+<h3 class="anchored" data-anchor-id="ethics-and-etiquette-of-using-ai">Ethics and Etiquette of using AI</h3>
+<p>The ethics of AI being trained on data that might be owned by others is a major issue we are not discussing here.</p>
+<p>The question of ethics or etiquette for using AI as part of your work is a different matter, and seems to be very much in flux. We usually don’t cite or acknowledge if we got help from Google, StackOverflow, or a book when we write code. But we do - or should - acknowledge if we copy text or whole chunks of code from somewhere.</p>
+<p>It is currently unclear how to cite or acknowledge AI help. It is likely that very soon, AI support is so common that it is simply assumed to be part of the set of tools. Similarly to people mentioning they used R or Python to do their analysis, individuals might mention that they used certain AI tools. Or they will become so common and foundational that nobody mentions them anymore. Similarly to almost nobody mentioning the operating system (Windows/MAc/Linux/etc.) they you use for their work.</p>
+<p>For now, it might make sense to follow the guideline of <em>“if in doubt, cite/acknowledge”</em>. For instance, at the beginning of some code, you can make a statement saying “part of this code was generated by AI tool XYZ”. Or if you use AI to help you interpret your data, you can state somewhere in your output (e.g., your Quarto document), that you used AI to help generate insights/text/etc. Providing this kind of information prevents you from being accused of “cheating” (if someone thinks using AI might be cheating).</p>
 </section>
 </section>
 <section id="available-ai-tools" class="level2">
@@ -355,12 +331,14 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>AI tools can be very useful tools to help you write code and do your data analysis. They are not perfect, but they can potentially save you a lot of time. I recommend you try them out and see if they can help you.</p>
+<p>AI tools can be very useful tools to help you write code and do your data analysis. It is useful to think about what AI tools are and how to interact with them. It is always importont to keep in mind the risks and limitations of any tool, including AI.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<p>See the <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html">AI resource unit</a>. If you have other useful resources, I’d love to hear about them.</p>
+<ul>
+<li>Some very good thoughts and writings on AI can be found on Ethan Mollick’s blog <a href="https://www.oneusefulthing.org/">One Useful Thing</a>.</li>
+</ul>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
@@ -368,8 +346,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the main focus of this unit on LLM AI tools?</p>
-<div id="webex-1851171bdc4b5227c15002d4a21d6ce9" class="webex-radiogroup" data-answer="aggZAB0HHVI5">
-<label><input type="radio" autocomplete="off" name="1851171bdc4b5227c15002d4a21d6ce9"><span>Training neural networks from scratch</span></label><label><input type="radio" autocomplete="off" name="1851171bdc4b5227c15002d4a21d6ce9"><span>Using AI tools to help with coding and data analysis tasks</span></label><label><input type="radio" autocomplete="off" name="1851171bdc4b5227c15002d4a21d6ce9"><span>Building GPUs for AI workloads</span></label><label><input type="radio" autocomplete="off" name="1851171bdc4b5227c15002d4a21d6ce9"><span>Designing new AI algorithms</span></label>
+<div id="webex-4a09005c07abb7f169efbcdf888bb2c8" class="webex-radiogroup" data-answer="b1EcCBwAGVNt">
+<label><input type="radio" autocomplete="off" name="4a09005c07abb7f169efbcdf888bb2c8"><span>Training neural networks from scratch</span></label><label><input type="radio" autocomplete="off" name="4a09005c07abb7f169efbcdf888bb2c8"><span>Using AI tools to help with coding and data analysis tasks</span></label><label><input type="radio" autocomplete="off" name="4a09005c07abb7f169efbcdf888bb2c8"><span>Building GPUs for AI workloads</span></label><label><input type="radio" autocomplete="off" name="4a09005c07abb7f169efbcdf888bb2c8"><span>Designing new AI algorithms</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -385,8 +363,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which risk is highlighted when sharing data with AI tools?</p>
-<div id="webex-ddde37475b99e148c2fe1ef22fe60818" class="webex-radiogroup" data-answer="P1RIVB8HGAdo">
-<label><input type="radio" autocomplete="off" name="ddde37475b99e148c2fe1ef22fe60818"><span>Data is always deleted immediately.</span></label><label><input type="radio" autocomplete="off" name="ddde37475b99e148c2fe1ef22fe60818"><span>Data may be stored on company servers and used for training.</span></label><label><input type="radio" autocomplete="off" name="ddde37475b99e148c2fe1ef22fe60818"><span>Data becomes public automatically.</span></label><label><input type="radio" autocomplete="off" name="ddde37475b99e148c2fe1ef22fe60818"><span>Data cannot be processed by AI tools.</span></label>
+<div id="webex-77c22ae2c05de092682d674298627772" class="webex-radiogroup" data-answer="bAdPAx5RSQI+">
+<label><input type="radio" autocomplete="off" name="77c22ae2c05de092682d674298627772"><span>Data is always deleted immediately.</span></label><label><input type="radio" autocomplete="off" name="77c22ae2c05de092682d674298627772"><span>Data may be stored on company servers and used for training.</span></label><label><input type="radio" autocomplete="off" name="77c22ae2c05de092682d674298627772"><span>Data becomes public automatically.</span></label><label><input type="radio" autocomplete="off" name="77c22ae2c05de092682d674298627772"><span>Data cannot be processed by AI tools.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -402,8 +380,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why can results from AI tools be hard to reproduce?</p>
-<div id="webex-29e9e2d1ac18e165d9af93e7270233a7" class="webex-radiogroup" data-answer="aQlJCEkCSAE8">
-<label><input type="radio" autocomplete="off" name="29e9e2d1ac18e165d9af93e7270233a7"><span>AI tools never change.</span></label><label><input type="radio" autocomplete="off" name="29e9e2d1ac18e165d9af93e7270233a7"><span>AI tools can be updated and have randomness in outputs.</span></label><label><input type="radio" autocomplete="off" name="29e9e2d1ac18e165d9af93e7270233a7"><span>AI tools only run on local machines.</span></label><label><input type="radio" autocomplete="off" name="29e9e2d1ac18e165d9af93e7270233a7"><span>AI tools always use fixed seeds.</span></label>
+<div id="webex-36aa154f5181fdaa8e2f64d3a596d131" class="webex-radiogroup" data-answer="aAZNUB0FGFZo">
+<label><input type="radio" autocomplete="off" name="36aa154f5181fdaa8e2f64d3a596d131"><span>AI tools never change.</span></label><label><input type="radio" autocomplete="off" name="36aa154f5181fdaa8e2f64d3a596d131"><span>AI tools can be updated and have randomness in outputs.</span></label><label><input type="radio" autocomplete="off" name="36aa154f5181fdaa8e2f64d3a596d131"><span>AI tools only run on local machines.</span></label><label><input type="radio" autocomplete="off" name="36aa154f5181fdaa8e2f64d3a596d131"><span>AI tools always use fixed seeds.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -421,9 +399,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Draft one prompt that prioritizes privacy (synthetic data) and another that uses real data.</li>
-<li>Try the same task in two AI tools and note differences in output and reproducibility.</li>
-<li>Write a short acknowledgment sentence you could use when AI assistance was involved.</li>
+<li>Try the same task in two AI tools and note differences in results.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->
@@ -2013,8 +1989,8 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="pagination-link" aria-label="Currently available AI tools">
-        <span class="nav-page-text">Currently available AI tools</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="pagination-link" aria-label="Useful AI tools">
+        <span class="nav-page-text">Useful AI tools</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

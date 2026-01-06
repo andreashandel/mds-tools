@@ -8,7 +8,7 @@
 
 <meta name="description" content="Short introductory courses that cover some modeling and data science tools.">
 
-<title>AI tools for fixing code – Modeling and Data Science Tools</title>
+<title>Using AI for coding – Modeling and Data Science Tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" rel="next">
-<link href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" rel="prev">
+<link href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" rel="next">
+<link href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html">AI tools for fixing code</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html">Using AI for coding</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -146,43 +146,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Currently available AI tools</span></a>
+ <span class="menu-text">Useful AI tools</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for code writing</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Using AI for coding</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">AI tools for fixing code</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for exploratory data analysis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-analysis-r/ai-analysis-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools to analyze data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-conceptual/ai-conceptual.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conceptual ways to think about AI</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI to analyze data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A collection of links to AI resources</span></a>
+ <span class="menu-text">Further AI resources</span></a>
   </div>
 </li>
     </ul>
@@ -200,7 +182,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#fixing-through-iteration" id="toc-fixing-through-iteration" class="nav-link" data-scroll-target="#fixing-through-iteration">Fixing through iteration</a></li>
+  <li><a href="#good-prompting" id="toc-good-prompting" class="nav-link" data-scroll-target="#good-prompting">Good prompting</a></li>
+  <li><a href="#iterating" id="toc-iterating" class="nav-link" data-scroll-target="#iterating">Iterating</a></li>
+  <li><a href="#ask-for-explanations-and-documentation" id="toc-ask-for-explanations-and-documentation" class="nav-link" data-scroll-target="#ask-for-explanations-and-documentation">Ask for explanations and documentation</a></li>
+  <li><a href="#switching-ai-tools" id="toc-switching-ai-tools" class="nav-link" data-scroll-target="#switching-ai-tools">Switching AI tools</a></li>
+  <li><a href="#work-modular" id="toc-work-modular" class="nav-link" data-scroll-target="#work-modular">Work modular</a></li>
   <li><a href="#manual-intervention" id="toc-manual-intervention" class="nav-link" data-scroll-target="#manual-intervention">Manual intervention</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
@@ -215,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AI tools for fixing code</h1>
+<h1 class="title">Using AI for coding</h1>
 </div>
 
 
@@ -234,13 +220,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>In this unit, we discuss using LLM AI tools to help fix code.</p>
+<p>In this unit, we discuss using LLM AI tools to help write code.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
-<li>Know how to use current LLM AI tools to help fix code.</li>
+<li>Know how and why to use current LLM AI tools to help with coding.</li>
+<li>Be familiar with several approaches of LLM AI assisted coding.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -250,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
 
 Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="AI tools for fixing code" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="AI tools for code writing" allowfullscreen></iframe>
 
 :::
 -->
@@ -259,83 +246,88 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This topic is very similar to the approach for writing code. In that unit, we already discussed how to iteratively update and improve the code. Fixing non-working code is really just another version of asking the AI iteratively to improve things. However, it seemed distinct enough to me that I thought it’s worth placing it into a separate unit.</p>
-<p>The assumption is that you have some code (likely AI generated, but could also be code you wrote) and need to fix some typos. If the code was generated in the current session, you can just refer to it in your prompt. If the code was generated previously, you will supply the code as part of the prompt. The latter approach is more general, so I’m focusing on that one.</p>
+<p>If you write code, there are (at least) two major parts to the effort. First, you have to figure out what exactly you want to accomplish with your code. Second, you need to write a bunch of commands in the programming language of your choice to get what you are hoping to accomplish.</p>
+<p>The first part is generally the intellectually more challenging one, and a step which AI can help somewhat, but this is largely still driven by the expert modeler/analyst (that would be you). The second part is generally less hard, but it can be very tedious and time-consuming, especially if you are new to coding or if you need to write a lot of code. AI tools are getting very good at assisting with the actual writing of code.</p>
+<p>We are already in a scenario where most coders have AI tools running that help with writing code. Sometimes this is just the coding of small parts of a project, but increasingly AI tools can write complex bits of software rather well. This can lead to much more efficient, and potentially also better code. However, it is still important that a human understands, directs and evaluates what the AI produces.</p>
 </section>
-<section id="fixing-through-iteration" class="level2">
-<h2 class="anchored" data-anchor-id="fixing-through-iteration">Fixing through iteration</h2>
-<p>The most basic approach is to just feed the AI non-working code and tell it to fix it. Here is an example continued from the non-working code we had at the end of the <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html">AI and code writing unit</a>. To mimic a general setting, with code possibly produced earlier or not by the AI, I started a new session with the Bing AI in ‘precise’ mode and gave it this prompt.</p>
+<section id="good-prompting" class="level2">
+<h2 class="anchored" data-anchor-id="good-prompting">Good prompting</h2>
+<p>To get good results from the AI, it is important that you be as specific as you can with your prompt.</p>
+<p>Try this prompt with one of the LLM AI:</p>
 <div class="prompt">
-<p>This code does not work. Please fix it.</p>
-<p>PASTE ALL CODE FROM <a href="bing-iterate-example-update2.R">THIS FILE</a> HERE.</p>
+<p>Write R code that generates a scatterplot and a violin plot.</p>
 </div>
-<p>Here is what I got back:</p>
-<div class="output">
-<p>I see that you’re trying to generate a scatter plot of BMI against weight, stratified by sex. The code you’ve provided seems to be correct. However, the issue might be due to the specific versions of the ggplot2 and dplyr libraries you’re using, or it could be a problem with your R environment.</p>
-<p>If you’re getting a specific error message, could you please provide it? That would help me understand the issue better and provide a more accurate solution. If you’re not seeing an error message, could you please describe what’s happening when you say the code doesn’t work? For example, is the plot not displaying as expected, or are the calculations not producing the right results? This additional information will help me assist you more effectively.</p>
-</div>
-<p>So this didn’t work. What’s next? One option is to see if another LLM AI can do it. For instance I could try and switch to another mode in Bing (creative or balanced) or try another LLM. I’m not doing this for now, but it might at times be worth giving it a try. What I’ll do here is to help the AI (as it suggested) by being more specific about the problem. Here is my updated prompt:</p>
+<p>Your result might or might not be close to what you had in mind. If you are not providing a lot of details, the AI can decide what to do and sometimes it is close to what you had in mind, but often it is not.</p>
+<p>Now try this prompt:</p>
 <div class="prompt">
-<p>The code below produces this error message:</p>
-<p>Error in eval(ei, envir) : object ‘sex’ not found</p>
-<p>Please fix it.</p>
-<p>PASTE ALL CODE FROM <a href="bing-iterate-example-update2.R">THIS FILE</a> HERE.</p>
+<p>Write R code that generates a dataset of 100 individuals with ages from 18 to 49, BMI values from 15 to 40 and smoking status as yes or no. Assume that age and BMI are uncorrelated. Assume that smokers have a somewhat lower BMI. Then use the patchwork R package to generate a panel of ggplot2 plots. The first panel should show a violin plot with BMI on the y-axis and smoking status on the x-axis. The second panel should show a scatterplot with age on the y-axis and BMI on the x-axis. Add thorough documentation to your code.</p>
 </div>
-<p>With this prompt, I got it to work. The AI gave me this helpful explanation and fully working code</p>
-<div class="output">
-<p>The error message you’re seeing is due to the sex variable not being recognized within the ifelse function in your data.frame creation. This is because the sex variable is not yet defined at the time ifelse is called.</p>
-<p>You can fix this by first creating the sex variable and then using it in the ifelse function. Here’s the corrected code:</p>
-<p><a href="bing-iterate-example-update3.R">CODE IS HERE</a></p>
-</div>
-<p>The end result is still not perfect, the difference in weight by sex is too large and we might want more scatter. But that can easily be fixed with either further iterations of asking the AI to update the code, or manual interventions. Speaking of manual interventions…</p>
+<p>Quite likely, the second prompt will lead to code that is very close to what you had in mind, since you specified a lot of details.</p>
+<p>Good prompts can be quite long, but they can also save you time by not having to go back and forth between your requests and what the AI produces. Also, detailed prompts force you to carefully think through what you want the code to do, and how you want things structured.</p>
+<p>You can of course always iterate and ask for changes. But the more you can specify up front, the better.</p>
+<p>It can be useful to write down AI prompts so you remember what you asked for. That also helps somewhat with reproducibility. You could for instance stick AI prompts at the top of R/Quarto files, or place them into a separate file.</p>
+<p>You also notice that for the second prompt, I had to know more about the programming language, for instance I had to know that there is a package called <code>ggplot2</code> and one called <code>patchwork</code>.</p>
+<p>The importance of prompts also applies when you are trying to update or fix code. The more detailed you can tell the AI what went wrong, for instance giving it the exact error message, the more likely it is that you get a useful response.</p>
+<p>You will find that the more you broadly know about a topic, the more useful those AI tools become. This means that you still have to learn some coding (or whatever the topic is) and understand it enough on a big picture level to be able to be useful. But you don’t necessarily need to be an expert.</p>
+<p>Think of being like a composer, who needs to know enough about the various instruments of an orchestra to be able to write music for each instrument. But they don’t need to be able to play each instrument. Similarly, you need to know enough about coding or whatever the topic is you are working on to <em>compose</em> prompts for the AI and evaluate what it produces, but you don’t necessarily need to be an expert coder.</p>
+</section>
+<section id="iterating" class="level2">
+<h2 class="anchored" data-anchor-id="iterating">Iterating</h2>
+<p>Often, you might not get exactly what you want from the AI with your first prompt. Quite likely, you realize that you weren’t specific enough, or that you really wanted something slightly different but didn’t properly specify it in the prompt. Often, the code might also not quite work. The AI might have just made up a package or function that doesn’t exist, or otherwise introduced mistakes.</p>
+<p>While it would be nice to get a great product on the first try, the process is so fast that it doesn’t matter much. Just try again. You can either update your prompt and feed it to the AI again. Or you can tell it what changes you want to make.</p>
+</section>
+<section id="ask-for-explanations-and-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="ask-for-explanations-and-documentation">Ask for explanations and documentation</h2>
+<p>Both when you use AI to write new code, or have it look at existing code, always insist on it providing detailed explanations and documentation. If you do this consistently, you will likely get first versions of new or updated code that are already fairly understandable.</p>
+<p>And then you can of course keep asking for more details. For instance if there’s a code snippet you found online, or something you wrote a while ago but don’t understand anymore what you were doing, chances are the AI can help you understand it. Just feed it the code and ask for explanations.</p>
+<p>Similarly, if you have a bug in your code, you can ask the AI to fix it, but you should also ask it to explain what the problem was and how it fixed it. If it’s a silly problem like using the wrong object for an operation, the explanation might not be too insightful. But if it’s a more complex problem, the explanation can be very helpful. This way you can learn from the process and avoid similar problems in the future.</p>
+</section>
+<section id="switching-ai-tools" class="level2">
+<h2 class="anchored" data-anchor-id="switching-ai-tools">Switching AI tools</h2>
+<p>As with all tasks, it can happen that a certain AI tool just gets stuck either writing or updating/fixing code. It keeps making the same mistake. Even good prompting and nudging won’t get it unstuck. In that case, it might be worth trying a different tool. That could be a different model from the same company, or a different AI provider altogether. Different models have different strengths and weaknesses, and sometimes switching can sometimes get you unstuck.</p>
+</section>
+<section id="work-modular" class="level2">
+<h2 class="anchored" data-anchor-id="work-modular">Work modular</h2>
+<p>While the AI tools are getting increasingly better at doing big projects one at a time, it is still often useful to break down tasks into bits. Not only can you provide more guidance for each bit, but it is also easier to evaluate smaller bits of code. For instance, if you want to write code that does something fairly complex, you can first ask the AI to write code for smaller sub-tasks, then combine those into a bigger function. This way, if something goes wrong, you can more easily identify where the problem is. It also makes it easier to ask for explanations and documentation for smaller bits of code.</p>
 </section>
 <section id="manual-intervention" class="level2">
 <h2 class="anchored" data-anchor-id="manual-intervention">Manual intervention</h2>
-<p>The overall goal is to get working code as quickly as possible, not to have things completely AI generated. Therefore, if you reach a stage where you realize it’s faster if you just fix the code yourself, go ahead and do so.</p>
-<p>This occurs at two stages. The most obvious one is close to the end. If the AI has given you code that is very close to what you want, but has a few issues (either conceptual or coding errors) that you immediately know how to correct, then just go ahead and finish things off manually. At this point, you should be able to “turn off” the AI and have working code that you can apply to your project.</p>
-<p>Another situation you might want to intervene manually is if the AI gets stuck. For instance, if you have to keep asking the AI to fix/update some code and it still doesn’t produce what you want, you could go ahead and make some manual adjustments to the code that you know should happen, and then feed the code, which still may not be fully working, back to the AI and ask it to update further.</p>
-<p>The nature of the AI algorithms is that they can “get stuck” and if you give them a slight change of scenery, they might be able to get unstuck and get you closer to your goal.</p>
+<p>The overall goal is to get working code as quickly as possible, not to have things completely AI generated. Therefore, if you reach a stage where you realize it’s faster if you just write or fix the code yourself, go ahead and do so.</p>
+<p>AI is perfectly fine with this. You can just take the code you have, make your manual changes, and then feed the updated code back to the AI and ask it to continue from there. Just make sure the AI is aware that things have changed. Sometimes, when you use AI locally to work on a project, it might read files at some stage, and not re-load/re-read them later when you have made manual changes. In that case, you might have to inform the AI about the changes you made and tell it to re-read the files.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>As with code writing, for fixing code, being as specific as possible and iterating are key. Usually, if you tell the AI exactly what needs fixing and do a few iterations, you’ll get to something that fully works, or is so close that you can quickly finish the rest manually.</p>
+<p>LLM AI tools are very helpful at assisting with writing, editing and explaining code. The more you know what you want, and the more specific you can be (which requires some level of subject matter expertise) the better your results. Rarely do you get exactly what you want on the first try, but iterating is easy and fast.</p>
+<p>This list of tips will help you be as efficient as possible:</p>
+<ul>
+<li>Be as detailed and specific as possible.</li>
+<li>Iterate. Either only AI-based iterations or a mix of manual and AI iterations.</li>
+<li>Try different AI engines or settings or prompt phrasing.</li>
+<li>Ask the AI to add a lot of comments into the code to explain what each line of code does.</li>
+<li>Break down big tasks into smaller tasks, ask the AI to solve the smaller tasks, then put it together.</li>
+</ul>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<p>See the <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html">AI resource unit</a>.</p>
+<ul>
+<li>The <a href="https://posit.co/blog/">Posit Blog</a> often has articles about using AI tools for coding, often related to R.</li>
+</ul>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
 <h1>Test yourself</h1>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>What is a first step when asking an AI to fix code?</p>
-<div id="webex-32b7eeb64ee38a4a626206395caf2b1f" class="webex-radiogroup" data-answer="aANOB0lVTgZp">
-<label><input type="radio" autocomplete="off" name="32b7eeb64ee38a4a626206395caf2b1f"><span>Provide the error message and the full code context</span></label><label><input type="radio" autocomplete="off" name="32b7eeb64ee38a4a626206395caf2b1f"><span>Only say “it is broken”</span></label><label><input type="radio" autocomplete="off" name="32b7eeb64ee38a4a626206395caf2b1f"><span>Remove all comments before sharing</span></label><label><input type="radio" autocomplete="off" name="32b7eeb64ee38a4a626206395caf2b1f"><span>Avoid sharing any code</span></label>
+<p>What is the main benefit of providing a detailed prompt to an AI coding tool?</p>
+<div id="webex-31672f9e55892760faa3b237d480a94f" class="webex-radiogroup" data-answer="aAEaBh5WFVVo">
+<label><input type="radio" autocomplete="off" name="31672f9e55892760faa3b237d480a94f"><span>It guarantees the AI will never make mistakes</span></label><label><input type="radio" autocomplete="off" name="31672f9e55892760faa3b237d480a94f"><span>It reduces back-and-forth by guiding the AI toward the desired output</span></label><label><input type="radio" autocomplete="off" name="31672f9e55892760faa3b237d480a94f"><span>It stops the AI from using external packages</span></label><label><input type="radio" autocomplete="off" name="31672f9e55892760faa3b237d480a94f"><span>It makes the code run faster automatically</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Providing the full code and exact error helps the AI diagnose the issue.</p>
-<ul>
-<li>True</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
-</ul>
-</div>
-</div>
-<div class="webex-question">
-<div class="webex-check webex-box">
-<p>If the AI gets stuck fixing code, what is a recommended approach?</p>
-<div id="webex-e670520c674b377eb199baaeeec78294" class="webex-radiogroup" data-answer="PgYbARkCHFNr">
-<label><input type="radio" autocomplete="off" name="e670520c674b377eb199baaeeec78294"><span>Stop and do nothing</span></label><label><input type="radio" autocomplete="off" name="e670520c674b377eb199baaeeec78294"><span>Make a small manual fix and then ask the AI again</span></label><label><input type="radio" autocomplete="off" name="e670520c674b377eb199baaeeec78294"><span>Delete the project</span></label><label><input type="radio" autocomplete="off" name="e670520c674b377eb199baaeeec78294"><span>Ignore the errors</span></label>
-</div>
-</div>
-<div class="webex-solution">
-<p>Manual adjustments can help the AI move past a stuck point.</p>
+<p>Detailed prompts lead to outputs closer to what you want and reduce iteration.</p>
 <ul>
 <li>False</li>
 <li>True</li>
@@ -346,13 +338,30 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>Why is iteration important when fixing code with AI?</p>
-<div id="webex-bf850c26433bfa600c7384551528c6bf" class="webex-radiogroup" data-answer="OVYUBBxTHgZp">
-<label><input type="radio" autocomplete="off" name="bf850c26433bfa600c7384551528c6bf"><span>AI always returns perfect code</span></label><label><input type="radio" autocomplete="off" name="bf850c26433bfa600c7384551528c6bf"><span>Iteration helps refine instructions and resolve errors</span></label><label><input type="radio" autocomplete="off" name="bf850c26433bfa600c7384551528c6bf"><span>Iteration removes the need to test</span></label><label><input type="radio" autocomplete="off" name="bf850c26433bfa600c7384551528c6bf"><span>Iteration prevents any manual edits</span></label>
+<p>What should you ask the AI to provide when it generates or fixes code?</p>
+<div id="webex-3de7e4a314c0e0e30c88e7334a417fbc" class="webex-radiogroup" data-answer="aFRJBkkETQNs">
+<label><input type="radio" autocomplete="off" name="3de7e4a314c0e0e30c88e7334a417fbc"><span>Only the final code, no explanation</span></label><label><input type="radio" autocomplete="off" name="3de7e4a314c0e0e30c88e7334a417fbc"><span>Explanations and documentation of what the code does</span></label><label><input type="radio" autocomplete="off" name="3de7e4a314c0e0e30c88e7334a417fbc"><span>A screenshot of the output</span></label><label><input type="radio" autocomplete="off" name="3de7e4a314c0e0e30c88e7334a417fbc"><span>A compiled binary</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Iterative prompts help the AI narrow down and fix issues.</p>
+<p>The unit recommends asking for explanations and documentation to understand and trust the code.</p>
+<ul>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a suggested strategy if an AI tool keeps getting stuck on a task?</p>
+<div id="webex-e056a1970ceacb8d1a45677264fd825d" class="webex-radiogroup" data-answer="PgAZB00BFQdt">
+<label><input type="radio" autocomplete="off" name="e056a1970ceacb8d1a45677264fd825d"><span>Give up entirely and stop using AI tools</span></label><label><input type="radio" autocomplete="off" name="e056a1970ceacb8d1a45677264fd825d"><span>Switch to a different model or AI provider</span></label><label><input type="radio" autocomplete="off" name="e056a1970ceacb8d1a45677264fd825d"><span>Remove all details from your prompt</span></label><label><input type="radio" autocomplete="off" name="e056a1970ceacb8d1a45677264fd825d"><span>Avoid asking for explanations</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>The unit suggests trying a different model or tool if one gets stuck.</p>
 <ul>
 <li>False</li>
 <li>True</li>
@@ -366,9 +375,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Take a short R script that errors and ask an AI tool to fix it; compare with your manual fix.</li>
-<li>Share the exact error message with the AI and note how the response changes.</li>
-<li>Iterate once by asking for a specific improvement (e.g., better variable names or comments).</li>
+<li>Write a detailed prompt for a small coding task and compare it with a vague version.</li>
+<li>Ask the AI to add comments to the code it generates and check whether they are accurate.</li>
+<li>Find some code online that you don’t understand and ask the AI to explain it to you.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->
@@ -1953,13 +1962,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="pagination-link" aria-label="AI tools for code writing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI tools for code writing</span>
+      <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="pagination-link" aria-label="Useful AI tools">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Useful AI tools</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" class="pagination-link" aria-label="AI tools for exploratory data analysis">
-        <span class="nav-page-text">AI tools for exploratory data analysis</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" class="pagination-link" aria-label="Using AI to analyze data">
+        <span class="nav-page-text">Using AI to analyze data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

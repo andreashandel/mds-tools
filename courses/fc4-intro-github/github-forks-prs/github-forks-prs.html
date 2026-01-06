@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc4-intro-github/github-resources/github-resources.html" rel="next">
+<link href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" rel="next">
 <link href="../../../courses/fc4-intro-github/github-positron/github-positron.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -162,8 +162,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">courses/fc4-intro-github/github-additional-topics/github-additinal-topics.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Topics</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="sidebar-item-text sidebar-link">
@@ -274,7 +277,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h2 class="anchored" data-anchor-id="open-a-pull-request-pr">Open a pull request (PR)</h2>
 <p>Assume that you forked a repository because you wanted to contribute some improvements. You cloned your fork to your computer, made some changes, committed them, and pushed to your fork on GitHub.</p>
 <p>Next, you ask the owner of the original repository to incorporate the updates you made in the fork into their main repository. This last part is called issuing a <strong>pull request</strong>. You are requesting that the other person <em>pull</em> your changes into their repository, hence the at times confusing (at least for us) terminology. Maybe thinking of it as <em>merge</em> requests or <em>sync</em> requests is better, i.e.&nbsp;you are requesting that they merge or sync your changes into their repository. You’ll find the terminology <em>merge request</em> is used at times. If the person who controls the main repository likes your changes, they will <em>merge</em> your fork into the main branch. And just like that, you have contributed to some project becoming better!</p>
-<p>To open a pull request, go to your fork of the repo on GitHub. At the top, you should see something like <code>This branch is N commits ahead of NNN:main.</code> and next to it a <code>Contribute</code> button. Click on that buttion and choose <strong>Open pull request</strong>.</p>
+<p>To open a pull request, go to your fork of the repo on GitHub. At the top, you should see something like <code>This branch is N commits ahead of NNN:main.</code> and next to it a <code>Contribute</code> button. Click on that button and choose <strong>Open pull request</strong>.</p>
 <p>You will be taken to a page where you can provide a title and description of your changes. Be clear about what you changed and why.</p>
 <p>Hopefully, you’ll see a green check-mark that says <em>able to merge</em>. If the owner of the original repository made changes to the same files you did, it could have created a merge conflict. Hopefully, this won’t be the case. If it is, you might want to put the file that has been edited by both into a safe location outside of your repository, then pull the latest version of the original repository into your local copy, re-apply your changes, commit and push again.</p>
 <p>In either case (merge conflict or not), you can click the green button and <em>Create a pull request</em>. This should send a notification to the owner of the repository that a pull request was created.</p>
@@ -289,7 +292,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>We discussed branches, forks, and pull requests. As you continue your GitHub journey, you will likely start using alll of them occasionally.</p>
+<p>We discussed branches, forks, and pull requests. As you continue your GitHub journey, you will likely start using all of them occasionally.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
@@ -305,8 +308,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which statement about forks is correct?</p>
-<div id="webex-24b9801dc0d507a4db4745e81fce6328" class="webex-radiogroup" data-answer="aQROCBQAHVQ+">
-<label><input type="radio" autocomplete="off" name="24b9801dc0d507a4db4745e81fce6328"><span>A fork deletes the original repository</span></label><label><input type="radio" autocomplete="off" name="24b9801dc0d507a4db4745e81fce6328"><span>A fork is your personal copy of a public repository</span></label><label><input type="radio" autocomplete="off" name="24b9801dc0d507a4db4745e81fce6328"><span>A fork can only be created by repository owners</span></label><label><input type="radio" autocomplete="off" name="24b9801dc0d507a4db4745e81fce6328"><span>A fork prevents you from making any changes</span></label>
+<div id="webex-88b95e758e3d7f41e8b297dea165f63d" class="webex-radiogroup" data-answer="YwhOCBlVGwVl">
+<label><input type="radio" autocomplete="off" name="88b95e758e3d7f41e8b297dea165f63d"><span>A fork deletes the original repository</span></label><label><input type="radio" autocomplete="off" name="88b95e758e3d7f41e8b297dea165f63d"><span>A fork is your personal copy of a public repository</span></label><label><input type="radio" autocomplete="off" name="88b95e758e3d7f41e8b297dea165f63d"><span>A fork can only be created by repository owners</span></label><label><input type="radio" autocomplete="off" name="88b95e758e3d7f41e8b297dea165f63d"><span>A fork prevents you from making any changes</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -322,8 +325,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why are branches useful?</p>
-<div id="webex-c4e969643be1fc264ac1424e54d23898" class="webex-radiogroup" data-answer="OARJCRoJGgVu">
-<label><input type="radio" autocomplete="off" name="c4e969643be1fc264ac1424e54d23898"><span>They permanently delete old commits</span></label><label><input type="radio" autocomplete="off" name="c4e969643be1fc264ac1424e54d23898"><span>They make repositories private</span></label><label><input type="radio" autocomplete="off" name="c4e969643be1fc264ac1424e54d23898"><span>They force everyone to work on the same files</span></label><label><input type="radio" autocomplete="off" name="c4e969643be1fc264ac1424e54d23898"><span>They let you isolate work before merging into main</span></label>
+<div id="webex-4c3a3418a372c2bf65ac5536d1b70b4a" class="webex-radiogroup" data-answer="b1MfUR8EHQk8">
+<label><input type="radio" autocomplete="off" name="4c3a3418a372c2bf65ac5536d1b70b4a"><span>They permanently delete old commits</span></label><label><input type="radio" autocomplete="off" name="4c3a3418a372c2bf65ac5536d1b70b4a"><span>They make repositories private</span></label><label><input type="radio" autocomplete="off" name="4c3a3418a372c2bf65ac5536d1b70b4a"><span>They force everyone to work on the same files</span></label><label><input type="radio" autocomplete="off" name="4c3a3418a372c2bf65ac5536d1b70b4a"><span>They let you isolate work before merging into main</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -339,8 +342,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is a pull request (PR)?</p>
-<div id="webex-68f2a2eaf66c16070aac7b0a490583ae" class="webex-radiogroup" data-answer="bQlKAk0CSVE7">
-<label><input type="radio" autocomplete="off" name="68f2a2eaf66c16070aac7b0a490583ae"><span>A request to merge your changes into another repository or branch</span></label><label><input type="radio" autocomplete="off" name="68f2a2eaf66c16070aac7b0a490583ae"><span>A way to delete a branch remotely</span></label><label><input type="radio" autocomplete="off" name="68f2a2eaf66c16070aac7b0a490583ae"><span>A method for downloading a repository without cloning</span></label><label><input type="radio" autocomplete="off" name="68f2a2eaf66c16070aac7b0a490583ae"><span>A tool for changing GitHub account settings</span></label>
+<div id="webex-52f01020720141d769dcbc4e7a5c9bba" class="webex-radiogroup" data-answer="bgNKAB0AHgBq">
+<label><input type="radio" autocomplete="off" name="52f01020720141d769dcbc4e7a5c9bba"><span>A request to merge your changes into another repository or branch</span></label><label><input type="radio" autocomplete="off" name="52f01020720141d769dcbc4e7a5c9bba"><span>A way to delete a branch remotely</span></label><label><input type="radio" autocomplete="off" name="52f01020720141d769dcbc4e7a5c9bba"><span>A method for downloading a repository without cloning</span></label><label><input type="radio" autocomplete="off" name="52f01020720141d769dcbc4e7a5c9bba"><span>A tool for changing GitHub account settings</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -1948,8 +1951,8 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="pagination-link" aria-label="Further Resources">
-        <span class="nav-page-text">Further Resources</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" class="pagination-link" aria-label="Additional Topics">
+        <span class="nav-page-text">Additional Topics</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

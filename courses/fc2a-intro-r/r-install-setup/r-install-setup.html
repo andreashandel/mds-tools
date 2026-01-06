@@ -169,6 +169,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-coding-tips/r-coding-tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Coding Tips</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../courses/fc2a-intro-r/r-further-resources/r-further-resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Further R Resources</span></a>
   </div>
@@ -260,7 +266,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="quick-spin" class="level2">
 <h2 class="anchored" data-anchor-id="quick-spin">Quick spin</h2>
 <p>Just to make sure <code>R</code> is running, you can type some math into the console at the <code>&gt;</code> sign. E.g. if you type <code>2+2</code>, you should get <code>4</code> as a result.</p>
-<p>Most of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type <code>install.packages('dplyr')</code> into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the <code>dplyr</code> package, which is a very useful package for data manipulation. To check if it worked, type <code>library(dplyr)</code>. You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s ok for now, as long as you don’t get any error messages.</p>
+<p>Most of the power of R comes from add-ons called packages, which we’ll cover shortly. For now, you can try to install one. Type <code>install.packages('dplyr')</code> into the console. You might be asked to select a CRAN mirror. Just pick the first one (Cloud) - or really any. This will download and install the <code>dplyr</code> package, which is a very useful package for data manipulation. To check if it worked, type <code>library(dplyr)</code>. You’ll see some messages, maybe even a warning message about the package having been built under a different version of R. That’s ok for now, as long as you don’t get any error messages.</p>
 <p>R should be working and ready to use. You can close it.</p>
 </section>
 <section id="updating-r" class="level2">
@@ -289,8 +295,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended source for downloading the R installer to ensure you get the correct version?</p>
-<div id="webex-7f2fd09e1b2b947b192937b66d29d547" class="webex-radiogroup" data-answer="bFceVkgAFVVs">
-<label><input type="radio" autocomplete="off" name="7f2fd09e1b2b947b192937b66d29d547"><span>The official R Project website (CRAN link)</span></label><label><input type="radio" autocomplete="off" name="7f2fd09e1b2b947b192937b66d29d547"><span>Any random download site that lists R</span></label><label><input type="radio" autocomplete="off" name="7f2fd09e1b2b947b192937b66d29d547"><span>A package manager from another programming language</span></label><label><input type="radio" autocomplete="off" name="7f2fd09e1b2b947b192937b66d29d547"><span>It comes preinstalled so no download is needed</span></label>
+<div id="webex-c46075e692c0650ab9286c8774edcd61" class="webex-radiogroup" data-answer="OAUaABsFSQZk">
+<label><input type="radio" autocomplete="off" name="c46075e692c0650ab9286c8774edcd61"><span>The official R Project website (CRAN link)</span></label><label><input type="radio" autocomplete="off" name="c46075e692c0650ab9286c8774edcd61"><span>Any random download site that lists R</span></label><label><input type="radio" autocomplete="off" name="c46075e692c0650ab9286c8774edcd61"><span>A package manager from another programming language</span></label><label><input type="radio" autocomplete="off" name="c46075e692c0650ab9286c8774edcd61"><span>It comes preinstalled so no download is needed</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -306,8 +312,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you quickly confirm that R is running after installation?</p>
-<div id="webex-e338f3d0c6d43ec471c0744d07b9ebf3" class="webex-radiogroup" data-answer="PgMfCEoCSAA+">
-<label><input type="radio" autocomplete="off" name="e338f3d0c6d43ec471c0744d07b9ebf3"><span>Immediately install RStudio before opening R</span></label><label><input type="radio" autocomplete="off" name="e338f3d0c6d43ec471c0744d07b9ebf3"><span>Edit the R installation directory by hand</span></label><label><input type="radio" autocomplete="off" name="e338f3d0c6d43ec471c0744d07b9ebf3"><span>Type <code>2+2</code> at the <code>&gt;</code> prompt and check that it returns <code>4</code></span></label><label><input type="radio" autocomplete="off" name="e338f3d0c6d43ec471c0744d07b9ebf3"><span>Disable all default settings during installation</span></label>
+<div id="webex-62ba0e6ab090650d7ea8ce473accf0a5" class="webex-radiogroup" data-answer="bQJOURxUGlE/">
+<label><input type="radio" autocomplete="off" name="62ba0e6ab090650d7ea8ce473accf0a5"><span>Immediately install RStudio before opening R</span></label><label><input type="radio" autocomplete="off" name="62ba0e6ab090650d7ea8ce473accf0a5"><span>Edit the R installation directory by hand</span></label><label><input type="radio" autocomplete="off" name="62ba0e6ab090650d7ea8ce473accf0a5"><span>Type <code>2+2</code> at the <code>&gt;</code> prompt and check that it returns <code>4</code></span></label><label><input type="radio" autocomplete="off" name="62ba0e6ab090650d7ea8ce473accf0a5"><span>Disable all default settings during installation</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -323,8 +329,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the typical way to update R, and what might you need to redo afterward?</p>
-<div id="webex-fd9652129fa619b6918a8541a84b597a" class="webex-radiogroup" data-answer="PVUVBhkCHQJk">
-<label><input type="radio" autocomplete="off" name="fd9652129fa619b6918a8541a84b597a"><span>Install the new R version separately and be prepared to reinstall packages</span></label><label><input type="radio" autocomplete="off" name="fd9652129fa619b6918a8541a84b597a"><span>Use an automatic in-app updater built into the R GUI</span></label><label><input type="radio" autocomplete="off" name="fd9652129fa619b6918a8541a84b597a"><span>Wait for your operating system to push R updates through its app store</span></label><label><input type="radio" autocomplete="off" name="fd9652129fa619b6918a8541a84b597a"><span>Delete the old R folder manually and hope packages stay intact</span></label>
+<div id="webex-ecc31c20dfa0dfe082ffe5e1ebb0212a" class="webex-radiogroup" data-answer="PlJPAx1THgA5">
+<label><input type="radio" autocomplete="off" name="ecc31c20dfa0dfe082ffe5e1ebb0212a"><span>Install the new R version separately and be prepared to reinstall packages</span></label><label><input type="radio" autocomplete="off" name="ecc31c20dfa0dfe082ffe5e1ebb0212a"><span>Use an automatic in-app updater built into the R GUI</span></label><label><input type="radio" autocomplete="off" name="ecc31c20dfa0dfe082ffe5e1ebb0212a"><span>Wait for your operating system to push R updates through its app store</span></label><label><input type="radio" autocomplete="off" name="ecc31c20dfa0dfe082ffe5e1ebb0212a"><span>Delete the old R folder manually and hope packages stay intact</span></label>
 </div>
 </div>
 <div class="webex-solution">

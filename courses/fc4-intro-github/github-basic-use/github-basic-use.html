@@ -162,8 +162,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">courses/fc4-intro-github/github-additional-topics/github-additinal-topics.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Topics</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="sidebar-item-text sidebar-link">
@@ -182,6 +185,28 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
+  <ul class="collapse">
+  <li><a href="#gitgithub-terminology" id="toc-gitgithub-terminology" class="nav-link" data-scroll-target="#gitgithub-terminology">Git/GitHub terminology</a></li>
+  <li><a href="#github-repositories" id="toc-github-repositories" class="nav-link" data-scroll-target="#github-repositories">GitHub repositories</a></li>
+  <li><a href="#cloning-and-pulling" id="toc-cloning-and-pulling" class="nav-link" data-scroll-target="#cloning-and-pulling">Cloning and pulling</a></li>
+  <li><a href="#committing-and-pushing" id="toc-committing-and-pushing" class="nav-link" data-scroll-target="#committing-and-pushing">Committing and Pushing</a></li>
+  <li><a href="#basic-github-workflow" id="toc-basic-github-workflow" class="nav-link" data-scroll-target="#basic-github-workflow">Basic GitHub workflow</a>
+  <ul class="collapse">
+  <li><a href="#create-a-repository" id="toc-create-a-repository" class="nav-link" data-scroll-target="#create-a-repository">Create a repository</a></li>
+  <li><a href="#clone-the-repository" id="toc-clone-the-repository" class="nav-link" data-scroll-target="#clone-the-repository">Clone the repository</a></li>
+  <li><a href="#work-on-your-project" id="toc-work-on-your-project" class="nav-link" data-scroll-target="#work-on-your-project">Work on your project</a></li>
+  <li><a href="#committing-and-pushing-changes" id="toc-committing-and-pushing-changes" class="nav-link" data-scroll-target="#committing-and-pushing-changes">Committing and pushing changes</a></li>
+  </ul></li>
+  <li><a href="#recap-of-github-workflow" id="toc-recap-of-github-workflow" class="nav-link" data-scroll-target="#recap-of-github-workflow">Recap of GitHub workflow</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best practices</a>
+  <ul class="collapse">
+  <li><a href="#commit-with-a-clear-message" id="toc-commit-with-a-clear-message" class="nav-link" data-scroll-target="#commit-with-a-clear-message">Commit with a clear message</a></li>
+  <li><a href="#keep-commits-reasonably-small" id="toc-keep-commits-reasonably-small" class="nav-link" data-scroll-target="#keep-commits-reasonably-small">Keep commits reasonably small</a></li>
+  <li><a href="#pull-before-you-start-working" id="toc-pull-before-you-start-working" class="nav-link" data-scroll-target="#pull-before-you-start-working">Pull before you start working</a></li>
+  <li><a href="#coordinate-if-you-collaborate" id="toc-coordinate-if-you-collaborate" class="nav-link" data-scroll-target="#coordinate-if-you-collaborate">Coordinate if you collaborate</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
@@ -237,8 +262,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 :::
 -->
 <!-- end unit-video div -->
-<div class="unit-reading">
-<section id="reading" class="level1">
+<section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="gitgithub-terminology" class="level2">
 <h2 class="anchored" data-anchor-id="gitgithub-terminology">Git/GitHub terminology</h2>
@@ -250,25 +274,25 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="cloning-and-pulling" class="level2">
 <h2 class="anchored" data-anchor-id="cloning-and-pulling">Cloning and pulling</h2>
-<p>When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. Here, we will focus on starting repositories on GitHub.com and won’t describe the reverse process, but it it is also possible to start local and then push and thus initialize a new repository online.</p>
+<p>When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. Here, we will focus on starting repositories on GitHub.com and won’t describe the reverse process, but it is also possible to start local and then push and thus initialize a new repository online.</p>
 <p>If you start a repository on GitHub.com, you can then <em>clone</em> it to your local machine to work on it. The process of <em>cloning</em> creates a local copy of the repository on your computer. You also use that approach if you are collaborating with someone on a repository that they created. The important part is that <em>cloning</em> means copying a repository <strong>that you don’t yet have on your local machine</strong> from GitHub.com to your local machine.</p>
 <p>Once you have a local copy of a repository, you can get future updates from GitHub.com to your local machine by <em>pulling</em> remote updates to your local computer. (Sometimes, you might also see the word <em>fetch</em>, which is similar to <em>pull</em>, but does not automatically merge changes into your local files. For simplicity, we will mainly just use <em>pull</em> here since you usually want to merge anything from the online repository with your local version of that repo.)</p>
 </section>
-</section>
-<section id="commiting-and-pushing" class="level1">
-<h1>Commiting and Pushing</h1>
-<p>The reverse process of getting your local changes up to GitHub.com is called <em>pushing</em>. If you start a repository locally, or any time you make updates on your loccal machine, you can <em>push</em> it to GitHub.com to back it up and share it.</p>
+<section id="committing-and-pushing" class="level2">
+<h2 class="anchored" data-anchor-id="committing-and-pushing">Committing and Pushing</h2>
+<p>The reverse process of getting your local changes up to GitHub.com is called <em>pushing</em>. If you start a repository locally, or any time you make updates on your local machine, you can <em>push</em> it to GitHub.com to back it up and share it.</p>
 <p>Before you can push your local updates, you need to <em>commit</em> them. Committing means recording a snapshot of your changes in the local repository. You can make multiple commits locally before pushing them to GitHub.com. Commits are important because they allow you to track the history of changes and revert to previous versions if needed.</p>
 <p>To be precise, before you can commit you need to stage your changes. Staging means selecting which changes you want to include in the next commit. This allows you to group related changes together in a single commit, making it easier to understand the history of your project. For our purposes, doing separate staging and committing is usually not necessary, and we will often just refer to committing, but keep in mind that staging is a step that happens before committing. Most of the time you won’t even realize that the staging happened.</p>
 <div class="warning">
 <p>In contrast to sync services like OneDrive or Google Drive, pushing and pulling to make sure things are in sync between your local machine and the online platform are a manual process and are your responsibility. Make sure to always pull before you start working on a repository on your local machine, and commit/push to github.com when you are done.</p>
 </div>
+</section>
 <section id="basic-github-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="basic-github-workflow">Basic GitHub workflow</h2>
 <section id="create-a-repository" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-repository">Create a repository</h3>
-<p>Let’s give this whole workflow a try. We will start by creating a repository online. Go to GitHub.com, make sure you are logged into your account and on your main screen. The URL you should be one looks something like <code>https://github.com/githubusername</code>. Click on the <code>Repositories</code> tab. Then create a new repository by clicking on the <code>New</code> button. Give the new repo, e.g., <code>my-test-repo</code>. Give it a short description, turn on ‘add README’, keep visibility to public, and keep the rest of the settings as they are. Then click <strong>Create repository</strong>.</p>
-<p>This has now created a new public repository on Github.com. At the moment, it is mostly empty apart from the README.md file we told it to create.</p>
+<p>Let’s give this whole workflow a try. We will start by creating a repository online. Go to GitHub.com, make sure you are logged into your account and on your main screen. The URL should be something like <code>https://github.com/githubusername</code>. Click on the <code>Repositories</code> tab. Then create a new repository by clicking on the <code>New</code> button. Give the new repo, e.g., <code>my-test-repo</code>. Give it a short description, turn on ‘add README’, keep visibility to public, and keep the rest of the settings as they are. Then click <strong>Create repository</strong>.</p>
+<p>This has now created a new public repository on GitHub.com. At the moment, it is mostly empty apart from the README.md file we told it to create.</p>
 </section>
 <section id="clone-the-repository" class="level3">
 <h3 class="anchored" data-anchor-id="clone-the-repository">Clone the repository</h3>
@@ -289,10 +313,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 </section>
 <section id="recap-of-github-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="recap-of-github-workflow">Recap of Github workflow</h2>
+<h2 class="anchored" data-anchor-id="recap-of-github-workflow">Recap of GitHub workflow</h2>
 <p>In the future, if you work on repositories like this one (or any others), your workflow should be as follows:</p>
 <ul>
-<li>If needed, create a repository online, then clone the repository to your local machine with GitHub desktop or any other way (e.g.&nbsp;the terminal).</li>
+<li>If needed, create a repository online, then clone the repository to your local machine with GitHub Desktop or any other way (e.g.&nbsp;the terminal).</li>
 <li>Once you have a copy of the repository both on your local machine and github.com, any time you start working on that repository, check that it’s up to date and as needed, do a <strong>pull</strong>.</li>
 <li>Once your local repo is up-to-date, open your project. Make all the edits you like. Make sure to run your code and render your Quarto files. Once you are done with edits, <strong>stage/commit/push</strong> your changes back to the remote server.</li>
 </ul>
@@ -313,11 +337,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="coordinate-if-you-collaborate" class="level3">
 <h3 class="anchored" data-anchor-id="coordinate-if-you-collaborate">Coordinate if you collaborate</h3>
-<p>If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can’t, you’ll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be agravating at first, but you’ll soon learn how to deal with them. The best approach is to avoid them as much as possible.</p>
+<p>If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can’t, you’ll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be aggravating at first, but you’ll soon learn how to deal with them. The best approach is to avoid them as much as possible.</p>
 </section>
 </section>
 </section>
-</div>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
@@ -334,8 +357,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does it mean to clone a repository?</p>
-<div id="webex-21a7a11f80e7808e1640b15e5601b91e" class="webex-radiogroup" data-answer="aQFNBk0BHVZl">
-<label><input type="radio" autocomplete="off" name="21a7a11f80e7808e1640b15e5601b91e"><span>Delete a repository and start over</span></label><label><input type="radio" autocomplete="off" name="21a7a11f80e7808e1640b15e5601b91e"><span>Copy a repository from GitHub.com to your local machine for the first time</span></label><label><input type="radio" autocomplete="off" name="21a7a11f80e7808e1640b15e5601b91e"><span>Upload local changes to GitHub.com</span></label><label><input type="radio" autocomplete="off" name="21a7a11f80e7808e1640b15e5601b91e"><span>Rename a repository on GitHub.com</span></label>
+<div id="webex-7cbd61c39479b990a587486e6c3a6b30" class="webex-radiogroup" data-answer="bFNOVRoBTwNk">
+<label><input type="radio" autocomplete="off" name="7cbd61c39479b990a587486e6c3a6b30"><span>Delete a repository and start over</span></label><label><input type="radio" autocomplete="off" name="7cbd61c39479b990a587486e6c3a6b30"><span>Copy a repository from GitHub.com to your local machine for the first time</span></label><label><input type="radio" autocomplete="off" name="7cbd61c39479b990a587486e6c3a6b30"><span>Upload local changes to GitHub.com</span></label><label><input type="radio" autocomplete="off" name="7cbd61c39479b990a587486e6c3a6b30"><span>Rename a repository on GitHub.com</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -351,8 +374,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What must happen before you can push changes to GitHub.com?</p>
-<div id="webex-7b5ee2d9ec0f696dfc291474a3c5c846" class="webex-radiogroup" data-answer="bFIZVUkDSAk4">
-<label><input type="radio" autocomplete="off" name="7b5ee2d9ec0f696dfc291474a3c5c846"><span>You must open a pull request</span></label><label><input type="radio" autocomplete="off" name="7b5ee2d9ec0f696dfc291474a3c5c846"><span>You must rename the repository</span></label><label><input type="radio" autocomplete="off" name="7b5ee2d9ec0f696dfc291474a3c5c846"><span>You must commit your changes locally</span></label><label><input type="radio" autocomplete="off" name="7b5ee2d9ec0f696dfc291474a3c5c846"><span>You must fork the repository</span></label>
+<div id="webex-aca83bc7d1013308f03e21bb8970532c" class="webex-radiogroup" data-answer="OlNNCB9TTwc5">
+<label><input type="radio" autocomplete="off" name="aca83bc7d1013308f03e21bb8970532c"><span>You must open a pull request</span></label><label><input type="radio" autocomplete="off" name="aca83bc7d1013308f03e21bb8970532c"><span>You must rename the repository</span></label><label><input type="radio" autocomplete="off" name="aca83bc7d1013308f03e21bb8970532c"><span>You must commit your changes locally</span></label><label><input type="radio" autocomplete="off" name="aca83bc7d1013308f03e21bb8970532c"><span>You must fork the repository</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -368,8 +391,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended step before you start working on a repository locally?</p>
-<div id="webex-7bc4547a10e774e361667acc1e91f23d" class="webex-radiogroup" data-answer="bFJPBBkEG1Bs">
-<label><input type="radio" autocomplete="off" name="7bc4547a10e774e361667acc1e91f23d"><span>Delete the local repository and re-clone it</span></label><label><input type="radio" autocomplete="off" name="7bc4547a10e774e361667acc1e91f23d"><span>Push your local changes immediately</span></label><label><input type="radio" autocomplete="off" name="7bc4547a10e774e361667acc1e91f23d"><span>Create a new branch every time</span></label><label><input type="radio" autocomplete="off" name="7bc4547a10e774e361667acc1e91f23d"><span>Pull the latest changes from GitHub.com</span></label>
+<div id="webex-69505e4900f5ae0d984081eeadb307ce" class="webex-radiogroup" data-answer="bQkZABlVGAht">
+<label><input type="radio" autocomplete="off" name="69505e4900f5ae0d984081eeadb307ce"><span>Delete the local repository and re-clone it</span></label><label><input type="radio" autocomplete="off" name="69505e4900f5ae0d984081eeadb307ce"><span>Push your local changes immediately</span></label><label><input type="radio" autocomplete="off" name="69505e4900f5ae0d984081eeadb307ce"><span>Create a new branch every time</span></label><label><input type="radio" autocomplete="off" name="69505e4900f5ae0d984081eeadb307ce"><span>Pull the latest changes from GitHub.com</span></label>
 </div>
 </div>
 <div class="webex-solution">

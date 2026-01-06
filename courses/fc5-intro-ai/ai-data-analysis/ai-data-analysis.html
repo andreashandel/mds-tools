@@ -8,7 +8,7 @@
 
 <meta name="description" content="Short introductory courses that cover some modeling and data science tools.">
 
-<title>AI tools for code writing – Modeling and Data Science Tools</title>
+<title>Using AI to analyze data – Modeling and Data Science Tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" rel="next">
-<link href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" rel="prev">
+<link href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" rel="next">
+<link href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html">AI tools for code writing</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html">Using AI to analyze data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -146,43 +146,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Currently available AI tools</span></a>
+ <span class="menu-text">Useful AI tools</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">AI tools for code writing</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI for coding</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for fixing code</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for exploratory data analysis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-analysis-r/ai-analysis-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools to analyze data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-conceptual/ai-conceptual.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conceptual ways to think about AI</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Using AI to analyze data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A collection of links to AI resources</span></a>
+ <span class="menu-text">Further AI resources</span></a>
   </div>
 </li>
     </ul>
@@ -200,8 +182,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#good-prompting" id="toc-good-prompting" class="nav-link" data-scroll-target="#good-prompting">Good prompting</a></li>
-  <li><a href="#iterating" id="toc-iterating" class="nav-link" data-scroll-target="#iterating">Iterating</a></li>
+  <li><a href="#confidentiality-and-privacy" id="toc-confidentiality-and-privacy" class="nav-link" data-scroll-target="#confidentiality-and-privacy">Confidentiality and Privacy</a></li>
+  <li><a href="#data-analysis-with-no-data" id="toc-data-analysis-with-no-data" class="nav-link" data-scroll-target="#data-analysis-with-no-data">Data analysis with no data</a></li>
+  <li><a href="#data-analysis-with-synthetic-data" id="toc-data-analysis-with-synthetic-data" class="nav-link" data-scroll-target="#data-analysis-with-synthetic-data">Data analysis with synthetic data</a></li>
+  <li><a href="#data-analysis-with-copy-and-paste" id="toc-data-analysis-with-copy-and-paste" class="nav-link" data-scroll-target="#data-analysis-with-copy-and-paste">Data analysis with copy and paste</a></li>
+  <li><a href="#data-analysis-with-file-upload" id="toc-data-analysis-with-file-upload" class="nav-link" data-scroll-target="#data-analysis-with-file-upload">Data analysis with file upload</a></li>
+  <li><a href="#ai-on-your-computer" id="toc-ai-on-your-computer" class="nav-link" data-scroll-target="#ai-on-your-computer">AI on your computer</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best practices</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -215,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AI tools for code writing</h1>
+<h1 class="title">Using AI to analyze data</h1>
 </div>
 
 
@@ -234,14 +221,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>In this unit, we discuss using LLM AI tools to help write code.</p>
+<p>In this unit, we discuss using AI tools to help with data analysis.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
-<li>Know how and why to use current LLM AI tools to help with coding.</li>
-<li>Be familiar with several approaches of LLM AI assisted coding.</li>
+<li>Know why and how to use AI to help with data analysis.</li>
+<li>Be aware of possible confidentiality issues.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -251,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 
 Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="AI tools for code writing" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="AI tools for exploratory data analysis" allowfullscreen></iframe>
 
 :::
 -->
@@ -260,118 +247,70 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>If you write code, there are (at least) two major parts to the effort. First, you have to figure out what exactly you want to accomplish with your code. Second, you need to write a bunch of commands in the programming language of your choice to get what you are hoping to accomplish. The first part is generally the intellectually more challenging one, and a step which AI (currently) are not very good at. The second part is generally less hard, but it can be very tedious, especially if you are new to coding or if you need to write a lot of code. AI are getting pretty good at helping with writing code.</p>
-<p>I expect that soon, instead of people writing code, most code will be written by AI under the guidance and direction of people. This should eventually lead to much more efficient, and potentially also better code. We aren’t quite there yet, but the current AI tools are already quite useful for helping with code tasks, so you should use them.</p>
+<p>AI has gotten pretty good at working with data. While there is no substitute for you understanding your data, AI can help speed up the process. R has many powerful functions that let you explore your data quickly, combining R with AI-generated code can speed up things even more.</p>
 </section>
-<section id="good-prompting" class="level2">
-<h2 class="anchored" data-anchor-id="good-prompting">Good prompting</h2>
-<p>To get good results from the AI, it is important that you be as specific as you can with your prompt.</p>
-<p>Try this prompt with one of the LLM AI:</p>
-<div class="prompt">
-<p>Write R code that generates a scatterplot and a violin plot.</p>
-</div>
-<p>Your result might or might not be close to what you had in mind. If you are not providing a lot of details, the AI can decide what to do and sometimes it is close to what you had in mind, but often it is not.</p>
-<p>Now try this prompt:</p>
-<div class="prompt">
-<p>Write R code that generates a dataset of 100 individuals with ages from 18 to 49, BMI values from 15 to 40 and smoking status as yes or no. Assume that age and BMI are uncorrelated. Assume that smokers have a somewhat lower BMI. Then use the patchwork R package to generate a panel of ggplot2 plots. The first panel should show a violin plot with BMI on the y-axis and smoking status on the x-axis. The second panel should show a scatterplot with age on the y-axis and BMI on the x-axis. Add thorough documentation to your code.</p>
-</div>
-<p>When I gave the second prompt to ChatGPT 3.5, it gave me this <a href="chatgpt-example.R">fully working code</a>. It is possible that when you try this, the code will look slightly different. Remember, these AI tools are not fully deterministic and can produce different results each time. Hopefully, what you get will run. If not, you might need to either fix the code or ask the AI to fix it (we’ll look at that in another unit).</p>
-<p>As you can see, good prompts are often quite long. It makes sense to write those down outside the AI first. That also helps somewhat with reproducibility. I generally try to stick AI prompts at the top of my R/Quarto files, or into a separate file.</p>
-<p>You also notice that for the second prompt, I had to know more about the programming language, for instance I had to know that there is a package called <code>ggplot2</code> and one called <code>patchwork</code>.</p>
-<p>You will find that the more you know in general about a topic, the more useful those AI tools become. This means that you still have to learn some coding (or whatever the topic is) and understand it enough on a big picture level to be able to be useful. But you don’t necessarily need to be an expert.</p>
-<p>An analogy I like is that of a composer. A composer needs to know enough about the various instruments of an orchestra to be able to write music for each instrument. But they don’t need to be able to play each instrument. Similarly, you need to know enough about coding or whatever the topic is you are working on to <em>compose</em> prompts for the AI and evaluate what it produces, but you don’t necessarily need to be an expert coder.</p>
+<section id="confidentiality-and-privacy" class="level2">
+<h2 class="anchored" data-anchor-id="confidentiality-and-privacy">Confidentiality and Privacy</h2>
+<p>It is important to reiterate: If you allow the AI to “see” your data, this data might end up on the servers of the company running the AI (ChatGPT, Microsoft, Google) and might be used by them for future training of their models. Therefore, be careful with what you let the AI see. If you are re-analyzing publicly available data, you shouldn’t have to worry. But if the data is in any way confidential, it might not be a good idea to allow the AI to see it.</p>
+<p>If you are working in a setting where your company/organization has their own instance of an AI service, this confidentiality issue might not be that important. But if you are using public AI services, be somewhat careful.</p>
 </section>
-<section id="iterating" class="level2">
-<h2 class="anchored" data-anchor-id="iterating">Iterating</h2>
-<p>It’s rare that you get exactly what you want from the AI with your first prompt. Quite likely, you realize that you weren’t specific enough, or that you really wanted something slightly different but didn’t properly specify it in the prompt. Often, the code might also not quite work. The AI might have just made up a package or function that doesn’t exist, or otherwise introduced mistakes.</p>
-<p>While it would be nice to get a great product on the first try, the process is so fast that it doesn’t matter much. Just try again. You can either update your prompt and feed it to the AI again. Or you can tell it what changes you want to make. Try this as a starting prompt:</p>
+<section id="data-analysis-with-no-data" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-with-no-data">Data analysis with no data</h2>
+<p>Ok, this sounds dumb, but it’s not that stupid. Instead of trying to feed the AI your data, you can describe your data and ask it to return code that could analyze it. For instance, you could provide a prompt like this:</p>
 <div class="prompt">
-<p>Write R code that generates a dataset of 100 individuals, half of them female, with ages from 18 to 49, weight from 100 to 500 pounds and BMI from 15 to 35. Make a figure that shows weight on the x-axis, BMI on the y-axis, and stratification by sex. Add thorough documentation to the code.</p>
+<p>Write R code to perform an exploratory data analysis of a data frame called <code>dat</code>. The data frame contains the continuous variables <code>age</code> and <code>BMI</code>, and the categorical variables <code>sex</code> and <code>favorite color</code>. Write code that produces a summary table, univariate plots for each variable, and a bivariate plot of <code>age</code> versus <code>BMI</code>.</p>
 </div>
-<p>When I fed that to Bing in “precise” mode it produced <a href="bing-iterate-example.R">this code</a>. Note that it didn’t really give me an R script, I copied what it produced into an R file.</p>
-<p>The code runs and produces a figure, but there are problems. Right now, the data is generated assuming each variable is independent of the other. We know that weight is strongly correlated with BMI, since it’s part of the equation defining BMI. We also know that males are generally heavier. We can easily fix this. One approach is to update your prompt and make it more explicit, such as:</p>
-<div class="prompt">
-<p>Write R code that generates a dataset of 100 individuals, half of them female, with ages from 18 to 49, weight from 100 to 500 pounds and BMI from 15 to 35. Assume that males are generally somewhat heavier than females. Also assume that BMI and weight are positively correlated, based on the definition of BMI. Make a figure that shows weight on the x-axis, BMI on the y-axis, and stratification by sex. Add thorough documentation to the code.</p>
-</div>
-<p>With this updated prompt, I got <a href="bing-iterate-example-update1.R">this code</a>, here are the relevant bits:</p>
-<div class="output">
-<pre><code># Generate a dataset of 100 individuals
-data &lt;- data.frame(
-  # Generate sex variable with half of them female
-  sex = rep(c("male", "female"), each = 50),
-  
-  # Generate ages from 18 to 49
-  age = sample(18:49, 100, replace = TRUE),
-  
-  # Generate weight values from 100 to 500 pounds
-  # Assume that males are generally somewhat heavier than females
-  weight = c(runif(50, min = 100, max = 400), runif(50, min = 200, max = 500)),
-  
-  # Generate BMI values from 15 to 35
-  # Assume that BMI and weight are positively correlated
-  bmi = c(runif(50, min = 15, max = 25), runif(50, min = 25, max = 35))
-)</code></pre>
-</div>
-<p>There are several issues. It labeled the first 50 individuals as males, but assigned them the lighter instead of heavier weight. It also didn’t properly create BMI values as function of weight.</p>
-<p>We could of course modify the prompt above further, trying again. Or we can directly iterate at the prompt and ask the AI to update the code. Here is an example:</p>
-<div class="prompt">
-<p>Update the code such that males and females are randomly distributed, make sure that males are on average heavier than females, and compute values for BMI as a function of weight with some random variation added.</p>
-</div>
-<p>With this prompt, I got <a href="bing-iterate-example-update2.R">this further updated code</a>, here are again the relevant bits:</p>
-<div class="output">
-<pre><code># Generate a dataset of 100 individuals
-data &lt;- data.frame(
-  # Generate sex variable with males and females randomly distributed
-  sex = sample(rep(c("male", "female"), each = 50)),
-  
-  # Generate ages from 18 to 49
-  age = sample(18:49, 100, replace = TRUE),
-  
-  # Generate weight values from 100 to 500 pounds
-  # Make sure that males are on average heavier than females
-  weight = ifelse(sex == "male", runif(50, min = 300, max = 500), runif(50, min = 100, max = 300))
-)
-
-# Compute values for BMI as a function of weight with some random variation added
-# Assume a height of 1.75 meters for simplicity
-# BMI = weight(kg) / height(m)^2
-# Convert weight from pounds to kg (1 pound = 0.453592 kg)
-data$bmi &lt;- (data$weight * 0.453592) / (1.75^2) + rnorm(100)</code></pre>
-</div>
-<p>That looks better. However, when you try to run it, you’ll find that it doesn’t work. The problem is that it tries to use the variable <code>sex</code> before that data frame is defined. So we need to fix that code. We could of course do it by hand, but we can also see if we can get the AI to fix its own code. Which brings us to the next unit <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html">on using AI to fix code</a>.</p>
+<p>Of course, you can take this further and ask the AI to first write code that generates hypothetical/synthetic data that has the structure of your real data, and then ask it to write code that analyzes it.</p>
+</section>
+<section id="data-analysis-with-synthetic-data" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-with-synthetic-data">Data analysis with synthetic data</h2>
+<p>A good solution is to generate synthetic data that looks like your real data, then ask the AI to write code to analyze this synthetic data. Once the AI gives you working code, you can take it off-line and apply it to your real data.</p>
+<p>Since synthetic (artificial/fake/simulated) data is very useful for many parts of the data analysis workflow, having synthetic data generation as part of your project is in general a good idea.</p>
+</section>
+<section id="data-analysis-with-copy-and-paste" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-with-copy-and-paste">Data analysis with copy and paste</h2>
+<p>A common way to interact with AI tools is through the web browser. If you have fairly simple dataset, you can paste it directly into the prompt and ask the AI to perform some action. It’s a bit limited, but can work and is quick and easy.</p>
+</section>
+<section id="data-analysis-with-file-upload" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-with-file-upload">Data analysis with file upload</h2>
+<p>You can upload files to some AI tools and ask them to operate on them. Assuming all is good on the confidentiality side of things, you can use this approach to get AI-generated insights into your data.</p>
+<p>You basically upload the files, which can in addition to the data also contain other potentially relevant information. Note that not all data formats are supported by all AI tools. CSV files are generally a safe bet.</p>
+<p>You can then ask the AI to operate on the data. While you can ask it to analyze the data directly, I recommend asking it to write R code that performs the analysis. This way you can take the code, copy it to your computer, and run the code yourself later, and modify it if needed.</p>
+</section>
+<section id="ai-on-your-computer" class="level2">
+<h2 class="anchored" data-anchor-id="ai-on-your-computer">AI on your computer</h2>
+<p>Probably the best way to use AI tools to analyze data is to have the AI tools running on your own computer. This way you can have the AI operate directly on your local files, without having to upload them anywhere. This also allows the AI to see other parts of your project. The tools discussed in the <em>AI Tools</em> unit, especially those that tie in nicely with Positron, are great ways of doing this.</p>
+<p>The <a href="https://positron.posit.co/databot.html">DataBot extension</a> for Positron is one such tool that is specifically designed to perform AI based data analysis and certainly worth trying.</p>
+</section>
+<section id="best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices">Best practices</h2>
+<p>The same tips and best practices discussed in the AI Coding unit apply. As always, being specific in your prompt helps. For instance if you want the AI to perform very specific analyses, or use specific R packages, mention this in your prompt. Alternatively, you could tell it what you want, and ask it to recommend some analysis approaches or R packages to use and give you their advantages and disadvantages. As needed, you can ask for deeper explanations to make sure you fully understand any proposed approaches that might be new to you.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>LLM AI are very helpful at assisting with writing code. The more you know what you want, and the more specific you can be (which requires some level of subject matter expertise) the better your results. Rarely do you get exactly what you want on the first try, but iterating is easy and fast.</p>
-<p>The list of tips provided in an earlier unit for general LLM AI use also applies for using it as a coding helper. Here is a version of that list again:</p>
-<ul>
-<li><p>Be as detailed and specific as possible.</p></li>
-<li><p>Iterate. Either only AI based iterations or a mix of manual and AI iterations.</p></li>
-<li><p>Try different AI engines or settings or prompt phrasings.</p></li>
-<li><p>Ask the AI to add a lot of comments into the code to explain what each line of code does.</p></li>
-<li><p>Break down big tasks into smaller tasks, ask the AI to solve the smaller tasks, then put it together.</p></li>
-<li><p>Write down your prompts so you and others can go back to them later and see what you did.</p></li>
-</ul>
+<p>While it is important to keep confidentiality issues in mind, AI tools can be great helpers in analyzing data. Make sure that you always use AI to <strong>help you understand the data</strong>, not let it make decisions for you, no matter how good-looking and convincing the code and plots it creates 😁.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<p>See the <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html">AI resource unit</a>.</p>
+<ul>
+<li>None at this time.</li>
+</ul>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
 <h1>Test yourself</h1>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>What is the key advantage of detailed prompts when asking an AI to write code?</p>
-<div id="webex-6134cdb3d65cffbdcb7586ec1bd9f8ab" class="webex-radiogroup" data-answer="bQEfBU9UTgM5">
-<label><input type="radio" autocomplete="off" name="6134cdb3d65cffbdcb7586ec1bd9f8ab"><span>They reduce the need for any iteration</span></label><label><input type="radio" autocomplete="off" name="6134cdb3d65cffbdcb7586ec1bd9f8ab"><span>They make it more likely the output matches your intent</span></label><label><input type="radio" autocomplete="off" name="6134cdb3d65cffbdcb7586ec1bd9f8ab"><span>They eliminate the need to run code</span></label><label><input type="radio" autocomplete="off" name="6134cdb3d65cffbdcb7586ec1bd9f8ab"><span>They prevent the AI from using packages</span></label>
+<p>What is the recommended approach when using AI tools on confidential data?</p>
+<div id="webex-7a9e654b3b858fb164a904358af0fa5b" class="webex-radiogroup" data-answer="bFEVVBoFGFJu">
+<label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Upload the data to a public AI service to get faster results</span></label><label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Use AI only on synthetic or anonymized data, or avoid uploading sensitive data</span></label><label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Assume all AI providers delete data immediately</span></label><label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Share the data only after the analysis is complete</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Specific prompts guide the AI toward the desired output.</p>
+<p>The unit emphasizes avoiding exposure of confidential data by using synthetic/anonymized data or keeping data local.</p>
 <ul>
 <li>False</li>
 <li>True</li>
@@ -382,33 +321,33 @@ data$bmi &lt;- (data$weight * 0.453592) / (1.75^2) + rnorm(100)</code></pre>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>What is the recommended response when AI-generated code is not correct?</p>
-<div id="webex-779f8a995f5756edb69c4637b5657bb2" class="webex-radiogroup" data-answer="bAcVVxRRFQlo">
-<label><input type="radio" autocomplete="off" name="779f8a995f5756edb69c4637b5657bb2"><span>Stop and never use AI again</span></label><label><input type="radio" autocomplete="off" name="779f8a995f5756edb69c4637b5657bb2"><span>Iterate by refining the prompt or ask for fixes</span></label><label><input type="radio" autocomplete="off" name="779f8a995f5756edb69c4637b5657bb2"><span>Assume the code is correct anyway</span></label><label><input type="radio" autocomplete="off" name="779f8a995f5756edb69c4637b5657bb2"><span>Delete the entire project</span></label>
+<p>Why might you ask an AI tool to write analysis code instead of doing the analysis directly?</p>
+<div id="webex-81053f7ab6d291e4bc470b7eb6889e96" class="webex-radiogroup" data-answer="YwEcBR9XG1E/">
+<label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It avoids the need to run the code yourself</span></label><label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It ensures the AI output is always correct</span></label><label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It lets you run, review, and modify the analysis locally for reproducibility</span></label><label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It guarantees the AI will use the latest packages</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>The unit encourages iterative prompting or manual fixes.</p>
+<p>Having the AI generate code allows you to review, run, and adapt it locally.</p>
 <ul>
 <li>False</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
-<p>Why should you record the prompts you used?</p>
-<div id="webex-ba2f8501a408ed7423803437d44f9ec4" class="webex-radiogroup" data-answer="OVEeVxQFHAE8">
-<label><input type="radio" autocomplete="off" name="ba2f8501a408ed7423803437d44f9ec4"><span>To make the AI output deterministic</span></label><label><input type="radio" autocomplete="off" name="ba2f8501a408ed7423803437d44f9ec4"><span>To support reproducibility and documentation</span></label><label><input type="radio" autocomplete="off" name="ba2f8501a408ed7423803437d44f9ec4"><span>To prevent code execution</span></label><label><input type="radio" autocomplete="off" name="ba2f8501a408ed7423803437d44f9ec4"><span>To avoid running tests</span></label>
+<p>What is one benefit of using synthetic data with AI tools?</p>
+<div id="webex-48e6bd6109367997da625e2d5f4733de" class="webex-radiogroup" data-answer="bwlJBk5UGgFt">
+<label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It avoids confidentiality risks while still enabling code generation and testing</span></label><label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It guarantees the AI will infer the true structure of your real data</span></label><label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It removes the need for any data cleaning</span></label><label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It produces identical results to your real data without changes</span></label>
 </div>
 </div>
 <div class="webex-solution">
-<p>Keeping prompts supports transparency and reproducibility.</p>
+<p>Synthetic data lets you work safely while still getting useful code or analysis ideas.</p>
 <ul>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>False</li>
 <li>False</li>
 </ul>
@@ -419,9 +358,7 @@ data$bmi &lt;- (data$weight * 0.453592) / (1.75^2) + rnorm(100)</code></pre>
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Write a detailed prompt for a small analysis task and compare it with a vague version.</li>
-<li>Ask the AI to add comments to the code it generates and check whether they are accurate.</li>
-<li>Iterate on a prompt at least once and record both prompts for reproducibility.</li>
+<li>Try out the <a href="https://positron.posit.co/databot.html">DataBot extension</a> for Positron to analyze a dataset of your choice.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->
@@ -2006,13 +1943,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="pagination-link" aria-label="Currently available AI tools">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Currently available AI tools</span>
+      <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="pagination-link" aria-label="Using AI for coding">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Using AI for coding</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" class="pagination-link" aria-label="AI tools for fixing code">
-        <span class="nav-page-text">AI tools for fixing code</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" class="pagination-link" aria-label="Further AI resources">
+        <span class="nav-page-text">Further AI resources</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -165,8 +165,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">courses/fc4-intro-github/github-additional-topics/github-additinal-topics.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Topics</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="sidebar-item-text sidebar-link">
@@ -196,6 +199,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
+  <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
   <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
   </ul>
 </nav>
@@ -280,12 +284,12 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="how-to-use-gitgithub" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-gitgithub">How to use Git/GitHub</h2>
 <p>The most powerful and flexible way of using Git/GitHub is to open a command-line terminal and type commands. Since this can be intimidating, we will discuss a more user-friendly approach using the GitHub Desktop graphical interface.</p>
-<p>If you are already an experienced GitHub user and have your own preferred setup (e.g.&nbsp;the command line or some other third-party software), you can keep using your preferred approach We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup.</p>
+<p>If you are already an experienced GitHub user and have your own preferred setup (e.g.&nbsp;the command line or some other third-party software), you can keep using your preferred approach. We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup.</p>
 </section>
 <section id="gitgithub-and-other-cloud-based-sync-options" class="level2">
 <h2 class="anchored" data-anchor-id="gitgithub-and-other-cloud-based-sync-options">Git/GitHub and other cloud-based sync options</h2>
 <p>In some way, you can think of GitHub as a more controlled (and more complex) alternative to systems such as Dropbox, OneDrive, Google Drive, etc. With the GitHub workflow, you can work locally on different machines, and everything is backed up in the cloud (on github.com). The difference to Dropbox &amp; Co is that syncing between your local computer and github.com is not automatic. So do not forget to pull before you start work on a repository and push once you are done. (We’ll cover GitHub terminology and the meaning of <code>push</code> and <code>pull</code> shortly.)</p>
-<p>Because GitHub works similar to other sync services, it is generally a bad idea to locally store your GitHub repositories in a folder that is synced by another service. If you do, sync processes mighg conflict, potentially leading to a syncing mess. <strong>For any GitHub repository, store it locally in a folder that is not synced across your computers by another software (such as Dropbox, OneDrive, Box, etc.)</strong></p>
+<p>Because GitHub works similar to other sync services, it is generally a bad idea to locally store your GitHub repositories in a folder that is synced by another service. If you do, sync processes might conflict, potentially leading to a syncing mess. <strong>For any GitHub repository, store it locally in a folder that is not synced across your computers by another software (such as Dropbox, OneDrive, Box, etc.)</strong></p>
 <p>Similarly, do not store a GitHub repository inside another repository. While this is technically allowed, it can easily lead to a mess. Each repository should be separate and not connected to any other syncing service.</p>
 <div class="warning">
 <p><strong>Frustration note:</strong> Git/GitHub can be finicky, even for seasoned users. If that happens, do not panic. There’s pretty much always a way to fix things, even if worst case it means ‘starting over’ with a clean repository.</p>
@@ -295,7 +299,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>Git/GitHub are a software and service that allows you to keep track of your changes and sync them to the cloud. Together they provide a structured way to collaborate, back up projects, and maintain a history of your work.</p>
+<p>Git/GitHub are a software and service that allow you to keep track of your changes and sync them to the cloud. Together they provide a structured way to collaborate, back up projects, and maintain a history of your work.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
@@ -307,13 +311,60 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </ul>
 </section>
 <!-- end unit-resources div -->
-<!--
-::: {.unit-quiz}
-# Test yourself
-
-
-:::
--->
+<section id="test-yourself" class="level1 unit-quiz">
+<h1>Test yourself</h1>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the difference between Git and GitHub?</p>
+<div id="webex-651763a1f1a73a0b1f9a3396409272fa" class="webex-radiogroup" data-answer="bQUdBhoDTQE7">
+<label><input type="radio" autocomplete="off" name="651763a1f1a73a0b1f9a3396409272fa"><span>Git is an online hosting service, and GitHub is a local version control tool</span></label><label><input type="radio" autocomplete="off" name="651763a1f1a73a0b1f9a3396409272fa"><span>Git is a version control system, and GitHub is an online hosting platform for Git repositories</span></label><label><input type="radio" autocomplete="off" name="651763a1f1a73a0b1f9a3396409272fa"><span>Git is a text editor, and GitHub is a file syncing app</span></label><label><input type="radio" autocomplete="off" name="651763a1f1a73a0b1f9a3396409272fa"><span>Git is for website publishing only, and GitHub is for data storage only</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Git tracks changes locally, while GitHub hosts repositories online for sharing and collaboration.</p>
+<ul>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which project is the best fit for using GitHub?</p>
+<div id="webex-b72d20f74d2b73cc9c7a9127bf0d1263" class="webex-radiogroup" data-answer="OQceVB4BSgdp">
+<label><input type="radio" autocomplete="off" name="b72d20f74d2b73cc9c7a9127bf0d1263"><span>A single large video file edited by one person</span></label><label><input type="radio" autocomplete="off" name="b72d20f74d2b73cc9c7a9127bf0d1263"><span>A shared Word document edited at the same time by many people</span></label><label><input type="radio" autocomplete="off" name="b72d20f74d2b73cc9c7a9127bf0d1263"><span>A project with many small text files where collaborators work on different parts</span></label><label><input type="radio" autocomplete="off" name="b72d20f74d2b73cc9c7a9127bf0d1263"><span>A folder of scanned PDFs that need to be edited in place</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>GitHub works best for many small text files and collaboration across different parts of a project.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+<li>False</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the recommended approach for large files in GitHub repositories?</p>
+<div id="webex-fc38c77f8ae153e0bb40bf0682e3edac" class="webex-radiogroup" data-answer="PVMfCE8HG1dl">
+<label><input type="radio" autocomplete="off" name="fc38c77f8ae153e0bb40bf0682e3edac"><span>Keep all large files in the repository so the full history is preserved</span></label><label><input type="radio" autocomplete="off" name="fc38c77f8ae153e0bb40bf0682e3edac"><span>Zip large files and commit them regularly</span></label><label><input type="radio" autocomplete="off" name="fc38c77f8ae153e0bb40bf0682e3edac"><span>Push files larger than 100 MB and let GitHub handle them</span></label><label><input type="radio" autocomplete="off" name="fc38c77f8ae153e0bb40bf0682e3edac"><span>Keep large files out of the repository and store them elsewhere</span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>Large files slow down or break GitHub workflows, so keep them out of the repository and use other storage.</p>
+<ul>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+<li>True</li>
+</ul>
+</div>
+</div>
+</section>
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>

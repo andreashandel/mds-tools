@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../courses/fc4-intro-github/github-resources/github-resources.html" rel="next">
+<link href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -79,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../assets/exams2forms-webex.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -106,10 +108,75 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html">Additional Topics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/intro-github-toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOC: A brief introduction to Git and GitHub</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-introduction/github-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Git/GitHub</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-install-setup/github-install-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installation and Setup</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Basic Use</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-positron/github-positron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub in Positron</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branches, Forks and Pull Requests</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Additional Topics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Further Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -139,6 +206,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#prevent-large-intermediate-files" id="toc-prevent-large-intermediate-files" class="nav-link" data-scroll-target="#prevent-large-intermediate-files">Prevent large intermediate files</a></li>
   <li><a href="#keeping-files-local-1" id="toc-keeping-files-local-1" class="nav-link" data-scroll-target="#keeping-files-local-1">Keeping files local</a></li>
   </ul></li>
+  <li><a href="#starting-over" id="toc-starting-over" class="nav-link" data-scroll-target="#starting-over">Starting over</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -198,8 +266,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <p>The sections below cover a few additional topics that are relevant when working with Git and GitHub in the context of modeling and data science work.</p>
 <section id="merge-conflicts" class="level2">
 <h2 class="anchored" data-anchor-id="merge-conflicts">Merge conflicts</h2>
-<p>Sooner or later, as you work with GitHub, you will encounter a dreaded merge conflict. This happens if the same file has been changed by multiple individuals - or yourself on multiple computers if you forgot to properly do your push/pull before and after each work session. A merge conflict happens when Git cannot automatically figure out how to combine the changes made in the different versions of a file. When this happens, Git will mark the file as having a conflict and will not allow you to push your changes until the conflict is resolved.</p>
-<p>There are a few ways of dealing with merge conflicts.</p>
+<p>Sooner or later, as you work with GitHub, you will encounter a dreaded merge conflict. This happens if the same file has been changed by multiple individuals - or yourself on multiple computers if you forgot to properly do your push/pull before and after each work session. A merge conflict happens when Git cannot automatically figure out how to combine the changes made in the different versions of a file. When this happens, Git will mark the file as having a conflict and will not allow you to push/pull/merge your changes until the conflict is resolved.</p>
+<p>In general, to minimize conflicts, it is good to regularly create issues and push/pull. You should definitely do that any time you stop working on a project. But sometimes doing updates in-between is also good. It is better to change a few files and work on just one topic, then commit and push. After that, start the next topic.</p>
+<p>This is also true if you work with someone else and send them your updates as pull requests. By breaking them up into smaller units, it is more likely that conflicts are avoided or localized.</p>
+<p>If you do end up with merge conflicts – we have all been there – here are a few ways of dealing with them.</p>
 <section id="force-push" class="level3">
 <h3 class="anchored" data-anchor-id="force-push">Force push</h3>
 <p>If you are sure your local version is the correct one, you can perform a <strong>force push</strong>. A force push will overwrite the remote repo with the local repo forcibly. This means that the remote will be updated with any changes that exist on your local computer. If any changes have been made to the code since you began editing (i.e.&nbsp;someone else has made a commit to the repo while you were working on it) they will be <strong>destroyed</strong> by the force push since they are not on your local repo. Use with care.</p>
@@ -211,7 +281,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="manually-resolving-the-conflict" class="level3">
 <h3 class="anchored" data-anchor-id="manually-resolving-the-conflict">Manually resolving the conflict</h3>
-<p>To resolve a merge conflict, you need to manually edit the conflicting file(s) to decide which changes to keep. Git will mark the conflicting sections in the file with special markers.</p>
+<p>If you want to keep updates from both your local and the remote repository, you have to resolve the merge conflict.</p>
+<p>GitHub Desktop and Positron provide tools to help you resolve conflicts, they basically show you the two versions of the document and you can decide which parts you want. This works well for text files (code, Rmd, md, etc.). However, it doesn’t work well for other files (Word, Excel, images, <code>Rds</code> files, etc.).</p>
 </section>
 </section>
 <section id="confidentiality" class="level2">
@@ -235,13 +306,14 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <p>An important drawback of this approach is that if you work on multiple machines, or work with collaborators, everyone needs to make sure to have the same sensitive files outside of the repository on their local machines. This can be a logistical challenge.</p>
 <p>A possible workaround is to place these files into another Sync service, such as Dropbox, OneDrive, or Google Drive that you consider to be safe. You can then load the files from there when running your code. This way, the sensitive files are not in the Git repository, but you can still share them with collaborators via the Sync service. (This approach also works well for large files that you can’t sync with Git/GitHub.)</p>
 <div class="warning">
-<p>Remember that Git tracks the full project history. So if at any time you added a file with sensitive information, even if you delete it later, it’s still in the history and can be found. If that happens, you basically need to completely delete the GitHub repository (after copying all important files to a safe location) and starting over with a new repository, taking care to keep sensitive files out of this new repor.</p>
+<p>Remember that Git tracks the full project history. So if at any time you added a file with sensitive information, even if you delete it later, it’s still in the history and can be found. If that happens, you basically need to completely delete the GitHub repository (after copying all important files to a safe location) and starting over with a new repository, taking care to keep sensitive files out of this new repo.</p>
 </div>
 </section>
 </section>
 <section id="large-files" class="level2">
 <h2 class="anchored" data-anchor-id="large-files">Large files</h2>
-<p>GitHub is not good at handling large files. If you try to push a file larger than 100 MB, GitHub will reject the push. Even files smaller than that can cause performance issues if they are large (e.g., several tens of MBs). If you need to work with large files, there are a few options.</p>
+<p>GitHub is not suited for tracking large files. If you try to push/pull files larger than say 50MB, things might not work right, and will definitely fail at files &gt;100MB. Therefore, <strong>don’t try to track large files with GitHub!</strong> Large files are a major reason newbies have problems with their GitHub repository!</p>
+<p>If you need to work with large files, there are a few options.</p>
 <section id="git-lfs" class="level3">
 <h3 class="anchored" data-anchor-id="git-lfs">Git LFS</h3>
 <p>One option is to use <strong>Git LFS (Large File Storage)</strong>. Git LFS is an extension to Git that allows you to track large files without bloating your repository. Instead of storing the actual file in the repository, Git LFS stores a pointer file that references the large file stored elsewhere. When you clone the repository, Git LFS automatically downloads the large files for you.</p>
@@ -249,7 +321,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="reduce-files" class="level3">
 <h3 class="anchored" data-anchor-id="reduce-files">Reduce files</h3>
-<p>If you have large raw data files but won’t need all of the content for your project, try to reduce their size before putting them into the GitHub repository. You basically perform some cleaning and processing outside the repo, with the aim of getting the data you need for our project into a smaller size. Then copy that reduced dataset into your repo and use it as a starting point.</p>
+<p>If you have large raw data files but won’t need all of the content for your project, try to reduce their size before putting them into the GitHub repository. You basically perform some cleaning and processing outside the repo, with the aim of getting the data you need for our project into a smaller size. Then copy that reduced dataset into your repo and use it as a starting point. You might also want to change the format of the data to something that is compressed/optimized. For instance if you have raw data in <code>CSV</code> format, you can remove parts you don’t need for your project and save the rest as an <code>Rds</code> or other compressed format. That file might be small enough to be tracked by GitHub.</p>
 </section>
 <section id="prevent-large-intermediate-files" class="level3">
 <h3 class="anchored" data-anchor-id="prevent-large-intermediate-files">Prevent large intermediate files</h3>
@@ -258,7 +330,18 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="keeping-files-local-1" class="level3">
 <h3 class="anchored" data-anchor-id="keeping-files-local-1">Keeping files local</h3>
 <p>You can also follow the steps outlined above in the <code>Confidentiality</code> section to keep some files out of the GitHub workflow.</p>
+<p>For instance, you can place large files into a special folder in your GitHub repository (e.g.&nbsp;one called <code>largefiles</code>) and then add an entry to the <code>.gitignore</code> file to tell GitHub to ignore this folder. The problem is of course the same as mentioned above: if someone else wants to work on your project, they won’t automatically have those large files. If the files are generated by your code (e.g., they are the result of running a simulation), they can just re-run your code and get themselves a local copy of these files. If that’s not possible, either because the files are input (such as data) or it takes too long to re-run the code, you will have to manually share these files/folder with them.</p>
 </section>
+</section>
+<section id="starting-over" class="level2">
+<h2 class="anchored" data-anchor-id="starting-over">Starting over</h2>
+<p>Sometimes, you might have gotten yourself into a deep GitHub mess. For instance you just can’t properly resolve your merge conflicts. Or you tried to track large files, even though you were told not to do so. Or you accidentally placed a confidential file into a public repo and pushed it online.</p>
+<p>Fear not, there is always an option to start over. Here is how you can do that.</p>
+<p>First, move the local main repo folder and its contents to a safe location on your computer, and maybe rename it to be safe, e.g.&nbsp;call it <code>myrepo-local-old</code>. Then re-clone the repo from GitHub.com to your local computer and also move it to a safe location, again maybe renaming it to <code>myrepo-remote-old</code>. You now have local copies of all content in a safe location.</p>
+<p>Next, delete the entire repository both locally and on GitHub.com. To do that on GitHub.com, go to your repo, then go to <code>Settings</code> (the gear icon), scroll all the way down to the bottom, and find the <code>Delete this repository</code> button in the <code>Danger Zone</code> section. Click on it and follow the instructions.</p>
+<p>Now, recreate an empty repository on GitHub.com. You probably want to give it the same name as before, but don’t have to. Clone this new empty repository to your local computer. Then copy all the files you want to keep into this new local repository folder. Make sure to <strong>not</strong> copy over any files that caused problems before (e.g., large files, confidential files, etc.). Also make sure you have the right <code>.gitignore</code> file. You can also do this in bits and pieces, committing and pushing as you go along, to make sure everything works.</p>
+<p>Finally, once everything is in your new repo on your local machine, and everything runs/works/renders, push the new local repository to GitHub.com.</p>
+<p>If everything works, you can now delete the old copies you saved on your computer. You might decide to keep them around for a while, since by creating a new repo you lost the history, so you can’t go back to prior versions in the new repo.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
@@ -279,8 +362,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does a force push do?</p>
-<div id="webex-4bb6e5468bbed490ae485a5dc1715608" class="webex-radiogroup" data-answer="b1JOB0kFGAZl">
-<label><input type="radio" autocomplete="off" name="4bb6e5468bbed490ae485a5dc1715608"><span>Adds a new collaborator to the repository</span></label><label><input type="radio" autocomplete="off" name="4bb6e5468bbed490ae485a5dc1715608"><span>Overwrites the remote repository with your local version</span></label><label><input type="radio" autocomplete="off" name="4bb6e5468bbed490ae485a5dc1715608"><span>Creates a new branch for you automatically</span></label><label><input type="radio" autocomplete="off" name="4bb6e5468bbed490ae485a5dc1715608"><span>Fixes merge conflicts without changes</span></label>
+<div id="webex-1593a49a64c157550fd08a37ed94f8d9" class="webex-radiogroup" data-answer="agUVAk0EFVFr">
+<label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Adds a new collaborator to the repository</span></label><label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Overwrites the remote repository with your local version</span></label><label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Creates a new branch for you automatically</span></label><label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Fixes merge conflicts without changes</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -296,8 +379,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you keep sensitive files out of a GitHub repository?</p>
-<div id="webex-9f7c50ee339721d4b9d575dfafe3c286" class="webex-radiogroup" data-answer="YlYbUxkBSVVu">
-<label><input type="radio" autocomplete="off" name="9f7c50ee339721d4b9d575dfafe3c286"><span>Store them in the docs folder</span></label><label><input type="radio" autocomplete="off" name="9f7c50ee339721d4b9d575dfafe3c286"><span>Rename the files to start with a dot</span></label><label><input type="radio" autocomplete="off" name="9f7c50ee339721d4b9d575dfafe3c286"><span>Keep them outside the repo and add patterns to .gitignore</span></label><label><input type="radio" autocomplete="off" name="9f7c50ee339721d4b9d575dfafe3c286"><span>Push them once, then delete them</span></label>
+<div id="webex-08f281f440b3c2f9cd401fb16fc86630" class="webex-radiogroup" data-answer="awhKAhQASgRp">
+<label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Store them in the docs folder</span></label><label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Rename the files to start with a dot</span></label><label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Keep them outside the repo and add patterns to .gitignore</span></label><label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Push them once, then delete them</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -313,8 +396,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is a key risk if you ever commit sensitive data to a public repository?</p>
-<div id="webex-9e03ea0b4fcfcadfd713b8bf47135605" class="webex-radiogroup" data-answer="YlUcA0lRHFNp">
-<label><input type="radio" autocomplete="off" name="9e03ea0b4fcfcadfd713b8bf47135605"><span>Git automatically anonymizes sensitive fields</span></label><label><input type="radio" autocomplete="off" name="9e03ea0b4fcfcadfd713b8bf47135605"><span>Deleting the file removes it from the full history</span></label><label><input type="radio" autocomplete="off" name="9e03ea0b4fcfcadfd713b8bf47135605"><span>The file becomes private after 24 hours</span></label><label><input type="radio" autocomplete="off" name="9e03ea0b4fcfcadfd713b8bf47135605"><span>The data remains in history unless you start over with a new repo</span></label>
+<div id="webex-505d500a1de1aae0aa5c042cf3747896" class="webex-radiogroup" data-answer="bgAZVBkAHFBs">
+<label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>Git automatically anonymizes sensitive fields</span></label><label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>Deleting the file removes it from the full history</span></label><label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>The file becomes private after 24 hours</span></label><label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>The data remains in history unless you start over with a new repo</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -331,6 +414,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
+<ul>
+<li></li>
+</ul>
 </section>
 <!-- end unit-exercise div -->
 
@@ -1912,6 +1998,18 @@ window.onload = function() {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" class="pagination-link" aria-label="Branches, Forks and Pull Requests">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Branches, Forks and Pull Requests</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="pagination-link" aria-label="Further Resources">
+        <span class="nav-page-text">Further Resources</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

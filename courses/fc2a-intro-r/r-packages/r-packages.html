@@ -204,6 +204,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc2a-intro-r/r-coding-tips/r-coding-tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Coding Tips</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../courses/fc2a-intro-r/r-further-resources/r-further-resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Further R Resources</span></a>
   </div>
@@ -220,6 +226,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
+  <ul class="collapse">
+  <li><a href="#overview-1" id="toc-overview-1" class="nav-link" data-scroll-target="#overview-1">Overview</a></li>
+  <li><a href="#installing-and-loading-r-packages" id="toc-installing-and-loading-r-packages" class="nav-link" data-scroll-target="#installing-and-loading-r-packages">Installing and loading R packages</a></li>
+  <li><a href="#note-about-r-packages" id="toc-note-about-r-packages" class="nav-link" data-scroll-target="#note-about-r-packages">Note about R packages</a></li>
+  </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
@@ -256,6 +268,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
+<ul>
+<li>Understand what R packages are</li>
+<li>Install R packages from CRAN</li>
+<li>Load R packages for use in an R session</li>
+</ul>
 </section>
 <!-- end unit-goals div -->
 <!--
@@ -269,8 +286,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 :::
 -->
 <!-- end unit-video div -->
-<div class="unit-reading">
-<section id="reading" class="level1">
+<section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="overview-1" class="level2">
 <h2 class="anchored" data-anchor-id="overview-1">Overview</h2>
@@ -288,8 +304,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <p>This installs a package that gives you access to various infectious disease within-host simulation/QSP models. We won’t do anything with that package, we just installed it for practice. If you want to learn more, take a look at the <a href="https://ahgroup.github.io/DSAIRM/">package website</a>.</p>
 <p>If this is the first time you are installing packages, you’ll see that a lot of other packages are installed, too. You might get a message about <em>Installing from source packages that need compilation</em>. You should generally say <strong>No</strong> to this. If you are on a Windows computer, compilation requires you to have <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools installed</a>. It’s not a bad idea to install Rtools (if you do, make sure you pick the version that matches your <code>R</code> version.) But even then, or if you use a Mac or Linux (which have the equivalent of Rtools already pre-installed) sometimes the compilation doesn’t work. So if you have a choice, say <strong>No</strong>. (On some Mac/Linux setups, things happen automatically, then just let it run.)</p>
 <p>To see which packages are needed by a specific package, e.g.&nbsp;<code>DSAIRM</code>, and thus are being installed if not present, type <code>tools::package_dependencies("DSAIRM")</code> into the R console. Of course it can be that those packages depend on other packages, so you end up installing even more. At some point, you’ll have the most common packages all installed and installing new packages will lead to less overall installing. The package install process generally works well.</p>
-<p>It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it’s good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the <code>remotes</code> package and then use the <code>install_github</code> function. You don’t need to do that now, but will be asked to do it in the exercise.</p>
-<p>You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the <code>library()</code> command (an alternative is <code>require()</code> but <code>library()</code> is recommend ). For instance to load the package you just installed, type</p>
+<p>It is very common these days for packages to be developed on GitHub. It is possible to install packages from GitHub directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on GitHub until the developer(s) feel it’s good enough for CRAN submission. So installing from GitHub gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from GitHub, you need to install the <code>remotes</code> package and then use the <code>install_github</code> function. You don’t need to do that now, but will be asked to do it in the exercise.</p>
+<p>You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the <code>library()</code> command (an alternative is <code>require()</code> but <code>library()</code> is recommended). For instance to load the package you just installed, type</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'DSAIRM'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -300,13 +316,12 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <p>Hopefully, a menu should open either inside Positron or an external browser. If the former happens, you can open it in your browser by clicking the pop-out symbol in the upper right corner that says “Open the current URL in the default browser”. You can use this R package to explore different infectious disease models/apps. Explore for as long or as short as you like, then exit the app. You will have to go back to the R console to see a goodbye message from the package.</p>
 <p>And this concludes our very quick introduction to R packages. You’ll use a lot of them, so you’ll get used to them rather quickly.</p>
 </section>
-</section>
-<section id="note-about-r-packages" class="level1">
-<h1>Note about R packages</h1>
-<p>The quality of R packages varies. In general, if they are on <code>CRAN</code> or <code>bioconductor</code>, they passed some quality checks. That does however not mean that the functions do the right thing, just that they run. Other packages might be more experimental, and while they might work well, there might also be bugs. In general, packages that are used by many people, packages that involve people who work at R-centric companies (e.g., Posit), and packages that have many developers/contributors and are actively maintained are good signs that it’s a stable and reliable package. That said, there are many packages that are developed by a single person and are only available from GitHub, and they are still very good packages. Ideally, for a new package, test it and see if it does things stably and correctly. If yes, you can start using it. Just always carefully inspect the results you get to make sure things are reliable.</p>
+<section id="note-about-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="note-about-r-packages">Note about R packages</h2>
+<p>The quality of R packages varies. In general, if they are on <code>CRAN</code> or <code>Bioconductor</code>, they passed some quality checks. That does however not mean that the functions do the right thing, just that they run. Other packages might be more experimental, and while they might work well, there might also be bugs. In general, packages that are used by many people, packages that involve people who work at R-centric companies (e.g., Posit), and packages that have many developers/contributors and are actively maintained are good signs that it’s a stable and reliable package. That said, there are many packages that are developed by a single person and are only available from GitHub, and they are still very good packages. Ideally, for a new package, test it and see if it does things stably and correctly. If yes, you can start using it. Just always carefully inspect the results you get to make sure things are reliable.</p>
 <p>Depending on your work setting, it is also quite possible that your organization has rules about R packages. You need to of course follow those. In general, to enhance long-term reproducibility, using fewer packages and focusing on those that are well-developed, well-maintained, mature and broadly used is a good strategy.</p>
 </section>
-</div>
+</section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
@@ -316,7 +331,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li>If you are interested in packages on a specific topic, the <a href="http://cran.r-project.org/web/views/">CRAN task views</a> provide curated descriptions of packages sorted by topic.</li>
+<li>If you are interested in packages on a specific topic, the <a href="https://cran.r-project.org/web/views/">CRAN task views</a> provide curated descriptions of packages sorted by topic.</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
@@ -325,8 +340,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does <code>install.packages("dplyr")</code> do?</p>
-<div id="webex-b5601e4b537fc7fbe2a53f8e452016c4" class="webex-radiogroup" data-answer="OQUaAR1VGFJo">
-<label><input type="radio" autocomplete="off" name="b5601e4b537fc7fbe2a53f8e452016c4"><span>Loads <code>dplyr</code> into your current R session</span></label><label><input type="radio" autocomplete="off" name="b5601e4b537fc7fbe2a53f8e452016c4"><span>Downloads and installs <code>dplyr</code> so it can be used later</span></label><label><input type="radio" autocomplete="off" name="b5601e4b537fc7fbe2a53f8e452016c4"><span>Updates R itself to the latest version</span></label><label><input type="radio" autocomplete="off" name="b5601e4b537fc7fbe2a53f8e452016c4"><span>Removes all other packages from your library</span></label>
+<div id="webex-d79a7dfa0ea01202e323276665bcc830" class="webex-radiogroup" data-answer="PwcVUBtUSlFt">
+<label><input type="radio" autocomplete="off" name="d79a7dfa0ea01202e323276665bcc830"><span>Loads <code>dplyr</code> into your current R session</span></label><label><input type="radio" autocomplete="off" name="d79a7dfa0ea01202e323276665bcc830"><span>Downloads and installs <code>dplyr</code> so it can be used later</span></label><label><input type="radio" autocomplete="off" name="d79a7dfa0ea01202e323276665bcc830"><span>Updates R itself to the latest version</span></label><label><input type="radio" autocomplete="off" name="d79a7dfa0ea01202e323276665bcc830"><span>Removes all other packages from your library</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -342,8 +357,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How should you think about package quality on CRAN or Bioconductor?</p>
-<div id="webex-9f301d7369f99cd6b58ac6e4ce99afec" class="webex-radiogroup" data-answer="YlYfAR1UGwNr">
-<label><input type="radio" autocomplete="off" name="9f301d7369f99cd6b58ac6e4ce99afec"><span>They are guaranteed bug-free because they passed checks</span></label><label><input type="radio" autocomplete="off" name="9f301d7369f99cd6b58ac6e4ce99afec"><span>They have passed basic checks, but you still need to judge fit and reliability</span></label><label><input type="radio" autocomplete="off" name="9f301d7369f99cd6b58ac6e4ce99afec"><span>They are always less stable than GitHub-only packages</span></label><label><input type="radio" autocomplete="off" name="9f301d7369f99cd6b58ac6e4ce99afec"><span>They cannot be used for data analysis</span></label>
+<div id="webex-f9c4c8b55c8f645818829fd70871d833" class="webex-radiogroup" data-answer="PQlPBU8ITgVo">
+<label><input type="radio" autocomplete="off" name="f9c4c8b55c8f645818829fd70871d833"><span>They are guaranteed bug-free because they passed checks</span></label><label><input type="radio" autocomplete="off" name="f9c4c8b55c8f645818829fd70871d833"><span>They have passed basic checks, but you still need to judge fit and reliability</span></label><label><input type="radio" autocomplete="off" name="f9c4c8b55c8f645818829fd70871d833"><span>They are always less stable than GitHub-only packages</span></label><label><input type="radio" autocomplete="off" name="f9c4c8b55c8f645818829fd70871d833"><span>They cannot be used for data analysis</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -359,8 +374,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which statement about using packages is correct?</p>
-<div id="webex-2568a97f7035f6d3cbcb1a9e4b0faef1" class="webex-radiogroup" data-answer="aQQaCE0JG1Zq">
-<label><input type="radio" autocomplete="off" name="2568a97f7035f6d3cbcb1a9e4b0faef1"><span>After installing a package, you must still call <code>library(packageName)</code> to use it in a session</span></label><label><input type="radio" autocomplete="off" name="2568a97f7035f6d3cbcb1a9e4b0faef1"><span>Running <code>library(packageName)</code> will automatically install missing packages</span></label><label><input type="radio" autocomplete="off" name="2568a97f7035f6d3cbcb1a9e4b0faef1"><span>Packages from GitHub are always higher quality than those on CRAN</span></label><label><input type="radio" autocomplete="off" name="2568a97f7035f6d3cbcb1a9e4b0faef1"><span>You should always install every dependency manually, even if R offers to handle them</span></label>
+<div id="webex-2229284e4bbcb2777a6959107ae004b7" class="webex-radiogroup" data-answer="aQMeCR4IGFVp">
+<label><input type="radio" autocomplete="off" name="2229284e4bbcb2777a6959107ae004b7"><span>After installing a package, you must still call <code>library(packageName)</code> to use it in a session</span></label><label><input type="radio" autocomplete="off" name="2229284e4bbcb2777a6959107ae004b7"><span>Running <code>library(packageName)</code> will automatically install missing packages</span></label><label><input type="radio" autocomplete="off" name="2229284e4bbcb2777a6959107ae004b7"><span>Packages from GitHub are always higher quality than those on CRAN</span></label><label><input type="radio" autocomplete="off" name="2229284e4bbcb2777a6959107ae004b7"><span>You should always install every dependency manually, even if R offers to handle them</span></label>
 </div>
 </div>
 <div class="webex-solution">

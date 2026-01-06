@@ -167,12 +167,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#quick-initial-check" id="toc-quick-initial-check" class="nav-link" data-scroll-target="#quick-initial-check">Quick initial check</a></li>
   <li><a href="#quarto-content-creation" id="toc-quarto-content-creation" class="nav-link" data-scroll-target="#quarto-content-creation">Quarto content creation</a></li>
   <li><a href="#website-configuration" id="toc-website-configuration" class="nav-link" data-scroll-target="#website-configuration">Website configuration</a></li>
-  <li><a href="#sending-updates-to-github" id="toc-sending-updates-to-github" class="nav-link" data-scroll-target="#sending-updates-to-github">Sending updates to Github</a></li>
+  <li><a href="#sending-updates-to-github" id="toc-sending-updates-to-github" class="nav-link" data-scroll-target="#sending-updates-to-github">Sending updates to GitHub</a></li>
   <li><a href="#making-the-website-public" id="toc-making-the-website-public" class="nav-link" data-scroll-target="#making-the-website-public">Making the website public</a></li>
-  <li><a href="#update-your-repository-readme-file" id="toc-update-your-repository-readme-file" class="nav-link" data-scroll-target="#update-your-repository-readme-file">Update your repository Readme file</a></li>
+  <li><a href="#update-your-repository-readme-file" id="toc-update-your-repository-readme-file" class="nav-link" data-scroll-target="#update-your-repository-readme-file">Update your repository README file</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
+  <li><a href="#test-yourself" id="toc-test-yourself" class="nav-link" data-scroll-target="#test-yourself">Test yourself</a></li>
   <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
   </ul>
 </nav>
@@ -250,10 +251,10 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <li>Talk a bit about yourself, your background, training, research interests. Let us know what kind of statistics, modeling, programming, data analysis experience you already have. I’d also be curious to know what you most hope to learn in this course. And then tell us some quirky/interesting/curious thing about you.</li>
 <li>Include a picture of yourself. To do so, place the picture in the repository and link it from the Quarto file.</li>
 <li>Include a link to a picture/video/website/etc. The linked material should be somehow related to data analysis. Find something that you think is really cool/interesting/weird/etc. Provide a few explanatory sentences.</li>
-<li>If you want, feel free to get creative and include other things, e.g., you can try to include a table or a video or any other elments you want to explore.</li>
+<li>If you want, feel free to get creative and include other things, e.g., you can try to include a table or a video or any other elements you want to explore.</li>
 </ul>
-<p>Give your text a nice structure with headings, subheadings, etc. Use any other graphical elements (e.g.&nbsp;bold or intalics or color or…) that you like to make the page look nice.</p>
-<p>Once done (or as you go along, if you want to see your udpates), save and re-render the site to see your changes.</p>
+<p>Give your text a nice structure with headings, subheadings, etc. Use any other graphical elements (e.g.&nbsp;bold or italics or color or…) that you like to make the page look nice.</p>
+<p>Once done (or as you go along, if you want to see your updates), save and re-render the site to see your changes.</p>
 <div class="warning">
 <p>This portfolio website and everything you put on it is public. So don’t put anything on there that you don’t want to be publicly known.</p>
 </div>
@@ -265,7 +266,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <p>Make the following changes:</p>
 <ul>
 <li><p>Update the title of your website.</p></li>
-<li><p>Replace the <code>URL-TO-THIS-REPOSITORY-HERE</code> placeholder text with the Github URL of the repository you created (it should be something like <code>https://github.com/githubusername/FirstnameLastname-portfolio</code>).</p></li>
+<li><p>Replace the <code>URL-TO-THIS-REPOSITORY-HERE</code> placeholder text with the GitHub URL of the repository you created (it should be something like <code>https://github.com/githubusername/FirstnameLastname-portfolio</code>).</p></li>
 <li><p>It is possible to change the look of your website. Full styling requires some knowledge of CSS/HTML. We won’t get into this. But we’ll explore a quick way to change the look. Replace <code>theme</code> with a different one. <a href="https://quarto.org/docs/output-formats/html-themes.html">Many themes are available</a>. Try some, see how things change. You can also change the highlight scheme. For further styling, you can put custom CSS code into the <code>styles.css</code> file. We won’t do this here, but feel free to explore on your own. There are lots of examples available online that you can use as a starting point.</p></li>
 </ul>
 <div class="warning">
@@ -273,24 +274,24 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </div>
 </section>
 <section id="sending-updates-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="sending-updates-to-github">Sending updates to Github</h2>
+<h2 class="anchored" data-anchor-id="sending-updates-to-github">Sending updates to GitHub</h2>
 <p>Once you are happy with your updates, or if you want to take a break, make sure to commit and push your updates to your remote repository on GitHub.com.</p>
 </section>
 <section id="making-the-website-public" class="level2">
 <h2 class="anchored" data-anchor-id="making-the-website-public">Making the website public</h2>
 <p>So far, we just have a GitHub repository on your computer and on GitHub.com that contains the files for your website. When you render the website locally, it is created by Quarto and placed into the <code>docs</code> folder. This is what you see when you do the preview in the Viewer window or the browser.</p>
-<p>But the website itself is not yet publicly hosted. This is where GitHub has a very convenient feature that makes this very easy. It allows you to turn your repository into a public website with its <strong>Github Pages</strong> feature. To turn on the Github Pages, go to your repository on github.com. On the top of the website for your repository, you should see a <code>Settings</code> button. Click on it and then on the left menu, find the <code>Pages</code> section. In the <code>Branch</code> section, switch <code>none</code> to <code>main</code> and folder as <code>/docs</code>. Click <code>Save</code>.</p>
+<p>But the website itself is not yet publicly hosted. This is where GitHub has a very convenient feature that makes this very easy. It allows you to turn your repository into a public website with its <strong>GitHub Pages</strong> feature. To turn on GitHub Pages, go to your repository on github.com. At the top of the website for your repository, you should see a <code>Settings</code> button. Click on it and then on the left menu, find the <code>Pages</code> section. In the <code>Branch</code> section, switch <code>none</code> to <code>main</code> and folder as <code>/docs</code>. Click <code>Save</code>.</p>
 <p>This should now have turned on your website. GitHub is now taking everything inside the <code>docs</code> folder, which was created by Quarto when you rendered the website, and is now hosting it as a public website.</p>
-<p>To see your public website, go to its URL, which has the form <code>https://username.github.io/FirstnameLastname-portfolio/</code>. It might take a several seconds before the page is available, if you get a ‘not found’ error, wait a bit and try again. If everything works, your website is now public!</p>
-<p>You might have noticed that all the files that contain the content of your new website live on the domain <code>github.com</code>, while your shiny new website lives at the domain <code>github.io</code>. This is how Github Pages work. It take files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder ( <code>/docs</code> for our setup). Your website URL and your repository URL are distinct. All github actions, like pushing, pulling, cloning, etc. are done with <strong>the repository</strong> on the <code>github.com</code> domain. The <code>github.io</code> domain is only there to display websites.</p>
+<p>To see your public website, go to its URL, which has the form <code>https://username.github.io/FirstnameLastname-portfolio/</code>. It might take several seconds before the page is available, if you get a ‘not found’ error, wait a bit and try again. If everything works, your website is now public!</p>
+<p>You might have noticed that all the files that contain the content of your new website live on the domain <code>github.com</code>, while your shiny new website lives at the domain <code>github.io</code>. This is how GitHub Pages work. It takes files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder (<code>/docs</code> for our setup). Your website URL and your repository URL are distinct. All GitHub actions, like pushing, pulling, cloning, etc. are done with <strong>the repository</strong> on the <code>github.com</code> domain. The <code>github.io</code> domain is only there to display websites.</p>
 </section>
 <section id="update-your-repository-readme-file" class="level2">
-<h2 class="anchored" data-anchor-id="update-your-repository-readme-file">Update your repository Readme file</h2>
-<p>To allow quick switching between your repository and the website created from that repository, we’ll add that information to the repository README file. Open the README.md file. This file does not show on your website, but it is what people see if they land at your github repository (i.e.&nbsp;if they visit <code>https://github.com/githubusername/FirstnameLastname-portfolio</code>). Add text and a link to the README that points users to the URL for your new website. Something like this:</p>
+<h2 class="anchored" data-anchor-id="update-your-repository-readme-file">Update your repository README file</h2>
+<p>To allow quick switching between your repository and the website created from that repository, we’ll add that information to the repository README file. Open the README.md file. This file does not show on your website, but it is what people see if they land at your GitHub repository (i.e.&nbsp;if they visit <code>https://github.com/githubusername/FirstnameLastname-portfolio</code>). Add text and a link to the README that points users to the URL for your new website. Something like this:</p>
 <pre class="verbatim"><code>[Here is the link to the website for this repository](https://username.github.io/FirstnameLastname-portfolio/)</code></pre>
-<p>You’ve done the reverse above in your Quarto YAML file. This now allows users to quickly go from your Github repository to your website and the reverse.</p>
+<p>You’ve done the reverse above in your Quarto YAML file. This now allows users to quickly go from your GitHub repository to your website and the reverse.</p>
 <p>Make any other edits to the README you like. Once done with edits, remember to commit and push.</p>
-<p>Visit your GitHub repository page to see your updated README file and test that the link works. Also check that the link in the top right corner of your webiste (the GitHub icon) takes you back to your repository.</p>
+<p>Visit your GitHub repository page to see your updated README file and test that the link works. Also check that the link in the top right corner of your website (the GitHub icon) takes you back to your repository.</p>
 <p>If you find anything not yet working, make edits, re-render the website with Quarto, then commit and push everything.</p>
 </section>
 </section>
@@ -303,17 +304,13 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li><a href="https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/">A beginner’s guide to building a simple website with Quarto &amp; Netlify</a> by Jadey Ryan is potential good resource. Her instructions are very detailed. She uses RStudio instead of Positron, and doesn’t use GitHub but instead uses Netlify for hosting. Still, a lot of the information is relevant and possibly useful.</li>
+<li><a href="https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/">A beginner’s guide to building a simple website with Quarto &amp; Netlify</a> by Jadey Ryan is a potentially good resource. Her instructions are very detailed. She uses RStudio instead of Positron, and doesn’t use GitHub but instead uses Netlify for hosting. Still, a lot of the information is relevant and possibly useful.</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
-<!--
-::: {.unit-quiz}
-# Test yourself
-
-
-:::
--->
+<section id="test-yourself" class="level1 unit-quiz">
+<h1>Test yourself</h1>
+</section>
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>

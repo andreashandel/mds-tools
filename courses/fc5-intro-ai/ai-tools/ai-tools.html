@@ -8,7 +8,7 @@
 
 <meta name="description" content="Short introductory courses that cover some modeling and data science tools.">
 
-<title>Currently available AI tools – Modeling and Data Science Tools</title>
+<title>Useful AI tools – Modeling and Data Science Tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" rel="next">
+<link href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" rel="next">
 <link href="../../../courses/fc5-intro-ai/ai-llm-introduction/ai-llm-introduction.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html">Currently available AI tools</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html">Useful AI tools</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -146,43 +146,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Currently available AI tools</span></a>
+ <span class="menu-text">Useful AI tools</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for code writing</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI for coding</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for fixing code</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for exploratory data analysis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-analysis-r/ai-analysis-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools to analyze data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-conceptual/ai-conceptual.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conceptual ways to think about AI</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI to analyze data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A collection of links to AI resources</span></a>
+ <span class="menu-text">Further AI resources</span></a>
   </div>
 </li>
     </ul>
@@ -200,13 +182,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#in-brief" id="toc-in-brief" class="nav-link" data-scroll-target="#in-brief">In brief</a></li>
-  <li><a href="#openai-chatgpt" id="toc-openai-chatgpt" class="nav-link" data-scroll-target="#openai-chatgpt">OpenAI ChatGPT</a></li>
-  <li><a href="#microsoft-copilotbing-still-openai-gpt" id="toc-microsoft-copilotbing-still-openai-gpt" class="nav-link" data-scroll-target="#microsoft-copilotbing-still-openai-gpt">Microsoft Copilot/Bing (still OpenAI GPT)</a></li>
-  <li><a href="#github-copilot" id="toc-github-copilot" class="nav-link" data-scroll-target="#github-copilot">GitHub Copilot</a></li>
-  <li><a href="#claudeanthropic" id="toc-claudeanthropic" class="nav-link" data-scroll-target="#claudeanthropic">Claude/Anthropic</a></li>
-  <li><a href="#other-llm-ai" id="toc-other-llm-ai" class="nav-link" data-scroll-target="#other-llm-ai">Other LLM AI</a></li>
-  <li><a href="#other-tools" id="toc-other-tools" class="nav-link" data-scroll-target="#other-tools">Other tools</a></li>
+  <li><a href="#main-llm-ai-tools" id="toc-main-llm-ai-tools" class="nav-link" data-scroll-target="#main-llm-ai-tools">Main LLM AI tools</a></li>
+  <li><a href="#positron-ai-tools" id="toc-positron-ai-tools" class="nav-link" data-scroll-target="#positron-ai-tools">Positron AI tools</a></li>
+  <li><a href="#r-llm-ai-tools" id="toc-r-llm-ai-tools" class="nav-link" data-scroll-target="#r-llm-ai-tools">R LLM AI tools</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
@@ -220,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Currently available AI tools</h1>
+<h1 class="title">Useful AI tools</h1>
 </div>
 
 
@@ -239,13 +217,15 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>In this tutorial, we discuss some currently available LLM AI tools and when/how you might want to use them. This is of course a rapidly moving field, so a few months from now things might have changed. I can hopefully keep up somewhat, but check the last modified date of this page 😁.</p>
+<p>This is a brief introduction to some currently available LLM AI tools useful for coding and data analysis tasks, especially within our tool stack.</p>
+<p>This is a quickly changing area, so be sure to explore and try out new tools as they become available.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
 <h1>Goals</h1>
 <ul>
 <li>Be familiar with current AI tools and when/how to use them.</li>
+<li>Know what tools work nicely with R, Quarto and Positron.</li>
 </ul>
 </section>
 <!-- end unit-goals div -->
@@ -264,56 +244,44 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h1>Reading</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>It seems that every month a new LLM AI tool is announced. They are expected to keep getting better fairly rapidly for the foreseeable future. As you use these tools, it’s definitely useful to play around and explore. Here, I’m describing those that seem - as of this writing - the most useful ones for coding and data analysis tasks. Other AI tools might be more suitable for other tasks.</p>
+<p>It seems that every month a new LLM AI tool is announced. They keep getting better fairly rapidly. As you use these tools, it’s definitely useful to play around and explore.</p>
+<p>The following sections describe some of the currently available LLM AI tools, with a focus on our topic of modeling and data science, and our tool stack of R, Quarto and Positron.</p>
 </section>
-<section id="in-brief" class="level2">
-<h2 class="anchored" data-anchor-id="in-brief">In brief</h2>
-<p>Currently, ChatGPT 4 is the most powerful LLM AI tool. You can access it through a paid subscription via OpenAi, or for free through Microsoft’s Bing. ChatGPT 3.5 is the less powerful, free version you can access by creating a free OpenAI account. Despite being less powerful, I’ve found it to work pretty well to write R code. Other LLM are worth trying too, e.g.&nbsp;Claude for data exploration/analysis.</p>
+<section id="main-llm-ai-tools" class="level2">
+<h2 class="anchored" data-anchor-id="main-llm-ai-tools">Main LLM AI tools</h2>
+<p>Currently, the main LLM AI tools that are widely used are from OpenAI (ChatGPT), Google (Gemini) and Anthropic (Claude). Microsoft is using versions of OpenAI’s models in their Copilot. Other tools from Meta (LLaMA) and others also exist, but are less widely used at this point in time.</p>
+<p>Almost all of the major players provide free access to their less powerful models, and paid access to their more powerful ones. The more powerful ones tend to be much better, so in general, trying to get access to those flagship models is a good idea. That said, even the free ones can be quite useful.</p>
 </section>
-<section id="openai-chatgpt" class="level2">
-<h2 class="anchored" data-anchor-id="openai-chatgpt">OpenAI ChatGPT</h2>
-<p>As of this writing, for the AI tools we are interested in (the LLMs), ChatGPT is probably the most useful tool. You can access it by creating a <a href="https://chat.openai.com/">free account</a>.</p>
-<p>ChatGPT is also part of the Microsoft <a href="https://www.bing.com/">Bing search engine</a> (currently located under the “Chat” tab) and <a href="https://github.com/features/copilot">GitHub’s CoPilot</a>.</p>
-<p>If you haven’t already, I suggest you create a ChatGPT/OpenAI account. As of this writing, you can get a <a href="https://chat.openai.com/">free account</a>. Once you log in, you see a fairly plain interface with an area into which you can type your prompts. You can provide fairly elaborate prompts. We’ll look at examples in other units.</p>
+<section id="positron-ai-tools" class="level2">
+<h2 class="anchored" data-anchor-id="positron-ai-tools">Positron AI tools</h2>
+<p>One of the great features of Positron is that it provides great AI integration. It comes with a built-in AI assistant that you can use to get help with coding and data analysis tasks. You can access it by clicking on the <em>Positron Assistant</em> icon in the left sidebar.</p>
+<p>You will have to configure the assistant to work with a specific LLM model. The assistant is under rapid development. It therefore doesn’t make too much sense to provide details here that will likely be outdated soon. Instead, please <a href="https://positron.posit.co/assistant.html">check the official Positron AI assistant documentation</a> for detailed and up-to-date information.</p>
+<p>It is worth pointing out that tools like the Positron AI assistant interact with LLM models via APIs. This means that to use them, you will typically need a paid account with the provider of the LLM model you want to use. More confusingly, even if you have a paid subscription account, the API use can cost extra (but not always, things are changing rapidly). Fortunately, it has become quite cheap to use these APIs, but it is still something to be aware of. Always check the pricing information of the provider you are using.</p>
+<p>If you are a student and qualify for the <a href="https://education.github.com/pack">GitHub student developer pack</a> you get GitHub Pro, which comes with the GitHub Copilot AI. This is one of the AI tools supported by Positron’s AI assistant. Thus, this is a free way to get access to an LLM AI tool that works nicely within Positron.</p>
+<p>Positron also supports other AI tools through extensions. There is for instance an extension for ChatGPT’s Codex tool and Claude’s Code tool. It is very easy to install and activate these extensions, which you can then access through the left sidebar. Really the only barrier is that you’ll need an account with the provider of the LLM model you want to use, and will likely need to pay for use.</p>
+<p>Another interesting extension is <a href="https://positron.posit.co/databot.html">DataBot</a> which allows you to use LLM AI tools to interactively explore datasets.</p>
 </section>
-<section id="microsoft-copilotbing-still-openai-gpt" class="level2">
-<h2 class="anchored" data-anchor-id="microsoft-copilotbing-still-openai-gpt">Microsoft Copilot/Bing (still OpenAI GPT)</h2>
-<p>A free OpenAI account gives you access to ChatPGT 3.5. While I find it often quite useful, especially for writing code, it’s not the best AI out there. ChatGPT 4.0 is generally better. You have to pay OpenAI if you want to use it. Or, you can use <a href="https://copilot.microsoft.com/">Microsoft Copilot</a> - aka Bing Chat, and not to be confused with the GitHub Copilot, which is also owned by Microsoft 🤷️. <a href="https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai">It is recommended</a> to use it in “Creative” or “Precise” mode. Of course feel free to explore and play around. I will use the terms Microsoft Copilot or Bing AI/Chat interchangably. I’m sure all these names will change soon again anyway.</p>
-</section>
-<section id="github-copilot" class="level2">
-<h2 class="anchored" data-anchor-id="github-copilot">GitHub Copilot</h2>
-<p>GitHub Copilot is currently free for students with the <a href="https://education.github.com/pack">GitHub student developer pack</a> I asked you to sign up for. Set it up by following the <a href="https://docs.github.com/copilot">Quickstart guide</a>.</p>
-<p>Once you have Copilot activated, you can use it in R Studio. (It is also possible to use it with other popular editors, such as VS Code, but for this course I will focus on R Studio. If you prefer to code in VS Code, you can install the Copilot plugin).</p>
-<p>To get Copilot working in R Studio, follow these <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">instructions</a>. You might want to leave Copilot indexing unchecked for now. The instruction guide explains what this is. Basically, if you check this, copilot can access all files that are part of your current project. This can lead to confidentiality issues. Therefore, only check it if you are sure that all files in your project are ok being shared with the AI (and possibly make their way to Github/Microsoft/OpenAI servers).</p>
-<p>Once you have Copilot up and running, you should see it show up in the bottom of your R Studio input window (the top right window where you write code). It will start suggesting things as you type, once you stop for a few seconds. You can set that time in the options.</p>
-<p>An introduction to using Copilot can be found in <a href="https://youtu.be/TlzMKSE97MQ?si=Tc3sQ5ZF3RktWsqF">this video</a> by Thomas Mock from Posit/RStudio. In general, if you want bigger chunks of code, it seems currently better to go straight to ChatGPT. Copilot seems most useful to help you write bits of code as you go along. It can also be useful to help you remember the names of functions and arguments. <a href="https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/">This blog post</a> provides some additional useful information on how to best use Copilot.</p>
-<p><strong>In general, I recommend you turn off Copilot in RStudio when you are not actively using it.</strong> And before you turn it on, make sure the document you have open, and any other files it might have access to, do not contain information you want to keep private.</p>
-</section>
-<section id="claudeanthropic" class="level2">
-<h2 class="anchored" data-anchor-id="claudeanthropic">Claude/Anthropic</h2>
-<p><a href="https://www.anthropic.com/">Anthropic</a> is another company developing LLM AI tools. Their main AI is called <a href="https://claude.ai/">Claude</a>. As for ChatGPT, you can sign up to get a free account. It is apparently not as powerful as ChatGPT. However, it has one nice feature that the free versions of ChatGPT or Bing do not have, namely it lets you upload files. This is useful for data analysis tasks. I’ll show an example of that in the <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html">Explore data with AI</a> unit.</p>
-</section>
-<section id="other-llm-ai" class="level2">
-<h2 class="anchored" data-anchor-id="other-llm-ai">Other LLM AI</h2>
-<p>Other companies, such as Google, are also busy creating LLM AIs. I haven’t tried them yet. Once I do, I’ll add my impressions. If you are using any other LLM for coding or data analysis tasks and find it useful, please let me know.</p>
-</section>
-<section id="other-tools" class="level2">
-<h2 class="anchored" data-anchor-id="other-tools">Other tools</h2>
-<p>It is quite likely that in the future, there will be several LLM AI tools that are used by the majority of users, and then there will be lots of customizations running on top of those. There are already specialized LLM AI tools for lawyers and doctors and other professions that use ChatGPT under the hood. GitHub CoPilot is such a customization for coding. I expect further tools to keep coming out at a fairly rapid pace.</p>
-<p>For instance, as you learned from Thomas Mock’s video above, the <a href="https://mlverse.github.io/chattr/"><code>chattr</code> R package</a> seems like another great way to use ChatGPT from within R. Unfortunately, as of this writing, I haven’t been able to get it to work. It is not entirely clear to me based on the information provided on the <code>chattr</code> website, but I think this is because talking to ChatGPT via the API (which is what <code>chattr</code> does) requires a paid account.</p>
-<p>I’m also aware of the <a href="https://kumes.github.io/chatAI4R/">chatAI4R</a> R package, but haven’t tried it yet. My guess is since it likely also talks to ChatGPT through their API, it also requires a paid account. If that’s not the case and you try it and find it useful, please report back!</p>
-<p>As you are probably aware, AI tools are changing rapidly. I’m writing this in December 2023, you will read this a few months later. It could be that by this point, some new versions of AI tools have come out that are even better. Do explore and if you find some especially promising platform or package, let me know!</p>
+<section id="r-llm-ai-tools" class="level2">
+<h2 class="anchored" data-anchor-id="r-llm-ai-tools">R LLM AI tools</h2>
+<p>R has several packages that allow you to interact with LLM AI tools from within R. The most comprehensive and best supported one is probably the <a href="https://ellmer.tidyverse.org/"><code>ellmer</code> R package</a> developed by Posit. It provides a unified interface to several LLM AI tools. The <code>ellmer</code> website has good tutorials and documentation to get you started.</p>
+<p>Another interesting package is the <a href="https://posit-dev.github.io/btw/">btw package</a> which allows you to give the AI model context information.</p>
+<p>The <a href="https://vitals.tidyverse.org/">vitals R package</a> is another interesting package. It helps you assess the quality of responses you get from different LLM tools. Especially if you plan on building workflows around LLM AI tools (e.g.&nbsp;agentic approaches), this is an important aspect to consider.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
 <section id="summary" class="level1 unit-summary">
 <h1>Summary</h1>
-<p>LLM AI tools are changing rapidly. Currently, ChatGPT seems to do a good job at helping with coding and data analysis related tasks. Claude seems a useful option too, since it allows upload of files (such as data). New tools keep showing up and are generally worth exploring.</p>
+<p>LLM AI tools are changing rapidly, both the underlying foundation models from companies like ChatGPT, Claude and Google, and the many tools that integrate those models into your modeling and data science workflow. The ones described above are great starting points. The important thing is to try existing ones, and keep exploring as new ones become available.</p>
 </section>
 <!-- end unit-summary div -->
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
-<p>For a list and description of some other AI tools (e.g., those that can produce images), see this <a href="https://www.oneusefulthing.org/p/how-to-use-ai-to-do-stuff-an-opinionated">guide on using AI to do stuff</a>. Also see the <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html">AI resource unit</a>.</p>
+<ul>
+<li><a href="https://positron.posit.co/assistant.html">Positron AI Assistant documentation</a></li>
+<li><a href="https://ellmer.tidyverse.org/">ellmer R package</a></li>
+<li><a href="https://posit-dev.github.io/btw/">btw R package</a></li>
+<li><a href="https://positron.posit.co/databot.html">Positron DataBot extension</a></li>
+</ul>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
@@ -321,8 +289,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which tool is described as allowing file uploads in its free version?</p>
-<div id="webex-bc17f64ecb0e915446bd1923d1fd348d" class="webex-radiogroup" data-answer="OVMdBkoGGFU+">
-<label><input type="radio" autocomplete="off" name="bc17f64ecb0e915446bd1923d1fd348d"><span>ChatGPT 3.5</span></label><label><input type="radio" autocomplete="off" name="bc17f64ecb0e915446bd1923d1fd348d"><span>Claude</span></label><label><input type="radio" autocomplete="off" name="bc17f64ecb0e915446bd1923d1fd348d"><span>Bing Chat</span></label><label><input type="radio" autocomplete="off" name="bc17f64ecb0e915446bd1923d1fd348d"><span>GitHub Copilot</span></label>
+<div id="webex-2841a9d5abb58bf2e755a62f81a7794b" class="webex-radiogroup" data-answer="aQgYAE0JSAU8">
+<label><input type="radio" autocomplete="off" name="2841a9d5abb58bf2e755a62f81a7794b"><span>ChatGPT 3.5</span></label><label><input type="radio" autocomplete="off" name="2841a9d5abb58bf2e755a62f81a7794b"><span>Claude</span></label><label><input type="radio" autocomplete="off" name="2841a9d5abb58bf2e755a62f81a7794b"><span>Bing Chat</span></label><label><input type="radio" autocomplete="off" name="2841a9d5abb58bf2e755a62f81a7794b"><span>GitHub Copilot</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -338,8 +306,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is one reason to turn off Copilot indexing in RStudio?</p>
-<div id="webex-7fd72e6a0530889821e573d09eda6f99" class="webex-radiogroup" data-answer="bFZIBh5VGlFt">
-<label><input type="radio" autocomplete="off" name="7fd72e6a0530889821e573d09eda6f99"><span>It blocks access to all packages.</span></label><label><input type="radio" autocomplete="off" name="7fd72e6a0530889821e573d09eda6f99"><span>It can expose project files to the AI service.</span></label><label><input type="radio" autocomplete="off" name="7fd72e6a0530889821e573d09eda6f99"><span>It prevents code completion.</span></label><label><input type="radio" autocomplete="off" name="7fd72e6a0530889821e573d09eda6f99"><span>It disables Quarto rendering.</span></label>
+<div id="webex-054c87ffb1a752ed5ba7826487406e52" class="webex-radiogroup" data-answer="awUYUhQHSlY/">
+<label><input type="radio" autocomplete="off" name="054c87ffb1a752ed5ba7826487406e52"><span>It blocks access to all packages.</span></label><label><input type="radio" autocomplete="off" name="054c87ffb1a752ed5ba7826487406e52"><span>It can expose project files to the AI service.</span></label><label><input type="radio" autocomplete="off" name="054c87ffb1a752ed5ba7826487406e52"><span>It prevents code completion.</span></label><label><input type="radio" autocomplete="off" name="054c87ffb1a752ed5ba7826487406e52"><span>It disables Quarto rendering.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -355,8 +323,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does the unit say about the pace of change in AI tools?</p>
-<div id="webex-c1d221cca79372387b2f600317103fa4" class="webex-radiogroup" data-answer="OAFIAx4BT1M8">
-<label><input type="radio" autocomplete="off" name="c1d221cca79372387b2f600317103fa4"><span>The field is stable and unlikely to change.</span></label><label><input type="radio" autocomplete="off" name="c1d221cca79372387b2f600317103fa4"><span>The field is rapidly evolving with frequent new tools.</span></label><label><input type="radio" autocomplete="off" name="c1d221cca79372387b2f600317103fa4"><span>The field is declining and shrinking.</span></label><label><input type="radio" autocomplete="off" name="c1d221cca79372387b2f600317103fa4"><span>The field is only focused on image generation.</span></label>
+<div id="webex-2ee804be61eb554c7a1c3672be8bdafe" class="webex-radiogroup" data-answer="aVVJCRwETlVr">
+<label><input type="radio" autocomplete="off" name="2ee804be61eb554c7a1c3672be8bdafe"><span>The field is stable and unlikely to change.</span></label><label><input type="radio" autocomplete="off" name="2ee804be61eb554c7a1c3672be8bdafe"><span>The field is rapidly evolving with frequent new tools.</span></label><label><input type="radio" autocomplete="off" name="2ee804be61eb554c7a1c3672be8bdafe"><span>The field is declining and shrinking.</span></label><label><input type="radio" autocomplete="off" name="2ee804be61eb554c7a1c3672be8bdafe"><span>The field is only focused on image generation.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -374,9 +342,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li>Try two different AI tools on the same prompt and compare the outputs.</li>
-<li>Explore the settings (e.g., Creative vs Precise) and note how responses change.</li>
-<li>Decide which tool best fits a task you do frequently (coding, writing, or data analysis).</li>
+<li>Explore the Positron AI assistant and try using it to help with a coding or data analysis task.</li>
+<li>Install <code>ellmer</code> and try using it to interact with an LLM AI tool from within R.</li>
+<li>Try out the DataBot extension in Positron to explore a dataset using LLM AI tools.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->
@@ -1966,8 +1934,8 @@ window.onload = function() {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="pagination-link" aria-label="AI tools for code writing">
-        <span class="nav-page-text">AI tools for code writing</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="pagination-link" aria-label="Using AI for coding">
+        <span class="nav-page-text">Using AI for coding</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

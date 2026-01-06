@@ -146,43 +146,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-tools/ai-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Currently available AI tools</span></a>
+ <span class="menu-text">Useful AI tools</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-write-code-r/ai-write-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for code writing</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-coding/ai-coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI for coding</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-fix-code-r/ai-fix-code-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for fixing code</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-eda-r/ai-eda-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools for exploratory data analysis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-analysis-r/ai-analysis-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI tools to analyze data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../courses/fc5-intro-ai/ai-conceptual/ai-conceptual.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conceptual ways to think about AI</span></a>
+  <a href="../../../courses/fc5-intro-ai/ai-data-analysis/ai-data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using AI to analyze data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc5-intro-ai/ai-resources/ai-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A collection of links to AI resources</span></a>
+ <span class="menu-text">Further AI resources</span></a>
   </div>
 </li>
     </ul>
@@ -269,7 +251,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h2 class="anchored" data-anchor-id="neural-networks-nn">Neural networks (NN)</h2>
 <p>Currently, the main workhorse of artificial intelligence (AI) is a type of method/algorithm called a neural net/network (NN).</p>
 <p>These are specific kinds of models that originated as an attempt to capture the functioning of biological neurons, and, by extension, brains. While neural nets have been around for a while and have had some successes (e.g.&nbsp;in digit recognition), they have really taken off in recent years with the advent of more data, faster computers, and better algorithms.</p>
-<p>Without going into details, you can think of how neural nets work in a few ways. One is that they are collections of individual, <em>in silico</em>, neurons, which are combined into layers. On one end, the input is fed into the model, at the other end, the output is produced. See e.g.&nbsp;<a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Wikipedia page on artificial neural networks</a> for some schematic drawing. The input are your predictor variables, e.g.&nbsp;lots of characteristics measured for a patient; data from an -omics array; pixels of an image; words of some text; sounds of an audio file, etc. The output is whatever label you want to predict, e.g.&nbsp;for some images it could be the 4 categories <em>cat/dog/neither/both</em>. You feed the data to the model and train it. The training of a NN is conceptually similar to training other machine learning (ML) algorithms. Each neuron has parameters associated with it, and as you fit the model, these parameters are tweaked to optimize performance. The bigger your neural network (more neurons and more layers), the more flexible the model. This means it is potentially more powerful, but also more data-hungry.</p>
+<p>Without going into details, you can think of how neural nets work in a few ways. One is that they are collections of individual, <em>in silico</em>, neurons, which are combined into layers. On one end, the input is fed into the model, at the other end, the output is produced. See e.g.&nbsp;<a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Wikipedia page on artificial neural networks</a> for some schematic drawing. The inputs are your predictor variables, e.g.&nbsp;lots of characteristics measured for a patient; data from an -omics array; pixels of an image; words of some text; sounds of an audio file, etc. The output is whatever label you want to predict, e.g.&nbsp;for some images it could be the 4 categories <em>cat/dog/neither/both</em>. You feed the data to the model and train it. The training of a NN is conceptually similar to training other machine learning (ML) algorithms. Each neuron has parameters associated with it, and as you fit the model, these parameters are tweaked to optimize performance. The bigger your neural network (more neurons and more layers), the more flexible the model. This means it is potentially more powerful, but also more data-hungry.</p>
 <p>While the analogy to a biological brain is apt, this comparison does sometimes make NN sound more complicated and fancy than they are. To demystify NN somewhat, you can switch out the comparison to a biological brain, and instead think of them as a coupled set of logistic regressions. Each neuron is more or less described by some type of logistic regression function. It gets some input from multiple variables (either the original input, or a previous layer of neurons), and then based on that input and its parameter setting returns either 0/No or Yes/1. The output is then fed to the next layer of networks. The NN is thus a combination of individual logistic regression models, coupled together in some way.</p>
 <p>This idea of connecting individual models to make a bigger, better model should be familiar by now. You saw it when we discussed making models like random forests that combine individual trees, and it was also mentioned as a general idea of <strong>ensemble models.</strong> You can think of NN as an ensemble of simpler, logistic-type models.</p>
 <p>Of course, neural networks are complicated. At this point, there are many different versions of NN in use, and understanding them in detail is time-consuming. However, as general user, you don’t need to understand all the details. Instead, like for other complex ML models, as long as you know how to use them and evaluate what they return, it is ok to not fully understand their inner workings. Properly training/fitting NN can be tricky, because they generally have many different parameters that need tuning to achieve good performance. Thus, a lot of development has gone into methods that allow for efficient tuning/fitting. Fortunately for us as users, these methods have become fairly good such that it is possible to use NN algorithms built by others and generally trust they work well – similar to us using other models (GLM, trees, SVM, etc.) – without having to worry about all the details.</p>
@@ -280,7 +262,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </section>
 <section id="artificial-intelligence-ai" class="level2">
 <h2 class="anchored" data-anchor-id="artificial-intelligence-ai">Artificial Intelligence (AI)</h2>
-<p>Artificial Intelligence (AI) is definitely a trendy topic these days. It is widely used and also widely mis-used in many contexts these days. Roughly speaking, AI is the use of complex models, usually NN. If one wanted to differentiate DL and AI, one might say that AI is the use of DL approaches applied to problems. However, it seems these days that DL and AI are terms that are used largely interchangeably. Overall, if you hear AI or DL, you can think of it roughly as <em>fitting a complex (usually neural net) model to data.</em> Unfortunately, since DL and AI have become such <em>hot</em> topics, terms are often applied to a lot of different instances. And the use of LLM AI tools to help with various tasks further muddles what AI actually is.</p>
+<p>Artificial Intelligence (AI) is definitely a trendy topic these days. It is widely used and also widely misused in many contexts these days. Roughly speaking, AI is the use of complex models, usually NN. If one wanted to differentiate DL and AI, one might say that AI is the use of DL approaches applied to problems. However, it seems these days that DL and AI are terms that are used largely interchangeably. Overall, if you hear AI or DL, you can think of it roughly as <em>fitting a complex (usually neural net) model to data.</em> Unfortunately, since DL and AI have become such <em>hot</em> topics, terms are often applied to a lot of different instances. And the use of LLM AI tools to help with various tasks further muddles what AI actually is.</p>
 <p>As with all “new and shiny” things, there seems to be a bit of a current trend to use DL/AI approaches even when not needed. As an example, <a href="https://www.nature.com/articles/s41586-018-0438-y">DeVries et al.&nbsp;2018</a> used deep learning to analyze data; this follow-up correspondence article from <a href="https://www.nature.com/articles/s41586-019-1582-8">Mignan and Broccardo 2019</a> showed that a single logistic regression produced more or less the same results. The reply by one of the original authors, <a href="https://www.nature.com/articles/s41586-019-1583-7">Meade 2019</a>, is also worth reading.</p>
 <p>Overall, DL and AI are certainly very promising approaches and will undoubtedly lead to significant improvements – or at least changes – in many areas of our lives.</p>
 </section>
@@ -291,7 +273,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 </div>
 <p>While R is a great tool for data analysis, it’s currently probably not the best choice for doing AI/fitting NN models. If you really want to go deep into AI work, using something like Python, Julia, or some more specialized programming language is likely better.</p>
 <p>That said, there are some ways to use R to fit some NN models. The best and easiest way is likely to use R packages that allow you to interact with powerful tools such as <a href="https://www.tensorflow.org/">TensorFlow</a> and <a href="https://keras.io/">Keras</a> through R.</p>
-<p>The <a href="https://tensorflow.rstudio.com/">RStudio/Posit TensorFlow website</a> has a lot of good information and documentation on how to use Keras through R to do DL/AI. Starting there with the <em>Tutorials</em> section is probably the best way to get going. After that you can branch out to some of the other resources. While I’m sure a DL/AI expert uses more than just Keras/Tensorflow as tools, you can get very far with those. And for playing around with DL/AI, Keras through R is a great place to start.</p>
+<p>The <a href="https://tensorflow.rstudio.com/">RStudio/Posit TensorFlow website</a> has a lot of good information and documentation on how to use Keras through R to do DL/AI. Starting there with the <em>Tutorials</em> section is probably the best way to get going. After that you can branch out to some of the other resources. While I’m sure a DL/AI expert uses more than just Keras/TensorFlow as tools, you can get very far with those. And for playing around with DL/AI, Keras through R is a great place to start.</p>
 </section>
 </section>
 <!-- end unit-reading div -->
@@ -304,7 +286,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h1>Further Resources</h1>
 <p>If you want to learn more about neural nets, the <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Wikipedia entry</a> is a good place to start.</p>
 <p>If you want to learn a bit more on the distinction between DL and AI (and just in general), the <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">AI</a> and <a href="https://en.wikipedia.org/wiki/Deep_learning">DL</a> sections of Wikipedia are good starting points.</p>
-<p>The <a href="https://www.youtube.com/@statquest">StatQuest Youtube Channel</a> has some great videos explaining neural networks and deep learning in an easy-to-understand way.</p>
+<p>The <a href="https://www.youtube.com/@statquest">StatQuest YouTube Channel</a> has some great videos explaining neural networks and deep learning in an easy-to-understand way.</p>
 </section>
 <!-- end unit-resources div -->
 <section id="test-yourself" class="level1 unit-quiz">
@@ -312,8 +294,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is described as the main workhorse of current AI in this unit?</p>
-<div id="webex-a7a8d1e12d58b82d066649d438619d8c" class="webex-radiogroup" data-answer="OgZNCEgBSQFv">
-<label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Neural networks</span></label><label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Decision trees</span></label><label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Linear regression</span></label><label><input type="radio" autocomplete="off" name="a7a8d1e12d58b82d066649d438619d8c"><span>Spreadsheets</span></label>
+<div id="webex-bc455ca6c8a47e53490f546fad79f852" class="webex-radiogroup" data-answer="OVIYBRlTTQY+">
+<label><input type="radio" autocomplete="off" name="bc455ca6c8a47e53490f546fad79f852"><span>Neural networks</span></label><label><input type="radio" autocomplete="off" name="bc455ca6c8a47e53490f546fad79f852"><span>Decision trees</span></label><label><input type="radio" autocomplete="off" name="bc455ca6c8a47e53490f546fad79f852"><span>Linear regression</span></label><label><input type="radio" autocomplete="off" name="bc455ca6c8a47e53490f546fad79f852"><span>Spreadsheets</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -329,8 +311,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which statement best describes the relationship between deep learning and AI in this unit?</p>
-<div id="webex-fa8b49b07c7eb86b2a93ece2135909af" class="webex-radiogroup" data-answer="PVEUUxgJTgBq">
-<label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>Deep learning is unrelated to AI.</span></label><label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>Deep learning is a subset of AI that uses multi-layer neural networks.</span></label><label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>AI is a subset of deep learning.</span></label><label><input type="radio" autocomplete="off" name="fa8b49b07c7eb86b2a93ece2135909af"><span>Deep learning only refers to non-neural network models.</span></label>
+<div id="webex-2ac37dafad584a6d1eba3747bab255c3" class="webex-radiogroup" data-answer="aVFPAhtUTVY8">
+<label><input type="radio" autocomplete="off" name="2ac37dafad584a6d1eba3747bab255c3"><span>Deep learning is unrelated to AI.</span></label><label><input type="radio" autocomplete="off" name="2ac37dafad584a6d1eba3747bab255c3"><span>Deep learning is a subset of AI that uses multi-layer neural networks.</span></label><label><input type="radio" autocomplete="off" name="2ac37dafad584a6d1eba3747bab255c3"><span>AI is a subset of deep learning.</span></label><label><input type="radio" autocomplete="off" name="2ac37dafad584a6d1eba3747bab255c3"><span>Deep learning only refers to non-neural network models.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -346,8 +328,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why might R be less ideal for heavy AI workloads?</p>
-<div id="webex-01b955de7ccb0e245c0a6c381323c390" class="webex-radiogroup" data-answer="awFOCRkESFVq">
-<label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>R cannot read data files.</span></label><label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>R lacks any packages for neural networks.</span></label><label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>Other languages often provide stronger AI tooling and GPU support.</span></label><label><input type="radio" autocomplete="off" name="01b955de7ccb0e245c0a6c381323c390"><span>R does not support data visualization.</span></label>
+<div id="webex-0d2bd3b6a201c2dc463f1a4a1af87936" class="webex-radiogroup" data-answer="a1QeUkgCTgY8">
+<label><input type="radio" autocomplete="off" name="0d2bd3b6a201c2dc463f1a4a1af87936"><span>R cannot read data files.</span></label><label><input type="radio" autocomplete="off" name="0d2bd3b6a201c2dc463f1a4a1af87936"><span>R lacks any packages for neural networks.</span></label><label><input type="radio" autocomplete="off" name="0d2bd3b6a201c2dc463f1a4a1af87936"><span>Other languages often provide stronger AI tooling and GPU support.</span></label><label><input type="radio" autocomplete="off" name="0d2bd3b6a201c2dc463f1a4a1af87936"><span>R does not support data visualization.</span></label>
 </div>
 </div>
 <div class="webex-solution">

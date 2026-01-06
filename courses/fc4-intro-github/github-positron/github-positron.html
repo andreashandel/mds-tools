@@ -162,8 +162,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">courses/fc4-intro-github/github-additional-topics/github-additinal-topics.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../../courses/fc4-intro-github/github-additional-topics/github-additional-topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Topics</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../courses/fc4-intro-github/github-resources/github-resources.html" class="sidebar-item-text sidebar-link">
@@ -185,7 +188,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a>
   <ul class="collapse">
   <li><a href="#gitgithub-in-positron" id="toc-gitgithub-in-positron" class="nav-link" data-scroll-target="#gitgithub-in-positron">Git/GitHub in Positron</a></li>
-  <li><a href="#setting-up-git-in-positron" id="toc-setting-up-git-in-positron" class="nav-link" data-scroll-target="#setting-up-git-in-positron">Setting up Git in Positron</a></li>
   <li><a href="#positron-and-gitgithub-workflow" id="toc-positron-and-gitgithub-workflow" class="nav-link" data-scroll-target="#positron-and-gitgithub-workflow">Positron and Git/GitHub workflow</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
@@ -248,14 +250,11 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <h2 class="anchored" data-anchor-id="gitgithub-in-positron">Git/GitHub in Positron</h2>
 <p>Positron has built-in Git support. You can find it on the left sidebar, it is generally the third icon from the top (the icon looks like a branch with a dot at each end). If you have a project open that is also a GitHub repository, you will see information in the Git panel that shows you what files have changed (top part) and the history of your project (bottom part).</p>
 <p>Through this panel, you can do the same push/pull/commit workflow as in GitHub Desktop, but without leaving Positron.</p>
-</section>
-<section id="setting-up-git-in-positron" class="level2">
-<h2 class="anchored" data-anchor-id="setting-up-git-in-positron">Setting up Git in Positron</h2>
-<p>I DONT REMEMBER HOW TO DO THAT, NEED TO REPRODUCE</p>
+<p>If you configured GitHub Desktop to use your GitHub credentials, Positron should be able to use them as well. If you have not done that yet, you might need to set up Git/GitHub in Positron first by logging into your account. Positron will usually prompt you to do that when you try to push or pull for the first time.</p>
 </section>
 <section id="positron-and-gitgithub-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="positron-and-gitgithub-workflow">Positron and Git/GitHub workflow</h2>
-<p>Let’s go through a minimal Git workflow in Positron. Open the Github repository you created earlier. You might even have it already open if you followed along in previous units.</p>
+<p>Let’s go through a minimal Git workflow in Positron. Open the GitHub repository you created earlier. You might even have it already open if you followed along in previous units.</p>
 <p>If you recently did a push/pull with GitHub Desktop, the panel showing changes should be empty. You will also see in the bottom panel that the <code>main</code> symbol (your local repo) and the <code>origin/main</code> symbol (the remote repo on GitHub) are in sync and on the same line.</p>
 <p>Now edit the README file or another file you created in that repository. After saving the file, go back to the Git panel in Positron. You should see the changed file listed in the top panel.</p>
 <p>You will also see the <code>Commit</code> button. In the box above, write a short, descriptive commit message. Then click the <code>Commit</code> button.</p>
@@ -282,8 +281,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where can you find Git controls in Positron?</p>
-<div id="webex-6427302040c232a1202a3bd07b95cea9" class="webex-radiogroup" data-answer="bQQeBh8AHgBp">
-<label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="6427302040c232a1202a3bd07b95cea9"><span>The terminal output panel</span></label>
+<div id="webex-fd275eee9515a4f7b8af3ad599c90bca" class="webex-radiogroup" data-answer="PVQeBhlVSVVk">
+<label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The terminal output panel</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -299,8 +298,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After committing in Positron, what indicates your local branch is ahead of the remote?</p>
-<div id="webex-94813315bd78fcc2ab17de9dc7a53d93" class="webex-radiogroup" data-answer="YgQUAR8CHQU/">
-<label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="94813315bd78fcc2ab17de9dc7a53d93"><span>The README file is locked for editing</span></label>
+<div id="webex-756e81bc5ec9c06cfc2d7af1fe5bfd31" class="webex-radiogroup" data-answer="bAUaVRQATlNo">
+<label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The README file is locked for editing</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -316,8 +315,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Can you use both GitHub Desktop and Positron for Git tasks?</p>
-<div id="webex-29334cf063547e4e4ad7a894c4fe64ae" class="webex-radiogroup" data-answer="aQkfAxhTSgFr">
-<label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="29334cf063547e4e4ad7a894c4fe64ae"><span>Yes, you can mix both tools as needed</span></label>
+<div id="webex-3f03881f7b18fbec7eb0a1594117dc42" class="webex-radiogroup" data-answer="aFYcAxQIHVdq">
+<label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>Yes, you can mix both tools as needed</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -334,6 +333,9 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
+<ul>
+<li>Open a GitHub repository in Positron. As needed, find one online and clone it to your computer (with or without forking it). Change a few files in the repo, then commit and push the changes to GitHub using Positron’s Git panel.</li>
+</ul>
 </section>
 <!-- end unit-exercise div -->
 
