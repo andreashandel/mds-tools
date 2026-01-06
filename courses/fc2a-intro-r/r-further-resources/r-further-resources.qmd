@@ -40,17 +40,31 @@ One of the tasks at which AI has become very good is writing code. While this ca
 The most challenging part about using AI tools for coding is learning how to ask the right question, and being able to assess what the AI returns. To be able to do those tasks well, you still need to understand certain coding concepts and be able to read and evaluate code, even if you are likely going to use AI to help you with a lot of the coding tasks.
 
 
-## Interactive tutorials
-
-The [R Primers](https://r-primers.andrewheiss.com/) collection of tutorials provide a very basic, and well-done introduction to some R coding concepts.
+## Selected learning resources
 
 
-
-
-# More resources
-
-The [Posit Recipes](https://posit.cloud/learn/recipes) collection of tutorials cover many coding topics that are relevant for modeling and data science tasks.
-
+- The [Posit Recipes](https://posit.cloud/learn/recipes) collection of tutorials cover many coding topics that are relevant for modeling and data science tasks.
+- The [R Primers](https://r-primers.andrewheiss.com/) collection of tutorials provides a very basic, and well-done introduction to some R coding concepts.
+-   [Ready for R](https://ready4r.netlify.app/) - materials for a basic
+    introductory online R course taught by [Ted
+    Laderas](https://laderast.github.io/).
+-   [*Modern R with the tidyverse*](https://modern-rstats.eu/) - online
+    book that provides a very nice introduction to important concepts of
+    R coding with a focus on data analysis.
+-   [Intro to Programming for Analytics](http://p4a.seas.gwu.edu/) -
+    materials for an online course teaching intro to programming with R,
+    taught by [John Paul Helveston](https://www.jhelvy.com/).
+-   [*Efficient R programming*](https://csgillespie.github.io/efficientR/) contains a
+    lot of good tips and tricks towards writing better code.
+-   [*Tidy Modeling with R*](https://www.tmwr.org/) is a book that describes
+    analysis/modeling using the `tidymodels` set of packages.
+-   [ R Programming 101](https://www.youtube.com/@RProgramming101) is a YouTube channel with R tutorials that students have found useful.
+-   [YaRrr! The Pirate's Guide to R:](https://bookdown.org/ndphillips/YaRrr/) A nice R introduction with a piratey bend
+-   ['Use R' series of books](http://www.springer.com/series/6991) - A long and growing series of books on a lot of different R topics. From beginner to advanced. Many university libraries have a subscription to Springer Online, which allows you to get the books for free.
+* [Posit Cheatsheets](https://posit.co/resources/cheatsheets/) contain useful single-page summaries of many R related topics and packages.
+* ["Advanced R" by Hadley Wickham for more advanced R coding](http://adv-r.had.co.nz/)
+* ["R packages" by Hadley Wickham and Jennifer Bryan](https://r-pkgs.org/). This (free online) book alone is enough to get a package done. Should definitely be the first (and maybe even only) source to read/use.
+* [The Task View sorting R packages into categories is often useful](http://cran.r-project.org/web/views/)
 
 
 
@@ -62,7 +76,7 @@ The [Posit Recipes](https://posit.cloud/learn/recipes) collection of tutorials c
 ::: {.unit-summary}
 # Summary
 
-This unit provided a few pointers to resources that can help you learn R further.
+This unit provided a few pointers to resources that can help you learn R further. Tons of other good material exists. Look around, explore and stick with the ones you like best.
 
 :::
 <!-- end unit-summary div -->
@@ -70,7 +84,7 @@ This unit provided a few pointers to resources that can help you learn R further
 ::: {.unit-resources}
 # Further Resources
 
-All resources are in the main text.
+All futher resources are described in the main text above.
 
 :::
 <!-- end unit-resources div -->
@@ -92,8 +106,7 @@ exams2forms::exams2forms(file = quizzes, title = 'r-further-resources-quiz')
 # Practice
 * Spend at least 30 minutes exploring some of the resources mentioned in this unit.
 * Go online and find another R resource that looks interesting to you, then explore it.
-* Ask an AI tool to explain a short piece of R code you do not fully understand; compare the explanation to the help files.
-* Pick one tutorial (e.g., R Primers or Posit Recipes) and complete at least one hands-on exercise from it.
+* Ask an AI tool to write and/or explain a piece of R code to you.
 
 
 :::

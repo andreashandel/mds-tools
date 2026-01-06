@@ -46,7 +46,7 @@ Currently, the best tools for that are those based on Large Language Models (LLM
 
 ## LLM AI conceptual frameworks
 
-AI, and especially generative AI like LLM are very new tools. Everyone is still trying to figure out how to use them, what they mean for the future, etc. While one can obviously use these tools without much further thought, it can be helpful to think about them in a conceptual way to have a potentially useful framework of interaction. Below are a few conceptual frameworks that I have heard from others or that I've been thinking about.
+AI, and especially generative AI like LLMs are very new tools. Everyone is still trying to figure out how to use them, what they mean for the future, etc. While one can obviously use these tools without much further thought, it can be helpful to think about them in a conceptual way to have a potentially useful framework of interaction. Below are a few conceptual frameworks that I have heard from others or that I've been thinking about.
 
 
 ### AI as the intern/1st year graduate

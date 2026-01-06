@@ -1,0 +1,27 @@
+Question
+========
+What is the recommended approach when using AI tools on confidential data?
+
+Answerlist
+----------
+* Upload the data to a public AI service to get faster results
+* Use AI only on synthetic or anonymized data, or avoid uploading sensitive data
+* Assume all AI providers delete data immediately
+* Share the data only after the analysis is complete
+
+Solution
+========
+The unit emphasizes avoiding exposure of confidential data by using synthetic/anonymized data or keeping data local.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: ai-data-confidentiality
+extype: schoice
+exsolution: 0100

@@ -33,7 +33,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Introduction
 
-Positron is highly customizable just like VS code the software it is based on. This flexibility allows you to tailor the editor to your specific workflow and preferences. There's a lot you can customize, we'll only briefly look at a few main areas here.
+Positron is highly customizable just like VS Code the software it is based on. This flexibility allows you to tailor the editor to your specific workflow and preferences. There's a lot you can customize, we'll only briefly look at a few main areas here.
 
 
 ## Settings 
@@ -54,9 +54,7 @@ You can change the layout and look of Positron to suit your preferences. The eas
 
 You can explore themes by clicking on the gear icon in the lower left corner, then selecting *Themes* and *Color Theme*. This opens a list of available themes. Explore them to see what you might like.
 
-Theme selection is important to prevent eye fatigue or if you are color blind. Darker themes are generally better for your eyes during long coding sessions. There are a few themes that are specifically made for the color blind that rely on hue to differentiate code. Soloarized themes are generally the best for those who are colorblind. 
-
-To be clear the themes do not change anything about the code it is for the humans writing/reading the code. They color and style token types (the different functional parts or key words) produced by the language parser (not arbitrary text). 
+Theme selection can help adjust things to make work as ergonomic for you as possible. It's completely your choice how you set up your colors. To be clear, the themes do not change anything about the code; they are just potentially helping you read/write code. 
 
 
 ## Key Bindings
@@ -65,7 +63,7 @@ Some users prefer different keyboard shortcuts for common commands. Positron all
 
 You can access key bindings by clicking the gear icon in the lower left corner, then selecting *Keyboard Shortcuts*. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them. 
 
-For instance, in Positron, to quickly turn code into comments (by adding a `#` in front of it for R cde), the default is to select the code chunk you want to comment out and then press the `Ctrl/Cmd + /` keyboard shortcut. This differs from RStudio, where it is the `Ctrl/Cmd + Shift + C` shortcut. If you prefer the RStudio shortcut, you can change it in Positron. 
+For instance, in Positron, to quickly turn code into comments (by adding a `#` in front of it for R code), the default is to select the code chunk you want to comment out and then press the `Ctrl/Cmd + /` keyboard shortcut. This differs from RStudio, where it is the `Ctrl/Cmd + Shift + C` shortcut. If you prefer the RStudio shortcut, you can change it in Positron. 
 
 
 ## More customization

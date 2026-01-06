@@ -5,7 +5,7 @@ editor:
     wrap: 72
 ---
 
-::: unit-overview
+::: {.unit-overview}
 # Overview
 
 This unit covers some very minimal coding in R.
@@ -13,7 +13,7 @@ This unit covers some very minimal coding in R.
 
 <!-- end unit-overview div -->
 
-::: unit-goals
+::: {.unit-goals}
 # Goals
 
 -   Be familiar with basic R coding concepts.
@@ -37,12 +37,12 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 <!-- end unit-video div -->
 
-::: unit-reading
+::: {.unit-reading}
 # Reading
 
 ## Introduction
 
-This whole course, including this unit, are by no means sufficient to
+This whole course, including this unit, is by no means sufficient to
 teach you R coding. The goal is instead to get you started, and give you
 a basic idea of how R coding works. To really learn R coding, you need
 to take a full course on R programming and/or do a lot of "learning as
@@ -65,7 +65,7 @@ This figure illustrates the journey of learning to write code:
 
 ![The journey of learning to code. Source:
 https://www.thinkful.com/blog/. Original post is not online
-anymore.](learning-to-code.jpg){fig-alt="Graph titled Coding Confidence vs Compentence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."}
+anymore.](learning-to-code.jpg){fig-alt="Graph titled Coding Confidence vs Competence. The x-axis is Competence and y-axis is confidence. The first peak is called the hand-holding honeymoon, the decline is called the cliff of confusion, the bottom of the decline is called the desert of despair, the beginning of the incline is called the upswing of awesome, and the end of the graph is the highest peak that says Job Ready."}
 
 My goal is that during this course, you will reach the beginning of the
 *upswing of awesome*, at least when it comes to being able to use R to
@@ -124,15 +124,15 @@ round(mean(df$score), digits = 1)
 Maybe the most important skill for learning any programming language is
 figuring out how to find and get help with any problem.
 
-In the past, we recommended to start with Google, StackOverflow, and the
+In the past, we recommended starting with Google, StackOverflow, and the
 Internet to find relevant help. At this point, most of the time, you
-will likely get the best initial help from some AI tool. We recommend to
-start there, and if that doesn't solve your problem, then move on to
+will likely get the best initial help from some AI tool. We recommend
+starting there, and if that doesn't solve your problem, then move on to
 other sources.
 
 ![Fortunately rare for R. Source:
 xkcd.com.](xkcd_wisdom_of_the_ancients.png){width="90%"
-fig-alt="An xkcd comic of a stick figure shaking a computer screen saying 'Who were you, denvercoder9? What did you see?!'. Outside the the box, it says 'Never have I felt so close to another soul. And yet so helplessly alone as when I Google an error and there's one result. A thread by someone with the same problem and no answer last posted in 2003."}
+fig-alt="An xkcd comic of a stick figure shaking a computer screen saying 'Who were you, denvercoder9? What did you see?!'. Outside the box, it says 'Never have I felt so close to another soul. And yet so helplessly alone as when I Google an error and there's one result. A thread by someone with the same problem and no answer last posted in 2003."}
 
 In those rare cases when AI doesn't help and you cannot find the right
 information online either to solve your coding problem, feel free to ask
@@ -148,7 +148,7 @@ first to see if the answer is already available) and can precisely
 formulate the question/problem, ideally with a reproducible example, the
 chance that you get an unfriendly reply is very low.
 
-I have found that a good way of posing question is to write something
+I have found that a good way of posing a question is to write something
 like this: *"I need help with SPECIFIC PROBLEM, I have searched around
 and found LINKS/DESCRIPTION OF SIMILAR ISSUES but that doesn't quite
 solve my problem yet."* If you have a coding problem, add *"Here is some
@@ -178,7 +178,7 @@ to make it easier to solve.
 3.  Someone has had the same problem before and written about it on the
     internet so search for the solution there. These searches are most
     fruitful when you use specific search terms with accepted jargon.
-    Search like you’d write a function call, not a sentence and should
+    Search like you’d write a function call, not a sentence, and it should
     generally follow this pattern function name + argument names + error
     keyword. (i.e., “R reshape data error” is a bad search while “R
     tidyr pivot_longer names_to values_to error duplicate names” is a
@@ -198,7 +198,7 @@ other programming languages do it the second way, so if you learned to
 code in another language first, it is more natural to write `x = 2`. It
 is your choice. Just be aware that both notations exist. And to add to
 the confusion: In R, you can also write this in the opposite direction,
-i.e. `2 -> x`. This is unususal coding style and best avoided. Just know
+i.e. `2 -> x`. This is unusual coding style and best avoided. Just know
 that it exists too.
 
 A more recent confusion - since the concept was introduced to R more
@@ -220,17 +220,17 @@ out anything you like!
 
 <!-- end unit-reading div -->
 
-::: unit-summary
+::: {.unit-summary}
 # Summary
 
-We discussed some basics of writing R code. To re-iterate, this course
+We discussed some basics of writing R code. To reiterate, this course
 is not a learn-to-code course. For resources that can help you learn R
 coding, see the *Further Resources* unit.
 :::
 
 <!-- end unit-summary div -->
 
-::: unit-resources
+::: {.unit-resources}
 # Further Resources
 
 -   The [Posit (formerly RStudio) Community
@@ -240,7 +240,7 @@ coding, see the *Further Resources* unit.
 
 <!-- end unit-resources div -->
 
-::: unit-quiz
+::: {.unit-quiz}
 # Test yourself
 
 ```{r r-coding-basics-quiz}
@@ -253,7 +253,7 @@ exams2forms::exams2forms(file = quizzes, title = 'r-coding-basics-quiz')
 
 <!-- end unit-quiz div -->
 
-::: unit-exercise
+::: {.unit-exercise}
 # Practice
 
 -   Write a short script that creates a vector, computes its mean, and

@@ -42,7 +42,7 @@ Here are a few pointers that hopefully help you as you learn more about Positron
 ## Positron = VS Code (often)
 
 As mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). 
-That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it's always a good idea to search for help for VS code if you can't find something for Positron, and try if the VS Code solution works. 
+That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it's always a good idea to search for help for VS Code if you can't find something for Positron, and try if the VS Code solution works. 
 
 It also means that most - [though not all](https://positron.posit.co/extensions.html) - extensions that work in VS Code will also work in Positron. So if you find a useful extension for VS Code, you can likely install it in Positron as well.
 
@@ -70,7 +70,7 @@ If you want to change the overall trust settings, you can go to 'Settings', then
 ::: {.unit-summary}
 # Summary
 
-You reached the end of the brief Introduction to Positron Course. This should get you enough information to get started, but there is a lot to learn. Fortunately, online resources are fairly complete. Just remember that Positron specific resources are still new, but VS Code information is plentiful.
+You reached the end of the brief Introduction to Positron Course. This should get you enough information to get started, but there is a lot to learn. Fortunately, online resources are fairly complete. Just remember that Positron-specific resources are still new, but VS Code information is plentiful.
 
 :::
 <!-- end unit-summary div -->

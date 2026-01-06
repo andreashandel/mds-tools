@@ -1,0 +1,27 @@
+Question
+========
+Why might you ask an AI tool to write analysis code instead of doing the analysis directly?
+
+Answerlist
+----------
+* It avoids the need to run the code yourself
+* It ensures the AI output is always correct
+* It lets you run, review, and modify the analysis locally for reproducibility
+* It guarantees the AI will use the latest packages
+
+Solution
+========
+Having the AI generate code allows you to review, run, and adapt it locally.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: ai-data-code-first
+extype: schoice
+exsolution: 0010

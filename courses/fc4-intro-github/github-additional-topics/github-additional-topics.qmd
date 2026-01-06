@@ -68,7 +68,7 @@ One option is to copy the parts you changed to a safe location outside the repos
 
 If you want to keep updates from both your local and the remote repository, you have to resolve the merge conflict. 
 
-GitHub Desktop and Positron provide tools to help you resolve conflicts, they basically show you the two versions of the document an you can decided which parts you want. This works well for text files (code, Rmd, md, etc.). However, it doesn't work well for other files (Word, Excel, images, `Rds` files, etc.). 
+GitHub Desktop and Positron provide tools to help you resolve conflicts, they basically show you the two versions of the document and you can decide which parts you want. This works well for text files (code, Rmd, md, etc.). However, it doesn't work well for other files (Word, Excel, images, `Rds` files, etc.). 
 
 
 
@@ -103,14 +103,14 @@ An important drawback of this approach is that if you work on multiple machines,
 A possible workaround is to place these files into another Sync service, such as Dropbox, OneDrive, or Google Drive that you consider to be safe. You can then load the files from there when running your code. This way, the sensitive files are not in the Git repository, but you can still share them with collaborators via the Sync service. (This approach also works well for large files that you can't sync with Git/GitHub.)
 
 :::{.warning}
-Remember that Git tracks the full project history. So if at any time you added a file with sensitive information, even if you delete it later, it's still in the history and can be found. If that happens, you basically need to completely delete the GitHub repository (after copying all important files to a safe location) and starting over with a new repository, taking care to keep sensitive files out of this new repor.
+Remember that Git tracks the full project history. So if at any time you added a file with sensitive information, even if you delete it later, it's still in the history and can be found. If that happens, you basically need to completely delete the GitHub repository (after copying all important files to a safe location) and starting over with a new repository, taking care to keep sensitive files out of this new repo.
 :::
 
 
 
 ## Large files
 
-GitHub is not suited for tracking large files. If you try to push/pull files larger than say 20MB, things might not work right, and will definitely fail at 100MB. Therefore, **don't try to track large files with GitHub!** Large files are a major reason newbies have problems with their GitHub repository!
+GitHub is not suited for tracking large files. If you try to push/pull files larger than say 50MB, things might not work right, and will definitely fail at files >100MB. Therefore, **don't try to track large files with GitHub!** Large files are a major reason newbies have problems with their GitHub repository!
 
 If you need to work with large files, there are a few options. 
 
@@ -140,11 +140,11 @@ For instance, you can place large files into a special folder in your GitHub rep
 
 ## Starting over
 
-Sometimes, you might have gotten yourself into a deep GitHub mess. For instance you just can't proberly resolve your merge conflicts. Or you tried to track large files, even though you were told not to do so. Or you accidentally placed a confidential file into a public repo and pushed it online. 
+Sometimes, you might have gotten yourself into a deep GitHub mess. For instance you just can't properly resolve your merge conflicts. Or you tried to track large files, even though you were told not to do so. Or you accidentally placed a confidential file into a public repo and pushed it online. 
 
 Fear not, there is always an option to start over. Here is how you can do that.
 
-First, move the local main repo folder and its contents to a safe location on your computer, and maybe rename it to be safe, e.g. call it `myrepo-local-old`. Then re-clone the repo from Github.com to your local computer and also move it to a safe location, again maybe renaming it to `myrepo-remote-old`. You now have local copies of all content in a safe location.
+First, move the local main repo folder and its contents to a safe location on your computer, and maybe rename it to be safe, e.g. call it `myrepo-local-old`. Then re-clone the repo from GitHub.com to your local computer and also move it to a safe location, again maybe renaming it to `myrepo-remote-old`. You now have local copies of all content in a safe location.
 
 Next, delete the entire repository both locally and on GitHub.com. To do that on GitHub.com, go to your repo, then go to `Settings` (the gear icon), scroll all the way down to the bottom, and find the `Delete this repository` button in the `Danger Zone` section. Click on it and follow the instructions.
 
@@ -152,7 +152,7 @@ Now, recreate an empty repository on GitHub.com. You probably want to give it th
 
 Finally, once everything is in your new repo on your local machine, and everything runs/works/renders, push the new local repository to GitHub.com. 
 
-If everyhing works, you can now delete the old copies you saved on your computer. You might decide to keep them around for a while, since by creating a new repo you lost the history, so you can't go back to prior versions in the new repo.
+If everything works, you can now delete the old copies you saved on your computer. You might decide to keep them around for a while, since by creating a new repo you lost the history, so you can't go back to prior versions in the new repo.
 
 
 
@@ -196,7 +196,7 @@ exams2forms::exams2forms(file = quizzes, title = 'github-additional-topics-quiz'
 
 ::: {.unit-exercise}
 # Practice
-
+* 
 
 
 :::

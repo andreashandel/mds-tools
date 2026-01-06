@@ -1,0 +1,27 @@
+Question
+========
+What is the main benefit of providing a detailed prompt to an AI coding tool?
+
+Answerlist
+----------
+* It guarantees the AI will never make mistakes
+* It reduces back-and-forth by guiding the AI toward the desired output
+* It stops the AI from using external packages
+* It makes the code run faster automatically
+
+Solution
+========
+Detailed prompts lead to outputs closer to what you want and reduce iteration.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: ai-coding-detailed-prompts
+extype: schoice
+exsolution: 0100

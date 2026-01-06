@@ -78,7 +78,7 @@ Assume that you forked a repository because you wanted to contribute some improv
 
 Next, you ask the owner of the original repository to incorporate the updates you made in the fork into their main repository. This last part is called issuing a **pull request**. You are requesting that the other person *pull* your changes into their repository, hence the at times confusing (at least for us) terminology. Maybe thinking of it as *merge* requests or *sync* requests is better, i.e. you are requesting that they merge or sync your changes into their repository. You'll find the terminology *merge request* is used at times. If the person who controls the main repository likes your changes, they will *merge* your fork into the main branch. And just like that, you have contributed to some project becoming better! 
 
-To open a pull request, go to your fork of the repo on GitHub. At the top, you should see something like `This branch is N commits ahead of NNN:main.` and next to it a `Contribute` button. Click on that buttion and choose **Open pull request**.
+To open a pull request, go to your fork of the repo on GitHub. At the top, you should see something like `This branch is N commits ahead of NNN:main.` and next to it a `Contribute` button. Click on that button and choose **Open pull request**.
 
 You will be taken to a page where you can provide a title and description of your changes. Be clear about what you changed and why. 
 
@@ -103,7 +103,7 @@ Once you finished the merging of their updates into your repository online, make
 ::: {.unit-summary}
 # Summary
 
-We discussed branches, forks, and pull requests. As you continue your GitHub journey, you will likely start using alll of them occasionally.
+We discussed branches, forks, and pull requests. As you continue your GitHub journey, you will likely start using all of them occasionally.
 
 :::
 <!-- end unit-summary div -->

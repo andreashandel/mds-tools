@@ -13,6 +13,15 @@ Solution
 ========
 Accepting the prompts allows Positron to finish its setup and ensures full functionality.
 
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
 Meta-information
 ================
 exname: positron-first-startup

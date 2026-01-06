@@ -85,7 +85,7 @@ If you are already familiar with TeX distributions and have a preferred one, you
 ::: {.unit-summary}
 # Summary
 
-In this unit, you learned how to install Quarto and perform initial setup tasks. You also installed TinyTeX to enable PDF output generation.
+In this unit, you learned how to install Quarto and perform initial setup tasks. You also learned how to install a TeX distribution such as TinyTeX to enable PDF output generation.
 
 ::: 
 <!-- end unit-summary div -->
@@ -112,6 +112,8 @@ exams2forms::exams2forms(file = quizzes, title = 'quarto-install-setup-quiz')
 
 ::: {.unit-exercise}
 # Practice
+
+There's nothing else to practice for now. We hope the install worked and you verified by trying the commands above. 
 
 
 ::: 

@@ -1,0 +1,27 @@
+Question
+========
+What is one benefit of using synthetic data with AI tools?
+
+Answerlist
+----------
+* It avoids confidentiality risks while still enabling code generation and testing
+* It guarantees the AI will infer the true structure of your real data
+* It removes the need for any data cleaning
+* It produces identical results to your real data without changes
+
+Solution
+========
+Synthetic data lets you work safely while still getting useful code or analysis ideas.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: ai-data-synthetic
+extype: schoice
+exsolution: 1000

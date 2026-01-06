@@ -8,7 +8,7 @@ title: "TOC: A brief introduction to Git and GitHub"
 
 - [Introduction to Git/GitHub](github-introduction/github-introduction.qmd)
 - [Installation and Setup](github-install-setup/github-install-setup.qmd)
-- [Basic Use](github-positron/github-positron.qmd)
+- [Basic Use](github-basic-use/github-basic-use.qmd)
 - [Git and GitHub in Positron](github-positron/github-positron.qmd)
 - [Branches, Forks and Pull Requests](github-forks-prs/github-forks-prs.qmd)
 - [Additional Topics](github-additional-topics/github-additional-topics.qmd)

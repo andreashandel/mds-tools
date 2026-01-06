@@ -46,9 +46,12 @@ A more altruistic reason is that if you have knowledge in a certain area, sharin
 
 ## How to make a portfolio
 
-An online portfolio is basically a website. This could be a stand-alone page, or it could be part of your main site (if you have a personal website). Any tool that allows you to make online content and place it on a sever can work. There are many free tools. Wordpress is a very common platform. We like using Quarto and Git/Github. 
+An online portfolio is basically a website. This could be a stand-alone page, or it could be part of your main site (if you have a personal website). Any tool that allows you to make online content and place it on a server can work. There are many free tools. WordPress is a very common platform. 
+
+We like using Quarto and Git/GitHub. In the following unit, we will show you how to create a portfolio using these tools.
 
 ::: 
+<!-- This ends the unit-reading div -->
 
 
 ::: {.unit-summary}
@@ -70,7 +73,6 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 <!-- This ends the unit-resources div -->
 
 
-<!--
 ::: {.unit-quiz}
 # Test yourself
 
@@ -81,7 +83,6 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 # exams2forms::exams2forms(file = quizzes, title = 'portfolio-introduction-quiz')
 ```
 :::
--->
 
 
 

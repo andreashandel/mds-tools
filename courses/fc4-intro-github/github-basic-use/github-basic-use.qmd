@@ -50,16 +50,16 @@ As mentioned previously, the main unit of organization in GitHub is a *repositor
 
 ## Cloning and pulling
 
-When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. Here, we will focus on starting repositories on GitHub.com and won't describe the reverse process, but it it is also possible to start local and then push and thus initialize a new repository online.
+When you start a new project that you plan on tracking with Git/GitHub, you first create a repository either on your local computer or on GitHub.com. Here, we will focus on starting repositories on GitHub.com and won't describe the reverse process, but it is also possible to start local and then push and thus initialize a new repository online.
 
 If you start a repository on GitHub.com, you can then *clone* it to your local machine to work on it. The process of *cloning* creates a local copy of the repository on your computer. You also use that approach if you are collaborating with someone on a repository that they created. The important part is that *cloning* means copying a repository **that you don't yet have on your local machine** from GitHub.com to your local machine.
 
 Once you have a local copy of a repository, you can get future updates from GitHub.com to your local machine by *pulling* remote updates to your local computer. (Sometimes, you might also see the word *fetch*, which is similar to *pull*, but does not automatically merge changes into your local files. For simplicity, we will mainly just use *pull* here since you usually want to merge anything from the online repository with your local version of that repo.)
 
-# Commiting and Pushing
+## Committing and Pushing
 
 The reverse process of getting your local changes up to GitHub.com is called *pushing*.
-If you start a repository locally, or any time you make updates on your loccal machine, you can *push* it to GitHub.com to back it up and share it.
+If you start a repository locally, or any time you make updates on your local machine, you can *push* it to GitHub.com to back it up and share it.
 
 Before you can push your local updates, you need to *commit* them. Committing means recording a snapshot of your changes in the local repository. You can make multiple commits locally before pushing them to GitHub.com. Commits are important because they allow you to track the history of changes and revert to previous versions if needed. 
 
@@ -74,9 +74,9 @@ In contrast to sync services like OneDrive or Google Drive, pushing and pulling 
 
 ### Create a repository
 
-Let's give this whole workflow a try.  We will start by creating a repository online. Go to GitHub.com, make sure you are logged into your account and on your main screen. The URL you should be one looks something like `https://github.com/githubusername`. Click on the `Repositories` tab. Then create a new repository by clicking on the `New` button. Give the new repo, e.g., `my-test-repo`. Give it a short description, turn on 'add README', keep visibility to public, and keep the rest of the settings as they are. Then click **Create repository**. 
+Let's give this whole workflow a try.  We will start by creating a repository online. Go to GitHub.com, make sure you are logged into your account and on your main screen. The URL should be something like `https://github.com/githubusername`. Click on the `Repositories` tab. Then create a new repository by clicking on the `New` button. Give the new repo, e.g., `my-test-repo`. Give it a short description, turn on 'add README', keep visibility to public, and keep the rest of the settings as they are. Then click **Create repository**. 
 
-This has now created a new public repository on Github.com. At the moment, it is mostly empty apart from the README.md file we told it to create. 
+This has now created a new public repository on GitHub.com. At the moment, it is mostly empty apart from the README.md file we told it to create. 
 
 ### Clone the repository
 
@@ -103,11 +103,11 @@ As you keep working on the project, you can repeat this process of editing files
 
 These commits that will accumulate as you work on the project will create a history of changes that you can always go back to if needed. So if you did something a few weeks ago, then changed your code and now realized you need the old version back, you can click on that commit in GitHub Desktop and restore the files to that version. You can then pull out the changes you need from that version.
 
-## Recap of Github workflow
+## Recap of GitHub workflow
 
 In the future, if you work on repositories like this one (or any others), your workflow should be as follows:
 
-- If needed, create a repository online, then clone the repository to your local machine with GitHub desktop or any other way (e.g. the terminal). 
+- If needed, create a repository online, then clone the repository to your local machine with GitHub Desktop or any other way (e.g. the terminal). 
 - Once you have a copy of the repository both on your local machine and github.com, any time you start working on that repository, check that it's up to date and as needed, do a **pull**.
 -   Once your local repo is up-to-date, open your project. Make all the edits you like. Make sure to run your code and render your Quarto files. Once you are done with edits, **stage/commit/push** your changes back to the remote server.
 
@@ -128,7 +128,7 @@ Small commits make it easier to review and undo changes. If a change is unrelate
 Always check for and as needed, pull the latest changes from GitHub.com before you start working locally. This helps avoid conflicts.
 
 ### Coordinate if you collaborate
-If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can't, you'll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be agravating at first, but you'll soon learn how to deal with them. The best approach is to avoid them as much as possible. 
+If you are working with others, communicate about who is working on what to minimize conflicts. A conflict happens if two people change the same file. GitHub will try to merge changes automatically, but if it can't, you'll need to resolve the conflict manually. Sooner or later, you will encounter such merge conflicts. They can be aggravating at first, but you'll soon learn how to deal with them. The best approach is to avoid them as much as possible. 
 
 :::
 <!-- end unit-reading div -->

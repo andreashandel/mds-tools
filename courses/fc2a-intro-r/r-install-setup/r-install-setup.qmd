@@ -48,7 +48,7 @@ Once R is installed, you can open it. The graphical interface you see will look 
 
 Just to make sure `R` is running, you can type some math into the console at the `>` sign. E.g. if you type `2+2`, you should get `4` as a result.
 
-Most of the power of R comes from add-ons called packages, which we'll cover shortly. For now, you can try to install one. Type `install.packages('dplyr')` into the console. You might be asked to select a CRAN mirror. Just pick the fist one (Cloud) - or really any. This will download and install the `dplyr` package, which is a very useful package for data manipulation. To check if it worked, type `library(dplyr)`. You'll see some messages, maybe even a warning message about the package having been built under a different version of R. That's ok for now, as long as you don't get any error messages. 
+Most of the power of R comes from add-ons called packages, which we'll cover shortly. For now, you can try to install one. Type `install.packages('dplyr')` into the console. You might be asked to select a CRAN mirror. Just pick the first one (Cloud) - or really any. This will download and install the `dplyr` package, which is a very useful package for data manipulation. To check if it worked, type `library(dplyr)`. You'll see some messages, maybe even a warning message about the package having been built under a different version of R. That's ok for now, as long as you don't get any error messages. 
 
 R should be working and ready to use. You can close it.
 

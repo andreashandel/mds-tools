@@ -39,7 +39,7 @@ At the heart of every IDE, such as Positron, is the editor. Positron allows you 
 
 ## Editing a text file
 
-This is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn't necessarily need to be plain text. You can for instance open and edit a CSV file as well. We already tried that earlier when we discussed extensions. Feel free to revisit this by re-opening the prior CSV file and changing some of its contents. The save it under a new name.
+This is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn't necessarily need to be plain text. You can for instance open and edit a CSV file as well. We already tried that earlier when we discussed extensions. Feel free to revisit this by re-opening the prior CSV file and changing some of its contents. Then save it under a new name.
 
 Depending on the type of file you are editing, Positron will try to provide some features that make it easier to work with it. For instance, if you open an R script, it will highlight the syntax and provide some code completion features. Syntax highlighting exists for many languages, not just R. As you work with the editor and learn more features, you will continue to find features that make your workflow easier and more efficient.  
 
@@ -50,7 +50,7 @@ Depending on the type of file you are editing, Positron will try to provide some
 The following only works if you already have R installed. If you don't have it on your computer, you should still read this section, you just can't run it for now. 
 :::
 
-Positron is meant for working with code. It is especically designed to work well with R and Python, but other languages are also supported, many through extensions. Let's explore a small example with R. Go to "File" -> "New File" and pick "R File". An empty file will open in the editor. Write a few lines of R code, for instance the following
+Positron is meant for working with code. It is especially designed to work well with R and Python, but other languages are also supported, many through extensions. Let's explore a small example with R. Go to "File" -> "New File" and pick "R File". An empty file will open in the editor. Write a few lines of R code, for instance the following
 
 ```{r}
 #| echo: true
@@ -66,18 +66,17 @@ Let's say you want to have a line instead of circles for the plot but don't reme
 
 Once you found what you are looking for, change your code so it says `plot(x,y,type='l')` and run again. This time, instead of pressing the 'run' button, try to execute the code one line at a time. You can do that by starting in the first line and pressing `Ctrl/Cmd + Enter`. The first line will be executed, and you can then continue to the next line by pressing `Ctrl/Cmd + Enter` again. You will see the new plot show up. You should also see that the old plot is still there, you can go back to it with the arrows above the plot. The menu above the plot also allows you to save any of them, and do other things. 
 
-It is generally not advised to do any steps like writing code or saving plots manually, you should instead have fully automated code do all of it to ensure reproducibility. But for exploring and testing, these iterative and manual steps are often needed and having all these features in one location makes some of these coding, modeling and data science talks much more efficient.
+It is generally not advised to run code manually/interactively, or save plots through the GUI. You should instead have fully automated code do all of it to ensure reproducibility. But for exploring and testing, these iterative and manual steps are often needed and having all these features in one location makes some of these coding, modeling and data science tasks much more efficient.
 
-<!-- You can of course also do the same for other programming languages. We'll look at an example for Julia in the [Introduction to Julia course](/courses/course-landing-pages/fc5-intro-julia.qmd) -->
 
 
 ## Working with Quarto documents
 
 :::{.note}
-The following only works if you already have both R and Quarto installed. If you don't have both on your computer yet, syou should still read this section, you just can't run it for now. 
+The following only works if you already have both R and Quarto installed. If you don't have both on your computer yet, you should still read this section, you just can't run it for now. 
 :::
 
-Let's try a brief quarto document. Quarto itself is discussed in our _Brief Introduction to Quarto_ course, so we won't talk about it much here, just showcase how to work with it in Positron. 
+Let's try a brief Quarto document. Quarto itself is discussed in our _Brief Introduction to Quarto_ course, so we won't talk about it much here, just showcase how to work with it in Positron. 
 
 Start another new file, and this time from the menu, pick `Quarto Document` towards the bottom. Another editor window should open with an almost empty area. There will be a few lines at the top indicating a Quarto document.
 
@@ -95,7 +94,7 @@ plot(x,y)
 ````
 
 Then add a bit more text after this code chunk.
-Finally, safe the file as `.qmd` file.
+Finally, save the file as `.qmd` file.
 
 Then press the 'preview' button above the editor window. Quarto should run and compile/render the document. If things work right, you should see a preview of your Quarto document show up in the viewer pane or open in an external browser, depending on your settings for the Quarto extension.
 
@@ -114,7 +113,7 @@ You saw two examples illustrating the basics of working with Positron. There is 
 ::: {.unit-resources}
 # Further Resources
 
-* [Positron Keyboard shortcuts](https://positron.posit.co/keyboard-shortcuts.html) - if you are one of those persons who prefers to use keyboard shortcuts instead of the mouse, check out this handy reference. Note that these are just a few basic ones, almost everyhing can be turned into a keyboard shortcut.
+* [Positron Keyboard shortcuts](https://positron.posit.co/keyboard-shortcuts.html) - if you are one of those persons who prefers to use keyboard shortcuts instead of the mouse, check out this handy reference. Note that these are just a few basic ones, almost everything can be turned into a keyboard shortcut.
 
 
 
@@ -135,9 +134,9 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-use-quiz')
 
 ::: {.unit-exercise}
 # Practice
-* Start a new text file. Use [Markdown Synatx](https://quarto.org/docs/authoring/markdown-basics.html) to write a bit of text. You should see Positron do syntax highlighting for Markdown. Save the file as `myfirstfile.md`. For now, you can't preview it unless you have Quarto (or some other extension) installed. You can try that later once you have Quarto up and running.
+* Start a new text file. Use [Markdown Syntax](https://quarto.org/docs/authoring/markdown-basics.html) to write a bit of text. You should see Positron do syntax highlighting for Markdown. Save the file as `myfirstfile.md`. For now, you can't preview it unless you have Quarto (or some other extension) installed. You can try that later once you have Quarto up and running.
 * If you have R installed: Revisit the R script you created earlier. Extend it such that the code saves the figure to a file. Run the modified code. If you are new to R, look online to find out how to do this. Then also inspect the variables you created.
-* If you have R and Quarto installed: Re-open your Quarto document. Replace the code chunk with code that uses the `ggplot2` package to create the same plot. If you are completely new to R and don't know what packages R yet, you can skip this - or just look online or ask your AI and implement it, even if you don't fully understand yet what's going on 😁.
+* If you have R and Quarto installed: Re-open your Quarto document. Replace the code chunk with code that uses the `ggplot2` package to create the same plot. If you are completely new to R and don't know what packages are in R yet, you can skip this - or just look online or ask your AI and implement it, even if you don't fully understand yet what's going on 😁.
 
 :::
 <!-- end unit-exercise div -->

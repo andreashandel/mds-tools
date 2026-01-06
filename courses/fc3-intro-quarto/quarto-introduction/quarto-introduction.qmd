@@ -39,7 +39,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## What is Quarto?
 
-Quarto is defined as "an open-source scientific and technical publishing system". In simple terms, Quarto is piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Various output formats are available, including HTML, PDF, Word documents, presentations, and websites.
+Quarto is defined as "an open-source scientific and technical publishing system". In simple terms, Quarto is a piece of (powerful) software that can take various input sources (text, code, etc.) and process them to produce well-formatted output documents that are a seamless combination of text, figures, tables and other elements. Various output formats are available, including HTML, PDF, Word documents, presentations, and websites.
 
 Quarto is the successor of the R Markdown framework, which has been widely used for reproducible research and dynamic reporting in the R community. Building upon R Markdown’s strengths, Quarto extends this capability to other languages like Python, Julia, and others. 
 
@@ -67,12 +67,12 @@ Quarto is widely applicable in various scenarios:
 
 Quarto is the more powerful successor of R Markdown. R Markdown is still around and functional. However, most effort is going into implementing new features for Quarto, and it has many more features compared to R Markdown.
 
-Occasionally, you might still need to use R Markdown, and you will find a lot of online information for R Markdown. Since Quarto is an evolution of R Markdown and shares many similiarities, often what works in R Markdown will also work in Quarto.
+Occasionally, you might still need to use R Markdown, and you will find a lot of online information for R Markdown. Since Quarto is an evolution of R Markdown and shares many similiarities. Often what works in R Markdown will also work in Quarto.
 
 
 ## Basics of Quarto
 
-The Quarto software uses as input Quarto documents/files. These are text files with the file extension `.qmd`. A Quarto document typically consists of three main components: 
+The Quarto software uses Quarto documents/files as input/source. These are **text files** with the file extension `.qmd`. A Quarto document typically consists of three main components: 
 
 1. **YAML Front Matter:** Metadata and output configurations defined at the beginning of the file.
 2. **Markdown Text:** Narrative content formatted with Markdown syntax.
@@ -109,7 +109,7 @@ The code is executed when the Quarto document is processed (rendered), and the r
 
 We'll re-create the document shown above shortly.
 
-Note that what you are seeing is actually nested Quarto documents. This whole website including this page are written in Quarto, and inside that Quarto file we wrote the above Quarto document to illustrate how to write Quarto documents 😁.
+Note that what you are seeing here are actually nested Quarto documents. This whole website, including this page, is written in Quarto. Inside the Quarto file that is the source for this page, we included the above Quarto document to illustrate how to write Quarto documents 😁.
 
 
 ::: 
@@ -118,7 +118,7 @@ Note that what you are seeing is actually nested Quarto documents. This whole we
 ::: {.unit-summary}
 # Summary
 
-Quarto is a powerful, flexible framework that allows you to perform modeling and data science projects, any many more activities in a very automated, reproducible setup.
+Quarto is a powerful, flexible framework that allows you to perform modeling and data science projects, and many more activities, in a very automated, reproducible setup.
 
 ::: 
 <!-- end unit-summary div -->
@@ -126,7 +126,7 @@ Quarto is a powerful, flexible framework that allows you to perform modeling and
 ::: {.unit-resources}
 # Further Resources
 
-- [Official Quarto Documentation](https://quarto.org/docs/)
+- [Official Quarto Documentation](https://quarto.org/docs/guide/)
 - [Getting Started with Quarto](https://quarto.org/docs/get-started/)
 ::: 
 <!-- end unit-resources div -->

@@ -34,7 +34,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 ## Introduction
 
-As it the case for many IDEs, Positron is set up such that you have quick access to different parts of your project. The main window is divided into different areas (known as *panes*), each tailored to a distinct part of a typical project workflow: writing code, running it, visualising output, working with files, debugging, inspecting the environment, etc.
+As is the case for many IDEs, Positron is set up such that you have quick access to different parts of your project. The main window is divided into different areas (known as *panes*), each tailored to a distinct part of a typical project workflow: writing code, running it, visualising output, working with files, debugging, inspecting the environment, etc.
 
 
 
@@ -44,11 +44,11 @@ The top menu bar in Positron is similar to most standard programs and likely req
 
 The menu bar filled with icons that is typically found along the left is called _Activity Bar_. It gives you access to different views related to Positron and your editor. Whatever you click on will open to the right of the Activity Bar in an area called _Primary Side Bar_. You've already encountered the _Extensions_ view. 
 
-The first icon on the activitiy bar, which looks like several sheets of paper, opens a view you likely use a lot, namely the file explorer view. You can use it to quickly open files and create new ones. The search view is also a handy tool to find things quickly and do search and replace operations. Several other icons are for specific extensions or functionality related to version control and coding, we'll discuss some of them elsewhere. 
+The first icon on the activity bar, which looks like several sheets of paper, opens a view you likely use a lot, namely the file explorer view. You can use it to quickly open files and create new ones. The search view is also a handy tool to find things quickly and do search and replace operations. Several other icons are for specific extensions or functionality related to version control and coding, we'll discuss some of them elsewhere. 
 
 ## The Editor Pane
 
-The biggest window, located in the top middle of the IDE (unless you resize or move it), is the _Editor_ pane/panel. The Editor is where you edit your documents, such as code, Quarto documents or any other text-based files. The editor has a lot of nice features, such as snyax highlighting, auto-completion, automatic formatting, etc. Multiple files open in tabs along the top. 
+The biggest window, located in the top middle of the IDE (unless you resize or move it), is the _Editor_ pane/panel. The Editor is where you edit your documents, such as code, Quarto documents or any other text-based files. The editor has a lot of nice features, such as syntax highlighting, auto-completion, automatic formatting, etc. Multiple files open in tabs along the top. 
 
 ## Console, Terminal and more
 
@@ -59,7 +59,7 @@ Below the Editor is an area that gives you access to various other tools. The `C
 
 The right side of the IDE has a second sidebar, which is by default split into two.
 
-The bottom-right aree is usually the Viewer pane. It automatically displays plots created by code, such as R’s *ggplot2*, Python’s *matplotlib*, or Julia’s *Plots* package. HTML widgets, data frames, interactive tables, and other items that can be pre-viewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there. 
+The bottom-right area is usually the Viewer pane. It automatically displays plots created by code, such as R’s *ggplot2*, Python’s *matplotlib*, or Julia’s *Plots* package. HTML widgets, data frames, interactive tables, and other items that can be previewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there. 
 
 
 ## Environment and History Pane

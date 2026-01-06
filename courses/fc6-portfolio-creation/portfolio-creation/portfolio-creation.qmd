@@ -1,5 +1,5 @@
 ---
-title: Portfolio Creation 
+title: Portfolio Creation
 subtitle: ""
 ---
 
@@ -71,11 +71,11 @@ Next, open `aboutme.qmd` and write some text introducing yourself, as follows:
 * Talk a bit about yourself, your background, training, research interests. Let us know what kind of statistics, modeling, programming, data analysis experience you already have. I’d also be curious to know what you most hope to learn in this course. And then tell us some quirky/interesting/curious thing about you.
 * Include a picture of yourself. To do so, place the picture in the repository and link it from the Quarto file.
 *  Include a link to a picture/video/website/etc. The linked material should be somehow related to data analysis. Find something that you think is really cool/interesting/weird/etc. Provide a few explanatory sentences.
-* If you want, feel free to get creative and include other things, e.g., you can try to include a table or a video or any other elments you want to explore.
+* If you want, feel free to get creative and include other things, e.g., you can try to include a table or a video or any other elements you want to explore.
 
-Give your text a nice structure with headings, subheadings, etc. Use any other graphical elements (e.g. bold or intalics or color or...) that you like to make the page look nice. 
+Give your text a nice structure with headings, subheadings, etc. Use any other graphical elements (e.g. bold or italics or color or...) that you like to make the page look nice. 
 
-Once done (or as you go along, if you want to see your udpates), save and re-render the site to see your changes.
+Once done (or as you go along, if you want to see your updates), save and re-render the site to see your changes.
 
 ::: {.warning}
 This portfolio website and everything you put on it is public. So don’t put anything on there that you don’t want to be publicly known.
@@ -92,7 +92,7 @@ Make the following changes:
 
 -   Update the title of your website.
 
--   Replace the `URL-TO-THIS-REPOSITORY-HERE` placeholder text with the Github URL of the repository you created (it should be something like `https://github.com/githubusername/FirstnameLastname-portfolio`).
+-   Replace the `URL-TO-THIS-REPOSITORY-HERE` placeholder text with the GitHub URL of the repository you created (it should be something like `https://github.com/githubusername/FirstnameLastname-portfolio`).
 
 -   It is possible to change the look of your website. Full styling requires some knowledge of CSS/HTML. We won't get into this. But we'll explore a quick way to change the look. Replace `theme` with a different one. [Many themes are available](https://quarto.org/docs/output-formats/html-themes.html). Try some, see how things change. You can also change the highlight scheme. For further styling, you can put custom CSS code into the `styles.css` file. We won't do this here, but feel free to explore on your own. There are lots of examples available online that you can use as a starting point.
 
@@ -101,7 +101,7 @@ YAML (which is the format of `_quarto.yml`) is VERY finicky when it comes to for
 :::
 
 
-## Sending updates to Github
+## Sending updates to GitHub
 
 Once you are happy with your updates, or if you want to take a break, make sure to commit and push your updates to your remote repository on GitHub.com. 
 
@@ -110,28 +110,28 @@ Once you are happy with your updates, or if you want to take a break, make sure 
 
 So far, we just have a GitHub repository on your computer and on GitHub.com that contains the files for your website. When you render the website locally, it is created by Quarto and placed into the `docs` folder. This is what you see when you do the preview in the Viewer window or the browser. 
 
-But the website itself is not yet publicly hosted. This is where GitHub has a very convenient feature that makes this very easy. It allows you to turn your repository into a public website with its **Github Pages** feature. To turn on the Github Pages, go to your repository on github.com. On the top of the website for your repository, you should see a `Settings` button. Click on it and then on the left menu, find the `Pages` section. In the `Branch` section, switch `none` to `main` and folder as `/docs`. Click `Save`.
+But the website itself is not yet publicly hosted. This is where GitHub has a very convenient feature that makes this very easy. It allows you to turn your repository into a public website with its **GitHub Pages** feature. To turn on GitHub Pages, go to your repository on github.com. At the top of the website for your repository, you should see a `Settings` button. Click on it and then on the left menu, find the `Pages` section. In the `Branch` section, switch `none` to `main` and folder as `/docs`. Click `Save`.
 
 This should now have turned on your website. GitHub is now taking everything inside the `docs` folder, which was created by Quarto when you rendered the website, and is now hosting it as a public website.
 
-To see your public website, go to its URL, which has the form `https://username.github.io/FirstnameLastname-portfolio/`. It might take a several seconds before the page is available, if you get a 'not found' error, wait a bit and try again. If everything works, your website is now public!
+To see your public website, go to its URL, which has the form `https://username.github.io/FirstnameLastname-portfolio/`. It might take several seconds before the page is available, if you get a 'not found' error, wait a bit and try again. If everything works, your website is now public!
 
-You might have noticed that all the files that contain the content of your new website live on the domain `github.com`, while your shiny new website lives at the domain `github.io`. This is how Github Pages work. It take files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder ( `/docs` for our setup). Your website URL and your repository URL are distinct. All github actions, like pushing, pulling, cloning, etc. are done with **the repository** on the `github.com` domain. The `github.io` domain is only there to display websites.
+You might have noticed that all the files that contain the content of your new website live on the domain `github.com`, while your shiny new website lives at the domain `github.io`. This is how GitHub Pages work. It takes files from your repository and turns them into a website with a distinct URL. Those files can either be in the main repository folder or in a subfolder (`/docs` for our setup). Your website URL and your repository URL are distinct. All GitHub actions, like pushing, pulling, cloning, etc. are done with **the repository** on the `github.com` domain. The `github.io` domain is only there to display websites.
 
 
-## Update your repository Readme file
+## Update your repository README file
 
-To allow quick switching between your repository and the website created from that repository, we'll add that information to the repository README file. Open the README.md file. This file does not show on your website, but it is what people see if they land at your github repository (i.e. if they visit `https://github.com/githubusername/FirstnameLastname-portfolio`). Add text and a link to the README that points users to the URL for your new website. Something like this:
+To allow quick switching between your repository and the website created from that repository, we'll add that information to the repository README file. Open the README.md file. This file does not show on your website, but it is what people see if they land at your GitHub repository (i.e. if they visit `https://github.com/githubusername/FirstnameLastname-portfolio`). Add text and a link to the README that points users to the URL for your new website. Something like this:
 
 ```verbatim
 [Here is the link to the website for this repository](https://username.github.io/FirstnameLastname-portfolio/)
 ```
 
-You've done the reverse above in your Quarto YAML file. This now allows users to quickly go from your Github repository to your website and the reverse.
+You've done the reverse above in your Quarto YAML file. This now allows users to quickly go from your GitHub repository to your website and the reverse.
 
 Make any other edits to the README you like. Once done with edits, remember to commit and push.
 
-Visit your GitHub repository page to see your updated README file and test that the link works. Also check that the link in the top right corner of your webiste (the GitHub icon) takes you back to your repository.
+Visit your GitHub repository page to see your updated README file and test that the link works. Also check that the link in the top right corner of your website (the GitHub icon) takes you back to your repository.
 
 If you find anything not yet working, make edits, re-render the website with Quarto, then commit and push everything.
 
@@ -152,7 +152,7 @@ You created a portfolio repository, customized Quarto content, and published the
 ::: {.unit-resources}
 # Further Resources
 
-- [A beginner’s guide to building a simple website with Quarto & Netlify](https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/) by Jadey Ryan is potential good resource. Her instructions are very detailed. She uses RStudio instead of Positron, and doesn't use GitHub but instead uses Netlify for hosting. Still, a lot of the information is relevant and possibly useful. 
+- [A beginner’s guide to building a simple website with Quarto & Netlify](https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/) by Jadey Ryan is a potentially good resource. Her instructions are very detailed. She uses RStudio instead of Positron, and doesn't use GitHub but instead uses Netlify for hosting. Still, a lot of the information is relevant and possibly useful. 
 
 
 
@@ -162,7 +162,6 @@ You created a portfolio repository, customized Quarto content, and published the
 <!-- end unit-resources div -->
 
 
-<!--
 ::: {.unit-quiz}
 # Test yourself
 
@@ -173,7 +172,6 @@ You created a portfolio repository, customized Quarto content, and published the
 # exams2forms::exams2forms(file = quizzes, title = 'portfolio-creation-quiz')
 ```
 :::
--->
 <!-- end unit-quiz div -->
 
 

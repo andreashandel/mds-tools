@@ -1,0 +1,27 @@
+Question
+========
+What is a suggested strategy if an AI tool keeps getting stuck on a task?
+
+Answerlist
+----------
+* Give up entirely and stop using AI tools
+* Switch to a different model or AI provider
+* Remove all details from your prompt
+* Avoid asking for explanations
+
+Solution
+========
+The unit suggests trying a different model or tool if one gets stuck.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: ai-coding-switch-tools
+extype: schoice
+exsolution: 0100

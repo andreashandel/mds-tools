@@ -75,7 +75,7 @@ Finally, if you have data, you need to be careful since by default, GitHub repos
 
 The most powerful and flexible way of using Git/GitHub is to open a command-line terminal and type commands. Since this can be intimidating, we will discuss a more user-friendly approach using the GitHub Desktop graphical interface.
 
-If you are already an experienced GitHub user and have your own preferred setup (e.g. the command line or some other third-party software), you can keep using your preferred approach We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup. 
+If you are already an experienced GitHub user and have your own preferred setup (e.g. the command line or some other third-party software), you can keep using your preferred approach. We assume if you decide to do it your way, you are experienced enough to translate the instructions to your setup. 
 
 
 
@@ -84,7 +84,7 @@ If you are already an experienced GitHub user and have your own preferred setup 
 
 In some way, you can think of GitHub as a more controlled (and more complex) alternative to systems such as Dropbox, OneDrive, Google Drive, etc. With the GitHub workflow, you can work locally on different machines, and everything is backed up in the cloud (on github.com). The difference to Dropbox & Co is that syncing between your local computer and github.com is not automatic. So do not forget to pull before you start work on a repository and push once you are done. (We'll cover GitHub terminology and the meaning of `push` and `pull` shortly.)
 
-Because GitHub works similar to other sync services, it is generally a bad idea to locally store your GitHub repositories in a folder that is synced by another service. If you do, sync processes mighg conflict, potentially leading to a syncing mess. **For any GitHub repository, store it locally in a folder that is not synced across your computers by another software (such as Dropbox, OneDrive, Box, etc.)**
+Because GitHub works similar to other sync services, it is generally a bad idea to locally store your GitHub repositories in a folder that is synced by another service. If you do, sync processes might conflict, potentially leading to a syncing mess. **For any GitHub repository, store it locally in a folder that is not synced across your computers by another software (such as Dropbox, OneDrive, Box, etc.)**
 
 Similarly, do not store a GitHub repository inside another repository. While this is technically allowed, it can easily lead to a mess. Each repository should be separate and not connected to any other syncing service.
 
@@ -102,7 +102,7 @@ Similarly, do not store a GitHub repository inside another repository. While thi
 ::: {.unit-summary}
 # Summary
 
-Git/GitHub are a software and service that allows you to keep track of your changes and sync them to the cloud. Together they provide a structured way to collaborate, back up projects, and maintain a history of your work. 
+Git/GitHub are a software and service that allow you to keep track of your changes and sync them to the cloud. Together they provide a structured way to collaborate, back up projects, and maintain a history of your work. 
 
 :::
 <!-- end unit-summary div -->

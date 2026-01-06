@@ -1,5 +1,5 @@
 ---
-title: AI tools for data analysis
+title: Using AI to analyze data
 subtitle: ""
 ---
 
@@ -36,22 +36,21 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 ::: {.unit-reading}
 # Reading
 
+
 ## Introduction
 
-In an exploratory analysis, you generally want to look at many aspects of your data to get a good idea of what you have in front of you. While R has many powerful functions that let you explore your data quickly, combining R with AI generated code can speed up things even more.
+AI has gotten pretty good at working with data. While there is no substitute for you understanding your data, AI can help speed up the process. R has many powerful functions that let you explore your data quickly, combining R with AI-generated code can speed up things even more.
+
 
 ## Confidentiality and Privacy
 
-It is important to re-iterate from a previous unit: If you allow the AI to "see" your data, this data might end up on the servers of the company running the AI (ChatGPT, Microsoft, Google) and might be used by them for future training of their models. Therefore, be careful with what you let the AI see. If you are re-analyzing publicly available data, you shouldn't have to worry. But if the data is in any way confidential, it might not be a good idea to allow the AI to see it.
+It is important to reiterate: If you allow the AI to "see" your data, this data might end up on the servers of the company running the AI (ChatGPT, Microsoft, Google) and might be used by them for future training of their models. Therefore, be careful with what you let the AI see. If you are re-analyzing publicly available data, you shouldn't have to worry. But if the data is in any way confidential, it might not be a good idea to allow the AI to see it.
 
-The best solution in that case is to generate synthetic data that looks like your real data, then ask the AI to write code to analyze this synthetic data. Once the AI gives you working code, you can take it off-line and apply it to your real data.
-
-Since synthetic (artificial/fake/simulated) data is very useful for many parts of the data analyis workflow, we will cover it in a separate unit.
+If you are working in a setting where your company/organization has their own instance of an AI service, this confidentiality issue might not be that important. But if you are using public AI services, be somewhat careful.
 
 
-In the following I'm assuming that you have data that can be shared with the AI.
 
-## Data analyis with no data
+## Data analysis with no data
 
 Ok, this sounds dumb, but it's not that stupid. Instead of trying to feed the AI your data, you can describe your data and ask it to return code that could analyze it. For instance, you could provide a prompt like this:
 
@@ -63,49 +62,39 @@ Of course, you can take this further and ask the AI to first write code that gen
 
 
 
-## Data analyis with copy and paste
+## Data analysis with synthetic data
+
+A good solution is to generate synthetic data that looks like your real data, then ask the AI to write code to analyze this synthetic data. Once the AI gives you working code, you can take it off-line and apply it to your real data.
+
+Since synthetic (artificial/fake/simulated) data is very useful for many parts of the data analysis workflow, having synthetic data generation as part of your project is in general a good idea.
+
+
+
+## Data analysis with copy and paste
 
 A common way to interact with AI tools is through the web browser. If you have fairly simple dataset, you can paste it directly into the prompt and ask the AI to perform some action. It's a bit limited, but can work and is quick and easy.
 
-::: note
-To get a new line in your prompts, use `Shift + Ctrl/Return` (or whatever the equivalent is on a Mac 😁.)
-:::
 
+## Data analysis with file upload
 
-
-Note that there are character limits. For Bing, the maximum is 4000 as of this writing. If your data is too big, it gets cut off. In the example above, the last few lines of data got cut. I think this is often not a big problem, since the data you supply isn't the real data anyway. All you want is enough data for the AI to generate EDA code, then you take that code and apply it to your real data later, with AI turned off.
-
-
-## Data analyis with file upload
-
-You can also upload files to some AI tools and ask them to operate on them. Assuming all is good on the confidentiality side of things, you can use this approach to get AI generated insights into your data.
+You can upload files to some AI tools and ask them to operate on them. Assuming all is good on the confidentiality side of things, you can use this approach to get AI-generated insights into your data.
 
 You basically upload the files, which can in addition to the data also contain other potentially relevant information. Note that not all data formats are supported by all AI tools. CSV files are generally a safe bet.
 
 You can then ask the AI to operate on the data. While you can ask it to analyze the data directly, I recommend asking it to write R code that performs the analysis. This way you can take the code, copy it to your computer, and run the code yourself later, and modify it if needed.
 
 
+## AI on your computer
 
+Probably the best way to use AI tools to analyze data is to have the AI tools running on your own computer. This way you can have the AI operate directly on your local files, without having to upload them anywhere. This also allows the AI to see other parts of your project. The tools discussed in the _AI Tools_ unit, especially those that tie in nicely with Positron, are great ways of doing this. 
 
-
-## `chattr` package
-
-Based on the package description, it should be able to write code based on not only the content in the current file, but also by looking into variables in the current environment. So if you have a data frame called `dat` in your environment, you should be able to ask the AI to write code to analyze it. Unfortunately, so far I haven't been able to get `chattr` to talk to OpenAI. I think this is because talking to ChatGPT via the API (which is what `chattr` does) requires a paid account.
-
-
-## Other options
-
-In general, the paid/premium versions of AI tools will have more features, including file upload and possibly better models. They also provide better integration into existing workflows. For instance There is a Positron/VS Code Plugin that allows you to use ChatGPT Codex from within VS Code. This means you can have the AI operate directly on local files in your project, instead of having to upload information.
+The [DataBot extension](https://positron.posit.co/databot.html) for Positron is one such tool that is specifically designed to perform AI based data analysis and certainly worth trying.
 
 
 
 ## Best practices
 
-As always, being specific in your prompt helps. For instance if you want the AI to perform very specific analyses, or use specific R packages, mention this in your prompt. Alternatively, you could tell it what you want, and ask it to recommend some analysis approaches or R packages to use and give you their advantages and disadvantages. As needed, you can ask for deeper explanations to make sure you fully understand any proposed approaches that might be new to you.
-
-Also, while AI 
-
-It would of course be better if I provided much more detailed instructions regarding the types of analyses, and possible even the R packages and functions I want to have. But I think you get the idea. If the data is not too big, you can write your prompt, then copy the data underneath and get code that does EDA on the data.
+The same tips and best practices discussed in the AI Coding unit apply. As always, being specific in your prompt helps. For instance if you want the AI to perform very specific analyses, or use specific R packages, mention this in your prompt. Alternatively, you could tell it what you want, and ask it to recommend some analysis approaches or R packages to use and give you their advantages and disadvantages. As needed, you can ask for deeper explanations to make sure you fully understand any proposed approaches that might be new to you.
 
 
 :::
@@ -115,11 +104,8 @@ It would of course be better if I provided much more detailed instructions regar
 ::: {.unit-summary}
 # Summary
 
-I haven't tried any of the premium/paid options yet. I assume they will be superior, but I wanted to focus on free options. Among those, I currently think for EDA these 2 are the best:
+While it is important to keep confidentiality issues in mind, AI tools can be great helpers in analyzing data. Make sure that you always use AI to **help you understand the data**, not let it make decisions for you, no matter how good-looking and convincing the code and plots it creates 😁.
 
-- (Make the AI) produce code that generates synthetic data that looks like you want it to, then feed that to the AI and ask it to write code to perform EDA on the synthetic data. Once you have working code, you can apply it to your real data.
-
-- Use Claude to upload your (synthetic or otherwise ok to share) data and ask it to write code to perform EDA on it.
 
 :::
 <!-- end unit-summary div -->
@@ -127,8 +113,7 @@ I haven't tried any of the premium/paid options yet. I assume they will be super
 
 ::: {.unit-resources}
 # Further Resources
-
-See the [AI resource unit](../ai-resources/ai-resources.qmd).
+* None at this time.
 
 :::
 <!-- end unit-resources div -->
@@ -137,11 +122,11 @@ See the [AI resource unit](../ai-resources/ai-resources.qmd).
 ::: {.unit-quiz}
 # Test yourself
 
-```{r ai-eda-r-quiz}
+```{r ai-data-analysis-quiz}
 #| echo: false
 #| results: "asis"
-quizzes <- list("ai-eda-r-quiz-1.Rmd", "ai-eda-r-quiz-2.Rmd", "ai-eda-r-quiz-3.Rmd")
-exams2forms::exams2forms(file = quizzes, title = 'ai-eda-r-quiz')
+quizzes <- list("ai-data-analysis-quiz-1.Rmd", "ai-data-analysis-quiz-2.Rmd", "ai-data-analysis-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'ai-data-analysis-quiz')
 ```
 :::
 <!-- end unit-quiz div -->
@@ -151,9 +136,7 @@ exams2forms::exams2forms(file = quizzes, title = 'ai-eda-r-quiz')
 ::: {.unit-exercise}
 # Practice
 
-* Ask an AI tool to draft EDA code for a synthetic dataset you describe in words.
-* Try the same task with copy/paste data and with a file upload (if available), then compare outputs.
-* Write down a privacy checklist for deciding what data you will and will not share.
+* Try out the [DataBot extension](https://positron.posit.co/databot.html) for Positron to analyze a dataset of your choice.
 
 :::
 <!-- end unit-exercise div -->

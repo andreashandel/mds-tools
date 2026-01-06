@@ -49,25 +49,25 @@ Extensions can be turned on and off. Enabled extensions are shown normally. Thos
 
 Enabling or disabling extensions can be helpful for specific situations. For instance there are various extensions that can give you access to AI support. It could be that you don't want to use one of them for a while, since it is getting in the way of your coding or writing. You can then disable the extension by clicking on the gear icon, then on 'Disable' (you have to likely restart it). You can also disable extensions for specific projects (which Positron calls workspaces). Say you have some project with sensitive data where you don't want AI to operate on. You can turn the AI off for that project/workspace.
 
-Finally, if you decide you don't like an extension at all, just click on it completely uninstall it.
+Finally, if you decide you don't like an extension at all, just click on it to completely uninstall it.
 
 
 ## Getting Extensions 
 
-You can install more extensions to get extra functionality. Getting extensions is easy. Let's practice and install an additional extension. First, click on 'File' -> 'Open File' and open some `CSV` file on your computer. If you don't have one readily available, ask your favorite AI to make you one, e.g. with a promt like _"Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file."_   
+You can install more extensions to get extra functionality. Getting extensions is easy. Let's practice and install an additional extension. First, click on 'File' -> 'Open File' and open some `CSV` file on your computer. If you don't have one readily available, ask your favorite AI to make you one, e.g. with a prompt like _"Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file."_   
 
-The file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let's say we don't want to have it pre-formmatted by Positron. Click on the 'Open as plain text file' button on the top. This should open the CSV file as simple text, you'll see entries separated by commas. That's ok, but a bit hard to read. So let's improve this with an extension.
+The file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let's say we don't want to have it pre-formatted by Positron. Click on the 'Open as plain text file' button on the top. This should open the CSV file as simple text, you'll see entries separated by commas. That's ok, but a bit hard to read. So let's improve this with an extension.
 
 Go to the Extensions sidebar and search for 'Rainbow CSV'. Click on the 'Install' button (trust the publisher). Now go back to your open CSV file. You should now see each column in a different color, courtesy of this new extension. This makes CSV files easier to read. 
 
-This was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several ones you might want in the future, based on your specific needs. 
+This was a very basic extension. Given that Positron already nicely formats CSV files, you might not need the extension. But there are several you might want in the future, based on your specific needs. 
 
 Recall that Positron is based on VS Code. To learn a bit more about Positron extensions, and how they do and don't differ from VS Code extensions, check out the [Positron extensions page](https://positron.posit.co/extensions.html) on the Positron documentation website.
 
 
 ## Configuring Extensions
 
-Many extensions have their own settings that allow you to adjust their behavoir. Simply click on the extension you want to customize, then in the title area of the extension, next to `Auto Update`, click on the gear icon and go to `Settings`. For instance if you do that for the `Quarto` extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance 'Quarto > Render > Preview Type'. It's by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to 'external'. If you don't know yet what Quarto is and what rendering and preview means, you will soon once you go through our _Brief Introduction to Quarto_ course 😁.
+Many extensions have their own settings that allow you to adjust their behavior. Simply click on the extension you want to customize, then in the title area of the extension, next to `Auto Update`, click on the gear icon and go to `Settings`. For instance if you do that for the `Quarto` extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance 'Quarto > Render > Preview Type'. It's by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to 'external'. If you don't know yet what Quarto is and what rendering and preview means, you will soon once you go through our _Brief Introduction to Quarto_ course 😁.
 
 
 

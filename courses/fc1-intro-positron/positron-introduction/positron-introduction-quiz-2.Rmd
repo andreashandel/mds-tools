@@ -1,6 +1,6 @@
 Question
 ========
-Why do we currently recommend Positron as IDE?
+Why do we currently recommend Positron as an IDE?
 
 Answerlist
 ----------

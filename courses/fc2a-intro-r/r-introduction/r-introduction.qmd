@@ -40,7 +40,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 
 In brief, programming languages are ways to get a computer to do things. There are many different programming languages, each with its own syntax (rules for how to write code), strengths and weaknesses, and areas of application. Some programming languages are general-purpose, meaning they can be used for a wide range of tasks (e.g., Python, Java, C++). Others are more specialized, designed for specific tasks or domains (e.g., R for statistics, SQL for database queries).
 
-For data science type work, there are several popular programming languages, including R, Python, Julia, and MATLAB. Each of these languages has its own strengths and weaknesses, and the choice of which one to use often depends on the specific needs of the project, the preferences of the team, and the existing ecosystem of tools and libraries.
+For data-science-type work, there are several popular programming languages, including R, Python, Julia, and MATLAB. Each of these languages has its own strengths and weaknesses, and the choice of which one to use often depends on the specific needs of the project, the preferences of the team, and the existing ecosystem of tools and libraries.
 
 ## The R language
 
@@ -59,7 +59,7 @@ Like every programming language, R has its advantages and disadvantages. Feel fr
 -   Through R packages, it is easy to get lots of state-of-the-art algorithms.
 -   Documentation and help files for R are generally good.
 
-While we use R in this course, it is not the only option for modeling and data analysis. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used to analyze data (e.g., Matlab, Mathematica, Tableau, SAS, SPSS). Other more general programming languages can at times be suitable as well (e.g., C, Fortran, Perl, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those additional languages. The good news is that even though those languages are all different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. And R is a good one to get started with.
+While we use R in this course, it is not the only option for modeling and data analysis. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used to analyze data (e.g., MATLAB, Mathematica, Tableau, SAS, SPSS). Other more general programming languages can at times be suitable as well (e.g., C, Fortran, Perl, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those additional languages. The good news is that even though those languages are all different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. And R is a good one to get started with.
 
 
 :::
@@ -78,7 +78,7 @@ This unit explained what R is and its strengths and weaknesses.
 ::: {.unit-resources}
 # Further Resources
 
-Since R is widely used, there's a ton of information available. The offical R website is actually not the best source for introductory documentation, but the Internet is full of tutorials on every aspect of R. Google will help you find information, and your favorite AI too can also either explain things to you, or even write code for you.
+Since R is widely used, there's a ton of information available. The official R website is actually not the best source for introductory documentation, but the Internet is full of tutorials on every aspect of R. Google will help you find information, and your favorite AI too can also either explain things to you, or even write code for you.
 
 
 :::
@@ -102,7 +102,7 @@ exams2forms::exams2forms(file = quizzes, title = 'r-introduction-quiz')
 # Practice
 
 * Look through the official [R website](https://www.r-project.org/) to learn about the language. Read anything that sounds interesting to you.
-* Ask your favorite AI to give you a quick overview of R, compare it to some other language you already know (if applicable), and provide you with any other R related information you are curious about.
+* Ask your favorite AI to give you a quick overview of R, compare it to some other language you already know (if applicable), and provide you with any other R-related information you are curious about.
 
 :::
 <!-- end unit-exercise div -->

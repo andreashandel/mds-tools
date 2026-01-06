@@ -1,4 +1,3 @@
-
 ---
 title: Further Resources
 ---
@@ -42,7 +41,7 @@ The definitive resource for Quarto is the [Quarto website](https://quarto.org), 
 
 ## Quarto Gallery
 
-For inspiration, or if you know what you want but don't know the technical term, the [Quarto Gallery](https://quarto.org/gallery/) showcases a variety of documents, presentations, websites, and books created with Quarto. Each example includes source files to help you learn by example.
+For inspiration, or if you know what you want but don't know the technical term, the [Quarto Gallery](https://quarto.org/docs/gallery/) showcases a variety of documents, presentations, websites, and books created with Quarto. Each example includes source files to help you learn by example.
 
 ## Community Resources
 
@@ -51,7 +50,7 @@ The [Awsome Quarto](https://github.com/mcanouil/awesome-quarto) repository on Gi
 
 ## Community Support
 
-Since Quarto is widely used, there is a lot of information available from the community. The [Quarto discussion section on Github](https://github.com/orgs/quarto-dev/discussions) is useful for all kinds of qeustions, including more advanced techincal ones. The Quarto developers are active there.
+Since Quarto is widely used, there is a lot of information available from the community. The [Quarto discussion section on GitHub](https://github.com/orgs/quarto-dev/discussions) is useful for all kinds of questions, including more advanced technical ones. The Quarto developers are active there.
 
 ::: 
 <!-- end unit-reading div -->

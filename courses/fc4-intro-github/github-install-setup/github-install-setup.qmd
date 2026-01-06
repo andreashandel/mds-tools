@@ -39,12 +39,12 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Install Git
 
-Install Git on your computer. Go to the [Git website](https://git-scm.com/) and follow the isntructions. You can accept the default options during installation. It is likely that you will need administrator rights to be able to install Git. 
+Install Git on your computer. Go to the [Git website](https://git-scm.com/) and follow the instructions. You can accept the default options during installation. It is likely that you will need administrator rights to be able to install Git. 
 
 
 ## Set up GitHub
 
-Go to [the GitHub website](https://github.com/) and create an account. The email you use should be one you use regularly, ideally one that you is your permanent email address. This will be the email address to which GitHub sends notifications. Next, choose a user name and pasword to finish setting up your account.
+Go to [the GitHub website](https://github.com/) and create an account. The email you use should be one you use regularly, ideally one that is your permanent email address. This will be the email address to which GitHub sends notifications. Next, choose a user name and password to finish setting up your account.
 
 :::{.warning}
 GitHub is widely used professionally. You might use it for your career and you might want to allow other people to see your GitHub presence. You should therefore use a future-proof, professional user name for your GitHub account. Your name is always a good idea.
@@ -54,7 +54,7 @@ Since you are doing a lot of GitHub work out in the open, it is a good idea to a
 
 ## GitHub developer pack
 
-If you are a student, you can get a lot of nice free goodies through the [GitHub student developer pack](https://education.github.com/pack). You will get GitHub Pro for free, which gives you access to the GitHub Copilot AI assistant and private repositories. Many other parks are also included. If you are eligible, I highly recommend signing up for the student developer pack.
+If you are a student, you can get a lot of nice free goodies through the [GitHub student developer pack](https://education.github.com/pack). You will get GitHub Pro for free, which gives you access to the GitHub Copilot AI assistant and private repositories. Many other perks are also included. If you are eligible, I highly recommend signing up for the student developer pack.
 
 
 
@@ -69,7 +69,7 @@ GitHub Desktop is a free graphical client made by the GitHub folks that makes it
 ::: {.unit-summary}
 # Summary
 
-You installed Git, created a GitHub account and installed and set up GitHub desktop. 
+You installed Git, created a GitHub account and installed and set up GitHub Desktop. 
 
 :::
 <!-- end unit-summary div -->

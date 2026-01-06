@@ -1,4 +1,3 @@
-
 ---
 title: More Quarto
 ---
@@ -106,8 +105,8 @@ exams2forms::exams2forms(file = quizzes, title = 'quarto-beyond-basics-quiz')
 
 ::: {.unit-exercise}
 # Practice
-
-
+* Create a simple presentation using Quarto. Experiment with different slide layouts, themes, and transitions. For instructions, see the [presentation section on the Quarto website](https://quarto.org/docs/presentations/).
+* Follow [these instruction on the Quarto website](https://quarto.org/docs/books/) to create a simple book project using Quarto. Add multiple chapters and customize the book's appearance.
 
 ::: 
 <!-- end unit-exercise div -->

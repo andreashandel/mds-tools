@@ -1,0 +1,27 @@
+Question
+========
+What should you ask the AI to provide when it generates or fixes code?
+
+Answerlist
+----------
+* Only the final code, no explanation
+* Explanations and documentation of what the code does
+* A screenshot of the output
+* A compiled binary
+
+Solution
+========
+The unit recommends asking for explanations and documentation to understand and trust the code.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: ai-coding-explanations
+extype: schoice
+exsolution: 0100

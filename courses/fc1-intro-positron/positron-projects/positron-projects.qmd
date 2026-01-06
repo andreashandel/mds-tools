@@ -35,7 +35,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 ## Introduction
 
-The concepts of projects is very useful for modeling and data analysis work. In Positron, projects are implemented in several flexible ways.
+The concepts of projects are very useful for modeling and data analysis work. In Positron, projects are implemented in several flexible ways.
 
 
 ## Projects
@@ -59,15 +59,15 @@ Similarly, for a Quarto project, e.g. a Quarto-based website, if Positron finds 
 
 Sometimes, Positron adds a file into the workspace at `.vscode/settings.json`, but only if the user sets custom settings. The existence of such a file also indicates the top folder of a project/workspace.
 
-If at least one of these files/folders are present, Positron recognizes it as a top folder of a project/workspace.  
+If at least one of these files/folders is present, Positron recognizes it as a top folder of a project/workspace.  
 
 
 
 ## Project creation in Positron
 
-If you want to start a new project, there are multiple ways you can do so with Positron. One option is to go under `File` and select `New Folder From Template`. Then pick one of the available templates and follow the instructions. If usunre, you can always start with an empty project. If you know that you will be using Git/GitHub for the project (in general highly recommended), you can initialize it. Then open the new folder in Positron, and start working. Everything in that folder and subfolders is now considered part of your project.
+If you want to start a new project, there are multiple ways you can do so with Positron. One option is to go under `File` and select `New Folder From Template`. Then pick one of the available templates and follow the instructions. If unsure, you can always start with an empty project. If you know that you will be using Git/GitHub for the project (in general highly recommended), you can initialize it. Then open the new folder in Positron, and start working. Everything in that folder and subfolders is now considered part of your project.
 
-Another approach is to first create a new GitHub repository (see our _Brief Intro to Git/GitHub_ course) online, and then use `New Folder from Git` to clone it to your local machine and start using it as a new project/workspace within positron.
+Another approach is to first create a new GitHub repository (see our _Brief Intro to Git/GitHub_ course) online, and then use `New Folder from Git` to clone it to your local machine and start using it as a new project/workspace within Positron.
 
 
 ## Project use in Positron

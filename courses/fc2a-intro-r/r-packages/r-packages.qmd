@@ -12,6 +12,9 @@ This unit covers R packages, and how to install and use them.
 
 ::: {.unit-goals}
 # Goals
+* Understand what R packages are
+* Install R packages from CRAN
+* Load R packages for use in an R session
 
 :::
 <!-- end unit-goals div -->
@@ -66,9 +69,9 @@ If this is the first time you are installing packages, you'll see that a lot of 
 
 To see which packages are needed by a specific package, e.g. `DSAIRM`, and thus are being installed if not present, type `tools::package_dependencies("DSAIRM")` into the R console. Of course it can be that those packages depend on other packages, so you end up installing even more. At some point, you'll have the most common packages all installed and installing new packages will lead to less overall installing. The package install process generally works well.
 
-It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it's good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the `remotes` package and then use the `install_github` function. You don't need to do that now, but will be asked to do it in the exercise.
+It is very common these days for packages to be developed on GitHub. It is possible to install packages from GitHub directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on GitHub until the developer(s) feel it's good enough for CRAN submission. So installing from GitHub gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from GitHub, you need to install the `remotes` package and then use the `install_github` function. You don't need to do that now, but will be asked to do it in the exercise.
 
-You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the `library()` command (an alternative is `require()` but `library()` is  recommend ). For instance to load the package you just installed, type
+You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the `library()` command (an alternative is `require()` but `library()` is recommended). For instance to load the package you just installed, type
 
 ```{r, eval=FALSE}
 library('DSAIRM')
@@ -86,9 +89,9 @@ Hopefully, a menu should open either inside Positron or an external browser. If 
 And this concludes our very quick introduction to R packages. You'll use a lot of them, so you'll get used to them rather quickly.
 
 
-# Note about R packages
+## Note about R packages
 
-The quality of R packages varies. In general, if they are on `CRAN` or `bioconductor`, they passed some quality checks. That does however not mean that the functions do the right thing, just that they run. Other packages might be more experimental, and while they might work well, there might also be bugs. In general, packages that are used by many people, packages that involve people who work at R-centric companies (e.g., Posit), and packages that have many developers/contributors and are actively maintained are good signs that it's a stable and reliable package. That said, there are many packages that are developed by a single person and are only available from GitHub, and they are still very good packages. Ideally, for a new package, test it and see if it does things stably and correctly. If yes, you can start using it. Just always carefully inspect the results you get to make sure things are reliable. 
+The quality of R packages varies. In general, if they are on `CRAN` or `Bioconductor`, they passed some quality checks. That does however not mean that the functions do the right thing, just that they run. Other packages might be more experimental, and while they might work well, there might also be bugs. In general, packages that are used by many people, packages that involve people who work at R-centric companies (e.g., Posit), and packages that have many developers/contributors and are actively maintained are good signs that it's a stable and reliable package. That said, there are many packages that are developed by a single person and are only available from GitHub, and they are still very good packages. Ideally, for a new package, test it and see if it does things stably and correctly. If yes, you can start using it. Just always carefully inspect the results you get to make sure things are reliable. 
 
 Depending on your work setting, it is also quite possible that your organization has rules about R packages. You need to of course follow those. In general, to enhance long-term reproducibility, using fewer packages and focusing on those that are well-developed, well-maintained, mature and broadly used is a good strategy.
 
@@ -108,7 +111,7 @@ This unit covered R packages, what they are, how to install them, and how to loa
 
 ::: {.unit-resources}
 # Further Resources
-* If you are interested in packages on a specific topic, the [CRAN task views](http://cran.r-project.org/web/views/) provide curated descriptions of packages sorted by topic.
+* If you are interested in packages on a specific topic, the [CRAN task views](https://cran.r-project.org/web/views/) provide curated descriptions of packages sorted by topic.
 
 :::
 <!-- end unit-resources div -->

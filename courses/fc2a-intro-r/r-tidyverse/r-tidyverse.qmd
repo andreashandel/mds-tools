@@ -34,20 +34,20 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 ::: {.unit-reading}
 # Reading
 
-In the prior unit, we discussed R packages, what they are and how to install them. This unit focuses on a few R collections of R packages that are widely used for modeling and data science work.
+In the prior unit, we discussed R packages, what they are and how to install them. This unit focuses on a few R collections of packages that are widely used for modeling and data science work.
 
 ## tidyverse R packages
 
 Maybe the most widely used collection of R packages is the [`tidyverse`](https://tidyverse.org/). The tidyverse is a collection of R packages that share common design philosophies and are designed to work together seamlessly. If you want to learn more about the principles of those packages, you can read this [short manifesto](https://tidyverse.tidyverse.org/articles/manifesto.html) written by Hadley Wickham. Some of what he writes might not be fully
 understandable to you (e.g., functional programming or pipes), but
 you should get the overall idea. For our purpose, the important aspects to
-remember is that the tidyverse is a collection of R packages that are
+remember are that the tidyverse is a collection of R packages that are
 all structured similarly (from a user perspective). They play nice with each
 other, and help you in your various analysis tasks as you go from messy
 data to data that is tidied up and ready for formal analysis.
-In general, packages inside tidyverse focus on data cleaning, processing and visualization. 
+In general, packages inside the tidyverse focus on data cleaning, processing and visualization. 
 
-To install all the core packages of the tidyverse, you can use the command `install.packages("tidyverse")`. **We don't recommend doing this!**. The reason we dislike it is that you are automatically installing a lot of packages that you might never use. Instead, we recommend installing only the specific tidyverse packages that you need. This also makes it clearer to you which functionality comes from which package. Keeping package use to a minimum also reduces the chance of package conflicts and improves reproducibility.
+To install all the core packages of the tidyverse, you can use the command `install.packages("tidyverse")`. **We don't recommend doing this.** The reason we dislike it is that you are automatically installing a lot of packages that you might never use. Instead, we recommend installing only the specific tidyverse packages that you need. This also makes it clearer to you which functionality comes from which package. Keeping package use to a minimum also reduces the chance of package conflicts and improves reproducibility.
 
 
 ## tidyverse concepts
@@ -76,7 +76,7 @@ on some row values, then select some columns, then combine some factor
 variable, then mutate a variable into a new one, and so on.
 
 The problem, especially when you start out, is that things can (and
-will) go wrong at some of those steps, and it's difficulty to figure out
+will) go wrong at some of those steps, and it's difficult to figure out
 where the problem is. At least when starting out, it is in my opinion
 often better to save the result of some cleaning operation as a new
 intermediate variable. That lets you more easily check for bugs, and to
@@ -95,7 +95,7 @@ This code is not quite as easy to read, and it creates all these
 additional variables that you might not want or need. But at least as you are learning the different `tidyverse` functions, it often
 helps to be able to inspect what happens at each step, and thus more
 easily spot when things go wrong. Once you get more comfortable with
-cleaning steps and coding in general, and make few mistakes, you can
+cleaning steps and coding in general, and make fewer mistakes, you can
 start chaining things together, and make your chains longer. But if you start out writing code that
 way, it can be harder to follow along and find bugs.
 
@@ -110,7 +110,7 @@ useful.
 
 ## tidymodels R packages
 
-The [`tidymodels`](https://www.tidymodels.org/) collection of R packages is very similar in concept and philosphy to the `tidyverse` set of packags, but it is designed for modeling and machine learning tasks. Similar to the tidyverse, the packages that make up tidymodels share common design philosophies and are intended to work together seamlessly.
+The [`tidymodels`](https://www.tidymodels.org/) collection of R packages is very similar in concept and philosophy to the `tidyverse` set of packages, but it is designed for modeling and machine learning tasks. Similar to the tidyverse, the packages that make up tidymodels share common design philosophies and are intended to work together seamlessly.
 
 The same recommendation applies here as for the tidyverse: Instead of installing the full tidymodels collection using `install.packages("tidymodels")`, we recommend installing only the specific tidymodels packages that you need.
 
@@ -127,7 +127,7 @@ In general, it is useful to focus on well-documented and widely used packages, a
 
 ## Coding style comment
 
-The `tidyverse` way of writing code is different from base R coding style in many ways. The good news is that you can mix and match both styles. While it's generally a good idea to keep a consistent coding style within a project, it is not strictly required and if deviations are necessary, for instance because you want to do something for which you need to use a package with a different coding style philosophy, you can easliy switch within the same code.
+The `tidyverse` way of writing code is different from base R coding style in many ways. The good news is that you can mix and match both styles. While it's generally a good idea to keep a consistent coding style within a project, it is not strictly required and if deviations are necessary, for instance because you want to do something for which you need to use a package with a different coding style philosophy, you can easily switch within the same code.
 
 If you use AI to write code, it is often useful to specify which packages you want it to use, and if you want to use a specific coding style.
 

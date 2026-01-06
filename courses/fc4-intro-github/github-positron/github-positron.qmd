@@ -46,16 +46,12 @@ Positron has built-in Git support. You can find it on the left sidebar, it is ge
 
 Through this panel, you can do the same push/pull/commit workflow as in GitHub Desktop, but without leaving Positron.
 
-
-## Setting up Git in Positron
-
-I DONT REMEMBER HOW TO DO THAT, NEED TO REPRODUCE
-
+If you configured GitHub Desktop to use your GitHub credentials, Positron should be able to use them as well. If you have not done that yet, you might need to set up Git/GitHub in Positron first by logging into your account. Positron will usually prompt you to do that when you try to push or pull for the first time.
 
 
 ## Positron and Git/GitHub workflow
 
-Let's go through a minimal Git workflow in Positron. Open the Github repository you created earlier. You might even have it already open if you followed along in previous units.
+Let's go through a minimal Git workflow in Positron. Open the GitHub repository you created earlier. You might even have it already open if you followed along in previous units.
 
 If you recently did a push/pull with GitHub Desktop, the panel showing changes should be empty. You will also see in the bottom panel that the `main` symbol (your local repo) and the `origin/main` symbol (the remote repo on GitHub) are in sync and on the same line.
 
@@ -108,7 +104,7 @@ exams2forms::exams2forms(file = quizzes, title = 'github-positron-quiz')
 
 ::: {.unit-exercise}
 # Practice
-
+* Open a GitHub repository in Positron. As needed, find one online and clone it to your computer (with or without forking it). Change a few files in the repo, then commit and push the changes to GitHub using Positron's Git panel. 
 
 
 :::

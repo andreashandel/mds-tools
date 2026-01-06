@@ -55,15 +55,15 @@ Having all these features inside one platform makes modern IDEs rather powerful.
 
 ## The Positron IDE
 
-Some IDEs focus on a specific programming language (e.g., RStudio), others are very language-agnostic (e.g., VS Code). Positron is a bit in the middle. It's a fairly new IDE developed by the folks from Posit, who previously developed RStudio. The idea is that it's an IDE that has strong integration for certain programming languages -- currently the main focus is on R and Phython -- while also allowing you to work with other languages, such as Julia.
+Some IDEs focus on a specific programming language (e.g., RStudio), others are very language-agnostic (e.g., VS Code). Positron is a bit in the middle. It's a fairly new IDE developed by the folks from Posit, who previously developed RStudio. The idea is that it's an IDE that has strong integration for certain programming languages -- currently the main focus is on R and Python -- while also allowing you to work with other languages, such as Julia.
 
-Positron is cross-platform and free. Because it's from the same folks that created Quarto, it plays nicely with it. It has many of the nice, user-friendy features of RStudio, but has been designed to be more flexible, extensible and supporting more languages compared to RStudio.
+Positron is cross-platform and free. Because it's from the same folks that created Quarto, it plays nicely with it. It has many of the nice, user-friendly features of RStudio, but has been designed to be more flexible, extensible and support more languages compared to RStudio.
 
 Positron is a spin-off of VS Code, which is a very popular IDE developed by Microsoft. Positron builds on top of VS Code and adds a lot of functionality that is specifically useful for data analysis and modeling projects. Because of this, Positron also supports a wide range of extensions (add-ons) that can further enhance its functionality. We'll discuss extensions in more detail in a later unit.
 
 ## Positron versus other IDEs
 
-We think that currently, Positron is a great choice because it plays nicely with Quarto and R, supports Phthon, Julia and Git/GitHub, and is likely to become an increasingly popular and powerful editor for projects related to modeling and data analysis. 
+We think that currently, Positron is a great choice because it plays nicely with Quarto and R, supports Python, Julia and Git/GitHub, and is likely to become an increasingly popular and powerful editor for projects related to modeling and data analysis. 
 
 That said, almost everything we discuss and teach could also be done in a different IDE, such as VS Code or RStudio. While the instructions we provide are often Positron specific, you should be able to get everything working in pretty much any IDE.
 
@@ -84,7 +84,7 @@ This unit explained what an IDE is, briefly introduced Positron and explained wh
 ::: {.unit-resources}
 # Further Resources
 
-* [The offical Positron website](https://positron.posit.co/)
+* [The official Positron website](https://positron.posit.co/)
 * [The official VS Code website](https://code.visualstudio.com/) - VS Code is a very popular editor, and it is the basis for Positron. A lot of information about VS Code will also apply to Positron.
 
 :::

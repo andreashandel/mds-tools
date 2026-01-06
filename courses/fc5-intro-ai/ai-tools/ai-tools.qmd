@@ -49,42 +49,33 @@ The following sections describe some of the currently available LLM AI tools, wi
 
 Currently, the main LLM AI tools that are widely used are from OpenAI (ChatGPT), Google (Gemini) and Anthropic (Claude). Microsoft is using versions of OpenAI's models in their Copilot. Other tools from Meta (LLaMA) and others also exist, but are less widely used at this point in time.
 
-Almost all of the major players provide free access to their less powerful models, and paid access to their more powerful ones. The more powerful ones tend to be much better, so in general, trying to get access to those flagship models is a good idea. 
-
-That said, even the free ones can be quite useful.
+Almost all of the major players provide free access to their less powerful models, and paid access to their more powerful ones. The more powerful ones tend to be much better, so in general, trying to get access to those flagship models is a good idea. That said, even the free ones can be quite useful.
 
 
 ## Positron AI tools
 
-One of the great features of Positron is that it provides great AI integration. It comes with a built-in AI assistant that you can use to get help with coding and data analysis tasks. You can access it by clicking on the _Positron Asisstant_ icon in the left sidebar. 
+One of the great features of Positron is that it provides great AI integration. It comes with a built-in AI assistant that you can use to get help with coding and data analysis tasks. You can access it by clicking on the _Positron Assistant_ icon in the left sidebar. 
+
+You will have to configure the assistant to work with a specific LLM model. The assistant is under rapid development. It therefore doesn't make too much sense to provide details here that will likely be outdated soon. Instead, please [check the official Positron AI assistant documentation](https://positron.posit.co/assistant.html) for detailed and up-to-date information.
+
+It is worth pointing out that tools like the Positron AI assistant interact with LLM models via APIs. This means that to use them, you will typically need a paid account with the provider of the LLM model you want to use. More confusingly, even if you have a paid subscription account, the API use can cost extra (but not always, things are changing rapidly). Fortunately, it has become quite cheap to use these APIs, but it is still something to be aware of. Always check the pricing information of the provider you are using.
+
+If you are a student and qualify for the [GitHub student developer pack](https://education.github.com/pack) you get GitHub Pro, which comes with the GitHub Copilot AI. This is one of the AI tools supported by Positron's AI assistant. Thus, this is a free way to get access to an LLM AI tool that works nicely within Positron.  
+
+Positron also supports other AI tools through extensions. There is for instance an extension for ChatGPT's Codex tool and Claude's Code tool. It is very easy to install and activate these extensions, which you can then access through the left sidebar. Really the only barrier is that you'll need an account with the provider of the LLM model you want to use, and will likely need to pay for use. 
+
+Another interesting extension is [DataBot](https://positron.posit.co/databot.html) which allows you to use LLM AI tools to interactively explore datasets. 
 
 
+## R LLM AI tools
+
+R has several packages that allow you to interact with LLM AI tools from within R. The most comprehensive and best supported one is probably the [`ellmer` R package](https://ellmer.tidyverse.org/) developed by Posit. It provides a unified interface to several LLM AI tools. The `ellmer` website has good tutorials and documentation to get you started. 
+
+Another interesting package is the [btw package](https://posit-dev.github.io/btw/) which allows you to give the AI model context information.
+
+The [vitals R package](https://vitals.tidyverse.org/) is another interesting package. It helps you assess the quality of responses you get from different LLM tools. Especially if you plan on building workflows around LLM AI tools (e.g. agentic approaches), this is an important aspect to consider.
 
 
-## GitHub Copilot
-
-GitHub Copilot is currently free for students with the [GitHub student developer pack](https://education.github.com/pack) I asked you to sign up for. Set it up by following the [Quickstart guide](https://docs.github.com/copilot).
-
-Once you have Copilot activated, you can use it in R Studio. (It is also possible to use it with other popular editors, such as VS Code, but for this course I will focus on R Studio. If you prefer to code in VS Code, you can install the Copilot plugin).
-
-To get Copilot working in R Studio, follow these [instructions](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html). You might want to leave Copilot indexing unchecked for now. The instruction guide explains what this is. Basically, if you check this, copilot can access all files that are part of your current project. This can lead to confidentiality issues. Therefore, only check it if you are sure that all files in your project are ok being shared with the AI (and possibly make their way to Github/Microsoft/OpenAI servers).
-
-Once you have Copilot up and running, you should see it show up in the bottom of your R Studio input window (the top right window where you write code). It will start suggesting things as you type, once you stop for a few seconds. You can set that time in the options.
-
-An introduction to using Copilot can be found in [this video](https://youtu.be/TlzMKSE97MQ?si=Tc3sQ5ZF3RktWsqF) by Thomas Mock from Posit/RStudio. In general, if you want bigger chunks of code, it seems currently better to go straight to ChatGPT. Copilot seems most useful to help you write bits of code as you go along. It can also be useful to help you remember the names of functions and arguments. [This blog post](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/) provides some additional useful information on how to best use Copilot.
-
-**In general, I recommend you turn off Copilot in RStudio when you are not actively using it.** And before you turn it on, make sure the document you have open, and any other files it might have access to, do not contain information you want to keep private.
-
-
-## Other tools
-
-
-For instance, as you learned from Thomas Mock's video above, the [`chattr` R package](https://mlverse.github.io/chattr/) seems like another great way to use ChatGPT from within R. Unfortunately, as of this writing, I haven't been able to get it to work. It is not entirely clear to me based on the information provided on the `chattr` website, but I think this is because talking to ChatGPT via the API (which is what `chattr` does) requires a paid account.
-
-
-I'm also aware of the [chatAI4R](https://kumes.github.io/chatAI4R/) R package, but haven't tried it yet. My guess is since it likely also talks to ChatGPT through their API, it also requires a paid account. If that's not the case and you try it and find it useful, please report back!
-
-As you are probably aware, AI tools are changing rapidly. I'm writing this in December 2023, you will read this a few months later. It could be that by this point, some new versions of AI tools have come out that are even better. Do explore and if you find some especially promising platform or package, let me know!
 
 :::
 <!-- end unit-reading div -->
@@ -93,7 +84,8 @@ As you are probably aware, AI tools are changing rapidly. I'm writing this in De
 ::: {.unit-summary}
 # Summary
 
-LLM AI tools are changing rapidly. The important thing is to try existing ones, and keep exploring as new ones become available. 
+LLM AI tools are changing rapidly, both the underlying foundation models from companies like ChatGPT, Claude and Google, and the many tools that integrate those models into your modeling and data science workflow. The ones described above are great starting points. The important thing is to try existing ones, and keep exploring as new ones become available. 
+
 
 
 :::
@@ -102,6 +94,10 @@ LLM AI tools are changing rapidly. The important thing is to try existing ones, 
 
 ::: {.unit-resources}
 # Further Resources
+* [Positron AI Assistant documentation](https://positron.posit.co/assistant.html)
+* [ellmer R package](https://ellmer.tidyverse.org/)
+* [btw R package](https://posit-dev.github.io/btw/)
+* [Positron DataBot extension](https://positron.posit.co/databot.html)
 
 :::
 <!-- end unit-resources div -->
@@ -123,7 +119,9 @@ exams2forms::exams2forms(file = quizzes, title = 'ai-tools-quiz')
 
 ::: {.unit-exercise}
 # Practice
-
+* Explore the Positron AI assistant and try using it to help with a coding or data analysis task.
+* Install `ellmer` and try using it to interact with an LLM AI tool from within R.
+* Try out the DataBot extension in Positron to explore a dataset using LLM AI tools.
 
 :::
 <!-- end unit-exercise div -->

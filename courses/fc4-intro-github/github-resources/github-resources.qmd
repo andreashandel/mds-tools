@@ -71,24 +71,25 @@ See above.
 <!-- end unit-resources div -->
 
 
-<!--
+
 ::: {.unit-quiz}
 # Test yourself
 
 ```{r github-resources-quiz}
 #| echo: false
 #| results: "asis"
-# quizzes <- list("github-resources-quiz-1.Rmd", "github-resources-quiz-2.Rmd", "github-resources-quiz-3.Rmd")
-# exams2forms::exams2forms(file = quizzes, title = 'github-resources-quiz')
+quizzes <- list("github-resources-quiz-1.Rmd", "github-resources-quiz-2.Rmd", "github-resources-quiz-3.Rmd")
+exams2forms::exams2forms(file = quizzes, title = 'github-resources-quiz')
 ```
 :::
--->
+
 <!-- end unit-quiz div -->
 
 
 ::: {.unit-exercise}
 # Practice
-
+* Ask your favorite LLM AI tool to explain some Git/GitHub concept that you find confusing. As you learn about it, ask for examples, further explanations, etc. You can also ask it to give you pointers to additional resources for that specific topic.
+* Repeat for a different topic and/or a different AI tool.
 
 :::
 <!-- end unit-exercise div -->

@@ -94,7 +94,7 @@ You can do this by running Quarto through the terminal. Go to the terminal. It m
 quarto render name-of-file.qmd
 ```
 
-As long as you are in the right folder, the one where you saved the Quarto file to, this will create the output file (here HTML) in the same folder. You should see the file show up in the 'Explorer' view in Positron (the top icon on the right sidebar). 
+As long as you are in the right folder, the one where you saved the Quarto file to, this will create the output file (here HTML) in the same folder. You should see the file show up in the 'Explorer' view in Positron (the top icon on the left sidebar). 
 
 
 ## Customizing Quarto Settings in Positron
@@ -105,7 +105,7 @@ Positron comes with the Quarto extension pre-installed, providing seamless integ
 
 ## Debugging and Troubleshooting
 
-If you encounter issues when using Quarto, you will usually see an error message in the `Terminal` pane that explains what might be going wrong. Quite often, rendering fails if the front-end YAML is not properly formatted.
+If you encounter issues when using Quarto, you will usually see an error message in the `Terminal` pane that explains what might be going wrong. Quite often, rendering fails if links are broken, code doesn't run properly, or the YAML block is not properly formatted.
 
 ::: 
 <!-- end unit-reading div -->

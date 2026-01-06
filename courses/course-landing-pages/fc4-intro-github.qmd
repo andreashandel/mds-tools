@@ -8,10 +8,9 @@ subtitle: ""
 
 This course provides a brief introduction to Git and GitHub.
 
-The focus is on getting you set up so you can start using Git/GitHub. The information we provide is not a thorough course on Git/GitHub. You'll be a lot of 'learning as you go' once you start using these tools.
+The focus is on getting you set up so you can start using Git/GitHub. The information we provide is not a thorough course on Git/GitHub. You'll be doing a lot of _learning as you go_ once you start using these tools.
 
 This course focuses on the _how_ of Git/GitHub, and only briefly talks about the big-picture for _why_ to use Git/GitHub. 
-<!-- The latter is covered - among many other topics - in our [ROADy workflow course](/courses/course-landing-pages/mc3-roady-workflows.qmd). -->
 
 :::
 

@@ -1,27 +1,27 @@
 Question
 ========
-What is "Oh My Git!"?
+Which resource is described as a game to help you learn Git?
 
 Answerlist
 ----------
-* A paid GitHub support plan
-* An advanced Git server configuration tool
-* A code editor built by GitHub
-* A game designed to help you learn Git
+* Oh My Git!
+* GitHub Community
+* GitHub Desktop
+* Git LFS
 
 Solution
 ========
-Oh My Git! is a game that teaches Git concepts through gameplay.
+Oh My Git! is a game designed to teach Git concepts.
 
 Answerlist
 ----------
-* False
-* False
-* False
 * True
+* False
+* False
+* False
 
 Meta-information
 ================
-exname: Oh My Git
+exname: oh-my-git-game
 extype: schoice
-exsolution: 0001
+exsolution: 1000
