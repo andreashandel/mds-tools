@@ -1,0 +1,19 @@
+/* Keep visuals within slide bounds */
+.reveal .slides img,
+.reveal .slides svg,
+.reveal .slides video {
+  max-height: 60vh;
+  height: auto;
+  width: auto;
+}
+
+.reveal .quarto-figure {
+  margin: 0.5rem auto;
+}
+
+/* Ensure slide numbers are visible */
+.reveal .slide-number {
+  display: block !important;
+  font-size: 14px;
+  opacity: 0.9;
+}

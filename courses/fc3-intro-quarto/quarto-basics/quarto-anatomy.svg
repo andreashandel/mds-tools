@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f6f4ef"/>
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="48" fill="#2b2b2b">Anatomy of a Quarto Document (.qmd)</text>
+
+  <rect x="140" y="150" width="920" height="130" rx="18" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <text x="600" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#2b2b2b">YAML Front Matter</text>
+
+  <rect x="140" y="305" width="920" height="130" rx="18" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <text x="600" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#2b2b2b">Markdown Body</text>
+
+  <rect x="140" y="460" width="920" height="130" rx="18" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <text x="600" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#2b2b2b">Executable Code Chunks (Optional)</text>
+</svg>

@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#eef4f7"/>
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="48" fill="#1d2b34">Render Pipeline</text>
+
+  <rect x="120" y="220" width="260" height="140" rx="18" fill="#ffffff" stroke="#1d2b34" stroke-width="3"/>
+  <text x="250" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#1d2b34">.qmd</text>
+
+  <rect x="470" y="220" width="260" height="140" rx="18" fill="#ffffff" stroke="#1d2b34" stroke-width="3"/>
+  <text x="600" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#1d2b34">quarto render</text>
+
+  <rect x="820" y="170" width="260" height="110" rx="18" fill="#ffffff" stroke="#1d2b34" stroke-width="3"/>
+  <text x="950" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#1d2b34">HTML</text>
+
+  <rect x="820" y="300" width="260" height="110" rx="18" fill="#ffffff" stroke="#1d2b34" stroke-width="3"/>
+  <text x="950" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#1d2b34">Word (.docx)</text>
+
+  <rect x="820" y="430" width="260" height="110" rx="18" fill="#ffffff" stroke="#1d2b34" stroke-width="3"/>
+  <text x="950" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#1d2b34">PDF</text>
+
+  <line x1="380" y1="290" x2="470" y2="290" stroke="#1d2b34" stroke-width="4"/>
+  <polygon points="460,280 470,290 460,300" fill="#1d2b34"/>
+
+  <line x1="730" y1="290" x2="820" y2="225" stroke="#1d2b34" stroke-width="4"/>
+  <polygon points="810,218 820,225 812,235" fill="#1d2b34"/>
+
+  <line x1="730" y1="290" x2="820" y2="355" stroke="#1d2b34" stroke-width="4"/>
+  <polygon points="812,345 820,355 810,362" fill="#1d2b34"/>
+
+  <line x1="730" y1="290" x2="820" y2="485" stroke="#1d2b34" stroke-width="4"/>
+  <polygon points="812,475 820,485 810,492" fill="#1d2b34"/>
+</svg>
