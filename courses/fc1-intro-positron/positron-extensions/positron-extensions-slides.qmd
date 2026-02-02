@@ -1,54 +1,117 @@
 ---
-title: Positron Extensions
-format: 
+title: "Positron Extensions"
+subtitle: "Companion slides"
+format:
   revealjs:
-    transition: none
-    incremental: false
-    cap-location: bottom
-    self-contained: true
     slide-number: true
-    show-slide-number: all
-    auto-stretch: true
-    smaller: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools • Positron Extensions"
+    css: "../../../assets/slides.scss"
 ---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
 
-
+::: {.notes}
+This unit introduces extensions, which are how Positron gains extra functionality. Extensions are similar to packages in R or Python, but they customize the editor itself. We will see how to view and manage installed extensions, how to add new ones, how to configure them, and how to decide which ones to keep. The key idea is balance: extensions can be helpful, but too many can slow the IDE down or add noise. You will learn a cautious, practical approach.
+:::
 
 ## Overview
 
-This unit discusses what Positron extensions are, and how to install and use them. 
+- What extensions are and why they matter
+- How to install, enable, and disable them
+- How to configure extension settings
 
+::: {.notes}
+We start with the definition of an extension, then move to practical steps for managing them inside Positron. You will learn how to open the Extensions view, update or disable installed extensions, and install new ones from the marketplace. We also look at settings that are specific to an extension, such as Quarto preview behavior. Finally, we discuss how to make good choices about which extensions to keep so your setup stays fast and reliable.
+:::
 
 ## Goals
-* Be familiar with Positron extensions.
-* Know how to install and use extensions.
 
+- Understand what Positron extensions do
+- Install and manage extensions confidently
+
+::: {.notes}
+Your goals are simple: know what extensions are and be able to install, enable, disable, and configure them. If you can do those tasks, you can customize Positron to match your workflow. This will be important later if you need tools for specific languages or tasks.
+:::
 
 ## Introduction
 
-In programming languages, a lot of extra functionality comes from packages. In editors like Positron (and VS Code and others), the equivalent of packages are 'extensions' (another term sometimes used is 'plugins'). You can install extensions to get extra functionality. 
+- Extensions add features to the editor
+- Similar role to packages in programming
+- Positron and VS Code share many extensions
 
-
-## What are Positron Extensions?
-
-Positron extensions enhance your IDE experience by adding functionality such as code snippets, language support, themes, and integrations.
-
-![](media/extension-manager.png)
-
-## Installing an Extension
-
-Open the Extension Manager panel, search for an extension by name, and click **Install**.
-
-![](media/install-extension.png)
-
-
-## Getting Extensions 
-
-
+::: {.notes}
+Extensions are add-ons that expand what Positron can do. They are like packages in a programming language, but they modify the editor itself. Because Positron is based on VS Code, many VS Code extensions also work in Positron. This gives you access to a large ecosystem. However, not every extension is perfect, so you should choose carefully and prioritize well-supported ones.
+:::
 
 ## Managing Extensions
 
+:::: {.columns}
+::: {.column width="55%"}
+- Open Extensions view from the left sidebar
+- Update installed extensions when prompted
+- Enable, disable, or uninstall as needed
+- Disable per project for sensitive work
+:::
+::: {.column width="45%"}
+```{mermaid}
+flowchart LR
+  A[Install] --> B[Enable]
+  B --> C[Use]
+  C --> D[Disable]
+  D --> E[Uninstall]
+```
+:::
+::::
+
+::: {.notes}
+To manage extensions, click the Extensions icon in the left sidebar. You will see installed extensions and any updates. It is a good idea to apply updates, sometimes with a restart. Extensions can be disabled without uninstalling, which is useful if you want to temporarily turn something off. You can also disable an extension only for a specific workspace, which is helpful if a project has sensitive data. If you decide an extension is not useful, uninstall it to keep your setup clean.
+:::
+
+## Getting Extensions
+
+- Search the marketplace in the Extensions view
+- Example: install "Rainbow CSV"
+- Use it to colorize columns in CSV files
+- Trust the publisher before installing
+
+::: {.notes}
+To add functionality, search for extensions in the Extensions view. For practice, you can install an extension like Rainbow CSV. Open a CSV file as plain text, then install the extension and return to the file to see each column colored differently. This example is simple, but it shows how quickly extensions can change your workflow. Always check the publisher and reviews before installing. You want extensions that are well supported and widely used.
+:::
+
+## Configuring Extensions
+
+- Each extension can have its own settings
+- Open settings from the extension page
+- Example: Quarto preview type
+- Settings can be user or workspace scoped
+
+::: {.notes}
+Many extensions include settings of their own. You can open an extension page and use the gear icon to access its settings. For example, the Quarto extension lets you choose whether previews appear inside Positron or in an external browser. You can set these preferences globally or only for a specific workspace. The key is to adjust settings only when you have a clear need, so you do not lose track of what changed and why.
+:::
+
+## Using Extensions
+
+- Extensions vary in quality and impact
+- Too many can slow startup and add noise
+- Start with essentials, add only when needed
+- Uninstall anything that does not help
+
+::: {.notes}
+Extensions are powerful, but they are not free. Each one adds complexity and can slow the IDE or create conflicts. A good strategy is to start with a small set of essential extensions, try them in real work, and remove anything that is not clearly valuable. This keeps Positron fast and predictable. You can always reinstall an extension later if you discover you need it, so there is little risk in being conservative.
+:::
 
 ## Summary
-Extensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible.
 
+- Extensions add editor features and workflows
+- Manage them from the Extensions view
+- Configure and curate them carefully
+
+::: {.notes}
+In summary, extensions are the main way to extend Positron. You manage them in the Extensions view, where you can install, update, enable, disable, or uninstall. Many extensions have settings you can tweak to fit your workflow. The best approach is deliberate: install what you need, keep your setup light, and remove anything that gets in the way. This keeps the IDE reliable and focused on your work.
+:::

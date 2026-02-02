@@ -1,0 +1,54 @@
+---
+title: Positron Extensions
+format: 
+  revealjs:
+    transition: none
+    incremental: false
+    cap-location: bottom
+    self-contained: true
+    slide-number: true
+    show-slide-number: all
+    auto-stretch: true
+    smaller: true
+---
+
+
+
+## Overview
+
+This unit discusses what Positron extensions are, and how to install and use them. 
+
+
+## Goals
+* Be familiar with Positron extensions.
+* Know how to install and use extensions.
+
+
+## Introduction
+
+In programming languages, a lot of extra functionality comes from packages. In editors like Positron (and VS Code and others), the equivalent of packages are 'extensions' (another term sometimes used is 'plugins'). You can install extensions to get extra functionality. 
+
+
+## What are Positron Extensions?
+
+Positron extensions enhance your IDE experience by adding functionality such as code snippets, language support, themes, and integrations.
+
+![](media/extension-manager.png)
+
+## Installing an Extension
+
+Open the Extension Manager panel, search for an extension by name, and click **Install**.
+
+![](media/install-extension.png)
+
+
+## Getting Extensions 
+
+
+
+## Managing Extensions
+
+
+## Summary
+Extensions are a way to add extra functionality to Positron. They are easy to install, use and configure. Find the extensions that make your project work as productive and efficient as possible.
+

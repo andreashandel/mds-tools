@@ -1,0 +1,14 @@
+project:
+  type: default
+
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
