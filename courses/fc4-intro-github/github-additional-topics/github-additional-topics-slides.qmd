@@ -1,0 +1,73 @@
+---
+title: "Additional Topics"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Additional Topics"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- In this unit, we discuss a few additional topics related
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are In this unit, we discuss a few additional topics related. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Be aware of the concept of merge conflicts and how to handle them.
+- Know how to deal with potential confidentiality issues when using Git/GitHub.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Be aware of the concept of merge conflicts and how to handle them., Know how to deal with potential confidentiality issues when using Git/GitHub. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Merge conflicts
+
+- Sooner or later, as you work with GitHub, you will
+- This happens if the same file has been changed by
+- A merge conflict happens when Git cannot automatically figure out
+- When this happens, Git will mark the file as having
+- In general, to minimize conflicts, it is good to regularly
+- You should definitely do that any time you stop working
+
+::: {.notes}
+In this slide, we focus on merge conflicts and why it matters. The key ideas here are Sooner or later, as you work with GitHub, you will, This happens if the same file has been changed by, A merge conflict happens when Git cannot automatically figure out. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Confidentiality
+
+- The main principle when working with GitHub is that by
+- This can cause a problem for confidential or sensitive data.
+- The next sections discuss best practices for dealing with confidential
+- Often, the parts of the data you need for modeling
+- It is often a good idea to process your raw
+- Once you have done that, you can put the anonymized
+
+```text
+data/raw/
+```
+
+::: {.notes}
+In this slide, we focus on confidentiality and why it matters. The key ideas here are The main principle when working with GitHub is that by, This can cause a problem for confidential or sensitive data., The next sections discuss best practices for dealing with confidential. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- Using GitHub requires paying attention to common pitfalls like merge
+- As long as you have a plan for those, you
+- As long as you have a plan for those, you
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are Using GitHub requires paying attention to common pitfalls like merge, As long as you have a plan for those, you, As long as you have a plan for those, you. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

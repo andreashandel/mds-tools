@@ -1,0 +1,18 @@
+---
+title: "TOC: A brief introduction to Python" 
+---
+
+
+::: {.course-content}
+# Course Content
+
+- [Introduction to Python](python-introduction/python-introduction.qmd)
+- [Python Installation and Setup](python-install-setup/python-install-setup.qmd)
+- [Using Python through Positron](python-positron/python-positron.qmd)
+- [Basics of Coding in Python](python-coding-basics/python-coding-basics.qmd)
+- [Python Libarries](python-libraries/python-libraries.qmd)
+- [Python Coding Tips](python-coding-tips/python-coding-tips.qmd)
+- [Further Python Resources](python-further-resources/python-further-resources.qmd) 
+
+:::
+

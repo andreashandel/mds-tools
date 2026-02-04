@@ -22,22 +22,44 @@ This unit provides a high‑level introduction to integrated development environ
 
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Introduction to IDEs and Positron" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
 
+::: {.unit-slides}
+# Slides
 
+View the slide deck for this unit: [Slides](positron-introduction-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](positron-introduction-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
 ::: {.unit-reading}
 # Reading
 
 
 ## Integrated Development Environments (IDEs)
+
+<!-- ai-figure: integrateddevelopmentenvironmentsides -->
+![](media/integrateddevelopmentenvironmentsides.png){fig-alt="Illustration related to Integrated Development Environments (IDEs)." fig-cap="Illustration related to Integrated Development Environments (IDEs)."}
+<!-- end-ai-figure -->
 
 Any kind of data analysis and modeling project generally requires interacting with data, writing and debugging code, managing files, producing figures and tables, generating manuscripts or reports, and more. It is convenient to do all this through a single interface, at least as much as possible. This is where the concept of an Integrated Development Environment (IDE) comes in. It is a piece of software that not only lets you write code, but also allows you to do many other project functions through a single interface.
 
@@ -55,6 +77,10 @@ Having all these features inside one platform makes modern IDEs rather powerful.
 
 ## The Positron IDE
 
+<!-- ai-figure: thepositronide -->
+![](media/thepositronide.png){fig-alt="Illustration related to The Positron IDE." fig-cap="Illustration related to The Positron IDE."}
+<!-- end-ai-figure -->
+
 Some IDEs focus on a specific programming language (e.g., RStudio), others are very language-agnostic (e.g., VS Code). Positron is a bit in the middle. It's a fairly new IDE developed by the folks from Posit, who previously developed RStudio. The idea is that it's an IDE that has strong integration for certain programming languages -- currently the main focus is on R and Python -- while also allowing you to work with other languages, such as Julia.
 
 Positron is cross-platform and free. Because it's from the same folks that created Quarto, it plays nicely with it. It has many of the nice, user-friendly features of RStudio, but has been designed to be more flexible, extensible and support more languages compared to RStudio.
@@ -62,6 +88,10 @@ Positron is cross-platform and free. Because it's from the same folks that creat
 Positron is a spin-off of VS Code, which is a very popular IDE developed by Microsoft. Positron builds on top of VS Code and adds a lot of functionality that is specifically useful for data analysis and modeling projects. Because of this, Positron also supports a wide range of extensions (add-ons) that can further enhance its functionality. We'll discuss extensions in more detail in a later unit.
 
 ## Positron versus other IDEs
+
+<!-- ai-figure: positronversusotherides -->
+![](media/positronversusotherides.png){fig-alt="Illustration related to Positron versus other IDEs." fig-cap="Illustration related to Positron versus other IDEs."}
+<!-- end-ai-figure -->
 
 We think that currently, Positron is a great choice because it plays nicely with Quarto and R, supports Python, Julia and Git/GitHub, and is likely to become an increasingly popular and powerful editor for projects related to modeling and data analysis. 
 

@@ -1,0 +1,87 @@
+---
+title: "R Packages"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? R Packages"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit covers R packages, and how to install and
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit covers R packages, and how to install and. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Understand what R packages are
+- Install R packages from CRAN
+- Load R packages for use in an R session
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Understand what R packages are, Install R packages from CRAN, Load R packages for use in an R session. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Overview
+
+- One of the strengths of R (and also a source
+- R itself comes with some functionality.
+- This is often referred to as **base R**.
+- Even with just this basic functionality, there are often many
+- But the real power of R comes from its many
+- Packages (also called libraries in some other programming languages) contain
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are One of the strengths of R (and also a source, R itself comes with some functionality., This is often referred to as **base R**. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Installing and loading R packages
+
+- There are tens of thousands of packages available, some big,
+- We'll be using many different packages in this course.
+- Of course, you are free to install and use any
+- The "official" place for packages is the [CRAN website](https://cran.r-project.org/web/packages/available_packages_by_name.html).
+- To install a package from CRAN, go to the R
+- Often, a package needs other packages to work (called dependencies),
+
+```text
+install.packages('DSAIRM')
+```
+
+::: {.notes}
+In this slide, we focus on installing and loading r packages and why it matters. The key ideas here are There are tens of thousands of packages available, some big,, We'll be using many different packages in this course., Of course, you are free to install and use any. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Note about R packages
+
+- The quality of R packages varies.
+- In general, if they are on `CRAN` or `Bioconductor`, they
+- That does however not mean that the functions do the
+- Other packages might be more experimental, and while they might
+- In general, packages that are used by many people, packages
+- That said, there are many packages that are developed by
+
+::: {.notes}
+In this slide, we focus on note about r packages and why it matters. The key ideas here are The quality of R packages varies., In general, if they are on `CRAN` or `Bioconductor`, they, That does however not mean that the functions do the. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- This unit covered R packages, what they are, how to
+- This unit covered R packages, what they are, how to
+- This unit covered R packages, what they are, how to
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are This unit covered R packages, what they are, how to, This unit covered R packages, what they are, how to, This unit covered R packages, what they are, how to. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

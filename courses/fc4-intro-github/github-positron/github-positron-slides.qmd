@@ -1,0 +1,70 @@
+---
+title: "Git and GitHub in Positron"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Git and GitHub in Positron"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- Positron includes Git tooling so you can commit, pull, and
+- This unit shows a minimal workflow for using GitHub from
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are Positron includes Git tooling so you can commit, pull, and, This unit shows a minimal workflow for using GitHub from. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Know how to use Git/GitHub within Positron.
+- Know how to use Git/GitHub within Positron.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Know how to use Git/GitHub within Positron., Know how to use Git/GitHub within Positron. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Git/GitHub in Positron
+
+- Positron has built-in Git support.
+- You can find it on the left sidebar, it is
+- If you have a project open that is also a
+- Through this panel, you can do the same push/pull/commit workflow
+- If you configured GitHub Desktop to use your GitHub credentials,
+- If you have not done that yet, you might need
+
+::: {.notes}
+In this slide, we focus on git/github in positron and why it matters. The key ideas here are Positron has built-in Git support., You can find it on the left sidebar, it is, If you have a project open that is also a. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Positron and Git/GitHub workflow
+
+- Let's go through a minimal Git workflow in Positron.
+- Open the GitHub repository you created earlier.
+- You might even have it already open if you followed
+- If you recently did a push/pull with GitHub Desktop, the
+- You will also see in the bottom panel that the
+- Now edit the README file or another file you created
+
+::: {.notes}
+In this slide, we focus on positron and git/github workflow and why it matters. The key ideas here are Let's go through a minimal Git workflow in Positron., Open the GitHub repository you created earlier., You might even have it already open if you followed. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- Positron provides an alternative to GitHub Desktop for performing Git/GitHub
+- You can use it together with GitHub Desktop.
+- You can use it together with GitHub Desktop.
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are Positron provides an alternative to GitHub Desktop for performing Git/GitHub, You can use it together with GitHub Desktop., You can use it together with GitHub Desktop. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

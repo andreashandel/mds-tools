@@ -1,0 +1,100 @@
+---
+title: Further Resources
+---
+
+::: {.unit-overview}
+# Overview
+
+The final unit points you toward high‑quality materials for deepening your Julia skills once this brief introduction is complete.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Locate official and community learning resources.
+* Choose a learning pathway—video course, MOOC, book, or documentation—that matches your style.
+* Engage with the Julia community for help and networking.
+
+::: 
+<!-- end unit-goals div -->
+
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](julia-resources-slides.html)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](julia-resources-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
+::: {.unit-reading}
+# Reading
+
+Learning a language is a journey, and the Julia ecosystem offers multiple on‑ramps. The canonical reference is the online *Julia Manual*, which covers everything from basic syntax to advanced parallel programming. If you prefer curated video content, *JuliaAcademy* hosts free, instructor‑led courses that walk through practical projects such as climate modeling and machine learning.
+
+Several books complement these resources. *Julia for Data Science* provides a hands‑on introduction for analysts coming from Python or R, while *Think Julia* presents computer‑science fundamentals using Julia as the teaching language. For numerical computing, *Numerical Linear Algebra with Julia* is a modern classic that leverages the language’s speed.
+
+Community support is equally important. The Julia Discourse forum is the primary venue for technical questions, announcements, and package releases. Real‑time chat is available on Slack and Zulip, and many special‑interest groups meet virtually to discuss topics like GPU computing or differential equations. Attending the annual *JuliaCon* conference—either in person or remotely—is a great way to learn from and network with practitioners across disciplines.
+
+
+## QSP and PMX specific resources
+
+There is even a dedicated, though non-free package for pharmacometrics called [Pumas](https://docs.pumas.ai/stable/). Since Pumas is proprietary, we do not use it as part of QSPL, but if you have access to it, it might be worth checking out.
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+You now have a map of where to continue your Julia journey, whether through official documentation, structured courses, or an active global community.
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- <https://docs.julialang.org> – Official manual.
+- <https://juliaacademy.com> – Free video courses.
+- <https://discourse.julialang.org> – Community forum.
+- *Julia for Data Science* by Jones et al., 2024.
+- *Think Julia* by Downey and Sarma, 2018.
+https://adamwysokinski.codeberg.page/bbj/
+
+::: 
+<!-- end unit-resources div -->
+
+::: {.unit-exercise}
+# Practice
+
+1. Pick one resource above—manual chapter, video, or book—and work through the first example it presents.
+2. Create an account on Discourse, post a brief introduction, and ask a simple Julia question.
+
+::: 
+<!-- end unit-exercise div -->

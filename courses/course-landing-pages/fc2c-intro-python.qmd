@@ -1,0 +1,66 @@
+---
+title: A brief introduction to Python 
+---
+
+::: {.course-overview}
+# Course Overview
+
+This course provides a very brief introduction to the **Python** programming language. We cover install, setup and first steps. This course is not meant to teach you how to code in Python, only to get you started with using it.
+
+
+
+:::
+
+
+::: {.course-goals}
+# Course Goals
+
+-   Know what Python is.
+* Have Python successfully installed and set up.
+-   Be familiar with some basic Python use.
+* Be able to run Python code.
+-   Understand the ideas of libraries and how to manage them.
+:::
+
+<!--
+::: {.course-stats}
+# Course Stats
+
+- N videos (X minutes)
+- N modules, M units
+- N exercises 
+- Price: free
+
+:::
+-->
+
+
+
+::: {.course-prerequisites}
+# Course Prerequisites
+
+* We assume you have Positron up and running and can use it at the level covered in our [**Brief Introduction to Positron** course](fc1-intro-positron.qmd). 
+
+:::
+
+
+
+::: {.course-content}
+# Course Content
+
+The course covers these topics (and more):
+
+- Introduction
+- Install and Setup
+- Basic Functionality 
+- Installing and using Libraries
+- Further Resources
+:::
+
+
+::: {.course-getstarted}
+# Get started
+
+[Click here to start this course.](/courses/fc2c-intro-python/intro-python-toc.qmd)
+
+:::

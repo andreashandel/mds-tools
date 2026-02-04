@@ -1,0 +1,79 @@
+---
+title: "Online portfolio introduction"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Online portfolio introduction"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- In this unit, we discuss what an online portfolio is,
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are In this unit, we discuss what an online portfolio is,. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Know what an online portfolio is.
+- Know why it's good to have an online portfolio.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Know what an online portfolio is., Know why it's good to have an online portfolio. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Introduction
+
+- In our context, a portfolio is an organized collection of
+- Since the work is generally code, text and other digital
+- Since the work is generally code, text and other digital
+
+::: {.notes}
+In this slide, we focus on introduction and why it matters. The key ideas here are In our context, a portfolio is an organized collection of, Since the work is generally code, text and other digital, Since the work is generally code, text and other digital. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Why have a portfolio
+
+- It is useful to showcase your skills for several reasons.
+- If you are looking for a new job, the application
+- You can mention specific skills in those documents, but you
+- But you can add a link to your application materials
+- Even if you are not looking for a new job,
+- Say someone is looking for a speaker/presenter for an event
+
+::: {.notes}
+In this slide, we focus on why have a portfolio and why it matters. The key ideas here are It is useful to showcase your skills for several reasons., If you are looking for a new job, the application, You can mention specific skills in those documents, but you. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## How to make a portfolio
+
+- An online portfolio is basically a website.
+- This could be a stand-alone page, or it could be
+- Any tool that allows you to make online content and
+- There are many free tools.
+- WordPress is a very common platform.
+- We like using Quarto and Git/GitHub.
+
+::: {.notes}
+In this slide, we focus on how to make a portfolio and why it matters. The key ideas here are An online portfolio is basically a website., This could be a stand-alone page, or it could be, Any tool that allows you to make online content and. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- In this unit, we covered the basics of a portfolio,
+- In this unit, we covered the basics of a portfolio,
+- In this unit, we covered the basics of a portfolio,
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are In this unit, we covered the basics of a portfolio,, In this unit, we covered the basics of a portfolio,, In this unit, we covered the basics of a portfolio,. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

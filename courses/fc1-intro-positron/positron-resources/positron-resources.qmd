@@ -19,27 +19,54 @@ This unit provides a few more bits of information, and a listing of hopefully us
 <!-- end unit-goals div -->
 
 <!--
-::: {{.unit-video}}
-# Video, slides and audio transcript
+::: {.unit-video}
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
 
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](positron-resources-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](positron-resources-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
 ::: {.unit-reading}
 # Reading
 
 ## Introduction
+
+<!-- ai-figure: introduction -->
+![](media/introduction.png){fig-alt="Illustration related to Introduction." fig-cap="Illustration related to Introduction."}
+<!-- end-ai-figure -->
 
 Positron is still fairly new and under active development. As such, the available documentation is still a bit sparse, and things might change.
 Here are a few pointers that hopefully help you as you learn more about Positron.
 
 
 ## Positron = VS Code (often)
+
+<!-- ai-figure: positronvscodeoften -->
+![](media/positronvscodeoften.png){fig-alt="Illustration related to Positron = VS Code (often)." fig-cap="Illustration related to Positron = VS Code (often)."}
+<!-- end-ai-figure -->
 
 As mentioned multiple times, Positron is built on VS Code (technically Code OSS, which is the source behind VS Code). 
 That means that almost always, any tip you find for VS Code will also work in Positron. There might be exceptions, especially as Positron continues to evolve and possibly move further away from VS Code. But it's always a good idea to search for help for VS Code if you can't find something for Positron, and try if the VS Code solution works. 
@@ -49,6 +76,10 @@ It also means that most - [though not all](https://positron.posit.co/extensions.
 
 ## Trust Issues
 
+<!-- ai-figure: trustissues -->
+![](media/trustissues.png){fig-alt="Illustration related to Trust Issues." fig-cap="Illustration related to Trust Issues."}
+<!-- end-ai-figure -->
+
 When you open a folder or workspace in Positron for the first time, you might be asked if you trust the authors of the files in that folder/workspace. This is a security feature to prevent malicious code from running on your computer without your knowledge. If you are working on your own projects, you can generally safely trust the folder. If you are working on projects from others, make sure you know and trust the source before trusting the folder.
 
 If you want to change the overall trust settings, you can go to 'Settings', then search for 'trust'. You can adjust various settings related to trust. For instance if you don't want to get these notifications, you can set `Trust: Startup Prompt` to _never_.
@@ -56,6 +87,10 @@ If you want to change the overall trust settings, you can go to 'Settings', then
 
 
 ## Tutorials and other Resources
+
+<!-- ai-figure: tutorialsandotherresources -->
+![](media/tutorialsandotherresources.png){fig-alt="Illustration related to Tutorials and other Resources." fig-cap="Illustration related to Tutorials and other Resources."}
+<!-- end-ai-figure -->
 
 * The Positron website has a number of [Guides](https://positron.posit.co/welcome.html) that cover various topics. They are a good starting point to learn more about specific topics. These are still fairly new and expected to grow over time.
 * The VS Code website has a large number of [Getting Started Tutorials](https://code.visualstudio.com/docs/getstarted/getting-started) that are also applicable to Positron.

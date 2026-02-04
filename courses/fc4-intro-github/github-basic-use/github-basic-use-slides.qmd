@@ -1,0 +1,95 @@
+---
+title: "Basic Use"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Basic Use"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit covers the essential steps to using GitHub, and
+- We'll cover topics such as clone, edit, stage, commit, pull,
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit covers the essential steps to using GitHub, and, We'll cover topics such as clone, edit, stage, commit, pull,. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Clone a repository from GitHub.
+- Check status and stage changes.
+- Create clear, small commits.
+- Sync changes with pull and push.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Clone a repository from GitHub., Check status and stage changes., Create clear, small commits. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Git/GitHub terminology
+
+- Git/GitHub has a lot of specialized terminology that takes getting
+- The GitHub folks posted a [handy page with short descriptions
+- Some of the terms you will encounter often are *Repository*
+- It can be a bit confusing at first, but you'll
+
+::: {.notes}
+In this slide, we focus on git/github terminology and why it matters. The key ideas here are Git/GitHub has a lot of specialized terminology that takes getting, The GitHub folks posted a [handy page with short descriptions, Some of the terms you will encounter often are *Repository*. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## GitHub repositories
+
+- As mentioned previously, the main unit of organization in GitHub
+- A repository is a folder that contains all subfolders and
+- Each repository is tracked independently, and has its own URL
+
+::: {.notes}
+In this slide, we focus on github repositories and why it matters. The key ideas here are As mentioned previously, the main unit of organization in GitHub, A repository is a folder that contains all subfolders and, Each repository is tracked independently, and has its own URL. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Cloning and pulling
+
+- When you start a new project that you plan on
+- Here, we will focus on starting repositories on GitHub.com and
+- If you start a repository on GitHub.com, you can then
+- The process of *cloning* creates a local copy of the
+- You also use that approach if you are collaborating with
+- The important part is that *cloning* means copying a repository
+
+::: {.notes}
+In this slide, we focus on cloning and pulling and why it matters. The key ideas here are When you start a new project that you plan on, Here, we will focus on starting repositories on GitHub.com and, If you start a repository on GitHub.com, you can then. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Committing and Pushing
+
+- The reverse process of getting your local changes up to
+- If you start a repository locally, or any time you
+- Before you can push your local updates, you need to
+- Committing means recording a snapshot of your changes in the
+- You can make multiple commits locally before pushing them to
+- Commits are important because they allow you to track the
+
+::: {.notes}
+In this slide, we focus on committing and pushing and why it matters. The key ideas here are The reverse process of getting your local changes up to, If you start a repository locally, or any time you, Before you can push your local updates, you need to. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- The core workflow is: clone (once).
+- Then pull/push.
+- In between, edit.
+- Whenever you made substantial changes or are taking a break,
+- When you resume working, check that no changes happened to
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are The core workflow is: clone (once)., Then pull/push., In between, edit. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

@@ -15,28 +15,18 @@ The courses are listed in the order in which the content loosely builds on each 
 
 More details about each course can be found in the course-specific overview page.
 
-
-# Core Tools
-
 * [A brief introduction to Positron](/courses/course-landing-pages/fc1-intro-positron.qmd)
 
 * [A brief introduction to R](/courses/course-landing-pages/fc2a-intro-r.qmd)
 
-<!-- * [A brief introduction to Julia](/courses/course-landing-pages/fc2b-intro-julia.qmd) -->
+* [A brief introduction to Julia](/courses/course-landing-pages/fc2b-intro-julia.qmd)
 
-<!-- * [A brief introduction to Python](/courses/course-landing-pages/fc2c-intro-python.qmd) -->
+* [A brief introduction to Python](/courses/course-landing-pages/fc2c-intro-python.qmd)
 
 * [A brief introduction to Quarto](/courses/course-landing-pages/fc3-intro-quarto.qmd)
 
 * [A brief introduction to Git/GitHub](/courses/course-landing-pages/fc4-intro-github.qmd)
 
-
-# More Tools
-
-
 * [A brief introduction to AI tools](/courses/course-landing-pages/fc5-intro-ai.qmd)
-
-
-# Using the Tools
 
 * [Creating an online portfolio](/courses/course-landing-pages/fc6-portfolio-creation.qmd)

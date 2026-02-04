@@ -19,15 +19,37 @@ This unit provides a brief..
 ::: 
 <!-- end unit-goals div -->
 
+<!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-::: 
+:::
+-->
 <!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](unit-template-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](unit-template-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
 
 
 ::: {.unit-reading}
@@ -37,18 +59,27 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 
 This unit is about XYZ
 
-## Main section 1
+## A topic
 
-Main and sub sections as needed.
-Use level 2 headings and below. Level 1 are reserved for the main section headers.
+Sub-levels as needed.
+Use markdown level 2 headings and below within this section. 
 
-### Subsection 1
+### Subtopic 1
 
-### Subsection 2
+A sublevel for this topic.
 
-## Main section 2
+### Subtopic 2
 
-### Subsection 1
+Another sublevel for this topic.
+
+## Another topic 
+
+Not all topics need further sub-level division.
+
+## Yet another topic 
+
+This topic also doesn't have subdivision.
+
 
 ::: 
 <!-- end unit-reading div -->
@@ -66,7 +97,7 @@ In this unit, we covered XYZ.
 ::: {.unit-resources}
 # Further Resources
 
-* This is a good additional reading: URL
+* This is a [good additional reading](URL).
 * Here is some more good information.
 
 ::: 

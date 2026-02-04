@@ -1,0 +1,114 @@
+---
+title: "Basics of Coding in R"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Basics of Coding in R"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit covers some very minimal coding in R.
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit covers some very minimal coding in R. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Be familiar with basic R coding concepts.
+- Be able to write a few lines of R code and run it.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Be familiar with basic R coding concepts., Be able to write a few lines of R code and run it. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Introduction
+
+- This whole course, including this unit, is by no means
+- The goal is instead to get you started, and give
+- To really learn R coding, you need to take a
+
+::: {.notes}
+In this slide, we focus on introduction and why it matters. The key ideas here are This whole course, including this unit, is by no means, The goal is instead to get you started, and give, To really learn R coding, you need to take a. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Learning coding
+
+- R (or any other programming language) is best learned by
+- You will learn more R as we go along, but
+- You will learn by doing as we go through the
+- As with anything, the more you practice, the better you
+- You should approach learning to code with an attitude of
+- You will get stuck, you will get frustrated with some
+
+![The journey of learning to code. Source:
+
+::: {.notes}
+In this slide, we focus on learning coding and why it matters. The key ideas here are R (or any other programming language) is best learned by, You will learn more R as we go along, but, You will learn by doing as we go through the. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Learning the basics of R
+
+- Here is a quick crash course on R syntax to
+- *Everything is an object.* You create objects with `<-` (assignment)
+- *R is vectorized.* Most operations work on whole vectors, not
+- *Data frames are tables.* They hold columns of different types.
+- Use `$` to access a column.
+- Functions take inputs (arguments) and return outputs.
+
+```text
+*R is vectorized.* Most operations work on whole vectors, not just
+single numbers.
+```
+
+::: {.notes}
+In this slide, we focus on learning the basics of r and why it matters. The key ideas here are Here is a quick crash course on R syntax to, *Everything is an object.* You create objects with `<-` (assignment), *R is vectorized.* Most operations work on whole vectors, not. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Getting help
+
+- Maybe the most important skill for learning any programming language
+- In the past, we recommended starting with Google, StackOverflow, and
+- At this point, most of the time, you will likely
+- We recommend starting there, and if that doesn't solve your
+- xkcd.com.](xkcd_wisdom_of_the_ancients.png){width="90%" fig-alt="An xkcd comic of a stick figure shaking a
+- What did you see?!'.
+
+![Fortunately rare for R. Source:
+
+::: {.notes}
+In this slide, we focus on getting help and why it matters. The key ideas here are Maybe the most important skill for learning any programming language, In the past, we recommended starting with Google, StackOverflow, and, At this point, most of the time, you will likely. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Some further comments
+
+- R has a bunch of quirks.
+- You'll likely encounter a number of them.
+- Here are a few common ones.
+- A common confusion is that there are two ways of
+- One can write `x <- 2` or `x = 2`
+- People argue about which way to do it.
+
+::: {.notes}
+In this slide, we focus on some further comments and why it matters. The key ideas here are R has a bunch of quirks., You'll likely encounter a number of them., Here are a few common ones. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- We discussed some basics of writing R code.
+- To reiterate, this course is not a learn-to-code course.
+- For resources that can help you learn R coding, see
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are We discussed some basics of writing R code., To reiterate, this course is not a learn-to-code course., For resources that can help you learn R coding, see. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

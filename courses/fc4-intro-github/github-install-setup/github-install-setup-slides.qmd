@@ -1,0 +1,66 @@
+---
+title: "Installation and Setup"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Installation and Setup"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit guides you through installing Git, creating a GitHub
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit guides you through installing Git, creating a GitHub. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Install Git on your system.
+- Set up a GitHub account.
+- Install and configure GitHub Desktop.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Install Git on your system., Set up a GitHub account., Install and configure GitHub Desktop. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Install Git
+
+- Install Git on your computer.
+- Go to the [Git website](https://git-scm.com/) and follow the instructions.
+- You can accept the default options during installation.
+- It is likely that you will need administrator rights to
+
+::: {.notes}
+In this slide, we focus on install git and why it matters. The key ideas here are Install Git on your computer., Go to the [Git website](https://git-scm.com/) and follow the instructions., You can accept the default options during installation. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Set up GitHub
+
+- Go to [the GitHub website](https://github.com/) and create an account.
+- The email you use should be one you use regularly,
+- This will be the email address to which GitHub sends
+- Next, choose a user name and password to finish setting
+
+::: {.notes}
+In this slide, we focus on set up github and why it matters. The key ideas here are Go to [the GitHub website](https://github.com/) and create an account., The email you use should be one you use regularly,, This will be the email address to which GitHub sends. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- You installed Git, created a GitHub account and installed and
+- You installed Git, created a GitHub account and installed and
+- You installed Git, created a GitHub account and installed and
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are You installed Git, created a GitHub account and installed and, You installed Git, created a GitHub account and installed and, You installed Git, created a GitHub account and installed and. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

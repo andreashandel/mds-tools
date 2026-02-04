@@ -1,0 +1,20 @@
+---
+title: "TOC: A brief introduction to Julia" 
+---
+
+
+
+::: {.course-content}
+# Course Content
+
+
+
+- [Introduction to Julia](julia-introduction/julia-introduction.qmd)
+- [Julia Installation and Setup](julia-install-setup/julia-install-setup.qmd)
+- [Using Julia through Positron](julia-positron/julia-positron.qmd)
+- [Basics of Coding in Julia](julia-coding-basics/julia-coding-basics.qmd)
+- [Julia Packages](julia-packages/julia-packages.qmd)
+- [Using Julia environments](julia-environments/julia-environments.qmd)
+- [Julia Coding Tips](julia-coding-tips/julia-coding-tips.qmd)
+- [Further Julia Resources](julia-further-resources/julia-further-resources.qmd) 
+:::

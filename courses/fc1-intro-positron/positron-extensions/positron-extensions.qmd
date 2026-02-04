@@ -20,26 +20,52 @@ This unit discusses what Positron extensions are, and how to install and use the
 
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
 
+::: {.unit-slides}
+# Slides
 
+View the slide deck for this unit: [Slides](positron-extensions-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](positron-extensions-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
 ::: {.unit-reading}
 # Reading
 
 ## Introduction
 
+<!-- ai-figure: introduction -->
+![](media/introduction.png){fig-alt="Illustration related to Introduction." fig-cap="Illustration related to Introduction."}
+<!-- end-ai-figure -->
+
 In many programming languages, a lot of extra functionality comes from libraries or packages. In editors like Positron (and VS Code and others), the equivalent of packages are _extensions_ (another term sometimes used is _plugins_). 
 
 
 ## Managing Extensions
+
+<!-- ai-figure: managingextensions -->
+![](media/managingextensions.png){fig-alt="Illustration related to Managing Extensions." fig-cap="Illustration related to Managing Extensions."}
+<!-- end-ai-figure -->
 
 Positron comes with a number of extensions already installed. To see and manage them, open the Extensions view, by clicking the extension icon on the left sidebar in Positron (it looks like 4 squares, with the top right being tilted). You'll then see a list of extensions. 
 
@@ -54,6 +80,10 @@ Finally, if you decide you don't like an extension at all, just click on it to c
 
 ## Getting Extensions 
 
+<!-- ai-figure: gettingextensions -->
+![](media/gettingextensions.png){fig-alt="Illustration related to Getting Extensions." fig-cap="Illustration related to Getting Extensions."}
+<!-- end-ai-figure -->
+
 You can install more extensions to get extra functionality. Getting extensions is easy. Let's practice and install an additional extension. First, click on 'File' -> 'Open File' and open some `CSV` file on your computer. If you don't have one readily available, ask your favorite AI to make you one, e.g. with a prompt like _"Generate a small, realistic dataset with 10 variables and 20 observations. Return the result as a downloadable CSV file."_   
 
 The file should open in the main window, and you should see a nicely formatted data frame. This formatting is courtesy of Positron, one of the many nice features of this IDE. But let's say we don't want to have it pre-formatted by Positron. Click on the 'Open as plain text file' button on the top. This should open the CSV file as simple text, you'll see entries separated by commas. That's ok, but a bit hard to read. So let's improve this with an extension.
@@ -67,11 +97,19 @@ Recall that Positron is based on VS Code. To learn a bit more about Positron ext
 
 ## Configuring Extensions
 
+<!-- ai-figure: configuringextensions -->
+![](media/configuringextensions.png){fig-alt="Illustration related to Configuring Extensions." fig-cap="Illustration related to Configuring Extensions."}
+<!-- end-ai-figure -->
+
 Many extensions have their own settings that allow you to adjust their behavior. Simply click on the extension you want to customize, then in the title area of the extension, next to `Auto Update`, click on the gear icon and go to `Settings`. For instance if you do that for the `Quarto` extension that comes pre-installed with Positron, you see a long list of settings you can change. There is for instance 'Quarto > Render > Preview Type'. It's by default set to internal, meaning Quarto documents are shown inside Positron. If you want to show them in the browser (we personally prefer that), you can change the setting to 'external'. If you don't know yet what Quarto is and what rendering and preview means, you will soon once you go through our _Brief Introduction to Quarto_ course 😁.
 
 
 
 ## Using Extensions 
+
+<!-- ai-figure: usingextensions -->
+![](media/usingextensions.png){fig-alt="Illustration related to Using Extensions." fig-cap="Illustration related to Using Extensions."}
+<!-- end-ai-figure -->
 
 Like packages/libraries in R or Python or Julia, extensions can be of varying quality. In general, any additional extension makes Positron load slower and break more easily. We therefore recommend that you choose extensions cautiously. Start with those that are widely used and well supported. Add additional ones only if you really need them. You can always install them, try them, and then if they are not useful, uninstall them again.
 

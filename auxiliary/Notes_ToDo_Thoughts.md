@@ -32,7 +32,14 @@
 - Links to other resources should be used sparingly inside the main text, if feasible they should go into 'other resources' section at the end. Sometimes links are needed, e.g. to a website for downloading a software. But anyhing like [see here for more info](...) should go into 'other resources'.
 
 
+# Pipeline for new material
 
+- Create folder and unit, using template.
+- Fill unit with text (use AI for drafting/editing)
+- Have AI create quizzes based on unit content
+- Have AI create slides from unit using the specified prompt.
+- Run script to generate transcript file from speaker notes on slide.
+- Use AI to generate video from script.
 
 # Notes from Quarto conversion by Jadey
 

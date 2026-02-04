@@ -1,0 +1,121 @@
+---
+title: "Introduction to Git/GitHub"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Introduction to Git/GitHub"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit provides a brief introduction to version control, Git,
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit provides a brief introduction to version control, Git,. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Understand the difference between Git and GitHub.
+- Know when Git/GitHub is a good fit (and when it is not).
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Understand the difference between Git and GitHub., Know when Git/GitHub is a good fit (and when it is not). As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## What is Git
+
+- [**Git**](https://git-scm.com/) is software that implements a *version control system*.
+- The main idea is that as you (and your collaborators)
+- **Git** tracks every change to your files.
+- In Git/GitHub terminology, the project is called a *repository* (or
+- This consists of a main folder, usually with subfolders, and
+- Anything inside this folder/repository is tracked as a project by
+
+::: {.notes}
+In this slide, we focus on what is git and why it matters. The key ideas here are [**Git**](https://git-scm.com/) is software that implements a *version control system*., The main idea is that as you (and your collaborators), **Git** tracks every change to your files. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## What is GitHub
+
+- [**GitHub**](https://github.com/) is distinct from Git.
+- **GitHub** is an online platform that hosts changes you make
+- This makes collaboration and sharing easy.
+- You can use Git without using GitHub.
+- Other interfaces/platforms for Git exist, e.g., [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/product).
+- But the combination of Git and GitHub is the most
+
+::: {.notes}
+In this slide, we focus on what is github and why it matters. The key ideas here are [**GitHub**](https://github.com/) is distinct from Git., **GitHub** is an online platform that hosts changes you make, This makes collaboration and sharing easy. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Why use Git/GitHub
+
+- You want to use GitHub to avoid this: Git/GitHub gives
+- It is well suited for collaborative work.
+- Historically, version control was used for software development.
+- It has since become broader and is now used for
+- While there are other similar tools that can do the
+
+![Source: [phdcomics.com](https://phdcomics.com/)](phd_versioncontrol.gif){width="60%"}
+
+::: {.notes}
+In this slide, we focus on why use git/github and why it matters. The key ideas here are You want to use GitHub to avoid this: Git/GitHub gives, It is well suited for collaborative work., Historically, version control was used for software development. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## What to (not) use Git/GitHub for
+
+- GitHub is ideal if you have a project with many
+- GitHub is less useful if you have a lot of
+- Word or PowerPoint) and different team members might want to
+- In that instance, a solution like Google Docs, Word+Dropbox, Word+OneDrive,
+- might be better.
+- GitHub also has a problem with large files.
+
+::: {.notes}
+In this slide, we focus on what to (not) use git/github for and why it matters. The key ideas here are GitHub is ideal if you have a project with many, GitHub is less useful if you have a lot of, Word or PowerPoint) and different team members might want to. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## How to use Git/GitHub
+
+- The most powerful and flexible way of using Git/GitHub is
+- Since this can be intimidating, we will discuss a more
+- If you are already an experienced GitHub user and have
+- the command line or some other third-party software), you can
+- We assume if you decide to do it your way,
+
+::: {.notes}
+In this slide, we focus on how to use git/github and why it matters. The key ideas here are The most powerful and flexible way of using Git/GitHub is, Since this can be intimidating, we will discuss a more, If you are already an experienced GitHub user and have. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Git/GitHub and other cloud-based sync options
+
+- In some way, you can think of GitHub as a
+- With the GitHub workflow, you can work locally on different
+- The difference to Dropbox & Co is that syncing between
+- So do not forget to pull before you start work
+- (We'll cover GitHub terminology and the meaning of `push` and
+- If you do, sync processes might conflict, potentially leading to
+
+::: {.notes}
+In this slide, we focus on git/github and other cloud-based sync options and why it matters. The key ideas here are In some way, you can think of GitHub as a, With the GitHub workflow, you can work locally on different, The difference to Dropbox & Co is that syncing between. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- Git/GitHub are a software and service that allow you to
+- Together they provide a structured way to collaborate, back up
+- Together they provide a structured way to collaborate, back up
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are Git/GitHub are a software and service that allow you to, Together they provide a structured way to collaborate, back up, Together they provide a structured way to collaborate, back up. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

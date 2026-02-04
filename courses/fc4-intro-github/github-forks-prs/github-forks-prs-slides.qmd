@@ -1,0 +1,123 @@
+---
+title: "Branches, Forks and Pull Requests"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Branches, Forks and Pull Requests"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- The workflow we covered so far generally suffices for basic
+- But if you want to collaborate with others, or want
+- Three important ones are branches, forks, and pull requests.
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are The workflow we covered so far generally suffices for basic, But if you want to collaborate with others, or want, Three important ones are branches, forks, and pull requests. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Know ways to collaborate with others on GitHub.
+- Know what branches are and when to use them.
+- Understand when and how to use a fork.
+- Be able to open and merge a pull request.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Know ways to collaborate with others on GitHub., Know what branches are and when to use them., Understand when and how to use a fork. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Collaborators
+
+- GitHub is great for collaboration.
+- There are two main ways to collaborate on GitHub: as
+- To add collaborators to your repository, go to the repository
+- You can then search for GitHub user names or email
+- Once they accept the invitation, they can push changes directly
+- This is the simplest way to collaborate if you trust
+
+::: {.notes}
+In this slide, we focus on collaborators and why it matters. The key ideas here are GitHub is great for collaboration., There are two main ways to collaborate on GitHub: as, To add collaborators to your repository, go to the repository. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Branches
+
+- Each repository can have multiple branches (think of it as
+- Often, using just a single branch is all you need.
+- The name of the main branch can be anything, but
+- Until not too long ago, the main branch was referred
+- As you work on your repository, make commits and push/pull,
+- You can create additional branches to isolate your work.
+
+::: {.notes}
+In this slide, we focus on branches and why it matters. The key ideas here are Each repository can have multiple branches (think of it as, Often, using just a single branch is all you need., The name of the main branch can be anything, but. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Forks
+
+- To be able to use branches, you need to be
+- In contrast, you can fork any public repository.
+- A fork is a personal copy of someone else's repository.
+- While you can only contribute directly to a repository to
+- Forks are commonly used when you want to contribute to
+
+::: {.notes}
+In this slide, we focus on forks and why it matters. The key ideas here are To be able to use branches, you need to be, In contrast, you can fork any public repository., A fork is a personal copy of someone else's repository. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Making a fork
+
+- Go to the GitHub page of the repository you want
+- This creates a copy of the repository under your GitHub
+- This is now your repository _forever_.
+- You can clone it to your computer, make changes, and
+- If you plan on working on the fork and later
+
+::: {.notes}
+In this slide, we focus on making a fork and why it matters. The key ideas here are Go to the GitHub page of the repository you want, This creates a copy of the repository under your GitHub, This is now your repository _forever_. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Open a pull request (PR)
+
+- Assume that you forked a repository because you wanted to
+- You cloned your fork to your computer, made some changes,
+- Next, you ask the owner of the original repository to
+- This last part is called issuing a **pull request**.
+- You are requesting that the other person *pull* your changes
+- Maybe thinking of it as *merge* requests or *sync* requests
+
+::: {.notes}
+In this slide, we focus on open a pull request (pr) and why it matters. The key ideas here are Assume that you forked a repository because you wanted to, You cloned your fork to your computer, made some changes,, Next, you ask the owner of the original repository to. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Merge a pull request
+
+- Once you receive the pull request notification, go to the
+- Click on *Pull requests*, then click on the request.
+- Take a look.
+- On the first page, it shows you their message and
+- Hopefully, you didn't change things around while they did, so
+- Click on the *Files changed* button, which will show you
+
+::: {.notes}
+In this slide, we focus on merge a pull request and why it matters. The key ideas here are Once you receive the pull request notification, go to the, Click on *Pull requests*, then click on the request., Take a look. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- We discussed branches, forks, and pull requests.
+- As you continue your GitHub journey, you will likely start
+- As you continue your GitHub journey, you will likely start
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are We discussed branches, forks, and pull requests., As you continue your GitHub journey, you will likely start, As you continue your GitHub journey, you will likely start. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

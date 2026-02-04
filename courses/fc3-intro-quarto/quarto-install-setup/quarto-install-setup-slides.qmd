@@ -1,0 +1,91 @@
+---
+title: "Quarto Installation and Setup"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Quarto Installation and Setup"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit guides you through the installation and initial setup
+- You will learn how to install Quarto and make sure
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit guides you through the installation and initial setup, You will learn how to install Quarto and make sure. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Successfully install Quarto on your system.
+- Successfully install Quarto on your system.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Successfully install Quarto on your system., Successfully install Quarto on your system. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Installing Quarto
+
+- Visit the [Get started page](https://quarto.org/docs/get-started/) on the Quarto website to
+- Install it like you would any other software.
+- If you don't have administrator rights to your computer, choose
+- If not, you might need to have your admin install
+
+::: {.notes}
+In this slide, we focus on installing quarto and why it matters. The key ideas here are Visit the [Get started page](https://quarto.org/docs/get-started/) on the Quarto website to, Install it like you would any other software., If you don't have administrator rights to your computer, choose. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Testing/using Quarto
+
+- Quarto is a command-line tool.
+- That means you run it from a terminal (Mac/Linux) or
+- We will essentially always call it from within Positron.
+- But to test it, open a terminal/command prompt.
+- If you are on Windows, look for the "Command Prompt"
+- If you are on a Mac, open the "Terminal" application.
+
+```text
+If the install worked, you should see it show the version of the software you just downloaded and installed.
+
+If you ever need to see what commands you can use with Quarto, type:
+```
+
+::: {.notes}
+In this slide, we focus on testing/using quarto and why it matters. The key ideas here are Quarto is a command-line tool., That means you run it from a terminal (Mac/Linux) or, We will essentially always call it from within Positron. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Quarto configuration
+
+- Quarto interacts with a lot of other tools.
+- Not all are needed, depending on what you want to
+- To see this list of tools and if they are
+- Quarto recommends `TinyTeX` for this.
+- You can install it by typing the following command into
+- See the [Quarto documentation on PDF output](https://quarto.org/docs/output-formats/pdf-basics.html) for more details.
+
+```text
+If you want to create PDF documents -- which is often very useful -- you will need to install a TeX distribution. Quarto recommends `TinyTeX` for this. You can install it by typing the following command into the console:
+```
+
+::: {.notes}
+In this slide, we focus on quarto configuration and why it matters. The key ideas here are Quarto interacts with a lot of other tools., Not all are needed, depending on what you want to, To see this list of tools and if they are. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- In this unit, you learned how to install Quarto and
+- You also learned how to install a TeX distribution such
+- You also learned how to install a TeX distribution such
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are In this unit, you learned how to install Quarto and, You also learned how to install a TeX distribution such, You also learned how to install a TeX distribution such. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

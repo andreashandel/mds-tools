@@ -1,0 +1,137 @@
+---
+title: "Quarto Overview"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Quarto Overview"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit provides a brief overview of Quarto.
+- Quarto is a versatile and powerful open-source publishing system designed
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit provides a brief overview of Quarto., Quarto is a versatile and powerful open-source publishing system designed. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Understand what Quarto is and why it is useful.
+- Recognize the basic structure of a Quarto document.
+- Be familiar with common use cases of Quarto.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Understand what Quarto is and why it is useful., Recognize the basic structure of a Quarto document., Be familiar with common use cases of Quarto. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## What is Quarto?
+
+- Quarto is defined as "an open-source scientific and technical publishing
+- In simple terms, Quarto is a piece of (powerful) software
+- Various output formats are available, including HTML, PDF, Word documents,
+- Quarto is the successor of the R Markdown framework, which
+- Building upon R Markdown’s strengths, Quarto extends this capability to
+
+::: {.notes}
+In this slide, we focus on what is quarto? and why it matters. The key ideas here are Quarto is defined as "an open-source scientific and technical publishing, In simple terms, Quarto is a piece of (powerful) software, Various output formats are available, including HTML, PDF, Word documents,. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Why Quarto?
+
+- Traditional methods of authoring scientific and technical documents often involve
+- For instance, code is written in some language such as
+- The code produces output such as figures or tables, which
+- This separation of analysis and presentation is not efficient and
+- The idea for Quarto is that one can use one
+- This can lead to a workflow that is much more
+
+::: {.notes}
+In this slide, we focus on why quarto? and why it matters. The key ideas here are Traditional methods of authoring scientific and technical documents often involve, For instance, code is written in some language such as, The code produces output such as figures or tables, which. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Applications of Quarto
+
+- Academic publishing and reproducible research papers
+- Data analysis reports and interactive dashboards
+- Educational content and tutorials
+- Professional reporting and documentation
+- Websites (such as this one)
+- and more
+
+::: {.notes}
+In this slide, we focus on applications of quarto and why it matters. The key ideas here are Academic publishing and reproducible research papers, Data analysis reports and interactive dashboards, Educational content and tutorials. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Quarto vs R Markdown
+
+- Quarto is the more powerful successor of R Markdown.
+- R Markdown is still around and functional.
+- However, most effort is going into implementing new features for
+- Occasionally, you might still need to use R Markdown, and
+- Since Quarto is an evolution of R Markdown and shares
+- Often what works in R Markdown will also work in
+
+::: {.notes}
+In this slide, we focus on quarto vs r markdown and why it matters. The key ideas here are Quarto is the more powerful successor of R Markdown., R Markdown is still around and functional., However, most effort is going into implementing new features for. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Basics of Quarto
+
+- The Quarto software uses Quarto documents/files as input/source.
+- These are **text files** with the file extension `.qmd`.
+- A Quarto document typically consists of three main components: 1.
+- **YAML Front Matter:** Metadata and output configurations defined at the
+- 2.
+- **Markdown Text:** Narrative content formatted with Markdown syntax.
+
+::: {.notes}
+In this slide, we focus on basics of quarto and why it matters. The key ideas here are The Quarto software uses Quarto documents/files as input/source., These are **text files** with the file extension `.qmd`., A Quarto document typically consists of three main components: 1. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## This is a subheading
+
+- Here is text.
+- **This is bold text.** Formatting follows the Markdown syntax.
+- **This is bold text.** Formatting follows the Markdown syntax.
+
+::: {.notes}
+In this slide, we focus on this is a subheading and why it matters. The key ideas here are Here is text., **This is bold text.** Formatting follows the Markdown syntax., **This is bold text.** Formatting follows the Markdown syntax. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## A code example
+
+- Here is a simple example demonstrating the integration of R
+- <!-- ```{r} x <- seq(1, 10) y <- x^2 plot(x,y)
+- Note that what you are seeing here are actually nested
+- This whole website, including this page, is written in Quarto.
+- Inside the Quarto file that is the source for this
+
+```text
+x <- seq(1, 10)
+y <- x^2
+plot(x,y)
+```
+
+::: {.notes}
+In this slide, we focus on a code example and why it matters. The key ideas here are Here is a simple example demonstrating the integration of R, <!-- ```{r} x <- seq(1, 10) y <- x^2 plot(x,y), Note that what you are seeing here are actually nested. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- Quarto is a powerful, flexible framework that allows you to
+- Quarto is a powerful, flexible framework that allows you to
+- Quarto is a powerful, flexible framework that allows you to
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are Quarto is a powerful, flexible framework that allows you to, Quarto is a powerful, flexible framework that allows you to, Quarto is a powerful, flexible framework that allows you to. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

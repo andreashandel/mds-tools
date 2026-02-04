@@ -1,0 +1,101 @@
+---
+title: "Introduction to AI"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Introduction to AI"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- In this unit, we will **very** briefly talk about Artificial
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are In this unit, we will **very** briefly talk about Artificial. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Know what Deep Learning and Artificial Intelligence are.
+- Know how one can (maybe) use R for such tasks.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Know what Deep Learning and Artificial Intelligence are., Know how one can (maybe) use R for such tasks. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Introduction
+
+- Artificial intelligence (AI) is everywhere these days.
+- AI approaches have led to some impressive recent technological advances,
+- Most recently, we have seen LLM AI tools (which we'll
+- Progress in AI will continue to be rapid and lead
+- With everything "new and shiny" there comes a good bit
+- The goal for this short unit is to give you
+
+::: {.notes}
+In this slide, we focus on introduction and why it matters. The key ideas here are Artificial intelligence (AI) is everywhere these days., AI approaches have led to some impressive recent technological advances,, Most recently, we have seen LLM AI tools (which we'll. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Neural networks (NN)
+
+- Currently, the main workhorse of artificial intelligence (AI) is a
+- These are specific kinds of models that originated as an
+- While neural nets have been around for a while and
+- in digit recognition), they have really taken off in recent
+- Without going into details, you can think of how neural
+- One is that they are collections of individual, *in silico*,
+
+::: {.notes}
+In this slide, we focus on neural networks (nn) and why it matters. The key ideas here are Currently, the main workhorse of artificial intelligence (AI) is a, These are specific kinds of models that originated as an, While neural nets have been around for a while and. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Deep Learning (DL)
+
+- You might also hear the term Deep Learning (DL) used
+- Some folks distinguish DL and AI, considering the former a
+- Deep Learning (DL) generally refers to using a specific class
+- These days, DL is sometimes used a bit more loosely
+- However, most often if someone says/writes that they use deep
+
+::: {.notes}
+In this slide, we focus on deep learning (dl) and why it matters. The key ideas here are You might also hear the term Deep Learning (DL) used, Some folks distinguish DL and AI, considering the former a, Deep Learning (DL) generally refers to using a specific class. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Artificial Intelligence (AI)
+
+- Artificial Intelligence (AI) is definitely a trendy topic these days.
+- It is widely used and also widely misused in many
+- Roughly speaking, AI is the use of complex models, usually
+- If one wanted to differentiate DL and AI, one might
+- However, it seems these days that DL and AI are
+- Overall, if you hear AI or DL, you can think
+
+::: {.notes}
+In this slide, we focus on artificial intelligence (ai) and why it matters. The key ideas here are Artificial Intelligence (AI) is definitely a trendy topic these days., It is widely used and also widely misused in many, Roughly speaking, AI is the use of complex models, usually. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## DL and AI in R
+
+
+::: {.notes}
+In this slide, we focus on dl and ai in r and why it matters. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- This unit provided a brief introduction to neural networks, deep
+- It also highlighted that R can interface with tools like
+- It also highlighted that R can interface with tools like
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are This unit provided a brief introduction to neural networks, deep, It also highlighted that R can interface with tools like, It also highlighted that R can interface with tools like. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

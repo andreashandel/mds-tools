@@ -1,0 +1,109 @@
+---
+title: Overview of Julia
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a brief overview of the Julia programming language. 
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand what Julia is and why it was developed.
+* List at least three distinguishing features of the language.
+* Identify a few domains in which Julia is commonly used.
+
+::: 
+<!-- end unit-goals div -->
+
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](julia-introduction-slides.html)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](julia-introduction-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
+::: {.unit-reading}
+# Reading
+
+Julia is an open‑source, high‑performance programming language designed at MIT and first released in 2012. Its creators set out to build a single language that feels as easy and productive as Python or R, yet rivals C and Fortran for speed. 
+
+The language syntax is similar to languages such as MATLAB, Python, or R, but of course the details differ. 
+
+As with many other programming languages, a lot of additional functionality is provided [through packages](https://julialang.org/packages/). While the Julia package system is not quite as exensive yet as that of R or Python, it keeps rapidly growing and there are many high-quality packages for scientific computing, machine learning, and data analysis. 
+
+Because Julia was designed for interactive exploration **and** large‑scale deployment, it has found a home in disciplines ranging from computational biology and climate modeling to finance and astronomy. A vibrant global community contributes to the language and its ecosystem, making Julia an attractive choice for new projects that demand both productivity and speed.
+
+Because it is newer and the community is smaller, some of the documentation and tutorials are not as exhaustive as for languages like Python or R. 
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+Julia is a fairly new programming language that tries to fill the gap between ease of use and high performance. While it is not yet as widely used as R or Python, it is rapidly growing in popularity. 
+
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+-  [Official Julia website](https://julialang.org)
+
+::: 
+<!-- end unit-resources div -->
+
+
+<!-- ::: {.unit-quiz} -->
+<!-- # Test yourself -->
+
+<!-- ```{r qsp-quiz} -->
+<!-- #| echo: false -->
+<!-- #| results: "asis" -->
+<!-- exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE) -->
+<!-- ``` -->
+<!-- :::  -->
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Visit the Julia website and skim the “Showcase” page to see real‑world uses of the language.
+2. Write down two projects or fields you think could benefit from Julia in your own work.
+
+::: 
+<!-- end unit-exercise div -->

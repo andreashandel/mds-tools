@@ -1,0 +1,105 @@
+---
+title: Basics of Coding in Julia
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit introduces the core syntax you need to read and write simple Julia programs.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Declare variables and understand their dynamic yet type‑stable nature.
+* Define and call functions, including multiple methods through dispatch.
+* Use common control‑flow constructs such as conditionals and loops.
+
+::: 
+<!-- end unit-goals div -->
+
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](julia-coding-basics-slides.html)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](julia-coding-basics-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
+::: {.unit-reading}
+# Reading
+
+Writing code in Julia feels familiar if you've used other high‑level languages, yet small differences make it both expressive and safe. Variables do not require explicit type declarations, but every value has a concrete type known to the compiler, and those types matter for performance. For example, assigning `x = 3` binds `x` to a 64‑bit integer; `x = 3.0` would instead produce a 64‑bit floating‑point number.
+
+Functions are the primary building blocks of Julia programs. The canonical form uses the `function` keyword:
+
+```julia
+function square(x)
+    x^2
+end
+```
+
+However, Julia permits a “compact” style using the assignment operator:
+
+`square(x) = x^2`
+
+Defining additional methods for new argument types is as easy as writing another function signature. This multiple‑dispatch model means generic code remains generic, while the compiler chooses the fastest specialized version at run time.
+
+Control flow uses familiar keywords: `if…elseif…else` for branching and `for` or `while` loops for iteration. A `for` loop such as `for i in 1:5 println(i) end` prints the numbers one through five. Vectorized operations are unnecessary for speed; idiomatic loops are already fast because they compile to efficient machine code.
+
+Finally, Julia's standard library includes convenient tools for string manipulation, random numbers, linear algebra, and more, letting you prototype quickly without third‑party dependencies.
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+You can now write small scripts and functions in Julia, leverage multiple dispatch for generic programming, and control program flow with familiar constructs.
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- Official *Julia Manual*, chapters 2–4.
+- <https://docs.julialang.org/en/v1/manual/functions/> – Detailed guide to functions and methods.
+
+::: 
+<!-- end unit-resources div -->
+
+::: {.unit-exercise}
+# Practice
+
+1. In the REPL, define a function `f(x,y) = x^y` and test it with both integers and floating‑point arguments. Observe how the same source code works for either type.
+2. Write a short loop that sums the squares of integers from 1 to 100 without using built‑in `sum`.
+
+::: 
+<!-- end unit-exercise div -->

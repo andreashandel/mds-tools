@@ -20,16 +20,35 @@ This unit explains how to use Quarto within the Positron IDE.
 
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-::: 
+:::
 -->
 <!-- end unit-video div -->
 
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](quarto-positron-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](quarto-positron-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
 ::: {.unit-reading}
 # Reading
 

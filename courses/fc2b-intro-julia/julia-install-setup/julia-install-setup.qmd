@@ -1,0 +1,122 @@
+---
+title: Julia Install and Setup
+---
+
+::: {.unit-overview}
+# Overview
+
+In this unit you will install Julia on your computer and confirm that the installation works.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Download and install Julia for your operating system.
+* Launch Julia and verify the version with `versioninfo()`.
+
+::: 
+<!-- end unit-goals div -->
+
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](julia-install-setup-slides.html)
+
+:::
+<!-- end unit-slides div -->
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](julia-install-setup-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+
+::: 
+<!-- end unit-transcript div -->
+::: {.unit-reading}
+# Reading
+
+## Installing Julia 
+
+Julia provides pre‑built binaries for Windows, macOS, and Linux that you can [download from the official website](https://julialang.org/install/). The best option is to use `juliaup` to download and install the latest version. You should be able to install Julia without needing administrative provileges. 
+
+## Starting Julia 
+
+After installation, open a terminal (PowerShell on Windows or a shell on Unix‑like systems) and type `julia`. If the install worked, this should start Julia. You will be in what is called the [Julia REPL (Read–Eval–Print Loop)](https://docs.julialang.org/en/v1/stdlib/REPL/). You can type commands into the REPL, though most of the time you will use a script file (we'll discuss that shortly).
+
+
+## Exploring Julia 
+
+You should see a banner displaying the version number. Type `versioninfo()` into the Julia command prompt for a more detailed report on your platform and linked libraries. If you type `2+2`, you should get `4` as an answer. 
+
+Once you finished playing around, you can exit Julia by typing `exit()` and then closing the terminal.
+
+We'll explore a bit more about Julia in a subsequent unit.
+
+If you got that far, it means your Julia installation is working! If not, search for whatever error message you get, there should be plenty of helpful information online to ensure you can get Julia up and running.
+
+
+## Julia and Editors
+
+Typing code into the REPL is rarely used for actual work. The standard setup is to instead use an editor to write a Julia script and then execute that script. There are several editors that are frequently used with Julia. For QSPL, we are focusing on Positron, and we'll discuss Julia + Positron in a subsequent unit. Other popular editors are VS Code (on which Positron is based) and Jupyter Notebooks. We won't discuss those here, but if you have a preferred editor that you want to use, you'll likely find some information online on how to set it up for Julia.
+
+
+
+::: 
+<!-- end unit-reading div -->
+
+::: {.unit-summary}
+# Summary
+
+In this unit, we covered Julia installation, started Julia and entered a few commands into the REPL.
+
+::: 
+<!-- end unit-summary div -->
+
+::: {.unit-resources}
+# Further Resources
+
+- [Official Julia install/downloads page](https://julialang.org/install/)
+::: 
+<!-- end unit-resources div -->
+
+
+<!-- ::: {.unit-quiz} -->
+<!-- # Test yourself -->
+
+<!-- ```{r qsp-quiz} -->
+<!-- #| echo: false -->
+<!-- #| results: "asis" -->
+<!-- exams2forms::exams2forms(file = "../../../assets/quizzes/dummy-quiz.Rmd", title = 'quiz-title', browse = FALSE) -->
+<!-- ``` -->
+<!-- :::  -->
+<!-- end unit-quiz div -->
+
+
+::: {.unit-exercise}
+# Practice
+
+1. Close everything, restart your computer, and try to start Julia without looking at the instructions above 😀.
+2. Type `?` into the REPL to start the help menu. Look at the help for some of the examples that come up, or another function you know exists.
+
+
+::: 
+<!-- end unit-exercise div -->

@@ -1,0 +1,122 @@
+---
+title: "Using R through Positron"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Using R through Positron"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit covers the use of R inside of Positron.
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit covers the use of R inside of Positron. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Know how to run R code from within Positron.
+- Be familiar with Positron features that help with R coding.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Know how to run R code from within Positron., Be familiar with Positron features that help with R coding. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Positron and Projects
+
+- As a quick reminder, for any project for which you
+- If needed, (re)visit the _Positron Projects_ unit in the _Brief
+- If needed, (re)visit the _Positron Projects_ unit in the _Brief
+
+::: {.notes}
+In this slide, we focus on positron and projects and why it matters. The key ideas here are As a quick reminder, for any project for which you, If needed, (re)visit the _Positron Projects_ unit in the _Brief, If needed, (re)visit the _Positron Projects_ unit in the _Brief. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Writing R Code in Positron
+
+- Once you have your workspace/project open, you can start creating
+- Code should be saved in and run from files.
+- It is personal choice as to how many and what
+- In general, this will be a mix of functions and
+- Start a new R file by going to `File` ->
+- An empty file should open in the editor area.
+
+```text
+# This is a test script
+x <- seq(1,100) #create a sequence from 1 to 100 and save as x
+y <- x^2 #compute the square of x, assign it to y
+plot(x,y) #plot y versus x
+```
+
+::: {.notes}
+In this slide, we focus on writing r code in positron and why it matters. The key ideas here are Once you have your workspace/project open, you can start creating, Code should be saved in and run from files., It is personal choice as to how many and what. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Running R Code in Positron
+
+- R gives you two main options for running code.
+- One is interactively, line by line.
+- That is useful for quick testing and exploring.
+- The other option is to fully run scripts.
+- This is the preferred way for any real project and
+- We suggest you get used to this way of executing
+
+::: {.notes}
+In this slide, we focus on running r code in positron and why it matters. The key ideas here are R gives you two main options for running code., One is interactively, line by line., That is useful for quick testing and exploring. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Debugging R Code in Positron
+
+- As you just saw, if something went wrong running the
+- Positron is trying to help you avoid bugs.
+- Let's look at a few features.
+- Replace one of the round parentheses `(` with a square
+- As you do so, you should see the `Problems` tab
+- Sometimes these statements are more informative, sometimes less.
+
+::: {.notes}
+In this slide, we focus on debugging r code in positron and why it matters. The key ideas here are As you just saw, if something went wrong running the, Positron is trying to help you avoid bugs., Let's look at a few features. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Code formatting
+
+- Positron gives you syntax highlighting, which is very useful for
+- For instance it makes it much easier to ensure that
+- Another nice feature of Positron is that it comes pre-configured
+- In general, whenever you save your file, it will reformat
+- If you are an advanced coder and/or have your own
+- But it's very useful for novice coders, it really makes
+
+::: {.notes}
+In this slide, we focus on code formatting and why it matters. The key ideas here are Positron gives you syntax highlighting, which is very useful for, For instance it makes it much easier to ensure that, Another nice feature of Positron is that it comes pre-configured. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## More features
+
+- There are a lot more features built into Positron that
+- If you are an RStudio user, you might likely find
+- Positron is still fairly new, so not all features are
+
+::: {.notes}
+In this slide, we focus on more features and why it matters. The key ideas here are There are a lot more features built into Positron that, If you are an RStudio user, you might likely find, Positron is still fairly new, so not all features are. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- We discussed how to use R from within Positron.
+- We will pretty much always use R that way.
+- We will pretty much always use R that way.
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are We discussed how to use R from within Positron., We will pretty much always use R that way., We will pretty much always use R that way. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::

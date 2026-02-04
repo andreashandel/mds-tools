@@ -1,0 +1,79 @@
+---
+title: "Introduction to R"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools ? Introduction to R"
+---
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+## Overview
+
+- This unit provides a high‑level introduction to R.
+
+::: {.notes}
+In this slide, we focus on overview and why it matters. The key ideas here are This unit provides a high‑level introduction to R. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Goals
+
+- Understand what R is used for.
+- Know some of the strengths and weaknesses of R.
+
+::: {.notes}
+In this slide, we focus on goals and why it matters. The key ideas here are Understand what R is used for., Know some of the strengths and weaknesses of R. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Programming Languages
+
+- In brief, programming languages are ways to get a computer
+- There are many different programming languages, each with its own
+- Some programming languages are general-purpose, meaning they can be used
+- Others are more specialized, designed for specific tasks or domains
+- For data-science-type work, there are several popular programming languages, including
+- Each of these languages has its own strengths and weaknesses,
+
+::: {.notes}
+In this slide, we focus on programming languages and why it matters. The key ideas here are In brief, programming languages are ways to get a computer, There are many different programming languages, each with its own, Some programming languages are general-purpose, meaning they can be used. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## The R language
+
+- R is a programming language and software environment specifically designed
+- It was created in the early 1990s by Ross Ihaka
+- R has since become one of the most widely used
+
+::: {.notes}
+In this slide, we focus on the r language and why it matters. The key ideas here are R is a programming language and software environment specifically designed, It was created in the early 1990s by Ross Ihaka, R has since become one of the most widely used. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## R strengths and weaknesses
+
+- R is Open Source, FREE, and cross-platform.
+- R is a "high-level" programming language, relatively easy to learn (compared to Fortran, C, etc.).
+- R comes with many integrated functions.
+- R is great for statistics, data analysis, and graphics.
+- The R Community is very dynamic, helpful and welcoming.
+- Through R packages, it is easy to get lots of state-of-the-art algorithms.
+
+::: {.notes}
+In this slide, we focus on r strengths and weaknesses and why it matters. The key ideas here are R is Open Source, FREE, and cross-platform., R is a "high-level" programming language, relatively easy to learn (compared to Fortran, C, etc.)., R comes with many integrated functions. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
+
+## Summary
+
+- This unit explained what R is and its strengths and
+- This unit explained what R is and its strengths and
+- This unit explained what R is and its strengths and
+
+::: {.notes}
+In this slide, we focus on summary and why it matters. The key ideas here are This unit explained what R is and its strengths and, This unit explained what R is and its strengths and, This unit explained what R is and its strengths and. As you study this, think about how these points connect to your own work or projects. If something feels abstract, pause and re-read the unit text for concrete examples, then come back to the slide. The goal is not to memorize every detail, but to build a clear mental map you can use later.
+:::
