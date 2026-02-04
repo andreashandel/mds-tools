@@ -1,0 +1,191 @@
+---
+title: "Basic Positron Features"
+subtitle: "Companion slides (Quarto reveal.js) with speaker notes"
+author: "Andreas Handel"
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    footer: "mds-tools • Basic Positron Features"
+    menu: true
+    scrollable: false
+---
+
+## Overview
+
+This unit familiarizes you with Positron’s basic layout and features.
+
+::: {.notes}
+**Speaker notes (script):**  
+In this unit we’ll do a quick tour of Positron’s layout so you can orient yourself quickly.  
+The goal is not to memorize every icon—just to know *where* to look when you need to write, run, view, and manage work.
+:::
+
+## Goals
+
+* Understand the basic features and layout of Positron.
+
+::: {.notes}
+**Speaker notes (script):**  
+By the end, you should be able to name the main panes and explain what you use each for.  
+As you use Positron, you’ll personalize the layout—but the basics remain the same.
+:::
+
+## The Positron layout in one slide
+
+::: columns
+::: {.column width="52%"}
+**Think in panes:**
+* **Editor**: write and edit files
+* **Console / Terminal**: run code & commands
+* **Viewer**: see plots, help, rendered output
+* **Environment / History**: inspect objects & recall commands
+:::
+
+::: {.column width="48%"}
+**Navigation helps you move fast:**
+* top menus
+* activity bar / sidebars
+* command palette (“search box”)
+:::
+:::
+
+::: {.notes}
+**Speaker notes (script):**  
+Positron splits the workflow into panes so you can keep the “write → run → inspect” loop tight.  
+Once you know the map, you stop hunting through menus and start working faster.
+:::
+
+## Menu bars and navigation
+
+* The top menu bar works like in most desktop apps.
+* The left-side icon bar gives fast access to common “views” (files, extensions, etc.).
+* Expect lots of options—use what you need and ignore the rest.
+
+::: {.notes}
+**Speaker notes (script):**  
+Positron is full-featured and configurable, so it has a lot of commands—don’t worry about learning everything at once.  
+Use the menus when you’re exploring, but for speed you’ll often use the activity bar and the command palette.
+:::
+
+## Activity bar and side bars
+
+* Use the left activity bar to switch between “views”.
+* The “files/explorer” view is where you browse your project.
+* Extensions live here too—useful as you customize Positron over time.
+
+::: {.notes}
+**Speaker notes (script):**  
+When you’re wondering “where is that thing?”, a good first guess is: it’s a view on the activity bar.  
+Explorer is where you’ll spend a lot of time when you open projects and move between files.
+:::
+
+## Editor pane
+
+* This is where you spend most of your time: writing and editing code/text.
+* You can have multiple files open in tabs.
+* Expect editor conveniences: syntax highlighting, auto-complete, formatting, etc.
+
+::: {.notes}
+**Speaker notes (script):**  
+The editor is your main workspace.  
+Even if you’re mostly using Positron “like RStudio”, it helps to remember the editor is very powerful—especially for navigation and refactoring.
+:::
+
+## Console, terminal, and friends
+
+* The area below the editor hosts tools for running and inspecting work.
+* **Console** is typically where you run code interactively.
+* **Terminal** is for shell commands and project tooling.
+
+::: {.notes}
+**Speaker notes (script):**  
+You’ll bounce between editor and console constantly.  
+When you need system-level commands (git, package installs, render commands), the terminal is usually the right place.
+:::
+
+## Viewer pane
+
+* The right side is typically split into two areas.
+* The **Viewer** is commonly used for plots and rendered output.
+* Rendered Quarto documents can appear here (depending on settings).
+
+::: {.notes}
+**Speaker notes (script):**  
+The viewer is where “results” show up—plots, HTML previews, and sometimes documentation.  
+If you run something and wonder “where did it go?”, glance at the viewer.
+:::
+
+## Environment and history
+
+* The top-right pane shows your workspace objects/variables.
+* Click an object to inspect it more closely.
+* History helps you see (and reuse) recent commands.
+
+::: {.notes}
+**Speaker notes (script):**  
+The environment pane is your quick reality-check: what objects exist right now, and what types are they?  
+History is handy when you ran something useful and want it back without retyping.
+:::
+
+## Command palette
+
+* The “search box” at the top is more than search.
+* Use **Show and Run Commands** to execute commands without hunting through menus.
+* Great for discovering features (type “Quarto” to see relevant commands).
+
+::: {.notes}
+**Speaker notes (script):**  
+This is the power-user feature that pays off quickly.  
+If you only remember one thing from this unit: when you’re stuck, open the search box and run a command from there.
+:::
+
+## Many more features
+
+* Panes can change depending on what you open or run.
+* Some features are self-explanatory; others require exploring.
+* Like other complex software, you’ll discover more over time.
+
+::: {.notes}
+**Speaker notes (script):**  
+Don’t feel like you need to master Positron immediately.  
+As you run into new tasks—debugging, version control, extensions—you’ll learn the relevant parts then.
+:::
+
+## Summary
+
+* Positron is organized into panes that support a typical workflow: write → run → inspect.
+* Learn the “map” first; details come with use.
+* Customize layouts when it helps—but start with the defaults.
+
+::: {.notes}
+**Speaker notes (script):**  
+If you’re comfortable navigating the panes, you’re already most of the way there.  
+Everything else is incremental learning as you encounter new needs.
+:::
+
+## Practice
+
+* Explore a few different layouts. Go to search box in the top middle of Positron, select "Show and Run Commands" and start typing "customize". An entry called "Customize Layouts" should appear. Open it and click around on some of the settings to move different panes around. Configure it in a way that suits you best. You can always change again later.
+
+::: {.notes}
+**Speaker notes (script):**  
+This practice is deliberately lightweight: you’re building familiarity with navigation.  
+Try a few layouts, then pick the one that fits your workflow today—you can always change it later.
+:::
+
+## Further resources
+
+* [Official Positron Layout Documentation](https://positron.posit.co/layout.html) - not very detailed, but gives you an overview of the different panes and their purpose.
+* The arrangement of the different windows is very flexible, so you can customize them and move them around. [This article](https://code.visualstudio.com/docs/configure/custom-layout) describes how to do that. Remember, Positron is basically a variant of VS Code, so the same concepts apply.
+
+::: {.notes}
+**Speaker notes (script):**  
+If you want more detail, the official layout documentation is the best next stop—especially for customizing pane arrangements.
+:::

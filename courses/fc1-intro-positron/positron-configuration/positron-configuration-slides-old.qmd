@@ -1,0 +1,17 @@
+---
+title: "Configuring Positron"
+subtitle: "Auto-generated slides (edit for polish)"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "Configuring Positron"
+    css: "positron-configuration-slides.css"
+---
+

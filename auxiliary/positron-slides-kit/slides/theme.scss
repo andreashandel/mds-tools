@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+$presentation-font-size: 34px;
+$presentation-heading-font-weight: 700;
+$code-block-font-size: 0.75em;
+
+/*-- scss:rules --*/
+
+/* Clean, course-friendly defaults */
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal section {
+  line-height: 1.25;
+}
+
+.reveal ul {
+  margin-top: 0.6em;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+/* Footer: smaller, subtle, and out of the way */
+.reveal .footer {
+  font-size: 0.55em !important;
+  opacity: 0.75 !important;
+}
+
+/* Code blocks: slightly rounded */
+.reveal pre code {
+  border-radius: 10px;
+}

@@ -1,0 +1,164 @@
+The following instructions apply to the content inside the courses/fc1-intro-positron folder and subfolders.
+
+Role: You are an expert Instructional Designer and Quarto/RevealJS Developer.
+
+You are working inside my Quarto course repository. Your task is to generate a Quarto reveal.js slide deck for each unit, with consistent structure and style.
+
+Goal
+
+For each unit, create a high-quality, visually engaging presentation slide deck that I can later use to generate a video. For every unit .qmd file, create a companion slide deck .qmd file in the same folder with the same base name plus -slides appended.
+
+Example:
+
+path/to/positron-features.qmd → path/to/positron-features-slides.qmd
+
+Do not overwrite any existing *-slides.qmd unless it is clearly a previous auto-generated draft with a marker comment you add (see below). If a -slides.qmd file already exists, rename it to -slides-old.qmd, then generate a new one.
+
+Unit identification
+
+A “unit” file is a .qmd that contains the block markers:
+
+::: {.unit-overview} ... ::: <!-- end unit-overview div -->
+(and usually the others: .unit-goals, .unit-reading, .unit-summary, .unit-resources, .unit-exercise)
+
+Only generate slides for unit files that match this pattern. Skip index pages, landing pages, blog posts, etc.
+
+Slide deck format & style
+
+Use Quarto revealjs. Each deck must be self-contained and renderable on its own.
+
+YAML header for every deck (use exactly this template, substituting the unit title):
+
+---
+title: "<UNIT TITLE>"
+subtitle: "Companion slides"
+format:
+  revealjs:
+    slide-number: true
+    progress: true
+    hash: true
+    center: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: fade
+    menu: true
+    footer: "mds-tools • <UNIT TITLE>"
+---
+
+For each slide deck, use and as suitable modify the assets/slides.scss style file for styling. 
+
+
+Required slide structure (consistent across units)
+
+Each deck must contain these sections/slides in this order:
+
+Title slide (implicit via YAML is fine)
+
+Overview (from .unit-overview, 1–3 bullets)
+
+Goals (from .unit-goals, bullet list)
+
+Core content slides (from .unit-reading)
+
+Create 1 slide per ## subsection inside the reading block
+
+Each slide: 3–6 concise bullets (max ~10 words per bullet when possible)
+
+If there are code examples in the subsection, include only the minimal snippet; prefer linking back to unit content rather than full code.
+
+If a subsection is long, split into two slides with clear titles like “(Part 1)” “(Part 2)”.
+
+Summary (from .unit-summary, 3–5 bullets)
+
+
+Guidelines for Slide Creation:
+
+Chunking & Pacing:
+
+Do not create walls of text. Break long paragraphs into concise bullet points.
+
+One distinct concept per slide.
+
+
+Content transformation rules:
+
+Slides must be summaries, not copy/paste of paragraphs.
+
+Preserve key terminology and any “workflow steps”.
+
+Keep the slide count reasonable: target 10–18 slides per unit. If the unit is very short, 6–10 is fine.
+
+Do not invent factual claims. If something is uncertain, phrase it as guidance (“often”, “typically”, “a good default is…”).
+
+Maintain consistent capitalization, punctuation, and bullet style.
+
+
+Speaker Notes (Crucial):
+
+For every single slide, add a :::{.notes} block at the bottom.
+
+Write a conversational, engaging script for this section. Do not just repeat the bullets; explain the concept as if teaching a student. This script will be used for AI voice generation later.
+
+Guidelines for notes:
+
+Write like a spoken narration.
+
+60–130 words per slide (keep it tight).
+
+Use “you” phrasing, instructional tone.
+
+If the slide references a demo or action, explicitly describe what to do.
+
+
+Media & Visuals:
+
+Existing Images: If the input text contains an image ![](), preserve it on the slide.
+
+Mermaid Diagrams (New Media): If a concept involves a process, flow, or hierarchy, create a Mermaid diagram code chunk (````{mermaid}`) to visualize it. This creates "new media" directly in the code.
+
+Image Placeholders: If a slide needs a visual but none exists (and a diagram isn't appropriate), create a suitable visual.
+
+
+Layout & Formatting:
+
+Use Two-Column Layouts as suitable to put text on the left and code/images on the right.
+
+Markdown
+:::: {.columns}
+::: {.column width="50%"}
+Text here...
+:::
+::: {.column width="50%"}
+Image or Code here...
+:::
+::::
+If there is a code block, keep it short. If the original code is long, simplify it or split it across multiple slides.
+
+
+File hygiene:
+
+Add this marker comment at the top (right after YAML) in every generated deck:
+<!-- AUTO-GENERATED SLIDES: edit freely; regenerate with care -->
+
+Do not modify the original unit file.
+
+
+Quality checks
+
+After generating decks:
+
+Ensure no decks are empty and each has the required sections.
+
+Ensure each deck renders (if you can run Quarto render, do it; otherwise validate basic syntax).
+
+Print a short summary report:
+
+number of units processed
+
+list of decks created
+
+any units skipped and why
+
+any warnings (e.g., missing unit blocks, overly long sections that forced splitting)
+
+Create assets/_slide-rubric.md describing the structure and checklist you used, and refer to it while generating slides.
