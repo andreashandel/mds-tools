@@ -1,0 +1,27 @@
+Question
+========
+Why use Julia environments?
+
+Answerlist
+----------
+* To isolate dependencies per project
+* To speed up hardware
+* To remove the REPL
+* To disable packages
+
+Solution
+========
+Environments keep project dependencies isolated.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-env-why
+extype: schoice
+exsolution: 1000

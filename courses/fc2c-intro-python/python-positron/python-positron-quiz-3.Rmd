@@ -1,0 +1,27 @@
+Question
+========
+A project folder should contain:
+
+Answerlist
+----------
+* Code, data, and outputs
+* Only screenshots
+* Only system files
+* No files
+
+Solution
+========
+Projects organize code and data together.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-positron-project
+extype: schoice
+exsolution: 1000

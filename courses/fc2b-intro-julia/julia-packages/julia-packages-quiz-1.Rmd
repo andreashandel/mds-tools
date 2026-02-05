@@ -1,0 +1,27 @@
+Question
+========
+How do you enter Julia package mode in the REPL?
+
+Answerlist
+----------
+* Type ]
+* Type :pkg
+* Press Ctrl+P
+* Run pip
+
+Solution
+========
+The ] key enters Pkg mode.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-packages-mode
+extype: schoice
+exsolution: 1000

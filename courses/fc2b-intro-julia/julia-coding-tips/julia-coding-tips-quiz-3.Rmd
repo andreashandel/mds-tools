@@ -1,0 +1,27 @@
+Question
+========
+What does a stack trace help you find?
+
+Answerlist
+----------
+* Where an error occurred
+* Your package list
+* Your OS version
+* Your Git settings
+
+Solution
+========
+The stack trace points to the source of errors.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-tips-stack
+extype: schoice
+exsolution: 1000

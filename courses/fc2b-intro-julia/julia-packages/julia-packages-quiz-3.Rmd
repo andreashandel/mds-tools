@@ -1,0 +1,27 @@
+Question
+========
+What command installs a package in Pkg mode?
+
+Answerlist
+----------
+* add PackageName
+* install PackageName
+* get PackageName
+* pip install PackageName
+
+Solution
+========
+Use add in Pkg mode.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-packages-add
+extype: schoice
+exsolution: 1000

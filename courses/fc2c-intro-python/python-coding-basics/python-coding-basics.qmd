@@ -1,0 +1,120 @@
+---
+title: Basics of Coding in Python
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit covers basic Python syntax and data structures.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Write and run simple Python code.
+* Use common data structures like lists and dictionaries.
+* Understand basic control flow.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-coding-basics-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-coding-basics-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Variables and types
+
+Python uses dynamic typing. You can assign values to names and inspect their types when needed.
+
+## Data structures
+
+Lists, dictionaries, and tuples are core building blocks. They let you group and organize data.
+
+## Control flow
+
+Use if, for, and while statements to control the flow of your programs.
+
+## Functions
+
+Functions let you package reusable logic. Define them with def and return values with return.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We reviewed Python basics: variables, data structures, control flow, and functions.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Python tutorial: https://docs.python.org/3/tutorial/
+* Real Python: https://realpython.com/
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-coding-basics-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-coding-basics-quiz-1.Rmd', 'python-coding-basics-quiz-2.Rmd', 'python-coding-basics-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-coding-basics-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Create a list and compute a simple summary.
+* Write a loop that prints values from a dictionary.
+* Define a function that computes a simple formula.
+
+::: 
+<!-- end unit-exercise div -->

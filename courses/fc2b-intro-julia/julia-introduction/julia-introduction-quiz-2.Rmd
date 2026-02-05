@@ -1,0 +1,27 @@
+Question
+========
+Which area is a common use case for Julia?
+
+Answerlist
+----------
+* Scientific computing
+* Mobile app UI design
+* Browser extension development
+* Embedded firmware only
+
+Solution
+========
+Julia is widely used in scientific and numerical computing.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-intro-use
+extype: schoice
+exsolution: 1000

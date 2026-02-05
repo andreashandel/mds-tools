@@ -1,0 +1,120 @@
+---
+title: Python Libraries
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit introduces Python libraries and package management.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand what Python libraries are.
+* Install packages with pip or conda.
+* Import and use libraries in code.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-libraries-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-libraries-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## What are libraries
+
+Libraries are reusable code packages that extend Python. They are distributed through package indexes and can be added as needed.
+
+## Installing packages
+
+Use pip install package-name or a conda environment to install packages. Keep track of versions for reproducibility.
+
+## Using packages
+
+Import packages with import and access functions or submodules as needed.
+
+## Requirements files
+
+Projects often record dependencies in a requirements.txt file so others can recreate the environment.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We covered what libraries are, how to install them, and how to use them in code.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Python Package Index: https://pypi.org/
+* pip documentation: https://pip.pypa.io/en/stable/
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-libraries-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-libraries-quiz-1.Rmd', 'python-libraries-quiz-2.Rmd', 'python-libraries-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-libraries-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Install a small package and import it.
+* Check the installed version of a package.
+* Create a minimal requirements.txt file.
+
+::: 
+<!-- end unit-exercise div -->

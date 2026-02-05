@@ -1,0 +1,27 @@
+Question
+========
+Python is best described as:
+
+Answerlist
+----------
+* A general-purpose language with readable syntax
+* A database
+* A hardware driver
+* A spreadsheet
+
+Solution
+========
+Python is a general-purpose language known for readability.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-intro-what
+extype: schoice
+exsolution: 1000

@@ -1,11 +1,11 @@
 ---
-title: Further Resources
+title: Further Julia Resources
 ---
 
 ::: {.unit-overview}
 # Overview
 
-The final unit points you toward high‑quality materials for deepening your Julia skills once this brief introduction is complete.
+This unit lists resources for learning more Julia.
 
 :::
 <!-- end unit-overview div -->
@@ -13,13 +13,12 @@ The final unit points you toward high‑quality materials for deepening your Jul
 ::: {.unit-goals}
 # Goals
 
-* Locate official and community learning resources.
-* Choose a learning pathway—video course, MOOC, book, or documentation—that matches your style.
-* Engage with the Julia community for help and networking.
+* Know where to find official documentation.
+* Identify quality tutorials and references.
+* Plan next steps for continued learning.
 
 ::: 
 <!-- end unit-goals div -->
-
 
 <!--
 ::: {.unit-video}
@@ -36,65 +35,83 @@ Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v
 ::: {.unit-slides}
 # Slides
 
-View the slide deck for this unit: [Slides](julia-resources-slides.html)
+View the slide deck for this unit: [Slides](julia-further-resources-slides.qmd)
 
 :::
 <!-- end unit-slides div -->
 
+
 ::: {.unit-transcript}
 # Text and Audio Transcripts
 
-Read the text transcript: [Text transcript](julia-resources-transcript.md)
+Read the text transcript: [Text transcript](julia-further-resources-transcript.md)
 
 <!--
 Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
 -->
-
 ::: 
 <!-- end unit-transcript div -->
+
+
 ::: {.unit-reading}
 # Reading
 
-Learning a language is a journey, and the Julia ecosystem offers multiple on‑ramps. The canonical reference is the online *Julia Manual*, which covers everything from basic syntax to advanced parallel programming. If you prefer curated video content, *JuliaAcademy* hosts free, instructor‑led courses that walk through practical projects such as climate modeling and machine learning.
+## Official documentation
 
-Several books complement these resources. *Julia for Data Science* provides a hands‑on introduction for analysts coming from Python or R, while *Think Julia* presents computer‑science fundamentals using Julia as the teaching language. For numerical computing, *Numerical Linear Algebra with Julia* is a modern classic that leverages the language’s speed.
+The Julia manual is the best reference for language features and the standard library.
 
-Community support is equally important. The Julia Discourse forum is the primary venue for technical questions, announcements, and package releases. Real‑time chat is available on Slack and Zulip, and many special‑interest groups meet virtually to discuss topics like GPU computing or differential equations. Attending the annual *JuliaCon* conference—either in person or remotely—is a great way to learn from and network with practitioners across disciplines.
+## Tutorials and examples
 
+Community tutorials and example collections help you learn by doing. Start with small examples and expand.
 
-## QSP and PMX specific resources
+## Community and help
 
-There is even a dedicated, though non-free package for pharmacometrics called [Pumas](https://docs.pumas.ai/stable/). Since Pumas is proprietary, we do not use it as part of QSPL, but if you have access to it, it might be worth checking out.
+The Julia community is active in forums and chat. Learn to ask clear, specific questions when you need help.
 
 ::: 
 <!-- end unit-reading div -->
 
+
 ::: {.unit-summary}
 # Summary
 
-You now have a map of where to continue your Julia journey, whether through official documentation, structured courses, or an active global community.
+We highlighted documentation and learning resources for continued study.
 
 ::: 
 <!-- end unit-summary div -->
 
+
 ::: {.unit-resources}
 # Further Resources
 
-- <https://docs.julialang.org> – Official manual.
-- <https://juliaacademy.com> – Free video courses.
-- <https://discourse.julialang.org> – Community forum.
-- *Julia for Data Science* by Jones et al., 2024.
-- *Think Julia* by Downey and Sarma, 2018.
-https://adamwysokinski.codeberg.page/bbj/
+* Julia documentation: https://docs.julialang.org
+* Julia Discourse forum: https://discourse.julialang.org/
+* Julia community: https://julialang.org/community/
 
 ::: 
 <!-- end unit-resources div -->
 
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r julia-further-resources-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('julia-further-resources-quiz-1.Rmd', 'julia-further-resources-quiz-2.Rmd', 'julia-further-resources-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'julia-further-resources-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
 ::: {.unit-exercise}
 # Practice
 
-1. Pick one resource above—manual chapter, video, or book—and work through the first example it presents.
-2. Create an account on Discourse, post a brief introduction, and ask a simple Julia question.
+* Bookmark the Julia docs and the Discourse forum.
+* Find one tutorial that matches your learning goals.
+* Identify a package you want to explore next.
 
 ::: 
 <!-- end unit-exercise div -->

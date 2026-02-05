@@ -1,0 +1,117 @@
+---
+title: Further Python Resources
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit lists resources for learning more Python.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Know where to find authoritative documentation.
+* Identify quality learning resources.
+* Plan next steps after this course.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-further-resources-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-further-resources-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Official documentation
+
+The official Python docs are the best reference for language details and the standard library.
+
+## Tutorials and courses
+
+There are many high-quality tutorials and courses available online. Choose one that matches your goals.
+
+## Community resources
+
+Community forums and Q and A sites can help when you are stuck. Learn to ask clear, focused questions.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We highlighted documentation and learning resources for continued study.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Python docs: https://docs.python.org/3/
+* Python tutorial: https://docs.python.org/3/tutorial/
+* Real Python tutorials: https://realpython.com/
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-further-resources-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-further-resources-quiz-1.Rmd', 'python-further-resources-quiz-2.Rmd', 'python-further-resources-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-further-resources-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Bookmark the Python docs and tutorial pages.
+* Find one tutorial that fits your learning style.
+* Join a community forum for Python.
+
+::: 
+<!-- end unit-exercise div -->

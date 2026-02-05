@@ -1,0 +1,27 @@
+Question
+========
+Which data structure maps keys to values?
+
+Answerlist
+----------
+* Dictionary
+* List
+* Tuple
+* Set only
+
+Solution
+========
+Dictionaries map keys to values.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-basics-dict
+extype: schoice
+exsolution: 1000

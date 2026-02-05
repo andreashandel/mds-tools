@@ -1,0 +1,116 @@
+---
+title: Using Python through Positron
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit shows how to run Python inside the Positron IDE.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Select a Python interpreter in Positron.
+* Run Python code in the console and editor.
+* Work with scripts inside a project.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-positron-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-positron-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Select an interpreter
+
+Positron lets you choose which Python installation to use. Select the interpreter that matches your project environment.
+
+## Running code
+
+You can run a line or selection from the editor, or run an entire script. The console shows output and errors.
+
+## Working with projects
+
+Keep your code, data, and outputs together in a project folder. This makes it easier to reproduce results.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We covered interpreter selection, running code, and organizing Python work in Positron.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Positron documentation: https://positron.posit.co/
+* VS Code Python extension docs: https://code.visualstudio.com/docs/python/python-tutorial
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-positron-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-positron-quiz-1.Rmd', 'python-positron-quiz-2.Rmd', 'python-positron-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-positron-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Select your Python interpreter in Positron.
+* Run a small script and view the output.
+* Create a project folder and open it in Positron.
+
+::: 
+<!-- end unit-exercise div -->

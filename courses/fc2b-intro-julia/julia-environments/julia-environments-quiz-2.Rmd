@@ -1,0 +1,27 @@
+Question
+========
+How do you activate a local environment in Pkg mode?
+
+Answerlist
+----------
+* activate .
+* use env
+* set env
+* load env
+
+Solution
+========
+activate . uses the current folder.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-env-activate
+extype: schoice
+exsolution: 1000

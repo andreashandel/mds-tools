@@ -1,0 +1,120 @@
+---
+title: Introduction to Python
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit provides a high-level introduction to Python and its uses.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand what Python is used for.
+* Know key strengths and tradeoffs of Python.
+* Recognize the broader Python ecosystem.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-introduction-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-introduction-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## What is Python
+
+Python is a general-purpose programming language that is widely used in data analysis, automation, and software development. It is designed to be readable and approachable.
+
+## Why Python for data work
+
+Python has a large ecosystem of libraries for data manipulation, visualization, and modeling. It is often chosen for projects that combine data analysis with software engineering.
+
+## Strengths and tradeoffs
+
+Python is easy to read and has a huge library ecosystem. The tradeoff is that pure Python code can be slower than compiled languages, so performance-critical work often relies on optimized libraries.
+
+## Python in this course
+
+We will use Python as a practical tool for data tasks. The focus is on doing real work rather than learning every language feature.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We introduced Python, why it is popular, and how it fits into this course.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* The official Python documentation: https://docs.python.org/3/
+* Python for Data Analysis by Wes McKinney (book)
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-introduction-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-introduction-quiz-1.Rmd', 'python-introduction-quiz-2.Rmd', 'python-introduction-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-introduction-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Describe one task where Python is a good fit.
+* Find one Python library used in data analysis.
+* Open the Python docs and locate the language tutorial.
+
+::: 
+<!-- end unit-exercise div -->

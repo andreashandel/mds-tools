@@ -1,0 +1,27 @@
+Question
+========
+What does instantiate do?
+
+Answerlist
+----------
+* Installs dependencies from Project and Manifest
+* Deletes packages
+* Creates a new Julia version
+* Updates the REPL prompt
+
+Solution
+========
+instantiate recreates the environment.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-env-instantiate
+extype: schoice
+exsolution: 1000

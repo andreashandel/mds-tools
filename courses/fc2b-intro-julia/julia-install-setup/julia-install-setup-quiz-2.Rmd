@@ -1,0 +1,27 @@
+Question
+========
+What is the Julia REPL used for?
+
+Answerlist
+----------
+* Running interactive commands
+* Installing operating systems
+* Designing GUIs
+* Editing PDFs
+
+Solution
+========
+The REPL is for interactive execution.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-install-repl
+extype: schoice
+exsolution: 1000

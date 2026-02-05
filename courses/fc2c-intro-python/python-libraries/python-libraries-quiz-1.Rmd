@@ -1,0 +1,27 @@
+Question
+========
+Which tool installs Python packages?
+
+Answerlist
+----------
+* pip
+* Pkg
+* npm
+* apt only
+
+Solution
+========
+pip is the standard installer.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-libs-pip
+extype: schoice
+exsolution: 1000

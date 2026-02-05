@@ -1,0 +1,27 @@
+Question
+========
+Why select a Python interpreter in Positron?
+
+Answerlist
+----------
+* To choose the environment to run code
+* To change the keyboard layout
+* To install Git
+* To speed up WiFi
+
+Solution
+========
+Interpreter selection sets the environment.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-positron-interpreter
+extype: schoice
+exsolution: 1000

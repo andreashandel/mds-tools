@@ -1,0 +1,27 @@
+Question
+========
+Where does code output show up?
+
+Answerlist
+----------
+* The console/panel
+* The file tree
+* The status bar only
+* The settings page
+
+Solution
+========
+Output appears in the console panel.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-positron-output
+extype: schoice
+exsolution: 1000

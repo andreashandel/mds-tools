@@ -1,0 +1,27 @@
+Question
+========
+What must Positron know to run Julia code?
+
+Answerlist
+----------
+* Which Julia executable to use
+* Your GitHub username
+* The CPU model
+* A web browser
+
+Solution
+========
+You need to select the Julia interpreter.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-positron-interpreter
+extype: schoice
+exsolution: 1000

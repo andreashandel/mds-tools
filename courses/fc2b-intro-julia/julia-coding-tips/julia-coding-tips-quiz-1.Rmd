@@ -1,0 +1,27 @@
+Question
+========
+A good debugging habit is to:
+
+Answerlist
+----------
+* Work in small steps
+* Run everything at once
+* Ignore error messages
+* Avoid the REPL
+
+Solution
+========
+Small steps help you pinpoint issues.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-tips-steps
+extype: schoice
+exsolution: 1000

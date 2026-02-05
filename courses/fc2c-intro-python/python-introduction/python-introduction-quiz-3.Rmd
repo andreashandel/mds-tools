@@ -1,0 +1,27 @@
+Question
+========
+A common tradeoff with Python is:
+
+Answerlist
+----------
+* Pure Python can be slower
+* It cannot read files
+* It has no libraries
+* It only runs on Windows
+
+Solution
+========
+Performance can be slower without optimized libraries.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-intro-tradeoff
+extype: schoice
+exsolution: 1000

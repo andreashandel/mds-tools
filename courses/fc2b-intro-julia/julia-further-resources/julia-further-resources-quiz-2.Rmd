@@ -1,0 +1,27 @@
+Question
+========
+Where can you ask Julia questions to the community?
+
+Answerlist
+----------
+* Julia Discourse
+* A private server only
+* No public forums
+* A mobile game
+
+Solution
+========
+Julia Discourse is a main community forum.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-resources-community
+extype: schoice
+exsolution: 1000

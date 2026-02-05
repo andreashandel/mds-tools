@@ -1,0 +1,27 @@
+Question
+========
+How can you check your Julia installation details?
+
+Answerlist
+----------
+* versioninfo()
+* pip --version
+* help()
+* sessionInfo()
+
+Solution
+========
+versioninfo() prints platform and build details.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-install-version
+extype: schoice
+exsolution: 1000

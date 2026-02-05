@@ -1,0 +1,27 @@
+Question
+========
+Why is Python popular in data work?
+
+Answerlist
+----------
+* Strong library ecosystem
+* Built-in GPU only
+* No packages needed
+* Only for web apps
+
+Solution
+========
+The ecosystem includes many data and ML libraries.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-intro-ecosystem
+extype: schoice
+exsolution: 1000

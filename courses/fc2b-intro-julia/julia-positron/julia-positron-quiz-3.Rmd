@@ -1,0 +1,27 @@
+Question
+========
+Why use a project folder?
+
+Answerlist
+----------
+* To keep code and data together
+* To avoid saving files
+* To speed up the CPU
+* To replace packages
+
+Solution
+========
+Projects keep code, data, and outputs organized.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-positron-project
+extype: schoice
+exsolution: 1000

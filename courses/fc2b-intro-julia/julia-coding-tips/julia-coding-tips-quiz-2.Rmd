@@ -1,0 +1,27 @@
+Question
+========
+Where can you quickly look up help in the Julia REPL?
+
+Answerlist
+----------
+* Help mode with ?
+* Settings menu
+* Package mode only
+* The system registry
+
+Solution
+========
+Type ? to enter help mode.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-tips-help
+extype: schoice
+exsolution: 1000

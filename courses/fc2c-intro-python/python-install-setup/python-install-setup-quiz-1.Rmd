@@ -1,0 +1,27 @@
+Question
+========
+What command checks the installed Python version?
+
+Answerlist
+----------
+* python --version
+* versioninfo()
+* pip --check
+* conda list
+
+Solution
+========
+python --version prints the version.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-install-version
+extype: schoice
+exsolution: 1000

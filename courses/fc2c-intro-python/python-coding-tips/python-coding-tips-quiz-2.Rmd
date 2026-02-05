@@ -1,0 +1,27 @@
+Question
+========
+Python errors help you by:
+
+Answerlist
+----------
+* Pointing to the line and message
+* Hiding the problem
+* Deleting files
+* Changing your code
+
+Solution
+========
+Errors usually indicate the cause and location.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-tips-errors
+extype: schoice
+exsolution: 1000

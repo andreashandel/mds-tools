@@ -1,0 +1,27 @@
+Question
+========
+Why do people mention the two-language problem?
+
+Answerlist
+----------
+* Using two different languages for speed and prototyping
+* Needing two monitors
+* Two package managers
+* Two versions of the same code
+
+Solution
+========
+It refers to prototyping in one language and rewriting for performance in another.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-intro-two-language
+extype: schoice
+exsolution: 1000

@@ -1,0 +1,27 @@
+Question
+========
+What is a Python environment for?
+
+Answerlist
+----------
+* Isolating project dependencies
+* Removing packages
+* Speeding up hardware
+* Opening a browser
+
+Solution
+========
+Environments keep dependencies isolated.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-install-env
+extype: schoice
+exsolution: 1000

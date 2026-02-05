@@ -1,0 +1,27 @@
+Question
+========
+Which statement about Python types is true?
+
+Answerlist
+----------
+* Python uses dynamic typing
+* Python requires type annotations
+* Python has only numbers
+* Python is not typed
+
+Solution
+========
+Python is dynamically typed.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-basics-types
+extype: schoice
+exsolution: 1000

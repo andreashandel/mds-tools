@@ -1,0 +1,27 @@
+Question
+========
+What is a core goal of the Julia language?
+
+Answerlist
+----------
+* Replace spreadsheets
+* Match Python ease with near C speed
+* Focus only on web apps
+* Eliminate the need for packages
+
+Solution
+========
+Julia aims to combine ease of use with high performance.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: julia-intro-goal
+extype: schoice
+exsolution: 0100

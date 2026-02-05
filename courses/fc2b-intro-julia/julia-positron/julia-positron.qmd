@@ -1,0 +1,116 @@
+---
+title: Using Julia through Positron
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit shows how to run Julia inside the Positron IDE.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Configure Positron to use your Julia installation.
+* Run Julia code in the editor and console.
+* Work with scripts inside a project folder.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](julia-positron-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](julia-positron-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Configure Julia in Positron
+
+Make sure Julia is installed and available on your system PATH. In Positron, select the Julia interpreter so the IDE knows which executable to use.
+
+## Running code
+
+You can run a line or selection from the editor or run an entire script. The console shows output and error messages.
+
+## Project workflow
+
+Keep scripts, data, and outputs together in a project directory. This makes it easier to reproduce results and manage files.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We set up Julia in Positron and practiced running code from scripts and the console.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Positron documentation: https://positron.posit.co/
+* Julia in VS Code: https://www.julia-vscode.org/docs/latest/
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r julia-positron-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('julia-positron-quiz-1.Rmd', 'julia-positron-quiz-2.Rmd', 'julia-positron-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'julia-positron-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Select your Julia interpreter in Positron.
+* Create a small script and run it from the editor.
+* Organize a project folder with data and code.
+
+::: 
+<!-- end unit-exercise div -->

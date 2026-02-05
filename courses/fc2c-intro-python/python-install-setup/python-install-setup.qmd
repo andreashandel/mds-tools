@@ -1,0 +1,120 @@
+---
+title: Python Installation and Setup
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit covers how to install Python and verify that it works.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Install Python for your operating system.
+* Verify the interpreter runs.
+* Understand basic environment choices.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-install-setup-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-install-setup-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Installation options
+
+You can install Python from python.org or use a distribution like Anaconda. Choose one path and keep it consistent.
+
+## Verify your install
+
+Open a terminal and run python --version to confirm the install. Start the REPL with python and exit with exit().
+
+## Environments
+
+Python environments keep dependencies isolated by project. You can use venv or conda to create and activate environments.
+
+## Keep Python updated
+
+Update Python occasionally to keep security fixes and new features. Be aware that major version changes can require package updates.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We installed Python, verified it runs, and discussed environments.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Python downloads: https://www.python.org/downloads/
+* Anaconda distribution: https://www.anaconda.com/products/distribution
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-install-setup-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-install-setup-quiz-1.Rmd', 'python-install-setup-quiz-2.Rmd', 'python-install-setup-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-install-setup-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Install Python and confirm the version in a terminal.
+* Start the Python REPL and run a simple expression.
+* Create a new environment and activate it.
+
+::: 
+<!-- end unit-exercise div -->

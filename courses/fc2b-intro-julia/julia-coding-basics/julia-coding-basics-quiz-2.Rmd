@@ -1,0 +1,27 @@
+Question
+========
+What feature lets Julia define different methods for different types?
+
+Answerlist
+----------
+* Multiple dispatch
+* Garbage collection
+* Bytecode
+* Vectorization only
+
+Solution
+========
+Multiple dispatch selects methods based on argument types.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-basics-dispatch
+extype: schoice
+exsolution: 1000

@@ -1,0 +1,27 @@
+Question
+========
+Why bookmark resources?
+
+Answerlist
+----------
+* To speed up future learning
+* To avoid using documentation
+* To remove packages
+* To change your OS
+
+Solution
+========
+Bookmarks make it easier to return to helpful references.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-resources-bookmark
+extype: schoice
+exsolution: 1000

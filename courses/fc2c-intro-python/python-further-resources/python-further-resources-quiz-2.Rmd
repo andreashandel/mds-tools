@@ -1,0 +1,27 @@
+Question
+========
+What is a good next step after this course?
+
+Answerlist
+----------
+* Pick a tutorial and practice
+* Stop coding
+* Avoid examples
+* Delete Python
+
+Solution
+========
+Practice with a tutorial helps you progress.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-resources-next
+extype: schoice
+exsolution: 1000

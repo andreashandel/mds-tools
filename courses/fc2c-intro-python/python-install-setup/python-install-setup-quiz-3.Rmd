@@ -1,0 +1,27 @@
+Question
+========
+Which is a common way to install Python?
+
+Answerlist
+----------
+* python.org installer
+* npm
+* Rtools
+* brew cask chrome
+
+Solution
+========
+The official installer is a common choice.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-install-source
+extype: schoice
+exsolution: 1000

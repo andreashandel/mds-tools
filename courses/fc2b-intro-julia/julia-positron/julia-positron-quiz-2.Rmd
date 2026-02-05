@@ -1,0 +1,27 @@
+Question
+========
+Where does output from running code appear?
+
+Answerlist
+----------
+* The console/panel
+* The file explorer
+* The help sidebar only
+* The system registry
+
+Solution
+========
+Output appears in the console panel.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-positron-output
+extype: schoice
+exsolution: 1000

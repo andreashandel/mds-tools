@@ -1,0 +1,27 @@
+Question
+========
+Julia arrays are indexed starting at:
+
+Answerlist
+----------
+* 0
+* 1
+* -1
+* 2
+
+Solution
+========
+Julia uses 1-based indexing.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: julia-basics-index
+extype: schoice
+exsolution: 0100

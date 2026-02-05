@@ -1,0 +1,27 @@
+Question
+========
+How do you use a library in code?
+
+Answerlist
+----------
+* import it
+* install the OS
+* restart the computer
+* edit the registry
+
+Solution
+========
+Use import to load libraries.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-libs-import
+extype: schoice
+exsolution: 1000

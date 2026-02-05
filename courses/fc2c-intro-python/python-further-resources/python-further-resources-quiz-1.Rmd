@@ -1,0 +1,27 @@
+Question
+========
+Where should you look first for language reference?
+
+Answerlist
+----------
+* Official Python docs
+* A meme
+* Only social media
+* A spreadsheet
+
+Solution
+========
+The official docs are the primary reference.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-resources-docs
+extype: schoice
+exsolution: 1000

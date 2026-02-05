@@ -1,0 +1,27 @@
+Question
+========
+Which file records direct dependencies for a Julia project?
+
+Answerlist
+----------
+* Project.toml
+* requirements.txt
+* package.json
+* setup.py
+
+Solution
+========
+Project.toml lists dependencies.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-packages-project
+extype: schoice
+exsolution: 1000

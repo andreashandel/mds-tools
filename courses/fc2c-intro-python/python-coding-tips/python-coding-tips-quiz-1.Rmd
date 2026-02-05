@@ -1,0 +1,27 @@
+Question
+========
+A good habit when coding is to:
+
+Answerlist
+----------
+* Work in small steps
+* Ignore errors
+* Avoid testing
+* Never use docs
+
+Solution
+========
+Small steps help isolate problems.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-tips-steps
+extype: schoice
+exsolution: 1000

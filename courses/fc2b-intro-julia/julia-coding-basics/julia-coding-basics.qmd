@@ -5,7 +5,7 @@ title: Basics of Coding in Julia
 ::: {.unit-overview}
 # Overview
 
-This unit introduces the core syntax you need to read and write simple Julia programs.
+This unit introduces the core syntax needed to read and write simple Julia programs.
 
 :::
 <!-- end unit-overview div -->
@@ -13,13 +13,12 @@ This unit introduces the core syntax you need to read and write simple Julia pro
 ::: {.unit-goals}
 # Goals
 
-* Declare variables and understand their dynamic yet type‑stable nature.
-* Define and call functions, including multiple methods through dispatch.
-* Use common control‑flow constructs such as conditionals and loops.
+* Create variables and understand basic types.
+* Define and call functions.
+* Use conditionals and loops.
 
 ::: 
 <!-- end unit-goals div -->
-
 
 <!--
 ::: {.unit-video}
@@ -36,10 +35,11 @@ Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v
 ::: {.unit-slides}
 # Slides
 
-View the slide deck for this unit: [Slides](julia-coding-basics-slides.html)
+View the slide deck for this unit: [Slides](julia-coding-basics-slides.qmd)
 
 :::
 <!-- end unit-slides div -->
+
 
 ::: {.unit-transcript}
 # Text and Audio Transcripts
@@ -49,57 +49,72 @@ Read the text transcript: [Text transcript](julia-coding-basics-transcript.md)
 <!--
 Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
 -->
-
 ::: 
 <!-- end unit-transcript div -->
+
+
 ::: {.unit-reading}
 # Reading
 
-Writing code in Julia feels familiar if you've used other high‑level languages, yet small differences make it both expressive and safe. Variables do not require explicit type declarations, but every value has a concrete type known to the compiler, and those types matter for performance. For example, assigning `x = 3` binds `x` to a 64‑bit integer; `x = 3.0` would instead produce a 64‑bit floating‑point number.
+## Variables and types
 
-Functions are the primary building blocks of Julia programs. The canonical form uses the `function` keyword:
+Julia uses dynamic typing, but it can still be fast when code is written with type stability in mind. You can inspect types with typeof() when needed.
 
-```julia
-function square(x)
-    x^2
-end
-```
+## Functions
 
-However, Julia permits a “compact” style using the assignment operator:
+Functions are defined with the function keyword or short arrow syntax. Julia also supports multiple dispatch, meaning you can define different methods for different argument types.
 
-`square(x) = x^2`
+## Control flow
 
-Defining additional methods for new argument types is as easy as writing another function signature. This multiple‑dispatch model means generic code remains generic, while the compiler chooses the fastest specialized version at run time.
+Use if statements for branching and for or while loops for repetition. These constructs look similar to other languages.
 
-Control flow uses familiar keywords: `if…elseif…else` for branching and `for` or `while` loops for iteration. A `for` loop such as `for i in 1:5 println(i) end` prints the numbers one through five. Vectorized operations are unnecessary for speed; idiomatic loops are already fast because they compile to efficient machine code.
+## Collections
 
-Finally, Julia's standard library includes convenient tools for string manipulation, random numbers, linear algebra, and more, letting you prototype quickly without third‑party dependencies.
+Arrays, tuples, and dictionaries are core data structures. Arrays are 1-indexed in Julia, which is common in scientific computing.
 
 ::: 
 <!-- end unit-reading div -->
 
+
 ::: {.unit-summary}
 # Summary
 
-You can now write small scripts and functions in Julia, leverage multiple dispatch for generic programming, and control program flow with familiar constructs.
+We covered Julia basics: variables, functions, control flow, and core data structures.
 
 ::: 
 <!-- end unit-summary div -->
 
+
 ::: {.unit-resources}
 # Further Resources
 
-- Official *Julia Manual*, chapters 2–4.
-- <https://docs.julialang.org/en/v1/manual/functions/> – Detailed guide to functions and methods.
+* Julia manual: https://docs.julialang.org/en/v1/manual/
+* Julia by Example: https://juliabyexample.helpmanual.io/
 
 ::: 
 <!-- end unit-resources div -->
 
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r julia-coding-basics-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('julia-coding-basics-quiz-1.Rmd', 'julia-coding-basics-quiz-2.Rmd', 'julia-coding-basics-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'julia-coding-basics-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
 ::: {.unit-exercise}
 # Practice
 
-1. In the REPL, define a function `f(x,y) = x^y` and test it with both integers and floating‑point arguments. Observe how the same source code works for either type.
-2. Write a short loop that sums the squares of integers from 1 to 100 without using built‑in `sum`.
+* Create a vector and compute its mean.
+* Write a function that returns the larger of two numbers.
+* Loop over a list of values and print those above a threshold.
 
 ::: 
 <!-- end unit-exercise div -->

@@ -1,0 +1,116 @@
+---
+title: Python Coding Tips
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit shares practical tips for working with Python.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Read and interpret error messages.
+* Work incrementally and test small pieces.
+* Use help and documentation effectively.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](python-coding-tips-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](python-coding-tips-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## Work in small steps
+
+Run code frequently and keep changes small. This helps you spot errors early.
+
+## Read errors carefully
+
+Python errors usually tell you what went wrong and where. Use them to guide debugging.
+
+## Find help
+
+Use built-in help, official docs, and trusted community resources when you are stuck.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We reviewed practical habits that make Python coding smoother.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Python documentation: https://docs.python.org/3/
+* Stack Overflow Python tag: https://stackoverflow.com/questions/tagged/python
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r python-coding-tips-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('python-coding-tips-quiz-1.Rmd', 'python-coding-tips-quiz-2.Rmd', 'python-coding-tips-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'python-coding-tips-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Introduce a small error and trace it using the message.
+* Use help() on a built-in function.
+* Refactor a small script into steps.
+
+::: 
+<!-- end unit-exercise div -->

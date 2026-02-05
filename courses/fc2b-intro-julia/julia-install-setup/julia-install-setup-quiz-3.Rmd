@@ -1,0 +1,27 @@
+Question
+========
+What is a recommended way to install Julia?
+
+Answerlist
+----------
+* Juliaup
+* pip
+* brew cask vscode
+* nodeenv
+
+Solution
+========
+Juliaup is the recommended installer for managing versions.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-install-juliaup
+extype: schoice
+exsolution: 1000

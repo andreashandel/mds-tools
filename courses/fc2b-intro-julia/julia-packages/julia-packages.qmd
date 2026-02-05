@@ -1,0 +1,116 @@
+---
+title: Julia Packages
+---
+
+::: {.unit-overview}
+# Overview
+
+This unit introduces Julia packages and the built-in package manager.
+
+:::
+<!-- end unit-overview div -->
+
+::: {.unit-goals}
+# Goals
+
+* Understand what Julia packages are.
+* Install and load packages using Pkg.
+* Use environments to keep projects reproducible.
+
+::: 
+<!-- end unit-goals div -->
+
+<!--
+::: {.unit-video}
+# Video
+
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
+<!-- end unit-video div -->
+
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](julia-packages-slides.qmd)
+
+:::
+<!-- end unit-slides div -->
+
+
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](julia-packages-transcript.md)
+
+<!--
+Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+-->
+::: 
+<!-- end unit-transcript div -->
+
+
+::: {.unit-reading}
+# Reading
+
+## What are packages
+
+Packages are reusable libraries that extend Julia. Most packages are published in public registries and can be installed as needed.
+
+## Installing packages
+
+From the Julia REPL, type ] to enter package mode, then run add PackageName. Load packages in code with using PackageName.
+
+## Versions and environments
+
+Julia records dependencies in Project.toml and Manifest.toml. These files help reproduce the exact package set for a project.
+
+::: 
+<!-- end unit-reading div -->
+
+
+::: {.unit-summary}
+# Summary
+
+We covered what packages are, how to install them, and how environments record dependencies.
+
+::: 
+<!-- end unit-summary div -->
+
+
+::: {.unit-resources}
+# Further Resources
+
+* Julia package manager docs: https://pkgdocs.julialang.org/
+* JuliaHub package registry: https://juliahub.com/ui/Packages
+
+::: 
+<!-- end unit-resources div -->
+
+
+::: {.unit-quiz}
+# Test yourself
+
+```{r julia-packages-quiz}
+#| echo: false
+#| results: "asis"
+quizzes <- list('julia-packages-quiz-1.Rmd', 'julia-packages-quiz-2.Rmd', 'julia-packages-quiz-3.Rmd')
+exams2forms::exams2forms(file = quizzes, title = 'julia-packages-quiz')
+```
+:::
+<!-- end unit-quiz div -->
+
+
+
+::: {.unit-exercise}
+# Practice
+
+* Add a package and import it in the REPL.
+* Check the Project.toml file after adding a package.
+* Remove a package you no longer need.
+
+::: 
+<!-- end unit-exercise div -->

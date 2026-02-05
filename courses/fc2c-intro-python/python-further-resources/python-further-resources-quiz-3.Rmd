@@ -1,0 +1,27 @@
+Question
+========
+Why are community forums useful?
+
+Answerlist
+----------
+* They help answer specific questions
+* They replace documentation
+* They remove bugs automatically
+* They are required to run Python
+
+Solution
+========
+Forums provide help when you are stuck.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-resources-forums
+extype: schoice
+exsolution: 1000

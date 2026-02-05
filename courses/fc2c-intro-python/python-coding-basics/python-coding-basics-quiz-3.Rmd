@@ -1,0 +1,27 @@
+Question
+========
+What keyword defines a function?
+
+Answerlist
+----------
+* def
+* func
+* lambda
+* define
+
+Solution
+========
+Use def to define functions.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-basics-def
+extype: schoice
+exsolution: 1000

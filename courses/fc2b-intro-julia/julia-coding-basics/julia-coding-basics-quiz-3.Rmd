@@ -1,0 +1,27 @@
+Question
+========
+Which construct is used for repetition?
+
+Answerlist
+----------
+* for
+* case
+* switch
+* repeat-until
+
+Solution
+========
+Julia uses for and while loops.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: julia-basics-loop
+extype: schoice
+exsolution: 1000

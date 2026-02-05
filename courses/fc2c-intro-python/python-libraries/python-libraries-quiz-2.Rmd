@@ -1,0 +1,27 @@
+Question
+========
+What file often lists Python dependencies?
+
+Answerlist
+----------
+* requirements.txt
+* Project.toml
+* DESCRIPTION
+* package.json
+
+Solution
+========
+requirements.txt is common for dependencies.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-libs-req
+extype: schoice
+exsolution: 1000

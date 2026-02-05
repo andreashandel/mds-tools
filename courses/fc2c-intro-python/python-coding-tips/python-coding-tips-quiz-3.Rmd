@@ -1,0 +1,27 @@
+Question
+========
+What is a reliable source of help?
+
+Answerlist
+----------
+* Official documentation
+* Random code snippets
+* Unverified rumors
+* None
+
+Solution
+========
+Official docs are reliable.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: python-tips-docs
+extype: schoice
+exsolution: 1000
