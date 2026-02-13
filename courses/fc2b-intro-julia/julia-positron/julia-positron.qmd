@@ -32,24 +32,25 @@ Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v
 -->
 <!-- end unit-video div -->
 
+<!--
 ::: {.unit-slides}
 # Slides
 
-View the slide deck for this unit: [Slides](julia-positron-slides.qmd)
+View the slide deck for this unit: [Slides](julia-positron-slides.qmd){target="_blank" rel="noopener"}
 
 :::
+-->
 <!-- end unit-slides div -->
 
 
+<!--
 ::: {.unit-transcript}
 # Text and Audio Transcripts
 
 Read the text transcript: [Text transcript](julia-positron-transcript.md)
 
-<!--
-Listen to the audio transcript: [Audio transcript](AUDIO_LINK)
+:::
 -->
-::: 
 <!-- end unit-transcript div -->
 
 

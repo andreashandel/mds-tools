@@ -34,7 +34,7 @@ Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v
 ::: {.unit-slides}
 # Slides
 
-View the slide deck for this unit: [Slides](unit-template-slides.qmd)
+View the slide deck for this unit: [Slides](unit-template-slides.qmd){target="_blank" rel="noopener"}
 
 :::
 <!-- end unit-slides div -->
