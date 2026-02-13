@@ -5,7 +5,7 @@ title: Basic Positron Features
 ::: {.unit-overview}
 # Overview
 
-This unit familiarizes you with Positron’s basic layout and features. 
+This unit familiarizes you with Positronâ€™s basic layout and features. 
 
 :::
 <!-- end unit-overview div -->
@@ -53,9 +53,6 @@ Read the text transcript: [Text transcript](positron-features-transcript.md)
 
 ## Introduction
 
-<!-- ai-figure: introduction -->
-![](media/introduction.png){fig-alt="Illustration related to Introduction." fig-cap="Illustration related to Introduction."}
-<!-- end-ai-figure -->
 
 As is the case for many IDEs, Positron is set up such that you have quick access to different parts of your project. The main window is divided into different areas (known as *panes*), each tailored to a distinct part of a typical project workflow: writing code, running it, visualising output, working with files, debugging, inspecting the environment, etc.
 
@@ -63,9 +60,6 @@ As is the case for many IDEs, Positron is set up such that you have quick access
 
 ## The menu bars
 
-<!-- ai-figure: themenubars -->
-![](media/themenubars.png){fig-alt="Illustration related to The menu bars." fig-cap="Illustration related to The menu bars."}
-<!-- end-ai-figure -->
 
 The top menu bar in Positron is similar to most standard programs and likely requires little explanation. Since Positron is full-featured and highly configurable, there is a lot you can do. We discuss a few of the commands, the rest you will likely discover as you learn more how to use Positron. And it's quite possible that there are some features you will never use.
 
@@ -75,54 +69,36 @@ The first icon on the activity bar, which looks like several sheets of paper, op
 
 ## The Editor Pane
 
-<!-- ai-figure: theeditorpane -->
-![](media/theeditorpane.png){fig-alt="Illustration related to The Editor Pane." fig-cap="Illustration related to The Editor Pane."}
-<!-- end-ai-figure -->
 
 The biggest window, located in the top middle of the IDE (unless you resize or move it), is the _Editor_ pane/panel. The Editor is where you edit your documents, such as code, Quarto documents or any other text-based files. The editor has a lot of nice features, such as syntax highlighting, auto-completion, automatic formatting, etc. Multiple files open in tabs along the top. 
 
 ## Console, Terminal and more
 
-<!-- ai-figure: consoleterminalandmore -->
-![](media/consoleterminalandmore.png){fig-alt="Illustration related to Console, Terminal and more." fig-cap="Illustration related to Console, Terminal and more."}
-<!-- end-ai-figure -->
 
 Below the Editor is an area that gives you access to various other tools. The `Console` tab shows whatever programming language you are currently running. By default in Positron, that's R. The `Terminal` is basically a Windows/Unix terminal, where you can enter commands. For instance you can use it to run `Quarto` commands. That's also generally where other programming languages, e.g. Julia, run. The other tabs are helpful for showing you what happens when you run code. 
 
 
 ## Viewer Pane
 
-<!-- ai-figure: viewerpane -->
-![](media/viewerpane.png){fig-alt="Illustration related to Viewer Pane." fig-cap="Illustration related to Viewer Pane."}
-<!-- end-ai-figure -->
 
 The right side of the IDE has a second sidebar, which is by default split into two.
 
-The bottom-right area is usually the Viewer pane. It automatically displays plots created by code, such as R’s *ggplot2*, Python’s *matplotlib*, or Julia’s *Plots* package. HTML widgets, data frames, interactive tables, and other items that can be previewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there. 
+The bottom-right area is usually the Viewer pane. It automatically displays plots created by code, such as Râ€™s *ggplot2*, Pythonâ€™s *matplotlib*, or Juliaâ€™s *Plots* package. HTML widgets, data frames, interactive tables, and other items that can be previewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there. 
 
 
 ## Environment and History Pane
 
-<!-- ai-figure: environmentandhistorypane -->
-![](media/environmentandhistorypane.png){fig-alt="Illustration related to Environment and History Pane." fig-cap="Illustration related to Environment and History Pane."}
-<!-- end-ai-figure -->
 
-The top‑right pane shows your workspace objects/variables. Click any variable to further inspect it. 
+The topâ€‘right pane shows your workspace objects/variables. Click any variable to further inspect it. 
 
 ## The Command Palette
 
-<!-- ai-figure: thecommandpalette -->
-![](media/thecommandpalette.png){fig-alt="Illustration related to The Command Palette." fig-cap="Illustration related to The Command Palette."}
-<!-- end-ai-figure -->
 
 In the top middle you will find what looks like a search box, but is actually much more. This is where, among other things, you can find the command palette. If you click into the search box, then select "Show and Run Commands", you can quickly execute a lot of commands, without trying to figure out which menu they belong to. For instance, if you start typing _Quarto_ you will see a lot of commands related to Quarto functionality. You can also use the search box to, well, search. Once you start using Positron more, you will find that little box very convenient.
 
 
 ## Many more features
 
-<!-- ai-figure: manymorefeatures -->
-![](media/manymorefeatures.png){fig-alt="Illustration related to Many more features." fig-cap="Illustration related to Many more features."}
-<!-- end-ai-figure -->
 
 This was a very brief overview of Positron's main layout and features. As you start using Positron, you'll find that sometimes, depending on what you have open or what code you run, more things appear in various panes. A lot will be self-explanatory, but there is also a lot that requires exploring. Like other complex pieces of software (e.g. MS Word or Excel), Positron has a lot of features. Over time you'll discover more of them.
 

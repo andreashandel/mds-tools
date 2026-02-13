@@ -54,9 +54,6 @@ Read the text transcript: [Text transcript](positron-install-setup-transcript.md
 
 ## Installation
 
-<!-- ai-figure: installation -->
-![](media/installation.png){fig-alt="Illustration related to Installation." fig-cap="Illustration related to Installation."}
-<!-- end-ai-figure -->
 
 Make sure you reviewed the information on the [Positron install page](https://positron.posit.co/install.html) to ensure your computer is ready for the install.
 
@@ -105,7 +102,7 @@ We discussed how to install Positron and how to keep it updated. You should now 
 ::: {.unit-resources}
 # Further Resources
 
-* [Positron Get Started Guide](https://positron.posit.co/start.html) – official documentation
+* [Positron Get Started Guide](https://positron.posit.co/start.html) â€“ official documentation
 
 :::
 <!-- end unit-resources div -->
@@ -126,7 +123,7 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-install-setup-quiz')
 ::: {.unit-exercise}
 # Practice
 
-There's nothing to practice here. We hope the install worked. You can open and close Positron a few times, just to make sure it all works well 😁.
+There's nothing to practice here. We hope the install worked. You can open and close Positron a few times, just to make sure it all works well ðŸ˜.
 
 
 

@@ -56,18 +56,12 @@ Read the text transcript: [Text transcript](positron-projects-transcript.md)
 
 ## Introduction
 
-<!-- ai-figure: introduction -->
-![](media/introduction.png){fig-alt="Illustration related to Introduction." fig-cap="Illustration related to Introduction."}
-<!-- end-ai-figure -->
 
 The concepts of projects are very useful for modeling and data analysis work. In Positron, projects are implemented in several flexible ways.
 
 
 ## Projects
 
-<!-- ai-figure: projects -->
-![](media/projects.png){fig-alt="Illustration related to Projects." fig-cap="Illustration related to Projects."}
-<!-- end-ai-figure -->
 
 The general idea of a project is a collection of files and settings that are used together to accomplish a specific task, such as a modeling and data analysis project. Everything related to that project, such as data files, code files, documents, images, and settings are stored in one place, namely a folder (with subfolders) on your computer (and probably also in the cloud). 
 
@@ -78,9 +72,6 @@ Organizing work into projects is very important for reproducibility, efficiency,
 
 ## Projects in Positron
 
-<!-- ai-figure: projectsinpositron -->
-![](media/projectsinpositron.png){fig-alt="Illustration related to Projects in Positron." fig-cap="Illustration related to Projects in Positron."}
-<!-- end-ai-figure -->
 
 If you are familiar with R and RStudio, you know it has the concept of a project through an `.Rproj` file which is stored in some folder. The folder with this file indicates the top level project folder, and everything inside this folder - including sub-folders - is part of the project. 
 
@@ -98,9 +89,6 @@ If at least one of these files/folders is present, Positron recognizes it as a t
 
 ## Project creation in Positron
 
-<!-- ai-figure: projectcreationinpositron -->
-![](media/projectcreationinpositron.png){fig-alt="Illustration related to Project creation in Positron." fig-cap="Illustration related to Project creation in Positron."}
-<!-- end-ai-figure -->
 
 If you want to start a new project, there are multiple ways you can do so with Positron. One option is to go under `File` and select `New Folder From Template`. Then pick one of the available templates and follow the instructions. If unsure, you can always start with an empty project. If you know that you will be using Git/GitHub for the project (in general highly recommended), you can initialize it. Then open the new folder in Positron, and start working. Everything in that folder and subfolders is now considered part of your project.
 
@@ -109,9 +97,6 @@ Another approach is to first create a new GitHub repository (see our _Brief Intr
 
 ## Project use in Positron
 
-<!-- ai-figure: projectuseinpositron -->
-![](media/projectuseinpositron.png){fig-alt="Illustration related to Project use in Positron." fig-cap="Illustration related to Project use in Positron."}
-<!-- end-ai-figure -->
 
 If you already have a folder that corresponds to a project (with or without Git/GitHub tracking), you can simply open that folder in Positron using `File` -> `Open Folder`. Positron will then recognize it as a project/workspace, and everything inside that folder and subfolders will be part of the project.
 

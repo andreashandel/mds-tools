@@ -5,7 +5,7 @@ title: Introduction to IDEs and Positron
 ::: {.unit-overview}
 # Overview
 
-This unit provides a high‑level introduction to integrated development environments (IDEs) in general and Positron in particular. 
+This unit provides a highâ€‘level introduction to integrated development environments (IDEs) in general and Positron in particular. 
 
 :::
 <!-- end unit-overview div -->
@@ -57,9 +57,6 @@ Read the text transcript: [Text transcript](positron-introduction-transcript.md)
 
 ## Integrated Development Environments (IDEs)
 
-<!-- ai-figure: integrateddevelopmentenvironmentsides -->
-![](media/integrateddevelopmentenvironmentsides.png){fig-alt="Illustration related to Integrated Development Environments (IDEs)." fig-cap="Illustration related to Integrated Development Environments (IDEs)."}
-<!-- end-ai-figure -->
 
 Any kind of data analysis and modeling project generally requires interacting with data, writing and debugging code, managing files, producing figures and tables, generating manuscripts or reports, and more. It is convenient to do all this through a single interface, at least as much as possible. This is where the concept of an Integrated Development Environment (IDE) comes in. It is a piece of software that not only lets you write code, but also allows you to do many other project functions through a single interface.
 
@@ -77,9 +74,6 @@ Having all these features inside one platform makes modern IDEs rather powerful.
 
 ## The Positron IDE
 
-<!-- ai-figure: thepositronide -->
-![](media/thepositronide.png){fig-alt="Illustration related to The Positron IDE." fig-cap="Illustration related to The Positron IDE."}
-<!-- end-ai-figure -->
 
 Some IDEs focus on a specific programming language (e.g., RStudio), others are very language-agnostic (e.g., VS Code). Positron is a bit in the middle. It's a fairly new IDE developed by the folks from Posit, who previously developed RStudio. The idea is that it's an IDE that has strong integration for certain programming languages -- currently the main focus is on R and Python -- while also allowing you to work with other languages, such as Julia.
 
@@ -89,9 +83,6 @@ Positron is a spin-off of VS Code, which is a very popular IDE developed by Micr
 
 ## Positron versus other IDEs
 
-<!-- ai-figure: positronversusotherides -->
-![](media/positronversusotherides.png){fig-alt="Illustration related to Positron versus other IDEs." fig-cap="Illustration related to Positron versus other IDEs."}
-<!-- end-ai-figure -->
 
 We think that currently, Positron is a great choice because it plays nicely with Quarto and R, supports Python, Julia and Git/GitHub, and is likely to become an increasingly popular and powerful editor for projects related to modeling and data analysis. 
 

@@ -53,18 +53,12 @@ Read the text transcript: [Text transcript](positron-use-transcript.md)
 
 ## Introduction
 
-<!-- ai-figure: introduction -->
-![](media/introduction.png){fig-alt="Illustration related to Introduction." fig-cap="Illustration related to Introduction."}
-<!-- end-ai-figure -->
 
 At the heart of every IDE, such as Positron, is the editor. Positron allows you to edit files efficiently, and if it is code, you can also run it. We'll explore some basic examples in this short unit.
 
 
 ## Editing a text file
 
-<!-- ai-figure: editingatextfile -->
-![](media/editingatextfile.png){fig-alt="Illustration related to Editing a text file." fig-cap="Illustration related to Editing a text file."}
-<!-- end-ai-figure -->
 
 This is the most boring use of the editor. Just create a new file, or open an existing text file and edit it. A text file doesn't necessarily need to be plain text. You can for instance open and edit a CSV file as well. We already tried that earlier when we discussed extensions. Feel free to revisit this by re-opening the prior CSV file and changing some of its contents. Then save it under a new name.
 
@@ -73,9 +67,6 @@ Depending on the type of file you are editing, Positron will try to provide some
 
 ## Editing and running code
 
-<!-- ai-figure: editingandrunningcode -->
-![](media/editingandrunningcode.png){fig-alt="Illustration related to Editing and running code." fig-cap="Illustration related to Editing and running code."}
-<!-- end-ai-figure -->
 
 :::{.note}
 The following only works if you already have R installed. If you don't have it on your computer, you should still read this section, you just can't run it for now. 
@@ -167,7 +158,7 @@ exams2forms::exams2forms(file = quizzes, title = 'positron-use-quiz')
 # Practice
 * Start a new text file. Use [Markdown Syntax](https://quarto.org/docs/authoring/markdown-basics.html) to write a bit of text. You should see Positron do syntax highlighting for Markdown. Save the file as `myfirstfile.md`. For now, you can't preview it unless you have Quarto (or some other extension) installed. You can try that later once you have Quarto up and running.
 * If you have R installed: Revisit the R script you created earlier. Extend it such that the code saves the figure to a file. Run the modified code. If you are new to R, look online to find out how to do this. Then also inspect the variables you created.
-* If you have R and Quarto installed: Re-open your Quarto document. Replace the code chunk with code that uses the `ggplot2` package to create the same plot. If you are completely new to R and don't know what packages are in R yet, you can skip this - or just look online or ask your AI and implement it, even if you don't fully understand yet what's going on 😁.
+* If you have R and Quarto installed: Re-open your Quarto document. Replace the code chunk with code that uses the `ggplot2` package to create the same plot. If you are completely new to R and don't know what packages are in R yet, you can skip this - or just look online or ask your AI and implement it, even if you don't fully understand yet what's going on ðŸ˜.
 
 :::
 <!-- end unit-exercise div -->

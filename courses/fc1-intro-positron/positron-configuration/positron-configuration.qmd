@@ -52,18 +52,12 @@ Read the text transcript: [Text transcript](positron-configuration-transcript.md
 
 ## Introduction
 
-<!-- ai-figure: introduction -->
-![](media/introduction.png){fig-alt="Illustration related to Introduction." fig-cap="Illustration related to Introduction."}
-<!-- end-ai-figure -->
 
 Positron is highly customizable just like VS Code the software it is based on. This flexibility allows you to tailor the editor to your specific workflow and preferences. There's a lot you can customize, we'll only briefly look at a few main areas here.
 
 
 ## Settings 
 
-<!-- ai-figure: settings -->
-![](media/settings.png){fig-alt="Illustration related to Settings." fig-cap="Illustration related to Settings."}
-<!-- end-ai-figure -->
 
 Under the gear symbol in the lower left corner, you can access all of Positron's settings. These control everything from editor behavior to appearance.
 
@@ -77,10 +71,6 @@ One important fact to keep in mind: You can change settings globally (for all pr
 
 ## Themes 
 
-<!-- ai-figure: themes -->
-![](media/themes.png){fig-alt="Illustration related to Themes." fig-cap="Illustration related to Themes."}
-<!-- end-ai-figure -->
-
 You can change the layout and look of Positron to suit your preferences. The easiest way to do so is to explore pre-made themes. If you want to have even more control, you can customize further. For most users, this is probably not worth it.
 
 You can explore themes by clicking on the gear icon in the lower left corner, then selecting *Themes* and *Color Theme*. This opens a list of available themes. Explore them to see what you might like.
@@ -90,22 +80,16 @@ Theme selection can help adjust things to make work as ergonomic for you as poss
 
 ## Key Bindings
 
-<!-- ai-figure: keybindings -->
-![](media/keybindings.png){fig-alt="Illustration related to Key Bindings." fig-cap="Illustration related to Key Bindings."}
-<!-- end-ai-figure -->
 
 Some users prefer different keyboard shortcuts for common commands. Positron allows you to customize these key bindings to match your workflow. 
 
 You can access key bindings by clicking the gear icon in the lower left corner, then selecting *Keyboard Shortcuts*. This opens a list of all available commands and their current key bindings. You can search for specific commands and change their shortcuts by clicking the pencil icon next to them. 
 
-For instance, in Positron, to quickly turn code into comments (by adding a `#` in front of it for R code), the default is to select the code chunk you want to comment out and then press the `Ctrl/Cmd + /` keyboard shortcut. This differs from RStudio, where it is the `Ctrl/Cmd + Shift + C` shortcut. If you prefer the RStudio shortcut, you can change it in Positron. 
+<!-- For instance, in Positron, to quickly turn code into comments (by adding a `#` in front of it for R code), the default is to select the code chunk you want to comment out and then press the `Ctrl/Cmd + /` keyboard shortcut. This differs from RStudio, where it is the `Ctrl/Cmd + Shift + C` shortcut. If you prefer the RStudio shortcut, you can change it in Positron.  -->
 
 
 ## More customization
 
-<!-- ai-figure: morecustomization -->
-![](media/morecustomization.png){fig-alt="Illustration related to More customization." fig-cap="Illustration related to More customization."}
-<!-- end-ai-figure -->
 
 It should be clear from just this brief discussion that Positron is highly customizable. You can change almost anything, from the layout of the editor to how it behaves when you run code. You want to make sure to explore the settings a bit and find what works best for you, but not waste too much time trying out every possible setting. 
 
