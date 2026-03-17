@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -234,15 +234,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="AI tools for exploratory data analysis" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](ai-data-analysis-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](ai-data-analysis-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="introduction" class="level2">
@@ -305,8 +323,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended approach when using AI tools on confidential data?</p>
-<div id="webex-7a9e654b3b858fb164a904358af0fa5b" class="webex-radiogroup" data-answer="bFEVVBoFGFJu">
-<label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Upload the data to a public AI service to get faster results</span></label><label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Use AI only on synthetic or anonymized data, or avoid uploading sensitive data</span></label><label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Assume all AI providers delete data immediately</span></label><label><input type="radio" autocomplete="off" name="7a9e654b3b858fb164a904358af0fa5b"><span>Share the data only after the analysis is complete</span></label>
+<div id="webex-a0dffcd1d24177f86db49e66eaecff8a" class="webex-radiogroup" data-answer="OgBIV0pTSAE5">
+<label><input type="radio" autocomplete="off" name="a0dffcd1d24177f86db49e66eaecff8a"><span>Upload the data to a public AI service to get faster results</span></label><label><input type="radio" autocomplete="off" name="a0dffcd1d24177f86db49e66eaecff8a"><span>Use AI only on synthetic or anonymized data, or avoid uploading sensitive data</span></label><label><input type="radio" autocomplete="off" name="a0dffcd1d24177f86db49e66eaecff8a"><span>Assume all AI providers delete data immediately</span></label><label><input type="radio" autocomplete="off" name="a0dffcd1d24177f86db49e66eaecff8a"><span>Share the data only after the analysis is complete</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -322,8 +340,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why might you ask an AI tool to write analysis code instead of doing the analysis directly?</p>
-<div id="webex-81053f7ab6d291e4bc470b7eb6889e96" class="webex-radiogroup" data-answer="YwEcBR9XG1E/">
-<label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It avoids the need to run the code yourself</span></label><label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It ensures the AI output is always correct</span></label><label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It lets you run, review, and modify the analysis locally for reproducibility</span></label><label><input type="radio" autocomplete="off" name="81053f7ab6d291e4bc470b7eb6889e96"><span>It guarantees the AI will use the latest packages</span></label>
+<div id="webex-199f5470ce65117fabac8555ce7b0fa4" class="webex-radiogroup" data-answer="agkVVhkFGwA+">
+<label><input type="radio" autocomplete="off" name="199f5470ce65117fabac8555ce7b0fa4"><span>It avoids the need to run the code yourself</span></label><label><input type="radio" autocomplete="off" name="199f5470ce65117fabac8555ce7b0fa4"><span>It ensures the AI output is always correct</span></label><label><input type="radio" autocomplete="off" name="199f5470ce65117fabac8555ce7b0fa4"><span>It lets you run, review, and modify the analysis locally for reproducibility</span></label><label><input type="radio" autocomplete="off" name="199f5470ce65117fabac8555ce7b0fa4"><span>It guarantees the AI will use the latest packages</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -339,8 +357,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is one benefit of using synthetic data with AI tools?</p>
-<div id="webex-48e6bd6109367997da625e2d5f4733de" class="webex-radiogroup" data-answer="bwlJBk5UGgFt">
-<label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It avoids confidentiality risks while still enabling code generation and testing</span></label><label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It guarantees the AI will infer the true structure of your real data</span></label><label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It removes the need for any data cleaning</span></label><label><input type="radio" autocomplete="off" name="48e6bd6109367997da625e2d5f4733de"><span>It produces identical results to your real data without changes</span></label>
+<div id="webex-0c05de576fac64bebc7483086974b0fa" class="webex-radiogroup" data-answer="a1IcBUhVGQdr">
+<label><input type="radio" autocomplete="off" name="0c05de576fac64bebc7483086974b0fa"><span>It avoids confidentiality risks while still enabling code generation and testing</span></label><label><input type="radio" autocomplete="off" name="0c05de576fac64bebc7483086974b0fa"><span>It guarantees the AI will infer the true structure of your real data</span></label><label><input type="radio" autocomplete="off" name="0c05de576fac64bebc7483086974b0fa"><span>It removes the need for any data cleaning</span></label><label><input type="radio" autocomplete="off" name="0c05de576fac64bebc7483086974b0fa"><span>It produces identical results to your real data without changes</span></label>
 </div>
 </div>
 <div class="webex-solution">

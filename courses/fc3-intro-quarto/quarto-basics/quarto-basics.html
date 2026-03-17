@@ -79,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -274,15 +274,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-::: 
+:::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](quarto-basics-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](quarto-basics-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="structure-of-a-quarto-document" class="level2">
@@ -382,8 +400,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where is the YAML front matter located in a Quarto document?</p>
-<div id="webex-3a5a4a5bcfb7f69f60b86712785a0cfd" class="webex-radiogroup" data-answer="aFEZUBhRGVI+">
-<label><input type="radio" autocomplete="off" name="3a5a4a5bcfb7f69f60b86712785a0cfd"><span>At the end of the document inside a code chunk</span></label><label><input type="radio" autocomplete="off" name="3a5a4a5bcfb7f69f60b86712785a0cfd"><span>At the very top, enclosed by <code>---</code> lines</span></label><label><input type="radio" autocomplete="off" name="3a5a4a5bcfb7f69f60b86712785a0cfd"><span>In a separate <code>.yml</code> file only</span></label><label><input type="radio" autocomplete="off" name="3a5a4a5bcfb7f69f60b86712785a0cfd"><span>In the middle of the Markdown body</span></label>
+<div id="webex-2d4b2525a2df90f964b8a3935f90f30d" class="webex-radiogroup" data-answer="aVQYUx4FHgU8">
+<label><input type="radio" autocomplete="off" name="2d4b2525a2df90f964b8a3935f90f30d"><span>At the end of the document inside a code chunk</span></label><label><input type="radio" autocomplete="off" name="2d4b2525a2df90f964b8a3935f90f30d"><span>At the very top, enclosed by <code>---</code> lines</span></label><label><input type="radio" autocomplete="off" name="2d4b2525a2df90f964b8a3935f90f30d"><span>In a separate <code>.yml</code> file only</span></label><label><input type="radio" autocomplete="off" name="2d4b2525a2df90f964b8a3935f90f30d"><span>In the middle of the Markdown body</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -399,8 +417,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How do you define an executable code chunk in a Quarto document?</p>
-<div id="webex-3d1b10fc8844c62da7c092dcb6269225" class="webex-radiogroup" data-answer="aFUdUh0ASlNl">
-<label><input type="radio" autocomplete="off" name="3d1b10fc8844c62da7c092dcb6269225"><span>Use triple backticks followed by a language identifier like <code>{r}</code></span></label><label><input type="radio" autocomplete="off" name="3d1b10fc8844c62da7c092dcb6269225"><span>Use a single backtick and a colon</span></label><label><input type="radio" autocomplete="off" name="3d1b10fc8844c62da7c092dcb6269225"><span>Wrap the code in HTML <code>&lt;code&gt;</code> tags</span></label><label><input type="radio" autocomplete="off" name="3d1b10fc8844c62da7c092dcb6269225"><span>Put the code only in YAML front matter</span></label>
+<div id="webex-bcfef9b668de2ee553c2ca37c6ba0521" class="webex-radiogroup" data-answer="OVJKVUoJTgZr">
+<label><input type="radio" autocomplete="off" name="bcfef9b668de2ee553c2ca37c6ba0521"><span>Use triple backticks followed by a language identifier like <code>{r}</code></span></label><label><input type="radio" autocomplete="off" name="bcfef9b668de2ee553c2ca37c6ba0521"><span>Use a single backtick and a colon</span></label><label><input type="radio" autocomplete="off" name="bcfef9b668de2ee553c2ca37c6ba0521"><span>Wrap the code in HTML <code>&lt;code&gt;</code> tags</span></label><label><input type="radio" autocomplete="off" name="bcfef9b668de2ee553c2ca37c6ba0521"><span>Put the code only in YAML front matter</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -416,8 +434,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How do you set a Quarto document to render as a Word file?</p>
-<div id="webex-cc7d5742c0faf69c5ea6f7364bd712d9" class="webex-radiogroup" data-answer="OFMbVBkHGAM+">
-<label><input type="radio" autocomplete="off" name="cc7d5742c0faf69c5ea6f7364bd712d9"><span>Add <code>output: word</code> to the Markdown body</span></label><label><input type="radio" autocomplete="off" name="cc7d5742c0faf69c5ea6f7364bd712d9"><span>Add <code>format: word</code> inside a code chunk</span></label><label><input type="radio" autocomplete="off" name="cc7d5742c0faf69c5ea6f7364bd712d9"><span>Add <code>format: pdf</code> in the YAML front matter</span></label><label><input type="radio" autocomplete="off" name="cc7d5742c0faf69c5ea6f7364bd712d9"><span>Add <code>format: docx</code> in the YAML front matter</span></label>
+<div id="webex-a31882e49c6c5bba7b9fb0293126c862" class="webex-radiogroup" data-answer="OgMdCBQCSQVk">
+<label><input type="radio" autocomplete="off" name="a31882e49c6c5bba7b9fb0293126c862"><span>Add <code>output: word</code> to the Markdown body</span></label><label><input type="radio" autocomplete="off" name="a31882e49c6c5bba7b9fb0293126c862"><span>Add <code>format: word</code> inside a code chunk</span></label><label><input type="radio" autocomplete="off" name="a31882e49c6c5bba7b9fb0293126c862"><span>Add <code>format: pdf</code> in the YAML front matter</span></label><label><input type="radio" autocomplete="off" name="a31882e49c6c5bba7b9fb0293126c862"><span>Add <code>format: docx</code> in the YAML front matter</span></label>
 </div>
 </div>
 <div class="webex-solution">

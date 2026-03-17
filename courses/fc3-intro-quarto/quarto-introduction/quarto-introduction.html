@@ -79,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -267,15 +267,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-::: 
+:::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](quarto-introduction-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](quarto-introduction-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="what-is-quarto" class="level2">
@@ -303,7 +321,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="quarto-vs-r-markdown" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-vs-r-markdown">Quarto vs R Markdown</h2>
 <p>Quarto is the more powerful successor of R Markdown. R Markdown is still around and functional. However, most effort is going into implementing new features for Quarto, and it has many more features compared to R Markdown.</p>
-<p>Occasionally, you might still need to use R Markdown, and you will find a lot of online information for R Markdown. Since Quarto is an evolution of R Markdown and shares many similiarities. Often what works in R Markdown will also work in Quarto.</p>
+<p>Occasionally, you might still need to use R Markdown, and you will find a lot of online information for R Markdown. Since Quarto is an evolution of R Markdown and shares many similarities, often what works in R Markdown will also work in Quarto.</p>
 </section>
 <section id="basics-of-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="basics-of-quarto">Basics of Quarto</h2>
@@ -363,8 +381,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which statement best describes Quarto?</p>
-<div id="webex-81ea408d1f9c848ed2a3b25d8884888a" class="webex-radiogroup" data-answer="YwBJURgAFFRs">
-<label><input type="radio" autocomplete="off" name="81ea408d1f9c848ed2a3b25d8884888a"><span>An open-source publishing system that combines text and code to create formatted output</span></label><label><input type="radio" autocomplete="off" name="81ea408d1f9c848ed2a3b25d8884888a"><span>A web browser extension for viewing PDFs</span></label><label><input type="radio" autocomplete="off" name="81ea408d1f9c848ed2a3b25d8884888a"><span>A spreadsheet program for data entry</span></label><label><input type="radio" autocomplete="off" name="81ea408d1f9c848ed2a3b25d8884888a"><span>A CSS framework for web styling</span></label>
+<div id="webex-c68f622f74aed1c1d76cfd1e1573ce22" class="webex-radiogroup" data-answer="OAcUVhoCHlZq">
+<label><input type="radio" autocomplete="off" name="c68f622f74aed1c1d76cfd1e1573ce22"><span>An open-source publishing system that combines text and code to create formatted output</span></label><label><input type="radio" autocomplete="off" name="c68f622f74aed1c1d76cfd1e1573ce22"><span>A web browser extension for viewing PDFs</span></label><label><input type="radio" autocomplete="off" name="c68f622f74aed1c1d76cfd1e1573ce22"><span>A spreadsheet program for data entry</span></label><label><input type="radio" autocomplete="off" name="c68f622f74aed1c1d76cfd1e1573ce22"><span>A CSS framework for web styling</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -380,8 +398,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which list matches the three main components of a Quarto document?</p>
-<div id="webex-f6b4d44ae8695cd1c194569f2fb8ced4" class="webex-radiogroup" data-answer="PQZOBUgEGFE4">
-<label><input type="radio" autocomplete="off" name="f6b4d44ae8695cd1c194569f2fb8ced4"><span>Markdown text, CSS styling, and images</span></label><label><input type="radio" autocomplete="off" name="f6b4d44ae8695cd1c194569f2fb8ced4"><span>YAML front matter, Markdown text, and executable code chunks</span></label><label><input type="radio" autocomplete="off" name="f6b4d44ae8695cd1c194569f2fb8ced4"><span>CSV data, HTML templates, and JSON metadata</span></label><label><input type="radio" autocomplete="off" name="f6b4d44ae8695cd1c194569f2fb8ced4"><span>Title page, bibliography, and appendix</span></label>
+<div id="webex-0342b33c69d8539442660e82b85b52b9" class="webex-radiogroup" data-answer="awMYA04DH1Nr">
+<label><input type="radio" autocomplete="off" name="0342b33c69d8539442660e82b85b52b9"><span>Markdown text, CSS styling, and images</span></label><label><input type="radio" autocomplete="off" name="0342b33c69d8539442660e82b85b52b9"><span>YAML front matter, Markdown text, and executable code chunks</span></label><label><input type="radio" autocomplete="off" name="0342b33c69d8539442660e82b85b52b9"><span>CSV data, HTML templates, and JSON metadata</span></label><label><input type="radio" autocomplete="off" name="0342b33c69d8539442660e82b85b52b9"><span>Title page, bibliography, and appendix</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -397,8 +415,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How does Quarto relate to R Markdown?</p>
-<div id="webex-ac06ae417d0a30f0b0f74077a64ab9f0" class="webex-radiogroup" data-answer="OlMcBk1UGAFq">
-<label><input type="radio" autocomplete="off" name="ac06ae417d0a30f0b0f74077a64ab9f0"><span>Quarto replaces R and does not support R Markdown documents</span></label><label><input type="radio" autocomplete="off" name="ac06ae417d0a30f0b0f74077a64ab9f0"><span>Quarto is older and has fewer features than R Markdown</span></label><label><input type="radio" autocomplete="off" name="ac06ae417d0a30f0b0f74077a64ab9f0"><span>Quarto is the successor to R Markdown and adds more features and languages</span></label><label><input type="radio" autocomplete="off" name="ac06ae417d0a30f0b0f74077a64ab9f0"><span>Quarto is only for Python and cannot work with R</span></label>
+<div id="webex-4cfa5c4cfbcce7850666e557ed3fe9d7" class="webex-radiogroup" data-answer="b1NKURlSGFM7">
+<label><input type="radio" autocomplete="off" name="4cfa5c4cfbcce7850666e557ed3fe9d7"><span>Quarto replaces R and does not support R Markdown documents</span></label><label><input type="radio" autocomplete="off" name="4cfa5c4cfbcce7850666e557ed3fe9d7"><span>Quarto is older and has fewer features than R Markdown</span></label><label><input type="radio" autocomplete="off" name="4cfa5c4cfbcce7850666e557ed3fe9d7"><span>Quarto is the successor to R Markdown and adds more features and languages</span></label><label><input type="radio" autocomplete="off" name="4cfa5c4cfbcce7850666e557ed3fe9d7"><span>Quarto is only for Python and cannot work with R</span></label>
 </div>
 </div>
 <div class="webex-solution">

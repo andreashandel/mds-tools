@@ -17,6 +17,8 @@
 .unit-overview,
 .unit-goals,
 .unit-video,
+.unit-slides,
+.unit-transcript,
 .unit-reading,
 .unit-summary,
 .unit-resources,
@@ -35,6 +37,8 @@
 .unit-overview > h1,
 .unit-goals     > h1,
 .unit-video     > h1,
+.unit-slides    > h1,
+.unit-transcript> h1,
 .unit-reading   > h1,
 .unit-summary   > h1,
 .unit-resources > h1,
@@ -54,6 +58,8 @@
 .unit-overview  > h1::before,
 .unit-goals     > h1::before,
 .unit-video     > h1::before,
+.unit-slides    > h1::before,
+.unit-transcript> h1::before,
 .unit-reading   > h1::before,
 .unit-summary   > h1::before,
 .unit-resources > h1::before,
@@ -72,6 +78,8 @@
 .unit-overview  > :not(h1),
 .unit-goals     > :not(h1),
 .unit-video     > :not(h1),
+.unit-slides    > :not(h1),
+.unit-transcript> :not(h1),
 .unit-reading   > :not(h1),
 .unit-summary   > :not(h1),
 .unit-resources > :not(h1),
@@ -109,6 +117,24 @@
 }
 .unit-video > h1::before {
   background-image: url("assets/images/unit-video.png");
+}
+
+.unit-slides {
+  --header-bg:        #d8ecff;
+  --content-bg:       #eef6ff;
+  --left-border-color:#2b6cb0;
+}
+.unit-slides > h1::before {
+  background-image: url("assets/images/unit-slides.png");
+}
+
+.unit-transcript {
+  --header-bg:        #ffe6d6;
+  --content-bg:       #fff3ea;
+  --left-border-color:#c75a1a;
+}
+.unit-transcript > h1::before {
+  background-image: url("assets/images/unit-transcript.png");
 }
 
 .unit-reading {

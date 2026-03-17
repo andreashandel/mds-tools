@@ -126,7 +126,7 @@
 }
 
 
-.webex-incorrect, .webex-checkboxgroup, .webex-solveme. .webex-radiogroup {
+.webex-incorrect, .webex-checkboxgroup, .webex-solveme, .webex-radiogroup {
     /* DEPRICATED color: black; */
     border-radius: 0.25em;
 }

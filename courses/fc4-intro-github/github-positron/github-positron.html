@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -233,15 +233,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Git and GitHub in Positron" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](github-positron-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](github-positron-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <p>So far, we used GitHub Desktop to interact with GitHub. An alternative is to use Positron’s built-in Git support. This allows you to perform common Git tasks without leaving the IDE.</p>
@@ -281,8 +299,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where can you find Git controls in Positron?</p>
-<div id="webex-fd275eee9515a4f7b8af3ad599c90bca" class="webex-radiogroup" data-answer="PVQeBhlVSVVk">
-<label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="fd275eee9515a4f7b8af3ad599c90bca"><span>The terminal output panel</span></label>
+<div id="webex-2821a063e9436a9d3c3a7d04f3732c55" class="webex-radiogroup" data-answer="aQgeAE0AGgM4">
+<label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The terminal output panel</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -298,8 +316,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After committing in Positron, what indicates your local branch is ahead of the remote?</p>
-<div id="webex-756e81bc5ec9c06cfc2d7af1fe5bfd31" class="webex-radiogroup" data-answer="bAUaVRQATlNo">
-<label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="756e81bc5ec9c06cfc2d7af1fe5bfd31"><span>The README file is locked for editing</span></label>
+<div id="webex-0cc2fee3190e55ab7101e40603ecf55f" class="webex-radiogroup" data-answer="a1NPAkpUSQNs">
+<label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The README file is locked for editing</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -315,8 +333,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Can you use both GitHub Desktop and Positron for Git tasks?</p>
-<div id="webex-3f03881f7b18fbec7eb0a1594117dc42" class="webex-radiogroup" data-answer="aFYcAxQIHVdq">
-<label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="3f03881f7b18fbec7eb0a1594117dc42"><span>Yes, you can mix both tools as needed</span></label>
+<div id="webex-68afd5cbdc5d25949d36dfbc40f8b532" class="webex-radiogroup" data-answer="bQhNVkgFT1M5">
+<label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>Yes, you can mix both tools as needed</span></label>
 </div>
 </div>
 <div class="webex-solution">

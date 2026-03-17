@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -242,15 +242,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](r-coding-tips-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](r-coding-tips-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <p>This is a collection of guides and tips related to getting started and using R.</p>
@@ -295,8 +313,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which coding practice best helps reduce repeated code when performing the same operation multiple times in R?</p>
-<div id="webex-195ebb965091a09d58e453addfa2254d" class="webex-radiogroup" data-answer="aggZVU5SFQZo">
-<label><input type="radio" autocomplete="off" name="195ebb965091a09d58e453addfa2254d"><span>Writing a function</span></label><label><input type="radio" autocomplete="off" name="195ebb965091a09d58e453addfa2254d"><span>Adding more comments</span></label><label><input type="radio" autocomplete="off" name="195ebb965091a09d58e453addfa2254d"><span>Using longer variable names</span></label><label><input type="radio" autocomplete="off" name="195ebb965091a09d58e453addfa2254d"><span>Splitting code into more files</span></label>
+<div id="webex-010d709e7abdbbf9181e46debedcf2ad" class="webex-radiogroup" data-answer="awAcVBsAFVVq">
+<label><input type="radio" autocomplete="off" name="010d709e7abdbbf9181e46debedcf2ad"><span>Writing a function</span></label><label><input type="radio" autocomplete="off" name="010d709e7abdbbf9181e46debedcf2ad"><span>Adding more comments</span></label><label><input type="radio" autocomplete="off" name="010d709e7abdbbf9181e46debedcf2ad"><span>Using longer variable names</span></label><label><input type="radio" autocomplete="off" name="010d709e7abdbbf9181e46debedcf2ad"><span>Splitting code into more files</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -312,8 +330,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>You see the message “package ‘PACKAGENAME’ is not available for this version of R” when installing a package. What should you check first?</p>
-<div id="webex-d4998c791a78dd8431da086d76b05f83" class="webex-radiogroup" data-answer="PwQVCRRTGwhs">
-<label><input type="radio" autocomplete="off" name="d4998c791a78dd8431da086d76b05f83"><span>Whether you need to install Rtools</span></label><label><input type="radio" autocomplete="off" name="d4998c791a78dd8431da086d76b05f83"><span>Whether your operating system is unsupported</span></label><label><input type="radio" autocomplete="off" name="d4998c791a78dd8431da086d76b05f83"><span>Whether you must install from source</span></label><label><input type="radio" autocomplete="off" name="d4998c791a78dd8431da086d76b05f83"><span>Whether the package name is spelled correctly</span></label>
+<div id="webex-dc3f0542887e9c538095c53afe9335a2" class="webex-radiogroup" data-answer="P1MfVhwFGANl">
+<label><input type="radio" autocomplete="off" name="dc3f0542887e9c538095c53afe9335a2"><span>Whether you need to install Rtools</span></label><label><input type="radio" autocomplete="off" name="dc3f0542887e9c538095c53afe9335a2"><span>Whether your operating system is unsupported</span></label><label><input type="radio" autocomplete="off" name="dc3f0542887e9c538095c53afe9335a2"><span>Whether you must install from source</span></label><label><input type="radio" autocomplete="off" name="dc3f0542887e9c538095c53afe9335a2"><span>Whether the package name is spelled correctly</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -329,8 +347,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why is vectorized code generally preferred over writing explicit for-loops in R?</p>
-<div id="webex-20222c55044dde4675bad049bba74243" class="webex-radiogroup" data-answer="aQAeAh5SGQVt">
-<label><input type="radio" autocomplete="off" name="20222c55044dde4675bad049bba74243"><span>It requires less memory in all cases</span></label><label><input type="radio" autocomplete="off" name="20222c55044dde4675bad049bba74243"><span>It prevents errors automatically</span></label><label><input type="radio" autocomplete="off" name="20222c55044dde4675bad049bba74243"><span>It operates on all elements at once and is often more concise</span></label><label><input type="radio" autocomplete="off" name="20222c55044dde4675bad049bba74243"><span>It only works with tidyverse packages</span></label>
+<div id="webex-9a6bf359c5ebec0ddb48b261af734792" class="webex-radiogroup" data-answer="YlEaUkoCGQk+">
+<label><input type="radio" autocomplete="off" name="9a6bf359c5ebec0ddb48b261af734792"><span>It requires less memory in all cases</span></label><label><input type="radio" autocomplete="off" name="9a6bf359c5ebec0ddb48b261af734792"><span>It prevents errors automatically</span></label><label><input type="radio" autocomplete="off" name="9a6bf359c5ebec0ddb48b261af734792"><span>It operates on all elements at once and is often more concise</span></label><label><input type="radio" autocomplete="off" name="9a6bf359c5ebec0ddb48b261af734792"><span>It only works with tidyverse packages</span></label>
 </div>
 </div>
 <div class="webex-solution">

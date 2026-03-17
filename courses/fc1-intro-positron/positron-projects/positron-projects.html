@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -242,14 +242,35 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <!-- end unit-goals div -->
-<!-- ::: {.unit-video}
-# Video, slides and audio transcript
+<!--
+::: {.unit-video}
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/tiwJzvqFgmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-:::  -->
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
+-->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](positron-projects-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](positron-projects-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="introduction" class="level2">
@@ -301,8 +322,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following automatically marks a folder as the root of a Positron project/workspace?</p>
-<div id="webex-4b0a95b428ee5fbe55747ac6cc8e9870" class="webex-radiogroup" data-answer="b1McURUFTgRv">
-<label><input type="radio" autocomplete="off" name="4b0a95b428ee5fbe55747ac6cc8e9870"><span>A <code>.git</code> directory inside the folder</span></label><label><input type="radio" autocomplete="off" name="4b0a95b428ee5fbe55747ac6cc8e9870"><span>A screenshot saved in the folder</span></label><label><input type="radio" autocomplete="off" name="4b0a95b428ee5fbe55747ac6cc8e9870"><span>Any file named <code>notes.txt</code></span></label><label><input type="radio" autocomplete="off" name="4b0a95b428ee5fbe55747ac6cc8e9870"><span>A <code>.csv</code> data file</span></label>
+<div id="webex-6525e51739ca520237cbf1e7f360cb4e" class="webex-radiogroup" data-answer="bQQeBUkFHQdu">
+<label><input type="radio" autocomplete="off" name="6525e51739ca520237cbf1e7f360cb4e"><span>A <code>.git</code> directory inside the folder</span></label><label><input type="radio" autocomplete="off" name="6525e51739ca520237cbf1e7f360cb4e"><span>A screenshot saved in the folder</span></label><label><input type="radio" autocomplete="off" name="6525e51739ca520237cbf1e7f360cb4e"><span>Any file named <code>notes.txt</code></span></label><label><input type="radio" autocomplete="off" name="6525e51739ca520237cbf1e7f360cb4e"><span>A <code>.csv</code> data file</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -318,8 +339,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is a recommended way to start a new Positron project that will use Git/GitHub?</p>
-<div id="webex-6b9ce7ca445d0c7f96c0a9cc6aaf2537" class="webex-radiogroup" data-answer="bVMVU0kHT1Fp">
-<label><input type="radio" autocomplete="off" name="6b9ce7ca445d0c7f96c0a9cc6aaf2537"><span>Create the repo on GitHub, then use <code>New Folder from Git</code> in Positron to clone it</span></label><label><input type="radio" autocomplete="off" name="6b9ce7ca445d0c7f96c0a9cc6aaf2537"><span>Write code directly in the Downloads folder with no version control</span></label><label><input type="radio" autocomplete="off" name="6b9ce7ca445d0c7f96c0a9cc6aaf2537"><span>Only use the Julia REPL without saving any files</span></label><label><input type="radio" autocomplete="off" name="6b9ce7ca445d0c7f96c0a9cc6aaf2537"><span>Copy random files into a temporary folder every time you work</span></label>
+<div id="webex-2d26542e28de3a2a2ccc085255c5bac8" class="webex-radiogroup" data-answer="aVUeBhkEHlVv">
+<label><input type="radio" autocomplete="off" name="2d26542e28de3a2a2ccc085255c5bac8"><span>Create the repo on GitHub, then use <code>New Folder from Git</code> in Positron to clone it</span></label><label><input type="radio" autocomplete="off" name="2d26542e28de3a2a2ccc085255c5bac8"><span>Write code directly in the Downloads folder with no version control</span></label><label><input type="radio" autocomplete="off" name="2d26542e28de3a2a2ccc085255c5bac8"><span>Only use the Julia REPL without saving any files</span></label><label><input type="radio" autocomplete="off" name="2d26542e28de3a2a2ccc085255c5bac8"><span>Copy random files into a temporary folder every time you work</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -335,8 +356,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why is it important to keep all files for a project inside the project/workspace folder?</p>
-<div id="webex-b374f9b754d89a1b16d60a1885667545" class="webex-radiogroup" data-answer="OQIbBEoJTgdo">
-<label><input type="radio" autocomplete="off" name="b374f9b754d89a1b16d60a1885667545"><span>It keeps paths consistent and makes the work reproducible for others</span></label><label><input type="radio" autocomplete="off" name="b374f9b754d89a1b16d60a1885667545"><span>It stops Positron from running code</span></label><label><input type="radio" autocomplete="off" name="b374f9b754d89a1b16d60a1885667545"><span>It prevents Git from tracking changes</span></label><label><input type="radio" autocomplete="off" name="b374f9b754d89a1b16d60a1885667545"><span>It makes it impossible to share the project</span></label>
+<div id="webex-0ce0663b1b0e3b9ff8d9769b7bd77cb6" class="webex-radiogroup" data-answer="a1JJABoGH1Js">
+<label><input type="radio" autocomplete="off" name="0ce0663b1b0e3b9ff8d9769b7bd77cb6"><span>It keeps paths consistent and makes the work reproducible for others</span></label><label><input type="radio" autocomplete="off" name="0ce0663b1b0e3b9ff8d9769b7bd77cb6"><span>It stops Positron from running code</span></label><label><input type="radio" autocomplete="off" name="0ce0663b1b0e3b9ff8d9769b7bd77cb6"><span>It prevents Git from tracking changes</span></label><label><input type="radio" autocomplete="off" name="0ce0663b1b0e3b9ff8d9769b7bd77cb6"><span>It makes it impossible to share the project</span></label>
 </div>
 </div>
 <div class="webex-solution">

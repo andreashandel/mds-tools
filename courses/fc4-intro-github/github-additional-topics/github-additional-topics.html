@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -252,15 +252,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), and here is the [audio transcript](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Managing Large Files with Git and GitHub" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](github-additional-topics-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](github-additional-topics-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <p>The sections below cover a few additional topics that are relevant when working with Git and GitHub in the context of modeling and data science work.</p>
@@ -362,8 +380,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does a force push do?</p>
-<div id="webex-1593a49a64c157550fd08a37ed94f8d9" class="webex-radiogroup" data-answer="agUVAk0EFVFr">
-<label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Adds a new collaborator to the repository</span></label><label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Overwrites the remote repository with your local version</span></label><label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Creates a new branch for you automatically</span></label><label><input type="radio" autocomplete="off" name="1593a49a64c157550fd08a37ed94f8d9"><span>Fixes merge conflicts without changes</span></label>
+<div id="webex-8b0ce9cb5c7977e896bbaccffaf6f841" class="webex-radiogroup" data-answer="Y1IcUkkJT1Jo">
+<label><input type="radio" autocomplete="off" name="8b0ce9cb5c7977e896bbaccffaf6f841"><span>Adds a new collaborator to the repository</span></label><label><input type="radio" autocomplete="off" name="8b0ce9cb5c7977e896bbaccffaf6f841"><span>Overwrites the remote repository with your local version</span></label><label><input type="radio" autocomplete="off" name="8b0ce9cb5c7977e896bbaccffaf6f841"><span>Creates a new branch for you automatically</span></label><label><input type="radio" autocomplete="off" name="8b0ce9cb5c7977e896bbaccffaf6f841"><span>Fixes merge conflicts without changes</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -379,8 +397,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you keep sensitive files out of a GitHub repository?</p>
-<div id="webex-08f281f440b3c2f9cd401fb16fc86630" class="webex-radiogroup" data-answer="awhKAhQASgRp">
-<label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Store them in the docs folder</span></label><label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Rename the files to start with a dot</span></label><label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Keep them outside the repo and add patterns to .gitignore</span></label><label><input type="radio" autocomplete="off" name="08f281f440b3c2f9cd401fb16fc86630"><span>Push them once, then delete them</span></label>
+<div id="webex-c3f91504c478a2f674e9b115170dc4a3" class="webex-radiogroup" data-answer="OANKCR0EHAQ+">
+<label><input type="radio" autocomplete="off" name="c3f91504c478a2f674e9b115170dc4a3"><span>Store them in the docs folder</span></label><label><input type="radio" autocomplete="off" name="c3f91504c478a2f674e9b115170dc4a3"><span>Rename the files to start with a dot</span></label><label><input type="radio" autocomplete="off" name="c3f91504c478a2f674e9b115170dc4a3"><span>Keep them outside the repo and add patterns to .gitignore</span></label><label><input type="radio" autocomplete="off" name="c3f91504c478a2f674e9b115170dc4a3"><span>Push them once, then delete them</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -396,8 +414,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is a key risk if you ever commit sensitive data to a public repository?</p>
-<div id="webex-505d500a1de1aae0aa5c042cf3747896" class="webex-radiogroup" data-answer="bgAZVBkAHFBs">
-<label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>Git automatically anonymizes sensitive fields</span></label><label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>Deleting the file removes it from the full history</span></label><label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>The file becomes private after 24 hours</span></label><label><input type="radio" autocomplete="off" name="505d500a1de1aae0aa5c042cf3747896"><span>The data remains in history unless you start over with a new repo</span></label>
+<div id="webex-e9a61f7e4fe12a7e42f22f1feeccf512" class="webex-radiogroup" data-answer="PglNBh1WG1Rp">
+<label><input type="radio" autocomplete="off" name="e9a61f7e4fe12a7e42f22f1feeccf512"><span>Git automatically anonymizes sensitive fields</span></label><label><input type="radio" autocomplete="off" name="e9a61f7e4fe12a7e42f22f1feeccf512"><span>Deleting the file removes it from the full history</span></label><label><input type="radio" autocomplete="off" name="e9a61f7e4fe12a7e42f22f1feeccf512"><span>The file becomes private after 24 hours</span></label><label><input type="radio" autocomplete="off" name="e9a61f7e4fe12a7e42f22f1feeccf512"><span>The data remains in history unless you start over with a new repo</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -415,7 +433,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), an
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
 <ul>
-<li></li>
+<li>Create a <code>.gitignore</code> file for one of your repositories. Add entries to exclude files or folders that should not be tracked (e.g., large data files, temporary files, or sensitive information).</li>
+<li>Intentionally create a merge conflict by editing the same file in two different locations (e.g., on GitHub.com and on your local machine). Then practice resolving the conflict.</li>
 </ul>
 </section>
 <!-- end unit-exercise div -->

@@ -79,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -281,14 +281,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
+<!-- end unit-video div -->
+
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](r-coding-basics-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](r-coding-basics-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <!-- end unit-video div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
@@ -370,8 +391,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why is R’s vectorization useful when doing basic calculations?</p>
-<div id="webex-548ac8c6120fd0488cbb4438eb3e7f2b" class="webex-radiogroup" data-answer="bgQUUE8ITwZs">
-<label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It only works for text data, not numbers</span></label><label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It lets you apply operations to entire vectors without writing loops</span></label><label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It prevents you from using built-in functions like <code>mean()</code></span></label><label><input type="radio" autocomplete="off" name="548ac8c6120fd0488cbb4438eb3e7f2b"><span>It forces you to preallocate every object manually</span></label>
+<div id="webex-3ade498babfa84e4ce7a52d65e55f34d" class="webex-radiogroup" data-answer="aFFIVBgJFFI8">
+<label><input type="radio" autocomplete="off" name="3ade498babfa84e4ce7a52d65e55f34d"><span>It only works for text data, not numbers</span></label><label><input type="radio" autocomplete="off" name="3ade498babfa84e4ce7a52d65e55f34d"><span>It lets you apply operations to entire vectors without writing loops</span></label><label><input type="radio" autocomplete="off" name="3ade498babfa84e4ce7a52d65e55f34d"><span>It prevents you from using built-in functions like <code>mean()</code></span></label><label><input type="radio" autocomplete="off" name="3ade498babfa84e4ce7a52d65e55f34d"><span>It forces you to preallocate every object manually</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -387,8 +408,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the main advantage of putting your code in a saved <code>.R</code> script instead of only using the console?</p>
-<div id="webex-d1e132b6081edc3104625d10fd124788" class="webex-radiogroup" data-answer="PwFJAB8CTgZt">
-<label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It makes R run faster automatically</span></label><label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It gives you a reproducible record you can rerun as a whole</span></label><label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It disables syntax highlighting, so errors are easier to find</span></label><label><input type="radio" autocomplete="off" name="d1e132b6081edc3104625d10fd124788"><span>It prevents you from using packages</span></label>
+<div id="webex-f9d3c8e863f31ea290d33807c7dc54ff" class="webex-radiogroup" data-answer="PQlIAk8ISQhr">
+<label><input type="radio" autocomplete="off" name="f9d3c8e863f31ea290d33807c7dc54ff"><span>It makes R run faster automatically</span></label><label><input type="radio" autocomplete="off" name="f9d3c8e863f31ea290d33807c7dc54ff"><span>It gives you a reproducible record you can rerun as a whole</span></label><label><input type="radio" autocomplete="off" name="f9d3c8e863f31ea290d33807c7dc54ff"><span>It disables syntax highlighting, so errors are easier to find</span></label><label><input type="radio" autocomplete="off" name="f9d3c8e863f31ea290d33807c7dc54ff"><span>It prevents you from using packages</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -404,8 +425,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What does the base pipe <code>|&gt;</code> do in R?</p>
-<div id="webex-354ade0a5d6324a5cec92093d521d989" class="webex-radiogroup" data-answer="aAUYUUhUHFFo">
-<label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It comments out code so it won’t run</span></label><label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It automatically loads all tidyverse packages</span></label><label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It passes the left-hand result as the first argument to the next function</span></label><label><input type="radio" autocomplete="off" name="354ade0a5d6324a5cec92093d521d989"><span>It only works inside loops</span></label>
+<div id="webex-bfd6b21c5dc57df9c8872e9092a67004" class="webex-radiogroup" data-answer="OVZIBk4DHVNo">
+<label><input type="radio" autocomplete="off" name="bfd6b21c5dc57df9c8872e9092a67004"><span>It comments out code so it won’t run</span></label><label><input type="radio" autocomplete="off" name="bfd6b21c5dc57df9c8872e9092a67004"><span>It automatically loads all tidyverse packages</span></label><label><input type="radio" autocomplete="off" name="bfd6b21c5dc57df9c8872e9092a67004"><span>It passes the left-hand result as the first argument to the next function</span></label><label><input type="radio" autocomplete="off" name="bfd6b21c5dc57df9c8872e9092a67004"><span>It only works inside loops</span></label>
 </div>
 </div>
 <div class="webex-solution">

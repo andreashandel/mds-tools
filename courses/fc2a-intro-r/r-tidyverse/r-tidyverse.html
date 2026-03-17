@@ -79,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -279,15 +279,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](r-tidyverse-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](r-tidyverse-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <p>In the prior unit, we discussed R packages, what they are and how to install them. This unit focuses on a few R collections of packages that are widely used for modeling and data science work.</p>
@@ -358,8 +376,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why might you install only the specific tidyverse packages you need instead of the full bundle?</p>
-<div id="webex-9b5111d0c91a93d107d953401cc7fcdd" class="webex-radiogroup" data-answer="YlIZAB0BSAA+">
-<label><input type="radio" autocomplete="off" name="9b5111d0c91a93d107d953401cc7fcdd"><span>Installing the full tidyverse prevents you from using base R</span></label><label><input type="radio" autocomplete="off" name="9b5111d0c91a93d107d953401cc7fcdd"><span>Smaller installs can be faster and avoid pulling in packages you won’t use</span></label><label><input type="radio" autocomplete="off" name="9b5111d0c91a93d107d953401cc7fcdd"><span>The full tidyverse does not work on Windows</span></label><label><input type="radio" autocomplete="off" name="9b5111d0c91a93d107d953401cc7fcdd"><span>Installing individual packages disables the pipe</span></label>
+<div id="webex-dc2aec6abf52c2442a9402e1fbcb5e1e" class="webex-radiogroup" data-answer="P1MeUElTGlE/">
+<label><input type="radio" autocomplete="off" name="dc2aec6abf52c2442a9402e1fbcb5e1e"><span>Installing the full tidyverse prevents you from using base R</span></label><label><input type="radio" autocomplete="off" name="dc2aec6abf52c2442a9402e1fbcb5e1e"><span>Smaller installs can be faster and avoid pulling in packages you won’t use</span></label><label><input type="radio" autocomplete="off" name="dc2aec6abf52c2442a9402e1fbcb5e1e"><span>The full tidyverse does not work on Windows</span></label><label><input type="radio" autocomplete="off" name="dc2aec6abf52c2442a9402e1fbcb5e1e"><span>Installing individual packages disables the pipe</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -375,8 +393,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How does the base pipe <code>|&gt;</code> relate to the magrittr pipe <code>%&gt;%</code>?</p>
-<div id="webex-4c49c00bdc6ae36a16084263f16625c0" class="webex-radiogroup" data-answer="b1MYCU8BHFI5">
-<label><input type="radio" autocomplete="off" name="4c49c00bdc6ae36a16084263f16625c0"><span>They are unrelated and can’t be used for the same tasks</span></label><label><input type="radio" autocomplete="off" name="4c49c00bdc6ae36a16084263f16625c0"><span><code>%&gt;%</code> works only in Python, while <code>|&gt;</code> is for R</span></label><label><input type="radio" autocomplete="off" name="4c49c00bdc6ae36a16084263f16625c0"><span>Both pipes pass the left-hand value forward; <code>|&gt;</code> is built into base R</span></label><label><input type="radio" autocomplete="off" name="4c49c00bdc6ae36a16084263f16625c0"><span><code>|&gt;</code> automatically loads all tidyverse packages</span></label>
+<div id="webex-02029b3b351d844d1e10d2835b710f90" class="webex-radiogroup" data-answer="awIcAhVTH1Ju">
+<label><input type="radio" autocomplete="off" name="02029b3b351d844d1e10d2835b710f90"><span>They are unrelated and can’t be used for the same tasks</span></label><label><input type="radio" autocomplete="off" name="02029b3b351d844d1e10d2835b710f90"><span><code>%&gt;%</code> works only in Python, while <code>|&gt;</code> is for R</span></label><label><input type="radio" autocomplete="off" name="02029b3b351d844d1e10d2835b710f90"><span>Both pipes pass the left-hand value forward; <code>|&gt;</code> is built into base R</span></label><label><input type="radio" autocomplete="off" name="02029b3b351d844d1e10d2835b710f90"><span><code>|&gt;</code> automatically loads all tidyverse packages</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -392,8 +410,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the focus of the tidymodels collection?</p>
-<div id="webex-e85a3c81895e477b27ff320cd2ccd6b7" class="webex-radiogroup" data-answer="PggZUR9SFAFl">
-<label><input type="radio" autocomplete="off" name="e85a3c81895e477b27ff320cd2ccd6b7"><span>Building interactive web apps</span></label><label><input type="radio" autocomplete="off" name="e85a3c81895e477b27ff320cd2ccd6b7"><span>Writing low-level C extensions</span></label><label><input type="radio" autocomplete="off" name="e85a3c81895e477b27ff320cd2ccd6b7"><span>Modeling and machine learning workflows that fit well with tidyverse style</span></label><label><input type="radio" autocomplete="off" name="e85a3c81895e477b27ff320cd2ccd6b7"><span>Replacing base R plotting functions</span></label>
+<div id="webex-9a86703f313357d8ec3c8d26a87b76ce" class="webex-radiogroup" data-answer="YlEUBhsBH1Zu">
+<label><input type="radio" autocomplete="off" name="9a86703f313357d8ec3c8d26a87b76ce"><span>Building interactive web apps</span></label><label><input type="radio" autocomplete="off" name="9a86703f313357d8ec3c8d26a87b76ce"><span>Writing low-level C extensions</span></label><label><input type="radio" autocomplete="off" name="9a86703f313357d8ec3c8d26a87b76ce"><span>Modeling and machine learning workflows that fit well with tidyverse style</span></label><label><input type="radio" autocomplete="off" name="9a86703f313357d8ec3c8d26a87b76ce"><span>Replacing base R plotting functions</span></label>
 </div>
 </div>
 <div class="webex-solution">

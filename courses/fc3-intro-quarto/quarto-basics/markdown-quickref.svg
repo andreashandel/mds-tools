@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f7f2eb"/>
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="48" fill="#3a2f24">Markdown Quick Reference</text>
+
+  <rect x="80" y="140" width="1040" height="470" rx="20" fill="#ffffff" stroke="#3a2f24" stroke-width="3"/>
+
+  <text x="130" y="210" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24"># Heading 1</text>
+  <text x="130" y="255" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">## Heading 2</text>
+
+  <text x="130" y="320" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">**bold**   *italic*</text>
+
+  <text x="130" y="385" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">- unordered list</text>
+  <text x="130" y="425" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">1. ordered list</text>
+
+  <text x="130" y="490" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">`inline code`</text>
+
+  <text x="130" y="555" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">```{r}  # code chunk</text>
+  <text x="130" y="595" font-family="Arial, sans-serif" font-size="30" fill="#3a2f24">```</text>
+</svg>

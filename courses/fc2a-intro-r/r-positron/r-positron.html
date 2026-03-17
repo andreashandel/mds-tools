@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -244,15 +244,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](r-positron-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](r-positron-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="positron-and-projects" class="level2">
@@ -311,8 +329,8 @@ plot(x,y) #plot y versus x</code></pre>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended way to execute R code for a real project in Positron?</p>
-<div id="webex-96a040f830741bc2fd66cc122c1353da" class="webex-radiogroup" data-answer="YgZNABgBSghu">
-<label><input type="radio" autocomplete="off" name="96a040f830741bc2fd66cc122c1353da"><span>Run individual lines in random order from the console</span></label><label><input type="radio" autocomplete="off" name="96a040f830741bc2fd66cc122c1353da"><span>Keep code in the console history without saving it</span></label><label><input type="radio" autocomplete="off" name="96a040f830741bc2fd66cc122c1353da"><span>Save the script and run the whole file via <code>Source R File</code> (or <code>source()</code>)</span></label><label><input type="radio" autocomplete="off" name="96a040f830741bc2fd66cc122c1353da"><span>Only rerun the few lines you most recently edited</span></label>
+<div id="webex-4d5bd71544caa16b9f1615cd820b0c3b" class="webex-radiogroup" data-answer="b1QZUkgGHQVp">
+<label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Run individual lines in random order from the console</span></label><label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Keep code in the console history without saving it</span></label><label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Save the script and run the whole file via <code>Source R File</code> (or <code>source()</code>)</span></label><label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Only rerun the few lines you most recently edited</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -328,8 +346,8 @@ plot(x,y) #plot y versus x</code></pre>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>When a mismatched bracket triggers a message in the <code>Problems</code> tab and changes the syntax highlighting, what should you do?</p>
-<div id="webex-4a26b724298df970a4c32f0c71873cb1" class="webex-radiogroup" data-answer="b1EeB04HHgRv">
-<label><input type="radio" autocomplete="off" name="4a26b724298df970a4c32f0c71873cb1"><span>Ignore the warning and continue running the script</span></label><label><input type="radio" autocomplete="off" name="4a26b724298df970a4c32f0c71873cb1"><span>Check the highlighted location and fix the syntax before re-running</span></label><label><input type="radio" autocomplete="off" name="4a26b724298df970a4c32f0c71873cb1"><span>Reinstall R because the editor is corrupted</span></label><label><input type="radio" autocomplete="off" name="4a26b724298df970a4c32f0c71873cb1"><span>Close Positron and hope the message disappears on restart</span></label>
+<div id="webex-84f82542a5690f73d7e57c07309cc91f" class="webex-radiogroup" data-answer="YwRKCR4FGAI8">
+<label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Ignore the warning and continue running the script</span></label><label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Check the highlighted location and fix the syntax before re-running</span></label><label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Reinstall R because the editor is corrupted</span></label><label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Close Positron and hope the message disappears on restart</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -345,8 +363,8 @@ plot(x,y) #plot y versus x</code></pre>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After restarting R, you run <code>y &lt;- x^2</code> before defining <code>x</code> and get an error. What does this tell you about running code?</p>
-<div id="webex-d172fd82ad67a2ef92332bc2cd7ef031" class="webex-radiogroup" data-answer="PwEbAkpUFAM8">
-<label><input type="radio" autocomplete="off" name="d172fd82ad67a2ef92332bc2cd7ef031"><span>It will still work because R fills in missing objects automatically</span></label><label><input type="radio" autocomplete="off" name="d172fd82ad67a2ef92332bc2cd7ef031"><span>It only fails when you use <code>Source R File</code> instead of the console</span></label><label><input type="radio" autocomplete="off" name="d172fd82ad67a2ef92332bc2cd7ef031"><span>It means the workspace keeps old objects even after a restart</span></label><label><input type="radio" autocomplete="off" name="d172fd82ad67a2ef92332bc2cd7ef031"><span>You need to run code in order; define <code>x</code> before using it in <code>y &lt;- x^2</code></span></label>
+<div id="webex-b4f6757d28ffee6dbb105cf662f10c18" class="webex-radiogroup" data-answer="OQRKBhsFG1Vv">
+<label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>It will still work because R fills in missing objects automatically</span></label><label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>It only fails when you use <code>Source R File</code> instead of the console</span></label><label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>It means the workspace keeps old objects even after a restart</span></label><label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>You need to run code in order; define <code>x</code> before using it in <code>y &lt;- x^2</code></span></label>
 </div>
 </div>
 <div class="webex-solution">

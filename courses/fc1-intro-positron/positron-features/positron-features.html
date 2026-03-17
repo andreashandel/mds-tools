@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -233,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 unit-overview">
 <h1>Overview</h1>
-<p>This unit familiarizes you with Positron’s basic layout and features.</p>
+<p>This unit familiarizes you with Positronâ€™s basic layout and features.</p>
 </section>
 <!-- end unit-overview div -->
 <section id="goals" class="level1 unit-goals">
@@ -245,15 +245,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](positron-features-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](positron-features-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="introduction" class="level2">
@@ -277,11 +295,11 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="viewer-pane" class="level2">
 <h2 class="anchored" data-anchor-id="viewer-pane">Viewer Pane</h2>
 <p>The right side of the IDE has a second sidebar, which is by default split into two.</p>
-<p>The bottom-right area is usually the Viewer pane. It automatically displays plots created by code, such as R’s <em>ggplot2</em>, Python’s <em>matplotlib</em>, or Julia’s <em>Plots</em> package. HTML widgets, data frames, interactive tables, and other items that can be previewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there.</p>
+<p>The bottom-right area is usually the Viewer pane. It automatically displays plots created by code, such as Râ€™s <em>ggplot2</em>, Pythonâ€™s <em>matplotlib</em>, or Juliaâ€™s <em>Plots</em> package. HTML widgets, data frames, interactive tables, and other items that can be previewed appear there. If you set Quarto to internal preview (the default), rendered Quarto documents will also show there.</p>
 </section>
 <section id="environment-and-history-pane" class="level2">
 <h2 class="anchored" data-anchor-id="environment-and-history-pane">Environment and History Pane</h2>
-<p>The top‑right pane shows your workspace objects/variables. Click any variable to further inspect it.</p>
+<p>The topâ€’right pane shows your workspace objects/variables. Click any variable to further inspect it.</p>
 </section>
 <section id="the-command-palette" class="level2">
 <h2 class="anchored" data-anchor-id="the-command-palette">The Command Palette</h2>
@@ -311,8 +329,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which Positron pane is designed to show plots, HTML widgets, and rendered Quarto previews?</p>
-<div id="webex-4b55098cfa4868b387f9b2c2729675c1" class="webex-radiogroup" data-answer="b1MZBRwJFFM7">
-<label><input type="radio" autocomplete="off" name="4b55098cfa4868b387f9b2c2729675c1"><span>The Viewer pane (bottom right)</span></label><label><input type="radio" autocomplete="off" name="4b55098cfa4868b387f9b2c2729675c1"><span>The Activity Bar on the left</span></label><label><input type="radio" autocomplete="off" name="4b55098cfa4868b387f9b2c2729675c1"><span>The Environment pane</span></label><label><input type="radio" autocomplete="off" name="4b55098cfa4868b387f9b2c2729675c1"><span>The Terminal tab</span></label>
+<div id="webex-b8f887e698a5321401fdebc953777e16" class="webex-radiogroup" data-answer="OQlKCBQHSQZk">
+<label><input type="radio" autocomplete="off" name="b8f887e698a5321401fdebc953777e16"><span>The Viewer pane (bottom right)</span></label><label><input type="radio" autocomplete="off" name="b8f887e698a5321401fdebc953777e16"><span>The Activity Bar on the left</span></label><label><input type="radio" autocomplete="off" name="b8f887e698a5321401fdebc953777e16"><span>The Environment pane</span></label><label><input type="radio" autocomplete="off" name="b8f887e698a5321401fdebc953777e16"><span>The Terminal tab</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -328,8 +346,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How do you open the command palette to quickly run commands in Positron?</p>
-<div id="webex-5a668e2eb17a8ab45247afdf61b38c46" class="webex-radiogroup" data-answer="blEaBhRVHlQ/">
-<label><input type="radio" autocomplete="off" name="5a668e2eb17a8ab45247afdf61b38c46"><span>Open the Terminal tab and type <code>palette</code></span></label><label><input type="radio" autocomplete="off" name="5a668e2eb17a8ab45247afdf61b38c46"><span>Right-click the Activity Bar and select “Command Mode”</span></label><label><input type="radio" autocomplete="off" name="5a668e2eb17a8ab45247afdf61b38c46"><span>The command palette is only available in VS Code, not Positron</span></label><label><input type="radio" autocomplete="off" name="5a668e2eb17a8ab45247afdf61b38c46"><span>Click the search box at the top, choose “Show and Run Commands,” and start typing</span></label>
+<div id="webex-7cc9d548f88663571cbc6fe5f59a496b" class="webex-radiogroup" data-answer="bFNPCUgFGAk7">
+<label><input type="radio" autocomplete="off" name="7cc9d548f88663571cbc6fe5f59a496b"><span>Open the Terminal tab and type <code>palette</code></span></label><label><input type="radio" autocomplete="off" name="7cc9d548f88663571cbc6fe5f59a496b"><span>Right-click the Activity Bar and select “Command Mode”</span></label><label><input type="radio" autocomplete="off" name="7cc9d548f88663571cbc6fe5f59a496b"><span>The command palette is only available in VS Code, not Positron</span></label><label><input type="radio" autocomplete="off" name="7cc9d548f88663571cbc6fe5f59a496b"><span>Click the search box at the top, choose “Show and Run Commands,” and start typing</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -345,8 +363,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the primary purpose of the first icon (file explorer) on the Activity Bar?</p>
-<div id="webex-6f74a5b64aaa26ad590354194faf0edf" class="webex-radiogroup" data-answer="bVcbBE0FTgZp">
-<label><input type="radio" autocomplete="off" name="6f74a5b64aaa26ad590354194faf0edf"><span>Quickly open, create, and navigate project files</span></label><label><input type="radio" autocomplete="off" name="6f74a5b64aaa26ad590354194faf0edf"><span>Display plots and HTML widgets</span></label><label><input type="radio" autocomplete="off" name="6f74a5b64aaa26ad590354194faf0edf"><span>Show workspace variables and history</span></label><label><input type="radio" autocomplete="off" name="6f74a5b64aaa26ad590354194faf0edf"><span>Configure extensions and their settings</span></label>
+<div id="webex-c32c0e08179bf0c9adf5ba693838e2cb" class="webex-radiogroup" data-answer="OAIeUxxVHAhs">
+<label><input type="radio" autocomplete="off" name="c32c0e08179bf0c9adf5ba693838e2cb"><span>Quickly open, create, and navigate project files</span></label><label><input type="radio" autocomplete="off" name="c32c0e08179bf0c9adf5ba693838e2cb"><span>Display plots and HTML widgets</span></label><label><input type="radio" autocomplete="off" name="c32c0e08179bf0c9adf5ba693838e2cb"><span>Show workspace variables and history</span></label><label><input type="radio" autocomplete="off" name="c32c0e08179bf0c9adf5ba693838e2cb"><span>Configure extensions and their settings</span></label>
 </div>
 </div>
 <div class="webex-solution">

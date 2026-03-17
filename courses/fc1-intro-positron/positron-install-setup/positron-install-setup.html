@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-343fc931cde388b57742cf3eae6a0515.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-cc9f04f0e3343796fe02e1eb8af7a492.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -241,15 +241,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- end unit-goals div -->
 <!--
 ::: {.unit-video}
-# Video, slides and audio transcript
+# Video
 
-Below is the video for this unit. Here are [the slides shown in the video](), as well as a [text version of the transcript]().
+Watch the unit video on YouTube: [YouTube video](https://www.youtube.com/watch?v=VIDEO_ID)
 
-<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Video placeholder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Unit video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 -->
 <!-- end unit-video div -->
+<!--
+::: {.unit-slides}
+# Slides
+
+View the slide deck for this unit: [Slides](positron-install-setup-slides.qmd){target="_blank" rel="noopener"}
+
+:::
+-->
+<!-- end unit-slides div -->
+<!--
+::: {.unit-transcript}
+# Text and Audio Transcripts
+
+Read the text transcript: [Text transcript](positron-install-setup-transcript.md)
+
+:::
+-->
+<!-- end unit-transcript div -->
 <section id="reading" class="level1 unit-reading">
 <h1>Reading</h1>
 <section id="installation" class="level2">
@@ -284,7 +302,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <section id="further-resources" class="level1 unit-resources">
 <h1>Further Resources</h1>
 <ul>
-<li><a href="https://positron.posit.co/start.html">Positron Get Started Guide</a> – official documentation</li>
+<li><a href="https://positron.posit.co/start.html">Positron Get Started Guide</a> â€“ official documentation</li>
 </ul>
 </section>
 <!-- end unit-resources div -->
@@ -293,8 +311,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where should you download the Positron installer to ensure you get the correct and most up‑to‑date version?</p>
-<div id="webex-f9f4cd70cd86a282ab47dfee5eb120e8" class="webex-radiogroup" data-answer="PQhKBE9UGwA+">
-<label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>From Positron’s official website</span></label><label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>From an arbitrary third‑party download mirror</span></label><label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>From the CRAN repository used for R packages</span></label><label><input type="radio" autocomplete="off" name="f9f4cd70cd86a282ab47dfee5eb120e8"><span>It is pre‑installed on all modern operating systems</span></label>
+<div id="webex-1af75070f8a704da4263d5139ec1c61a" class="webex-radiogroup" data-answer="alBKBxkAGwA7">
+<label><input type="radio" autocomplete="off" name="1af75070f8a704da4263d5139ec1c61a"><span>From Positron’s official website</span></label><label><input type="radio" autocomplete="off" name="1af75070f8a704da4263d5139ec1c61a"><span>From an arbitrary third‑party download mirror</span></label><label><input type="radio" autocomplete="off" name="1af75070f8a704da4263d5139ec1c61a"><span>From the CRAN repository used for R packages</span></label><label><input type="radio" autocomplete="off" name="1af75070f8a704da4263d5139ec1c61a"><span>It is pre‑installed on all modern operating systems</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -310,8 +328,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>During the very first startup, Positron may display several permission or configuration dialogs. What is the recommended action?</p>
-<div id="webex-258e4fe589a20625c48b3cd157e5a4f8" class="webex-radiogroup" data-answer="aQUUVRhXSQVl">
-<label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Cancel every prompt and close Positron immediately</span></label><label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Disable all suggested features to keep the interface minimal</span></label><label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Approve the prompts so Positron can fully configure itself</span></label><label><input type="radio" autocomplete="off" name="258e4fe589a20625c48b3cd157e5a4f8"><span>Uninstall Positron and reinstall it in “safe mode”</span></label>
+<div id="webex-9f898f447821d0f7dd809845eb799030" class="webex-radiogroup" data-answer="YlYUCRRXGARq">
+<label><input type="radio" autocomplete="off" name="9f898f447821d0f7dd809845eb799030"><span>Cancel every prompt and close Positron immediately</span></label><label><input type="radio" autocomplete="off" name="9f898f447821d0f7dd809845eb799030"><span>Disable all suggested features to keep the interface minimal</span></label><label><input type="radio" autocomplete="off" name="9f898f447821d0f7dd809845eb799030"><span>Approve the prompts so Positron can fully configure itself</span></label><label><input type="radio" autocomplete="off" name="9f898f447821d0f7dd809845eb799030"><span>Uninstall Positron and reinstall it in “safe mode”</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -327,8 +345,8 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How does Positron typically handle updates after it has been installed?</p>
-<div id="webex-2ac055ad934a4aea8610051d696bfd53" class="webex-radiogroup" data-answer="aVFPARkFTVRk">
-<label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>You must manually download and reinstall Positron for every update</span></label><label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>It automatically checks for updates on startup and offers to install them</span></label><label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>Updates can only be installed through your operating system’s app store</span></label><label><input type="radio" autocomplete="off" name="2ac055ad934a4aea8610051d696bfd53"><span>Positron cannot be updated; you must wait for the next major release</span></label>
+<div id="webex-ec2f12341133d5590cff5824422cc372" class="webex-radiogroup" data-answer="PlMeVx0CHwRs">
+<label><input type="radio" autocomplete="off" name="ec2f12341133d5590cff5824422cc372"><span>You must manually download and reinstall Positron for every update</span></label><label><input type="radio" autocomplete="off" name="ec2f12341133d5590cff5824422cc372"><span>It automatically checks for updates on startup and offers to install them</span></label><label><input type="radio" autocomplete="off" name="ec2f12341133d5590cff5824422cc372"><span>Updates can only be installed through your operating system’s app store</span></label><label><input type="radio" autocomplete="off" name="ec2f12341133d5590cff5824422cc372"><span>Positron cannot be updated; you must wait for the next major release</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -345,7 +363,7 @@ Below is the video for this unit. Here are [the slides shown in the video](), as
 <!-- end unit-quiz div -->
 <section id="practice" class="level1 unit-exercise">
 <h1>Practice</h1>
-<p>There’s nothing to practice here. We hope the install worked. You can open and close Positron a few times, just to make sure it all works well 😁.</p>
+<p>There’s nothing to practice here. We hope the install worked. You can open and close Positron a few times, just to make sure it all works well ðŸ˜.</p>
 </section>
 <!-- end unit-exercise div -->
 
