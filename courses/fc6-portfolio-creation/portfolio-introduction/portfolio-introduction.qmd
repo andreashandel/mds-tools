@@ -5,13 +5,17 @@ title: Online portfolio introduction
 ::: {.unit-overview}
 # Overview
 In this unit, we discuss what an online portfolio is, and why having one is a good idea.
+
 :::
+<!-- end unit-overview div -->
 
 ::: {.unit-goals}
 # Goals
 * Know what an online portfolio is.
 * Know why it's good to have an online portfolio.
+
 :::
+<!-- end unit-goals div -->
 
 <!--
 ::: {.unit-video}
@@ -71,14 +75,14 @@ An online portfolio is basically a website. This could be a stand-alone page, or
 We like using Quarto and Git/GitHub. In the following unit, we will show you how to create a portfolio using these tools.
 
 ::: 
-<!-- This ends the unit-reading div -->
+<!-- end unit-reading div -->
 
 
 ::: {.unit-summary}
 # Summary
 In this unit, we covered the basics of a portfolio, what it is and why you should have one.
 ::: 
-<!-- This ends the unit-summary div -->
+<!-- end unit-summary div -->
 
 
 ::: {.unit-resources}
@@ -90,7 +94,7 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 
 
 :::
-<!-- This ends the unit-resources div -->
+<!-- end unit-resources div -->
 
 
 ::: {.unit-quiz}
@@ -103,7 +107,7 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 # exams2forms::exams2forms(file = quizzes, title = 'portfolio-introduction-quiz')
 ```
 :::
-
+<!-- end unit-quiz div -->
 
 
 ::: {.unit-exercise}
@@ -112,6 +116,5 @@ In this unit, we covered the basics of a portfolio, what it is and why you shoul
 * Look around online to find a few personal webpages that showcase products a person created.
 * For a very nice example - just don't get intimidated by it 😁 - check out [Andrew Heiss](https://www.andrewheiss.com/).
 
-
-
-::: 
+:::
+<!-- end unit-exercise div -->

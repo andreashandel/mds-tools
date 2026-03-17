@@ -1,9 +1,8 @@
 ---
 title: Courses
-subtitle: ""
-output: 
-  html_document:
-    toc_depth: 3
+format:
+  html:
+    toc-depth: 3
 ---
 
 
@@ -19,9 +18,9 @@ More details about each course can be found in the course-specific overview page
 
 * [A brief introduction to R](/courses/course-landing-pages/fc2a-intro-r.qmd)
 
-* [A brief introduction to Julia](/courses/course-landing-pages/fc2b-intro-julia.qmd)
+<!-- * [A brief introduction to Julia](/courses/course-landing-pages/fc2b-intro-julia.qmd)
 
-* [A brief introduction to Python](/courses/course-landing-pages/fc2c-intro-python.qmd)
+* [A brief introduction to Python](/courses/course-landing-pages/fc2c-intro-python.qmd) -->
 
 * [A brief introduction to Quarto](/courses/course-landing-pages/fc3-intro-quarto.qmd)
 

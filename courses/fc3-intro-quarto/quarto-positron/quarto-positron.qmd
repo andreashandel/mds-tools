@@ -141,7 +141,10 @@ Quarto is nicely integrated into Positron, allowing you to create, edit, and ren
 ::: {.unit-resources}
 # Further Resources
 
-::: 
+* The [Quarto section of the Positron documentation](https://positron.posit.co/) has more details on using Quarto within Positron.
+* The [Quarto website](https://quarto.org/) provides comprehensive documentation on all Quarto features.
+
+:::
 <!-- end unit-resources div -->
 
 ::: {.unit-quiz}

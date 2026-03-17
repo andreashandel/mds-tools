@@ -14,6 +14,8 @@ project:
     - "!LICENSE.md"
     - "!auxiliary/**"
     - "!assets/**" # i don't think we need stuff in this folder rendered, but not sure
+    - "!courses/course-landing-pages/fc2b-intro-julia.qmd"
+    - "!courses/course-landing-pages/fc2c-intro-python.qmd"
 execute:
   freeze: auto # when to re-run code during full project render
   cache: false

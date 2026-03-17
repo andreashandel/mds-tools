@@ -1,8 +1,5 @@
 ---
 title: Basics of Coding in R
-editor: 
-  markdown: 
-    wrap: 72
 ---
 
 ::: {.unit-overview}

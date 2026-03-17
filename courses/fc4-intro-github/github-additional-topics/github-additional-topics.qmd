@@ -214,8 +214,9 @@ exams2forms::exams2forms(file = quizzes, title = 'github-additional-topics-quiz'
 
 ::: {.unit-exercise}
 # Practice
-* 
 
+* Create a `.gitignore` file for one of your repositories. Add entries to exclude files or folders that should not be tracked (e.g., large data files, temporary files, or sensitive information).
+* Intentionally create a merge conflict by editing the same file in two different locations (e.g., on GitHub.com and on your local machine). Then practice resolving the conflict.
 
 :::
 <!-- end unit-exercise div -->
