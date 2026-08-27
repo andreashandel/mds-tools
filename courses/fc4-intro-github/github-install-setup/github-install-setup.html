@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>Installation and Setup – Modeling and Data Science Tools</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,21 +38,21 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <link href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" rel="next">
 <link href="../../../courses/fc4-intro-github/github-introduction/github-introduction.html" rel="prev">
+<link href="../../..//assets/images/mds-tools-favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-55e9dfbaff69ed681fbd2f190de4027a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -88,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo light-content">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -123,6 +133,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -305,8 +321,8 @@ Read the text transcript: [Text transcript](github-install-setup-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where should you install Git from?</p>
-<div id="webex-8f68d2cc8c7169948cfbb3d1b78e2b27" class="webex-radiogroup" data-answer="Y1YaCEgDT1Nl">
-<label><input type="radio" autocomplete="off" name="8f68d2cc8c7169948cfbb3d1b78e2b27"><span>The GitHub Desktop app</span></label><label><input type="radio" autocomplete="off" name="8f68d2cc8c7169948cfbb3d1b78e2b27"><span>The GitHub Docs website</span></label><label><input type="radio" autocomplete="off" name="8f68d2cc8c7169948cfbb3d1b78e2b27"><span>The official Git website at git-scm.com</span></label><label><input type="radio" autocomplete="off" name="8f68d2cc8c7169948cfbb3d1b78e2b27"><span>The R package repository on CRAN</span></label>
+<div id="webex-45b48035f074d9c26278e831c115e1de" class="webex-radiogroup" data-answer="bwVOBBQBHwU7">
+<label><input type="radio" autocomplete="off" name="45b48035f074d9c26278e831c115e1de"><span>The GitHub Desktop app</span></label><label><input type="radio" autocomplete="off" name="45b48035f074d9c26278e831c115e1de"><span>The GitHub Docs website</span></label><label><input type="radio" autocomplete="off" name="45b48035f074d9c26278e831c115e1de"><span>The official Git website at git-scm.com</span></label><label><input type="radio" autocomplete="off" name="45b48035f074d9c26278e831c115e1de"><span>The R package repository on CRAN</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -322,8 +338,8 @@ Read the text transcript: [Text transcript](github-install-setup-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Why should you choose a professional, future-proof GitHub username?</p>
-<div id="webex-c60662c51994f8f6ba03eaae02359b45" class="webex-radiogroup" data-answer="OAYcBhoCTwRs">
-<label><input type="radio" autocomplete="off" name="c60662c51994f8f6ba03eaae02359b45"><span>GitHub requires it for student accounts only</span></label><label><input type="radio" autocomplete="off" name="c60662c51994f8f6ba03eaae02359b45"><span>It makes your local Git installation faster</span></label><label><input type="radio" autocomplete="off" name="c60662c51994f8f6ba03eaae02359b45"><span>It is needed to access private repositories</span></label><label><input type="radio" autocomplete="off" name="c60662c51994f8f6ba03eaae02359b45"><span>GitHub is used professionally and your profile is publicly visible</span></label>
+<div id="webex-97dfa3806dee9fbfdf8d892925f25499" class="webex-radiogroup" data-answer="YgdIVk0DFAFr">
+<label><input type="radio" autocomplete="off" name="97dfa3806dee9fbfdf8d892925f25499"><span>GitHub requires it for student accounts only</span></label><label><input type="radio" autocomplete="off" name="97dfa3806dee9fbfdf8d892925f25499"><span>It makes your local Git installation faster</span></label><label><input type="radio" autocomplete="off" name="97dfa3806dee9fbfdf8d892925f25499"><span>It is needed to access private repositories</span></label><label><input type="radio" autocomplete="off" name="97dfa3806dee9fbfdf8d892925f25499"><span>GitHub is used professionally and your profile is publicly visible</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -339,8 +355,8 @@ Read the text transcript: [Text transcript](github-install-setup-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is GitHub Desktop used for?</p>
-<div id="webex-18f8192b5f1c14ccac2990742d68bc2a" class="webex-radiogroup" data-answer="aghKCR0JHlJo">
-<label><input type="radio" autocomplete="off" name="18f8192b5f1c14ccac2990742d68bc2a"><span>Hosting repositories in the cloud</span></label><label><input type="radio" autocomplete="off" name="18f8192b5f1c14ccac2990742d68bc2a"><span>A graphical client to work with Git and GitHub</span></label><label><input type="radio" autocomplete="off" name="18f8192b5f1c14ccac2990742d68bc2a"><span>Writing and running R code</span></label><label><input type="radio" autocomplete="off" name="18f8192b5f1c14ccac2990742d68bc2a"><span>Automatically syncing files without commits</span></label>
+<div id="webex-65e2f88477a998eb405606d37e52904f" class="webex-radiogroup" data-answer="bQVJA0oIFARq">
+<label><input type="radio" autocomplete="off" name="65e2f88477a998eb405606d37e52904f"><span>Hosting repositories in the cloud</span></label><label><input type="radio" autocomplete="off" name="65e2f88477a998eb405606d37e52904f"><span>A graphical client to work with Git and GitHub</span></label><label><input type="radio" autocomplete="off" name="65e2f88477a998eb405606d37e52904f"><span>Writing and running R code</span></label><label><input type="radio" autocomplete="off" name="65e2f88477a998eb405606d37e52904f"><span>Automatically syncing files without commits</span></label>
 </div>
 </div>
 <div class="webex-solution">

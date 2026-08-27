@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>Using R through Positron – Modeling and Data Science Tools</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,21 +38,21 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <link href="../../../courses/fc2a-intro-r/r-coding-basics/r-coding-basics.html" rel="next">
 <link href="../../../courses/fc2a-intro-r/r-install-setup/r-install-setup.html" rel="prev">
+<link href="../../..//assets/images/mds-tools-favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-55e9dfbaff69ed681fbd2f190de4027a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -88,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo light-content">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -123,6 +133,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -329,8 +345,8 @@ plot(x,y) #plot y versus x</code></pre>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended way to execute R code for a real project in Positron?</p>
-<div id="webex-4d5bd71544caa16b9f1615cd820b0c3b" class="webex-radiogroup" data-answer="b1QZUkgGHQVp">
-<label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Run individual lines in random order from the console</span></label><label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Keep code in the console history without saving it</span></label><label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Save the script and run the whole file via <code>Source R File</code> (or <code>source()</code>)</span></label><label><input type="radio" autocomplete="off" name="4d5bd71544caa16b9f1615cd820b0c3b"><span>Only rerun the few lines you most recently edited</span></label>
+<div id="webex-4f860931f4c9338f14958a7173609969" class="webex-radiogroup" data-answer="b1YUBhwIHwE7">
+<label><input type="radio" autocomplete="off" name="4f860931f4c9338f14958a7173609969"><span>Run individual lines in random order from the console</span></label><label><input type="radio" autocomplete="off" name="4f860931f4c9338f14958a7173609969"><span>Keep code in the console history without saving it</span></label><label><input type="radio" autocomplete="off" name="4f860931f4c9338f14958a7173609969"><span>Save the script and run the whole file via <code>Source R File</code> (or <code>source()</code>)</span></label><label><input type="radio" autocomplete="off" name="4f860931f4c9338f14958a7173609969"><span>Only rerun the few lines you most recently edited</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -346,8 +362,8 @@ plot(x,y) #plot y versus x</code></pre>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>When a mismatched bracket triggers a message in the <code>Problems</code> tab and changes the syntax highlighting, what should you do?</p>
-<div id="webex-84f82542a5690f73d7e57c07309cc91f" class="webex-radiogroup" data-answer="YwRKCR4FGAI8">
-<label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Ignore the warning and continue running the script</span></label><label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Check the highlighted location and fix the syntax before re-running</span></label><label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Reinstall R because the editor is corrupted</span></label><label><input type="radio" autocomplete="off" name="84f82542a5690f73d7e57c07309cc91f"><span>Close Positron and hope the message disappears on restart</span></label>
+<div id="webex-4ca07f6ff1570ab83f4a9f4a11994feb" class="webex-radiogroup" data-answer="b1NNARtWGlY7">
+<label><input type="radio" autocomplete="off" name="4ca07f6ff1570ab83f4a9f4a11994feb"><span>Ignore the warning and continue running the script</span></label><label><input type="radio" autocomplete="off" name="4ca07f6ff1570ab83f4a9f4a11994feb"><span>Check the highlighted location and fix the syntax before re-running</span></label><label><input type="radio" autocomplete="off" name="4ca07f6ff1570ab83f4a9f4a11994feb"><span>Reinstall R because the editor is corrupted</span></label><label><input type="radio" autocomplete="off" name="4ca07f6ff1570ab83f4a9f4a11994feb"><span>Close Positron and hope the message disappears on restart</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -363,8 +379,8 @@ plot(x,y) #plot y versus x</code></pre>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After restarting R, you run <code>y &lt;- x^2</code> before defining <code>x</code> and get an error. What does this tell you about running code?</p>
-<div id="webex-b4f6757d28ffee6dbb105cf662f10c18" class="webex-radiogroup" data-answer="OQRKBhsFG1Vv">
-<label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>It will still work because R fills in missing objects automatically</span></label><label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>It only fails when you use <code>Source R File</code> instead of the console</span></label><label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>It means the workspace keeps old objects even after a restart</span></label><label><input type="radio" autocomplete="off" name="b4f6757d28ffee6dbb105cf662f10c18"><span>You need to run code in order; define <code>x</code> before using it in <code>y &lt;- x^2</code></span></label>
+<div id="webex-b34c9bd5a78f6516eeb2164898ef4daf" class="webex-radiogroup" data-answer="OQMYUxVSSAQ8">
+<label><input type="radio" autocomplete="off" name="b34c9bd5a78f6516eeb2164898ef4daf"><span>It will still work because R fills in missing objects automatically</span></label><label><input type="radio" autocomplete="off" name="b34c9bd5a78f6516eeb2164898ef4daf"><span>It only fails when you use <code>Source R File</code> instead of the console</span></label><label><input type="radio" autocomplete="off" name="b34c9bd5a78f6516eeb2164898ef4daf"><span>It means the workspace keeps old objects even after a restart</span></label><label><input type="radio" autocomplete="off" name="b34c9bd5a78f6516eeb2164898ef4daf"><span>You need to run code in order; define <code>x</code> before using it in <code>y &lt;- x^2</code></span></label>
 </div>
 </div>
 <div class="webex-solution">

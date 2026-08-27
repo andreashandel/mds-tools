@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>Introduction to Git/GitHub – Modeling and Data Science Tools</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,21 +38,21 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <link href="../../../courses/fc4-intro-github/github-install-setup/github-install-setup.html" rel="next">
 <link href="../../../courses/fc4-intro-github/intro-github-toc.html" rel="prev">
+<link href="../../..//assets/images/mds-tools-favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-55e9dfbaff69ed681fbd2f190de4027a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -91,6 +97,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo light-content">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -126,6 +136,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -334,8 +350,8 @@ Read the text transcript: [Text transcript](github-introduction-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the difference between Git and GitHub?</p>
-<div id="webex-95c10930580782bdca2ecf61e223e302" class="webex-radiogroup" data-answer="YgVPABwJHwBo">
-<label><input type="radio" autocomplete="off" name="95c10930580782bdca2ecf61e223e302"><span>Git is an online hosting service, and GitHub is a local version control tool</span></label><label><input type="radio" autocomplete="off" name="95c10930580782bdca2ecf61e223e302"><span>Git is a version control system, and GitHub is an online hosting platform for Git repositories</span></label><label><input type="radio" autocomplete="off" name="95c10930580782bdca2ecf61e223e302"><span>Git is a text editor, and GitHub is a file syncing app</span></label><label><input type="radio" autocomplete="off" name="95c10930580782bdca2ecf61e223e302"><span>Git is for website publishing only, and GitHub is for data storage only</span></label>
+<div id="webex-a7f266af18d22b3b66c5df610af005d4" class="webex-radiogroup" data-answer="OgdKAxoGTVZs">
+<label><input type="radio" autocomplete="off" name="a7f266af18d22b3b66c5df610af005d4"><span>Git is an online hosting service, and GitHub is a local version control tool</span></label><label><input type="radio" autocomplete="off" name="a7f266af18d22b3b66c5df610af005d4"><span>Git is a version control system, and GitHub is an online hosting platform for Git repositories</span></label><label><input type="radio" autocomplete="off" name="a7f266af18d22b3b66c5df610af005d4"><span>Git is a text editor, and GitHub is a file syncing app</span></label><label><input type="radio" autocomplete="off" name="a7f266af18d22b3b66c5df610af005d4"><span>Git is for website publishing only, and GitHub is for data storage only</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -351,8 +367,8 @@ Read the text transcript: [Text transcript](github-introduction-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which project is the best fit for using GitHub?</p>
-<div id="webex-14b6c404bbef74873eca91bd4cf3b6c4" class="webex-radiogroup" data-answer="agROBk8FHAQ/">
-<label><input type="radio" autocomplete="off" name="14b6c404bbef74873eca91bd4cf3b6c4"><span>A single large video file edited by one person</span></label><label><input type="radio" autocomplete="off" name="14b6c404bbef74873eca91bd4cf3b6c4"><span>A shared Word document edited at the same time by many people</span></label><label><input type="radio" autocomplete="off" name="14b6c404bbef74873eca91bd4cf3b6c4"><span>A project with many small text files where collaborators work on different parts</span></label><label><input type="radio" autocomplete="off" name="14b6c404bbef74873eca91bd4cf3b6c4"><span>A folder of scanned PDFs that need to be edited in place</span></label>
+<div id="webex-305d84aa37991328e240075848ee460a" class="webex-radiogroup" data-answer="aAAZVBQFTVFu">
+<label><input type="radio" autocomplete="off" name="305d84aa37991328e240075848ee460a"><span>A single large video file edited by one person</span></label><label><input type="radio" autocomplete="off" name="305d84aa37991328e240075848ee460a"><span>A shared Word document edited at the same time by many people</span></label><label><input type="radio" autocomplete="off" name="305d84aa37991328e240075848ee460a"><span>A project with many small text files where collaborators work on different parts</span></label><label><input type="radio" autocomplete="off" name="305d84aa37991328e240075848ee460a"><span>A folder of scanned PDFs that need to be edited in place</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -368,8 +384,8 @@ Read the text transcript: [Text transcript](github-introduction-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the recommended approach for large files in GitHub repositories?</p>
-<div id="webex-af9eb176c3274eb4c0e3816034bd3e54" class="webex-radiogroup" data-answer="OlYVVU4BGwc+">
-<label><input type="radio" autocomplete="off" name="af9eb176c3274eb4c0e3816034bd3e54"><span>Keep all large files in the repository so the full history is preserved</span></label><label><input type="radio" autocomplete="off" name="af9eb176c3274eb4c0e3816034bd3e54"><span>Zip large files and commit them regularly</span></label><label><input type="radio" autocomplete="off" name="af9eb176c3274eb4c0e3816034bd3e54"><span>Push files larger than 100 MB and let GitHub handle them</span></label><label><input type="radio" autocomplete="off" name="af9eb176c3274eb4c0e3816034bd3e54"><span>Keep large files out of the repository and store them elsewhere</span></label>
+<div id="webex-1c6625ef2500b5e049e6671aa731ab76" class="webex-radiogroup" data-answer="alMaBh4FSVdv">
+<label><input type="radio" autocomplete="off" name="1c6625ef2500b5e049e6671aa731ab76"><span>Keep all large files in the repository so the full history is preserved</span></label><label><input type="radio" autocomplete="off" name="1c6625ef2500b5e049e6671aa731ab76"><span>Zip large files and commit them regularly</span></label><label><input type="radio" autocomplete="off" name="1c6625ef2500b5e049e6671aa731ab76"><span>Push files larger than 100 MB and let GitHub handle them</span></label><label><input type="radio" autocomplete="off" name="1c6625ef2500b5e049e6671aa731ab76"><span>Keep large files out of the repository and store them elsewhere</span></label>
 </div>
 </div>
 <div class="webex-solution">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>Git and GitHub in Positron – Modeling and Data Science Tools</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,21 +38,21 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <link href="../../../courses/fc4-intro-github/github-forks-prs/github-forks-prs.html" rel="next">
 <link href="../../../courses/fc4-intro-github/github-basic-use/github-basic-use.html" rel="prev">
+<link href="../../..//assets/images/mds-tools-favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-55e9dfbaff69ed681fbd2f190de4027a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -88,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo light-content">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -123,6 +133,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -299,8 +315,8 @@ Read the text transcript: [Text transcript](github-positron-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Where can you find Git controls in Positron?</p>
-<div id="webex-2821a063e9436a9d3c3a7d04f3732c55" class="webex-radiogroup" data-answer="aQgeAE0AGgM4">
-<label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="2821a063e9436a9d3c3a7d04f3732c55"><span>The terminal output panel</span></label>
+<div id="webex-0e4b762639a169f13689e7200351e56e" class="webex-radiogroup" data-answer="a1UYUxsGHgZu">
+<label><input type="radio" autocomplete="off" name="0e4b762639a169f13689e7200351e56e"><span>The bottom status bar only</span></label><label><input type="radio" autocomplete="off" name="0e4b762639a169f13689e7200351e56e"><span>The left sidebar with the branch icon</span></label><label><input type="radio" autocomplete="off" name="0e4b762639a169f13689e7200351e56e"><span>The top menu under Help</span></label><label><input type="radio" autocomplete="off" name="0e4b762639a169f13689e7200351e56e"><span>The terminal output panel</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -316,8 +332,8 @@ Read the text transcript: [Text transcript](github-positron-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After committing in Positron, what indicates your local branch is ahead of the remote?</p>
-<div id="webex-0cc2fee3190e55ab7101e40603ecf55f" class="webex-radiogroup" data-answer="a1NPAkpUSQNs">
-<label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="0cc2fee3190e55ab7101e40603ecf55f"><span>The README file is locked for editing</span></label>
+<div id="webex-c40e75b1dfa712410a179f77631c4cdd" class="webex-radiogroup" data-answer="OAQcVRsETgE5">
+<label><input type="radio" autocomplete="off" name="c40e75b1dfa712410a179f77631c4cdd"><span>The repository disappears from the Git panel</span></label><label><input type="radio" autocomplete="off" name="c40e75b1dfa712410a179f77631c4cdd"><span>The main branch is behind origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="c40e75b1dfa712410a179f77631c4cdd"><span>The main branch is ahead of origin/main by one commit</span></label><label><input type="radio" autocomplete="off" name="c40e75b1dfa712410a179f77631c4cdd"><span>The README file is locked for editing</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -333,8 +349,8 @@ Read the text transcript: [Text transcript](github-positron-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Can you use both GitHub Desktop and Positron for Git tasks?</p>
-<div id="webex-68afd5cbdc5d25949d36dfbc40f8b532" class="webex-radiogroup" data-answer="bQhNVkgFT1M5">
-<label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="68afd5cbdc5d25949d36dfbc40f8b532"><span>Yes, you can mix both tools as needed</span></label>
+<div id="webex-36c7c23a0d9001a284bd6f78bc5e3ded" class="webex-radiogroup" data-answer="aAZPB08CH1Bt">
+<label><input type="radio" autocomplete="off" name="36c7c23a0d9001a284bd6f78bc5e3ded"><span>Only if you never push changes</span></label><label><input type="radio" autocomplete="off" name="36c7c23a0d9001a284bd6f78bc5e3ded"><span>No, you must pick exactly one tool forever</span></label><label><input type="radio" autocomplete="off" name="36c7c23a0d9001a284bd6f78bc5e3ded"><span>Only if the repository is private</span></label><label><input type="radio" autocomplete="off" name="36c7c23a0d9001a284bd6f78bc5e3ded"><span>Yes, you can mix both tools as needed</span></label>
 </div>
 </div>
 <div class="webex-solution">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>Basic Positron Use – Modeling and Data Science Tools</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -67,21 +73,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../../">
 <link href="../../../courses/fc1-intro-positron/positron-projects/positron-projects.html" rel="next">
 <link href="../../../courses/fc1-intro-positron/positron-configuration/positron-configuration.html" rel="prev">
+<link href="../../..//assets/images/mds-tools-favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-55e9dfbaff69ed681fbd2f190de4027a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -123,6 +129,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo light-content">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -158,6 +168,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -367,8 +383,8 @@ Read the text transcript: [Text transcript](positron-use-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What happens when you click the Run (triangle) button on an R script in Positron?</p>
-<div id="webex-2e98d0260b4f425ea47648a67274a441" class="webex-radiogroup" data-answer="aVQVCEgAHgZt">
-<label><input type="radio" autocomplete="off" name="2e98d0260b4f425ea47648a67274a441"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="2e98d0260b4f425ea47648a67274a441"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="2e98d0260b4f425ea47648a67274a441"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="2e98d0260b4f425ea47648a67274a441"><span>The script is compiled without running any code</span></label>
+<div id="webex-5e0b9bd0c690047a8d4ef843a3ae4670" class="webex-radiogroup" data-answer="blQcUhVSSAA+">
+<label><input type="radio" autocomplete="off" name="5e0b9bd0c690047a8d4ef843a3ae4670"><span>The script is sourced in the R console and outputs (like plots) appear in the lower panes</span></label><label><input type="radio" autocomplete="off" name="5e0b9bd0c690047a8d4ef843a3ae4670"><span>The file is opened in an external R GUI instead</span></label><label><input type="radio" autocomplete="off" name="5e0b9bd0c690047a8d4ef843a3ae4670"><span>Only the first line is executed and the rest ignored</span></label><label><input type="radio" autocomplete="off" name="5e0b9bd0c690047a8d4ef843a3ae4670"><span>The script is compiled without running any code</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -384,8 +400,8 @@ Read the text transcript: [Text transcript](positron-use-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>How can you run code line by line from the editor in Positron?</p>
-<div id="webex-be043fe84f004717ecc66ae002de9502" class="webex-radiogroup" data-answer="OVUcBB9XSQhp">
-<label><input type="radio" autocomplete="off" name="be043fe84f004717ecc66ae002de9502"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="be043fe84f004717ecc66ae002de9502"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="be043fe84f004717ecc66ae002de9502"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="be043fe84f004717ecc66ae002de9502"><span>Line-by-line execution is not supported</span></label>
+<div id="webex-aa090702a20acd238728cdf9e7930b39" class="webex-radiogroup" data-answer="OlEcCRwGHAI8">
+<label><input type="radio" autocomplete="off" name="aa090702a20acd238728cdf9e7930b39"><span>Only the Run button can execute code</span></label><label><input type="radio" autocomplete="off" name="aa090702a20acd238728cdf9e7930b39"><span>You must copy code into the Terminal manually</span></label><label><input type="radio" autocomplete="off" name="aa090702a20acd238728cdf9e7930b39"><span>Place the cursor on a line and press Ctrl/Cmd + Enter to execute it</span></label><label><input type="radio" autocomplete="off" name="aa090702a20acd238728cdf9e7930b39"><span>Line-by-line execution is not supported</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -401,8 +417,8 @@ Read the text transcript: [Text transcript](positron-use-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>After editing a Quarto <code>.qmd</code> file in Positron, how do you view the rendered document?</p>
-<div id="webex-a41792cf7dc09de260fcf91f51e59eca" class="webex-radiogroup" data-answer="OgQdBxUCT1dq">
-<label><input type="radio" autocomplete="off" name="a41792cf7dc09de260fcf91f51e59eca"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="a41792cf7dc09de260fcf91f51e59eca"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="a41792cf7dc09de260fcf91f51e59eca"><span>Quarto documents cannot be previewed from within Positron</span></label><label><input type="radio" autocomplete="off" name="a41792cf7dc09de260fcf91f51e59eca"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label>
+<div id="webex-9e97e5c8be4ff2d171612932b1c8d135" class="webex-radiogroup" data-answer="YlUVB0kFTwk/">
+<label><input type="radio" autocomplete="off" name="9e97e5c8be4ff2d171612932b1c8d135"><span>Restart Positron so Quarto auto-renders on launch</span></label><label><input type="radio" autocomplete="off" name="9e97e5c8be4ff2d171612932b1c8d135"><span>Save the file and open it manually in a separate word processor</span></label><label><input type="radio" autocomplete="off" name="9e97e5c8be4ff2d171612932b1c8d135"><span>Quarto documents cannot be previewed from within Positron</span></label><label><input type="radio" autocomplete="off" name="9e97e5c8be4ff2d171612932b1c8d135"><span>Click the Preview button; the render shows in the Viewer pane or an external browser depending on your settings</span></label>
 </div>
 </div>
 <div class="webex-solution">

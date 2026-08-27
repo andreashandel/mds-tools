@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>More Quarto – Modeling and Data Science Tools</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -67,21 +73,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../../">
 <link href="../../../courses/fc3-intro-quarto/quarto-resources/quarto-resources.html" rel="next">
 <link href="../../../courses/fc3-intro-quarto/quarto-basics/quarto-basics.html" rel="prev">
+<link href="../../..//assets/images/mds-tools-favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e227832239d5b4e5c67582fb0694e6ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-962d9e1fbeb98d5556dc1494c71316c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-55e9dfbaff69ed681fbd2f190de4027a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b007dadbb6e19905a62e2bbdfb77a783.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -123,6 +129,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo light-content">
+    <img src="../../../assets/images/mds-tools-logo-small.png" alt="MDS Tools logo" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modeling and Data Science Tools</span>
     </a>
@@ -158,6 +168,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/images/mds-tools-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -334,8 +350,8 @@ Read the text transcript: [Text transcript](quarto-beyond-basics-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which presentation format does the unit recommend as a default choice?</p>
-<div id="webex-d1ee4306d8936d5f7cca2a0dc31b0dc4" class="webex-radiogroup" data-answer="PwFJVBgDHAY5">
-<label><input type="radio" autocomplete="off" name="d1ee4306d8936d5f7cca2a0dc31b0dc4"><span>beamer</span></label><label><input type="radio" autocomplete="off" name="d1ee4306d8936d5f7cca2a0dc31b0dc4"><span>revealjs</span></label><label><input type="radio" autocomplete="off" name="d1ee4306d8936d5f7cca2a0dc31b0dc4"><span>docx</span></label><label><input type="radio" autocomplete="off" name="d1ee4306d8936d5f7cca2a0dc31b0dc4"><span>pdf</span></label>
+<div id="webex-1b16021d0a5092d89c757f097f468cb7" class="webex-radiogroup" data-answer="alIdBxwCHVRt">
+<label><input type="radio" autocomplete="off" name="1b16021d0a5092d89c757f097f468cb7"><span>beamer</span></label><label><input type="radio" autocomplete="off" name="1b16021d0a5092d89c757f097f468cb7"><span>revealjs</span></label><label><input type="radio" autocomplete="off" name="1b16021d0a5092d89c757f097f468cb7"><span>docx</span></label><label><input type="radio" autocomplete="off" name="1b16021d0a5092d89c757f097f468cb7"><span>pdf</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -351,8 +367,8 @@ Read the text transcript: [Text transcript](quarto-beyond-basics-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which file is used to configure a Quarto website project?</p>
-<div id="webex-2219bd6b23b6e5255542ef0da0fb7427" class="webex-radiogroup" data-answer="aQIdCU5VGlJv">
-<label><input type="radio" autocomplete="off" name="2219bd6b23b6e5255542ef0da0fb7427"><span>index.qmd</span></label><label><input type="radio" autocomplete="off" name="2219bd6b23b6e5255542ef0da0fb7427"><span>quarto.yml</span></label><label><input type="radio" autocomplete="off" name="2219bd6b23b6e5255542ef0da0fb7427"><span>_quarto.yml</span></label><label><input type="radio" autocomplete="off" name="2219bd6b23b6e5255542ef0da0fb7427"><span>site.json</span></label>
+<div id="webex-5fda9009188a4b3f106e596bdfa62702" class="webex-radiogroup" data-answer="blZIURUBHAls">
+<label><input type="radio" autocomplete="off" name="5fda9009188a4b3f106e596bdfa62702"><span>index.qmd</span></label><label><input type="radio" autocomplete="off" name="5fda9009188a4b3f106e596bdfa62702"><span>quarto.yml</span></label><label><input type="radio" autocomplete="off" name="5fda9009188a4b3f106e596bdfa62702"><span>_quarto.yml</span></label><label><input type="radio" autocomplete="off" name="5fda9009188a4b3f106e596bdfa62702"><span>site.json</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -368,8 +384,8 @@ Read the text transcript: [Text transcript](quarto-beyond-basics-transcript.md)
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which option lists other Quarto products mentioned in the unit?</p>
-<div id="webex-c168d18fec34667556dd61b5ac63f70d" class="webex-radiogroup" data-answer="OAEaCEgBFFc4">
-<label><input type="radio" autocomplete="off" name="c168d18fec34667556dd61b5ac63f70d"><span>Spreadsheets and databases</span></label><label><input type="radio" autocomplete="off" name="c168d18fec34667556dd61b5ac63f70d"><span>Mobile apps and games</span></label><label><input type="radio" autocomplete="off" name="c168d18fec34667556dd61b5ac63f70d"><span>Audio editors and image filters</span></label><label><input type="radio" autocomplete="off" name="c168d18fec34667556dd61b5ac63f70d"><span>Dashboards, books, and manuscripts</span></label>
+<div id="webex-7ef015d2292705dd9a538624f837a6e0" class="webex-radiogroup" data-answer="bFVKAB0FSANv">
+<label><input type="radio" autocomplete="off" name="7ef015d2292705dd9a538624f837a6e0"><span>Spreadsheets and databases</span></label><label><input type="radio" autocomplete="off" name="7ef015d2292705dd9a538624f837a6e0"><span>Mobile apps and games</span></label><label><input type="radio" autocomplete="off" name="7ef015d2292705dd9a538624f837a6e0"><span>Audio editors and image filters</span></label><label><input type="radio" autocomplete="off" name="7ef015d2292705dd9a538624f837a6e0"><span>Dashboards, books, and manuscripts</span></label>
 </div>
 </div>
 <div class="webex-solution">
