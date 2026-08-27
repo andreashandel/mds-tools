@@ -52,7 +52,7 @@ website:
   title: "Modeling and Data Science Tools"
   description: "Short introductory courses that cover some modeling and data science tools."
   site-url: ""
-  # favicon: /assets/images/qspl-logo.png
+  favicon: /assets/images/mds-tools-favicon.png
   # google-analytics: "UA-48442618-4"
   page-navigation: true
   cookie-consent: false    
@@ -60,8 +60,8 @@ website:
   navbar:
     pinned: true
     background: "#99ccff"
-    # logo: /assets/images/qspl-logo.png
-    # logo-alt: "QSPL logo"
+    logo: /assets/images/mds-tools-logo-small.png
+    logo-alt: "MDS Tools logo"
     left:
       - text: "Courses"
         file: courses/courses.qmd

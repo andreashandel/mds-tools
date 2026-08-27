@@ -8,9 +8,9 @@ color:
   foreground: dark-grey
   primary: black
 
-# logo: 
-#   small: assets/images/logo-small.png
-#   medium: assets/images/logo.png
+logo:
+  small: assets/images/mds-tools-logo-small.png
+  medium: assets/images/mds-tools-logo.png
 
 
 typography:

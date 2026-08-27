@@ -2,6 +2,10 @@
 title: "Modeling and Data Science (MDS) Tools"
 ---
 
+::: {.text-center}
+![](/assets/images/mds-tools-logo.png){.nolightbox width="260" fig-alt="MDS Tools logo"}
+:::
+
 
 # Overview
 

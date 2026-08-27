@@ -209,3 +209,15 @@ code:not(.sourceCode) {
 /* End formatting for certain types of content components  ------*/
 /* --------------------------------------*/
 
+
+
+/* --------------------------------------*/
+/* Site logo in the navbar ------*/
+/* --------------------------------------*/
+
+// The logo is a hexagon sticker, so show it whole. Quarto's brand styling
+// defaults to object-fit: cover, which would crop the hexagon.
+.navbar-logo {
+  max-height: 42px;
+  object-fit: contain;
+}
