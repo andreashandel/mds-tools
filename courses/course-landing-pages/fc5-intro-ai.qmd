@@ -55,8 +55,9 @@ We assume you have the following tools up and running at the level covered in ou
 The course covers these topics (and more):
 
 - Introduction
-- Setup of AI tools
-- Basic use
+- Understanding LLM AI Tools
+- Using AI for Coding
+- Using AI for Data Analysis
 - Further Resources
 :::
 

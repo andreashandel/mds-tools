@@ -170,7 +170,7 @@ The field is changing rapidly. To keep up and have everything in one place [ther
 ::: {.unit-summary}
 # Summary
 
-AI tools can be very useful tools to help you write code and do your data analysis. It is useful to think about what AI tools are and how to interact with them. It is always importont to keep in mind the risks and limitations of any tool, including AI.
+AI tools can be very useful tools to help you write code and do your data analysis. It is useful to think about what AI tools are and how to interact with them. It is always important to keep in mind the risks and limitations of any tool, including AI.
 
 :::
 <!-- end unit-summary div -->

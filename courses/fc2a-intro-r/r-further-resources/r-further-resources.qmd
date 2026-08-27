@@ -103,7 +103,7 @@ This unit provided a few pointers to resources that can help you learn R further
 ::: {.unit-resources}
 # Further Resources
 
-All futher resources are described in the main text above.
+All further resources are described in the main text above.
 
 :::
 <!-- end unit-resources div -->

@@ -64,7 +64,7 @@ For inspiration, or if you know what you want but don't know the technical term,
 
 ## Community Resources
 
-The [Awsome Quarto](https://github.com/mcanouil/awesome-quarto) repository on GitHub is a curated list of Quarto-related resources, including tutorials, templates, and tools contributed by the community. It's a great way to discover new ways to use Quarto.
+The [Awesome Quarto](https://github.com/mcanouil/awesome-quarto) repository on GitHub is a curated list of Quarto-related resources, including tutorials, templates, and tools contributed by the community. It's a great way to discover new ways to use Quarto.
 
 
 ## Community Support

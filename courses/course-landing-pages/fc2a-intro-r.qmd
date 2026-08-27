@@ -15,11 +15,11 @@ This course provides a very brief introduction to the `R` programming language. 
 ::: {.course-goals}
 # Course Goals
 
--   Know what R is.
+* Know what R is.
 * Have R successfully installed and set up.
--   Be familiar with some basic R use.
+* Be familiar with some basic R use.
 * Be able to run R code.
--   Understand the ideas of packages and how to manage them.
+* Understand the ideas of packages and how to manage them.
 :::
 
 <!--
@@ -52,8 +52,9 @@ The course covers these topics (and more):
 
 - Introduction
 - Install and Setup
-- Basic Functionality 
-- Installing and using Packages
+- Basic Functionality
+- Packages and the tidyverse ecosystem
+- Coding Tips
 - Further Resources
 :::
 

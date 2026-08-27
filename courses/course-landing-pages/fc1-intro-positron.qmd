@@ -54,9 +54,10 @@ The course covers these topics (and more):
 
 - Introduction
 - Install and Setup
-- Basic Functionality 
+- Basic Functionality and Features
 - Using Extensions
-- Configuration 
+- Configuration
+- Projects
 - Further Resources
 :::
 

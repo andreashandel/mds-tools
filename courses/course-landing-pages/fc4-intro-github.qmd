@@ -60,8 +60,9 @@ The course covers these topics (and more):
 
 - Introduction
 - Install and Setup
-- Basic uses 
-- Important caveats and limitations
+- Basic Use
+- Branches, Forks and Pull Requests
+- Important Caveats and Limitations
 - Further Resources
 :::
 
