@@ -2,9 +2,8 @@
 title: "Modeling and Data Science (MDS) Tools"
 ---
 
-::: {.text-center}
-![](/assets/images/mds-tools-logo.png){.nolightbox width="260" fig-alt="MDS Tools logo"}
-:::
+![](/assets/images/mds-tools-logo.png){width="150px" style="float:right" fig-alt="MADA logo"}
+
 
 
 # Overview
@@ -13,11 +12,5 @@ This website contains several mini-courses/tutorials which cover tools for model
 
 You can find all available courses on the [courses](/courses/courses.qmd) page.
 
-
-
-<!-- # Authors
-
-This website is currently run by [Andreas](https://www.andreashandel.com/) and [Brian](https://brianmckay.netlify.app). We are two academic scientists, researchers and teachers. 
- -->
 
 
